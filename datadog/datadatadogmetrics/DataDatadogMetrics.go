@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics datadog_metrics}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics datadog_metrics}.
 type DataDatadogMetrics interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataDatadogMetrics) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics datadog_metrics} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics datadog_metrics} Data Source.
 func NewDataDatadogMetrics(scope constructs.Construct, id *string, config *DataDatadogMetricsConfig) DataDatadogMetrics {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataDatadogMetrics(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/data-sources/metrics datadog_metrics} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metrics datadog_metrics} Data Source.
 func NewDataDatadogMetrics_Override(d DataDatadogMetrics, scope constructs.Construct, id *string, config *DataDatadogMetricsConfig) {
 	_init_.Initialize()
 

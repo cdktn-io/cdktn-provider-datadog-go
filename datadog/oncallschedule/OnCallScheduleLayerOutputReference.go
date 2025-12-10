@@ -57,6 +57,9 @@ type OnCallScheduleLayerOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
 	Users() *[]*string
 	SetUsers(val *[]*string)
 	UsersInput() *[]*string
@@ -89,6 +92,7 @@ type OnCallScheduleLayerOutputReference interface {
 	ResetEndDate()
 	ResetInterval()
 	ResetRestriction()
+	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -304,6 +308,26 @@ func (j *jsiiProxy_OnCallScheduleLayerOutputReference) TerraformResource() cdktf
 	return returns
 }
 
+func (j *jsiiProxy_OnCallScheduleLayerOutputReference) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallScheduleLayerOutputReference) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OnCallScheduleLayerOutputReference) Users() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -447,6 +471,17 @@ func (j *jsiiProxy_OnCallScheduleLayerOutputReference)SetTerraformResource(val c
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OnCallScheduleLayerOutputReference)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
 		val,
 	)
 }
@@ -690,6 +725,14 @@ func (o *jsiiProxy_OnCallScheduleLayerOutputReference) ResetRestriction() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRestriction",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnCallScheduleLayerOutputReference) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeZone",
 		nil, // no parameters
 	)
 }

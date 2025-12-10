@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
 type CustomAllocationRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type CustomAllocationRules interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OverrideUiDefinedResources() interface{}
+	SetOverrideUiDefinedResources(val interface{})
+	OverrideUiDefinedResourcesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -111,6 +114,7 @@ type CustomAllocationRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverrideUiDefinedResources()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_CustomAllocationRules) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CustomAllocationRules) OverrideUiDefinedResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overrideUiDefinedResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAllocationRules) OverrideUiDefinedResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overrideUiDefinedResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomAllocationRules) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -320,7 +344,7 @@ func (j *jsiiProxy_CustomAllocationRules) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
 func NewCustomAllocationRules(scope constructs.Construct, id *string, config *CustomAllocationRulesConfig) CustomAllocationRules {
 	_init_.Initialize()
 
@@ -338,7 +362,7 @@ func NewCustomAllocationRules(scope constructs.Construct, id *string, config *Cu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
 func NewCustomAllocationRules_Override(c CustomAllocationRules, scope constructs.Construct, id *string, config *CustomAllocationRulesConfig) {
 	_init_.Initialize()
 
@@ -394,6 +418,17 @@ func (j *jsiiProxy_CustomAllocationRules)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomAllocationRules)SetOverrideUiDefinedResources(val interface{}) {
+	if err := j.validateSetOverrideUiDefinedResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overrideUiDefinedResources",
 		val,
 	)
 }
@@ -785,6 +820,14 @@ func (c *jsiiProxy_CustomAllocationRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomAllocationRules) ResetOverrideUiDefinedResources() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideUiDefinedResources",
 		nil, // no parameters
 	)
 }

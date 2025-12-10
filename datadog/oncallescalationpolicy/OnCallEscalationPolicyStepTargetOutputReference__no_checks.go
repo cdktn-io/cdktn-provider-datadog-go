@@ -63,6 +63,10 @@ func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) validateSetPositionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) validateSetScheduleParameters(val *string) error {
 	return nil
 }

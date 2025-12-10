@@ -95,6 +95,10 @@ func (j *jsiiProxy_OnCallScheduleLayerOutputReference) validateSetTerraformResou
 	return nil
 }
 
+func (j *jsiiProxy_OnCallScheduleLayerOutputReference) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OnCallScheduleLayerOutputReference) validateSetUsersParameters(val *[]*string) error {
 	return nil
 }

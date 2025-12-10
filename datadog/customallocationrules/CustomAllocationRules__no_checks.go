@@ -103,6 +103,10 @@ func (j *jsiiProxy_CustomAllocationRules) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_CustomAllocationRules) validateSetOverrideUiDefinedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomAllocationRules) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

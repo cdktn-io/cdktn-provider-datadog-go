@@ -26,7 +26,13 @@ type CustomAllocationRulesConfig struct {
 	//
 	// Rules are executed in the order specified in this list. Comes from the `id` field on a `datadog_custom_allocation_rule` resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.81.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#rule_ids CustomAllocationRules#rule_ids}
 	RuleIds *[]*string `field:"required" json:"ruleIds" yaml:"ruleIds"`
+	// Whether to override UI-defined rules.
+	//
+	// When set to true, any rules created via the UI that are not defined in Terraform will be deleted and Terraform will be used as the source of truth for rules and their ordering. When set to false, any rules created via the UI that are at the end of order will be kept but will be warned, otherwise an error will be thrown in terraform plan phase. Default is false
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules#override_ui_defined_resources CustomAllocationRules#override_ui_defined_resources}
+	OverrideUiDefinedResources interface{} `field:"optional" json:"overrideUiDefinedResources" yaml:"overrideUiDefinedResources"`
 }
 

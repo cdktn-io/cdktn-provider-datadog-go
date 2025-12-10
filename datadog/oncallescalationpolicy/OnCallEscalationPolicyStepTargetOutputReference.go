@@ -32,6 +32,9 @@ type OnCallEscalationPolicyStepTargetOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Position() *string
+	SetPosition(val *string)
+	PositionInput() *string
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
@@ -73,6 +76,7 @@ type OnCallEscalationPolicyStepTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetPosition()
 	ResetSchedule()
 	ResetTeam()
 	ResetUser()
@@ -136,6 +140,26 @@ func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) Position() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"position",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) PositionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"positionInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +302,17 @@ func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference)SetPosition(val *string) {
+	if err := j.validateSetPositionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"position",
 		val,
 	)
 }
@@ -521,6 +556,14 @@ func (o *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) ResetPosition() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPosition",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference) ResetSchedule() {
