@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticsglobalvariable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticsglobalvariable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsGlobalVariableOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type SyntheticsGlobalVariableOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotpParameters() SyntheticsGlobalVariableOptionsTotpParametersList
 	TotpParametersInput() interface{}
 	// Experimental.
@@ -47,7 +47,7 @@ type SyntheticsGlobalVariableOptionsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type SyntheticsGlobalVariableOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTotpParameters(value interface{})
 	ResetTotpParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type SyntheticsGlobalVariableOptionsOutputReference interface {
 
 // The jsii proxy struct for SyntheticsGlobalVariableOptionsOutputReference
 type jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) TotpParameter
 }
 
 
-func NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableOptionsOutputReference {
+func NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsGlobalVariableOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsGlobalVariableOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -183,7 +183,7 @@ func NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewSyntheticsGlobalVariableOptionsOutputReference_Override(s SyntheticsGlobalVariableOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsGlobalVariableOptionsOutputReference_Override(s SyntheticsGlobalVariableOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,11 +285,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -413,8 +413,8 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) GetStringMapA
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -426,11 +426,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) Interpolation
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -461,7 +461,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) ResetTotpPara
 	)
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

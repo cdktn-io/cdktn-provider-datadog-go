@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSloListDefinitionRequestQuerySortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Column() *string
 	SetColumn(val *string)
 	ColumnInput() *string
@@ -43,15 +43,15 @@ type DashboardWidgetSloListDefinitionRequestQuerySortOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DashboardWidgetSloListDefinitionRequestQuerySortOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DashboardWidgetSloListDefinitionRequestQuerySortOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetSloListDefinitionRequestQuerySortOutputReference
 type jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) Column() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 }
 
 
-func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSloListDefinitionRequestQuerySortOutputReference {
+func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSloListDefinitionRequestQuerySortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSloListDefinitionRequestQuerySortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +205,7 @@ func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference(terrafor
 	j := jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSloListDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSloListDefinitionRequestQuerySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference(terrafor
 	return &j
 }
 
-func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference_Override(d DashboardWidgetSloListDefinitionRequestQuerySortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetSloListDefinitionRequestQuerySortOutputReference_Override(d DashboardWidgetSloListDefinitionRequestQuerySortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSloListDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSloListDefinitionRequestQuerySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,8 +457,8 @@ func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -470,11 +470,11 @@ func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -486,7 +486,7 @@ func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

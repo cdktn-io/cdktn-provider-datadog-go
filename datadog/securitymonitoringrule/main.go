@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitymonitoringrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRule",
 		reflect.TypeOf((*SecurityMonitoringRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -119,16 +119,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedField",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedField",
 		reflect.TypeOf((*SecurityMonitoringRuleCalculatedField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedFieldList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedFieldList",
 		reflect.TypeOf((*SecurityMonitoringRuleCalculatedFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -145,12 +145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCalculatedFieldList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedFieldOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCalculatedFieldOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleCalculatedFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,20 +181,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCalculatedFieldOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCase",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCase",
 		reflect.TypeOf((*SecurityMonitoringRuleCase)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseAction",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseAction",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionList",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -211,16 +211,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCaseActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseActionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseActionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,12 +250,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCaseActionOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseActionOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,12 +288,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseList",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -310,12 +310,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCaseList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleCaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -357,20 +357,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleCaseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig",
 		reflect.TypeOf((*SecurityMonitoringRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilter",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilter",
 		reflect.TypeOf((*SecurityMonitoringRuleFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterList",
 		reflect.TypeOf((*SecurityMonitoringRuleFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -387,12 +387,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -423,20 +423,68 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsAnomalyDetectionOptions",
+		reflect.TypeOf((*SecurityMonitoringRuleOptionsAnomalyDetectionOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference",
+		reflect.TypeOf((*SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bucketDuration", GoGetter: "BucketDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "bucketDurationInput", GoGetter: "BucketDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "detectionTolerance", GoGetter: "DetectionTolerance"},
+			_jsii_.MemberProperty{JsiiProperty: "detectionToleranceInput", GoGetter: "DetectionToleranceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "learningDuration", GoGetter: "LearningDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "learningDurationInput", GoGetter: "LearningDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "learningPeriodBaseline", GoGetter: "LearningPeriodBaseline"},
+			_jsii_.MemberProperty{JsiiProperty: "learningPeriodBaselineInput", GoGetter: "LearningPeriodBaselineInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBucketDuration", GoMethod: "ResetBucketDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDetectionTolerance", GoMethod: "ResetDetectionTolerance"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLearningDuration", GoMethod: "ResetLearningDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLearningPeriodBaseline", GoMethod: "ResetLearningPeriodBaseline"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsImpossibleTravelOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocations", GoGetter: "BaselineUserLocations"},
@@ -466,16 +514,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsNewValueOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsNewValueOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -494,6 +542,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "instantaneousBaseline", GoGetter: "InstantaneousBaseline"},
+			_jsii_.MemberProperty{JsiiProperty: "instantaneousBaselineInput", GoGetter: "InstantaneousBaselineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -503,6 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "learningMethodInput", GoGetter: "LearningMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "learningThreshold", GoGetter: "LearningThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "learningThresholdInput", GoGetter: "LearningThresholdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstantaneousBaseline", GoMethod: "ResetInstantaneousBaseline"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLearningDuration", GoMethod: "ResetLearningDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLearningMethod", GoMethod: "ResetLearningMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLearningThreshold", GoMethod: "ResetLearningThreshold"},
@@ -513,14 +564,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "anomalyDetectionOptions", GoGetter: "AnomalyDetectionOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "anomalyDetectionOptionsInput", GoGetter: "AnomalyDetectionOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -552,10 +605,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxSignalDurationInput", GoGetter: "MaxSignalDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "newValueOptions", GoGetter: "NewValueOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "newValueOptionsInput", GoGetter: "NewValueOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAnomalyDetectionOptions", GoMethod: "PutAnomalyDetectionOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putImpossibleTravelOptions", GoMethod: "PutImpossibleTravelOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewValueOptions", GoMethod: "PutNewValueOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSequenceDetectionOptions", GoMethod: "PutSequenceDetectionOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putThirdPartyRuleOptions", GoMethod: "PutThirdPartyRuleOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnomalyDetectionOptions", GoMethod: "ResetAnomalyDetectionOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDecreaseCriticalityBasedOnEnv", GoMethod: "ResetDecreaseCriticalityBasedOnEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDetectionMethod", GoMethod: "ResetDetectionMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationWindow", GoMethod: "ResetEvaluationWindow"},
@@ -576,16 +631,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,16 +675,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -646,12 +701,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "child", GoGetter: "Child"},
@@ -685,16 +740,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepTransitionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsSteps",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsSteps",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsSteps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -711,12 +766,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -750,16 +805,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsSequenceDetectionOptionsStepsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsThirdPartyRuleOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -797,16 +852,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQuery",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQuery",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryList",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -823,12 +878,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -860,20 +915,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQuery",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQuery",
 		reflect.TypeOf((*SecurityMonitoringRuleQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRule",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRule",
 		reflect.TypeOf((*SecurityMonitoringRuleQueryAgentRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleList",
 		reflect.TypeOf((*SecurityMonitoringRuleQueryAgentRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -890,12 +945,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleQueryAgentRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleQueryAgentRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentRuleId", GoGetter: "AgentRuleId"},
@@ -926,12 +981,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleQueryAgentRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryList",
 		reflect.TypeOf((*SecurityMonitoringRuleQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -948,12 +1003,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentRule", GoGetter: "AgentRule"},
@@ -1013,16 +1068,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTables",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTables",
 		reflect.TypeOf((*SecurityMonitoringRuleReferenceTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTablesList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTablesList",
 		reflect.TypeOf((*SecurityMonitoringRuleReferenceTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1039,12 +1094,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleReferenceTablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTablesOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleReferenceTablesOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleReferenceTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
@@ -1081,16 +1136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleReferenceTablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptions",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptions",
 		reflect.TypeOf((*SecurityMonitoringRuleSchedulingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptionsOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptionsOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleSchedulingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1123,16 +1178,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery",
 		reflect.TypeOf((*SecurityMonitoringRuleSignalQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryList",
 		reflect.TypeOf((*SecurityMonitoringRuleSignalQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1149,12 +1204,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleSignalQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleSignalQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1198,16 +1253,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCase",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCase",
 		reflect.TypeOf((*SecurityMonitoringRuleThirdPartyCase)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCaseList",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCaseList",
 		reflect.TypeOf((*SecurityMonitoringRuleThirdPartyCaseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1224,12 +1279,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleThirdPartyCaseList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCaseOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleThirdPartyCaseOutputReference",
 		reflect.TypeOf((*SecurityMonitoringRuleThirdPartyCaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1267,7 +1322,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringRuleThirdPartyCaseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

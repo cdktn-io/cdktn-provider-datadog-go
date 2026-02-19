@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsaccount
@@ -7,11 +7,11 @@ package integrationawsaccount
 type IntegrationAwsAccountAuthConfig struct {
 	// aws_auth_config_keys block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
 	AwsAuthConfigKeys *IntegrationAwsAccountAuthConfigAwsAuthConfigKeys `field:"optional" json:"awsAuthConfigKeys" yaml:"awsAuthConfigKeys"`
 	// aws_auth_config_role block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
 	AwsAuthConfigRole *IntegrationAwsAccountAuthConfigAwsAuthConfigRole `field:"optional" json:"awsAuthConfigRole" yaml:"awsAuthConfigRole"`
 }
 

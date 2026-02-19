@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appsecwafcustomrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafcustomrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/appsecwafcustomrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
 type AppsecWafCustomRule interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Action() AppsecWafCustomRuleActionOutputReference
 	ActionInput() interface{}
 	Blocking() interface{}
 	SetBlocking(val interface{})
 	BlockingInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Condition() AppsecWafCustomRuleConditionList
 	ConditionInput() interface{}
 	// Experimental.
@@ -42,18 +42,18 @@ type AppsecWafCustomRule interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -63,9 +63,9 @@ type AppsecWafCustomRule interface {
 	SetPathGlob(val *string)
 	PathGlobInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type AppsecWafCustomRule interface {
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type AppsecWafCustomRule interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type AppsecWafCustomRule interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -151,7 +151,7 @@ type AppsecWafCustomRule interface {
 
 // The jsii proxy struct for AppsecWafCustomRule
 type jsiiProxy_AppsecWafCustomRule struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AppsecWafCustomRule) Action() AppsecWafCustomRuleActionOutputReference {
@@ -194,8 +194,8 @@ func (j *jsiiProxy_AppsecWafCustomRule) BlockingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AppsecWafCustomRule) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_AppsecWafCustomRule) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AppsecWafCustomRule) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_AppsecWafCustomRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AppsecWafCustomRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_AppsecWafCustomRule) PathGlobInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AppsecWafCustomRule) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_AppsecWafCustomRule) TagsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AppsecWafCustomRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_AppsecWafCustomRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) AppsecWafCustomRule {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *Apps
 	j := jsiiProxy_AppsecWafCustomRule{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -503,12 +503,12 @@ func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *Apps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule_Override(a AppsecWafCustomRule, scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -566,7 +566,7 @@ func (j *jsiiProxy_AppsecWafCustomRule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppsecWafCustomRule)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +574,7 @@ func (j *jsiiProxy_AppsecWafCustomRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppsecWafCustomRule)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +607,7 @@ func (j *jsiiProxy_AppsecWafCustomRule)SetPathGlob(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppsecWafCustomRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppsecWafCustomRule)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,17 +637,17 @@ func (j *jsiiProxy_AppsecWafCustomRule)SetTags(val *map[string]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a AppsecWafCustomRule resource upon running "cdktf plan <stack-name>".
-func AppsecWafCustomRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AppsecWafCustomRule resource upon running "cdktn plan <stack-name>".
+func AppsecWafCustomRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAppsecWafCustomRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -682,7 +682,7 @@ func AppsecWafCustomRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func AppsecWafCustomRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func AppsecWafCustomRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func AppsecWafCustomRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		"tfResourceType",
 		&returns,
 	)
@@ -778,11 +778,11 @@ func (a *jsiiProxy_AppsecWafCustomRule) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafCustomRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafCustomRule) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -919,7 +919,7 @@ func (a *jsiiProxy_AppsecWafCustomRule) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafCustomRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AppsecWafCustomRule) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -930,11 +930,11 @@ func (a *jsiiProxy_AppsecWafCustomRule) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (a *jsiiProxy_AppsecWafCustomRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafCustomRule) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

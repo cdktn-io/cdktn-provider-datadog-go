@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList int
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList int
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList int
 
 // The jsii proxy struct for PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList
 type jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 }
 
 
-func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList {
+func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList(
 	j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList(
 	return &j
 }
 
-func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList_Override(p PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList_Override(p PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -231,7 +231,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiC
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

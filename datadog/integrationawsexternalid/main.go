@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsexternalid
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		reflect.TypeOf((*IntegrationAwsExternalId)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -59,12 +59,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsExternalId{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalIdConfig",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalIdConfig",
 		reflect.TypeOf((*IntegrationAwsExternalIdConfig)(nil)).Elem(),
 	)
 }

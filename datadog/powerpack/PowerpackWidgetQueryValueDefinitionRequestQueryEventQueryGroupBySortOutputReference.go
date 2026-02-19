@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputR
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputR
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMetric()
 	ResetOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputR
 
 // The jsii proxy struct for PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference
 type jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) Aggregation() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 }
 
 
-func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference {
+func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutp
 	j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutp
 	return &j
 }
 
-func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference_Override(p PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference_Override(p PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -493,8 +493,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -506,11 +506,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -538,7 +538,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGrou
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

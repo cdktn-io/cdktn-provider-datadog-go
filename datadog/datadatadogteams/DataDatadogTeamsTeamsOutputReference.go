@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogteams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteams/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteams/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogTeamsTeamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,16 +43,16 @@ type DataDatadogTeamsTeamsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserCount() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type DataDatadogTeamsTeamsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataDatadogTeamsTeamsOutputReference interface {
 
 // The jsii proxy struct for DataDatadogTeamsTeamsOutputReference
 type jsiiProxy_DataDatadogTeamsTeamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference) UserCount() *float64 {
 }
 
 
-func NewDataDatadogTeamsTeamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogTeamsTeamsOutputReference {
+func NewDataDatadogTeamsTeamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogTeamsTeamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogTeamsTeamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -236,7 +236,7 @@ func NewDataDatadogTeamsTeamsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataDatadogTeamsTeamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -244,11 +244,11 @@ func NewDataDatadogTeamsTeamsOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewDataDatadogTeamsTeamsOutputReference_Override(d DataDatadogTeamsTeamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogTeamsTeamsOutputReference_Override(d DataDatadogTeamsTeamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogTeamsTeamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -466,8 +466,8 @@ func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -479,11 +479,11 @@ func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -495,7 +495,7 @@ func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogTeamsTeamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

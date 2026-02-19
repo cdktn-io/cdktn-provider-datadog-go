@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitymonitoringdefaultrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/securitymonitoringdefaultrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringdefaultrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SecurityMonitoringDefaultRuleQueryAgentRuleList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type SecurityMonitoringDefaultRuleQueryAgentRuleList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type SecurityMonitoringDefaultRuleQueryAgentRuleList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) SecurityMonitoringDefaultRuleQueryAgentRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type SecurityMonitoringDefaultRuleQueryAgentRuleList interface {
 
 // The jsii proxy struct for SecurityMonitoringDefaultRuleQueryAgentRuleList
 type jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) WrapsSet() *
 }
 
 
-func NewSecurityMonitoringDefaultRuleQueryAgentRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringDefaultRuleQueryAgentRuleList {
+func NewSecurityMonitoringDefaultRuleQueryAgentRuleList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringDefaultRuleQueryAgentRuleList {
 	_init_.Initialize()
 
 	if err := validateNewSecurityMonitoringDefaultRuleQueryAgentRuleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewSecurityMonitoringDefaultRuleQueryAgentRuleList(terraformResource cdktf.
 	j := jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList",
+		"@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewSecurityMonitoringDefaultRuleQueryAgentRuleList(terraformResource cdktf.
 	return &j
 }
 
-func NewSecurityMonitoringDefaultRuleQueryAgentRuleList_Override(s SecurityMonitoringDefaultRuleQueryAgentRuleList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewSecurityMonitoringDefaultRuleQueryAgentRuleList_Override(s SecurityMonitoringDefaultRuleQueryAgentRuleList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList",
+		"@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList)SetWrapsSet(v
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -231,7 +231,7 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) Get(index *f
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryAgentRuleList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

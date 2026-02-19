@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package organizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/organizationsettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/organizationsettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OrganizationSettingsSettingsSamlStrictModeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type OrganizationSettingsSettingsSamlStrictModeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type OrganizationSettingsSettingsSamlStrictModeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type OrganizationSettingsSettingsSamlStrictModeOutputReference interface {
 
 // The jsii proxy struct for OrganizationSettingsSettingsSamlStrictModeOutputReference
 type jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Te
 }
 
 
-func NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlStrictModeOutputReference {
+func NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OrganizationSettingsSettingsSamlStrictModeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOrganizationSettingsSettingsSamlStrictModeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResou
 	j := jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResou
 	return &j
 }
 
-func NewOrganizationSettingsSettingsSamlStrictModeOutputReference_Override(o OrganizationSettingsSettingsSamlStrictModeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOrganizationSettingsSettingsSamlStrictModeOutputReference_Override(o OrganizationSettingsSettingsSamlStrictModeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -424,8 +424,8 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Ge
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -437,11 +437,11 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) In
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -461,7 +461,7 @@ func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Re
 	)
 }
 
-func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

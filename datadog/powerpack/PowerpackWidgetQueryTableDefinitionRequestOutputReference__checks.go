@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -120,7 +120,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PowerpackWidgetQueryTableDefinitionRequestConditionalFormats:
 		value := value.(*[]*PowerpackWidgetQueryTableDefinitionRequestConditionalFormats)
@@ -139,7 +139,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestConditionalFormats; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestConditionalFormats; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -151,7 +151,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PowerpackWidgetQueryTableDefinitionRequestFormula:
 		value := value.(*[]*PowerpackWidgetQueryTableDefinitionRequestFormula)
@@ -170,7 +170,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestFormula; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestFormula; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PowerpackWidgetQueryTableDefinitionRequestQuery:
 		value := value.(*[]*PowerpackWidgetQueryTableDefinitionRequestQuery)
@@ -223,7 +223,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestQuery; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestQuery; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -257,7 +257,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PowerpackWidgetQueryTableDefinitionRequestTextFormats:
 		value := value.(*[]*PowerpackWidgetQueryTableDefinitionRequestTextFormats)
@@ -276,14 +276,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestTextFormats; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PowerpackWidgetQueryTableDefinitionRequestTextFormats; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -382,7 +382,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 
 func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PowerpackWidgetQueryTableDefinitionRequest:
 		val := val.(*PowerpackWidgetQueryTableDefinitionRequest)
@@ -397,7 +397,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PowerpackWidgetQueryTableDefinitionRequest; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PowerpackWidgetQueryTableDefinitionRequest; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -436,7 +436,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference) va
 	return nil
 }
 
-func validateNewPowerpackWidgetQueryTableDefinitionRequestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPowerpackWidgetQueryTableDefinitionRequestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

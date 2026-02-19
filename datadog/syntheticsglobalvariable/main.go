@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticsglobalvariable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		reflect.TypeOf((*SyntheticsGlobalVariable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,6 +73,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSecure", GoMethod: "ResetSecure"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValueWo", GoMethod: "ResetValueWo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValueWoVersion", GoMethod: "ResetValueWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedRoles", GoGetter: "RestrictedRoles"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedRolesInput", GoGetter: "RestrictedRolesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secure", GoGetter: "Secure"},
@@ -90,23 +92,27 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "valueWo", GoGetter: "ValueWo"},
+			_jsii_.MemberProperty{JsiiProperty: "valueWoInput", GoGetter: "ValueWoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "valueWoVersion", GoGetter: "ValueWoVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "valueWoVersionInput", GoGetter: "ValueWoVersionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig",
 		reflect.TypeOf((*SyntheticsGlobalVariableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsList",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsList",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -123,12 +129,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,16 +165,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptionsTotpParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersList",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersList",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptionsTotpParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -185,12 +191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference",
 		reflect.TypeOf((*SyntheticsGlobalVariableOptionsTotpParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableOptionsTotpParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsList",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsList",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -247,12 +253,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -291,16 +297,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptionsParser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserList",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserList",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptionsParserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -317,12 +323,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsParserList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserOutputReference",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserOutputReference",
 		reflect.TypeOf((*SyntheticsGlobalVariableParseTestOptionsParserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,7 +360,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariableParseTestOptionsParserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

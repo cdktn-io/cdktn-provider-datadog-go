@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitymonitoringrule
@@ -7,11 +7,11 @@ package securitymonitoringrule
 type SecurityMonitoringRuleCalculatedField struct {
 	// Expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// Field name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

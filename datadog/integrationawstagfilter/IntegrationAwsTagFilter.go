@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawstagfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawstagfilter/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter}.
 type IntegrationAwsTagFilter interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type IntegrationAwsTagFilter interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -46,18 +46,18 @@ type IntegrationAwsTagFilter interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type IntegrationAwsTagFilter interface {
 	SetTagFilterStr(val *string)
 	TagFilterStrInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -81,7 +81,7 @@ type IntegrationAwsTagFilter interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,9 +99,9 @@ type IntegrationAwsTagFilter interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -135,7 +135,7 @@ type IntegrationAwsTagFilter interface {
 
 // The jsii proxy struct for IntegrationAwsTagFilter
 type jsiiProxy_IntegrationAwsTagFilter struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IntegrationAwsTagFilter) AccountId() *string {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IntegrationAwsTagFilter) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IntegrationAwsTagFilter) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IntegrationAwsTagFilter) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IntegrationAwsTagFilter) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) TagFilterStrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IntegrationAwsTagFilter) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_IntegrationAwsTagFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource.
 func NewIntegrationAwsTagFilter(scope constructs.Construct, id *string, config *IntegrationAwsTagFilterConfig) IntegrationAwsTagFilter {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewIntegrationAwsTagFilter(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IntegrationAwsTagFilter{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -397,12 +397,12 @@ func NewIntegrationAwsTagFilter(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource.
 func NewIntegrationAwsTagFilter_Override(i IntegrationAwsTagFilter, scope constructs.Construct, id *string, config *IntegrationAwsTagFilterConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -449,7 +449,7 @@ func (j *jsiiProxy_IntegrationAwsTagFilter)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationAwsTagFilter)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +468,7 @@ func (j *jsiiProxy_IntegrationAwsTagFilter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationAwsTagFilter)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +490,7 @@ func (j *jsiiProxy_IntegrationAwsTagFilter)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsTagFilter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationAwsTagFilter)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,17 +520,17 @@ func (j *jsiiProxy_IntegrationAwsTagFilter)SetTagFilterStr(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a IntegrationAwsTagFilter resource upon running "cdktf plan <stack-name>".
-func IntegrationAwsTagFilter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IntegrationAwsTagFilter resource upon running "cdktn plan <stack-name>".
+func IntegrationAwsTagFilter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIntegrationAwsTagFilter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -565,7 +565,7 @@ func IntegrationAwsTagFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func IntegrationAwsTagFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func IntegrationAwsTagFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func IntegrationAwsTagFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		"tfResourceType",
 		&returns,
 	)
@@ -661,11 +661,11 @@ func (i *jsiiProxy_IntegrationAwsTagFilter) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsTagFilter) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsTagFilter) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -802,7 +802,7 @@ func (i *jsiiProxy_IntegrationAwsTagFilter) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsTagFilter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IntegrationAwsTagFilter) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -813,11 +813,11 @@ func (i *jsiiProxy_IntegrationAwsTagFilter) ImportFrom(id *string, provider cdkt
 	)
 }
 
-func (i *jsiiProxy_IntegrationAwsTagFilter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsTagFilter) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawsaccount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExcludeOnly()
 	ResetIncludeOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference interface
 
 // The jsii proxy struct for IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference
 type jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 }
 
 
-func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference {
+func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference(terraf
 	j := jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference(terraf
 	return &j
 }
 
-func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference_Override(i IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference_Override(i IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -459,8 +459,8 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -472,11 +472,11 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -504,7 +504,7 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputRefer
 	)
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

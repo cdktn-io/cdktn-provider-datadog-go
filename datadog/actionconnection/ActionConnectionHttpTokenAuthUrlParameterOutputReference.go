@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package actionconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/actionconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/actionconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ActionConnectionHttpTokenAuthUrlParameterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ActionConnectionHttpTokenAuthUrlParameterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -51,7 +51,7 @@ type ActionConnectionHttpTokenAuthUrlParameterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ActionConnectionHttpTokenAuthUrlParameterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ActionConnectionHttpTokenAuthUrlParameterOutputReference interface {
 
 // The jsii proxy struct for ActionConnectionHttpTokenAuthUrlParameterOutputReference
 type jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Val
 }
 
 
-func NewActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ActionConnectionHttpTokenAuthUrlParameterOutputReference {
+func NewActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ActionConnectionHttpTokenAuthUrlParameterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewActionConnectionHttpTokenAuthUrlParameterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -207,7 +207,7 @@ func NewActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResour
 	j := jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResour
 	return &j
 }
 
-func NewActionConnectionHttpTokenAuthUrlParameterOutputReference_Override(a ActionConnectionHttpTokenAuthUrlParameterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewActionConnectionHttpTokenAuthUrlParameterOutputReference_Override(a ActionConnectionHttpTokenAuthUrlParameterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -459,8 +459,8 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Get
 	return returns
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -472,11 +472,11 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Int
 	return returns
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,7 +504,7 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Res
 	)
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

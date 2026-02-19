@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,19 +47,19 @@ func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateInterpol
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutDestinationsParameters(value *ObservabilityPipelineConfigDestinations) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutDestinationParameters(value interface{}) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutProcessorsParameters(value *ObservabilityPipelineConfigProcessors) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutProcessorGroupParameters(value interface{}) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutSourcesParameters(value *ObservabilityPipelineConfigSources) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validatePutSourceParameters(value interface{}) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,15 +75,23 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetPipelineTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewObservabilityPipelineConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) validateSetUseLegacySearchSyntaxParameters(val interface{}) error {
+	return nil
+}
+
+func validateNewObservabilityPipelineConfigAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

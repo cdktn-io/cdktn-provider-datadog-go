@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutpu
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -87,11 +87,11 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

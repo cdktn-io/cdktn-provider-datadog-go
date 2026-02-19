@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregator() *string
 	SetAggregator(val *string)
 	AggregatorInput() *string
@@ -52,15 +52,15 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQ
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,14 +76,14 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQ
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregator()
 	ResetCrossOrgUuids()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQ
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) Aggregator() *string {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCo
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCo
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,8 +561,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -574,11 +574,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -606,7 +606,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQ
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

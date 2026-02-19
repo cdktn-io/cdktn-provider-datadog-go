@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationgcpsts
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		reflect.TypeOf((*IntegrationGcpSts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountTags", GoGetter: "AccountTags"},
@@ -50,6 +50,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isCspmEnabled", GoGetter: "IsCspmEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isCspmEnabledInput", GoGetter: "IsCspmEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "isGlobalLocationEnabled", GoGetter: "IsGlobalLocationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isGlobalLocationEnabledInput", GoGetter: "IsGlobalLocationEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "isPerProjectQuotaEnabled", GoGetter: "IsPerProjectQuotaEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isPerProjectQuotaEnabledInput", GoGetter: "IsPerProjectQuotaEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "isResourceChangeCollectionEnabled", GoGetter: "IsResourceChangeCollectionEnabled"},
@@ -71,17 +73,21 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMetricNamespaceConfigs", GoMethod: "PutMetricNamespaceConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitoredResourceConfigs", GoMethod: "PutMonitoredResourceConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "regionFilterConfigs", GoGetter: "RegionFilterConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "regionFilterConfigsInput", GoGetter: "RegionFilterConfigsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountTags", GoMethod: "ResetAccountTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomute", GoMethod: "ResetAutomute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudRunRevisionFilters", GoMethod: "ResetCloudRunRevisionFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostFilters", GoMethod: "ResetHostFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsCspmEnabled", GoMethod: "ResetIsCspmEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsGlobalLocationEnabled", GoMethod: "ResetIsGlobalLocationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsPerProjectQuotaEnabled", GoMethod: "ResetIsPerProjectQuotaEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsResourceChangeCollectionEnabled", GoMethod: "ResetIsResourceChangeCollectionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsSecurityCommandCenterEnabled", GoMethod: "ResetIsSecurityCommandCenterEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricNamespaceConfigs", GoMethod: "ResetMetricNamespaceConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonitoredResourceConfigs", GoMethod: "ResetMonitoredResourceConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegionFilterConfigs", GoMethod: "ResetRegionFilterConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceCollectionEnabled", GoMethod: "ResetResourceCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceCollectionEnabled", GoGetter: "ResourceCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceCollectionEnabledInput", GoGetter: "ResourceCollectionEnabledInput"},
@@ -97,20 +103,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpSts{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig",
 		reflect.TypeOf((*IntegrationGcpStsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigs",
 		reflect.TypeOf((*IntegrationGcpStsMetricNamespaceConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsList",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsList",
 		reflect.TypeOf((*IntegrationGcpStsMetricNamespaceConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -127,12 +133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsOutputReference",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMetricNamespaceConfigsOutputReference",
 		reflect.TypeOf((*IntegrationGcpStsMetricNamespaceConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,16 +174,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpStsMetricNamespaceConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigs",
 		reflect.TypeOf((*IntegrationGcpStsMonitoredResourceConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsList",
 		reflect.TypeOf((*IntegrationGcpStsMonitoredResourceConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -194,12 +200,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpStsMonitoredResourceConfigsOutputReference",
 		reflect.TypeOf((*IntegrationGcpStsMonitoredResourceConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,7 +238,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpStsMonitoredResourceConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

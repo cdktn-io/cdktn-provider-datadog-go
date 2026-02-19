@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package team
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.team.Team",
+		"@cdktn/provider-datadog.team.Team",
 		reflect.TypeOf((*Team)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -68,12 +68,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Team{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.team.TeamConfig",
+		"@cdktn/provider-datadog.team.TeamConfig",
 		reflect.TypeOf((*TeamConfig)(nil)).Elem(),
 	)
 }

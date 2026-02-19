@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationgcp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcp/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationgcp/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type IntegrationGcpMonitoredResourceConfigsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type IntegrationGcpMonitoredResourceConfigsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type IntegrationGcpMonitoredResourceConfigsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) IntegrationGcpMonitoredResourceConfigsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type IntegrationGcpMonitoredResourceConfigsList interface {
 
 // The jsii proxy struct for IntegrationGcpMonitoredResourceConfigsList
 type jsiiProxy_IntegrationGcpMonitoredResourceConfigsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) WrapsSet() *bool 
 }
 
 
-func NewIntegrationGcpMonitoredResourceConfigsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpMonitoredResourceConfigsList {
+func NewIntegrationGcpMonitoredResourceConfigsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpMonitoredResourceConfigsList {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationGcpMonitoredResourceConfigsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewIntegrationGcpMonitoredResourceConfigsList(terraformResource cdktf.IInte
 	j := jsiiProxy_IntegrationGcpMonitoredResourceConfigsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewIntegrationGcpMonitoredResourceConfigsList(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewIntegrationGcpMonitoredResourceConfigsList_Override(i IntegrationGcpMonitoredResourceConfigsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewIntegrationGcpMonitoredResourceConfigsList_Override(i IntegrationGcpMonitoredResourceConfigsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList)SetWrapsSet(val *b
 	)
 }
 
-func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := i.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		i,
@@ -231,7 +231,7 @@ func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) Get(index *float6
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationGcpMonitoredResourceConfigsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

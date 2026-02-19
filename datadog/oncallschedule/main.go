@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oncallschedule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallSchedule",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallSchedule",
 		reflect.TypeOf((*OnCallSchedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,24 +70,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallSchedule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleConfig",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleConfig",
 		reflect.TypeOf((*OnCallScheduleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayer",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayer",
 		reflect.TypeOf((*OnCallScheduleLayer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerInterval",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerInterval",
 		reflect.TypeOf((*OnCallScheduleLayerInterval)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerIntervalOutputReference",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerIntervalOutputReference",
 		reflect.TypeOf((*OnCallScheduleLayerIntervalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallScheduleLayerIntervalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerList",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerList",
 		reflect.TypeOf((*OnCallScheduleLayerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -142,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallScheduleLayerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerOutputReference",
 		reflect.TypeOf((*OnCallScheduleLayerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallScheduleLayerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerRestriction",
 		reflect.TypeOf((*OnCallScheduleLayerRestriction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionList",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionList",
 		reflect.TypeOf((*OnCallScheduleLayerRestrictionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -223,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallScheduleLayerRestrictionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
 		reflect.TypeOf((*OnCallScheduleLayerRestrictionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,7 +263,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallScheduleLayerRestrictionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

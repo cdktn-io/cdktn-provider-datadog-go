@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogawscurconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig",
 		reflect.TypeOf((*DataDatadogAwsCurConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountFilters", GoGetter: "AccountFilters"},
@@ -64,16 +64,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAwsCurConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFilters",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFilters",
 		reflect.TypeOf((*DataDatadogAwsCurConfigAccountFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
 		reflect.TypeOf((*DataDatadogAwsCurConfigAccountFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -103,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigConfig",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigConfig",
 		reflect.TypeOf((*DataDatadogAwsCurConfigConfig)(nil)).Elem(),
 	)
 }

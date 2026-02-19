@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appsecwafcustomrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafcustomrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/appsecwafcustomrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AppsecWafCustomRuleActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() *string
 	SetAction(val *string)
 	ActionInput() *string
@@ -42,15 +42,15 @@ type AppsecWafCustomRuleActionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,15 +66,15 @@ type AppsecWafCustomRuleActionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutParameters(value *AppsecWafCustomRuleActionParameters)
 	ResetAction()
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type AppsecWafCustomRuleActionOutputReference interface {
 
 // The jsii proxy struct for AppsecWafCustomRuleActionOutputReference
 type jsiiProxy_AppsecWafCustomRuleActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference) Action() *string {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference) TerraformResource()
 }
 
 
-func NewAppsecWafCustomRuleActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleActionOutputReference {
+func NewAppsecWafCustomRuleActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppsecWafCustomRuleActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppsecWafCustomRuleActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewAppsecWafCustomRuleActionOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AppsecWafCustomRuleActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewAppsecWafCustomRuleActionOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewAppsecWafCustomRuleActionOutputReference_Override(a AppsecWafCustomRuleActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppsecWafCustomRuleActionOutputReference_Override(a AppsecWafCustomRuleActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsecWafCustomRuleActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,11 +320,11 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -448,8 +448,8 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -461,11 +461,11 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) InterpolationAsList
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,7 +504,7 @@ func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) ResetParameters() {
 	)
 }
 
-func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsecWafCustomRuleActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

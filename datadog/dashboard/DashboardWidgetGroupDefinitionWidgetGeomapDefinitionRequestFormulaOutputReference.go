@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -54,15 +54,15 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,9 +78,9 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutConditionalFormats(value interface{})
 	PutLimit(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimit)
 	PutNumberFormat(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaNumberFormat)
@@ -93,7 +93,7 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputRef
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +103,7 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputRef
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) Alias() *string {
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -326,7 +326,7 @@ func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutput
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -334,11 +334,11 @@ func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutput
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,11 +461,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -589,8 +589,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -602,11 +602,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -710,7 +710,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFo
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

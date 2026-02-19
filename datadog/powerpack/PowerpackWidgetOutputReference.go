@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AlertGraphDefinition() PowerpackWidgetAlertGraphDefinitionOutputReference
 	AlertGraphDefinitionInput() *PowerpackWidgetAlertGraphDefinition
 	AlertValueDefinition() PowerpackWidgetAlertValueDefinitionOutputReference
@@ -88,9 +88,9 @@ type PowerpackWidgetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeseriesDefinition() PowerpackWidgetTimeseriesDefinitionOutputReference
 	TimeseriesDefinitionInput() *PowerpackWidgetTimeseriesDefinition
 	ToplistDefinition() PowerpackWidgetToplistDefinitionOutputReference
@@ -108,7 +108,7 @@ type PowerpackWidgetOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -124,9 +124,9 @@ type PowerpackWidgetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAlertGraphDefinition(value *PowerpackWidgetAlertGraphDefinition)
 	PutAlertValueDefinition(value *PowerpackWidgetAlertValueDefinition)
 	PutChangeDefinition(value *PowerpackWidgetChangeDefinition)
@@ -191,7 +191,7 @@ type PowerpackWidgetOutputReference interface {
 	ResetWidgetLayout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -201,7 +201,7 @@ type PowerpackWidgetOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetOutputReference
 type jsiiProxy_PowerpackWidgetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetOutputReference) AlertGraphDefinition() PowerpackWidgetAlertGraphDefinitionOutputReference {
@@ -774,8 +774,8 @@ func (j *jsiiProxy_PowerpackWidgetOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -905,7 +905,7 @@ func (j *jsiiProxy_PowerpackWidgetOutputReference) WidgetLayoutInput() *Powerpac
 }
 
 
-func NewPowerpackWidgetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetOutputReference {
+func NewPowerpackWidgetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -914,7 +914,7 @@ func NewPowerpackWidgetOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_PowerpackWidgetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -922,11 +922,11 @@ func NewPowerpackWidgetOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewPowerpackWidgetOutputReference_Override(p PowerpackWidgetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPowerpackWidgetOutputReference_Override(p PowerpackWidgetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -976,7 +976,7 @@ func (j *jsiiProxy_PowerpackWidgetOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1016,11 +1016,11 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1144,8 +1144,8 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1157,11 +1157,11 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1762,7 +1762,7 @@ func (p *jsiiProxy_PowerpackWidgetOutputReference) ResetWidgetLayout() {
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

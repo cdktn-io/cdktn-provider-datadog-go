@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -93,7 +93,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 	return nil
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 
 func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper:
 		val := val.(*LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper)
@@ -183,7 +183,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -207,11 +207,11 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -227,11 +227,11 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -270,7 +270,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 	return nil
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapp
 	return nil
 }
 
-func validateNewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

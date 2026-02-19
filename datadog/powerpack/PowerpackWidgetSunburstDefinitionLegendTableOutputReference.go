@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetSunburstDefinitionLegendTableOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type PowerpackWidgetSunburstDefinitionLegendTableOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -48,7 +48,7 @@ type PowerpackWidgetSunburstDefinitionLegendTableOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type PowerpackWidgetSunburstDefinitionLegendTableOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type PowerpackWidgetSunburstDefinitionLegendTableOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetSunburstDefinitionLegendTableOutputReference
 type jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 }
 
 
-func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetSunburstDefinitionLegendTableOutputReference {
+func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetSunburstDefinitionLegendTableOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetSunburstDefinitionLegendTableOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference(terraformRes
 	j := jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference(terraformRes
 	return &j
 }
 
-func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference_Override(p PowerpackWidgetSunburstDefinitionLegendTableOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetSunburstDefinitionLegendTableOutputReference_Override(p PowerpackWidgetSunburstDefinitionLegendTableOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -244,7 +244,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -423,8 +423,8 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -436,11 +436,11 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -452,7 +452,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

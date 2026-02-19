@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oncallescalationpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicy",
 		reflect.TypeOf((*OnCallEscalationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,20 +74,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallEscalationPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyConfig",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyConfig",
 		reflect.TypeOf((*OnCallEscalationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStep",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStep",
 		reflect.TypeOf((*OnCallEscalationPolicyStep)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepList",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepList",
 		reflect.TypeOf((*OnCallEscalationPolicyStepList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -104,12 +104,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallEscalationPolicyStepList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepOutputReference",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepOutputReference",
 		reflect.TypeOf((*OnCallEscalationPolicyStepOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignment", GoGetter: "Assignment"},
@@ -146,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallEscalationPolicyStepOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTarget",
 		reflect.TypeOf((*OnCallEscalationPolicyStepTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetList",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetList",
 		reflect.TypeOf((*OnCallEscalationPolicyStepTargetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -172,12 +172,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallEscalationPolicyStepTargetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference",
+		"@cdktn/provider-datadog.onCallEscalationPolicy.OnCallEscalationPolicyStepTargetOutputReference",
 		reflect.TypeOf((*OnCallEscalationPolicyStepTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -216,7 +216,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OnCallEscalationPolicyStepTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

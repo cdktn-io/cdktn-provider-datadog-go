@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogintegrationawsnamespacerules
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules",
 		reflect.TypeOf((*DataDatadogIntegrationAwsNamespaceRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -52,12 +52,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogIntegrationAwsNamespaceRules{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRulesConfig",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRulesConfig",
 		reflect.TypeOf((*DataDatadogIntegrationAwsNamespaceRulesConfig)(nil)).Elem(),
 	)
 }

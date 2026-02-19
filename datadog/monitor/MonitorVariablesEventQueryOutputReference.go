@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorVariablesEventQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type MonitorVariablesEventQueryOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type MonitorVariablesEventQueryOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
 	PutSearch(value *MonitorVariablesEventQuerySearch)
@@ -86,7 +86,7 @@ type MonitorVariablesEventQueryOutputReference interface {
 	ResetIndexes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type MonitorVariablesEventQueryOutputReference interface {
 
 // The jsii proxy struct for MonitorVariablesEventQueryOutputReference
 type jsiiProxy_MonitorVariablesEventQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference) TerraformResource(
 }
 
 
-func NewMonitorVariablesEventQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryOutputReference {
+func NewMonitorVariablesEventQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorVariablesEventQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorVariablesEventQueryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -299,7 +299,7 @@ func NewMonitorVariablesEventQueryOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_MonitorVariablesEventQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewMonitorVariablesEventQueryOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewMonitorVariablesEventQueryOutputReference_Override(m MonitorVariablesEventQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorVariablesEventQueryOutputReference_Override(m MonitorVariablesEventQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -394,7 +394,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorVariablesEventQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,11 +434,11 @@ func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -562,8 +562,8 @@ func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -575,11 +575,11 @@ func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -640,7 +640,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) ResetIndexes() {
 	)
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorVariablesEventQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package incidentnotificationrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRule",
+		"@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule",
 		reflect.TypeOf((*IncidentNotificationRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -83,16 +83,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IncidentNotificationRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditions",
+		"@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditions",
 		reflect.TypeOf((*IncidentNotificationRuleConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsList",
+		"@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsList",
 		reflect.TypeOf((*IncidentNotificationRuleConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -109,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IncidentNotificationRuleConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsOutputReference",
+		"@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsOutputReference",
 		reflect.TypeOf((*IncidentNotificationRuleConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,12 +145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IncidentNotificationRuleConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConfig",
+		"@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConfig",
 		reflect.TypeOf((*IncidentNotificationRuleConfig)(nil)).Elem(),
 	)
 }

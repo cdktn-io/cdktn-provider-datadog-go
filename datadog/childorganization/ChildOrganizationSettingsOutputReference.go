@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package childorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/childorganization/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/childorganization/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ChildOrganizationSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,14 +32,14 @@ type ChildOrganizationSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *ChildOrganizationSettings
 	SetInternalValue(val *ChildOrganizationSettings)
-	PrivateWidgetShare() cdktf.IResolvable
+	PrivateWidgetShare() cdktn.IResolvable
 	Saml() ChildOrganizationSettingsSamlList
 	SamlAutocreateAccessRole() *string
 	SamlAutocreateUsersDomains() ChildOrganizationSettingsSamlAutocreateUsersDomainsList
-	SamlCanBeEnabled() cdktf.IResolvable
+	SamlCanBeEnabled() cdktn.IResolvable
 	SamlIdpEndpoint() *string
 	SamlIdpInitiatedLogin() ChildOrganizationSettingsSamlIdpInitiatedLoginList
-	SamlIdpMetadataUploaded() cdktf.IResolvable
+	SamlIdpMetadataUploaded() cdktn.IResolvable
 	SamlLoginUrl() *string
 	SamlStrictMode() ChildOrganizationSettingsSamlStrictModeList
 	// Experimental.
@@ -47,15 +47,15 @@ type ChildOrganizationSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +71,12 @@ type ChildOrganizationSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type ChildOrganizationSettingsOutputReference interface {
 
 // The jsii proxy struct for ChildOrganizationSettingsOutputReference
 type jsiiProxy_ChildOrganizationSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) InternalValue() *Ch
 	return returns
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) PrivateWidgetShare() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) PrivateWidgetShare() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"privateWidgetShare",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlAutocreateUsers
 	return returns
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlCanBeEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlCanBeEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"samlCanBeEnabled",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlIdpInitiatedLog
 	return returns
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlIdpMetadataUploaded() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) SamlIdpMetadataUploaded() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"samlIdpMetadataUploaded",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -260,7 +260,7 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference) TerraformResource()
 }
 
 
-func NewChildOrganizationSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ChildOrganizationSettingsOutputReference {
+func NewChildOrganizationSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ChildOrganizationSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChildOrganizationSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -269,7 +269,7 @@ func NewChildOrganizationSettingsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ChildOrganizationSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -277,11 +277,11 @@ func NewChildOrganizationSettingsOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewChildOrganizationSettingsOutputReference_Override(c ChildOrganizationSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewChildOrganizationSettingsOutputReference_Override(c ChildOrganizationSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -331,7 +331,7 @@ func (j *jsiiProxy_ChildOrganizationSettingsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ChildOrganizationSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChildOrganizationSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,11 +371,11 @@ func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -499,8 +499,8 @@ func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -512,11 +512,11 @@ func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationAsList
 	return returns
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -528,7 +528,7 @@ func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) InterpolationForAtt
 	return returns
 }
 
-func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChildOrganizationSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rummetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/rummetric/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/rummetric/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric datadog_rum_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric datadog_rum_metric}.
 type RumMetric interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Compute() RumMetricComputeOutputReference
 	ComputeInput() interface{}
 	// Experimental.
@@ -39,9 +39,9 @@ type RumMetric interface {
 	Filter() RumMetricFilterOutputReference
 	FilterInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,18 +50,18 @@ type RumMetric interface {
 	GroupByInput() interface{}
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +69,7 @@ type RumMetric interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type RumMetric interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type RumMetric interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -145,11 +145,11 @@ type RumMetric interface {
 
 // The jsii proxy struct for RumMetric
 type jsiiProxy_RumMetric struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_RumMetric) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_RumMetric) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_RumMetric) FilterInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetric) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_RumMetric) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_RumMetric) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetric) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_RumMetric) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_RumMetric) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetric) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_RumMetric) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_RumMetric) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RumMetric) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_RumMetric) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_RumMetric) UniquenessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric datadog_rum_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric datadog_rum_metric} Resource.
 func NewRumMetric(scope constructs.Construct, id *string, config *RumMetricConfig) RumMetric {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewRumMetric(scope constructs.Construct, id *string, config *RumMetricConfi
 	j := jsiiProxy_RumMetric{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -457,12 +457,12 @@ func NewRumMetric(scope constructs.Construct, id *string, config *RumMetricConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric datadog_rum_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric datadog_rum_metric} Resource.
 func NewRumMetric_Override(r RumMetric, scope constructs.Construct, id *string, config *RumMetricConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -509,7 +509,7 @@ func (j *jsiiProxy_RumMetric)SetEventType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetric)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RumMetric)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -517,7 +517,7 @@ func (j *jsiiProxy_RumMetric)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RumMetric)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RumMetric)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +539,7 @@ func (j *jsiiProxy_RumMetric)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RumMetric)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RumMetric)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -558,17 +558,17 @@ func (j *jsiiProxy_RumMetric)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a RumMetric resource upon running "cdktf plan <stack-name>".
-func RumMetric_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a RumMetric resource upon running "cdktn plan <stack-name>".
+func RumMetric_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRumMetric_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -603,7 +603,7 @@ func RumMetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func RumMetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func RumMetric_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func RumMetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		"tfResourceType",
 		&returns,
 	)
@@ -699,11 +699,11 @@ func (r *jsiiProxy_RumMetric) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (r *jsiiProxy_RumMetric) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RumMetric) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -840,7 +840,7 @@ func (r *jsiiProxy_RumMetric) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RumMetric) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_RumMetric) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -851,11 +851,11 @@ func (r *jsiiProxy_RumMetric) ImportFrom(id *string, provider cdktf.TerraformPro
 	)
 }
 
-func (r *jsiiProxy_RumMetric) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RumMetric) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,

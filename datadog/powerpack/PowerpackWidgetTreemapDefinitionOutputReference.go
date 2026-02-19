@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetTreemapDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,9 +41,9 @@ type PowerpackWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -52,7 +52,7 @@ type PowerpackWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type PowerpackWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLinks(value interface{})
 	PutRequest(value interface{})
 	ResetCustomLinks()
@@ -78,7 +78,7 @@ type PowerpackWidgetTreemapDefinitionOutputReference interface {
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type PowerpackWidgetTreemapDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetTreemapDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) TitleInput()
 }
 
 
-func NewPowerpackWidgetTreemapDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetTreemapDefinitionOutputReference {
+func NewPowerpackWidgetTreemapDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetTreemapDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetTreemapDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewPowerpackWidgetTreemapDefinitionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewPowerpackWidgetTreemapDefinitionOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewPowerpackWidgetTreemapDefinitionOutputReference_Override(p PowerpackWidgetTreemapDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetTreemapDefinitionOutputReference_Override(p PowerpackWidgetTreemapDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,11 +344,11 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -472,8 +472,8 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) GetStringMap
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -485,11 +485,11 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) Interpolatio
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -547,7 +547,7 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) ResetTitle()
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

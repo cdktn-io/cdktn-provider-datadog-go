@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -104,7 +104,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputR
 
 func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy:
 		val := val.(*DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy)
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputR
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputR
 	return nil
 }
 
-func validateNewDashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDashboardWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

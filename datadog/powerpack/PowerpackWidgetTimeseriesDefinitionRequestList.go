@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetTimeseriesDefinitionRequestList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type PowerpackWidgetTimeseriesDefinitionRequestList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type PowerpackWidgetTimeseriesDefinitionRequestList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PowerpackWidgetTimeseriesDefinitionRequestOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestList interface {
 
 // The jsii proxy struct for PowerpackWidgetTimeseriesDefinitionRequestList
 type jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) WrapsSet() *b
 }
 
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetTimeseriesDefinitionRequestList {
+func NewPowerpackWidgetTimeseriesDefinitionRequestList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetTimeseriesDefinitionRequestList {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetTimeseriesDefinitionRequestListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestList(terraformResource cdktf.I
 	j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestList(terraformResource cdktf.I
 	return &j
 }
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestList_Override(p PowerpackWidgetTimeseriesDefinitionRequestList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPowerpackWidgetTimeseriesDefinitionRequestList_Override(p PowerpackWidgetTimeseriesDefinitionRequestList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList)SetWrapsSet(va
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -231,7 +231,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) Get(index *fl
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

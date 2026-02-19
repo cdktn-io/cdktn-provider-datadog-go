@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsarchive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logsarchive/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsarchive/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsArchiveS3ArchiveOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -58,15 +58,15 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,16 +82,16 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEncryptionKey()
 	ResetEncryptionType()
 	ResetPath()
 	ResetStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type LogsArchiveS3ArchiveOutputReference interface {
 
 // The jsii proxy struct for LogsArchiveS3ArchiveOutputReference
 type jsiiProxy_LogsArchiveS3ArchiveOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) AccountId() *string {
@@ -304,8 +304,8 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) TerraformResource() cdkt
 }
 
 
-func NewLogsArchiveS3ArchiveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsArchiveS3ArchiveOutputReference {
+func NewLogsArchiveS3ArchiveOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LogsArchiveS3ArchiveOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLogsArchiveS3ArchiveOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewLogsArchiveS3ArchiveOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_LogsArchiveS3ArchiveOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewLogsArchiveS3ArchiveOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewLogsArchiveS3ArchiveOutputReference_Override(l LogsArchiveS3ArchiveOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLogsArchiveS3ArchiveOutputReference_Override(l LogsArchiveS3ArchiveOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -463,7 +463,7 @@ func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -631,8 +631,8 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -644,11 +644,11 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -692,7 +692,7 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetStorageClass() {
 	)
 }
 
-func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogcsmthreatspolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogcsmthreatspolicies/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogcsmthreatspolicies/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogCsmThreatsPoliciesPoliciesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,10 +29,10 @@ type DataDatadogCsmThreatsPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
-	HostTagsLists() cdktf.StringListList
+	HostTagsLists() cdktn.StringListList
 	Id() *string
 	InternalValue() *DataDatadogCsmThreatsPoliciesPolicies
 	SetInternalValue(val *DataDatadogCsmThreatsPoliciesPolicies)
@@ -43,15 +43,15 @@ type DataDatadogCsmThreatsPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataDatadogCsmThreatsPoliciesPoliciesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataDatadogCsmThreatsPoliciesPoliciesOutputReference interface {
 
 // The jsii proxy struct for DataDatadogCsmThreatsPoliciesPoliciesOutputReference
 type jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) ComplexObjectIndex() interface{} {
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Descrip
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) HostTagsLists() cdktf.StringListList {
-	var returns cdktf.StringListList
+func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) HostTagsLists() cdktn.StringListList {
+	var returns cdktn.StringListList
 	_jsii_.Get(
 		j,
 		"hostTagsLists",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Terrafo
 }
 
 
-func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogCsmThreatsPoliciesPoliciesOutputReference {
+func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogCsmThreatsPoliciesPoliciesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogCsmThreatsPoliciesPoliciesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -225,7 +225,7 @@ func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference(terraformResource c
 	j := jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCsmThreatsPolicies.DataDatadogCsmThreatsPoliciesPoliciesOutputReference",
+		"@cdktn/provider-datadog.dataDatadogCsmThreatsPolicies.DataDatadogCsmThreatsPoliciesPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference_Override(d DataDatadogCsmThreatsPoliciesPoliciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogCsmThreatsPoliciesPoliciesOutputReference_Override(d DataDatadogCsmThreatsPoliciesPoliciesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCsmThreatsPolicies.DataDatadogCsmThreatsPoliciesPoliciesOutputReference",
+		"@cdktn/provider-datadog.dataDatadogCsmThreatsPolicies.DataDatadogCsmThreatsPoliciesPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -455,8 +455,8 @@ func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -484,7 +484,7 @@ func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogCsmThreatsPoliciesPoliciesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

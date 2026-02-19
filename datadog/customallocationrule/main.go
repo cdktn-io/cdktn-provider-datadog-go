@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customallocationrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRule",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRule",
 		reflect.TypeOf((*CustomAllocationRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleConfig",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleConfig",
 		reflect.TypeOf((*CustomAllocationRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocate",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocate",
 		reflect.TypeOf((*CustomAllocationRuleCostsToAllocate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateList",
 		reflect.TypeOf((*CustomAllocationRuleCostsToAllocateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -109,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleCostsToAllocateList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleCostsToAllocateOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleCostsToAllocateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,24 +153,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleCostsToAllocateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategy",
 		reflect.TypeOf((*CustomAllocationRuleStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedBy",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedBy",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTags",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTags",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByAllocatedTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByAllocatedTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -187,12 +187,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByAllocatedTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,16 +225,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFilters",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFilters",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersList",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -251,12 +251,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,12 +295,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByList",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -317,12 +317,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyAllocatedByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedTags", GoGetter: "AllocatedTags"},
@@ -356,16 +356,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCosts",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCosts",
 		reflect.TypeOf((*CustomAllocationRuleStrategyBasedOnCosts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsList",
 		reflect.TypeOf((*CustomAllocationRuleStrategyBasedOnCostsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -382,12 +382,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnCostsOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyBasedOnCostsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -426,16 +426,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyBasedOnCostsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseries",
 		reflect.TypeOf((*CustomAllocationRuleStrategyBasedOnTimeseries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -462,16 +462,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFilters",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFilters",
 		reflect.TypeOf((*CustomAllocationRuleStrategyEvaluateGroupedByFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersList",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersList",
 		reflect.TypeOf((*CustomAllocationRuleStrategyEvaluateGroupedByFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -488,12 +488,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyEvaluateGroupedByFiltersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -532,12 +532,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyOutputReference",
 		reflect.TypeOf((*CustomAllocationRuleStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedBy", GoGetter: "AllocatedBy"},
@@ -595,7 +595,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomAllocationRuleStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,10 +1,10 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogsoftwarecatalog
 
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogSoftwareCatalogConfig struct {
@@ -13,42 +13,42 @@ type DataDatadogSoftwareCatalogConfig struct {
 	// Experimental.
 	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
-	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	DependsOn *[]cdktn.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
-	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	ForEach cdktn.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	Lifecycle *cdktn.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
-	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Filter entities by excluding snapshotted entities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
 	FilterExcludeSnapshot *string `field:"optional" json:"filterExcludeSnapshot" yaml:"filterExcludeSnapshot"`
 	// Filter entities by UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
 	FilterId *string `field:"optional" json:"filterId" yaml:"filterId"`
 	// Filter entities by kind.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
 	FilterKind *string `field:"optional" json:"filterKind" yaml:"filterKind"`
 	// Filter entities by name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
 	FilterName *string `field:"optional" json:"filterName" yaml:"filterName"`
 	// Filter entities by owner.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
 	FilterOwner *string `field:"optional" json:"filterOwner" yaml:"filterOwner"`
 	// Filter entities by reference.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
 	FilterRef *string `field:"optional" json:"filterRef" yaml:"filterRef"`
 	// Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
 	FilterRelationType *string `field:"optional" json:"filterRelationType" yaml:"filterRelationType"`
 }
 

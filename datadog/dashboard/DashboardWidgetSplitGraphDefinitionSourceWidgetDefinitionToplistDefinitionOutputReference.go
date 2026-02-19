@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +32,9 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinition
 	SetInternalValue(val *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinition)
 	LiveSpan() *string
@@ -46,9 +49,9 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -63,7 +66,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,13 +82,14 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
 	PutStyle(value interface{})
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
 	ResetStyle()
@@ -94,7 +98,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +108,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionO
 
 // The jsii proxy struct for DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference
 type jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -162,6 +166,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -247,8 +271,8 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -318,7 +342,7 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 }
 
 
-func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference {
+func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -327,7 +351,7 @@ func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefiniti
 	j := jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,11 +359,11 @@ func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefiniti
 	return &j
 }
 
-func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference_Override(d DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference_Override(d DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -363,6 +387,17 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -400,7 +435,7 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,11 +508,11 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -601,8 +636,8 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -614,11 +649,11 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -671,6 +706,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) ResetLiveSpan() {
 	_jsii_.InvokeVoid(
 		d,
@@ -719,7 +762,7 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTopl
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionToplistDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

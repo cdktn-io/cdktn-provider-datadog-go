@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -109,7 +109,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy:
 		value := value.(*[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy)
@@ -128,7 +128,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute:
 		value := value.(*[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute)
@@ -159,14 +159,14 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutp
 	return nil
 }
 
-func validateNewDashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsaccount/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawsaccount/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type IntegrationAwsAccountTracesConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type IntegrationAwsAccountTracesConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	XrayServices() IntegrationAwsAccountTracesConfigXrayServicesOutputReference
 	XrayServicesInput() interface{}
 	// Experimental.
@@ -47,7 +47,7 @@ type IntegrationAwsAccountTracesConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type IntegrationAwsAccountTracesConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutXrayServices(value *IntegrationAwsAccountTracesConfigXrayServices)
 	ResetXrayServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type IntegrationAwsAccountTracesConfigOutputReference interface {
 
 // The jsii proxy struct for IntegrationAwsAccountTracesConfigOutputReference
 type jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) XrayService
 }
 
 
-func NewIntegrationAwsAccountTracesConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountTracesConfigOutputReference {
+func NewIntegrationAwsAccountTracesConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationAwsAccountTracesConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationAwsAccountTracesConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewIntegrationAwsAccountTracesConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewIntegrationAwsAccountTracesConfigOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewIntegrationAwsAccountTracesConfigOutputReference_Override(i IntegrationAwsAccountTracesConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationAwsAccountTracesConfigOutputReference_Override(i IntegrationAwsAccountTracesConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -245,7 +245,7 @@ func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,11 +285,11 @@ func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -413,8 +413,8 @@ func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) GetStringMa
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -426,11 +426,11 @@ func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) Interpolati
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -461,7 +461,7 @@ func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) ResetXraySe
 	)
 }
 
-func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

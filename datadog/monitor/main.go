@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
@@ -11,11 +11,13 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.Monitor",
+		"@cdktn/provider-datadog.monitor.Monitor",
 		reflect.TypeOf((*Monitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "assets", GoGetter: "Assets"},
+			_jsii_.MemberProperty{JsiiProperty: "assetsInput", GoGetter: "AssetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -92,6 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAssets", GoMethod: "PutAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorThresholds", GoMethod: "PutMonitorThresholds"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorThresholdWindows", GoMethod: "PutMonitorThresholdWindows"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedulingOptions", GoMethod: "PutSchedulingOptions"},
@@ -107,6 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "renotifyStatusesInput", GoGetter: "RenotifyStatusesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requireFullWindow", GoGetter: "RequireFullWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "requireFullWindowInput", GoGetter: "RequireFullWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAssets", GoMethod: "ResetAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDraftStatus", GoMethod: "ResetDraftStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLogsSample", GoMethod: "ResetEnableLogsSample"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableSamples", GoMethod: "ResetEnableSamples"},
@@ -166,20 +170,90 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Monitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorConfig",
+		"@cdktn/provider-datadog.monitor.MonitorAssets",
+		reflect.TypeOf((*MonitorAssets)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorAssetsList",
+		reflect.TypeOf((*MonitorAssetsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorAssetsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference",
+		reflect.TypeOf((*MonitorAssetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
+			_jsii_.MemberProperty{JsiiProperty: "categoryInput", GoGetter: "CategoryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceKey", GoMethod: "ResetResourceKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceType", GoMethod: "ResetResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceKey", GoGetter: "ResourceKey"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceKeyInput", GoGetter: "ResourceKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceType", GoGetter: "ResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceTypeInput", GoGetter: "ResourceTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorAssetsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.monitor.MonitorConfig",
 		reflect.TypeOf((*MonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows",
 		reflect.TypeOf((*MonitorMonitorThresholdWindows)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
 		reflect.TypeOf((*MonitorMonitorThresholdWindowsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,16 +286,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorMonitorThresholdWindowsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholds",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholds",
 		reflect.TypeOf((*MonitorMonitorThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference",
 		reflect.TypeOf((*MonitorMonitorThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -266,20 +340,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorMonitorThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptions",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptions",
 		reflect.TypeOf((*MonitorSchedulingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule",
 		reflect.TypeOf((*MonitorSchedulingOptionsCustomSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference",
 		reflect.TypeOf((*MonitorSchedulingOptionsCustomScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,16 +383,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorSchedulingOptionsCustomScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence",
 		reflect.TypeOf((*MonitorSchedulingOptionsCustomScheduleRecurrence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference",
 		reflect.TypeOf((*MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -352,16 +426,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow",
 		reflect.TypeOf((*MonitorSchedulingOptionsEvaluationWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference",
 		reflect.TypeOf((*MonitorSchedulingOptionsEvaluationWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,19 +464,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDayStarts", GoMethod: "ResetDayStarts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHourStarts", GoMethod: "ResetHourStarts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonthStarts", GoMethod: "ResetMonthStarts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimezone", GoMethod: "ResetTimezone"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timezone", GoGetter: "Timezone"},
+			_jsii_.MemberProperty{JsiiProperty: "timezoneInput", GoGetter: "TimezoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorSchedulingOptionsEvaluationWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
 		reflect.TypeOf((*MonitorSchedulingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -437,20 +514,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorSchedulingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariables",
+		"@cdktn/provider-datadog.monitor.MonitorVariables",
 		reflect.TypeOf((*MonitorVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery",
 		reflect.TypeOf((*MonitorVariablesCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList",
 		reflect.TypeOf((*MonitorVariablesCloudCostQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -467,12 +544,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesCloudCostQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference",
 		reflect.TypeOf((*MonitorVariablesCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -507,20 +584,150 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery",
+		reflect.TypeOf((*MonitorVariablesDataQualityQuery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList",
+		reflect.TypeOf((*MonitorVariablesDataQualityQueryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorVariablesDataQualityQueryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions",
+		reflect.TypeOf((*MonitorVariablesDataQualityQueryMonitorOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference",
+		reflect.TypeOf((*MonitorVariablesDataQualityQueryMonitorOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "crontabOverride", GoGetter: "CrontabOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "crontabOverrideInput", GoGetter: "CrontabOverrideInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customSql", GoGetter: "CustomSql"},
+			_jsii_.MemberProperty{JsiiProperty: "customSqlInput", GoGetter: "CustomSqlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customWhere", GoGetter: "CustomWhere"},
+			_jsii_.MemberProperty{JsiiProperty: "customWhereInput", GoGetter: "CustomWhereInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByColumns", GoGetter: "GroupByColumns"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByColumnsInput", GoGetter: "GroupByColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "modelTypeOverride", GoGetter: "ModelTypeOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "modelTypeOverrideInput", GoGetter: "ModelTypeOverrideInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrontabOverride", GoMethod: "ResetCrontabOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomSql", GoMethod: "ResetCustomSql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomWhere", GoMethod: "ResetCustomWhere"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupByColumns", GoMethod: "ResetGroupByColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetModelTypeOverride", GoMethod: "ResetModelTypeOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorVariablesDataQualityQueryMonitorOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference",
+		reflect.TypeOf((*MonitorVariablesDataQualityQueryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSource", GoGetter: "DataSource"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceInput", GoGetter: "DataSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
+			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupBy", GoGetter: "GroupBy"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByInput", GoGetter: "GroupByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "measure", GoGetter: "Measure"},
+			_jsii_.MemberProperty{JsiiProperty: "measureInput", GoGetter: "MeasureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "monitorOptions", GoGetter: "MonitorOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "monitorOptionsInput", GoGetter: "MonitorOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putMonitorOptions", GoMethod: "PutMonitorOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMonitorOptions", GoMethod: "ResetMonitorOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSchemaVersion", GoMethod: "ResetSchemaVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScope", GoMethod: "ResetScope"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaVersion", GoGetter: "SchemaVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "schemaVersionInput", GoGetter: "SchemaVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
+			_jsii_.MemberProperty{JsiiProperty: "scopeInput", GoGetter: "ScopeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorVariablesDataQualityQueryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery",
 		reflect.TypeOf((*MonitorVariablesEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute",
 		reflect.TypeOf((*MonitorVariablesEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
 		reflect.TypeOf((*MonitorVariablesEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -537,12 +744,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference",
 		reflect.TypeOf((*MonitorVariablesEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -577,16 +784,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy",
 		reflect.TypeOf((*MonitorVariablesEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList",
 		reflect.TypeOf((*MonitorVariablesEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -603,12 +810,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference",
 		reflect.TypeOf((*MonitorVariablesEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -644,16 +851,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort",
 		reflect.TypeOf((*MonitorVariablesEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*MonitorVariablesEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -688,12 +895,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList",
 		reflect.TypeOf((*MonitorVariablesEventQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -710,12 +917,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference",
 		reflect.TypeOf((*MonitorVariablesEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -759,16 +966,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch",
 		reflect.TypeOf((*MonitorVariablesEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference",
 		reflect.TypeOf((*MonitorVariablesEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -797,12 +1004,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference",
 		reflect.TypeOf((*MonitorVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudCostQuery", GoGetter: "CloudCostQuery"},
@@ -811,6 +1018,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataQualityQuery", GoGetter: "DataQualityQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "dataQualityQueryInput", GoGetter: "DataQualityQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventQuery", GoGetter: "EventQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "eventQueryInput", GoGetter: "EventQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -827,8 +1036,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudCostQuery", GoMethod: "PutCloudCostQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataQualityQuery", GoMethod: "PutDataQualityQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putEventQuery", GoMethod: "PutEventQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudCostQuery", GoMethod: "ResetCloudCostQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataQualityQuery", GoMethod: "ResetDataQualityQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventQuery", GoMethod: "ResetEventQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -837,7 +1048,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorVariablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

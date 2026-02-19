@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetGeomapDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +32,9 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetGeomapDefinition
 	SetInternalValue(val *PowerpackWidgetGeomapDefinition)
 	LiveSpan() *string
@@ -46,9 +49,9 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -65,7 +68,7 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,14 +84,15 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
 	PutStyle(value *PowerpackWidgetGeomapDefinitionStyle)
 	PutView(value *PowerpackWidgetGeomapDefinitionView)
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
 	ResetStyle()
@@ -97,7 +101,7 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,7 +111,7 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetGeomapDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -165,6 +169,26 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -250,8 +274,8 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -341,7 +365,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ViewInput() *
 }
 
 
-func NewPowerpackWidgetGeomapDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionOutputReference {
+func NewPowerpackWidgetGeomapDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetGeomapDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -350,7 +374,7 @@ func NewPowerpackWidgetGeomapDefinitionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -358,11 +382,11 @@ func NewPowerpackWidgetGeomapDefinitionOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewPowerpackWidgetGeomapDefinitionOutputReference_Override(p PowerpackWidgetGeomapDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetGeomapDefinitionOutputReference_Override(p PowerpackWidgetGeomapDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -386,6 +410,17 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -423,7 +458,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,11 +531,11 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -624,8 +659,8 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) GetStringMapA
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -637,11 +672,11 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) Interpolation
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -705,6 +740,14 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetCustomLi
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetLiveSpan() {
 	_jsii_.InvokeVoid(
 		p,
@@ -753,7 +796,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetTitleSiz
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

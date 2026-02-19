@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustompipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logscustompipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logscustompipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}.
 type LogsCustomPipeline interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type LogsCustomPipeline interface {
 	Filter() LogsCustomPipelineFilterList
 	FilterInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type LogsCustomPipeline interface {
 	SetIsEnabled(val interface{})
 	IsEnabledInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -62,9 +62,9 @@ type LogsCustomPipeline interface {
 	Processor() LogsCustomPipelineProcessorList
 	ProcessorInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type LogsCustomPipeline interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type LogsCustomPipeline interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type LogsCustomPipeline interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -148,11 +148,11 @@ type LogsCustomPipeline interface {
 
 // The jsii proxy struct for LogsCustomPipeline
 type jsiiProxy_LogsCustomPipeline struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LogsCustomPipeline) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_LogsCustomPipeline) FilterInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LogsCustomPipeline) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_LogsCustomPipeline) IsEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LogsCustomPipeline) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_LogsCustomPipeline) ProcessorInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LogsCustomPipeline) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_LogsCustomPipeline) TagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LogsCustomPipeline) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_LogsCustomPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) LogsCustomPipeline {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsC
 	j := jsiiProxy_LogsCustomPipeline{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,12 +470,12 @@ func NewLogsCustomPipeline(scope constructs.Construct, id *string, config *LogsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 func NewLogsCustomPipeline_Override(l LogsCustomPipeline, scope constructs.Construct, id *string, config *LogsCustomPipelineConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -522,7 +522,7 @@ func (j *jsiiProxy_LogsCustomPipeline)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogsCustomPipeline)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +552,7 @@ func (j *jsiiProxy_LogsCustomPipeline)SetIsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogsCustomPipeline)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +574,7 @@ func (j *jsiiProxy_LogsCustomPipeline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogsCustomPipeline)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -604,17 +604,17 @@ func (j *jsiiProxy_LogsCustomPipeline)SetTags(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a LogsCustomPipeline resource upon running "cdktf plan <stack-name>".
-func LogsCustomPipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LogsCustomPipeline resource upon running "cdktn plan <stack-name>".
+func LogsCustomPipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLogsCustomPipeline_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -649,7 +649,7 @@ func LogsCustomPipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func LogsCustomPipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func LogsCustomPipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func LogsCustomPipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipeline",
 		"tfResourceType",
 		&returns,
 	)
@@ -745,11 +745,11 @@ func (l *jsiiProxy_LogsCustomPipeline) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipeline) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomPipeline) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -886,7 +886,7 @@ func (l *jsiiProxy_LogsCustomPipeline) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipeline) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LogsCustomPipeline) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -897,11 +897,11 @@ func (l *jsiiProxy_LogsCustomPipeline) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (l *jsiiProxy_LogsCustomPipeline) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomPipeline) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,

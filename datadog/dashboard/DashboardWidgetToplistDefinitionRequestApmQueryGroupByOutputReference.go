@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSortQuery(value *DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery)
 	ResetFacet()
 	ResetLimit()
 	ResetSortQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference inter
 
 // The jsii proxy struct for DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference
 type jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 }
 
 
-func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference {
+func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -231,7 +231,7 @@ func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference(te
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference(te
 	return &j
 }
 
-func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference_Override(d DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference_Override(d DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,11 +355,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -483,8 +483,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -496,11 +496,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputR
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestApmQueryGroupByOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

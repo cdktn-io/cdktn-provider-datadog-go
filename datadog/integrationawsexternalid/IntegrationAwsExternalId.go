@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsexternalid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationawsexternalid/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawsexternalid/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
 type IntegrationAwsExternalId interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,24 +32,24 @@ type IntegrationAwsExternalId interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -57,7 +57,7 @@ type IntegrationAwsExternalId interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type IntegrationAwsExternalId interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type IntegrationAwsExternalId interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -123,11 +123,11 @@ type IntegrationAwsExternalId interface {
 
 // The jsii proxy struct for IntegrationAwsExternalId
 type jsiiProxy_IntegrationAwsExternalId struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IntegrationAwsExternalId) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_IntegrationAwsExternalId) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IntegrationAwsExternalId) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_IntegrationAwsExternalId) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IntegrationAwsExternalId) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_IntegrationAwsExternalId) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IntegrationAwsExternalId) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_IntegrationAwsExternalId) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IntegrationAwsExternalId) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -297,7 +297,7 @@ func (j *jsiiProxy_IntegrationAwsExternalId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
 func NewIntegrationAwsExternalId(scope constructs.Construct, id *string, config *IntegrationAwsExternalIdConfig) IntegrationAwsExternalId {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewIntegrationAwsExternalId(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IntegrationAwsExternalId{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,12 +315,12 @@ func NewIntegrationAwsExternalId(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
 func NewIntegrationAwsExternalId_Override(i IntegrationAwsExternalId, scope constructs.Construct, id *string, config *IntegrationAwsExternalIdConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IntegrationAwsExternalId)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationAwsExternalId)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -364,7 +364,7 @@ func (j *jsiiProxy_IntegrationAwsExternalId)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationAwsExternalId)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +375,7 @@ func (j *jsiiProxy_IntegrationAwsExternalId)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_IntegrationAwsExternalId)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationAwsExternalId)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -394,17 +394,17 @@ func (j *jsiiProxy_IntegrationAwsExternalId)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-// Generates CDKTF code for importing a IntegrationAwsExternalId resource upon running "cdktf plan <stack-name>".
-func IntegrationAwsExternalId_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IntegrationAwsExternalId resource upon running "cdktn plan <stack-name>".
+func IntegrationAwsExternalId_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIntegrationAwsExternalId_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -439,7 +439,7 @@ func IntegrationAwsExternalId_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func IntegrationAwsExternalId_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func IntegrationAwsExternalId_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func IntegrationAwsExternalId_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
+		"@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId",
 		"tfResourceType",
 		&returns,
 	)
@@ -535,11 +535,11 @@ func (i *jsiiProxy_IntegrationAwsExternalId) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsExternalId) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsExternalId) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -676,7 +676,7 @@ func (i *jsiiProxy_IntegrationAwsExternalId) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAwsExternalId) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IntegrationAwsExternalId) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -687,11 +687,11 @@ func (i *jsiiProxy_IntegrationAwsExternalId) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (i *jsiiProxy_IntegrationAwsExternalId) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAwsExternalId) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

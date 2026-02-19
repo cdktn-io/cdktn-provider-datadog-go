@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadoglogsindexesorder
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder",
 		reflect.TypeOf((*DataDatadogLogsIndexesOrder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,12 +54,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogLogsIndexesOrder{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrderConfig",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrderConfig",
 		reflect.TypeOf((*DataDatadogLogsIndexesOrderConfig)(nil)).Elem(),
 	)
 }

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package compliancecustomframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/compliancecustomframework/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/compliancecustomframework/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ComplianceCustomFrameworkRequirementsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type ComplianceCustomFrameworkRequirementsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type ComplianceCustomFrameworkRequirementsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutControls(value interface{})
 	ResetControls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ComplianceCustomFrameworkRequirementsOutputReference interface {
 
 // The jsii proxy struct for ComplianceCustomFrameworkRequirementsOutputReference
 type jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) Terrafo
 }
 
 
-func NewComplianceCustomFrameworkRequirementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComplianceCustomFrameworkRequirementsOutputReference {
+func NewComplianceCustomFrameworkRequirementsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComplianceCustomFrameworkRequirementsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComplianceCustomFrameworkRequirementsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -206,7 +206,7 @@ func NewComplianceCustomFrameworkRequirementsOutputReference(terraformResource c
 	j := jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewComplianceCustomFrameworkRequirementsOutputReference(terraformResource c
 	return &j
 }
 
-func NewComplianceCustomFrameworkRequirementsOutputReference_Override(c ComplianceCustomFrameworkRequirementsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComplianceCustomFrameworkRequirementsOutputReference_Override(c ComplianceCustomFrameworkRequirementsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -279,7 +279,7 @@ func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -319,11 +319,11 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) GetAnyM
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -447,8 +447,8 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) GetStri
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -460,11 +460,11 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) Interpo
 	return returns
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -495,7 +495,7 @@ func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) ResetCo
 	)
 }
 
-func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

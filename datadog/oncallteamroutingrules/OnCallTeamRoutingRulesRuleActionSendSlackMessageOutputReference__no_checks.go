@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferen
 	return nil
 }
 
-func validateNewOnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

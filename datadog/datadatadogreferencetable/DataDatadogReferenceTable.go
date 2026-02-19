@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogreferencetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogreferencetable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogreferencetable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table datadog_reference_table}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table}.
 type DataDatadogReferenceTable interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,9 +31,9 @@ type DataDatadogReferenceTable interface {
 	Description() *string
 	FileMetadata() DataDatadogReferenceTableFileMetadataOutputReference
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -43,15 +43,15 @@ type DataDatadogReferenceTable interface {
 	IdInput() *string
 	LastUpdatedBy() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RowCount() *float64
@@ -64,7 +64,7 @@ type DataDatadogReferenceTable interface {
 	TableNameInput() *string
 	Tags() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type DataDatadogReferenceTable interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,7 +91,7 @@ type DataDatadogReferenceTable interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -118,11 +118,11 @@ type DataDatadogReferenceTable interface {
 
 // The jsii proxy struct for DataDatadogReferenceTable
 type jsiiProxy_DataDatadogReferenceTable struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogReferenceTable) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataDatadogReferenceTable) FileMetadata() DataDatadogReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogReferenceTable) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataDatadogReferenceTable) LastUpdatedBy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogReferenceTable) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataDatadogReferenceTable) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogReferenceTable) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_DataDatadogReferenceTable) Tags() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogReferenceTable) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) DataDatadogReferenceTable {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataDatadogReferenceTable{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,12 +430,12 @@ func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable_Override(d DataDatadogReferenceTable, scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogReferenceTable)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +479,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogReferenceTable)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +490,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataDatadogReferenceTable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogReferenceTable)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,17 +509,17 @@ func (j *jsiiProxy_DataDatadogReferenceTable)SetTableName(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogReferenceTable resource upon running "cdktf plan <stack-name>".
-func DataDatadogReferenceTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogReferenceTable resource upon running "cdktn plan <stack-name>".
+func DataDatadogReferenceTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogReferenceTable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -554,7 +554,7 @@ func DataDatadogReferenceTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DataDatadogReferenceTable_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func DataDatadogReferenceTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -605,7 +605,7 @@ func DataDatadogReferenceTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
+		"@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable",
 		"tfResourceType",
 		&returns,
 	)
@@ -639,11 +639,11 @@ func (d *jsiiProxy_DataDatadogReferenceTable) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogReferenceTable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogReferenceTable) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -767,11 +767,11 @@ func (d *jsiiProxy_DataDatadogReferenceTable) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogReferenceTable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogReferenceTable) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

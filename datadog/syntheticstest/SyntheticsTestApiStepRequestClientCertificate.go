@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
@@ -7,11 +7,11 @@ package syntheticstest
 type SyntheticsTestApiStepRequestClientCertificate struct {
 	// cert block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 	Cert *SyntheticsTestApiStepRequestClientCertificateCert `field:"required" json:"cert" yaml:"cert"`
 	// key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 	Key *SyntheticsTestApiStepRequestClientCertificateKey `field:"required" json:"key" yaml:"key"`
 }
 

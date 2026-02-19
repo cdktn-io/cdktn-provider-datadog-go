@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalQueryFilters() *string
 	SetAdditionalQueryFilters(val *string)
 	AdditionalQueryFiltersInput() *string
@@ -49,9 +49,9 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeWindows() *[]*string
 	SetTimeWindows(val *[]*string)
 	TimeWindowsInput() *[]*string
@@ -75,7 +75,7 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdditionalQueryFilters()
 	ResetGlobalTimeTarget()
 	ResetShowErrorBudget()
@@ -102,7 +102,7 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +112,7 @@ type DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRe
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) AdditionalQueryFilters() *string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -395,7 +395,7 @@ func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutpu
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -403,11 +403,11 @@ func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutpu
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,11 +607,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -735,8 +735,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -748,11 +748,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -812,7 +812,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

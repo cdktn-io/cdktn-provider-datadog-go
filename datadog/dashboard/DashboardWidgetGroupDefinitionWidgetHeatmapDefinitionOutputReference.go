@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +34,9 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 	EventInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *DashboardWidgetGroupDefinitionWidgetHeatmapDefinition
 	SetInternalValue(val *DashboardWidgetGroupDefinitionWidgetHeatmapDefinition)
 	LegendSize() *string
@@ -52,9 +55,9 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -71,7 +74,7 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -87,15 +90,16 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutEvent(value interface{})
 	PutRequest(value interface{})
 	PutYaxis(value *DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis)
 	ResetCustomLink()
 	ResetEvent()
+	ResetHideIncompleteCostData()
 	ResetLegendSize()
 	ResetLiveSpan()
 	ResetRequest()
@@ -106,7 +110,7 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 	ResetYaxis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,7 +120,7 @@ type DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference interf
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -194,6 +198,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -299,8 +323,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -390,7 +414,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -399,7 +423,7 @@ func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(ter
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,11 +431,11 @@ func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(ter
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -435,6 +459,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -494,7 +529,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,11 +602,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -695,8 +730,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -708,11 +743,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -784,6 +819,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) ResetLegendSize() {
 	_jsii_.InvokeVoid(
 		d,
@@ -848,7 +891,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputRe
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

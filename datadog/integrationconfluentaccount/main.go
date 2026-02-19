@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationconfluentaccount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccount",
+		"@cdktn/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccount",
 		reflect.TypeOf((*IntegrationConfluentAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -66,12 +66,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationConfluentAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccountConfig",
+		"@cdktn/provider-datadog.integrationConfluentAccount.IntegrationConfluentAccountConfig",
 		reflect.TypeOf((*IntegrationConfluentAccountConfig)(nil)).Elem(),
 	)
 }

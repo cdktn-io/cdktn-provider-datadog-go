@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,15 +70,15 @@ type DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCrossOrgUuids()
 	ResetGroupBy()
 	ResetOperationName()
@@ -105,7 +105,7 @@ type DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 	ResetResourceName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,7 +115,7 @@ type DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRefer
 
 // The jsii proxy struct for DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 type jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -398,8 +398,8 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 }
 
 
-func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference {
+func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -418,7 +418,7 @@ func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRe
 	j := jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -426,11 +426,11 @@ func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputRe
 	return &j
 }
 
-func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference_Override(d DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference_Override(d DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -601,7 +601,7 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,11 +641,11 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -769,8 +769,8 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -782,11 +782,11 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -846,7 +846,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQu
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustompipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logscustompipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logscustompipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsCustomPipelineFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type LogsCustomPipelineFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type LogsCustomPipelineFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type LogsCustomPipelineFilterOutputReference interface {
 
 // The jsii proxy struct for LogsCustomPipelineFilterOutputReference
 type jsiiProxy_LogsCustomPipelineFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference) TerraformResource() 
 }
 
 
-func NewLogsCustomPipelineFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LogsCustomPipelineFilterOutputReference {
+func NewLogsCustomPipelineFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LogsCustomPipelineFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLogsCustomPipelineFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -182,7 +182,7 @@ func NewLogsCustomPipelineFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LogsCustomPipelineFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewLogsCustomPipelineFilterOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewLogsCustomPipelineFilterOutputReference_Override(l LogsCustomPipelineFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLogsCustomPipelineFilterOutputReference_Override(l LogsCustomPipelineFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -255,7 +255,7 @@ func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -423,8 +423,8 @@ func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -436,11 +436,11 @@ func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -452,7 +452,7 @@ func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsCustomPipelineFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

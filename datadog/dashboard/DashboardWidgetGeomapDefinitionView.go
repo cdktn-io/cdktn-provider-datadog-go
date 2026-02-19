@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,7 +7,7 @@ package dashboard
 type DashboardWidgetGeomapDefinitionView struct {
 	// The two-letter ISO code of a country to focus the map on (or `WORLD`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#focus Dashboard#focus}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#focus Dashboard#focus}
 	Focus *string `field:"required" json:"focus" yaml:"focus"`
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsaccount
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccount",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccount",
 		reflect.TypeOf((*IntegrationAwsAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountTags", GoGetter: "AccountTags"},
@@ -90,20 +90,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfig",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeys",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfigAwsAuthConfigKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -136,16 +136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRole",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfigAwsAuthConfigRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,12 +178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAuthConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountAuthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAuthConfigKeys", GoGetter: "AwsAuthConfigKeys"},
@@ -218,16 +218,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountAuthConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegions",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegions",
 		reflect.TypeOf((*IntegrationAwsAccountAwsRegions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegionsOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountAwsRegionsOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountAwsRegionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,28 +260,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountAwsRegionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountConfig",
 		reflect.TypeOf((*IntegrationAwsAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfig",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarder",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarder",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarder)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,16 +312,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -338,12 +338,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -374,12 +374,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -416,12 +416,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountLogsConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountLogsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -452,20 +452,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountLogsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfig",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigNamespaceFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -498,12 +498,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automuteEnabled", GoGetter: "AutomuteEnabled"},
@@ -550,16 +550,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFilters",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFilters",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigTagFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersList",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersList",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigTagFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -576,12 +576,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountMetricsConfigTagFiltersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigTagFiltersOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigTagFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,16 +613,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountMetricsConfigTagFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfig",
 		reflect.TypeOf((*IntegrationAwsAccountResourcesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountResourcesConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountResourcesConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSecurityPostureManagementCollection", GoGetter: "CloudSecurityPostureManagementCollection"},
@@ -655,16 +655,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountResourcesConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfig",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfig",
 		reflect.TypeOf((*IntegrationAwsAccountTracesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountTracesConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -695,16 +695,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountTracesConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServices",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServices",
 		reflect.TypeOf((*IntegrationAwsAccountTracesConfigXrayServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServicesOutputReference",
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountTracesConfigXrayServicesOutputReference",
 		reflect.TypeOf((*IntegrationAwsAccountTracesConfigXrayServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -737,7 +737,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccountTracesConfigXrayServicesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

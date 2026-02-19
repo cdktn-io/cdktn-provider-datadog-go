@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package sensitivedatascannergroup
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup",
 		reflect.TypeOf((*SensitiveDataScannerGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -77,20 +77,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SensitiveDataScannerGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig",
 		reflect.TypeOf((*SensitiveDataScannerGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter",
 		reflect.TypeOf((*SensitiveDataScannerGroupFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilterOutputReference",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilterOutputReference",
 		reflect.TypeOf((*SensitiveDataScannerGroupFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,16 +119,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SensitiveDataScannerGroupFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplings",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplings",
 		reflect.TypeOf((*SensitiveDataScannerGroupSamplings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsList",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsList",
 		reflect.TypeOf((*SensitiveDataScannerGroupSamplingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -145,12 +145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SensitiveDataScannerGroupSamplingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsOutputReference",
+		"@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsOutputReference",
 		reflect.TypeOf((*SensitiveDataScannerGroupSamplingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,7 +181,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SensitiveDataScannerGroupSamplingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogteams
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeams",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeams",
 		reflect.TypeOf((*DataDatadogTeams)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,20 +61,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogTeams{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsConfig",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsConfig",
 		reflect.TypeOf((*DataDatadogTeamsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeams",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeams",
 		reflect.TypeOf((*DataDatadogTeamsTeams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsList",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsList",
 		reflect.TypeOf((*DataDatadogTeamsTeamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -91,12 +91,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogTeamsTeamsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogTeams.DataDatadogTeamsTeamsOutputReference",
 		reflect.TypeOf((*DataDatadogTeamsTeamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,7 +130,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogTeamsTeamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

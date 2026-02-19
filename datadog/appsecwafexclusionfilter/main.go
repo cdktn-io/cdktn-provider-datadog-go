@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appsecwafexclusionfilter
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilter",
 		reflect.TypeOf((*AppsecWafExclusionFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -86,20 +86,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilter{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterConfig",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterConfig",
 		reflect.TypeOf((*AppsecWafExclusionFilterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTarget",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTarget",
 		reflect.TypeOf((*AppsecWafExclusionFilterRulesTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetList",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetList",
 		reflect.TypeOf((*AppsecWafExclusionFilterRulesTargetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -116,12 +116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilterRulesTargetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetOutputReference",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetOutputReference",
 		reflect.TypeOf((*AppsecWafExclusionFilterRulesTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,16 +155,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilterRulesTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTags",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTags",
 		reflect.TypeOf((*AppsecWafExclusionFilterRulesTargetTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
 		reflect.TypeOf((*AppsecWafExclusionFilterRulesTargetTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -197,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScope",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScope",
 		reflect.TypeOf((*AppsecWafExclusionFilterScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeList",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeList",
 		reflect.TypeOf((*AppsecWafExclusionFilterScopeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -223,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilterScopeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeOutputReference",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterScopeOutputReference",
 		reflect.TypeOf((*AppsecWafExclusionFilterScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,7 +261,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafExclusionFilterScopeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

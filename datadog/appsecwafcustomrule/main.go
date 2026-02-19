@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appsecwafcustomrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRule",
 		reflect.TypeOf((*AppsecWafCustomRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -82,16 +82,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleAction",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleAction",
 		reflect.TypeOf((*AppsecWafCustomRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -125,16 +125,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParameters",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParameters",
 		reflect.TypeOf((*AppsecWafCustomRuleActionParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParametersOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleActionParametersOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleActionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,16 +167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleActionParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleCondition",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleCondition",
 		reflect.TypeOf((*AppsecWafCustomRuleCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionList",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionList",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -193,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,20 +232,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParameters",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParameters",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInput",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInput",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersInput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputList",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputList",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersInputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -262,12 +262,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionParametersInputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersInputOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -300,16 +300,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionParametersInputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptions",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptions",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptionsOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOptionsOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitive", GoGetter: "CaseSensitive"},
@@ -342,12 +342,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionParametersOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConditionParametersOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleConditionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -394,20 +394,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleConditionParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConfig",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleConfig",
 		reflect.TypeOf((*AppsecWafCustomRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScope",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScope",
 		reflect.TypeOf((*AppsecWafCustomRuleScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeList",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeList",
 		reflect.TypeOf((*AppsecWafCustomRuleScopeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -424,12 +424,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleScopeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeOutputReference",
+		"@cdktn/provider-datadog.appsecWafCustomRule.AppsecWafCustomRuleScopeOutputReference",
 		reflect.TypeOf((*AppsecWafCustomRuleScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -462,7 +462,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsecWafCustomRuleScopeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

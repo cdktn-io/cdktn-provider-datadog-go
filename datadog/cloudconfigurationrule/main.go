@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cloudconfigurationrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule",
+		"@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule",
 		reflect.TypeOf((*CloudConfigurationRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -89,20 +89,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConfigurationRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig",
+		"@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig",
 		reflect.TypeOf((*CloudConfigurationRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilter",
+		"@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilter",
 		reflect.TypeOf((*CloudConfigurationRuleFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterList",
+		"@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterList",
 		reflect.TypeOf((*CloudConfigurationRuleFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -119,12 +119,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConfigurationRuleFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterOutputReference",
+		"@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterOutputReference",
 		reflect.TypeOf((*CloudConfigurationRuleFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -155,7 +155,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConfigurationRuleFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

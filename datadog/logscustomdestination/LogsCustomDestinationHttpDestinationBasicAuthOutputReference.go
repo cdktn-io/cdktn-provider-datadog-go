@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustomdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logscustomdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logscustomdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsCustomDestinationHttpDestinationBasicAuthOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LogsCustomDestinationHttpDestinationBasicAuthOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -51,7 +51,7 @@ type LogsCustomDestinationHttpDestinationBasicAuthOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type LogsCustomDestinationHttpDestinationBasicAuthOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type LogsCustomDestinationHttpDestinationBasicAuthOutputReference interface {
 
 // The jsii proxy struct for LogsCustomDestinationHttpDestinationBasicAuthOutputReference
 type jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) ComplexObjectIndex() interface{} {
@@ -165,8 +165,8 @@ func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 }
 
 
-func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationBasicAuthOutputReference {
+func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LogsCustomDestinationHttpDestinationBasicAuthOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLogsCustomDestinationHttpDestinationBasicAuthOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -205,7 +205,7 @@ func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformRe
 	j := jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference(terraformRe
 	return &j
 }
 
-func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference_Override(l LogsCustomDestinationHttpDestinationBasicAuthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLogsCustomDestinationHttpDestinationBasicAuthOutputReference_Override(l LogsCustomDestinationHttpDestinationBasicAuthOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -278,7 +278,7 @@ func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	)
 }
 
-func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -457,8 +457,8 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -470,11 +470,11 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -486,7 +486,7 @@ func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference)
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

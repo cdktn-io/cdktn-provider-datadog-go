@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateInterp
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,6 +67,10 @@ func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetIfN
 	return nil
 }
 
+func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetIfTagExistsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -79,11 +83,11 @@ func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TagPipelineRulesetRulesMappingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTagPipelineRulesetRulesMappingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTagPipelineRulesetRulesMappingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

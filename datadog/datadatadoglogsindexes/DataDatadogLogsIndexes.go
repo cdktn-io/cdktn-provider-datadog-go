@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadoglogsindexes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadoglogsindexes/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadoglogsindexes/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
 type DataDatadogLogsIndexes interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatadogLogsIndexes interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,20 +39,20 @@ type DataDatadogLogsIndexes interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LogsIndexes() DataDatadogLogsIndexesLogsIndexesList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type DataDatadogLogsIndexes interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,7 +78,7 @@ type DataDatadogLogsIndexes interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -102,11 +102,11 @@ type DataDatadogLogsIndexes interface {
 
 // The jsii proxy struct for DataDatadogLogsIndexes
 type jsiiProxy_DataDatadogLogsIndexes struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogLogsIndexes) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogLogsIndexes) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogLogsIndexes) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogLogsIndexes) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) DataDatadogLogsIndexes {
 	_init_.Initialize()
 
@@ -286,7 +286,7 @@ func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataDatadogLogsIndexes{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -294,12 +294,12 @@ func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes_Override(d DataDatadogLogsIndexes, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogLogsIndexes)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogLogsIndexes)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataDatadogLogsIndexes)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogLogsIndexes)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -362,17 +362,17 @@ func (j *jsiiProxy_DataDatadogLogsIndexes)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogLogsIndexes resource upon running "cdktf plan <stack-name>".
-func DataDatadogLogsIndexes_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogLogsIndexes resource upon running "cdktn plan <stack-name>".
+func DataDatadogLogsIndexes_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogLogsIndexes_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -407,7 +407,7 @@ func DataDatadogLogsIndexes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -426,7 +426,7 @@ func DataDatadogLogsIndexes_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataDatadogLogsIndexes_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func DataDatadogLogsIndexes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
+		"@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes",
 		"tfResourceType",
 		&returns,
 	)
@@ -492,11 +492,11 @@ func (d *jsiiProxy_DataDatadogLogsIndexes) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogLogsIndexes) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogLogsIndexes) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -620,11 +620,11 @@ func (d *jsiiProxy_DataDatadogLogsIndexes) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogLogsIndexes) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogLogsIndexes) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

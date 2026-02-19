@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFacet()
 	ResetInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputRefere
 
 // The jsii proxy struct for DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference
 type jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) Aggregation() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 }
 
 
-func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference {
+func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputRef
 	j := jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputRef
 	return &j
 }
 
-func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference_Override(d DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference_Override(d DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -493,8 +493,8 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,11 +506,11 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -538,7 +538,7 @@ func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQue
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

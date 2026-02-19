@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apmretentionfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/apmretentionfilter/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/apmretentionfilter/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ApmRetentionFilterFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ApmRetentionFilterFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ApmRetentionFilterFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ApmRetentionFilterFilterOutputReference interface {
 
 // The jsii proxy struct for ApmRetentionFilterFilterOutputReference
 type jsiiProxy_ApmRetentionFilterFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference) TerraformResource() 
 }
 
 
-func NewApmRetentionFilterFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApmRetentionFilterFilterOutputReference {
+func NewApmRetentionFilterFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApmRetentionFilterFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApmRetentionFilterFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewApmRetentionFilterFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ApmRetentionFilterFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference",
+		"@cdktn/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewApmRetentionFilterFilterOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewApmRetentionFilterFilterOutputReference_Override(a ApmRetentionFilterFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApmRetentionFilterFilterOutputReference_Override(a ApmRetentionFilterFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference",
+		"@cdktn/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApmRetentionFilterFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -424,8 +424,8 @@ func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -437,11 +437,11 @@ func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -461,7 +461,7 @@ func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) ResetQuery() {
 	)
 }
 
-func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApmRetentionFilterFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

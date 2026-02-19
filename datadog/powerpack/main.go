@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.Powerpack",
+		"@cdktn/provider-datadog.powerpack.Powerpack",
 		reflect.TypeOf((*Powerpack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -88,20 +88,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Powerpack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackConfig",
+		"@cdktn/provider-datadog.powerpack.PowerpackConfig",
 		reflect.TypeOf((*PowerpackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackLayout",
+		"@cdktn/provider-datadog.powerpack.PowerpackLayout",
 		reflect.TypeOf((*PowerpackLayout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackLayoutOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackLayoutOutputReference",
 		reflect.TypeOf((*PowerpackLayoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,16 +140,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackLayoutOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackTemplateVariables",
+		"@cdktn/provider-datadog.powerpack.PowerpackTemplateVariables",
 		reflect.TypeOf((*PowerpackTemplateVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackTemplateVariablesList",
+		"@cdktn/provider-datadog.powerpack.PowerpackTemplateVariablesList",
 		reflect.TypeOf((*PowerpackTemplateVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -166,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackTemplateVariablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackTemplateVariablesOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackTemplateVariablesOutputReference",
 		reflect.TypeOf((*PowerpackTemplateVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -203,20 +203,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackTemplateVariablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidget",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidget",
 		reflect.TypeOf((*PowerpackWidget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinition",
 		reflect.TypeOf((*PowerpackWidgetAlertGraphDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetAlertGraphDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertId", GoGetter: "AlertId"},
@@ -235,11 +235,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "liveSpan", GoGetter: "LiveSpan"},
 			_jsii_.MemberProperty{JsiiProperty: "liveSpanInput", GoGetter: "LiveSpanInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitleAlign", GoMethod: "ResetTitleAlign"},
@@ -259,16 +262,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinition",
 		reflect.TypeOf((*PowerpackWidgetAlertValueDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertValueDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetAlertValueDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertId", GoGetter: "AlertId"},
@@ -315,20 +318,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinition",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -345,12 +348,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,12 +392,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -413,6 +416,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -423,6 +428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -441,24 +447,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -493,16 +499,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -519,12 +525,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -561,16 +567,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -604,16 +610,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -630,12 +636,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -670,12 +676,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -719,20 +725,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -749,12 +755,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -805,16 +811,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -847,12 +853,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -869,16 +875,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -912,20 +918,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -957,16 +963,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -995,12 +1001,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -1035,16 +1041,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1073,12 +1079,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -1129,16 +1135,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1171,12 +1177,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1193,20 +1199,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1241,16 +1247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1267,12 +1273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1309,16 +1315,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1352,16 +1358,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1378,12 +1384,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1418,12 +1424,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1467,12 +1473,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -1548,16 +1554,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1595,20 +1601,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1661,16 +1667,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1725,16 +1731,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -1773,20 +1779,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1803,12 +1809,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1843,16 +1849,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1869,12 +1875,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1910,16 +1916,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -1954,12 +1960,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2010,16 +2016,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2048,12 +2054,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2070,16 +2076,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -2112,19 +2118,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -2179,16 +2188,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -2242,16 +2251,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -2299,20 +2308,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2347,16 +2356,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2373,12 +2382,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2415,16 +2424,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2458,16 +2467,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2484,12 +2493,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2524,12 +2533,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2573,20 +2582,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2621,16 +2630,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2647,12 +2656,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2689,16 +2698,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2732,16 +2741,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2758,12 +2767,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -2798,12 +2807,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2847,16 +2856,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinition",
 		reflect.TypeOf((*PowerpackWidgetCheckStatusDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetCheckStatusDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "check", GoGetter: "Check"},
@@ -2881,6 +2890,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grouping", GoGetter: "Grouping"},
 			_jsii_.MemberProperty{JsiiProperty: "groupingInput", GoGetter: "GroupingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "groupInput", GoGetter: "GroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -2888,6 +2899,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "liveSpanInput", GoGetter: "LiveSpanInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroup", GoMethod: "ResetGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -2908,16 +2920,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinition",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2934,6 +2946,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -2946,6 +2960,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putYaxis", GoMethod: "PutYaxis"},
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendSize", GoMethod: "ResetLegendSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
@@ -2974,24 +2989,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3026,16 +3041,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3052,12 +3067,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3094,16 +3109,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3137,16 +3152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3163,12 +3178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3203,12 +3218,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3252,20 +3267,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3282,12 +3297,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -3325,12 +3340,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -3374,12 +3389,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestApmStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3396,20 +3411,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3444,16 +3459,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3470,12 +3485,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3512,16 +3527,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3555,16 +3570,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3581,12 +3596,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3621,12 +3636,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3670,12 +3685,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -3733,16 +3748,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3780,20 +3795,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3828,16 +3843,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3854,12 +3869,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3896,16 +3911,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -3939,16 +3954,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3965,12 +3980,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -4005,12 +4020,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4054,20 +4069,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -4102,16 +4117,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4128,12 +4143,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4170,16 +4185,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -4213,16 +4228,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4239,12 +4254,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -4279,12 +4294,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4328,16 +4343,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyle",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionRequestStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionRequestStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4367,16 +4382,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionRequestStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxis",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionXaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionXaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionXaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4415,16 +4430,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionXaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxis",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetDistributionDefinitionYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetDistributionDefinitionYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4466,16 +4481,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetDistributionDefinitionYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinition",
 		reflect.TypeOf((*PowerpackWidgetEventStreamDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventStreamDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetEventStreamDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4494,6 +4509,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -4502,6 +4519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventSize", GoMethod: "ResetEventSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsExecution", GoMethod: "ResetTagsExecution"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -4522,16 +4540,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetEventStreamDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinition",
 		reflect.TypeOf((*PowerpackWidgetEventTimelineDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetEventTimelineDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4548,6 +4566,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -4555,6 +4575,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "liveSpanInput", GoGetter: "LiveSpanInput"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsExecution", GoMethod: "ResetTagsExecution"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -4575,16 +4596,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinition",
 		reflect.TypeOf((*PowerpackWidgetFreeTextDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetFreeTextDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetFreeTextDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
@@ -4622,20 +4643,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetFreeTextDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinition",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4652,12 +4673,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4696,12 +4717,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4720,6 +4741,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -4732,6 +4755,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
@@ -4755,24 +4779,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4789,12 +4813,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -4845,16 +4869,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4887,12 +4911,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4909,16 +4933,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4952,20 +4976,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4997,16 +5021,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5035,12 +5059,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -5075,16 +5099,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5113,12 +5137,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -5169,16 +5193,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5211,12 +5235,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5233,20 +5257,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -5281,16 +5305,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5307,12 +5331,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5349,16 +5373,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -5392,16 +5416,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5418,12 +5442,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -5458,12 +5482,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5507,12 +5531,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5558,20 +5582,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5624,16 +5648,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5688,16 +5712,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -5736,20 +5760,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5766,12 +5790,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -5806,16 +5830,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5832,12 +5856,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5873,16 +5897,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -5917,12 +5941,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5973,16 +5997,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6011,12 +6035,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6033,16 +6057,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -6075,19 +6099,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -6142,16 +6169,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -6205,16 +6232,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -6262,20 +6289,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -6310,16 +6337,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6336,12 +6363,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6378,16 +6405,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -6421,16 +6448,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6447,12 +6474,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -6487,12 +6514,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6536,16 +6563,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyle",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6576,16 +6603,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionView",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionView",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionView)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionViewOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionViewOutputReference",
 		reflect.TypeOf((*PowerpackWidgetGeomapDefinitionViewOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6614,20 +6641,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetGeomapDefinitionViewOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinition",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6644,12 +6671,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6688,16 +6715,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEvent",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEvent",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionEvent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionEventList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6714,12 +6741,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionEventList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionEventOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionEventOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6751,12 +6778,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionEventOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6777,6 +6804,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -6792,6 +6821,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEvent", GoMethod: "ResetEvent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendSize", GoMethod: "ResetLegendSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
@@ -6817,24 +6847,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -6869,16 +6899,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6895,12 +6925,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6937,16 +6967,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -6980,16 +7010,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7006,12 +7036,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -7046,12 +7076,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7095,20 +7125,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7125,12 +7155,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -7181,16 +7211,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7223,12 +7253,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7245,16 +7275,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7288,20 +7318,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7333,16 +7363,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7371,12 +7401,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -7411,16 +7441,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7449,12 +7479,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -7505,16 +7535,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7547,12 +7577,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7569,20 +7599,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -7617,16 +7647,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7643,12 +7673,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7685,16 +7715,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -7728,16 +7758,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -7754,12 +7784,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -7794,12 +7824,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7843,12 +7873,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -7910,16 +7940,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7957,20 +7987,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8023,16 +8053,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8087,16 +8117,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -8135,20 +8165,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8165,12 +8195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8205,16 +8235,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8231,12 +8261,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8272,16 +8302,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8316,12 +8346,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8372,16 +8402,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8410,12 +8440,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8432,16 +8462,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -8474,19 +8504,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -8541,16 +8574,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -8604,16 +8637,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -8661,20 +8694,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8709,16 +8742,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8735,12 +8768,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8777,16 +8810,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8820,16 +8853,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -8846,12 +8879,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8886,12 +8919,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8935,20 +8968,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -8983,16 +9016,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9009,12 +9042,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9051,16 +9084,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9094,16 +9127,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9120,12 +9153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9160,12 +9193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9209,16 +9242,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyle",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9248,16 +9281,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxis",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHeatmapDefinitionYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHeatmapDefinitionYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9299,20 +9332,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHeatmapDefinitionYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinition",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9329,12 +9362,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9373,12 +9406,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9441,28 +9474,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFill",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFill",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFill)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9497,16 +9530,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9523,12 +9556,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9565,16 +9598,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9608,16 +9641,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9634,12 +9667,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9674,12 +9707,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9723,12 +9756,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9745,20 +9778,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9793,16 +9826,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9819,12 +9852,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9861,16 +9894,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9904,16 +9937,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -9930,12 +9963,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -9970,12 +10003,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10019,12 +10052,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -10074,16 +10107,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10121,20 +10154,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10169,16 +10202,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10195,12 +10228,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10237,16 +10270,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10280,16 +10313,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10306,12 +10339,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10346,12 +10379,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10395,20 +10428,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10443,16 +10476,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10469,12 +10502,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10511,16 +10544,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10554,16 +10587,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10580,12 +10613,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10620,12 +10653,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10669,12 +10702,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10709,24 +10742,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSize",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSize",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSize)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10761,16 +10794,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10787,12 +10820,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10829,16 +10862,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10872,16 +10905,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -10898,12 +10931,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -10938,12 +10971,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10987,12 +11020,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11009,20 +11042,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11057,16 +11090,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11083,12 +11116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11125,16 +11158,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11168,16 +11201,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11194,12 +11227,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11234,12 +11267,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11283,12 +11316,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -11338,16 +11371,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11385,20 +11418,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11433,16 +11466,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11459,12 +11492,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11501,16 +11534,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11544,16 +11577,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11570,12 +11603,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11610,12 +11643,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11659,20 +11692,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11707,16 +11740,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11733,12 +11766,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11775,16 +11808,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11818,16 +11851,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -11844,12 +11877,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -11884,12 +11917,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11933,16 +11966,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionStyle",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetHostmapDefinitionStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -11981,16 +12014,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetHostmapDefinitionStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetIframeDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetIframeDefinition",
 		reflect.TypeOf((*PowerpackWidgetIframeDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetIframeDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetIframeDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetIframeDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12019,16 +12052,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetIframeDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetImageDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetImageDefinition",
 		reflect.TypeOf((*PowerpackWidgetImageDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetImageDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetImageDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetImageDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12078,12 +12111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetImageDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetList",
 		reflect.TypeOf((*PowerpackWidgetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12100,16 +12133,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinition",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12148,20 +12181,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumns",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumns",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumnsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumnsList",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12178,12 +12211,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12216,12 +12249,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestColumnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12238,12 +12271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -12278,20 +12311,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12308,12 +12341,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12342,12 +12375,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusteringPatternFieldPath", GoGetter: "ClusteringPatternFieldPath"},
@@ -12399,16 +12432,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySort",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQuerySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -12439,16 +12472,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinition",
 		reflect.TypeOf((*PowerpackWidgetLogStreamDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetLogStreamDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -12467,6 +12500,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "indexes", GoGetter: "Indexes"},
 			_jsii_.MemberProperty{JsiiProperty: "indexesInput", GoGetter: "IndexesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -12480,6 +12515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColumns", GoMethod: "ResetColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIndexes", GoMethod: "ResetIndexes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessageDisplay", GoMethod: "ResetMessageDisplay"},
@@ -12509,16 +12545,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetLogStreamDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionSort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionSort",
 		reflect.TypeOf((*PowerpackWidgetLogStreamDefinitionSort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionSortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetLogStreamDefinitionSortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetLogStreamDefinitionSortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -12549,16 +12585,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetLogStreamDefinitionSortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetManageStatusDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetManageStatusDefinition",
 		reflect.TypeOf((*PowerpackWidgetManageStatusDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetManageStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetManageStatusDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetManageStatusDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "colorPreference", GoGetter: "ColorPreference"},
@@ -12617,16 +12653,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetManageStatusDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetNoteDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetNoteDefinition",
 		reflect.TypeOf((*PowerpackWidgetNoteDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetNoteDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetNoteDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetNoteDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
@@ -12679,12 +12715,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetOutputReference",
 		reflect.TypeOf((*PowerpackWidgetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertGraphDefinition", GoGetter: "AlertGraphDefinition"},
@@ -12836,20 +12872,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinition",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -12866,12 +12902,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12910,12 +12946,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -12936,6 +12972,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "hasSearchBar", GoGetter: "HasSearchBar"},
 			_jsii_.MemberProperty{JsiiProperty: "hasSearchBarInput", GoGetter: "HasSearchBarInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -12947,6 +12985,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHasSearchBar", GoMethod: "ResetHasSearchBar"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -12965,24 +13004,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -13017,16 +13056,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13043,12 +13082,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13085,16 +13124,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -13128,16 +13167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13154,12 +13193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -13194,12 +13233,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13243,20 +13282,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumns",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumns",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13273,12 +13312,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -13316,12 +13355,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryColumnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -13365,16 +13404,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13391,12 +13430,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -13447,20 +13486,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13493,16 +13532,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaCellDisplayModeOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13519,12 +13558,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -13575,16 +13614,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13617,12 +13656,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13639,16 +13678,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13682,20 +13721,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13727,16 +13766,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13765,12 +13804,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -13805,16 +13844,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13843,12 +13882,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -13903,16 +13942,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -13945,12 +13984,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -13967,20 +14006,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -14015,16 +14054,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -14041,12 +14080,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14083,16 +14122,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -14126,16 +14165,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -14152,12 +14191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -14192,12 +14231,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14241,12 +14280,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -14331,16 +14370,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14378,20 +14417,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14444,16 +14483,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14508,16 +14547,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -14556,20 +14595,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -14586,12 +14625,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -14626,16 +14665,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -14652,12 +14691,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14693,16 +14732,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -14737,12 +14776,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14793,16 +14832,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -14831,12 +14870,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -14853,16 +14892,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -14895,19 +14934,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -14962,16 +15004,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -15025,16 +15067,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -15082,20 +15124,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15130,16 +15172,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15156,12 +15198,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15198,16 +15240,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15241,16 +15283,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15267,12 +15309,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15307,12 +15349,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15356,20 +15398,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15404,16 +15446,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15430,12 +15472,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15472,16 +15514,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15515,16 +15557,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15541,12 +15583,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -15581,12 +15623,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15630,16 +15672,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15656,12 +15698,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15692,16 +15734,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormat",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatList",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15718,16 +15760,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15758,12 +15800,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15806,16 +15848,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15849,20 +15891,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinition",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -15879,12 +15921,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -15923,12 +15965,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscale", GoGetter: "Autoscale"},
@@ -15951,6 +15993,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -15966,6 +16010,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscale", GoMethod: "ResetAutoscale"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomUnit", GoMethod: "ResetCustomUnit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrecision", GoMethod: "ResetPrecision"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
@@ -15991,24 +16036,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16043,16 +16088,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16069,12 +16114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16111,16 +16156,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16154,16 +16199,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16180,12 +16225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16220,12 +16265,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16269,20 +16314,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16317,16 +16362,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16343,12 +16388,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16385,16 +16430,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16428,16 +16473,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16454,12 +16499,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -16494,12 +16539,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestAuditQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestAuditQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16543,16 +16588,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestAuditQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16569,12 +16614,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -16625,20 +16670,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16655,12 +16700,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -16711,16 +16756,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16753,12 +16798,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -16775,16 +16820,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16818,20 +16863,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16863,16 +16908,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16901,12 +16946,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -16941,16 +16986,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -16979,12 +17024,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -17035,16 +17080,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17077,12 +17122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17099,20 +17144,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -17147,16 +17192,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17173,12 +17218,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17215,16 +17260,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -17258,16 +17303,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17284,12 +17329,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -17324,12 +17369,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17373,12 +17418,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -17447,16 +17492,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17494,20 +17539,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17560,16 +17605,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17624,16 +17669,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -17672,20 +17717,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17702,12 +17747,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -17742,16 +17787,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17768,12 +17813,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17809,16 +17854,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -17853,12 +17898,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17909,16 +17954,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -17947,12 +17992,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -17969,16 +18014,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -18011,19 +18056,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -18078,16 +18126,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -18141,16 +18189,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -18198,20 +18246,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18246,16 +18294,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18272,12 +18320,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18314,16 +18362,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18357,16 +18405,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18383,12 +18431,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18423,12 +18471,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18472,20 +18520,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18520,16 +18568,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18546,12 +18594,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18588,16 +18636,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18631,16 +18679,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18657,12 +18705,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -18697,12 +18745,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18746,16 +18794,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackground",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionTimeseriesBackground)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18788,16 +18836,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18839,20 +18887,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinition",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18869,12 +18917,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetRunWorkflowDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18913,16 +18961,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetRunWorkflowDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInput",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInput",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionInput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInputList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInputList",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionInputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -18939,12 +18987,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetRunWorkflowDefinitionInputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInputOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionInputOutputReference",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18975,12 +19023,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetRunWorkflowDefinitionInputOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetRunWorkflowDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetRunWorkflowDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -18999,6 +19047,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
 			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -19009,6 +19059,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomLink", GoMethod: "PutCustomLink"},
 			_jsii_.MemberMethod{JsiiMethod: "putInput", GoMethod: "PutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInput", GoMethod: "ResetInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -19029,20 +19080,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinition",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19059,12 +19110,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19103,12 +19154,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "colorByGroups", GoGetter: "ColorByGroups"},
@@ -19129,6 +19180,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -19142,6 +19195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColorByGroups", GoMethod: "ResetColorByGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
@@ -19166,16 +19220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19214,20 +19268,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTable",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTable",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormula",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19244,12 +19298,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -19283,12 +19337,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19305,12 +19359,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19345,20 +19399,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19411,16 +19465,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19475,16 +19529,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -19523,20 +19577,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19553,12 +19607,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -19593,16 +19647,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19619,12 +19673,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19660,16 +19714,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -19704,12 +19758,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19760,16 +19814,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -19798,12 +19852,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -19820,16 +19874,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -19862,19 +19916,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -19929,16 +19986,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -19992,16 +20049,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -20049,24 +20106,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestX",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestX",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestX)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20101,16 +20158,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20127,12 +20184,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20169,16 +20226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20212,16 +20269,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20238,12 +20295,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20278,12 +20335,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20327,12 +20384,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20349,20 +20406,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20397,16 +20454,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20423,12 +20480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20465,16 +20522,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20508,16 +20565,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20534,12 +20591,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20574,12 +20631,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20623,12 +20680,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -20681,16 +20738,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20728,20 +20785,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20776,16 +20833,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20802,12 +20859,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -20844,16 +20901,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20887,16 +20944,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -20913,12 +20970,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -20953,12 +21010,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21002,20 +21059,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21050,16 +21107,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21076,12 +21133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21118,16 +21175,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21161,16 +21218,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21187,12 +21244,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21227,12 +21284,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21276,24 +21333,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestY",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestY",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestY)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21328,16 +21385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21354,12 +21411,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21396,16 +21453,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21439,16 +21496,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21465,12 +21522,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21505,12 +21562,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21554,12 +21611,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21576,20 +21633,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21624,16 +21681,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21650,12 +21707,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21692,16 +21749,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21735,16 +21792,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -21761,12 +21818,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -21801,12 +21858,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21850,12 +21907,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -21908,16 +21965,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -21955,20 +22012,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22003,16 +22060,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22029,12 +22086,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22071,16 +22128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22114,16 +22171,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22140,12 +22197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22180,12 +22237,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22229,20 +22286,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22277,16 +22334,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22303,12 +22360,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22345,16 +22402,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22388,16 +22445,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22414,12 +22471,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -22454,12 +22511,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22503,16 +22560,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionXaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionXaxis",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionXaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionXaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionXaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionXaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22554,16 +22611,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionXaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionYaxis",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetScatterplotDefinitionYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22605,16 +22662,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetScatterplotDefinitionYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServiceLevelObjectiveDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServiceLevelObjectiveDefinition",
 		reflect.TypeOf((*PowerpackWidgetServiceLevelObjectiveDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -22667,20 +22724,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinition",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22697,12 +22754,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetServicemapDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22741,12 +22798,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetServicemapDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetServicemapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetServicemapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22790,16 +22847,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinition",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22838,16 +22895,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSloListDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22879,16 +22936,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -22924,16 +22981,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSloListDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySort",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequestQuerySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -22964,20 +23021,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinition",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -22994,12 +23051,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23038,16 +23095,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendInline",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendInline",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionLegendInline)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendInlineOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendInlineOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionLegendInlineOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23082,16 +23139,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionLegendInlineOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTable",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTable",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionLegendTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionLegendTableOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionLegendTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23120,12 +23177,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionLegendTableOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23144,6 +23201,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hideTotal", GoGetter: "HideTotal"},
 			_jsii_.MemberProperty{JsiiProperty: "hideTotalInput", GoGetter: "HideTotalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -23162,6 +23221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHideTotal", GoMethod: "ResetHideTotal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendInline", GoMethod: "ResetLegendInline"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendTable", GoMethod: "ResetLegendTable"},
@@ -23183,24 +23243,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23235,16 +23295,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23261,12 +23321,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23303,16 +23363,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23346,16 +23406,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23372,12 +23432,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23412,12 +23472,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23461,20 +23521,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23509,16 +23569,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23535,12 +23595,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23577,16 +23637,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23620,16 +23680,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23646,12 +23706,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -23686,12 +23746,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23735,20 +23795,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23765,12 +23825,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -23821,16 +23881,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23863,12 +23923,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -23885,16 +23945,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23928,20 +23988,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -23973,16 +24033,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24011,12 +24071,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -24051,16 +24111,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24089,12 +24149,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -24145,16 +24205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24187,12 +24247,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -24209,20 +24269,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24257,16 +24317,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -24283,12 +24343,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24325,16 +24385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24368,16 +24428,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -24394,12 +24454,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24434,12 +24494,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24483,20 +24543,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24531,16 +24591,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -24557,12 +24617,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24599,16 +24659,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24642,16 +24702,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -24668,12 +24728,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -24708,12 +24768,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24757,12 +24817,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -24832,16 +24892,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24879,20 +24939,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -24945,16 +25005,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25009,16 +25069,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -25057,20 +25117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25087,12 +25147,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25127,16 +25187,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25153,12 +25213,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25194,16 +25254,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25238,12 +25298,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25294,16 +25354,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25332,12 +25392,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25354,16 +25414,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -25396,19 +25456,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -25463,16 +25526,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -25526,16 +25589,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -25583,20 +25646,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25631,16 +25694,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25657,12 +25720,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25699,16 +25762,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25742,16 +25805,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25768,12 +25831,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25808,12 +25871,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25857,20 +25920,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -25905,16 +25968,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -25931,12 +25994,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -25973,16 +26036,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26016,16 +26079,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26042,12 +26105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26082,12 +26145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26131,16 +26194,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestStyle",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetSunburstDefinitionRequestStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetSunburstDefinitionRequestStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26170,20 +26233,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetSunburstDefinitionRequestStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinition",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26200,12 +26263,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26244,16 +26307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEvent",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEvent",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionEvent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEventList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEventList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionEventList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26270,12 +26333,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionEventList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEventOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionEventOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionEventOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26307,16 +26370,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionEventOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarker",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarker",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionMarker)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarkerList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarkerList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionMarkerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26333,12 +26396,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionMarkerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarkerOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionMarkerOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionMarkerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26373,12 +26436,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionMarkerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26399,6 +26462,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -26422,6 +26487,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEvent", GoMethod: "ResetEvent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendColumns", GoMethod: "ResetLegendColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendLayout", GoMethod: "ResetLegendLayout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendSize", GoMethod: "ResetLegendSize"},
@@ -26453,24 +26519,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26505,16 +26571,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26531,12 +26597,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26573,16 +26639,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26616,16 +26682,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26642,12 +26708,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26682,12 +26748,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26731,20 +26797,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26779,16 +26845,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26805,12 +26871,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -26847,16 +26913,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26890,16 +26956,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -26916,12 +26982,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -26956,12 +27022,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27005,20 +27071,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27035,12 +27101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -27091,16 +27157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27133,12 +27199,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27155,16 +27221,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27198,20 +27264,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27243,16 +27309,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27281,12 +27347,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -27321,16 +27387,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27359,12 +27425,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -27415,16 +27481,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27457,12 +27523,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27479,20 +27545,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -27527,16 +27593,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27553,12 +27619,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27595,16 +27661,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -27638,16 +27704,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27664,12 +27730,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -27704,12 +27770,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27753,16 +27819,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadata",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadata",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadataList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadataList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27779,12 +27845,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadataOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestMetadataOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliasName", GoGetter: "AliasName"},
@@ -27816,20 +27882,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -27864,16 +27930,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -27890,12 +27956,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -27932,16 +27998,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -27975,16 +28041,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -28001,12 +28067,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -28041,12 +28107,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28090,12 +28156,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -28175,16 +28241,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28222,20 +28288,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28288,16 +28354,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28352,16 +28418,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -28400,20 +28466,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -28430,12 +28496,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -28470,16 +28536,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -28496,12 +28562,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28537,16 +28603,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -28581,12 +28647,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28637,16 +28703,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -28675,12 +28741,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -28697,16 +28763,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -28739,19 +28805,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -28806,16 +28875,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -28869,16 +28938,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -28926,20 +28995,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -28974,16 +29043,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29000,12 +29069,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29042,16 +29111,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29085,16 +29154,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29111,12 +29180,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29151,12 +29220,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29200,20 +29269,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29248,16 +29317,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29274,12 +29343,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29316,16 +29385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29359,16 +29428,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29385,12 +29454,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29425,12 +29494,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29474,16 +29543,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyle",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29507,10 +29576,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lineTypeInput", GoGetter: "LineTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lineWidth", GoGetter: "LineWidth"},
 			_jsii_.MemberProperty{JsiiProperty: "lineWidthInput", GoGetter: "LineWidthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "orderBy", GoGetter: "OrderBy"},
+			_jsii_.MemberProperty{JsiiProperty: "orderByInput", GoGetter: "OrderByInput"},
 			_jsii_.MemberProperty{JsiiProperty: "palette", GoGetter: "Palette"},
 			_jsii_.MemberProperty{JsiiProperty: "paletteInput", GoGetter: "PaletteInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLineType", GoMethod: "ResetLineType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLineWidth", GoMethod: "ResetLineWidth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOrderBy", GoMethod: "ResetOrderBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPalette", GoMethod: "ResetPalette"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -29519,16 +29591,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxis",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRightYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29570,16 +29642,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionYaxis",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionYaxis",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionYaxis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionYaxisOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionYaxisOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTimeseriesDefinitionYaxisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29621,20 +29693,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionYaxisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinition",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29651,12 +29723,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29695,12 +29767,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29719,6 +29791,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -29730,6 +29804,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestInput", GoGetter: "RequestInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomLink", GoMethod: "ResetCustomLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequest", GoMethod: "ResetRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStyle", GoMethod: "ResetStyle"},
@@ -29751,24 +29826,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29803,16 +29878,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29829,12 +29904,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -29871,16 +29946,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29914,16 +29989,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -29940,12 +30015,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -29980,12 +30055,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30029,20 +30104,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -30077,16 +30152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30103,12 +30178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30145,16 +30220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -30188,16 +30263,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30214,12 +30289,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -30254,12 +30329,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30303,16 +30378,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30329,12 +30404,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -30385,20 +30460,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30415,12 +30490,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -30471,16 +30546,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30513,12 +30588,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30535,16 +30610,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30578,20 +30653,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30623,16 +30698,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30661,12 +30736,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -30701,16 +30776,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30739,12 +30814,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -30795,16 +30870,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30837,12 +30912,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30859,20 +30934,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -30907,16 +30982,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -30933,12 +31008,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -30975,16 +31050,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -31018,16 +31093,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -31044,12 +31119,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -31084,12 +31159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31133,12 +31208,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmQuery", GoGetter: "ApmQuery"},
@@ -31208,16 +31283,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31255,20 +31330,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31321,16 +31396,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31385,16 +31460,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -31433,20 +31508,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -31463,12 +31538,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -31503,16 +31578,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -31529,12 +31604,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31570,16 +31645,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -31614,12 +31689,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31670,16 +31745,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -31708,12 +31783,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -31730,16 +31805,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -31772,19 +31847,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -31839,16 +31917,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -31902,16 +31980,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -31959,20 +32037,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32007,16 +32085,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32033,12 +32111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32075,16 +32153,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32118,16 +32196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32144,12 +32222,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32184,12 +32262,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32233,20 +32311,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32281,16 +32359,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32307,12 +32385,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32349,16 +32427,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32392,16 +32470,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32418,12 +32496,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -32458,12 +32536,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32507,16 +32585,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestStyle",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionRequestStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionRequestStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32546,20 +32624,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionRequestStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyle",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplay",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplay",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyleDisplay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplayList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplayList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyleDisplayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32576,12 +32654,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionStyleDisplayList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplayOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleDisplayOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyleDisplayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32610,12 +32688,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionStyleDisplayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleList",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32632,12 +32710,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionStyleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetToplistDefinitionStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32674,20 +32752,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetToplistDefinitionStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinition",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLink",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLink",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionCustomLink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLinkList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionCustomLinkList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32704,12 +32782,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionCustomLinkList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLinkOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionCustomLinkOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionCustomLinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32748,12 +32826,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionCustomLinkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32797,16 +32875,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32823,12 +32901,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32860,16 +32938,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -32886,12 +32964,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32924,16 +33002,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTopologyMapDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTraceServiceDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTraceServiceDefinition",
 		reflect.TypeOf((*PowerpackWidgetTraceServiceDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTraceServiceDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTraceServiceDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTraceServiceDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -32954,12 +33032,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostData", GoGetter: "HideIncompleteCostData"},
+			_jsii_.MemberProperty{JsiiProperty: "hideIncompleteCostDataInput", GoGetter: "HideIncompleteCostDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "liveSpan", GoGetter: "LiveSpan"},
 			_jsii_.MemberProperty{JsiiProperty: "liveSpanInput", GoGetter: "LiveSpanInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayFormat", GoMethod: "ResetDisplayFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHideIncompleteCostData", GoMethod: "ResetHideIncompleteCostData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveSpan", GoMethod: "ResetLiveSpan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShowBreakdown", GoMethod: "ResetShowBreakdown"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShowDistribution", GoMethod: "ResetShowDistribution"},
@@ -33002,20 +33083,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTraceServiceDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinition",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinition",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinks",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinks",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionCustomLinks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinksList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinksList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionCustomLinksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33032,12 +33113,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionCustomLinksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinksOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionCustomLinksOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionCustomLinksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33076,12 +33157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionCustomLinksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33119,24 +33200,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequest",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequest",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormula",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormula",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormula)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormats",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormats",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33153,12 +33234,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparator", GoGetter: "Comparator"},
@@ -33209,16 +33290,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaConditionalFormatsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimit",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaLimitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33251,12 +33332,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33273,16 +33354,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33316,20 +33397,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonical)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33361,16 +33442,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33399,12 +33480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canonical", GoGetter: "Canonical"},
@@ -33439,16 +33520,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33477,12 +33558,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -33533,16 +33614,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyle",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestFormulaStyleOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestFormulaStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33575,12 +33656,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestFormulaStyleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33597,12 +33678,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33637,20 +33718,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33703,16 +33784,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33767,16 +33848,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -33815,20 +33896,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryCloudCostQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryCompute",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryCompute",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33845,12 +33926,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -33885,16 +33966,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBy",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBy",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -33911,12 +33992,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -33952,16 +34033,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
@@ -33996,12 +34077,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -34052,16 +34133,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -34090,12 +34171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryList",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -34112,16 +34193,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryMetricQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -34154,19 +34235,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregator", GoMethod: "ResetAggregator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCrossOrgUuids", GoMethod: "ResetCrossOrgUuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSemanticMode", GoMethod: "ResetSemanticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticMode", GoGetter: "SemanticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "semanticModeInput", GoGetter: "SemanticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apmDependencyStatsQuery", GoGetter: "ApmDependencyStatsQuery"},
@@ -34221,16 +34305,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryProcessQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregator", GoGetter: "Aggregator"},
@@ -34284,16 +34368,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQuery",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQuerySloQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTreemapDefinitionRequestQuerySloQueryOutputReference",
 		reflect.TypeOf((*PowerpackWidgetTreemapDefinitionRequestQuerySloQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalQueryFilters", GoGetter: "AdditionalQueryFilters"},
@@ -34341,16 +34425,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQuerySloQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetWidgetLayout",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetWidgetLayout",
 		reflect.TypeOf((*PowerpackWidgetWidgetLayout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetWidgetLayoutOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetWidgetLayoutOutputReference",
 		reflect.TypeOf((*PowerpackWidgetWidgetLayoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -34388,7 +34472,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PowerpackWidgetWidgetLayoutOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

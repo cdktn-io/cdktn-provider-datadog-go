@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationfastlyservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationfastlyservice/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyservice/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 type IntegrationFastlyService interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,24 +35,24 @@ type IntegrationFastlyService interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,7 +66,7 @@ type IntegrationFastlyService interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type IntegrationFastlyService interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +97,9 @@ type IntegrationFastlyService interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,7 +134,7 @@ type IntegrationFastlyService interface {
 
 // The jsii proxy struct for IntegrationFastlyService
 type jsiiProxy_IntegrationFastlyService struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IntegrationFastlyService) AccountId() *string {
@@ -157,8 +157,8 @@ func (j *jsiiProxy_IntegrationFastlyService) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationFastlyService) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IntegrationFastlyService) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_IntegrationFastlyService) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationFastlyService) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IntegrationFastlyService) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_IntegrationFastlyService) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationFastlyService) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IntegrationFastlyService) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_IntegrationFastlyService) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationFastlyService) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IntegrationFastlyService) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_IntegrationFastlyService) TagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationFastlyService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IntegrationFastlyService) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_IntegrationFastlyService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService(scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) IntegrationFastlyService {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewIntegrationFastlyService(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IntegrationFastlyService{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,12 +386,12 @@ func NewIntegrationFastlyService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService_Override(i IntegrationFastlyService, scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IntegrationFastlyService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationFastlyService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationFastlyService)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +446,7 @@ func (j *jsiiProxy_IntegrationFastlyService)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_IntegrationFastlyService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationFastlyService)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_IntegrationFastlyService)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_IntegrationFastlyService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationFastlyService)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -498,17 +498,17 @@ func (j *jsiiProxy_IntegrationFastlyService)SetTags(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a IntegrationFastlyService resource upon running "cdktf plan <stack-name>".
-func IntegrationFastlyService_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IntegrationFastlyService resource upon running "cdktn plan <stack-name>".
+func IntegrationFastlyService_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIntegrationFastlyService_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -543,7 +543,7 @@ func IntegrationFastlyService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func IntegrationFastlyService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func IntegrationFastlyService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func IntegrationFastlyService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService",
+		"@cdktn/provider-datadog.integrationFastlyService.IntegrationFastlyService",
 		"tfResourceType",
 		&returns,
 	)
@@ -639,11 +639,11 @@ func (i *jsiiProxy_IntegrationFastlyService) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationFastlyService) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationFastlyService) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -780,7 +780,7 @@ func (i *jsiiProxy_IntegrationFastlyService) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationFastlyService) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IntegrationFastlyService) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -791,11 +791,11 @@ func (i *jsiiProxy_IntegrationFastlyService) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (i *jsiiProxy_IntegrationFastlyService) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationFastlyService) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

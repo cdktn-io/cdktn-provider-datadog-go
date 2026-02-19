@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Column() *string
 	SetColumn(val *string)
 	ColumnInput() *string
@@ -43,15 +43,15 @@ type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutput
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutput
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutput
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) Column() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +205,7 @@ func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOut
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOut
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,8 +457,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -470,11 +470,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -486,7 +486,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQ
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestQuerySortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

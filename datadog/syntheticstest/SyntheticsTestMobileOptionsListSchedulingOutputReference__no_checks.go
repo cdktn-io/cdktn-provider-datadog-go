@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListSchedulingOutputReference) val
 	return nil
 }
 
-func validateNewSyntheticsTestMobileOptionsListSchedulingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsTestMobileOptionsListSchedulingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/apikey/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/apikey/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key}.
 type ApiKey interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type ApiKey interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,18 +42,18 @@ type ApiKey interface {
 	Id() *string
 	Key() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -64,7 +64,7 @@ type ApiKey interface {
 	SetRemoteConfigReadEnabled(val interface{})
 	RemoteConfigReadEnabledInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type ApiKey interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -95,9 +95,9 @@ type ApiKey interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -131,11 +131,11 @@ type ApiKey interface {
 
 // The jsii proxy struct for ApiKey
 type jsiiProxy_ApiKey struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ApiKey) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ApiKey) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ApiKey) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiKey) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ApiKey) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ApiKey) Key() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiKey) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ApiKey) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_ApiKey) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ApiKey) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ApiKey) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_ApiKey) RemoteConfigReadEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ApiKey) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_ApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) ApiKey {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	j := jsiiProxy_ApiKey{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,12 +373,12 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey_Override(a ApiKey, scope constructs.Construct, id *string, config *ApiKeyConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ApiKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiKey)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +422,7 @@ func (j *jsiiProxy_ApiKey)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiKey)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_ApiKey)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiKey)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,17 +474,17 @@ func (j *jsiiProxy_ApiKey)SetRemoteConfigReadEnabled(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ApiKey resource upon running "cdktf plan <stack-name>".
-func ApiKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ApiKey resource upon running "cdktn plan <stack-name>".
+func ApiKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateApiKey_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -519,7 +519,7 @@ func ApiKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func ApiKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func ApiKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func ApiKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.apiKey.ApiKey",
+		"@cdktn/provider-datadog.apiKey.ApiKey",
 		"tfResourceType",
 		&returns,
 	)
@@ -615,11 +615,11 @@ func (a *jsiiProxy_ApiKey) GetAnyMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
-func (a *jsiiProxy_ApiKey) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiKey) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -756,7 +756,7 @@ func (a *jsiiProxy_ApiKey) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_ApiKey) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -767,11 +767,11 @@ func (a *jsiiProxy_ApiKey) ImportFrom(id *string, provider cdktf.TerraformProvid
 	)
 }
 
-func (a *jsiiProxy_ApiKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiKey) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

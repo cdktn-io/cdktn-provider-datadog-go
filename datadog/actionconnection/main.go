@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package actionconnection
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnection",
+		"@cdktn/provider-datadog.actionConnection.ActionConnection",
 		reflect.TypeOf((*ActionConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -69,20 +69,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionAws",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionAws",
 		reflect.TypeOf((*ActionConnectionAws)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole",
 		reflect.TypeOf((*ActionConnectionAwsAssumeRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference",
 		reflect.TypeOf((*ActionConnectionAwsAssumeRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -117,12 +117,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionAwsOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference",
 		reflect.TypeOf((*ActionConnectionAwsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRole", GoGetter: "AssumeRole"},
@@ -153,20 +153,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionAwsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionConfig",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionConfig",
 		reflect.TypeOf((*ActionConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttp",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttp",
 		reflect.TypeOf((*ActionConnectionHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseUrl", GoGetter: "BaseUrl"},
@@ -200,20 +200,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuth",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuth",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthBody)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBodyOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBodyOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthBodyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -246,16 +246,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthBodyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderList",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderList",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -272,12 +272,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -310,12 +310,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -358,16 +358,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenList",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenList",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthTokenList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -384,12 +384,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthTokenList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -425,16 +425,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthTokenOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthUrlParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterList",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterList",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthUrlParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -451,12 +451,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
+		"@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference",
 		reflect.TypeOf((*ActionConnectionHttpTokenAuthUrlParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -489,7 +489,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

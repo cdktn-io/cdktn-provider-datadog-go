@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorSchedulingOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type MonitorSchedulingOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type MonitorSchedulingOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomSchedule(value *MonitorSchedulingOptionsCustomSchedule)
 	PutEvaluationWindow(value *MonitorSchedulingOptionsEvaluationWindow)
 	ResetCustomSchedule()
 	ResetEvaluationWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type MonitorSchedulingOptionsOutputReference interface {
 
 // The jsii proxy struct for MonitorSchedulingOptionsOutputReference
 type jsiiProxy_MonitorSchedulingOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference) TerraformResource() 
 }
 
 
-func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference {
+func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorSchedulingOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorSchedulingOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_MonitorSchedulingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewMonitorSchedulingOptionsOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewMonitorSchedulingOptionsOutputReference_Override(m MonitorSchedulingOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorSchedulingOptionsOutputReference_Override(m MonitorSchedulingOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorSchedulingOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -437,8 +437,8 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -450,11 +450,11 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,7 +504,7 @@ func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) ResetEvaluationWindo
 	)
 }
 
-func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorSchedulingOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

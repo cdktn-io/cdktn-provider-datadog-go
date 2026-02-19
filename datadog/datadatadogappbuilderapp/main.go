@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogappbuilderapp
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		reflect.TypeOf((*DataDatadogAppBuilderApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionQueryNamesToConnectionIds", GoGetter: "ActionQueryNamesToConnectionIds"},
@@ -58,12 +58,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAppBuilderApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderAppConfig",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderAppConfig",
 		reflect.TypeOf((*DataDatadogAppBuilderAppConfig)(nil)).Elem(),
 	)
 }

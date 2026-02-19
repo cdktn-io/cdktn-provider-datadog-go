@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutAlloc
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CustomAllocationRuleStrategyAllocatedBy:
 		value := value.(*[]*CustomAllocationRuleStrategyAllocatedBy)
@@ -117,7 +117,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutAlloc
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomAllocationRuleStrategyAllocatedBy; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CustomAllocationRuleStrategyAllocatedBy; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutAlloc
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CustomAllocationRuleStrategyAllocatedByFilters:
 		value := value.(*[]*CustomAllocationRuleStrategyAllocatedByFilters)
@@ -148,7 +148,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutAlloc
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomAllocationRuleStrategyAllocatedByFilters; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CustomAllocationRuleStrategyAllocatedByFilters; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutBased
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CustomAllocationRuleStrategyBasedOnCosts:
 		value := value.(*[]*CustomAllocationRuleStrategyBasedOnCosts)
@@ -179,7 +179,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutBased
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomAllocationRuleStrategyBasedOnCosts; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CustomAllocationRuleStrategyBasedOnCosts; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -202,7 +202,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutEvalu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CustomAllocationRuleStrategyEvaluateGroupedByFilters:
 		value := value.(*[]*CustomAllocationRuleStrategyEvaluateGroupedByFilters)
@@ -221,14 +221,14 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validatePutEvalu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomAllocationRuleStrategyEvaluateGroupedByFilters; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CustomAllocationRuleStrategyEvaluateGroupedByFilters; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetGranu
 
 func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *CustomAllocationRuleStrategy:
 		val := val.(*CustomAllocationRuleStrategy)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetInter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CustomAllocationRuleStrategy; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *CustomAllocationRuleStrategy; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -365,7 +365,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewCustomAllocationRuleStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCustomAllocationRuleStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitymonitoringfilter
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter",
+		"@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter",
 		reflect.TypeOf((*SecurityMonitoringFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,20 +75,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringFilter{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig",
+		"@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig",
 		reflect.TypeOf((*SecurityMonitoringFilterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter",
+		"@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter",
 		reflect.TypeOf((*SecurityMonitoringFilterExclusionFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterList",
+		"@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterList",
 		reflect.TypeOf((*SecurityMonitoringFilterExclusionFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -105,12 +105,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringFilterExclusionFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference",
 		reflect.TypeOf((*SecurityMonitoringFilterExclusionFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,7 +141,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecurityMonitoringFilterExclusionFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

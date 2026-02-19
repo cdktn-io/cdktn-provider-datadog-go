@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationpagerduty
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerduty",
+		"@cdktn/provider-datadog.integrationPagerduty.IntegrationPagerduty",
 		reflect.TypeOf((*IntegrationPagerduty)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -69,12 +69,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationPagerduty{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerdutyConfig",
+		"@cdktn/provider-datadog.integrationPagerduty.IntegrationPagerdutyConfig",
 		reflect.TypeOf((*IntegrationPagerdutyConfig)(nil)).Elem(),
 	)
 }

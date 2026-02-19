@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorVariablesEventQueryGroupBySortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type MonitorVariablesEventQueryGroupBySortOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type MonitorVariablesEventQueryGroupBySortOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMetric()
 	ResetOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type MonitorVariablesEventQueryGroupBySortOutputReference interface {
 
 // The jsii proxy struct for MonitorVariablesEventQueryGroupBySortOutputReference
 type jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Aggregation() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Terrafo
 }
 
 
-func NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQueryGroupBySortOutputReference {
+func NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorVariablesEventQueryGroupBySortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorVariablesEventQueryGroupBySortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource c
 	j := jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewMonitorVariablesEventQueryGroupBySortOutputReference(terraformResource c
 	return &j
 }
 
-func NewMonitorVariablesEventQueryGroupBySortOutputReference_Override(m MonitorVariablesEventQueryGroupBySortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorVariablesEventQueryGroupBySortOutputReference_Override(m MonitorVariablesEventQueryGroupBySortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) GetAnyM
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -493,8 +493,8 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) GetStri
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -506,11 +506,11 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Interpo
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -538,7 +538,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) ResetOr
 	)
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupBySortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

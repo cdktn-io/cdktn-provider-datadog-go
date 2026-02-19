@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustompipeline
@@ -7,9 +7,9 @@ package logscustompipeline
 type LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory struct {
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
 	Filter *LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

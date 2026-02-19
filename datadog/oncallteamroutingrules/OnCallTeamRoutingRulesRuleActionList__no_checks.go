@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewOnCallTeamRoutingRulesRuleActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOnCallTeamRoutingRulesRuleActionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

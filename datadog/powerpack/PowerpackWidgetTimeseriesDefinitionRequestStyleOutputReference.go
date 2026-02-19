@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +38,9 @@ type PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference interface {
 	LineWidth() *string
 	SetLineWidth(val *string)
 	LineWidthInput() *string
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	Palette() *string
 	SetPalette(val *string)
 	PaletteInput() *string
@@ -46,15 +49,15 @@ type PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +73,16 @@ type PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLineType()
 	ResetLineWidth()
+	ResetOrderBy()
 	ResetPalette()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +92,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference
 type jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) ComplexObjectIndex() interface{} {
@@ -181,6 +185,26 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) Palette() *string {
 	var returns *string
 	_jsii_.Get(
@@ -211,8 +235,8 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +246,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 }
 
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference {
+func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +255,7 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference(terraform
 	j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +263,11 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference(terraform
 	return &j
 }
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference_Override(p PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference_Override(p PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -304,6 +328,17 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference)SetPalette(val *string) {
 	if err := j.validateSetPaletteParameters(val); err != nil {
 		panic(err)
@@ -326,7 +361,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +401,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -494,8 +529,8 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -507,11 +542,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -539,6 +574,14 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOrderBy",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) ResetPalette() {
 	_jsii_.InvokeVoid(
 		p,
@@ -547,7 +590,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

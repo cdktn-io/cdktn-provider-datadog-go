@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationgcp
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcp",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcp",
 		reflect.TypeOf((*IntegrationGcp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -94,20 +94,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpConfig",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpConfig",
 		reflect.TypeOf((*IntegrationGcpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs",
 		reflect.TypeOf((*IntegrationGcpMonitoredResourceConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList",
 		reflect.TypeOf((*IntegrationGcpMonitoredResourceConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -124,12 +124,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpMonitoredResourceConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference",
+		"@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference",
 		reflect.TypeOf((*IntegrationGcpMonitoredResourceConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,7 +162,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationGcpMonitoredResourceConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

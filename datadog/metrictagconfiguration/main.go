@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metrictagconfiguration
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		reflect.TypeOf((*MetricTagConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -77,16 +77,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetricTagConfiguration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations",
 		reflect.TypeOf((*MetricTagConfigurationAggregations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList",
 		reflect.TypeOf((*MetricTagConfigurationAggregationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -103,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetricTagConfigurationAggregationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference",
 		reflect.TypeOf((*MetricTagConfigurationAggregationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,12 +139,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MetricTagConfigurationAggregationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig",
 		reflect.TypeOf((*MetricTagConfigurationConfig)(nil)).Elem(),
 	)
 }

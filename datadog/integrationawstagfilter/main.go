@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawstagfilter
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter",
 		reflect.TypeOf((*IntegrationAwsTagFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -67,12 +67,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsTagFilter{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilterConfig",
+		"@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilterConfig",
 		reflect.TypeOf((*IntegrationAwsTagFilterConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmetricmetadata
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata",
+		"@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata",
 		reflect.TypeOf((*DataDatadogMetricMetadata)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,12 +60,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMetricMetadata{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadataConfig",
+		"@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadataConfig",
 		reflect.TypeOf((*DataDatadogMetricMetadataConfig)(nil)).Elem(),
 	)
 }

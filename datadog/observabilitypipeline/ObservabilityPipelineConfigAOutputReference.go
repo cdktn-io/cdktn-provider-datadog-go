@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/observabilitypipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/observabilitypipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ObservabilityPipelineConfigAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,30 +28,36 @@ type ObservabilityPipelineConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Destinations() ObservabilityPipelineConfigDestinationsOutputReference
-	DestinationsInput() interface{}
+	Destination() ObservabilityPipelineConfigDestinationList
+	DestinationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Processors() ObservabilityPipelineConfigProcessorsOutputReference
-	ProcessorsInput() interface{}
-	Sources() ObservabilityPipelineConfigSourcesOutputReference
-	SourcesInput() interface{}
+	PipelineType() *string
+	SetPipelineType(val *string)
+	PipelineTypeInput() *string
+	ProcessorGroup() ObservabilityPipelineConfigProcessorGroupList
+	ProcessorGroupInput() interface{}
+	Source() ObservabilityPipelineConfigSourceList
+	SourceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseLegacySearchSyntax() interface{}
+	SetUseLegacySearchSyntax(val interface{})
+	UseLegacySearchSyntaxInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,18 +73,20 @@ type ObservabilityPipelineConfigAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	PutDestinations(value *ObservabilityPipelineConfigDestinations)
-	PutProcessors(value *ObservabilityPipelineConfigProcessors)
-	PutSources(value *ObservabilityPipelineConfigSources)
-	ResetDestinations()
-	ResetProcessors()
-	ResetSources()
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDestination(value interface{})
+	PutProcessorGroup(value interface{})
+	PutSource(value interface{})
+	ResetDestination()
+	ResetPipelineType()
+	ResetProcessorGroup()
+	ResetSource()
+	ResetUseLegacySearchSyntax()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +96,7 @@ type ObservabilityPipelineConfigAOutputReference interface {
 
 // The jsii proxy struct for ObservabilityPipelineConfigAOutputReference
 type jsiiProxy_ObservabilityPipelineConfigAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -121,21 +129,21 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Destinations() ObservabilityPipelineConfigDestinationsOutputReference {
-	var returns ObservabilityPipelineConfigDestinationsOutputReference
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Destination() ObservabilityPipelineConfigDestinationList {
+	var returns ObservabilityPipelineConfigDestinationList
 	_jsii_.Get(
 		j,
-		"destinations",
+		"destination",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) DestinationsInput() interface{} {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) DestinationInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"destinationsInput",
+		"destinationInput",
 		&returns,
 	)
 	return returns
@@ -161,41 +169,61 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Processors() ObservabilityPipelineConfigProcessorsOutputReference {
-	var returns ObservabilityPipelineConfigProcessorsOutputReference
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PipelineType() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"processors",
+		"pipelineType",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ProcessorsInput() interface{} {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PipelineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ProcessorGroup() ObservabilityPipelineConfigProcessorGroupList {
+	var returns ObservabilityPipelineConfigProcessorGroupList
+	_jsii_.Get(
+		j,
+		"processorGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ProcessorGroupInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"processorsInput",
+		"processorGroupInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Sources() ObservabilityPipelineConfigSourcesOutputReference {
-	var returns ObservabilityPipelineConfigSourcesOutputReference
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Source() ObservabilityPipelineConfigSourceList {
+	var returns ObservabilityPipelineConfigSourceList
 	_jsii_.Get(
 		j,
-		"sources",
+		"source",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) SourcesInput() interface{} {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) SourceInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"sourcesInput",
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -211,8 +239,8 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,30 +249,50 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) UseLegacySearchSyntax() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacySearchSyntax",
+		&returns,
+	)
+	return returns
+}
 
-func NewObservabilityPipelineConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObservabilityPipelineConfigAOutputReference {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference) UseLegacySearchSyntaxInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLegacySearchSyntaxInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewObservabilityPipelineConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigAOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewObservabilityPipelineConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewObservabilityPipelineConfigAOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ObservabilityPipelineConfigAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewObservabilityPipelineConfigAOutputReference_Override(o ObservabilityPipelineConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewObservabilityPipelineConfigAOutputReference_Override(o ObservabilityPipelineConfigAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigAOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
 }
@@ -282,6 +330,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetInternalValue(
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetPipelineType(val *string) {
+	if err := j.validateSetPipelineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipelineType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -293,13 +352,24 @@ func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigAOutputReference)SetUseLegacySearchSyntax(val interface{}) {
+	if err := j.validateSetUseLegacySearchSyntaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useLegacySearchSyntax",
 		val,
 	)
 }
@@ -333,11 +403,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -461,8 +531,8 @@ func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -474,11 +544,11 @@ func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationAsL
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -490,64 +560,80 @@ func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) InterpolationFor
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutDestinations(value *ObservabilityPipelineConfigDestinations) {
-	if err := o.validatePutDestinationsParameters(value); err != nil {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutDestination(value interface{}) {
+	if err := o.validatePutDestinationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
-		"putDestinations",
+		"putDestination",
 		[]interface{}{value},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutProcessors(value *ObservabilityPipelineConfigProcessors) {
-	if err := o.validatePutProcessorsParameters(value); err != nil {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutProcessorGroup(value interface{}) {
+	if err := o.validatePutProcessorGroupParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
-		"putProcessors",
+		"putProcessorGroup",
 		[]interface{}{value},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutSources(value *ObservabilityPipelineConfigSources) {
-	if err := o.validatePutSourcesParameters(value); err != nil {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) PutSource(value interface{}) {
+	if err := o.validatePutSourceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
-		"putSources",
+		"putSource",
 		[]interface{}{value},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetDestinations() {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetDestination() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetDestinations",
+		"resetDestination",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetProcessors() {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetPipelineType() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetProcessors",
+		"resetPipelineType",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetSources() {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetProcessorGroup() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetSources",
+		"resetProcessorGroup",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) ResetUseLegacySearchSyntax() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUseLegacySearchSyntax",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

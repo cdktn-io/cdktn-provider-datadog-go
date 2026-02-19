@@ -1,10 +1,10 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package webhook
 
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WebhookConfig struct {
@@ -13,34 +13,34 @@ type WebhookConfig struct {
 	// Experimental.
 	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
-	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	DependsOn *[]cdktn.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
-	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	ForEach cdktn.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	Lifecycle *cdktn.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
-	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#name Webhook#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#name Webhook#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The URL of the webhook.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#url Webhook#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#url Webhook#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// The headers attached to the webhook.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 	CustomHeaders *string `field:"optional" json:"customHeaders" yaml:"customHeaders"`
 	// Encoding type. Valid values are `json`, `form`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#encode_as Webhook#encode_as}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#encode_as Webhook#encode_as}
 	EncodeAs *string `field:"optional" json:"encodeAs" yaml:"encodeAs"`
 	// The payload of the webhook.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#payload Webhook#payload}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#payload Webhook#payload}
 	Payload *string `field:"optional" json:"payload" yaml:"payload"`
 }
 

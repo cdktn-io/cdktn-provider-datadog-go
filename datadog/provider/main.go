@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		reflect.TypeOf((*DatadogProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,16 +87,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatadogProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.provider.DatadogProviderConfig",
+		"@cdktn/provider-datadog.provider.DatadogProviderConfig",
 		reflect.TypeOf((*DatadogProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.provider.DatadogProviderDefaultTags",
+		"@cdktn/provider-datadog.provider.DatadogProviderDefaultTags",
 		reflect.TypeOf((*DatadogProviderDefaultTags)(nil)).Elem(),
 	)
 }

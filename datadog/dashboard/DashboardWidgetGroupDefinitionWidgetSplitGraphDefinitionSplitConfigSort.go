@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSplitConfigSort struct {
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 	// compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute Dashboard#compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute Dashboard#compute}
 	Compute *DashboardWidgetGroupDefinitionWidgetSplitGraphDefinitionSplitConfigSortCompute `field:"optional" json:"compute" yaml:"compute"`
 }
 

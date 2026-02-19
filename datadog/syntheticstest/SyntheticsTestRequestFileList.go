@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestRequestFileList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type SyntheticsTestRequestFileList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type SyntheticsTestRequestFileList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) SyntheticsTestRequestFileOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type SyntheticsTestRequestFileList interface {
 
 // The jsii proxy struct for SyntheticsTestRequestFileList
 type jsiiProxy_SyntheticsTestRequestFileList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestFileList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_SyntheticsTestRequestFileList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestFileList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestRequestFileList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_SyntheticsTestRequestFileList) WrapsSet() *bool {
 }
 
 
-func NewSyntheticsTestRequestFileList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestRequestFileList {
+func NewSyntheticsTestRequestFileList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestRequestFileList {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestRequestFileListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewSyntheticsTestRequestFileList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_SyntheticsTestRequestFileList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewSyntheticsTestRequestFileList(terraformResource cdktf.IInterpolatingPare
 	return &j
 }
 
-func NewSyntheticsTestRequestFileList_Override(s SyntheticsTestRequestFileList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewSyntheticsTestRequestFileList_Override(s SyntheticsTestRequestFileList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_SyntheticsTestRequestFileList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestFileList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestRequestFileList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_SyntheticsTestRequestFileList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestFileList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_SyntheticsTestRequestFileList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -231,7 +231,7 @@ func (s *jsiiProxy_SyntheticsTestRequestFileList) Get(index *float64) Synthetics
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestFileList) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestRequestFileList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

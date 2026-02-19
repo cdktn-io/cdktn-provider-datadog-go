@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticsprivatelocation
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation",
+		"@cdktn/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation",
 		reflect.TypeOf((*SyntheticsPrivateLocation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -76,20 +76,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsPrivateLocation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig",
+		"@cdktn/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig",
 		reflect.TypeOf((*SyntheticsPrivateLocationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata",
+		"@cdktn/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata",
 		reflect.TypeOf((*SyntheticsPrivateLocationMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataList",
+		"@cdktn/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataList",
 		reflect.TypeOf((*SyntheticsPrivateLocationMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsPrivateLocationMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference",
+		"@cdktn/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference",
 		reflect.TypeOf((*SyntheticsPrivateLocationMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,7 +141,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsPrivateLocationMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

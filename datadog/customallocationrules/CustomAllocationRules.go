@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customallocationrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/customallocationrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules}.
 type CustomAllocationRules interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,27 +32,27 @@ type CustomAllocationRules interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	OverrideUiDefinedResources() interface{}
 	SetOverrideUiDefinedResources(val interface{})
 	OverrideUiDefinedResourcesInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -63,7 +63,7 @@ type CustomAllocationRules interface {
 	SetRuleIds(val *[]*string)
 	RuleIdsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type CustomAllocationRules interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type CustomAllocationRules interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -130,11 +130,11 @@ type CustomAllocationRules interface {
 
 // The jsii proxy struct for CustomAllocationRules
 type jsiiProxy_CustomAllocationRules struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_CustomAllocationRules) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CustomAllocationRules) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_CustomAllocationRules) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAllocationRules) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CustomAllocationRules) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_CustomAllocationRules) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAllocationRules) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CustomAllocationRules) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_CustomAllocationRules) OverrideUiDefinedResourcesInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_CustomAllocationRules) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CustomAllocationRules) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_CustomAllocationRules) RuleIdsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomAllocationRules) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CustomAllocationRules) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_CustomAllocationRules) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
 func NewCustomAllocationRules(scope constructs.Construct, id *string, config *CustomAllocationRulesConfig) CustomAllocationRules {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewCustomAllocationRules(scope constructs.Construct, id *string, config *Cu
 	j := jsiiProxy_CustomAllocationRules{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,12 +362,12 @@ func NewCustomAllocationRules(scope constructs.Construct, id *string, config *Cu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rules datadog_custom_allocation_rules} Resource.
 func NewCustomAllocationRules_Override(c CustomAllocationRules, scope constructs.Construct, id *string, config *CustomAllocationRulesConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -403,7 +403,7 @@ func (j *jsiiProxy_CustomAllocationRules)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomAllocationRules)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomAllocationRules)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_CustomAllocationRules)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_CustomAllocationRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomAllocationRules)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_CustomAllocationRules)SetOverrideUiDefinedResources(val inter
 	)
 }
 
-func (j *jsiiProxy_CustomAllocationRules)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomAllocationRules)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,17 +463,17 @@ func (j *jsiiProxy_CustomAllocationRules)SetRuleIds(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a CustomAllocationRules resource upon running "cdktf plan <stack-name>".
-func CustomAllocationRules_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CustomAllocationRules resource upon running "cdktn plan <stack-name>".
+func CustomAllocationRules_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCustomAllocationRules_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -508,7 +508,7 @@ func CustomAllocationRules_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func CustomAllocationRules_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func CustomAllocationRules_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func CustomAllocationRules_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.customAllocationRules.CustomAllocationRules",
+		"@cdktn/provider-datadog.customAllocationRules.CustomAllocationRules",
 		"tfResourceType",
 		&returns,
 	)
@@ -604,11 +604,11 @@ func (c *jsiiProxy_CustomAllocationRules) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (c *jsiiProxy_CustomAllocationRules) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAllocationRules) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -745,7 +745,7 @@ func (c *jsiiProxy_CustomAllocationRules) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomAllocationRules) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CustomAllocationRules) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -756,11 +756,11 @@ func (c *jsiiProxy_CustomAllocationRules) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (c *jsiiProxy_CustomAllocationRules) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAllocationRules) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ipallowlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/ipallowlist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/ipallowlist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
 type IpAllowlist interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,24 +37,24 @@ type IpAllowlist interface {
 	Entry() IpAllowlistEntryList
 	EntryInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type IpAllowlist interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type IpAllowlist interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,9 +93,9 @@ type IpAllowlist interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -130,11 +130,11 @@ type IpAllowlist interface {
 
 // The jsii proxy struct for IpAllowlist
 type jsiiProxy_IpAllowlist struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_IpAllowlist) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IpAllowlist) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_IpAllowlist) EntryInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IpAllowlist) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IpAllowlist) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_IpAllowlist) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IpAllowlist) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IpAllowlist) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_IpAllowlist) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IpAllowlist) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IpAllowlist) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_IpAllowlist) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IpAllowlist) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IpAllowlist) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_IpAllowlist) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
 func NewIpAllowlist(scope constructs.Construct, id *string, config *IpAllowlistConfig) IpAllowlist {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewIpAllowlist(scope constructs.Construct, id *string, config *IpAllowlistC
 	j := jsiiProxy_IpAllowlist{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,12 +362,12 @@ func NewIpAllowlist(scope constructs.Construct, id *string, config *IpAllowlistC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
 func NewIpAllowlist_Override(i IpAllowlist, scope constructs.Construct, id *string, config *IpAllowlistConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IpAllowlist)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpAllowlist)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IpAllowlist)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +422,7 @@ func (j *jsiiProxy_IpAllowlist)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IpAllowlist)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IpAllowlist)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_IpAllowlist)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_IpAllowlist)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IpAllowlist)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -452,17 +452,17 @@ func (j *jsiiProxy_IpAllowlist)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a IpAllowlist resource upon running "cdktf plan <stack-name>".
-func IpAllowlist_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IpAllowlist resource upon running "cdktn plan <stack-name>".
+func IpAllowlist_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIpAllowlist_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -497,7 +497,7 @@ func IpAllowlist_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func IpAllowlist_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func IpAllowlist_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func IpAllowlist_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		"tfResourceType",
 		&returns,
 	)
@@ -593,11 +593,11 @@ func (i *jsiiProxy_IpAllowlist) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (i *jsiiProxy_IpAllowlist) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IpAllowlist) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -734,7 +734,7 @@ func (i *jsiiProxy_IpAllowlist) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IpAllowlist) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IpAllowlist) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -745,11 +745,11 @@ func (i *jsiiProxy_IpAllowlist) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (i *jsiiProxy_IpAllowlist) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IpAllowlist) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

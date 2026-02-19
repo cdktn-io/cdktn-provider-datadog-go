@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetTimeseriesDefinitionRequestOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApmQuery() PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference
 	ApmQueryInput() *PowerpackWidgetTimeseriesDefinitionRequestApmQuery
 	AuditQuery() PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference
@@ -68,15 +68,15 @@ type PowerpackWidgetTimeseriesDefinitionRequestOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,9 +92,9 @@ type PowerpackWidgetTimeseriesDefinitionRequestOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *PowerpackWidgetTimeseriesDefinitionRequestApmQuery)
 	PutAuditQuery(value *PowerpackWidgetTimeseriesDefinitionRequestAuditQuery)
 	PutFormula(value interface{})
@@ -122,7 +122,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestOutputReference interface {
 	ResetStyle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,7 +132,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetTimeseriesDefinitionRequestOutputReference
 type jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) ApmQuery() PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference {
@@ -475,8 +475,8 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -486,7 +486,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Te
 }
 
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetTimeseriesDefinitionRequestOutputReference {
+func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetTimeseriesDefinitionRequestOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetTimeseriesDefinitionRequestOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -495,7 +495,7 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference(terraformResou
 	j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -503,11 +503,11 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference(terraformResou
 	return &j
 }
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference_Override(p PowerpackWidgetTimeseriesDefinitionRequestOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPowerpackWidgetTimeseriesDefinitionRequestOutputReference_Override(p PowerpackWidgetTimeseriesDefinitionRequestOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -590,7 +590,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,11 +630,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Ge
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -758,8 +758,8 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Ge
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -771,11 +771,11 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) In
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1020,7 +1020,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Re
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

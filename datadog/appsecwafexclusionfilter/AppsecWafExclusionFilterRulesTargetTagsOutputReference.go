@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appsecwafexclusionfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/appsecwafexclusionfilter/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/appsecwafexclusionfilter/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AppsecWafExclusionFilterRulesTargetTagsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Category() *string
 	SetCategory(val *string)
 	CategoryInput() *string
@@ -40,9 +40,9 @@ type AppsecWafExclusionFilterRulesTargetTagsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -51,7 +51,7 @@ type AppsecWafExclusionFilterRulesTargetTagsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type AppsecWafExclusionFilterRulesTargetTagsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCategory()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type AppsecWafExclusionFilterRulesTargetTagsOutputReference interface {
 
 // The jsii proxy struct for AppsecWafExclusionFilterRulesTargetTagsOutputReference
 type jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Category() *string {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) TypeI
 }
 
 
-func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppsecWafExclusionFilterRulesTargetTagsOutputReference {
+func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppsecWafExclusionFilterRulesTargetTagsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppsecWafExclusionFilterRulesTargetTagsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference(terraformResource
 	j := jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference(terraformResource
 	return &j
 }
 
-func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference_Override(a AppsecWafExclusionFilterRulesTargetTagsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppsecWafExclusionFilterRulesTargetTagsOutputReference_Override(a AppsecWafExclusionFilterRulesTargetTagsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
+		"@cdktn/provider-datadog.appsecWafExclusionFilter.AppsecWafExclusionFilterRulesTargetTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) GetAn
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -459,8 +459,8 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) GetSt
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -472,11 +472,11 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Inter
 	return returns
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,7 +504,7 @@ func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Reset
 	)
 }
 
-func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppsecWafExclusionFilterRulesTargetTagsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

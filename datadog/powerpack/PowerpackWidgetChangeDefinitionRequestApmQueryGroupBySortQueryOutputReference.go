@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFacet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReferen
 
 // The jsii proxy struct for PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference
 type jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) Aggregation() *string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 }
 
 
-func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference {
+func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -229,7 +229,7 @@ func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputRefe
 	j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputRefe
 	return &j
 }
 
-func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference_Override(p PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference_Override(p PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -492,8 +492,8 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -505,11 +505,11 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -529,7 +529,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQuer
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

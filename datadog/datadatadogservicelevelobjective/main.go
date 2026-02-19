@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogservicelevelobjective
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective",
+		"@cdktn/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjective",
 		reflect.TypeOf((*DataDatadogServiceLevelObjective)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsQuery", GoMethod: "ResetTagsQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsQuery", GoGetter: "TagsQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsQueryInput", GoGetter: "TagsQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetThreshold", GoGetter: "TargetThreshold"},
@@ -69,20 +70,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogServiceLevelObjective{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveConfig",
+		"@cdktn/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveConfig",
 		reflect.TypeOf((*DataDatadogServiceLevelObjectiveConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQuery",
+		"@cdktn/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQuery",
 		reflect.TypeOf((*DataDatadogServiceLevelObjectiveQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryList",
+		"@cdktn/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryList",
 		reflect.TypeOf((*DataDatadogServiceLevelObjectiveQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -98,12 +99,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogServiceLevelObjectiveQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryOutputReference",
+		"@cdktn/provider-datadog.dataDatadogServiceLevelObjective.DataDatadogServiceLevelObjectiveQueryOutputReference",
 		reflect.TypeOf((*DataDatadogServiceLevelObjectiveQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,7 +133,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogServiceLevelObjectiveQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

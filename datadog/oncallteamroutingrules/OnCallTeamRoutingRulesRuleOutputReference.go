@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oncallteamroutingrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallteamroutingrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/oncallteamroutingrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OnCallTeamRoutingRulesRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() OnCallTeamRoutingRulesRuleActionList
 	ActionInput() interface{}
 	// the index of the complex object in a list.
@@ -46,9 +46,9 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeRestrictions() OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference
 	TimeRestrictionsInput() interface{}
 	Urgency() *string
@@ -59,7 +59,7 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAction(value interface{})
 	PutTimeRestrictions(value *OnCallTeamRoutingRulesRuleTimeRestrictions)
 	ResetAction()
@@ -87,7 +87,7 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 	ResetUrgency()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type OnCallTeamRoutingRulesRuleOutputReference interface {
 
 // The jsii proxy struct for OnCallTeamRoutingRulesRuleOutputReference
 type jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Action() OnCallTeamRoutingRulesRuleActionList {
@@ -230,8 +230,8 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) UrgencyInput() *st
 }
 
 
-func NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleOutputReference {
+func NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnCallTeamRoutingRulesRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOnCallTeamRoutingRulesRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -290,7 +290,7 @@ func NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference",
+		"@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -298,11 +298,11 @@ func NewOnCallTeamRoutingRulesRuleOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewOnCallTeamRoutingRulesRuleOutputReference_Override(o OnCallTeamRoutingRulesRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOnCallTeamRoutingRulesRuleOutputReference_Override(o OnCallTeamRoutingRulesRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference",
+		"@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -374,7 +374,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,11 +425,11 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -553,8 +553,8 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -566,11 +566,11 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -644,7 +644,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) ResetUrgency() {
 	)
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

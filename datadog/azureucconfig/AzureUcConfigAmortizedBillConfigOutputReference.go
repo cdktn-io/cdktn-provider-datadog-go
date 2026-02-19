@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azureucconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/azureucconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/azureucconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AzureUcConfigAmortizedBillConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type AzureUcConfigAmortizedBillConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type AzureUcConfigAmortizedBillConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type AzureUcConfigAmortizedBillConfigOutputReference interface {
 
 // The jsii proxy struct for AzureUcConfigAmortizedBillConfigOutputReference
 type jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) TerraformRes
 }
 
 
-func NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AzureUcConfigAmortizedBillConfigOutputReference {
+func NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AzureUcConfigAmortizedBillConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAzureUcConfigAmortizedBillConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewAzureUcConfigAmortizedBillConfigOutputReference_Override(a AzureUcConfigAmortizedBillConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAzureUcConfigAmortizedBillConfigOutputReference_Override(a AzureUcConfigAmortizedBillConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -357,7 +357,7 @@ func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -525,8 +525,8 @@ func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -538,11 +538,11 @@ func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -554,7 +554,7 @@ func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

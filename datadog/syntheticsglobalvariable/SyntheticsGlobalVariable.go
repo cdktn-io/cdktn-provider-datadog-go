@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticsglobalvariable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticsglobalvariable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 type SyntheticsGlobalVariable interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type SyntheticsGlobalVariable interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,9 +50,9 @@ type SyntheticsGlobalVariable interface {
 	SetIsTotp(val interface{})
 	IsTotpInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -66,9 +66,9 @@ type SyntheticsGlobalVariable interface {
 	ParseTestOptions() SyntheticsGlobalVariableParseTestOptionsList
 	ParseTestOptionsInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +85,7 @@ type SyntheticsGlobalVariable interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -93,6 +93,12 @@ type SyntheticsGlobalVariable interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	ValueWo() *string
+	SetValueWo(val *string)
+	ValueWoInput() *string
+	ValueWoVersion() *string
+	SetValueWoVersion(val *string)
+	ValueWoVersionInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -101,7 +107,7 @@ type SyntheticsGlobalVariable interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,9 +125,9 @@ type SyntheticsGlobalVariable interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -151,6 +157,8 @@ type SyntheticsGlobalVariable interface {
 	ResetSecure()
 	ResetTags()
 	ResetValue()
+	ResetValueWo()
+	ResetValueWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -166,11 +174,11 @@ type SyntheticsGlobalVariable interface {
 
 // The jsii proxy struct for SyntheticsGlobalVariable
 type jsiiProxy_SyntheticsGlobalVariable struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SyntheticsGlobalVariable) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -239,8 +247,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SyntheticsGlobalVariable) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -319,8 +327,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) IsTotpInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SyntheticsGlobalVariable) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -419,8 +427,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ParseTestOptionsInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SyntheticsGlobalVariable) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -509,8 +517,8 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) TagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SyntheticsGlobalVariable) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -559,8 +567,48 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsGlobalVariable) ValueWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWo",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+func (j *jsiiProxy_SyntheticsGlobalVariable) ValueWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) ValueWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) ValueWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -570,7 +618,7 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SyntheticsGlobalVariable{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -578,12 +626,12 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable_Override(s SyntheticsGlobalVariable, scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -630,7 +678,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -660,7 +708,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetIsTotp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +741,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetParseTestId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -756,17 +804,39 @@ func (j *jsiiProxy_SyntheticsGlobalVariable)SetValue(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a SyntheticsGlobalVariable resource upon running "cdktf plan <stack-name>".
-func SyntheticsGlobalVariable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetValueWo(val *string) {
+	if err := j.validateSetValueWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable)SetValueWoVersion(val *string) {
+	if err := j.validateSetValueWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWoVersion",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a SyntheticsGlobalVariable resource upon running "cdktn plan <stack-name>".
+func SyntheticsGlobalVariable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSyntheticsGlobalVariable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -801,7 +871,7 @@ func SyntheticsGlobalVariable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +890,7 @@ func SyntheticsGlobalVariable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +909,7 @@ func SyntheticsGlobalVariable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +922,7 @@ func SyntheticsGlobalVariable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
+		"@cdktn/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable",
 		"tfResourceType",
 		&returns,
 	)
@@ -897,11 +967,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsGlobalVariable) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1038,7 +1108,7 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SyntheticsGlobalVariable) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1049,11 +1119,11 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (s *jsiiProxy_SyntheticsGlobalVariable) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsGlobalVariable) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1215,6 +1285,22 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) ResetValue() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetValueWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValueWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) ResetValueWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValueWoVersion",
 		nil, // no parameters
 	)
 }

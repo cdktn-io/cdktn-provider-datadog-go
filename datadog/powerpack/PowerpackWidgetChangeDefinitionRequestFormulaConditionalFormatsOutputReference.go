@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comparator() *string
 	SetComparator(val *string)
 	ComparatorInput() *string
@@ -58,9 +58,9 @@ type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeframe() *string
 	SetTimeframe(val *string)
 	TimeframeInput() *string
@@ -72,7 +72,7 @@ type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCustomBgColor()
 	ResetCustomFgColor()
 	ResetHideValue()
@@ -99,7 +99,7 @@ type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRefere
 	ResetTimeframe()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRefere
 
 // The jsii proxy struct for PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference
 type jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) Comparator() *string {
@@ -312,8 +312,8 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 }
 
 
-func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference {
+func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -372,7 +372,7 @@ func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRef
 	j := jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputRef
 	return &j
 }
 
-func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference_Override(p PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference_Override(p PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -511,7 +511,7 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,11 +573,11 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -701,8 +701,8 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -714,11 +714,11 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -778,7 +778,7 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalForma
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

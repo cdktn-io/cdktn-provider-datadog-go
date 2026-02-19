@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,15 +7,15 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionSunburstDefinitionLegendInline struct {
 	// The type of legend (inline or automatic). Valid values are `inline`, `automatic`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#type Dashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#type Dashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Whether to hide the percentages of the groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#hide_percent Dashboard#hide_percent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_percent Dashboard#hide_percent}
 	HidePercent interface{} `field:"optional" json:"hidePercent" yaml:"hidePercent"`
 	// Whether to hide the values of the groups.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
 	HideValue interface{} `field:"optional" json:"hideValue" yaml:"hideValue"`
 }
 

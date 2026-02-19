@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package userrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/userrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/userrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user_role datadog_user_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user_role datadog_user_role}.
 type UserRole interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,24 +32,24 @@ type UserRole interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -60,7 +60,7 @@ type UserRole interface {
 	SetRoleId(val *string)
 	RoleIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type UserRole interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type UserRole interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -129,11 +129,11 @@ type UserRole interface {
 
 // The jsii proxy struct for UserRole
 type jsiiProxy_UserRole struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_UserRole) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_UserRole) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_UserRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_UserRole) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_UserRole) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_UserRole) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_UserRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_UserRole) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_UserRole) RoleIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_UserRole) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_UserRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user_role datadog_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user_role datadog_user_role} Resource.
 func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig) UserRole {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig)
 	j := jsiiProxy_UserRole{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,12 +361,12 @@ func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user_role datadog_user_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user_role datadog_user_role} Resource.
 func NewUserRole_Override(u UserRole, scope constructs.Construct, id *string, config *UserRoleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -402,7 +402,7 @@ func (j *jsiiProxy_UserRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserRole)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +410,7 @@ func (j *jsiiProxy_UserRole)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserRole)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_UserRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserRole)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,17 +462,17 @@ func (j *jsiiProxy_UserRole)SetUserId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a UserRole resource upon running "cdktf plan <stack-name>".
-func UserRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a UserRole resource upon running "cdktn plan <stack-name>".
+func UserRole_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateUserRole_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -507,7 +507,7 @@ func UserRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func UserRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func UserRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func UserRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.userRole.UserRole",
+		"@cdktn/provider-datadog.userRole.UserRole",
 		"tfResourceType",
 		&returns,
 	)
@@ -603,11 +603,11 @@ func (u *jsiiProxy_UserRole) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserRole) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -744,7 +744,7 @@ func (u *jsiiProxy_UserRole) HasResourceMove() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (u *jsiiProxy_UserRole) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -755,11 +755,11 @@ func (u *jsiiProxy_UserRole) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (u *jsiiProxy_UserRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UserRole) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,

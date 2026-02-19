@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unit() DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatUnitOutputReference
 	UnitInput() *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatUnit
 	UnitScale() DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference
@@ -49,7 +49,7 @@ type DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,15 +65,15 @@ type DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutUnit(value *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatUnit)
 	PutUnitScale(value *DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatUnitScale)
 	ResetUnitScale()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference i
 
 // The jsii proxy struct for DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference
 type jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) ComplexObjectIndex() interface{} {
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 }
 
 
-func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference {
+func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReferenc
 	j := jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReferenc
 	return &j
 }
 
-func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference_Override(d DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference_Override(d DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -268,7 +268,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -308,11 +308,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -436,8 +436,8 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -449,11 +449,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -495,7 +495,7 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOut
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestFormulaNumberFormatOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

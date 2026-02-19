@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetTreemapDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,9 +41,9 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -52,7 +52,7 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLinks(value interface{})
 	PutRequest(value interface{})
 	ResetCustomLinks()
@@ -78,7 +78,7 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DashboardWidgetTreemapDefinitionOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetTreemapDefinitionOutputReference
 type jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) TitleInput()
 }
 
 
-func NewDashboardWidgetTreemapDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionOutputReference {
+func NewDashboardWidgetTreemapDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetTreemapDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewDashboardWidgetTreemapDefinitionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDashboardWidgetTreemapDefinitionOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDashboardWidgetTreemapDefinitionOutputReference_Override(d DashboardWidgetTreemapDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetTreemapDefinitionOutputReference_Override(d DashboardWidgetTreemapDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,11 +344,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -472,8 +472,8 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -485,11 +485,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) ResetTitle()
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

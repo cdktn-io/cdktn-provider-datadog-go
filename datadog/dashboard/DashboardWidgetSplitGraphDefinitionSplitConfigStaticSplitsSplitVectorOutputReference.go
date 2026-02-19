@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutput
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutput
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutput
 
 // The jsii proxy struct for DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference
 type jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 }
 
 
-func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference {
+func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -205,7 +205,7 @@ func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOut
 	j := jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOut
 	return &j
 }
 
-func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference_Override(d DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference_Override(d DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,8 +457,8 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -470,11 +470,11 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -486,7 +486,7 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSpl
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSplitConfigStaticSplitsSplitVectorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

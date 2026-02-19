@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logsindex/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsindex/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsIndexDailyLimitResetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type LogsIndexDailyLimitResetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type LogsIndexDailyLimitResetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type LogsIndexDailyLimitResetOutputReference interface {
 
 // The jsii proxy struct for LogsIndexDailyLimitResetOutputReference
 type jsiiProxy_LogsIndexDailyLimitResetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference) TerraformResource() 
 }
 
 
-func NewLogsIndexDailyLimitResetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsIndexDailyLimitResetOutputReference {
+func NewLogsIndexDailyLimitResetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LogsIndexDailyLimitResetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLogsIndexDailyLimitResetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +205,7 @@ func NewLogsIndexDailyLimitResetOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LogsIndexDailyLimitResetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewLogsIndexDailyLimitResetOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewLogsIndexDailyLimitResetOutputReference_Override(l LogsIndexDailyLimitResetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLogsIndexDailyLimitResetOutputReference_Override(l LogsIndexDailyLimitResetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsIndexDailyLimitResetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -457,8 +457,8 @@ func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -470,11 +470,11 @@ func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -486,7 +486,7 @@ func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsIndexDailyLimitResetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

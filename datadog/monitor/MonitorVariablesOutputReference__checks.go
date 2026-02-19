@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_MonitorVariablesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutCloudCostQueryPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*MonitorVariablesCloudCostQuery:
 		value := value.(*[]*MonitorVariablesCloudCostQuery)
@@ -117,7 +117,38 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutCloudCostQueryPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorVariablesCloudCostQuery; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*MonitorVariablesCloudCostQuery; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutDataQualityQueryParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*MonitorVariablesDataQualityQuery:
+		value := value.(*[]*MonitorVariablesDataQualityQuery)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorVariablesDataQualityQuery:
+		value_ := value.([]*MonitorVariablesDataQualityQuery)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*MonitorVariablesDataQualityQuery; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +160,7 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutEventQueryParamet
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*MonitorVariablesEventQuery:
 		value := value.(*[]*MonitorVariablesEventQuery)
@@ -148,14 +179,14 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutEventQueryParamet
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorVariablesEventQuery; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*MonitorVariablesEventQuery; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MonitorVariablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorVariablesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -244,7 +275,7 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_MonitorVariablesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorVariablesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -252,7 +283,7 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) validateSetTerraformResource
 	return nil
 }
 
-func validateNewMonitorVariablesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorVariablesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmonitors
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitors.DataDatadogMonitors",
+		"@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors",
 		reflect.TypeOf((*DataDatadogMonitors)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitors{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig",
+		"@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig",
 		reflect.TypeOf((*DataDatadogMonitorsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitors",
+		"@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitors",
 		reflect.TypeOf((*DataDatadogMonitorsMonitors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsList",
+		"@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsList",
 		reflect.TypeOf((*DataDatadogMonitorsMonitorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -92,12 +92,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorsMonitorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsMonitorsOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorsMonitorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,7 +127,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorsMonitorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

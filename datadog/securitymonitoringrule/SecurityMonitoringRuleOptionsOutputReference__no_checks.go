@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,6 +47,10 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateInterpo
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutAnomalyDetectionOptionsParameters(value *SecurityMonitoringRuleOptionsAnomalyDetectionOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutImpossibleTravelOptionsParameters(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions) error {
 	return nil
 }
@@ -63,7 +67,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutThir
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -103,11 +107,11 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

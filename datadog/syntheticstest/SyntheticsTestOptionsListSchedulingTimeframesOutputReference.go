@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestOptionsListSchedulingTimeframesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type SyntheticsTestOptionsListSchedulingTimeframesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	To() *string
 	SetTo(val *string)
 	ToInput() *string
@@ -54,7 +54,7 @@ type SyntheticsTestOptionsListSchedulingTimeframesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type SyntheticsTestOptionsListSchedulingTimeframesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type SyntheticsTestOptionsListSchedulingTimeframesOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestOptionsListSchedulingTimeframesOutputReference
 type jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 }
 
 
-func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestOptionsListSchedulingTimeframesOutputReference {
+func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestOptionsListSchedulingTimeframesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestOptionsListSchedulingTimeframesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformRe
 	j := jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformRe
 	return &j
 }
 
-func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference_Override(s SyntheticsTestOptionsListSchedulingTimeframesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference_Override(s SyntheticsTestOptionsListSchedulingTimeframesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -491,8 +491,8 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -504,11 +504,11 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -520,7 +520,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestOptionsListSchedulingTimeframesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

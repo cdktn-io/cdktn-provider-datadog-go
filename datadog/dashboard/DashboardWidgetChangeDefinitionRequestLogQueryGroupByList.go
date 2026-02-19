@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetChangeDefinitionRequestLogQueryGroupByList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DashboardWidgetChangeDefinitionRequestLogQueryGroupByList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DashboardWidgetChangeDefinitionRequestLogQueryGroupByList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DashboardWidgetChangeDefinitionRequestLogQueryGroupByList interface {
 
 // The jsii proxy struct for DashboardWidgetChangeDefinitionRequestLogQueryGroupByList
 type jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) Te
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) Wr
 }
 
 
-func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetChangeDefinitionRequestLogQueryGroupByList {
+func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetChangeDefinitionRequestLogQueryGroupByList {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetChangeDefinitionRequestLogQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList(terraformResou
 	j := jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestLogQueryGroupByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList(terraformResou
 	return &j
 }
 
-func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList_Override(d DashboardWidgetChangeDefinitionRequestLogQueryGroupByList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDashboardWidgetChangeDefinitionRequestLogQueryGroupByList_Override(d DashboardWidgetChangeDefinitionRequestLogQueryGroupByList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetChangeDefinitionRequestLogQueryGroupByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList)Set
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList)Set
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetChangeDefinitionRequestLogQueryGroupByList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

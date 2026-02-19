@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitorconfigpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy",
 		reflect.TypeOf((*MonitorConfigPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorConfigPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig",
 		reflect.TypeOf((*MonitorConfigPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy",
 		reflect.TypeOf((*MonitorConfigPolicyTagPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
 		reflect.TypeOf((*MonitorConfigPolicyTagPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,7 +113,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

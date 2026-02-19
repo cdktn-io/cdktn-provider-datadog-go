@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetToplistDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +32,9 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetToplistDefinition
 	SetInternalValue(val *PowerpackWidgetToplistDefinition)
 	LiveSpan() *string
@@ -46,9 +49,9 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -63,7 +66,7 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,13 +82,14 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value interface{})
 	PutStyle(value interface{})
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
 	ResetStyle()
@@ -94,7 +98,7 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +108,7 @@ type PowerpackWidgetToplistDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetToplistDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -162,6 +166,26 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -247,8 +271,8 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -318,7 +342,7 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) TitleSizeInp
 }
 
 
-func NewPowerpackWidgetToplistDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetToplistDefinitionOutputReference {
+func NewPowerpackWidgetToplistDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetToplistDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetToplistDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -327,7 +351,7 @@ func NewPowerpackWidgetToplistDefinitionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,11 +359,11 @@ func NewPowerpackWidgetToplistDefinitionOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewPowerpackWidgetToplistDefinitionOutputReference_Override(p PowerpackWidgetToplistDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetToplistDefinitionOutputReference_Override(p PowerpackWidgetToplistDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetToplistDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -363,6 +387,17 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -400,7 +435,7 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,11 +508,11 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -601,8 +636,8 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) GetStringMap
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -614,11 +649,11 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) Interpolatio
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -671,6 +706,14 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetCustomL
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetLiveSpan() {
 	_jsii_.InvokeVoid(
 		p,
@@ -719,7 +762,7 @@ func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) ResetTitleSi
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

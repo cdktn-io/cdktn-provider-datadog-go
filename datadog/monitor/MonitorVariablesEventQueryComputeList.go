@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorVariablesEventQueryComputeList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type MonitorVariablesEventQueryComputeList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type MonitorVariablesEventQueryComputeList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MonitorVariablesEventQueryComputeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type MonitorVariablesEventQueryComputeList interface {
 
 // The jsii proxy struct for MonitorVariablesEventQueryComputeList
 type jsiiProxy_MonitorVariablesEventQueryComputeList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_MonitorVariablesEventQueryComputeList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeList) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryComputeList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeList) WrapsSet() *bool {
 }
 
 
-func NewMonitorVariablesEventQueryComputeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryComputeList {
+func NewMonitorVariablesEventQueryComputeList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorVariablesEventQueryComputeList {
 	_init_.Initialize()
 
 	if err := validateNewMonitorVariablesEventQueryComputeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewMonitorVariablesEventQueryComputeList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_MonitorVariablesEventQueryComputeList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewMonitorVariablesEventQueryComputeList(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewMonitorVariablesEventQueryComputeList_Override(m MonitorVariablesEventQueryComputeList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMonitorVariablesEventQueryComputeList_Override(m MonitorVariablesEventQueryComputeList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_MonitorVariablesEventQueryComputeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeList)SetWrapsSet(val *bool) 
 	)
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryComputeList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_MonitorVariablesEventQueryComputeList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -231,7 +231,7 @@ func (m *jsiiProxy_MonitorVariablesEventQueryComputeList) Get(index *float64) Mo
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesEventQueryComputeList) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorVariablesEventQueryComputeList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

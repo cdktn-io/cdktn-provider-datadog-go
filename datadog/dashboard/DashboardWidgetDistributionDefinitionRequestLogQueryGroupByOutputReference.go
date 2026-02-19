@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSortQuery(value *DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery)
 	ResetFacet()
 	ResetLimit()
 	ResetSortQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference 
 
 // The jsii proxy struct for DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference
 type jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 }
 
 
-func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference {
+func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -231,7 +231,7 @@ func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReferen
 	j := jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReferen
 	return &j
 }
 
-func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference_Override(d DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference_Override(d DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,11 +355,11 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -483,8 +483,8 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -496,11 +496,11 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOu
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

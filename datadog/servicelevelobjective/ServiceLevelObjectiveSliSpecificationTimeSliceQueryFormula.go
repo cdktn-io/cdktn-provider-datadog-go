@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package servicelevelobjective
@@ -7,7 +7,7 @@ package servicelevelobjective
 type ServiceLevelObjectiveSliSpecificationTimeSliceQueryFormula struct {
 	// The formula string, which is an expression involving named queries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_level_objective#formula_expression ServiceLevelObjective#formula_expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_level_objective#formula_expression ServiceLevelObjective#formula_expression}
 	FormulaExpression *string `field:"required" json:"formulaExpression" yaml:"formulaExpression"`
 }
 

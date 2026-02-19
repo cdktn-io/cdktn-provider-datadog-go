@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetScatterplotDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ColorByGroups() *[]*string
 	SetColorByGroups(val *[]*string)
 	ColorByGroupsInput() *[]*string
@@ -35,6 +35,9 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *DashboardWidgetScatterplotDefinition
 	SetInternalValue(val *DashboardWidgetScatterplotDefinition)
 	LiveSpan() *string
@@ -47,9 +50,9 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -68,7 +71,7 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,15 +87,16 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value *DashboardWidgetScatterplotDefinitionRequest)
 	PutXaxis(value *DashboardWidgetScatterplotDefinitionXaxis)
 	PutYaxis(value *DashboardWidgetScatterplotDefinitionYaxis)
 	ResetColorByGroups()
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
 	ResetTitle()
@@ -102,7 +106,7 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 	ResetYaxis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +116,7 @@ type DashboardWidgetScatterplotDefinitionOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetScatterplotDefinitionOutputReference
 type jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ColorByGroups() *[]*string {
@@ -195,6 +199,26 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InternalValue() *DashboardWidgetScatterplotDefinition {
 	var returns *DashboardWidgetScatterplotDefinition
 	_jsii_.Get(
@@ -255,8 +279,8 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -366,7 +390,7 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) YaxisInp
 }
 
 
-func NewDashboardWidgetScatterplotDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetScatterplotDefinitionOutputReference {
+func NewDashboardWidgetScatterplotDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetScatterplotDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetScatterplotDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -375,7 +399,7 @@ func NewDashboardWidgetScatterplotDefinitionOutputReference(terraformResource cd
 	j := jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetScatterplotDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetScatterplotDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,11 +407,11 @@ func NewDashboardWidgetScatterplotDefinitionOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDashboardWidgetScatterplotDefinitionOutputReference_Override(d DashboardWidgetScatterplotDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetScatterplotDefinitionOutputReference_Override(d DashboardWidgetScatterplotDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetScatterplotDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetScatterplotDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -426,6 +450,17 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetInternalValue(val *DashboardWidgetScatterplotDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -459,7 +494,7 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,11 +567,11 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -660,8 +695,8 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -673,11 +708,11 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -749,6 +784,14 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ResetCus
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ResetLiveSpan() {
 	_jsii_.InvokeVoid(
 		d,
@@ -805,7 +848,7 @@ func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) ResetYax
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

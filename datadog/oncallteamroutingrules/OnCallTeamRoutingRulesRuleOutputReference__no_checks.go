@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validatePutTimeRes
 	return nil
 }
 
-func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleOutputReference) validateSetUrgency
 	return nil
 }
 
-func validateNewOnCallTeamRoutingRulesRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOnCallTeamRoutingRulesRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

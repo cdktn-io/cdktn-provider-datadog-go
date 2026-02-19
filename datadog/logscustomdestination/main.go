@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustomdestination
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestination",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination",
 		reflect.TypeOf((*LogsCustomDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -92,24 +92,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationConfig",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationConfig",
 		reflect.TypeOf((*LogsCustomDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestination",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestination",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuth",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuth",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestinationBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthList",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestinationBasicAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -126,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationElasticsearchDestinationBasicAuthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,12 +162,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -184,12 +184,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationElasticsearchDestinationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationElasticsearchDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -227,20 +227,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationElasticsearchDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestination",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestination",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuth",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuth",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationBasicAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthList",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationBasicAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -257,12 +257,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationBasicAuthOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationBasicAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,16 +293,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationBasicAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuth",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationCustomHeaderAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthList",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationCustomHeaderAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -319,12 +319,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationCustomHeaderAuthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -355,12 +355,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationList",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -377,12 +377,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationHttpDestinationOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationHttpDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuth", GoGetter: "BasicAuth"},
@@ -419,16 +419,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationHttpDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestination",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestination",
 		reflect.TypeOf((*LogsCustomDestinationMicrosoftSentinelDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationList",
 		reflect.TypeOf((*LogsCustomDestinationMicrosoftSentinelDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -445,12 +445,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationMicrosoftSentinelDestinationOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationMicrosoftSentinelDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -487,16 +487,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationMicrosoftSentinelDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination",
 		reflect.TypeOf((*LogsCustomDestinationSplunkDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationList",
 		reflect.TypeOf((*LogsCustomDestinationSplunkDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -513,12 +513,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationSplunkDestinationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference",
 		reflect.TypeOf((*LogsCustomDestinationSplunkDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -549,7 +549,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

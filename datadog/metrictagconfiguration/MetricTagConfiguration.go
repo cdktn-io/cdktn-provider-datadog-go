@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package metrictagconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metrictagconfiguration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metrictagconfiguration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
 	AggregationsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type MetricTagConfiguration interface {
 	SetExcludeTagsMode(val interface{})
 	ExcludeTagsModeInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type MetricTagConfiguration interface {
 	SetIncludePercentiles(val interface{})
 	IncludePercentilesInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetricName() *string
 	SetMetricName(val *string)
 	MetricNameInput() *string
@@ -63,9 +63,9 @@ type MetricTagConfiguration interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type MetricTagConfiguration interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type MetricTagConfiguration interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -107,9 +107,9 @@ type MetricTagConfiguration interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -147,7 +147,7 @@ type MetricTagConfiguration interface {
 
 // The jsii proxy struct for MetricTagConfiguration
 type jsiiProxy_MetricTagConfiguration struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MetricTagConfiguration) Aggregations() MetricTagConfigurationAggregationsList {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_MetricTagConfiguration) AggregationsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MetricTagConfiguration) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_MetricTagConfiguration) ExcludeTagsModeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MetricTagConfiguration) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_MetricTagConfiguration) IncludePercentilesInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MetricTagConfiguration) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_MetricTagConfiguration) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MetricTagConfiguration) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_MetricTagConfiguration) TagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_MetricTagConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MetricTagConfiguration) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	j := jsiiProxy_MetricTagConfiguration{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -469,12 +469,12 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -521,7 +521,7 @@ func (j *jsiiProxy_MetricTagConfiguration)SetExcludeTagsMode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MetricTagConfiguration)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MetricTagConfiguration)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -551,7 +551,7 @@ func (j *jsiiProxy_MetricTagConfiguration)SetIncludePercentiles(val interface{})
 	)
 }
 
-func (j *jsiiProxy_MetricTagConfiguration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MetricTagConfiguration)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +584,7 @@ func (j *jsiiProxy_MetricTagConfiguration)SetMetricType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricTagConfiguration)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MetricTagConfiguration)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -614,17 +614,17 @@ func (j *jsiiProxy_MetricTagConfiguration)SetTags(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a MetricTagConfiguration resource upon running "cdktf plan <stack-name>".
-func MetricTagConfiguration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MetricTagConfiguration resource upon running "cdktn plan <stack-name>".
+func MetricTagConfiguration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMetricTagConfiguration_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -659,7 +659,7 @@ func MetricTagConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func MetricTagConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func MetricTagConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func MetricTagConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
+		"@cdktn/provider-datadog.metricTagConfiguration.MetricTagConfiguration",
 		"tfResourceType",
 		&returns,
 	)
@@ -755,11 +755,11 @@ func (m *jsiiProxy_MetricTagConfiguration) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (m *jsiiProxy_MetricTagConfiguration) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetricTagConfiguration) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -896,7 +896,7 @@ func (m *jsiiProxy_MetricTagConfiguration) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MetricTagConfiguration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MetricTagConfiguration) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -907,11 +907,11 @@ func (m *jsiiProxy_MetricTagConfiguration) ImportFrom(id *string, provider cdktf
 	)
 }
 
-func (m *jsiiProxy_MetricTagConfiguration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MetricTagConfiguration) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

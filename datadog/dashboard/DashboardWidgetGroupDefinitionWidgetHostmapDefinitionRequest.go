@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest struct {
 	// fill block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#fill Dashboard#fill}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#fill Dashboard#fill}
 	Fill interface{} `field:"optional" json:"fill" yaml:"fill"`
 	// size block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#size Dashboard#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#size Dashboard#size}
 	Size interface{} `field:"optional" json:"size" yaml:"size"`
 }
 

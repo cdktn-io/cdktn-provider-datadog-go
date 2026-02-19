@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetOrderByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetPaletteParameters(val *string) error {
 	return nil
 }
@@ -79,11 +83,11 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

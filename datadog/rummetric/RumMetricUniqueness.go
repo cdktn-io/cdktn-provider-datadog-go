@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rummetric
@@ -7,7 +7,7 @@ package rummetric
 type RumMetricUniqueness struct {
 	// When to count updatable events. `match` when the event is first seen, or `end` when the event is complete.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#when RumMetric#when}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#when RumMetric#when}
 	When *string `field:"optional" json:"when" yaml:"when"`
 }
 

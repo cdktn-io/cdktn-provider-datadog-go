@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutComputeQuery(value *PowerpackWidgetHostmapDefinitionRequestFillRumQueryComputeQuery)
 	PutGroupBy(value interface{})
 	PutMultiCompute(value interface{})
@@ -85,7 +85,7 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference interfac
 	ResetSearchQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference interfac
 
 // The jsii proxy struct for PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference
 type jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -258,8 +258,8 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 }
 
 
-func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference {
+func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -278,7 +278,7 @@ func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terra
 	j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,11 +286,11 @@ func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terra
 	return &j
 }
 
-func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference_Override(p PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference_Override(p PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,11 +402,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -530,8 +530,8 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -543,11 +543,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -624,7 +624,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputRefe
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

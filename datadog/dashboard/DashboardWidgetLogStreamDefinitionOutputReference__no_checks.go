@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,6 +64,10 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSe
 }
 
 func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }
 
@@ -99,7 +103,7 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -115,7 +119,7 @@ func (j *jsiiProxy_DashboardWidgetLogStreamDefinitionOutputReference) validateSe
 	return nil
 }
 
-func validateNewDashboardWidgetLogStreamDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDashboardWidgetLogStreamDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

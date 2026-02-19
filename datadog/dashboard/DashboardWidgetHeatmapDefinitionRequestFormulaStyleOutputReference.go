@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPalette()
 	ResetPaletteIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference interfac
 
 // The jsii proxy struct for DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference
 type jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 }
 
 
-func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference {
+func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference(terra
 	j := jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference(terra
 	return &j
 }
 
-func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference_Override(d DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference_Override(d DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -459,8 +459,8 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -472,11 +472,11 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestFormulaStyleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

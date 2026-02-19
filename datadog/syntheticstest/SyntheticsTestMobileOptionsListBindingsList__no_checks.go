@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListBindingsList) validateSetWraps
 	return nil
 }
 
-func validateNewSyntheticsTestMobileOptionsListBindingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSyntheticsTestMobileOptionsListBindingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

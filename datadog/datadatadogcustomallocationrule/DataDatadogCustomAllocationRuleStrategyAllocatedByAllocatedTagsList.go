@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogcustomallocationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogcustomallocationrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogcustomallocationrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList interfa
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList interfa
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList interfa
 
 // The jsii proxy struct for DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList
 type jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTa
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTa
 }
 
 
-func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList {
+func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList(terr
 	j := jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
+		"@cdktn/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList(terr
 	return &j
 }
 
-func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList_Override(d DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList_Override(d DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
+		"@cdktn/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTa
 	)
 }
 
-func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTa
 	)
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTa
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

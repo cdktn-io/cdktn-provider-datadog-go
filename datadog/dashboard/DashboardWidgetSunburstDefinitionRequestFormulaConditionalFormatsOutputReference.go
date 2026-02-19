@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comparator() *string
 	SetComparator(val *string)
 	ComparatorInput() *string
@@ -58,9 +58,9 @@ type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeframe() *string
 	SetTimeframe(val *string)
 	TimeframeInput() *string
@@ -72,7 +72,7 @@ type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCustomBgColor()
 	ResetCustomFgColor()
 	ResetHideValue()
@@ -99,7 +99,7 @@ type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 	ResetTimeframe()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputRefe
 
 // The jsii proxy struct for DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference
 type jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) Comparator() *string {
@@ -312,8 +312,8 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 }
 
 
-func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference {
+func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -372,7 +372,7 @@ func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputR
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputR
 	return &j
 }
 
-func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference_Override(d DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference_Override(d DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,11 +573,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -701,8 +701,8 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -714,11 +714,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -778,7 +778,7 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFor
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

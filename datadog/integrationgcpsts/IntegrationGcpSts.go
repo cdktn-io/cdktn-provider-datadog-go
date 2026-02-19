@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationgcpsts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationgcpsts/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationgcpsts/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountTags() *[]*string
 	SetAccountTags(val *[]*string)
 	AccountTagsInput() *[]*string
@@ -22,7 +22,7 @@ type IntegrationGcpSts interface {
 	SetAutomute(val interface{})
 	AutomuteInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientEmail() *string
 	SetClientEmail(val *string)
 	ClientEmailInput() *string
@@ -45,9 +45,9 @@ type IntegrationGcpSts interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -59,6 +59,9 @@ type IntegrationGcpSts interface {
 	IsCspmEnabled() interface{}
 	SetIsCspmEnabled(val interface{})
 	IsCspmEnabledInput() interface{}
+	IsGlobalLocationEnabled() interface{}
+	SetIsGlobalLocationEnabled(val interface{})
+	IsGlobalLocationEnabledInput() interface{}
 	IsPerProjectQuotaEnabled() interface{}
 	SetIsPerProjectQuotaEnabled(val interface{})
 	IsPerProjectQuotaEnabledInput() interface{}
@@ -69,9 +72,9 @@ type IntegrationGcpSts interface {
 	SetIsSecurityCommandCenterEnabled(val interface{})
 	IsSecurityCommandCenterEnabledInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetricNamespaceConfigs() IntegrationGcpStsMetricNamespaceConfigsList
 	MetricNamespaceConfigsInput() interface{}
 	MonitoredResourceConfigs() IntegrationGcpStsMonitoredResourceConfigsList
@@ -79,20 +82,23 @@ type IntegrationGcpSts interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RegionFilterConfigs() *[]*string
+	SetRegionFilterConfigs(val *[]*string)
+	RegionFilterConfigsInput() *[]*string
 	ResourceCollectionEnabled() interface{}
 	SetResourceCollectionEnabled(val interface{})
 	ResourceCollectionEnabledInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -105,7 +111,7 @@ type IntegrationGcpSts interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,9 +129,9 @@ type IntegrationGcpSts interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -147,6 +153,7 @@ type IntegrationGcpSts interface {
 	ResetCloudRunRevisionFilters()
 	ResetHostFilters()
 	ResetIsCspmEnabled()
+	ResetIsGlobalLocationEnabled()
 	ResetIsPerProjectQuotaEnabled()
 	ResetIsResourceChangeCollectionEnabled()
 	ResetIsSecurityCommandCenterEnabled()
@@ -155,6 +162,7 @@ type IntegrationGcpSts interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegionFilterConfigs()
 	ResetResourceCollectionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -171,7 +179,7 @@ type IntegrationGcpSts interface {
 
 // The jsii proxy struct for IntegrationGcpSts
 type jsiiProxy_IntegrationGcpSts struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IntegrationGcpSts) AccountTags() *[]*string {
@@ -214,8 +222,8 @@ func (j *jsiiProxy_IntegrationGcpSts) AutomuteInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IntegrationGcpSts) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -314,8 +322,8 @@ func (j *jsiiProxy_IntegrationGcpSts) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IntegrationGcpSts) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -394,6 +402,26 @@ func (j *jsiiProxy_IntegrationGcpSts) IsCspmEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) IsGlobalLocationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isGlobalLocationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) IsGlobalLocationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isGlobalLocationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) IsPerProjectQuotaEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -454,8 +482,8 @@ func (j *jsiiProxy_IntegrationGcpSts) IsSecurityCommandCenterEnabledInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IntegrationGcpSts) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -514,8 +542,8 @@ func (j *jsiiProxy_IntegrationGcpSts) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IntegrationGcpSts) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -544,6 +572,26 @@ func (j *jsiiProxy_IntegrationGcpSts) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) RegionFilterConfigs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regionFilterConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) RegionFilterConfigsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regionFilterConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) ResourceCollectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -564,8 +612,8 @@ func (j *jsiiProxy_IntegrationGcpSts) ResourceCollectionEnabledInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IntegrationGcpSts) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -595,7 +643,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -605,7 +653,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	j := jsiiProxy_IntegrationGcpSts{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -613,12 +661,12 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -698,7 +746,7 @@ func (j *jsiiProxy_IntegrationGcpSts)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationGcpSts)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationGcpSts)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -724,6 +772,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetIsCspmEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isCspmEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationGcpSts)SetIsGlobalLocationEnabled(val interface{}) {
+	if err := j.validateSetIsGlobalLocationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isGlobalLocationEnabled",
 		val,
 	)
 }
@@ -761,7 +820,7 @@ func (j *jsiiProxy_IntegrationGcpSts)SetIsSecurityCommandCenterEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_IntegrationGcpSts)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationGcpSts)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +831,7 @@ func (j *jsiiProxy_IntegrationGcpSts)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_IntegrationGcpSts)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationGcpSts)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -791,6 +850,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_IntegrationGcpSts)SetRegionFilterConfigs(val *[]*string) {
+	if err := j.validateSetRegionFilterConfigsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regionFilterConfigs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_IntegrationGcpSts)SetResourceCollectionEnabled(val interface{}) {
 	if err := j.validateSetResourceCollectionEnabledParameters(val); err != nil {
 		panic(err)
@@ -802,17 +872,17 @@ func (j *jsiiProxy_IntegrationGcpSts)SetResourceCollectionEnabled(val interface{
 	)
 }
 
-// Generates CDKTF code for importing a IntegrationGcpSts resource upon running "cdktf plan <stack-name>".
-func IntegrationGcpSts_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IntegrationGcpSts resource upon running "cdktn plan <stack-name>".
+func IntegrationGcpSts_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIntegrationGcpSts_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -847,7 +917,7 @@ func IntegrationGcpSts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +936,7 @@ func IntegrationGcpSts_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +955,7 @@ func IntegrationGcpSts_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +968,7 @@ func IntegrationGcpSts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts",
+		"@cdktn/provider-datadog.integrationGcpSts.IntegrationGcpSts",
 		"tfResourceType",
 		&returns,
 	)
@@ -943,11 +1013,11 @@ func (i *jsiiProxy_IntegrationGcpSts) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationGcpSts) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationGcpSts) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1084,7 +1154,7 @@ func (i *jsiiProxy_IntegrationGcpSts) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationGcpSts) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IntegrationGcpSts) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1095,11 +1165,11 @@ func (i *jsiiProxy_IntegrationGcpSts) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (i *jsiiProxy_IntegrationGcpSts) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationGcpSts) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1217,6 +1287,14 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetIsCspmEnabled() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) ResetIsGlobalLocationEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetIsGlobalLocationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) ResetIsPerProjectQuotaEnabled() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1261,6 +1339,14 @@ func (i *jsiiProxy_IntegrationGcpSts) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) ResetRegionFilterConfigs() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegionFilterConfigs",
 		nil, // no parameters
 	)
 }

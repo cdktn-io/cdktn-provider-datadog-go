@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogcustomallocationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogcustomallocationrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogcustomallocationrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocatedBy() DataDatadogCustomAllocationRuleStrategyAllocatedByList
 	AllocatedByFilters() DataDatadogCustomAllocationRuleStrategyAllocatedByFiltersList
 	AllocatedByFiltersInput() interface{}
@@ -51,15 +51,15 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAllocatedBy(value interface{})
 	PutAllocatedByFilters(value interface{})
 	PutBasedOnCosts(value interface{})
@@ -89,7 +89,7 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 	ResetEvaluateGroupedByFilters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,7 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 
 // The jsii proxy struct for DataDatadogCustomAllocationRuleStrategyOutputReference
 type jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) AllocatedBy() DataDatadogCustomAllocationRuleStrategyAllocatedByList {
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Terra
 }
 
 
-func NewDataDatadogCustomAllocationRuleStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatadogCustomAllocationRuleStrategyOutputReference {
+func NewDataDatadogCustomAllocationRuleStrategyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatadogCustomAllocationRuleStrategyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogCustomAllocationRuleStrategyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -322,7 +322,7 @@ func NewDataDatadogCustomAllocationRuleStrategyOutputReference(terraformResource
 	j := jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyOutputReference",
+		"@cdktn/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -330,11 +330,11 @@ func NewDataDatadogCustomAllocationRuleStrategyOutputReference(terraformResource
 	return &j
 }
 
-func NewDataDatadogCustomAllocationRuleStrategyOutputReference_Override(d DataDatadogCustomAllocationRuleStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatadogCustomAllocationRuleStrategyOutputReference_Override(d DataDatadogCustomAllocationRuleStrategyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyOutputReference",
+		"@cdktn/provider-datadog.dataDatadogCustomAllocationRule.DataDatadogCustomAllocationRuleStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -552,8 +552,8 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -565,11 +565,11 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -668,7 +668,7 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

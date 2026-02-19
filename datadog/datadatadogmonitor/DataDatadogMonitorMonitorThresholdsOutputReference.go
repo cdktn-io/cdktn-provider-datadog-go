@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogmonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogMonitorMonitorThresholdsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataDatadogMonitorMonitorThresholdsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unknown() *string
 	Warning() *string
 	WarningRecovery() *string
@@ -51,7 +51,7 @@ type DataDatadogMonitorMonitorThresholdsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataDatadogMonitorMonitorThresholdsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataDatadogMonitorMonitorThresholdsOutputReference interface {
 
 // The jsii proxy struct for DataDatadogMonitorMonitorThresholdsOutputReference
 type jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) ComplexObjectIndex() interface{} {
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) WarningRe
 }
 
 
-func NewDataDatadogMonitorMonitorThresholdsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogMonitorMonitorThresholdsOutputReference {
+func NewDataDatadogMonitorMonitorThresholdsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogMonitorMonitorThresholdsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogMonitorMonitorThresholdsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -225,7 +225,7 @@ func NewDataDatadogMonitorMonitorThresholdsOutputReference(terraformResource cdk
 	j := jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDataDatadogMonitorMonitorThresholdsOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDataDatadogMonitorMonitorThresholdsOutputReference_Override(d DataDatadogMonitorMonitorThresholdsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogMonitorMonitorThresholdsOutputReference_Override(d DataDatadogMonitorMonitorThresholdsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -455,8 +455,8 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -484,7 +484,7 @@ func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

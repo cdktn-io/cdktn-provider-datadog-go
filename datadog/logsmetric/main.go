@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsmetric
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsMetric.LogsMetric",
+		"@cdktn/provider-datadog.logsMetric.LogsMetric",
 		reflect.TypeOf((*LogsMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,16 +73,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsMetric{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricCompute",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricCompute",
 		reflect.TypeOf((*LogsMetricCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
 		reflect.TypeOf((*LogsMetricComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
@@ -117,20 +117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsMetricComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricConfig",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricConfig",
 		reflect.TypeOf((*LogsMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricFilter",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricFilter",
 		reflect.TypeOf((*LogsMetricFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricFilterOutputReference",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricFilterOutputReference",
 		reflect.TypeOf((*LogsMetricFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,16 +159,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsMetricFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricGroupBy",
 		reflect.TypeOf((*LogsMetricGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricGroupByList",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricGroupByList",
 		reflect.TypeOf((*LogsMetricGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -185,12 +185,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsMetricGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricGroupByOutputReference",
 		reflect.TypeOf((*LogsMetricGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,7 +221,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsMetricGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregator() *string
 	SetAggregator(val *string)
 	AggregatorInput() *string
@@ -47,20 +47,23 @@ type PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference inter
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
+	SemanticMode() *string
+	SetSemanticMode(val *string)
+	SemanticModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +79,16 @@ type PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregator()
 	ResetCrossOrgUuids()
 	ResetDataSource()
+	ResetSemanticMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +98,7 @@ type PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference inter
 
 // The jsii proxy struct for PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference
 type jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) Aggregator() *string {
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) SemanticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) SemanticModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -257,8 +281,8 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,7 +292,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 }
 
 
-func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference {
+func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -277,7 +301,7 @@ func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(te
 	j := jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,11 +309,11 @@ func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(te
 	return &j
 }
 
-func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference_Override(p PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference_Override(p PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -383,6 +407,17 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	)
 }
 
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference)SetSemanticMode(val *string) {
+	if err := j.validateSetSemanticModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"semanticMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -394,7 +429,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,11 +469,11 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -562,8 +597,8 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -575,11 +610,11 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -615,7 +650,15 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputR
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) ResetSemanticMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSemanticMode",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

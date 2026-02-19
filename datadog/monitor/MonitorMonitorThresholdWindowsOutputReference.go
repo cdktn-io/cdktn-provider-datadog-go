@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorMonitorThresholdWindowsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type MonitorMonitorThresholdWindowsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TriggerWindow() *string
 	SetTriggerWindow(val *string)
 	TriggerWindowInput() *string
@@ -51,7 +51,7 @@ type MonitorMonitorThresholdWindowsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type MonitorMonitorThresholdWindowsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetRecoveryWindow()
 	ResetTriggerWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type MonitorMonitorThresholdWindowsOutputReference interface {
 
 // The jsii proxy struct for MonitorMonitorThresholdWindowsOutputReference
 type jsiiProxy_MonitorMonitorThresholdWindowsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) TriggerWindowI
 }
 
 
-func NewMonitorMonitorThresholdWindowsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdWindowsOutputReference {
+func NewMonitorMonitorThresholdWindowsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorMonitorThresholdWindowsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorMonitorThresholdWindowsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewMonitorMonitorThresholdWindowsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MonitorMonitorThresholdWindowsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewMonitorMonitorThresholdWindowsOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewMonitorMonitorThresholdWindowsOutputReference_Override(m MonitorMonitorThresholdWindowsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorMonitorThresholdWindowsOutputReference_Override(m MonitorMonitorThresholdWindowsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -459,8 +459,8 @@ func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) GetStringMapAt
 	return returns
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -472,11 +472,11 @@ func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) InterpolationA
 	return returns
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,7 +504,7 @@ func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) ResetTriggerWi
 	)
 }
 
-func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorMonitorThresholdWindowsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

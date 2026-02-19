@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,11 +71,11 @@ func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataDatadogTagPipelineRulesetRulesReferenceTableOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataDatadogTagPipelineRulesetRulesReferenceTableOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

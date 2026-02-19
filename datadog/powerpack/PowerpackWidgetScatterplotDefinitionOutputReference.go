@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetScatterplotDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ColorByGroups() *[]*string
 	SetColorByGroups(val *[]*string)
 	ColorByGroupsInput() *[]*string
@@ -35,6 +35,9 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetScatterplotDefinition
 	SetInternalValue(val *PowerpackWidgetScatterplotDefinition)
 	LiveSpan() *string
@@ -47,9 +50,9 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -68,7 +71,7 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,15 +87,16 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutRequest(value *PowerpackWidgetScatterplotDefinitionRequest)
 	PutXaxis(value *PowerpackWidgetScatterplotDefinitionXaxis)
 	PutYaxis(value *PowerpackWidgetScatterplotDefinitionYaxis)
 	ResetColorByGroups()
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
 	ResetTitle()
@@ -102,7 +106,7 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	ResetYaxis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +116,7 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetScatterplotDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ColorByGroups() *[]*string {
@@ -195,6 +199,26 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) InternalValue() *PowerpackWidgetScatterplotDefinition {
 	var returns *PowerpackWidgetScatterplotDefinition
 	_jsii_.Get(
@@ -255,8 +279,8 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -366,7 +390,7 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) YaxisInp
 }
 
 
-func NewPowerpackWidgetScatterplotDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetScatterplotDefinitionOutputReference {
+func NewPowerpackWidgetScatterplotDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetScatterplotDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetScatterplotDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -375,7 +399,7 @@ func NewPowerpackWidgetScatterplotDefinitionOutputReference(terraformResource cd
 	j := jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,11 +407,11 @@ func NewPowerpackWidgetScatterplotDefinitionOutputReference(terraformResource cd
 	return &j
 }
 
-func NewPowerpackWidgetScatterplotDefinitionOutputReference_Override(p PowerpackWidgetScatterplotDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetScatterplotDefinitionOutputReference_Override(p PowerpackWidgetScatterplotDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetScatterplotDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -426,6 +450,17 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetInternalValue(val *PowerpackWidgetScatterplotDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -459,7 +494,7 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,11 +567,11 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) GetAnyMa
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -660,8 +695,8 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) GetStrin
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -673,11 +708,11 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -749,6 +784,14 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetCus
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetLiveSpan() {
 	_jsii_.InvokeVoid(
 		p,
@@ -805,7 +848,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetYax
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

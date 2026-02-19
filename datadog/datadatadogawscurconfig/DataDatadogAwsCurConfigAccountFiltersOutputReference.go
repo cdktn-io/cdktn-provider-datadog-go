@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogawscurconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogawscurconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogawscurconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogAwsCurConfigAccountFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,7 +32,7 @@ type DataDatadogAwsCurConfigAccountFiltersOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	IncludedAccounts() *[]*string
-	IncludeNewAccounts() cdktf.IResolvable
+	IncludeNewAccounts() cdktn.IResolvable
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -40,15 +40,15 @@ type DataDatadogAwsCurConfigAccountFiltersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataDatadogAwsCurConfigAccountFiltersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataDatadogAwsCurConfigAccountFiltersOutputReference interface {
 
 // The jsii proxy struct for DataDatadogAwsCurConfigAccountFiltersOutputReference
 type jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Include
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) IncludeNewAccounts() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) IncludeNewAccounts() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"includeNewAccounts",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Terrafo
 }
 
 
-func NewDataDatadogAwsCurConfigAccountFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatadogAwsCurConfigAccountFiltersOutputReference {
+func NewDataDatadogAwsCurConfigAccountFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatadogAwsCurConfigAccountFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogAwsCurConfigAccountFiltersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -192,7 +192,7 @@ func NewDataDatadogAwsCurConfigAccountFiltersOutputReference(terraformResource c
 	j := jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewDataDatadogAwsCurConfigAccountFiltersOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataDatadogAwsCurConfigAccountFiltersOutputReference_Override(d DataDatadogAwsCurConfigAccountFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatadogAwsCurConfigAccountFiltersOutputReference_Override(d DataDatadogAwsCurConfigAccountFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
+		"@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -422,8 +422,8 @@ func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -435,11 +435,11 @@ func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -451,7 +451,7 @@ func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogAwsCurConfigAccountFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

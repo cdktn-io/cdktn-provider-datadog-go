@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogincidentnotificationtemplate
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplate",
+		"@cdktn/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplate",
 		reflect.TypeOf((*DataDatadogIncidentNotificationTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,12 +62,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogIncidentNotificationTemplate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplateConfig",
+		"@cdktn/provider-datadog.dataDatadogIncidentNotificationTemplate.DataDatadogIncidentNotificationTemplateConfig",
 		reflect.TypeOf((*DataDatadogIncidentNotificationTemplateConfig)(nil)).Elem(),
 	)
 }

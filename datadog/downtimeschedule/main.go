@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package downtimeschedule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeSchedule",
 		reflect.TypeOf((*DowntimeSchedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -88,20 +88,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeSchedule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleConfig",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleConfig",
 		reflect.TypeOf((*DowntimeScheduleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier",
 		reflect.TypeOf((*DowntimeScheduleMonitorIdentifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifierOutputReference",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifierOutputReference",
 		reflect.TypeOf((*DowntimeScheduleMonitorIdentifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,16 +134,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeScheduleMonitorIdentifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule",
 		reflect.TypeOf((*DowntimeScheduleOneTimeSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeScheduleOutputReference",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeScheduleOutputReference",
 		reflect.TypeOf((*DowntimeScheduleOneTimeScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeScheduleOneTimeScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule",
 		reflect.TypeOf((*DowntimeScheduleRecurringSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleOutputReference",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleOutputReference",
 		reflect.TypeOf((*DowntimeScheduleRecurringScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,16 +219,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeScheduleRecurringScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrence",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrence",
 		reflect.TypeOf((*DowntimeScheduleRecurringScheduleRecurrence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceList",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceList",
 		reflect.TypeOf((*DowntimeScheduleRecurringScheduleRecurrenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -245,12 +245,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeScheduleRecurringScheduleRecurrenceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceOutputReference",
+		"@cdktn/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceOutputReference",
 		reflect.TypeOf((*DowntimeScheduleRecurringScheduleRecurrenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -284,7 +284,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeScheduleRecurringScheduleRecurrenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

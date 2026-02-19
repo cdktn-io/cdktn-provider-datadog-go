@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogpermissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogpermissions/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogpermissions/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/permissions datadog_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/permissions datadog_permissions}.
 type DataDatadogPermissions interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatadogPermissions interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,20 +42,20 @@ type DataDatadogPermissions interface {
 	SetIncludeRestricted(val interface{})
 	IncludeRestrictedInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Permissions() cdktf.StringMap
+	Permissions() cdktn.StringMap
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataDatadogPermissions interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataDatadogPermissions interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -106,11 +106,11 @@ type DataDatadogPermissions interface {
 
 // The jsii proxy struct for DataDatadogPermissions
 type jsiiProxy_DataDatadogPermissions struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogPermissions) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataDatadogPermissions) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogPermissions) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataDatadogPermissions) IncludeRestrictedInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogPermissions) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DataDatadogPermissions) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) Permissions() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataDatadogPermissions) Permissions() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"permissions",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DataDatadogPermissions) Permissions() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogPermissions) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataDatadogPermissions) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogPermissions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogPermissions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataDatadogPermissions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/permissions datadog_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/permissions datadog_permissions} Data Source.
 func NewDataDatadogPermissions(scope constructs.Construct, id *string, config *DataDatadogPermissionsConfig) DataDatadogPermissions {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataDatadogPermissions(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataDatadogPermissions{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -318,12 +318,12 @@ func NewDataDatadogPermissions(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/permissions datadog_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/permissions datadog_permissions} Data Source.
 func NewDataDatadogPermissions_Override(d DataDatadogPermissions, scope constructs.Construct, id *string, config *DataDatadogPermissionsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataDatadogPermissions)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogPermissions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogPermissions)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataDatadogPermissions)SetIncludeRestricted(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataDatadogPermissions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogPermissions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataDatadogPermissions)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataDatadogPermissions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogPermissions)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -397,17 +397,17 @@ func (j *jsiiProxy_DataDatadogPermissions)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogPermissions resource upon running "cdktf plan <stack-name>".
-func DataDatadogPermissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogPermissions resource upon running "cdktn plan <stack-name>".
+func DataDatadogPermissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogPermissions_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -442,7 +442,7 @@ func DataDatadogPermissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -461,7 +461,7 @@ func DataDatadogPermissions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataDatadogPermissions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func DataDatadogPermissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
+		"@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions",
 		"tfResourceType",
 		&returns,
 	)
@@ -527,11 +527,11 @@ func (d *jsiiProxy_DataDatadogPermissions) GetAnyMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogPermissions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogPermissions) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -655,11 +655,11 @@ func (d *jsiiProxy_DataDatadogPermissions) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogPermissions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogPermissions) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/provider/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/provider/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs datadog}.
 type DatadogProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -37,7 +37,7 @@ type DatadogProvider interface {
 	SetAwsSessionToken(val *string)
 	AwsSessionTokenInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudProviderRegion() *string
 	SetCloudProviderRegion(val *string)
 	CloudProviderRegionInput() *string
@@ -78,7 +78,7 @@ type DatadogProvider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -126,7 +126,7 @@ type DatadogProvider interface {
 
 // The jsii proxy struct for DatadogProvider
 type jsiiProxy_DatadogProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_DatadogProvider) Alias() *string {
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DatadogProvider) AwsSessionTokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DatadogProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_DatadogProvider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DatadogProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DatadogProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -570,7 +570,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -580,7 +580,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	j := jsiiProxy_DatadogProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -588,12 +588,12 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -738,17 +738,17 @@ func (j *jsiiProxy_DatadogProvider)SetValidate(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DatadogProvider resource upon running "cdktf plan <stack-name>".
-func DatadogProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DatadogProvider resource upon running "cdktn plan <stack-name>".
+func DatadogProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDatadogProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -783,7 +783,7 @@ func DatadogProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func DatadogProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func DatadogProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -834,7 +834,7 @@ func DatadogProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.provider.DatadogProvider",
+		"@cdktn/provider-datadog.provider.DatadogProvider",
 		"tfResourceType",
 		&returns,
 	)

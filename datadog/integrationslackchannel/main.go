@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationslackchannel
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel",
 		reflect.TypeOf((*IntegrationSlackChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
@@ -68,20 +68,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationSlackChannel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig",
 		reflect.TypeOf((*IntegrationSlackChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay",
 		reflect.TypeOf((*IntegrationSlackChannelDisplay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
 		reflect.TypeOf((*IntegrationSlackChannelDisplayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationSlackChannelDisplayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogreferencetablerows
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows",
+		"@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows",
 		reflect.TypeOf((*DataDatadogReferenceTableRows)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,20 +58,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogReferenceTableRows{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsConfig",
+		"@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsConfig",
 		reflect.TypeOf((*DataDatadogReferenceTableRowsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRows",
+		"@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRows",
 		reflect.TypeOf((*DataDatadogReferenceTableRowsRows)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsList",
+		"@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsList",
 		reflect.TypeOf((*DataDatadogReferenceTableRowsRowsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +88,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogReferenceTableRowsRowsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRowsRowsOutputReference",
 		reflect.TypeOf((*DataDatadogReferenceTableRowsRowsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,7 +122,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogReferenceTableRowsRowsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

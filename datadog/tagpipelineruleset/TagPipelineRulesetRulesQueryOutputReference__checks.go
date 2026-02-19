@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -104,7 +104,7 @@ func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validatePutAddit
 	return nil
 }
 
-func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -121,11 +121,11 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetCaseI
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -206,12 +206,20 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetIfNot
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetIfTagExistsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -219,7 +227,7 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetIfNot
 
 func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *TagPipelineRulesetRulesQuery:
 		val := val.(*TagPipelineRulesetRulesQuery)
@@ -234,7 +242,7 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetInter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *TagPipelineRulesetRulesQuery; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *TagPipelineRulesetRulesQuery; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -257,7 +265,7 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,7 +273,7 @@ func (j *jsiiProxy_TagPipelineRulesetRulesQueryOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewTagPipelineRulesetRulesQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTagPipelineRulesetRulesQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

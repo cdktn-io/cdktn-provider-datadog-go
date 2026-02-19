@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -63,7 +63,7 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validatePutVi
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,6 +72,10 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }
 
@@ -87,7 +91,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -103,7 +107,7 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetTi
 	return nil
 }
 
-func validateNewPowerpackWidgetGeomapDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPowerpackWidgetGeomapDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

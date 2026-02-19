@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetAlertValueDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AlertId() *string
 	SetAlertId(val *string)
 	AlertIdInput() *string
@@ -43,9 +43,9 @@ type DashboardWidgetAlertValueDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TextAlign() *string
 	SetTextAlign(val *string)
 	TextAlignInput() *string
@@ -66,7 +66,7 @@ type DashboardWidgetAlertValueDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type DashboardWidgetAlertValueDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPrecision()
 	ResetTextAlign()
 	ResetTitle()
@@ -93,7 +93,7 @@ type DashboardWidgetAlertValueDefinitionOutputReference interface {
 	ResetUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +103,7 @@ type DashboardWidgetAlertValueDefinitionOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetAlertValueDefinitionOutputReference
 type jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) AlertId() *string {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) UnitInput
 }
 
 
-func NewDashboardWidgetAlertValueDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetAlertValueDefinitionOutputReference {
+func NewDashboardWidgetAlertValueDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetAlertValueDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetAlertValueDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -326,7 +326,7 @@ func NewDashboardWidgetAlertValueDefinitionOutputReference(terraformResource cdk
 	j := jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetAlertValueDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetAlertValueDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,11 +334,11 @@ func NewDashboardWidgetAlertValueDefinitionOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDashboardWidgetAlertValueDefinitionOutputReference_Override(d DashboardWidgetAlertValueDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetAlertValueDefinitionOutputReference_Override(d DashboardWidgetAlertValueDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetAlertValueDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetAlertValueDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,11 +505,11 @@ func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,8 +633,8 @@ func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -646,11 +646,11 @@ func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -710,7 +710,7 @@ func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) ResetUnit
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

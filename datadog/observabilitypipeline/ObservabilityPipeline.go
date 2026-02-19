@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/observabilitypipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/observabilitypipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 type ObservabilityPipeline interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
-	Config() ObservabilityPipelineConfigAOutputReference
+	CdktfStack() cdktn.TerraformStack
+	Config() ObservabilityPipelineConfigAList
 	ConfigInput() interface{}
 	// Experimental.
 	Connection() interface{}
@@ -34,27 +34,27 @@ type ObservabilityPipeline interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -62,7 +62,7 @@ type ObservabilityPipeline interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type ObservabilityPipeline interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,9 +93,9 @@ type ObservabilityPipeline interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -110,7 +110,7 @@ type ObservabilityPipeline interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfig(value *ObservabilityPipelineConfigA)
+	PutConfig(value interface{})
 	ResetConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -130,11 +130,11 @@ type ObservabilityPipeline interface {
 
 // The jsii proxy struct for ObservabilityPipeline
 type jsiiProxy_ObservabilityPipeline struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ObservabilityPipeline) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ObservabilityPipeline) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) Config() ObservabilityPipelineConfigAOutputReference {
-	var returns ObservabilityPipelineConfigAOutputReference
+func (j *jsiiProxy_ObservabilityPipeline) Config() ObservabilityPipelineConfigAList {
+	var returns ObservabilityPipelineConfigAList
 	_jsii_.Get(
 		j,
 		"config",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_ObservabilityPipeline) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ObservabilityPipeline) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_ObservabilityPipeline) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ObservabilityPipeline) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_ObservabilityPipeline) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ObservabilityPipeline) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_ObservabilityPipeline) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ObservabilityPipeline) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_ObservabilityPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline(scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) ObservabilityPipeline {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewObservabilityPipeline(scope constructs.Construct, id *string, config *Ob
 	j := jsiiProxy_ObservabilityPipeline{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,12 +362,12 @@ func NewObservabilityPipeline(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline_Override(o ObservabilityPipeline, scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ObservabilityPipeline)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipeline)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ObservabilityPipeline)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_ObservabilityPipeline)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipeline)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ObservabilityPipeline)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_ObservabilityPipeline)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipeline)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ObservabilityPipeline)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -452,17 +452,17 @@ func (j *jsiiProxy_ObservabilityPipeline)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ObservabilityPipeline resource upon running "cdktf plan <stack-name>".
-func ObservabilityPipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ObservabilityPipeline resource upon running "cdktn plan <stack-name>".
+func ObservabilityPipeline_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateObservabilityPipeline_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -497,7 +497,7 @@ func ObservabilityPipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func ObservabilityPipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func ObservabilityPipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func ObservabilityPipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.observabilityPipeline.ObservabilityPipeline",
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline",
 		"tfResourceType",
 		&returns,
 	)
@@ -593,11 +593,11 @@ func (o *jsiiProxy_ObservabilityPipeline) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipeline) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservabilityPipeline) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -734,7 +734,7 @@ func (o *jsiiProxy_ObservabilityPipeline) HasResourceMove() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityPipeline) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_ObservabilityPipeline) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -745,11 +745,11 @@ func (o *jsiiProxy_ObservabilityPipeline) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipeline) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservabilityPipeline) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -805,7 +805,7 @@ func (o *jsiiProxy_ObservabilityPipeline) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (o *jsiiProxy_ObservabilityPipeline) PutConfig(value *ObservabilityPipelineConfigA) {
+func (o *jsiiProxy_ObservabilityPipeline) PutConfig(value interface{}) {
 	if err := o.validatePutConfigParameters(value); err != nil {
 		panic(err)
 	}

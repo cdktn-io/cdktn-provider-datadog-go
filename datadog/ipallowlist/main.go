@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ipallowlist
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlist",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlist",
 		reflect.TypeOf((*IpAllowlist)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,20 +65,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IpAllowlist{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlistConfig",
 		reflect.TypeOf((*IpAllowlistConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlistEntry",
 		reflect.TypeOf((*IpAllowlistEntry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryList",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlistEntryList",
 		reflect.TypeOf((*IpAllowlistEntryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -95,12 +95,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IpAllowlistEntryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference",
+		"@cdktn/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference",
 		reflect.TypeOf((*IpAllowlistEntryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
@@ -132,7 +132,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IpAllowlistEntryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

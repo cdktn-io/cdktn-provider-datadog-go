@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitorconfigpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitorconfigpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorConfigPolicyTagPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type MonitorConfigPolicyTagPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ValidTagValues() *[]*string
 	SetValidTagValues(val *[]*string)
 	ValidTagValuesInput() *[]*string
@@ -54,7 +54,7 @@ type MonitorConfigPolicyTagPolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type MonitorConfigPolicyTagPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type MonitorConfigPolicyTagPolicyOutputReference interface {
 
 // The jsii proxy struct for MonitorConfigPolicyTagPolicyOutputReference
 type jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) ValidTagValuesIn
 }
 
 
-func NewMonitorConfigPolicyTagPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorConfigPolicyTagPolicyOutputReference {
+func NewMonitorConfigPolicyTagPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorConfigPolicyTagPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorConfigPolicyTagPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewMonitorConfigPolicyTagPolicyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewMonitorConfigPolicyTagPolicyOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewMonitorConfigPolicyTagPolicyOutputReference_Override(m MonitorConfigPolicyTagPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorConfigPolicyTagPolicyOutputReference_Override(m MonitorConfigPolicyTagPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
+		"@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -491,8 +491,8 @@ func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,11 +504,11 @@ func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationAsL
 	return returns
 }
 
-func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -520,7 +520,7 @@ func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) InterpolationFor
 	return returns
 }
 
-func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorConfigPolicyTagPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationawsaccount
@@ -7,7 +7,7 @@ package integrationawsaccount
 type IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig struct {
 	// tag_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
 	TagFilters interface{} `field:"optional" json:"tagFilters" yaml:"tagFilters"`
 }
 

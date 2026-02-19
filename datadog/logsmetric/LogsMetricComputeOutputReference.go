@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logsmetric/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsmetric/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsMetricComputeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggregationType() *string
 	SetAggregationType(val *string)
 	AggregationTypeInput() *string
@@ -46,15 +46,15 @@ type LogsMetricComputeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type LogsMetricComputeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIncludePercentiles()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type LogsMetricComputeOutputReference interface {
 
 // The jsii proxy struct for LogsMetricComputeOutputReference
 type jsiiProxy_LogsMetricComputeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LogsMetricComputeOutputReference) AggregationType() *string {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_LogsMetricComputeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsMetricComputeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewLogsMetricComputeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LogsMetricComputeOutputReference {
+func NewLogsMetricComputeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LogsMetricComputeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLogsMetricComputeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewLogsMetricComputeOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_LogsMetricComputeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewLogsMetricComputeOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewLogsMetricComputeOutputReference_Override(l LogsMetricComputeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLogsMetricComputeOutputReference_Override(l LogsMetricComputeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
+		"@cdktn/provider-datadog.logsMetric.LogsMetricComputeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_LogsMetricComputeOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_LogsMetricComputeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsMetricComputeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (l *jsiiProxy_LogsMetricComputeOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_LogsMetricComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsMetricComputeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -493,8 +493,8 @@ func (l *jsiiProxy_LogsMetricComputeOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -506,11 +506,11 @@ func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LogsMetricComputeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -538,7 +538,7 @@ func (l *jsiiProxy_LogsMetricComputeOutputReference) ResetPath() {
 	)
 }
 
-func (l *jsiiProxy_LogsMetricComputeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsMetricComputeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AlertId() *string
 	SetAlertId(val *string)
 	AlertIdInput() *string
@@ -33,6 +33,9 @@ type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetAlertGraphDefinition
 	SetInternalValue(val *PowerpackWidgetAlertGraphDefinition)
 	LiveSpan() *string
@@ -43,9 +46,9 @@ type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -63,7 +66,7 @@ type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,16 +82,17 @@ type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetTitle()
 	ResetTitleAlign()
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,7 +102,7 @@ type PowerpackWidgetAlertGraphDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetAlertGraphDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) AlertId() *string {
@@ -161,6 +165,26 @@ func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Fqn() *st
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) InternalValue() *PowerpackWidgetAlertGraphDefinition {
 	var returns *PowerpackWidgetAlertGraphDefinition
 	_jsii_.Get(
@@ -201,8 +225,8 @@ func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -292,7 +316,7 @@ func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) VizTypeIn
 }
 
 
-func NewPowerpackWidgetAlertGraphDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetAlertGraphDefinitionOutputReference {
+func NewPowerpackWidgetAlertGraphDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetAlertGraphDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetAlertGraphDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -301,7 +325,7 @@ func NewPowerpackWidgetAlertGraphDefinitionOutputReference(terraformResource cdk
 	j := jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,11 +333,11 @@ func NewPowerpackWidgetAlertGraphDefinitionOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewPowerpackWidgetAlertGraphDefinitionOutputReference_Override(p PowerpackWidgetAlertGraphDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetAlertGraphDefinitionOutputReference_Override(p PowerpackWidgetAlertGraphDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetAlertGraphDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -352,6 +376,17 @@ func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetComplex
 	)
 }
 
+func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetInternalValue(val *PowerpackWidgetAlertGraphDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -385,7 +420,7 @@ func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,11 +504,11 @@ func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) GetAnyMap
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -597,8 +632,8 @@ func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) GetString
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -610,11 +645,11 @@ func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Interpola
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -624,6 +659,14 @@ func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) ResetLiveSpan() {
@@ -658,7 +701,7 @@ func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) ResetTitl
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetAlertGraphDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

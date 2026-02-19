@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ColorPreference() *string
 	SetColorPreference(val *string)
 	ColorPreferenceInput() *string
@@ -61,9 +61,9 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -78,7 +78,7 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetColorPreference()
 	ResetDisplayFormat()
 	ResetHideZeroCounts()
@@ -109,7 +109,7 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,7 +119,7 @@ type DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference i
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) ColorPreference() *string {
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -422,7 +422,7 @@ func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReferenc
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -430,11 +430,11 @@ func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReferenc
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -572,7 +572,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,11 +645,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -773,8 +773,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -786,11 +786,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -882,7 +882,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOut
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

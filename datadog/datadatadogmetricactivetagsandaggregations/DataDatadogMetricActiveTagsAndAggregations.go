@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmetricactivetagsandaggregations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmetricactivetagsandaggregations/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogmetricactivetagsandaggregations/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
 type DataDatadogMetricActiveTagsAndAggregations interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	ActiveAggregations() DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList
 	ActiveTags() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,31 +30,31 @@ type DataDatadogMetricActiveTagsAndAggregations interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Metric() *string
 	SetMetric(val *string)
 	MetricInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -67,7 +67,7 @@ type DataDatadogMetricActiveTagsAndAggregations interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,7 +83,7 @@ type DataDatadogMetricActiveTagsAndAggregations interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -107,7 +107,7 @@ type DataDatadogMetricActiveTagsAndAggregations interface {
 
 // The jsii proxy struct for DataDatadogMetricActiveTagsAndAggregations
 type jsiiProxy_DataDatadogMetricActiveTagsAndAggregations struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) ActiveAggregations() DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList {
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) ActiveTags() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) DependsOn() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Node() constructs
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) RawOverrides() in
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) WindowInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
 func NewDataDatadogMetricActiveTagsAndAggregations(scope constructs.Construct, id *string, config *DataDatadogMetricActiveTagsAndAggregationsConfig) DataDatadogMetricActiveTagsAndAggregations {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataDatadogMetricActiveTagsAndAggregations(scope constructs.Construct, i
 	j := jsiiProxy_DataDatadogMetricActiveTagsAndAggregations{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -339,12 +339,12 @@ func NewDataDatadogMetricActiveTagsAndAggregations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
 func NewDataDatadogMetricActiveTagsAndAggregations_Override(d DataDatadogMetricActiveTagsAndAggregations, scope constructs.Construct, id *string, config *DataDatadogMetricActiveTagsAndAggregationsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetMetric(val *str
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -418,17 +418,17 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations)SetWindow(val *flo
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogMetricActiveTagsAndAggregations resource upon running "cdktf plan <stack-name>".
-func DataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogMetricActiveTagsAndAggregations resource upon running "cdktn plan <stack-name>".
+func DataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -463,7 +463,7 @@ func DataDatadogMetricActiveTagsAndAggregations_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -482,7 +482,7 @@ func DataDatadogMetricActiveTagsAndAggregations_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataDatadogMetricActiveTagsAndAggregations_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataDatadogMetricActiveTagsAndAggregations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
+		"@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations",
 		"tfResourceType",
 		&returns,
 	)
@@ -548,11 +548,11 @@ func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -676,11 +676,11 @@ func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

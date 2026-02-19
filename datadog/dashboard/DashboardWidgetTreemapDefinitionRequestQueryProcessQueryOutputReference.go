@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregator() *string
 	SetAggregator(val *string)
 	AggregatorInput() *string
@@ -64,9 +64,9 @@ type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TextFilter() *string
 	SetTextFilter(val *string)
 	TextFilterInput() *string
@@ -75,7 +75,7 @@ type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregator()
 	ResetCrossOrgUuids()
 	ResetIsNormalizedCpu()
@@ -103,7 +103,7 @@ type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference int
 	ResetTextFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference int
 
 // The jsii proxy struct for DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference
 type jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) Aggregator() *string {
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 }
 
 
-func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference {
+func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(
 	j := jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(
 	return &j
 }
 
-func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference_Override(d DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference_Override(d DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -557,7 +557,7 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -736,8 +736,8 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -749,11 +749,11 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -821,7 +821,7 @@ func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutpu
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

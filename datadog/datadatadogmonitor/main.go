@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmonitor
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		reflect.TypeOf((*DataDatadogMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,20 +92,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig",
 		reflect.TypeOf((*DataDatadogMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindows",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindows",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholdWindows)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsList",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholdWindowsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -121,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorMonitorThresholdWindowsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholdWindowsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,16 +155,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorMonitorThresholdWindowsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholds",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholds",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsList",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -180,12 +180,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorMonitorThresholdsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorMonitorThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -218,20 +218,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorMonitorThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptions",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptions",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomSchedule",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomSchedule",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleList",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -247,12 +247,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,16 +280,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -305,12 +305,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -340,16 +340,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindow",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindow",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsEvaluationWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowList",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsEvaluationWindowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -365,12 +365,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsEvaluationWindowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -396,16 +396,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timezone", GoGetter: "Timezone"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsList",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsList",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -421,12 +422,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsOutputReference",
 		reflect.TypeOf((*DataDatadogMonitorSchedulingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,7 +456,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogMonitorSchedulingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

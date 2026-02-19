@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGeomapDefinitionCustomLinkList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DashboardWidgetGeomapDefinitionCustomLinkList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DashboardWidgetGeomapDefinitionCustomLinkList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DashboardWidgetGeomapDefinitionCustomLinkOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DashboardWidgetGeomapDefinitionCustomLinkList interface {
 
 // The jsii proxy struct for DashboardWidgetGeomapDefinitionCustomLinkList
 type jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) WrapsSet() *bo
 }
 
 
-func NewDashboardWidgetGeomapDefinitionCustomLinkList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetGeomapDefinitionCustomLinkList {
+func NewDashboardWidgetGeomapDefinitionCustomLinkList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetGeomapDefinitionCustomLinkList {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGeomapDefinitionCustomLinkListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDashboardWidgetGeomapDefinitionCustomLinkList(terraformResource cdktf.II
 	j := jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionCustomLinkList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDashboardWidgetGeomapDefinitionCustomLinkList(terraformResource cdktf.II
 	return &j
 }
 
-func NewDashboardWidgetGeomapDefinitionCustomLinkList_Override(d DashboardWidgetGeomapDefinitionCustomLinkList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDashboardWidgetGeomapDefinitionCustomLinkList_Override(d DashboardWidgetGeomapDefinitionCustomLinkList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionCustomLinkList",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGeomapDefinitionCustomLinkList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList)SetWrapsSet(val
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) Get(index *flo
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionCustomLinkList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package referencetable
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTable",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTable",
 		reflect.TypeOf((*ReferenceTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -82,28 +82,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableConfig",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableConfig",
 		reflect.TypeOf((*ReferenceTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadata",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadata",
 		reflect.TypeOf((*ReferenceTableFileMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetails",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetails",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetail",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetail",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsAwsDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountId", GoGetter: "AwsAccountId"},
@@ -139,16 +139,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetail",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetail",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsAzureDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureClientId", GoGetter: "AzureClientId"},
@@ -190,16 +190,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetail",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetail",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsGcpDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,12 +238,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsOutputReference",
 		reflect.TypeOf((*ReferenceTableFileMetadataAccessDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsDetail", GoGetter: "AwsDetail"},
@@ -282,12 +282,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableFileMetadataAccessDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataOutputReference",
 		reflect.TypeOf((*ReferenceTableFileMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessDetails", GoGetter: "AccessDetails"},
@@ -323,20 +323,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableFileMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableSchema",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableSchema",
 		reflect.TypeOf((*ReferenceTableSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableSchemaFields",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFields",
 		reflect.TypeOf((*ReferenceTableSchemaFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableSchemaFieldsList",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFieldsList",
 		reflect.TypeOf((*ReferenceTableSchemaFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -353,12 +353,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableSchemaFieldsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableSchemaFieldsOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFieldsOutputReference",
 		reflect.TypeOf((*ReferenceTableSchemaFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,12 +391,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableSchemaFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableSchemaOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaOutputReference",
 		reflect.TypeOf((*ReferenceTableSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -430,7 +430,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReferenceTableSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsmetric
@@ -7,7 +7,7 @@ package logsmetric
 type LogsMetricFilter struct {
 	// The search query - following the log search syntax.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#query LogsMetric#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#query LogsMetric#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

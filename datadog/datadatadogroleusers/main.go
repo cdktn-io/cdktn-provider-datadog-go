@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogroleusers
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers",
+		"@cdktn/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsers",
 		reflect.TypeOf((*DataDatadogRoleUsers)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,20 +60,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRoleUsers{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersConfig",
+		"@cdktn/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersConfig",
 		reflect.TypeOf((*DataDatadogRoleUsersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsers",
+		"@cdktn/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsers",
 		reflect.TypeOf((*DataDatadogRoleUsersRoleUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersList",
+		"@cdktn/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersList",
 		reflect.TypeOf((*DataDatadogRoleUsersRoleUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -89,12 +89,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRoleUsersRoleUsersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersOutputReference",
+		"@cdktn/provider-datadog.dataDatadogRoleUsers.DataDatadogRoleUsersRoleUsersOutputReference",
 		reflect.TypeOf((*DataDatadogRoleUsersRoleUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRoleUsersRoleUsersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

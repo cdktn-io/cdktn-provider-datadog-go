@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalQueryFilters() *string
 	SetAdditionalQueryFilters(val *string)
 	AdditionalQueryFiltersInput() *string
@@ -61,15 +61,15 @@ type PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdditionalQueryFilters()
 	ResetCrossOrgUuids()
 	ResetGroupMode()
@@ -95,7 +95,7 @@ type PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference inte
 	ResetSloQueryType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference inte
 
 // The jsii proxy struct for PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference
 type jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) AdditionalQueryFilters() *string {
@@ -328,8 +328,8 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 }
 
 
-func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference {
+func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference(t
 	j := jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference(t
 	return &j
 }
 
-func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference_Override(p PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference_Override(p PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -498,7 +498,7 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,11 +538,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -666,8 +666,8 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -679,11 +679,11 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -735,7 +735,7 @@ func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutput
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetQueryTableDefinitionRequestQuerySloQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

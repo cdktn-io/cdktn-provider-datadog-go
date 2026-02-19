@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestMobileOptionsListStructOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowApplicationCrash() interface{}
 	SetAllowApplicationCrash(val interface{})
 	AllowApplicationCrashInput() interface{}
@@ -76,9 +76,9 @@ type SyntheticsTestMobileOptionsListStructOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TickEvery() *float64
 	SetTickEvery(val *float64)
 	TickEveryInput() *float64
@@ -90,7 +90,7 @@ type SyntheticsTestMobileOptionsListStructOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type SyntheticsTestMobileOptionsListStructOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBindings(value interface{})
 	PutCi(value *SyntheticsTestMobileOptionsListCi)
 	PutMobileApplication(value *SyntheticsTestMobileOptionsListMobileApplication)
@@ -131,7 +131,7 @@ type SyntheticsTestMobileOptionsListStructOutputReference interface {
 	ResetVerbosity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -141,7 +141,7 @@ type SyntheticsTestMobileOptionsListStructOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestMobileOptionsListStructOutputReference
 type jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) AllowApplicationCrash() interface{} {
@@ -504,8 +504,8 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -555,7 +555,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) Verbosi
 }
 
 
-func NewSyntheticsTestMobileOptionsListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListStructOutputReference {
+func NewSyntheticsTestMobileOptionsListStructOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListStructOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestMobileOptionsListStructOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -564,7 +564,7 @@ func NewSyntheticsTestMobileOptionsListStructOutputReference(terraformResource c
 	j := jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -572,11 +572,11 @@ func NewSyntheticsTestMobileOptionsListStructOutputReference(terraformResource c
 	return &j
 }
 
-func NewSyntheticsTestMobileOptionsListStructOutputReference_Override(s SyntheticsTestMobileOptionsListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsTestMobileOptionsListStructOutputReference_Override(s SyntheticsTestMobileOptionsListStructOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -725,7 +725,7 @@ func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,11 +787,11 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) GetAnyM
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -915,8 +915,8 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) GetStri
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -928,11 +928,11 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) Interpo
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1122,7 +1122,7 @@ func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) ResetVe
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestMobileOptionsListStructOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

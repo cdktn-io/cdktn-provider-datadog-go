@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package openapiapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/openapiapi/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/openapiapi/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api datadog_openapi_api}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api datadog_openapi_api}.
 type OpenapiApi interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,24 +32,24 @@ type OpenapiApi interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -60,7 +60,7 @@ type OpenapiApi interface {
 	SetSpec(val *string)
 	SpecInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -73,7 +73,7 @@ type OpenapiApi interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type OpenapiApi interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -126,11 +126,11 @@ type OpenapiApi interface {
 
 // The jsii proxy struct for OpenapiApi
 type jsiiProxy_OpenapiApi struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_OpenapiApi) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OpenapiApi) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_OpenapiApi) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpenapiApi) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_OpenapiApi) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_OpenapiApi) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpenapiApi) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_OpenapiApi) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_OpenapiApi) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_OpenapiApi) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_OpenapiApi) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_OpenapiApi) SpecInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OpenapiApi) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OpenapiApi) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -320,7 +320,7 @@ func (j *jsiiProxy_OpenapiApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api datadog_openapi_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api datadog_openapi_api} Resource.
 func NewOpenapiApi(scope constructs.Construct, id *string, config *OpenapiApiConfig) OpenapiApi {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewOpenapiApi(scope constructs.Construct, id *string, config *OpenapiApiCon
 	j := jsiiProxy_OpenapiApi{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,12 +338,12 @@ func NewOpenapiApi(scope constructs.Construct, id *string, config *OpenapiApiCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api datadog_openapi_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api datadog_openapi_api} Resource.
 func NewOpenapiApi_Override(o OpenapiApi, scope constructs.Construct, id *string, config *OpenapiApiConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -379,7 +379,7 @@ func (j *jsiiProxy_OpenapiApi)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OpenapiApi)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OpenapiApi)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_OpenapiApi)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OpenapiApi)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OpenapiApi)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_OpenapiApi)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_OpenapiApi)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OpenapiApi)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,17 +428,17 @@ func (j *jsiiProxy_OpenapiApi)SetSpec(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a OpenapiApi resource upon running "cdktf plan <stack-name>".
-func OpenapiApi_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OpenapiApi resource upon running "cdktn plan <stack-name>".
+func OpenapiApi_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOpenapiApi_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -473,7 +473,7 @@ func OpenapiApi_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func OpenapiApi_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func OpenapiApi_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func OpenapiApi_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.openapiApi.OpenapiApi",
+		"@cdktn/provider-datadog.openapiApi.OpenapiApi",
 		"tfResourceType",
 		&returns,
 	)
@@ -569,11 +569,11 @@ func (o *jsiiProxy_OpenapiApi) GetAnyMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (o *jsiiProxy_OpenapiApi) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpenapiApi) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -710,7 +710,7 @@ func (o *jsiiProxy_OpenapiApi) HasResourceMove() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OpenapiApi) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_OpenapiApi) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -721,11 +721,11 @@ func (o *jsiiProxy_OpenapiApi) ImportFrom(id *string, provider cdktf.TerraformPr
 	)
 }
 
-func (o *jsiiProxy_OpenapiApi) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpenapiApi) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,

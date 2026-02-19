@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestOptionsListCiOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type SyntheticsTestOptionsListCiOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type SyntheticsTestOptionsListCiOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExecutionRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type SyntheticsTestOptionsListCiOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestOptionsListCiOutputReference
 type jsiiProxy_SyntheticsTestOptionsListCiOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) TerraformResource
 }
 
 
-func NewSyntheticsTestOptionsListCiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListCiOutputReference {
+func NewSyntheticsTestOptionsListCiOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListCiOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestOptionsListCiOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewSyntheticsTestOptionsListCiOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SyntheticsTestOptionsListCiOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewSyntheticsTestOptionsListCiOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewSyntheticsTestOptionsListCiOutputReference_Override(s SyntheticsTestOptionsListCiOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsTestOptionsListCiOutputReference_Override(s SyntheticsTestOptionsListCiOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestOptionsListCiOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -424,8 +424,8 @@ func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -437,11 +437,11 @@ func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -461,7 +461,7 @@ func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) ResetExecutionRul
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestOptionsListCiOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Check() *string
 	SetCheck(val *string)
 	CheckInput() *string
@@ -42,6 +42,9 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 	SetGrouping(val *string)
 	GroupingInput() *string
 	GroupInput() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetCheckStatusDefinition
 	SetInternalValue(val *PowerpackWidgetCheckStatusDefinition)
 	LiveSpan() *string
@@ -55,9 +58,9 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -72,7 +75,7 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,11 +91,12 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetGroup()
 	ResetGroupBy()
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetTags()
 	ResetTitle()
@@ -100,7 +104,7 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,7 +114,7 @@ type PowerpackWidgetCheckStatusDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetCheckStatusDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) Check() *string {
@@ -233,6 +237,26 @@ func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) GroupInp
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) InternalValue() *PowerpackWidgetCheckStatusDefinition {
 	var returns *PowerpackWidgetCheckStatusDefinition
 	_jsii_.Get(
@@ -293,8 +317,8 @@ func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -364,7 +388,7 @@ func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) TitleSiz
 }
 
 
-func NewPowerpackWidgetCheckStatusDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetCheckStatusDefinitionOutputReference {
+func NewPowerpackWidgetCheckStatusDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetCheckStatusDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetCheckStatusDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -373,7 +397,7 @@ func NewPowerpackWidgetCheckStatusDefinitionOutputReference(terraformResource cd
 	j := jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -381,11 +405,11 @@ func NewPowerpackWidgetCheckStatusDefinitionOutputReference(terraformResource cd
 	return &j
 }
 
-func NewPowerpackWidgetCheckStatusDefinitionOutputReference_Override(p PowerpackWidgetCheckStatusDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetCheckStatusDefinitionOutputReference_Override(p PowerpackWidgetCheckStatusDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetCheckStatusDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -457,6 +481,17 @@ func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetGroupi
 	)
 }
 
+func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetInternalValue(val *PowerpackWidgetCheckStatusDefinition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -501,7 +536,7 @@ func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,11 +609,11 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) GetAnyMa
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -702,8 +737,8 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) GetStrin
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -715,11 +750,11 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -743,6 +778,14 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) ResetGro
 	_jsii_.InvokeVoid(
 		p,
 		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
 		nil, // no parameters
 	)
 }
@@ -787,7 +830,7 @@ func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) ResetTit
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetCheckStatusDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

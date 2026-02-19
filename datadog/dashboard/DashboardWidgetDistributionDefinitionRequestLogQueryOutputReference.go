@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutComputeQuery(value *DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery)
 	PutGroupBy(value interface{})
 	PutMultiCompute(value interface{})
@@ -85,7 +85,7 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference interfa
 	ResetSearchQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference interfa
 
 // The jsii proxy struct for DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference
 type jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 }
 
 
-func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference {
+func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -278,7 +278,7 @@ func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terr
 	j := jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,11 +286,11 @@ func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terr
 	return &j
 }
 
-func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference_Override(d DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetDistributionDefinitionRequestLogQueryOutputReference_Override(d DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,11 +402,11 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -530,8 +530,8 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -543,11 +543,11 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -624,7 +624,7 @@ func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputRef
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

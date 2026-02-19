@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadoghosts
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHosts",
 		reflect.TypeOf((*DataDatadogHosts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,20 +69,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHosts{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsConfig",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsConfig",
 		reflect.TypeOf((*DataDatadogHostsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta",
 		reflect.TypeOf((*DataDatadogHostsHostListMeta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference",
 		reflect.TypeOf((*DataDatadogHostsHostListMetaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentVersion", GoGetter: "AgentVersion"},
@@ -118,16 +118,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHostsHostListMetaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetrics",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetrics",
 		reflect.TypeOf((*DataDatadogHostsHostListMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetricsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetricsOutputReference",
 		reflect.TypeOf((*DataDatadogHostsHostListMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,16 +157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHostsHostListMetricsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct",
 		reflect.TypeOf((*DataDatadogHostsHostListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList",
 		reflect.TypeOf((*DataDatadogHostsHostListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -182,12 +182,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHostsHostListStructList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference",
+		"@cdktn/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference",
 		reflect.TypeOf((*DataDatadogHostsHostListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
@@ -228,7 +228,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHostsHostListStructOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogactionconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogactionconnection/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogactionconnection/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogActionConnectionAwsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AssumeRole() DataDatadogActionConnectionAwsAssumeRoleOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -38,15 +38,15 @@ type DataDatadogActionConnectionAwsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataDatadogActionConnectionAwsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataDatadogActionConnectionAwsOutputReference interface {
 
 // The jsii proxy struct for DataDatadogActionConnectionAwsOutputReference
 type jsiiProxy_DataDatadogActionConnectionAwsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) AssumeRole() DataDatadogActionConnectionAwsAssumeRoleOutputReference {
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,7 +161,7 @@ func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) TerraformResou
 }
 
 
-func NewDataDatadogActionConnectionAwsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionAwsOutputReference {
+func NewDataDatadogActionConnectionAwsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatadogActionConnectionAwsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogActionConnectionAwsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -170,7 +170,7 @@ func NewDataDatadogActionConnectionAwsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataDatadogActionConnectionAwsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -178,11 +178,11 @@ func NewDataDatadogActionConnectionAwsOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewDataDatadogActionConnectionAwsOutputReference_Override(d DataDatadogActionConnectionAwsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatadogActionConnectionAwsOutputReference_Override(d DataDatadogActionConnectionAwsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogActionConnection.DataDatadogActionConnectionAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogActionConnectionAwsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -272,11 +272,11 @@ func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -400,8 +400,8 @@ func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -413,11 +413,11 @@ func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -429,7 +429,7 @@ func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) InterpolationF
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogActionConnectionAwsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

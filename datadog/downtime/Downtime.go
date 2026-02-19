@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package downtime
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/downtime/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/downtime/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime datadog_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime datadog_downtime}.
 type Downtime interface {
-	cdktf.TerraformResource
-	Active() cdktf.IResolvable
+	cdktn.TerraformResource
+	Active() cdktn.IResolvable
 	ActiveChildId() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,7 +33,7 @@ type Downtime interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() cdktf.IResolvable
+	Disabled() cdktn.IResolvable
 	End() *float64
 	SetEnd(val *float64)
 	EndDate() *string
@@ -41,9 +41,9 @@ type Downtime interface {
 	EndDateInput() *string
 	EndInput() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,9 +52,9 @@ type Downtime interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -70,9 +70,9 @@ type Downtime interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type Downtime interface {
 	StartDateInput() *string
 	StartInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type Downtime interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -125,9 +125,9 @@ type Downtime interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -172,11 +172,11 @@ type Downtime interface {
 
 // The jsii proxy struct for Downtime
 type jsiiProxy_Downtime struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Downtime) Active() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Downtime) Active() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"active",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_Downtime) ActiveChildId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Downtime) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_Downtime) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) Disabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Downtime) Disabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_Downtime) EndInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Downtime) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_Downtime) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Downtime) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_Downtime) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Downtime) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_Downtime) StartInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Downtime) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Downtime) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -606,7 +606,7 @@ func (j *jsiiProxy_Downtime) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig) Downtime {
 	_init_.Initialize()
 
@@ -616,7 +616,7 @@ func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig)
 	j := jsiiProxy_Downtime{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -624,12 +624,12 @@ func NewDowntime(scope constructs.Construct, id *string, config *DowntimeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime datadog_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime datadog_downtime} Resource.
 func NewDowntime_Override(d Downtime, scope constructs.Construct, id *string, config *DowntimeConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -687,7 +687,7 @@ func (j *jsiiProxy_Downtime)SetEndDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Downtime)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Downtime)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -706,7 +706,7 @@ func (j *jsiiProxy_Downtime)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Downtime)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Downtime)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +761,7 @@ func (j *jsiiProxy_Downtime)SetMuteFirstRecoveryNotification(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Downtime)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Downtime)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -824,17 +824,17 @@ func (j *jsiiProxy_Downtime)SetTimezone(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Downtime resource upon running "cdktf plan <stack-name>".
-func Downtime_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Downtime resource upon running "cdktn plan <stack-name>".
+func Downtime_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDowntime_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -869,7 +869,7 @@ func Downtime_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -888,7 +888,7 @@ func Downtime_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func Downtime_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -920,7 +920,7 @@ func Downtime_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		"tfResourceType",
 		&returns,
 	)
@@ -965,11 +965,11 @@ func (d *jsiiProxy_Downtime) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (d *jsiiProxy_Downtime) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_Downtime) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1106,7 +1106,7 @@ func (d *jsiiProxy_Downtime) HasResourceMove() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Downtime) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (d *jsiiProxy_Downtime) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1117,11 +1117,11 @@ func (d *jsiiProxy_Downtime) ImportFrom(id *string, provider cdktf.TerraformProv
 	)
 }
 
-func (d *jsiiProxy_Downtime) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_Downtime) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

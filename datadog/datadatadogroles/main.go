@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogroles
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles",
+		"@cdktn/provider-datadog.dataDatadogRoles.DataDatadogRoles",
 		reflect.TypeOf((*DataDatadogRoles)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,20 +57,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRoles{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig",
+		"@cdktn/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig",
 		reflect.TypeOf((*DataDatadogRolesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRoles",
+		"@cdktn/provider-datadog.dataDatadogRoles.DataDatadogRolesRoles",
 		reflect.TypeOf((*DataDatadogRolesRoles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesList",
+		"@cdktn/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesList",
 		reflect.TypeOf((*DataDatadogRolesRolesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -86,12 +86,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRolesRolesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesOutputReference",
+		"@cdktn/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesOutputReference",
 		reflect.TypeOf((*DataDatadogRolesRolesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,7 +121,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRolesRolesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

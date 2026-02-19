@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutp
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutp
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFacet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutp
 
 // The jsii proxy struct for DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference
 type jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) Aggregation() *string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 }
 
 
-func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference {
+func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -229,7 +229,7 @@ func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryO
 	j := jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryO
 	return &j
 }
 
-func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference_Override(d DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference_Override(d DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -492,8 +492,8 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -505,11 +505,11 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -529,7 +529,7 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupB
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

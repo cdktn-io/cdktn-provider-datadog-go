@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Canonical() DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference
 	CanonicalInput() *DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical
 	// the index of the complex object in a list.
@@ -41,15 +41,15 @@ type DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCanonical(value *DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical)
 	PutCustom(value *DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom)
 	ResetCanonical()
 	ResetCustom()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReferen
 
 // The jsii proxy struct for DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference
 type jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) Canonical() DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 }
 
 
-func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference {
+func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputRefe
 	j := jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputRefe
 	return &j
 }
 
-func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference_Override(d DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference_Override(d DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -437,8 +437,8 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -450,11 +450,11 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,7 +504,7 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUni
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

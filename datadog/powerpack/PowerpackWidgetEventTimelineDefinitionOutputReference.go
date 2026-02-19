@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +30,9 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *PowerpackWidgetEventTimelineDefinition
 	SetInternalValue(val *PowerpackWidgetEventTimelineDefinition)
 	LiveSpan() *string
@@ -46,9 +49,9 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -63,7 +66,7 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +82,10 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetTagsExecution()
 	ResetTitle()
@@ -89,7 +93,7 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +103,7 @@ type PowerpackWidgetEventTimelineDefinitionOutputReference interface {
 
 // The jsii proxy struct for PowerpackWidgetEventTimelineDefinitionOutputReference
 type jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -137,6 +141,26 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -222,8 +246,8 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -293,7 +317,7 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) TitleS
 }
 
 
-func NewPowerpackWidgetEventTimelineDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetEventTimelineDefinitionOutputReference {
+func NewPowerpackWidgetEventTimelineDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetEventTimelineDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetEventTimelineDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -302,7 +326,7 @@ func NewPowerpackWidgetEventTimelineDefinitionOutputReference(terraformResource 
 	j := jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,11 +334,11 @@ func NewPowerpackWidgetEventTimelineDefinitionOutputReference(terraformResource 
 	return &j
 }
 
-func NewPowerpackWidgetEventTimelineDefinitionOutputReference_Override(p PowerpackWidgetEventTimelineDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetEventTimelineDefinitionOutputReference_Override(p PowerpackWidgetEventTimelineDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetEventTimelineDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -338,6 +362,17 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -397,7 +432,7 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,11 +505,11 @@ func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) GetAny
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -598,8 +633,8 @@ func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) GetStr
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -611,11 +646,11 @@ func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Interp
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -625,6 +660,14 @@ func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) ResetLiveSpan() {
@@ -667,7 +710,7 @@ func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) ResetT
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

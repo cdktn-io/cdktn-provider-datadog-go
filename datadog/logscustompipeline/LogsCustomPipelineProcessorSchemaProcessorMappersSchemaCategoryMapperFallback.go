@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustompipeline
@@ -7,11 +7,11 @@ package logscustompipeline
 type LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback struct {
 	// Fallback sources used to populate value of field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
 	Sources *map[string]*string `field:"optional" json:"sources" yaml:"sources"`
 	// Values that define when the fallback is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
 	Values *map[string]*string `field:"optional" json:"values" yaml:"values"`
 }
 

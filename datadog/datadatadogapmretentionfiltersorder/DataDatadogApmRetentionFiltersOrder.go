@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogapmretentionfiltersorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogapmretentionfiltersorder/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogapmretentionfiltersorder/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order}.
 type DataDatadogApmRetentionFiltersOrder interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,28 +29,28 @@ type DataDatadogApmRetentionFiltersOrder interface {
 	SetDependsOn(val *[]*string)
 	FilterIds() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -60,7 +60,7 @@ type DataDatadogApmRetentionFiltersOrder interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,7 +76,7 @@ type DataDatadogApmRetentionFiltersOrder interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -99,11 +99,11 @@ type DataDatadogApmRetentionFiltersOrder interface {
 
 // The jsii proxy struct for DataDatadogApmRetentionFiltersOrder
 type jsiiProxy_DataDatadogApmRetentionFiltersOrder struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) FilterIds() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source.
 func NewDataDatadogApmRetentionFiltersOrder(scope constructs.Construct, id *string, config *DataDatadogApmRetentionFiltersOrderConfig) DataDatadogApmRetentionFiltersOrder {
 	_init_.Initialize()
 
@@ -273,7 +273,7 @@ func NewDataDatadogApmRetentionFiltersOrder(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataDatadogApmRetentionFiltersOrder{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -281,12 +281,12 @@ func NewDataDatadogApmRetentionFiltersOrder(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/apm_retention_filters_order datadog_apm_retention_filters_order} Data Source.
 func NewDataDatadogApmRetentionFiltersOrder_Override(d DataDatadogApmRetentionFiltersOrder, scope constructs.Construct, id *string, config *DataDatadogApmRetentionFiltersOrderConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -338,17 +338,17 @@ func (j *jsiiProxy_DataDatadogApmRetentionFiltersOrder)SetProvider(val cdktf.Ter
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogApmRetentionFiltersOrder resource upon running "cdktf plan <stack-name>".
-func DataDatadogApmRetentionFiltersOrder_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogApmRetentionFiltersOrder resource upon running "cdktn plan <stack-name>".
+func DataDatadogApmRetentionFiltersOrder_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogApmRetentionFiltersOrder_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -383,7 +383,7 @@ func DataDatadogApmRetentionFiltersOrder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -402,7 +402,7 @@ func DataDatadogApmRetentionFiltersOrder_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -421,7 +421,7 @@ func DataDatadogApmRetentionFiltersOrder_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataDatadogApmRetentionFiltersOrder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
+		"@cdktn/provider-datadog.dataDatadogApmRetentionFiltersOrder.DataDatadogApmRetentionFiltersOrder",
 		"tfResourceType",
 		&returns,
 	)
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -596,11 +596,11 @@ func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogApmRetentionFiltersOrder) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

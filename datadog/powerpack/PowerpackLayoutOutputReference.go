@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackLayoutOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PowerpackLayoutOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
@@ -57,7 +57,7 @@ type PowerpackLayoutOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type PowerpackLayoutOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHeight()
 	ResetWidth()
 	ResetX()
 	ResetY()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type PowerpackLayoutOutputReference interface {
 
 // The jsii proxy struct for PowerpackLayoutOutputReference
 type jsiiProxy_PowerpackLayoutOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackLayoutOutputReference) ComplexObjectIndex() interface{} {
@@ -175,8 +175,8 @@ func (j *jsiiProxy_PowerpackLayoutOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackLayoutOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackLayoutOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_PowerpackLayoutOutputReference) YInput() *float64 {
 }
 
 
-func NewPowerpackLayoutOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackLayoutOutputReference {
+func NewPowerpackLayoutOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackLayoutOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackLayoutOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -255,7 +255,7 @@ func NewPowerpackLayoutOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_PowerpackLayoutOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackLayoutOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackLayoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewPowerpackLayoutOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewPowerpackLayoutOutputReference_Override(p PowerpackLayoutOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackLayoutOutputReference_Override(p PowerpackLayoutOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackLayoutOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackLayoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_PowerpackLayoutOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_PowerpackLayoutOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackLayoutOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (p *jsiiProxy_PowerpackLayoutOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackLayoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackLayoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -529,8 +529,8 @@ func (p *jsiiProxy_PowerpackLayoutOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackLayoutOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackLayoutOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -542,11 +542,11 @@ func (p *jsiiProxy_PowerpackLayoutOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackLayoutOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackLayoutOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -590,7 +590,7 @@ func (p *jsiiProxy_PowerpackLayoutOutputReference) ResetY() {
 	)
 }
 
-func (p *jsiiProxy_PowerpackLayoutOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackLayoutOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

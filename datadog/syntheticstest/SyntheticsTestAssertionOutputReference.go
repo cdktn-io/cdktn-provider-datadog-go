@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestAssertionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	SetCode(val *string)
 	CodeInput() *string
@@ -55,9 +55,9 @@ type SyntheticsTestAssertionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimingsScope() *string
 	SetTimingsScope(val *string)
 	TimingsScopeInput() *string
@@ -69,7 +69,7 @@ type SyntheticsTestAssertionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type SyntheticsTestAssertionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestAssertionTargetjsonpath)
 	PutTargetjsonschema(value *SyntheticsTestAssertionTargetjsonschema)
 	PutTargetxpath(value *SyntheticsTestAssertionTargetxpath)
@@ -101,7 +101,7 @@ type SyntheticsTestAssertionOutputReference interface {
 	ResetTimingsScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,7 +111,7 @@ type SyntheticsTestAssertionOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestAssertionOutputReference
 type jsiiProxy_SyntheticsTestAssertionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) Code() *string {
@@ -314,8 +314,8 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference) TypeInput() *string {
 }
 
 
-func NewSyntheticsTestAssertionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestAssertionOutputReference {
+func NewSyntheticsTestAssertionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestAssertionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestAssertionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -374,7 +374,7 @@ func NewSyntheticsTestAssertionOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_SyntheticsTestAssertionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -382,11 +382,11 @@ func NewSyntheticsTestAssertionOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewSyntheticsTestAssertionOutputReference_Override(s SyntheticsTestAssertionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsTestAssertionOutputReference_Override(s SyntheticsTestAssertionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -480,7 +480,7 @@ func (j *jsiiProxy_SyntheticsTestAssertionOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestAssertionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestAssertionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,11 +542,11 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -670,8 +670,8 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -683,11 +683,11 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -796,7 +796,7 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) ResetTimingsScope() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

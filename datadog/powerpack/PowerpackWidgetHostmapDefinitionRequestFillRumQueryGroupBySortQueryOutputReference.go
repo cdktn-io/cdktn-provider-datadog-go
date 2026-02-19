@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -46,15 +46,15 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFacet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputRe
 
 // The jsii proxy struct for PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference
 type jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) Aggregation() *string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -220,7 +220,7 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 }
 
 
-func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference {
+func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -229,7 +229,7 @@ func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutpu
 	j := jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,11 +237,11 @@ func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutpu
 	return &j
 }
 
-func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference_Override(p PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference_Override(p PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -492,8 +492,8 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -505,11 +505,11 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -529,7 +529,7 @@ func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySor
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

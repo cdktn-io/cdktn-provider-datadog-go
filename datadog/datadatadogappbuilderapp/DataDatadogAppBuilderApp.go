@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogappbuilderapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogappbuilderapp/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogappbuilderapp/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
 type DataDatadogAppBuilderApp interface {
-	cdktf.TerraformDataSource
-	ActionQueryNamesToConnectionIds() cdktf.StringMap
+	cdktn.TerraformDataSource
+	ActionQueryNamesToConnectionIds() cdktn.StringMap
 	AppJson() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,9 +31,9 @@ type DataDatadogAppBuilderApp interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -42,22 +42,22 @@ type DataDatadogAppBuilderApp interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
-	Published() cdktf.IResolvable
+	SetProvider(val cdktn.TerraformProvider)
+	Published() cdktn.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	RootInstanceName() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -67,7 +67,7 @@ type DataDatadogAppBuilderApp interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,7 +83,7 @@ type DataDatadogAppBuilderApp interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -106,11 +106,11 @@ type DataDatadogAppBuilderApp interface {
 
 // The jsii proxy struct for DataDatadogAppBuilderApp
 type jsiiProxy_DataDatadogAppBuilderApp struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) ActionQueryNamesToConnectionIds() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataDatadogAppBuilderApp) ActionQueryNamesToConnectionIds() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"actionQueryNamesToConnectionIds",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) AppJson() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogAppBuilderApp) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogAppBuilderApp) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogAppBuilderApp) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogAppBuilderApp) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) Published() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogAppBuilderApp) Published() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"published",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) RootInstanceName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogAppBuilderApp) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) DataDatadogAppBuilderApp {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataDatadogAppBuilderApp{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,12 +348,12 @@ func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp_Override(d DataDatadogAppBuilderApp, scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogAppBuilderApp)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogAppBuilderApp)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataDatadogAppBuilderApp)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogAppBuilderApp)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -416,17 +416,17 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogAppBuilderApp resource upon running "cdktf plan <stack-name>".
-func DataDatadogAppBuilderApp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogAppBuilderApp resource upon running "cdktn plan <stack-name>".
+func DataDatadogAppBuilderApp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogAppBuilderApp_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -461,7 +461,7 @@ func DataDatadogAppBuilderApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataDatadogAppBuilderApp_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataDatadogAppBuilderApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataDatadogAppBuilderApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
+		"@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp",
 		"tfResourceType",
 		&returns,
 	)
@@ -546,11 +546,11 @@ func (d *jsiiProxy_DataDatadogAppBuilderApp) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAppBuilderApp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogAppBuilderApp) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -674,11 +674,11 @@ func (d *jsiiProxy_DataDatadogAppBuilderApp) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogAppBuilderApp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogAppBuilderApp) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

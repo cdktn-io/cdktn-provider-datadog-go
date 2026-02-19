@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package organizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/organizationsettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/organizationsettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings datadog_organization_settings}.
 type OrganizationSettings interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,9 +33,9 @@ type OrganizationSettings interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -44,18 +44,18 @@ type OrganizationSettings interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +69,7 @@ type OrganizationSettings interface {
 	Settings() OrganizationSettingsSettingsOutputReference
 	SettingsInput() *OrganizationSettingsSettings
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -82,7 +82,7 @@ type OrganizationSettings interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -100,9 +100,9 @@ type OrganizationSettings interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -140,11 +140,11 @@ type OrganizationSettings interface {
 
 // The jsii proxy struct for OrganizationSettings
 type jsiiProxy_OrganizationSettings struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_OrganizationSettings) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OrganizationSettings) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_OrganizationSettings) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettings) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_OrganizationSettings) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_OrganizationSettings) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_OrganizationSettings) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_OrganizationSettings) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettings) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_OrganizationSettings) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_OrganizationSettings) SettingsInput() *OrganizationSettingsSe
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OrganizationSettings) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_OrganizationSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	j := jsiiProxy_OrganizationSettings{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -422,12 +422,12 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings datadog_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings datadog_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -463,7 +463,7 @@ func (j *jsiiProxy_OrganizationSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrganizationSettings)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -482,7 +482,7 @@ func (j *jsiiProxy_OrganizationSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrganizationSettings)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +504,7 @@ func (j *jsiiProxy_OrganizationSettings)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrganizationSettings)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -534,17 +534,17 @@ func (j *jsiiProxy_OrganizationSettings)SetSecurityContacts(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a OrganizationSettings resource upon running "cdktf plan <stack-name>".
-func OrganizationSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OrganizationSettings resource upon running "cdktn plan <stack-name>".
+func OrganizationSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOrganizationSettings_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -579,7 +579,7 @@ func OrganizationSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func OrganizationSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func OrganizationSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func OrganizationSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		"tfResourceType",
 		&returns,
 	)
@@ -675,11 +675,11 @@ func (o *jsiiProxy_OrganizationSettings) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationSettings) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -816,7 +816,7 @@ func (o *jsiiProxy_OrganizationSettings) HasResourceMove() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationSettings) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (o *jsiiProxy_OrganizationSettings) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -827,11 +827,11 @@ func (o *jsiiProxy_OrganizationSettings) ImportFrom(id *string, provider cdktf.T
 	)
 }
 
-func (o *jsiiProxy_OrganizationSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationSettings) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,

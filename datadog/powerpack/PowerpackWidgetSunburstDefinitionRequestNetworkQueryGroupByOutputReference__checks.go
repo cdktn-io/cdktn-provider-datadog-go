@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -104,7 +104,7 @@ func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOu
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOu
 
 func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy:
 		val := val.(*PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy)
@@ -202,7 +202,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -225,7 +225,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOu
 	return nil
 }
 
-func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOu
 	return nil
 }
 
-func validateNewPowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

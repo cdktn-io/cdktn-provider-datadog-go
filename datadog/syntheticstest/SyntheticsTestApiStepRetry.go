@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
@@ -9,11 +9,11 @@ type SyntheticsTestApiStepRetry struct {
 	//
 	// Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package referencetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/referencetable/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/referencetable/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsAccountId() *string
 	SetAwsAccountId(val *string)
 	AwsAccountIdInput() *string
@@ -46,15 +46,15 @@ type ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAwsAccountId()
 	ResetAwsBucketName()
 	ResetFilePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference interface {
 
 // The jsii proxy struct for ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference
 type jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) AwsAccountId() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 }
 
 
-func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference {
+func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference(terrafor
 	j := jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference(terrafor
 	return &j
 }
 
-func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference_Override(r ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference_Override(r ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
+		"@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	return returns
 }
 
-func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -494,8 +494,8 @@ func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	return returns
 }
 
-func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -507,11 +507,11 @@ func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	return returns
 }
 
-func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -547,7 +547,7 @@ func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReferen
 	)
 }
 
-func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

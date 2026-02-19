@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetWidgetLayoutOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type DashboardWidgetWidgetLayoutOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
@@ -60,7 +60,7 @@ type DashboardWidgetWidgetLayoutOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,13 +76,13 @@ type DashboardWidgetWidgetLayoutOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIsColumnBreak()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type DashboardWidgetWidgetLayoutOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetWidgetLayoutOutputReference
 type jsiiProxy_DashboardWidgetWidgetLayoutOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) YInput() *float64
 }
 
 
-func NewDashboardWidgetWidgetLayoutOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetWidgetLayoutOutputReference {
+func NewDashboardWidgetWidgetLayoutOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetWidgetLayoutOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetWidgetLayoutOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewDashboardWidgetWidgetLayoutOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DashboardWidgetWidgetLayoutOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetWidgetLayoutOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetWidgetLayoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewDashboardWidgetWidgetLayoutOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewDashboardWidgetWidgetLayoutOutputReference_Override(d DashboardWidgetWidgetLayoutOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetWidgetLayoutOutputReference_Override(d DashboardWidgetWidgetLayoutOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetWidgetLayoutOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetWidgetLayoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,11 +432,11 @@ func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -560,8 +560,8 @@ func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -573,11 +573,11 @@ func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -597,7 +597,7 @@ func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) ResetIsColumnBrea
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetWidgetLayoutOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

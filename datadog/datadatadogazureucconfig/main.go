@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogazureucconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfig",
 		reflect.TypeOf((*DataDatadogAzureUcConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,16 +63,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAzureUcConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfig",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfig",
 		reflect.TypeOf((*DataDatadogAzureUcConfigActualBillConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfigOutputReference",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigActualBillConfigOutputReference",
 		reflect.TypeOf((*DataDatadogAzureUcConfigActualBillConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -103,16 +103,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAzureUcConfigActualBillConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfig",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfig",
 		reflect.TypeOf((*DataDatadogAzureUcConfigAmortizedBillConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfigOutputReference",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigAmortizedBillConfigOutputReference",
 		reflect.TypeOf((*DataDatadogAzureUcConfigAmortizedBillConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,12 +143,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogAzureUcConfigAmortizedBillConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigConfig",
+		"@cdktn/provider-datadog.dataDatadogAzureUcConfig.DataDatadogAzureUcConfigConfig",
 		reflect.TypeOf((*DataDatadogAzureUcConfigConfig)(nil)).Elem(),
 	)
 }

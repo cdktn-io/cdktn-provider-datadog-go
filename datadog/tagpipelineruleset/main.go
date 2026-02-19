@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tagpipelineruleset
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRuleset",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset",
 		reflect.TypeOf((*TagPipelineRuleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,20 +70,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRuleset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetConfig",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetConfig",
 		reflect.TypeOf((*TagPipelineRulesetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRules",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRules",
 		reflect.TypeOf((*TagPipelineRulesetRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesList",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesList",
 		reflect.TypeOf((*TagPipelineRulesetRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,16 +100,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMapping",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMapping",
 		reflect.TypeOf((*TagPipelineRulesetRulesMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMappingOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMappingOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExists", GoGetter: "IfNotExists"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExistsInput", GoGetter: "IfNotExistsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExists", GoGetter: "IfTagExists"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExistsInput", GoGetter: "IfTagExistsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationKey", GoMethod: "ResetDestinationKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIfNotExists", GoMethod: "ResetIfNotExists"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIfTagExists", GoMethod: "ResetIfTagExists"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceKeys", GoMethod: "ResetSourceKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceKeys", GoGetter: "SourceKeys"},
@@ -145,12 +148,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesMappingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,20 +197,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQuery",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQuery",
 		reflect.TypeOf((*TagPipelineRulesetRulesQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAddition",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAddition",
 		reflect.TypeOf((*TagPipelineRulesetRulesQueryAddition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAdditionOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAdditionOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesQueryAdditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,12 +243,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesQueryAdditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addition", GoGetter: "Addition"},
@@ -268,6 +271,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExists", GoGetter: "IfNotExists"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExistsInput", GoGetter: "IfNotExistsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExists", GoGetter: "IfTagExists"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExistsInput", GoGetter: "IfTagExistsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -277,6 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAddition", GoMethod: "ResetAddition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaseInsensitivity", GoMethod: "ResetCaseInsensitivity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIfNotExists", GoMethod: "ResetIfNotExists"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIfTagExists", GoMethod: "ResetIfTagExists"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuery", GoMethod: "ResetQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -285,20 +291,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTable",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTable",
 		reflect.TypeOf((*TagPipelineRulesetRulesReferenceTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairs",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairs",
 		reflect.TypeOf((*TagPipelineRulesetRulesReferenceTableFieldPairs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsList",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsList",
 		reflect.TypeOf((*TagPipelineRulesetRulesReferenceTableFieldPairsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -315,12 +321,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesReferenceTableFieldPairsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -353,12 +359,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableOutputReference",
+		"@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableOutputReference",
 		reflect.TypeOf((*TagPipelineRulesetRulesReferenceTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caseInsensitivity", GoGetter: "CaseInsensitivity"},
@@ -381,6 +387,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExists", GoGetter: "IfNotExists"},
 			_jsii_.MemberProperty{JsiiProperty: "ifNotExistsInput", GoGetter: "IfNotExistsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExists", GoGetter: "IfTagExists"},
+			_jsii_.MemberProperty{JsiiProperty: "ifTagExistsInput", GoGetter: "IfTagExistsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -388,6 +396,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCaseInsensitivity", GoMethod: "ResetCaseInsensitivity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFieldPairs", GoMethod: "ResetFieldPairs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIfNotExists", GoMethod: "ResetIfNotExists"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIfTagExists", GoMethod: "ResetIfTagExists"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceKeys", GoMethod: "ResetSourceKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableName", GoMethod: "ResetTableName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -401,7 +410,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TagPipelineRulesetRulesReferenceTableOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

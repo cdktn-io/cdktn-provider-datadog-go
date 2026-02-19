@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsindex
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndex",
+		"@cdktn/provider-datadog.logsIndex.LogsIndex",
 		reflect.TypeOf((*LogsIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -89,20 +89,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndex{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexConfig",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexConfig",
 		reflect.TypeOf((*LogsIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitReset",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexDailyLimitReset",
 		reflect.TypeOf((*LogsIndexDailyLimitReset)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexDailyLimitResetOutputReference",
 		reflect.TypeOf((*LogsIndexDailyLimitResetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,20 +133,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexDailyLimitResetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilter",
 		reflect.TypeOf((*LogsIndexExclusionFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter",
 		reflect.TypeOf((*LogsIndexExclusionFilterFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterList",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterList",
 		reflect.TypeOf((*LogsIndexExclusionFilterFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -163,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexExclusionFilterFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference",
 		reflect.TypeOf((*LogsIndexExclusionFilterFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,12 +201,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexExclusionFilterFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterList",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilterList",
 		reflect.TypeOf((*LogsIndexExclusionFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -223,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexExclusionFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference",
 		reflect.TypeOf((*LogsIndexExclusionFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,16 +265,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexExclusionFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexFilter",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexFilter",
 		reflect.TypeOf((*LogsIndexFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsIndex.LogsIndexFilterOutputReference",
+		"@cdktn/provider-datadog.logsIndex.LogsIndexFilterOutputReference",
 		reflect.TypeOf((*LogsIndexFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,7 +303,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsIndexFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

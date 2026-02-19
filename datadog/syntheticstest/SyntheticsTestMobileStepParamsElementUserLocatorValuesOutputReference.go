@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -51,7 +51,7 @@ type SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetType()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference inter
 
 // The jsii proxy struct for SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference
 type jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 }
 
 
-func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference {
+func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -207,7 +207,7 @@ func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(te
 	j := jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(te
 	return &j
 }
 
-func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference_Override(s SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference_Override(s SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -459,8 +459,8 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -472,11 +472,11 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -504,7 +504,7 @@ func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputR
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package role
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/role/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/role/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RolePermissionList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type RolePermissionList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type RolePermissionList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) RolePermissionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type RolePermissionList interface {
 
 // The jsii proxy struct for RolePermissionList
 type jsiiProxy_RolePermissionList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_RolePermissionList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_RolePermissionList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RolePermissionList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RolePermissionList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_RolePermissionList) WrapsSet() *bool {
 }
 
 
-func NewRolePermissionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolePermissionList {
+func NewRolePermissionList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolePermissionList {
 	_init_.Initialize()
 
 	if err := validateNewRolePermissionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewRolePermissionList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_RolePermissionList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.role.RolePermissionList",
+		"@cdktn/provider-datadog.role.RolePermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewRolePermissionList(terraformResource cdktf.IInterpolatingParent, terrafo
 	return &j
 }
 
-func NewRolePermissionList_Override(r RolePermissionList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewRolePermissionList_Override(r RolePermissionList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.role.RolePermissionList",
+		"@cdktn/provider-datadog.role.RolePermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_RolePermissionList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RolePermissionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RolePermissionList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_RolePermissionList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (r *jsiiProxy_RolePermissionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (r *jsiiProxy_RolePermissionList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := r.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		r,
@@ -231,7 +231,7 @@ func (r *jsiiProxy_RolePermissionList) Get(index *float64) RolePermissionOutputR
 	return returns
 }
 
-func (r *jsiiProxy_RolePermissionList) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RolePermissionList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

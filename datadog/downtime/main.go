@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package downtime
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtime.Downtime",
+		"@cdktn/provider-datadog.downtime.Downtime",
 		reflect.TypeOf((*Downtime)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
@@ -97,20 +97,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Downtime{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtime.DowntimeConfig",
+		"@cdktn/provider-datadog.downtime.DowntimeConfig",
 		reflect.TypeOf((*DowntimeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.downtime.DowntimeRecurrence",
+		"@cdktn/provider-datadog.downtime.DowntimeRecurrence",
 		reflect.TypeOf((*DowntimeRecurrence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.downtime.DowntimeRecurrenceOutputReference",
+		"@cdktn/provider-datadog.downtime.DowntimeRecurrenceOutputReference",
 		reflect.TypeOf((*DowntimeRecurrenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,7 +154,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DowntimeRecurrenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

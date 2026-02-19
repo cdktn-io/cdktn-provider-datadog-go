@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/monitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MonitorVariablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudCostQuery() MonitorVariablesCloudCostQueryList
 	CloudCostQueryInput() interface{}
 	// the index of the complex object in a list.
@@ -30,6 +30,8 @@ type MonitorVariablesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataQualityQuery() MonitorVariablesDataQualityQueryList
+	DataQualityQueryInput() interface{}
 	EventQuery() MonitorVariablesEventQueryList
 	EventQueryInput() interface{}
 	// Experimental.
@@ -41,15 +43,15 @@ type MonitorVariablesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +67,18 @@ type MonitorVariablesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCloudCostQuery(value interface{})
+	PutDataQualityQuery(value interface{})
 	PutEventQuery(value interface{})
 	ResetCloudCostQuery()
+	ResetDataQualityQuery()
 	ResetEventQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +88,7 @@ type MonitorVariablesOutputReference interface {
 
 // The jsii proxy struct for MonitorVariablesOutputReference
 type jsiiProxy_MonitorVariablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorVariablesOutputReference) CloudCostQuery() MonitorVariablesCloudCostQueryList {
@@ -132,6 +136,26 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) DataQualityQuery() MonitorVariablesDataQualityQueryList {
+	var returns MonitorVariablesDataQualityQueryList
+	_jsii_.Get(
+		j,
+		"dataQualityQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) DataQualityQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataQualityQueryInput",
 		&returns,
 	)
 	return returns
@@ -187,8 +211,8 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_MonitorVariablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorVariablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +222,7 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) TerraformResource() cdktf.II
 }
 
 
-func NewMonitorVariablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorVariablesOutputReference {
+func NewMonitorVariablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitorVariablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorVariablesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +231,7 @@ func NewMonitorVariablesOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_MonitorVariablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +239,11 @@ func NewMonitorVariablesOutputReference(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewMonitorVariablesOutputReference_Override(m MonitorVariablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitorVariablesOutputReference_Override(m MonitorVariablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference",
+		"@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -269,7 +293,7 @@ func (j *jsiiProxy_MonitorVariablesOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_MonitorVariablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorVariablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +333,11 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -437,8 +461,8 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -450,11 +474,11 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -473,6 +497,17 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) PutCloudCostQuery(value inte
 	_jsii_.InvokeVoid(
 		m,
 		"putCloudCostQuery",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) PutDataQualityQuery(value interface{}) {
+	if err := m.validatePutDataQualityQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDataQualityQuery",
 		[]interface{}{value},
 	)
 }
@@ -496,6 +531,14 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) ResetCloudCostQuery() {
 	)
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) ResetDataQualityQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataQualityQuery",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) ResetEventQuery() {
 	_jsii_.InvokeVoid(
 		m,
@@ -504,7 +547,7 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) ResetEventQuery() {
 	)
 }
 
-func (m *jsiiProxy_MonitorVariablesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorVariablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

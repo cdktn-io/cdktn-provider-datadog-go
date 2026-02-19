@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustompipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logscustompipeline/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logscustompipeline/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList i
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList i
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList i
 
 // The jsii proxy struct for LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList
 type jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCatego
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCatego
 }
 
 
-func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList {
+func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList {
 	_init_.Initialize()
 
 	if err := validateNewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperLis
 	j := jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperLis
 	return &j
 }
 
-func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList_Override(l LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewLogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList_Override(l LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCatego
 	)
 }
 
-func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCatego
 	)
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := l.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		l,
@@ -231,7 +231,7 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCatego
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

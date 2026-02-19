@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent struct {
 	// The event query to use in the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#q Dashboard#q}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#q Dashboard#q}
 	Q *string `field:"required" json:"q" yaml:"q"`
 	// The execution method for multi-value filters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
 	TagsExecution *string `field:"optional" json:"tagsExecution" yaml:"tagsExecution"`
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregator() *string
 	SetAggregator(val *string)
 	AggregatorInput() *string
@@ -47,20 +47,23 @@ type DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference int
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
+	SemanticMode() *string
+	SetSemanticMode(val *string)
+	SemanticModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +79,16 @@ type DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregator()
 	ResetCrossOrgUuids()
 	ResetDataSource()
+	ResetSemanticMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +98,7 @@ type DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference int
 
 // The jsii proxy struct for DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference
 type jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) Aggregator() *string {
@@ -247,6 +251,26 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) SemanticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) SemanticModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -257,8 +281,8 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,7 +292,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 }
 
 
-func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference {
+func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -277,7 +301,7 @@ func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,11 +309,11 @@ func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(
 	return &j
 }
 
-func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference_Override(d DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference_Override(d DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -383,6 +407,17 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	)
 }
 
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference)SetSemanticMode(val *string) {
+	if err := j.validateSetSemanticModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"semanticMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -394,7 +429,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,11 +469,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -562,8 +597,8 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -575,11 +610,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -615,7 +650,15 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutpu
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) ResetSemanticMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSemanticMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

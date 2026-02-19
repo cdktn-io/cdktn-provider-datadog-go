@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
@@ -7,11 +7,11 @@ package powerpack
 type PowerpackWidgetListStreamDefinitionRequestColumns struct {
 	// Widget column field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#field Powerpack#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#field Powerpack#field}
 	Field *string `field:"optional" json:"field" yaml:"field"`
 	// Widget column width. Valid values are `auto`, `compact`, `full`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#width Powerpack#width}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#width Powerpack#width}
 	Width *string `field:"optional" json:"width" yaml:"width"`
 }
 

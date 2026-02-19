@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogtagpipelineruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogtagpipelineruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogtagpipelineruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogTagPipelineRulesetRulesMappingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +31,8 @@ type DataDatadogTagPipelineRulesetRulesMappingOutputReference interface {
 	DestinationKey() *string
 	// Experimental.
 	Fqn() *string
-	IfNotExists() cdktf.IResolvable
+	IfNotExists() cdktn.IResolvable
+	IfTagExists() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	SourceKeys() *[]*string
@@ -40,15 +41,15 @@ type DataDatadogTagPipelineRulesetRulesMappingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +65,12 @@ type DataDatadogTagPipelineRulesetRulesMappingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +80,7 @@ type DataDatadogTagPipelineRulesetRulesMappingOutputReference interface {
 
 // The jsii proxy struct for DataDatadogTagPipelineRulesetRulesMappingOutputReference
 type jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) ComplexObjectIndex() interface{} {
@@ -132,11 +133,21 @@ func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) IfNotExists() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) IfNotExists() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ifNotExists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) IfTagExists() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ifTagExists",
 		&returns,
 	)
 	return returns
@@ -172,8 +183,8 @@ func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +194,7 @@ func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Ter
 }
 
 
-func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataDatadogTagPipelineRulesetRulesMappingOutputReference {
+func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataDatadogTagPipelineRulesetRulesMappingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogTagPipelineRulesetRulesMappingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -192,7 +203,7 @@ func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference(terraformResour
 	j := jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTagPipelineRuleset.DataDatadogTagPipelineRulesetRulesMappingOutputReference",
+		"@cdktn/provider-datadog.dataDatadogTagPipelineRuleset.DataDatadogTagPipelineRulesetRulesMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -200,11 +211,11 @@ func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference(terraformResour
 	return &j
 }
 
-func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference_Override(d DataDatadogTagPipelineRulesetRulesMappingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataDatadogTagPipelineRulesetRulesMappingOutputReference_Override(d DataDatadogTagPipelineRulesetRulesMappingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTagPipelineRuleset.DataDatadogTagPipelineRulesetRulesMappingOutputReference",
+		"@cdktn/provider-datadog.dataDatadogTagPipelineRuleset.DataDatadogTagPipelineRulesetRulesMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -254,7 +265,7 @@ func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +305,11 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -422,8 +433,8 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -435,11 +446,11 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -451,7 +462,7 @@ func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogTagPipelineRulesetRulesMappingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

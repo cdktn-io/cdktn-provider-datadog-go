@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -131,6 +131,10 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetIsCspmEnabledParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationGcpSts) validateSetIsGlobalLocationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationGcpSts) validateSetIsPerProjectQuotaEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -143,11 +147,15 @@ func (j *jsiiProxy_IntegrationGcpSts) validateSetIsSecurityCommandCenterEnabledP
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationGcpSts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IntegrationGcpSts) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_IntegrationGcpSts) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationGcpSts) validateSetRegionFilterConfigsParameters(val *[]*string) error {
 	return nil
 }
 

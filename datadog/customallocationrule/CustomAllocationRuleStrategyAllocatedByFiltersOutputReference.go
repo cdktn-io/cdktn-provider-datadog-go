@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customallocationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/customallocationrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/customallocationrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CustomAllocationRuleStrategyAllocatedByFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type CustomAllocationRuleStrategyAllocatedByFiltersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -57,7 +57,7 @@ type CustomAllocationRuleStrategyAllocatedByFiltersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type CustomAllocationRuleStrategyAllocatedByFiltersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCondition()
 	ResetTag()
 	ResetValue()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type CustomAllocationRuleStrategyAllocatedByFiltersOutputReference interface {
 
 // The jsii proxy struct for CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 type jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 }
 
 
-func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyAllocatedByFiltersOutputReference {
+func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomAllocationRuleStrategyAllocatedByFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCustomAllocationRuleStrategyAllocatedByFiltersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -255,7 +255,7 @@ func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference(terraformR
 	j := jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference(terraformR
 	return &j
 }
 
-func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference_Override(c CustomAllocationRuleStrategyAllocatedByFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCustomAllocationRuleStrategyAllocatedByFiltersOutputReference_Override(c CustomAllocationRuleStrategyAllocatedByFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
+		"@cdktn/provider-datadog.customAllocationRule.CustomAllocationRuleStrategyAllocatedByFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	)
 }
 
-func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,11 +401,11 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -529,8 +529,8 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -542,11 +542,11 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -590,7 +590,7 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference
 	)
 }
 
-func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CustomAllocationRuleStrategyAllocatedByFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

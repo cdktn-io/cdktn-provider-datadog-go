@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package childorganization
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganization",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganization",
 		reflect.TypeOf((*ChildOrganization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -69,16 +69,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganization{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKey",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApiKey",
 		reflect.TypeOf((*ChildOrganizationApiKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKeyList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApiKeyList",
 		reflect.TypeOf((*ChildOrganizationApiKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -94,12 +94,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationApiKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKeyOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApiKeyOutputReference",
 		reflect.TypeOf((*ChildOrganizationApiKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,16 +128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationApiKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKey",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApplicationKey",
 		reflect.TypeOf((*ChildOrganizationApplicationKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKeyList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApplicationKeyList",
 		reflect.TypeOf((*ChildOrganizationApplicationKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -153,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationApplicationKeyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKeyOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationApplicationKeyOutputReference",
 		reflect.TypeOf((*ChildOrganizationApplicationKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,20 +188,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationApplicationKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationConfig",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationConfig",
 		reflect.TypeOf((*ChildOrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettings",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettings",
 		reflect.TypeOf((*ChildOrganizationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsList",
 		reflect.TypeOf((*ChildOrganizationSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -217,12 +217,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference",
 		reflect.TypeOf((*ChildOrganizationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,20 +259,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSaml",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSaml",
 		reflect.TypeOf((*ChildOrganizationSettingsSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomains",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomains",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlAutocreateUsersDomains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsList",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlAutocreateUsersDomainsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -288,12 +288,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -322,16 +322,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLogin",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLogin",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlIdpInitiatedLogin)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginList",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlIdpInitiatedLoginList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -347,12 +347,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -380,12 +380,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlList",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -401,12 +401,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlOutputReference",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -434,16 +434,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictMode",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictMode",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlStrictMode)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeList",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlStrictModeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -459,12 +459,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlStrictModeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeOutputReference",
 		reflect.TypeOf((*ChildOrganizationSettingsSamlStrictModeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -492,16 +492,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationSettingsSamlStrictModeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationUser",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationUser",
 		reflect.TypeOf((*ChildOrganizationUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationUserList",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationUserList",
 		reflect.TypeOf((*ChildOrganizationUserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -517,12 +517,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationUserList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.childOrganization.ChildOrganizationUserOutputReference",
+		"@cdktn/provider-datadog.childOrganization.ChildOrganizationUserOutputReference",
 		reflect.TypeOf((*ChildOrganizationUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRole", GoGetter: "AccessRole"},
@@ -552,7 +552,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChildOrganizationUserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

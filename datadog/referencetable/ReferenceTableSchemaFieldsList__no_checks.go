@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (r *jsiiProxy_ReferenceTableSchemaFieldsList) validateGetParameters(index *
 	return nil
 }
 
-func (r *jsiiProxy_ReferenceTableSchemaFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReferenceTableSchemaFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_ReferenceTableSchemaFieldsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_ReferenceTableSchemaFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReferenceTableSchemaFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_ReferenceTableSchemaFieldsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewReferenceTableSchemaFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewReferenceTableSchemaFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

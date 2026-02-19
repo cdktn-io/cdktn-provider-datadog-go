@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboardlist
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dashboardList.DashboardList",
+		"@cdktn/provider-datadog.dashboardList.DashboardList",
 		reflect.TypeOf((*DashboardList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,20 +65,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dashboardList.DashboardListConfig",
+		"@cdktn/provider-datadog.dashboardList.DashboardListConfig",
 		reflect.TypeOf((*DashboardListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dashboardList.DashboardListDashItem",
+		"@cdktn/provider-datadog.dashboardList.DashboardListDashItem",
 		reflect.TypeOf((*DashboardListDashItem)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dashboardList.DashboardListDashItemList",
+		"@cdktn/provider-datadog.dashboardList.DashboardListDashItemList",
 		reflect.TypeOf((*DashboardListDashItemList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -95,12 +95,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardListDashItemList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dashboardList.DashboardListDashItemOutputReference",
+		"@cdktn/provider-datadog.dashboardList.DashboardListDashItemOutputReference",
 		reflect.TypeOf((*DashboardListDashItemOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,7 +131,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DashboardListDashItemOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

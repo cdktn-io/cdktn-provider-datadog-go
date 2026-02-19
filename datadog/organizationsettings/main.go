@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package organizationsettings
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettings",
 		reflect.TypeOf((*OrganizationSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,20 +73,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettings{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsConfig",
 		reflect.TypeOf((*OrganizationSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettings",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettings",
 		reflect.TypeOf((*OrganizationSettingsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsOutputReference",
 		reflect.TypeOf((*OrganizationSettingsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,20 +135,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettingsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSaml",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSaml",
 		reflect.TypeOf((*OrganizationSettingsSettingsSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomains",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlAutocreateUsersDomains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,16 +181,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLogin",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlIdpInitiatedLogin)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,12 +220,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlOutputReference",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,16 +255,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettingsSettingsSamlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictMode",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictMode",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlStrictMode)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
+		"@cdktn/provider-datadog.organizationSettings.OrganizationSettingsSettingsSamlStrictModeOutputReference",
 		reflect.TypeOf((*OrganizationSettingsSettingsSamlStrictModeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationSettingsSettingsSamlStrictModeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

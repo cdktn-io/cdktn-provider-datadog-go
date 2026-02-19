@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package appbuilderapp
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.appBuilderApp.AppBuilderApp",
+		"@cdktn/provider-datadog.appBuilderApp.AppBuilderApp",
 		reflect.TypeOf((*AppBuilderApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionQueryNamesToConnectionIds", GoGetter: "ActionQueryNamesToConnectionIds"},
@@ -76,12 +76,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppBuilderApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.appBuilderApp.AppBuilderAppConfig",
+		"@cdktn/provider-datadog.appBuilderApp.AppBuilderAppConfig",
 		reflect.TypeOf((*AppBuilderAppConfig)(nil)).Elem(),
 	)
 }

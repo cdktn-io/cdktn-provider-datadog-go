@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,15 +7,15 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequest struct {
 	// scatterplot_table block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#scatterplot_table Dashboard#scatterplot_table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#scatterplot_table Dashboard#scatterplot_table}
 	ScatterplotTable interface{} `field:"optional" json:"scatterplotTable" yaml:"scatterplotTable"`
 	// x block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#x Dashboard#x}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#x Dashboard#x}
 	X interface{} `field:"optional" json:"x" yaml:"x"`
 	// y block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#y Dashboard#y}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#y Dashboard#y}
 	Y interface{} `field:"optional" json:"y" yaml:"y"`
 }
 

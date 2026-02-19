@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogrumretentionfilters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogrumretentionfilters/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogrumretentionfilters/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
 type DataDatadogRumRetentionFilters interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,29 +31,29 @@ type DataDatadogRumRetentionFilters interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RetentionFilters() DataDatadogRumRetentionFiltersRetentionFiltersList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -63,7 +63,7 @@ type DataDatadogRumRetentionFilters interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,7 +79,7 @@ type DataDatadogRumRetentionFilters interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -102,7 +102,7 @@ type DataDatadogRumRetentionFilters interface {
 
 // The jsii proxy struct for DataDatadogRumRetentionFilters
 type jsiiProxy_DataDatadogRumRetentionFilters struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataDatadogRumRetentionFilters) ApplicationId() *string {
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) ApplicationIdInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogRumRetentionFilters) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogRumRetentionFilters) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogRumRetentionFilters) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogRumRetentionFilters) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) RetentionFilters() DataDatado
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogRumRetentionFilters) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
 func NewDataDatadogRumRetentionFilters(scope constructs.Construct, id *string, config *DataDatadogRumRetentionFiltersConfig) DataDatadogRumRetentionFilters {
 	_init_.Initialize()
 
@@ -296,7 +296,7 @@ func NewDataDatadogRumRetentionFilters(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataDatadogRumRetentionFilters{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -304,12 +304,12 @@ func NewDataDatadogRumRetentionFilters(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
 func NewDataDatadogRumRetentionFilters_Override(d DataDatadogRumRetentionFilters, scope constructs.Construct, id *string, config *DataDatadogRumRetentionFiltersConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -372,17 +372,17 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters)SetProvider(val cdktf.Terrafor
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogRumRetentionFilters resource upon running "cdktf plan <stack-name>".
-func DataDatadogRumRetentionFilters_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogRumRetentionFilters resource upon running "cdktn plan <stack-name>".
+func DataDatadogRumRetentionFilters_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogRumRetentionFilters_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -417,7 +417,7 @@ func DataDatadogRumRetentionFilters_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -436,7 +436,7 @@ func DataDatadogRumRetentionFilters_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataDatadogRumRetentionFilters_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataDatadogRumRetentionFilters_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
+		"@cdktn/provider-datadog.dataDatadogRumRetentionFilters.DataDatadogRumRetentionFilters",
 		"tfResourceType",
 		&returns,
 	)
@@ -502,11 +502,11 @@ func (d *jsiiProxy_DataDatadogRumRetentionFilters) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogRumRetentionFilters) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogRumRetentionFilters) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -630,11 +630,11 @@ func (d *jsiiProxy_DataDatadogRumRetentionFilters) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogRumRetentionFilters) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogRumRetentionFilters) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

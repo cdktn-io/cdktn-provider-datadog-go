@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package servicelevelobjective
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/servicelevelobjective/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicelevelobjective/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceLevelObjectiveSliSpecificationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,6 +23,8 @@ type ServiceLevelObjectiveSliSpecificationOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Count() ServiceLevelObjectiveSliSpecificationCountOutputReference
+	CountInput() *ServiceLevelObjectiveSliSpecificationCount
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,9 +39,9 @@ type ServiceLevelObjectiveSliSpecificationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeSlice() ServiceLevelObjectiveSliSpecificationTimeSliceOutputReference
 	TimeSliceInput() *ServiceLevelObjectiveSliSpecificationTimeSlice
 	// Experimental.
@@ -47,7 +49,7 @@ type ServiceLevelObjectiveSliSpecificationOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +65,16 @@ type ServiceLevelObjectiveSliSpecificationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCount(value *ServiceLevelObjectiveSliSpecificationCount)
 	PutTimeSlice(value *ServiceLevelObjectiveSliSpecificationTimeSlice)
+	ResetCount()
+	ResetTimeSlice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +84,7 @@ type ServiceLevelObjectiveSliSpecificationOutputReference interface {
 
 // The jsii proxy struct for ServiceLevelObjectiveSliSpecificationOutputReference
 type jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) ComplexObjectIndex() interface{} {
@@ -97,6 +102,26 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Count() ServiceLevelObjectiveSliSpecificationCountOutputReference {
+	var returns ServiceLevelObjectiveSliSpecificationCountOutputReference
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) CountInput() *ServiceLevelObjectiveSliSpecificationCount {
+	var returns *ServiceLevelObjectiveSliSpecificationCount
+	_jsii_.Get(
+		j,
+		"countInput",
 		&returns,
 	)
 	return returns
@@ -142,8 +167,8 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +198,7 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) TimeSli
 }
 
 
-func NewServiceLevelObjectiveSliSpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationOutputReference {
+func NewServiceLevelObjectiveSliSpecificationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveSliSpecificationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServiceLevelObjectiveSliSpecificationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +207,7 @@ func NewServiceLevelObjectiveSliSpecificationOutputReference(terraformResource c
 	j := jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationOutputReference",
+		"@cdktn/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +215,11 @@ func NewServiceLevelObjectiveSliSpecificationOutputReference(terraformResource c
 	return &j
 }
 
-func NewServiceLevelObjectiveSliSpecificationOutputReference_Override(s ServiceLevelObjectiveSliSpecificationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServiceLevelObjectiveSliSpecificationOutputReference_Override(s ServiceLevelObjectiveSliSpecificationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationOutputReference",
+		"@cdktn/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -244,7 +269,7 @@ func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,11 +309,11 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) GetAnyM
 	return returns
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -412,8 +437,8 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) GetStri
 	return returns
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -425,11 +450,11 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Interpo
 	return returns
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -439,6 +464,17 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) PutCount(value *ServiceLevelObjectiveSliSpecificationCount) {
+	if err := s.validatePutCountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCount",
+		[]interface{}{value},
+	)
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) PutTimeSlice(value *ServiceLevelObjectiveSliSpecificationTimeSlice) {
@@ -452,7 +488,23 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) PutTime
 	)
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) ResetCount() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCount",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) ResetTimeSlice() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeSlice",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

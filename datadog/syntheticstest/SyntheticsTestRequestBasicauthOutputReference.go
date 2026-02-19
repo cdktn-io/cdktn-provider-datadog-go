@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestRequestBasicauthOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessKey() *string
 	SetAccessKey(val *string)
 	AccessKeyInput() *string
@@ -76,9 +76,9 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenApiAuthentication() *string
 	SetTokenApiAuthentication(val *string)
 	TokenApiAuthenticationInput() *string
@@ -96,7 +96,7 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -112,9 +112,9 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessKey()
 	ResetAccessTokenUrl()
 	ResetAudience()
@@ -134,7 +134,7 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	ResetWorkstation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,7 +144,7 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestRequestBasicauthOutputReference
 type jsiiProxy_SyntheticsTestRequestBasicauthOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AccessKey() *string {
@@ -467,8 +467,8 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -558,7 +558,7 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) WorkstationInp
 }
 
 
-func NewSyntheticsTestRequestBasicauthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference {
+func NewSyntheticsTestRequestBasicauthOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestRequestBasicauthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -567,7 +567,7 @@ func NewSyntheticsTestRequestBasicauthOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SyntheticsTestRequestBasicauthOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -575,11 +575,11 @@ func NewSyntheticsTestRequestBasicauthOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewSyntheticsTestRequestBasicauthOutputReference_Override(s SyntheticsTestRequestBasicauthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSyntheticsTestRequestBasicauthOutputReference_Override(s SyntheticsTestRequestBasicauthOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -772,7 +772,7 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,11 +856,11 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -984,8 +984,8 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) GetStringMapAt
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -997,11 +997,11 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationA
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1149,7 +1149,7 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetWorkstati
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -63,7 +63,7 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -79,6 +79,10 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetScatterplotDefinition) error {
 	return nil
 }
@@ -91,7 +95,7 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -107,7 +111,7 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
-func validateNewPowerpackWidgetScatterplotDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPowerpackWidgetScatterplotDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

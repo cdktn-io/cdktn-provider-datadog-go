@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package csmthreatsagentrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatsagentrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/csmthreatsagentrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CsmThreatsAgentRuleActionsSetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Append() interface{}
 	SetAppend(val interface{})
 	AppendInput() interface{}
@@ -61,9 +61,9 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -75,7 +75,7 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,21 +91,22 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAppend()
 	ResetDefaultValue()
 	ResetExpression()
 	ResetField()
 	ResetInherited()
+	ResetName()
 	ResetScope()
 	ResetSize()
 	ResetTtl()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,7 +116,7 @@ type CsmThreatsAgentRuleActionsSetOutputReference interface {
 
 // The jsii proxy struct for CsmThreatsAgentRuleActionsSetOutputReference
 type jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Append() interface{} {
@@ -338,8 +339,8 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -389,7 +390,7 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ValueInput() *s
 }
 
 
-func NewCsmThreatsAgentRuleActionsSetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsSetOutputReference {
+func NewCsmThreatsAgentRuleActionsSetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsSetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCsmThreatsAgentRuleActionsSetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -398,7 +399,7 @@ func NewCsmThreatsAgentRuleActionsSetOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -406,11 +407,11 @@ func NewCsmThreatsAgentRuleActionsSetOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewCsmThreatsAgentRuleActionsSetOutputReference_Override(c CsmThreatsAgentRuleActionsSetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCsmThreatsAgentRuleActionsSetOutputReference_Override(c CsmThreatsAgentRuleActionsSetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -548,7 +549,7 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,11 +611,11 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -738,8 +739,8 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -751,11 +752,11 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InterpolationAs
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -807,6 +808,14 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetInherited(
 	)
 }
 
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetScope() {
 	_jsii_.InvokeVoid(
 		c,
@@ -839,7 +848,7 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) ResetValue() {
 	)
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsSetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

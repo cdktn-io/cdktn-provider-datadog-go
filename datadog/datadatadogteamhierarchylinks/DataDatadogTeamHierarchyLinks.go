@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogteamhierarchylinks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogteamhierarchylinks/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamhierarchylinks/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}.
 type DataDatadogTeamHierarchyLinks interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -35,32 +35,32 @@ type DataDatadogTeamHierarchyLinks interface {
 	SetFilterSubTeam(val *string)
 	FilterSubTeamInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LinkId() *string
 	SetLinkId(val *string)
 	LinkIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	ProvisionedBy() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type DataDatadogTeamHierarchyLinks interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -86,7 +86,7 @@ type DataDatadogTeamHierarchyLinks interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,11 +112,11 @@ type DataDatadogTeamHierarchyLinks interface {
 
 // The jsii proxy struct for DataDatadogTeamHierarchyLinks
 type jsiiProxy_DataDatadogTeamHierarchyLinks struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) FilterSubTeamInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source.
 func NewDataDatadogTeamHierarchyLinks(scope constructs.Construct, id *string, config *DataDatadogTeamHierarchyLinksConfig) DataDatadogTeamHierarchyLinks {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataDatadogTeamHierarchyLinks(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataDatadogTeamHierarchyLinks{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,12 +364,12 @@ func NewDataDatadogTeamHierarchyLinks(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source.
 func NewDataDatadogTeamHierarchyLinks_Override(d DataDatadogTeamHierarchyLinks, scope constructs.Construct, id *string, config *DataDatadogTeamHierarchyLinksConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetFilterSubTeam(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetLinkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -454,17 +454,17 @@ func (j *jsiiProxy_DataDatadogTeamHierarchyLinks)SetProvider(val cdktf.Terraform
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogTeamHierarchyLinks resource upon running "cdktf plan <stack-name>".
-func DataDatadogTeamHierarchyLinks_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogTeamHierarchyLinks resource upon running "cdktn plan <stack-name>".
+func DataDatadogTeamHierarchyLinks_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogTeamHierarchyLinks_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -499,7 +499,7 @@ func DataDatadogTeamHierarchyLinks_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataDatadogTeamHierarchyLinks_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataDatadogTeamHierarchyLinks_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataDatadogTeamHierarchyLinks_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
+		"@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks",
 		"tfResourceType",
 		&returns,
 	)
@@ -584,11 +584,11 @@ func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -712,11 +712,11 @@ func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

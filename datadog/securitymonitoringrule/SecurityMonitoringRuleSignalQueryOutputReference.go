@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitymonitoringrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/securitymonitoringrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SecurityMonitoringRuleSignalQueryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -55,15 +55,15 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregation()
 	ResetCorrelatedByFields()
 	ResetCorrelatedQueryIndex()
@@ -89,7 +89,7 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,7 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 
 // The jsii proxy struct for SecurityMonitoringRuleSignalQueryOutputReference
 type jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) Aggregation() *string {
@@ -282,8 +282,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) TerraformRe
 }
 
 
-func NewSecurityMonitoringRuleSignalQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleSignalQueryOutputReference {
+func NewSecurityMonitoringRuleSignalQueryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleSignalQueryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecurityMonitoringRuleSignalQueryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -302,7 +302,7 @@ func NewSecurityMonitoringRuleSignalQueryOutputReference(terraformResource cdktf
 	j := jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -310,11 +310,11 @@ func NewSecurityMonitoringRuleSignalQueryOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewSecurityMonitoringRuleSignalQueryOutputReference_Override(s SecurityMonitoringRuleSignalQueryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecurityMonitoringRuleSignalQueryOutputReference_Override(s SecurityMonitoringRuleSignalQueryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
+		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -430,7 +430,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,11 +470,11 @@ func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -598,8 +598,8 @@ func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) GetStringMa
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -611,11 +611,11 @@ func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -667,7 +667,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) ResetName()
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

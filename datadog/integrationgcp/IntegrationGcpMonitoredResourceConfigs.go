@@ -1,13 +1,13 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationgcp
 
 
 type IntegrationGcpMonitoredResourceConfigs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
 	Filters *[]*string `field:"optional" json:"filters" yaml:"filters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

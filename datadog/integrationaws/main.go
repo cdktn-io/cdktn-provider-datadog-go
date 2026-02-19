@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationaws
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		reflect.TypeOf((*IntegrationAws)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -98,12 +98,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAws{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig",
 		reflect.TypeOf((*IntegrationAwsConfig)(nil)).Elem(),
 	)
 }

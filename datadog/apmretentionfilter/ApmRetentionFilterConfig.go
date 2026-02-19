@@ -1,10 +1,10 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apmretentionfilter
 
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ApmRetentionFilterConfig struct {
@@ -13,42 +13,42 @@ type ApmRetentionFilterConfig struct {
 	// Experimental.
 	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
-	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	DependsOn *[]cdktn.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
-	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	ForEach cdktn.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	Lifecycle *cdktn.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
-	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// the status of the retention filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#enabled ApmRetentionFilter#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The type of the retention filter, currently only spans-processing-sampling is available. Valid values are `spans-sampling-processor`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#filter_type ApmRetentionFilter#filter_type}
 	FilterType *string `field:"required" json:"filterType" yaml:"filterType"`
 	// The name of the retention filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#name ApmRetentionFilter#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Sample rate to apply to spans going through this retention filter as a string;
 	//
 	// a value of 1.0 keeps all spans matching the query. Value must be between 0.00 and 1.00.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#rate ApmRetentionFilter#rate}
 	Rate *string `field:"required" json:"rate" yaml:"rate"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#filter ApmRetentionFilter#filter}
 	Filter *ApmRetentionFilterFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Sample rate to apply to traces with spans going through this retention filter as a string;
 	//
 	// a value of 1.0 keeps all traces matching the query. Value must be between 0.00 and 1.00.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/apm_retention_filter#trace_rate ApmRetentionFilter#trace_rate}
 	TraceRate *string `field:"optional" json:"traceRate" yaml:"traceRate"`
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestMobileStepOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowFailure() interface{}
 	SetAllowFailure(val interface{})
 	AllowFailureInput() interface{}
@@ -57,9 +57,9 @@ type SyntheticsTestMobileStepOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
@@ -71,7 +71,7 @@ type SyntheticsTestMobileStepOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -87,9 +87,9 @@ type SyntheticsTestMobileStepOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutParams(value *SyntheticsTestMobileStepParams)
 	ResetAllowFailure()
 	ResetHasNewStepElement()
@@ -99,7 +99,7 @@ type SyntheticsTestMobileStepOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type SyntheticsTestMobileStepOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestMobileStepOutputReference
 type jsiiProxy_SyntheticsTestMobileStepOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference) AllowFailure() interface{} {
@@ -312,8 +312,8 @@ func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference) TypeInput() *string 
 }
 
 
-func NewSyntheticsTestMobileStepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepOutputReference {
+func NewSyntheticsTestMobileStepOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestMobileStepOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -372,7 +372,7 @@ func NewSyntheticsTestMobileStepOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SyntheticsTestMobileStepOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewSyntheticsTestMobileStepOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewSyntheticsTestMobileStepOutputReference_Override(s SyntheticsTestMobileStepOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsTestMobileStepOutputReference_Override(s SyntheticsTestMobileStepOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -500,7 +500,7 @@ func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestMobileStepOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,11 +562,11 @@ func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -690,8 +690,8 @@ func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -703,11 +703,11 @@ func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -778,7 +778,7 @@ func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) ResetTimeout() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestMobileStepOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

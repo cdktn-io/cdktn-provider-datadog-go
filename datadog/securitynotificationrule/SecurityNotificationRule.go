@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package securitynotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/securitynotificationrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitynotificationrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
 type SecurityNotificationRule interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,18 +38,18 @@ type SecurityNotificationRule interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedAt() *float64
 	ModifiedByHandle() *string
 	ModifiedByName() *string
@@ -59,9 +59,9 @@ type SecurityNotificationRule interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type SecurityNotificationRule interface {
 	SetTargets(val *[]*string)
 	TargetsInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type SecurityNotificationRule interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type SecurityNotificationRule interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -148,11 +148,11 @@ type SecurityNotificationRule interface {
 
 // The jsii proxy struct for SecurityNotificationRule
 type jsiiProxy_SecurityNotificationRule struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SecurityNotificationRule) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SecurityNotificationRule) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_SecurityNotificationRule) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationRule) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SecurityNotificationRule) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_SecurityNotificationRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SecurityNotificationRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_SecurityNotificationRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationRule) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SecurityNotificationRule) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_SecurityNotificationRule) TargetsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SecurityNotificationRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -492,7 +492,7 @@ func (j *jsiiProxy_SecurityNotificationRule) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule(scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) SecurityNotificationRule {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewSecurityNotificationRule(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SecurityNotificationRule{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -510,12 +510,12 @@ func NewSecurityNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule_Override(s SecurityNotificationRule, scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -562,7 +562,7 @@ func (j *jsiiProxy_SecurityNotificationRule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityNotificationRule)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +570,7 @@ func (j *jsiiProxy_SecurityNotificationRule)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityNotificationRule)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +592,7 @@ func (j *jsiiProxy_SecurityNotificationRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityNotificationRule)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -633,17 +633,17 @@ func (j *jsiiProxy_SecurityNotificationRule)SetTimeAggregation(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a SecurityNotificationRule resource upon running "cdktf plan <stack-name>".
-func SecurityNotificationRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SecurityNotificationRule resource upon running "cdktn plan <stack-name>".
+func SecurityNotificationRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSecurityNotificationRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -678,7 +678,7 @@ func SecurityNotificationRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func SecurityNotificationRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func SecurityNotificationRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -729,7 +729,7 @@ func SecurityNotificationRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.securityNotificationRule.SecurityNotificationRule",
+		"@cdktn/provider-datadog.securityNotificationRule.SecurityNotificationRule",
 		"tfResourceType",
 		&returns,
 	)
@@ -774,11 +774,11 @@ func (s *jsiiProxy_SecurityNotificationRule) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityNotificationRule) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -915,7 +915,7 @@ func (s *jsiiProxy_SecurityNotificationRule) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SecurityNotificationRule) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -926,11 +926,11 @@ func (s *jsiiProxy_SecurityNotificationRule) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (s *jsiiProxy_SecurityNotificationRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityNotificationRule) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

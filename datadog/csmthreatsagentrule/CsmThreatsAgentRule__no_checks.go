@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -115,7 +115,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule) validateSetExpressionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CsmThreatsAgentRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -132,6 +132,10 @@ func (j *jsiiProxy_CsmThreatsAgentRule) validateSetProductTagsParameters(val *[]
 }
 
 func (j *jsiiProxy_CsmThreatsAgentRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRule) validateSetSilentParameters(val interface{}) error {
 	return nil
 }
 

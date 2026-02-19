@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/powerpack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/powerpack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList interface {
 
 // The jsii proxy struct for PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 type jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 	return returns
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 }
 
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList {
+func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList {
 	_init_.Initialize()
 
 	if err := validateNewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList(terraformR
 	j := jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList(terraformR
 	return &j
 }
 
-func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList_Override(p PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList_Override(p PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
+		"@cdktn/provider-datadog.powerpack.PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 	)
 }
 
-func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 	)
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -231,7 +231,7 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList
 	return returns
 }
 
-func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

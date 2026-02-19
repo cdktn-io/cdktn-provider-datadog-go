@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/syntheticstest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticstest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type SyntheticsTestApiStepRequestFileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BucketKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -50,9 +50,9 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -61,7 +61,7 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,14 +77,14 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContent()
 	ResetOriginalFileName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 
 // The jsii proxy struct for SyntheticsTestApiStepRequestFileOutputReference
 type jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) BucketKey() *string {
@@ -247,8 +247,8 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -278,7 +278,7 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) TypeInput() 
 }
 
 
-func NewSyntheticsTestApiStepRequestFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestApiStepRequestFileOutputReference {
+func NewSyntheticsTestApiStepRequestFileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsTestApiStepRequestFileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSyntheticsTestApiStepRequestFileOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -287,7 +287,7 @@ func NewSyntheticsTestApiStepRequestFileOutputReference(terraformResource cdktf.
 	j := jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -295,11 +295,11 @@ func NewSyntheticsTestApiStepRequestFileOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewSyntheticsTestApiStepRequestFileOutputReference_Override(s SyntheticsTestApiStepRequestFileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSyntheticsTestApiStepRequestFileOutputReference_Override(s SyntheticsTestApiStepRequestFileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference",
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,11 +444,11 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -572,8 +572,8 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) GetStringMap
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -585,11 +585,11 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) Interpolatio
 	return returns
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -617,7 +617,7 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) ResetOrigina
 	)
 }
 
-func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

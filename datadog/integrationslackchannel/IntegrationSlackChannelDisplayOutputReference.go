@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationslackchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationslackchannel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationslackchannel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type IntegrationSlackChannelDisplayOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMessage()
 	ResetMuteButtons()
 	ResetNotified()
@@ -86,7 +86,7 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type IntegrationSlackChannelDisplayOutputReference interface {
 
 // The jsii proxy struct for IntegrationSlackChannelDisplayOutputReference
 type jsiiProxy_IntegrationSlackChannelDisplayOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) ComplexObjectIndex() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) TerraformResou
 }
 
 
-func NewIntegrationSlackChannelDisplayOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationSlackChannelDisplayOutputReference {
+func NewIntegrationSlackChannelDisplayOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationSlackChannelDisplayOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationSlackChannelDisplayOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewIntegrationSlackChannelDisplayOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_IntegrationSlackChannelDisplayOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewIntegrationSlackChannelDisplayOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewIntegrationSlackChannelDisplayOutputReference_Override(i IntegrationSlackChannelDisplayOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationSlackChannelDisplayOutputReference_Override(i IntegrationSlackChannelDisplayOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
+		"@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationSlackChannelDisplayOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -564,8 +564,8 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) GetStringMapAt
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -577,11 +577,11 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) InterpolationA
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -633,7 +633,7 @@ func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) ResetTags() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationSlackChannelDisplayOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

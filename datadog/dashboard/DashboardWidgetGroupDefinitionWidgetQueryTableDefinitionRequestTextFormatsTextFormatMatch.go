@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch struct {
 	// Match or compare option. Valid values are `is`, `is_not`, `contains`, `does_not_contain`, `starts_with`, `ends_with`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#type Dashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#type Dashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Table Widget Match String.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#value Dashboard#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#value Dashboard#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateInter
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -151,7 +151,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetUr
 	return nil
 }
 
-func validateNewSyntheticsTestRequestDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSyntheticsTestRequestDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

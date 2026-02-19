@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package spansmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/spansmetric/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/spansmetric/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric datadog_spans_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric datadog_spans_metric}.
 type SpansMetric interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Compute() SpansMetricComputeOutputReference
 	ComputeInput() interface{}
 	// Experimental.
@@ -36,9 +36,9 @@ type SpansMetric interface {
 	Filter() SpansMetricFilterOutputReference
 	FilterInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -47,18 +47,18 @@ type SpansMetric interface {
 	GroupByInput() interface{}
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,7 +66,7 @@ type SpansMetric interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type SpansMetric interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +97,9 @@ type SpansMetric interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,11 +138,11 @@ type SpansMetric interface {
 
 // The jsii proxy struct for SpansMetric
 type jsiiProxy_SpansMetric struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_SpansMetric) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SpansMetric) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_SpansMetric) FilterInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpansMetric) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SpansMetric) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_SpansMetric) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpansMetric) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SpansMetric) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_SpansMetric) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SpansMetric) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SpansMetric) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_SpansMetric) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpansMetric) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SpansMetric) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_SpansMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricConfig) SpansMetric {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricC
 	j := jsiiProxy_SpansMetric{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -410,12 +410,12 @@ func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric_Override(s SpansMetric, scope constructs.Construct, id *string, config *SpansMetricConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -451,7 +451,7 @@ func (j *jsiiProxy_SpansMetric)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpansMetric)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpansMetric)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SpansMetric)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SpansMetric)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpansMetric)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_SpansMetric)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpansMetric)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpansMetric)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -500,17 +500,17 @@ func (j *jsiiProxy_SpansMetric)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a SpansMetric resource upon running "cdktf plan <stack-name>".
-func SpansMetric_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SpansMetric resource upon running "cdktn plan <stack-name>".
+func SpansMetric_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSpansMetric_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -545,7 +545,7 @@ func SpansMetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func SpansMetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func SpansMetric_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SpansMetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		"tfResourceType",
 		&returns,
 	)
@@ -641,11 +641,11 @@ func (s *jsiiProxy_SpansMetric) GetAnyMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (s *jsiiProxy_SpansMetric) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpansMetric) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -782,7 +782,7 @@ func (s *jsiiProxy_SpansMetric) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpansMetric) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SpansMetric) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -793,11 +793,11 @@ func (s *jsiiProxy_SpansMetric) ImportFrom(id *string, provider cdktf.TerraformP
 	)
 }
 
-func (s *jsiiProxy_SpansMetric) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpansMetric) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

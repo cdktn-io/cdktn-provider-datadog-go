@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package csmthreatsagentrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatsagentrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/csmthreatsagentrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CsmThreatsAgentRuleActionsHashOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +28,9 @@ type CsmThreatsAgentRuleActionsHashOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Field() *string
+	SetField(val *string)
+	FieldInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -37,15 +40,15 @@ type CsmThreatsAgentRuleActionsHashOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +64,13 @@ type CsmThreatsAgentRuleActionsHashOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetField()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +80,7 @@ type CsmThreatsAgentRuleActionsHashOutputReference interface {
 
 // The jsii proxy struct for CsmThreatsAgentRuleActionsHashOutputReference
 type jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) ComplexObjectIndex() interface{} {
@@ -104,6 +108,26 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) Field() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"field",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) FieldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldInput",
 		&returns,
 	)
 	return returns
@@ -139,8 +163,8 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -150,7 +174,7 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) TerraformResou
 }
 
 
-func NewCsmThreatsAgentRuleActionsHashOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsHashOutputReference {
+func NewCsmThreatsAgentRuleActionsHashOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsHashOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCsmThreatsAgentRuleActionsHashOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -159,7 +183,7 @@ func NewCsmThreatsAgentRuleActionsHashOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHashOutputReference",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -167,11 +191,11 @@ func NewCsmThreatsAgentRuleActionsHashOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewCsmThreatsAgentRuleActionsHashOutputReference_Override(c CsmThreatsAgentRuleActionsHashOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCsmThreatsAgentRuleActionsHashOutputReference_Override(c CsmThreatsAgentRuleActionsHashOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHashOutputReference",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -199,6 +223,17 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetComplexObjec
 	)
 }
 
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetField(val *string) {
+	if err := j.validateSetFieldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"field",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -221,7 +256,7 @@ func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -261,11 +296,11 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -389,8 +424,8 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) GetStringMapAt
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -402,11 +437,11 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationA
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -418,7 +453,15 @@ func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) InterpolationF
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) ResetField() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRuleActionsHashOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogsecuritymonitoringrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogsecuritymonitoringrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +31,7 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReferenc
 	ForgetAfter() *float64
 	// Experimental.
 	Fqn() *string
+	InstantaneousBaseline() cdktn.IResolvable
 	InternalValue() *DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	SetInternalValue(val *DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions)
 	LearningDuration() *float64
@@ -41,15 +42,15 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +66,12 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +81,7 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReferenc
 
 // The jsii proxy struct for DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference
 type jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -128,6 +129,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) InstantaneousBaseline() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"instantaneousBaseline",
 		&returns,
 	)
 	return returns
@@ -183,8 +194,8 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +205,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 }
 
 
-func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference {
+func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +214,7 @@ func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputRefer
 	j := jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +222,11 @@ func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputRefer
 	return &j
 }
 
-func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference_Override(d DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference_Override(d DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference",
+		"@cdktn/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -265,7 +276,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	)
 }
 
-func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +316,11 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -433,8 +444,8 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -446,11 +457,11 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -462,7 +473,7 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

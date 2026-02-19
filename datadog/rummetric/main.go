@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package rummetric
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetric",
+		"@cdktn/provider-datadog.rumMetric.RumMetric",
 		reflect.TypeOf((*RumMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -79,16 +79,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetric{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.rumMetric.RumMetricCompute",
+		"@cdktn/provider-datadog.rumMetric.RumMetricCompute",
 		reflect.TypeOf((*RumMetricCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetricComputeOutputReference",
+		"@cdktn/provider-datadog.rumMetric.RumMetricComputeOutputReference",
 		reflect.TypeOf((*RumMetricComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
@@ -123,20 +123,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetricComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.rumMetric.RumMetricConfig",
+		"@cdktn/provider-datadog.rumMetric.RumMetricConfig",
 		reflect.TypeOf((*RumMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.rumMetric.RumMetricFilter",
+		"@cdktn/provider-datadog.rumMetric.RumMetricFilter",
 		reflect.TypeOf((*RumMetricFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetricFilterOutputReference",
+		"@cdktn/provider-datadog.rumMetric.RumMetricFilterOutputReference",
 		reflect.TypeOf((*RumMetricFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,16 +166,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetricFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.rumMetric.RumMetricGroupBy",
+		"@cdktn/provider-datadog.rumMetric.RumMetricGroupBy",
 		reflect.TypeOf((*RumMetricGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetricGroupByList",
+		"@cdktn/provider-datadog.rumMetric.RumMetricGroupByList",
 		reflect.TypeOf((*RumMetricGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -192,12 +192,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetricGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetricGroupByOutputReference",
+		"@cdktn/provider-datadog.rumMetric.RumMetricGroupByOutputReference",
 		reflect.TypeOf((*RumMetricGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,16 +230,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetricGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.rumMetric.RumMetricUniqueness",
+		"@cdktn/provider-datadog.rumMetric.RumMetricUniqueness",
 		reflect.TypeOf((*RumMetricUniqueness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.rumMetric.RumMetricUniquenessOutputReference",
+		"@cdktn/provider-datadog.rumMetric.RumMetricUniquenessOutputReference",
 		reflect.TypeOf((*RumMetricUniquenessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,7 +269,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetricUniquenessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

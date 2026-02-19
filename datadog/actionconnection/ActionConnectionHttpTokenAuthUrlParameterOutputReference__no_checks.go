@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_ActionConnectionHttpTokenAuthUrlParameterOutputReference) val
 	return nil
 }
 
-func validateNewActionConnectionHttpTokenAuthUrlParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewActionConnectionHttpTokenAuthUrlParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

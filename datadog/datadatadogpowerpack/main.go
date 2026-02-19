@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogpowerpack
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpack",
+		"@cdktn/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpack",
 		reflect.TypeOf((*DataDatadogPowerpack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -53,12 +53,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogPowerpack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpackConfig",
+		"@cdktn/provider-datadog.dataDatadogPowerpack.DataDatadogPowerpackConfig",
 		reflect.TypeOf((*DataDatadogPowerpackConfig)(nil)).Elem(),
 	)
 }

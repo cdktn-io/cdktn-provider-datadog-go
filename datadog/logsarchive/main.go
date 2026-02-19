@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logsarchive
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsArchive.LogsArchive",
+		"@cdktn/provider-datadog.logsArchive.LogsArchive",
 		reflect.TypeOf((*LogsArchive)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -86,16 +86,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsArchive{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveAzureArchive",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchive",
 		reflect.TypeOf((*LogsArchiveAzureArchive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveAzureArchiveOutputReference",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveAzureArchiveOutputReference",
 		reflect.TypeOf((*LogsArchiveAzureArchiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -133,20 +133,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsArchiveAzureArchiveOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveConfig",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveConfig",
 		reflect.TypeOf((*LogsArchiveConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveGcsArchive",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchive",
 		reflect.TypeOf((*LogsArchiveGcsArchive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveGcsArchiveOutputReference",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveGcsArchiveOutputReference",
 		reflect.TypeOf((*LogsArchiveGcsArchiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -183,16 +183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsArchiveGcsArchiveOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveS3Archive",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveS3Archive",
 		reflect.TypeOf((*LogsArchiveS3Archive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
+		"@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
 		reflect.TypeOf((*LogsArchiveS3ArchiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -237,7 +237,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogsArchiveS3ArchiveOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

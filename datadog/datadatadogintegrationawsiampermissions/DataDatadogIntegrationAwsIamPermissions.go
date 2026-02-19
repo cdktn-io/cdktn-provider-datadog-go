@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogintegrationawsiampermissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsiampermissions/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsiampermissions/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions}.
 type DataDatadogIntegrationAwsIamPermissions interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,9 +28,9 @@ type DataDatadogIntegrationAwsIamPermissions interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -38,19 +38,19 @@ type DataDatadogIntegrationAwsIamPermissions interface {
 	IamPermissions() *[]*string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -60,7 +60,7 @@ type DataDatadogIntegrationAwsIamPermissions interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,7 +76,7 @@ type DataDatadogIntegrationAwsIamPermissions interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -99,11 +99,11 @@ type DataDatadogIntegrationAwsIamPermissions interface {
 
 // The jsii proxy struct for DataDatadogIntegrationAwsIamPermissions
 type jsiiProxy_DataDatadogIntegrationAwsIamPermissions struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) DependsOn() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Node() constructs.No
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) RawOverrides() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissions(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsConfig) DataDatadogIntegrationAwsIamPermissions {
 	_init_.Initialize()
 
@@ -273,7 +273,7 @@ func NewDataDatadogIntegrationAwsIamPermissions(scope constructs.Construct, id *
 	j := jsiiProxy_DataDatadogIntegrationAwsIamPermissions{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -281,12 +281,12 @@ func NewDataDatadogIntegrationAwsIamPermissions(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_iam_permissions datadog_integration_aws_iam_permissions} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissions_Override(d DataDatadogIntegrationAwsIamPermissions, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -338,17 +338,17 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissions)SetProvider(val cdktf
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogIntegrationAwsIamPermissions resource upon running "cdktf plan <stack-name>".
-func DataDatadogIntegrationAwsIamPermissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogIntegrationAwsIamPermissions resource upon running "cdktn plan <stack-name>".
+func DataDatadogIntegrationAwsIamPermissions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogIntegrationAwsIamPermissions_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -383,7 +383,7 @@ func DataDatadogIntegrationAwsIamPermissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -402,7 +402,7 @@ func DataDatadogIntegrationAwsIamPermissions_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -421,7 +421,7 @@ func DataDatadogIntegrationAwsIamPermissions_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataDatadogIntegrationAwsIamPermissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissions.DataDatadogIntegrationAwsIamPermissions",
 		"tfResourceType",
 		&returns,
 	)
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) GetAnyMapAttribute(t
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -596,11 +596,11 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) GetStringMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissions) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

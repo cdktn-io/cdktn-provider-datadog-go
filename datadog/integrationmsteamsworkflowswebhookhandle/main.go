@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationmsteamsworkflowswebhookhandle
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle",
+		"@cdktn/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandle",
 		reflect.TypeOf((*IntegrationMsTeamsWorkflowsWebhookHandle)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -63,12 +63,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandleConfig",
+		"@cdktn/provider-datadog.integrationMsTeamsWorkflowsWebhookHandle.IntegrationMsTeamsWorkflowsWebhookHandleConfig",
 		reflect.TypeOf((*IntegrationMsTeamsWorkflowsWebhookHandleConfig)(nil)).Elem(),
 	)
 }

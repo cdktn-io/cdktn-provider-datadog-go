@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package integrationaws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws datadog_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws datadog_integration_aws}.
 type IntegrationAws interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccessKeyId() *string
 	SetAccessKeyId(val *string)
 	AccessKeyIdInput() *string
@@ -25,7 +25,7 @@ type IntegrationAws interface {
 	SetAccountSpecificNamespaceRules(val *map[string]interface{})
 	AccountSpecificNamespaceRulesInput() *map[string]interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -54,9 +54,9 @@ type IntegrationAws interface {
 	SetFilterTags(val *[]*string)
 	FilterTagsInput() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -68,18 +68,18 @@ type IntegrationAws interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MetricsCollectionEnabled() *string
 	SetMetricsCollectionEnabled(val *string)
 	MetricsCollectionEnabledInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -96,7 +96,7 @@ type IntegrationAws interface {
 	SetSecretAccessKey(val *string)
 	SecretAccessKeyInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -109,7 +109,7 @@ type IntegrationAws interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -127,9 +127,9 @@ type IntegrationAws interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -175,7 +175,7 @@ type IntegrationAws interface {
 
 // The jsii proxy struct for IntegrationAws
 type jsiiProxy_IntegrationAws struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_IntegrationAws) AccessKeyId() *string {
@@ -238,8 +238,8 @@ func (j *jsiiProxy_IntegrationAws) AccountSpecificNamespaceRulesInput() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAws) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IntegrationAws) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_IntegrationAws) FilterTagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAws) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IntegrationAws) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_IntegrationAws) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAws) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IntegrationAws) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_IntegrationAws) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAws) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IntegrationAws) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_IntegrationAws) SecretAccessKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationAws) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IntegrationAws) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -609,7 +609,7 @@ func (j *jsiiProxy_IntegrationAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws(scope constructs.Construct, id *string, config *IntegrationAwsConfig) IntegrationAws {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewIntegrationAws(scope constructs.Construct, id *string, config *Integrati
 	j := jsiiProxy_IntegrationAws{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -627,12 +627,12 @@ func NewIntegrationAws(scope constructs.Construct, id *string, config *Integrati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws datadog_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws datadog_integration_aws} Resource.
 func NewIntegrationAws_Override(i IntegrationAws, scope constructs.Construct, id *string, config *IntegrationAwsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -745,7 +745,7 @@ func (j *jsiiProxy_IntegrationAws)SetFilterTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAws)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationAws)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -775,7 +775,7 @@ func (j *jsiiProxy_IntegrationAws)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAws)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationAws)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +797,7 @@ func (j *jsiiProxy_IntegrationAws)SetMetricsCollectionEnabled(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationAws)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationAws)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -849,17 +849,17 @@ func (j *jsiiProxy_IntegrationAws)SetSecretAccessKey(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a IntegrationAws resource upon running "cdktf plan <stack-name>".
-func IntegrationAws_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IntegrationAws resource upon running "cdktn plan <stack-name>".
+func IntegrationAws_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIntegrationAws_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -894,7 +894,7 @@ func IntegrationAws_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -913,7 +913,7 @@ func IntegrationAws_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -932,7 +932,7 @@ func IntegrationAws_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func IntegrationAws_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.integrationAws.IntegrationAws",
+		"@cdktn/provider-datadog.integrationAws.IntegrationAws",
 		"tfResourceType",
 		&returns,
 	)
@@ -990,11 +990,11 @@ func (i *jsiiProxy_IntegrationAws) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAws) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAws) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -1131,7 +1131,7 @@ func (i *jsiiProxy_IntegrationAws) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationAws) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IntegrationAws) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1142,11 +1142,11 @@ func (i *jsiiProxy_IntegrationAws) ImportFrom(id *string, provider cdktf.Terrafo
 	)
 }
 
-func (i *jsiiProxy_IntegrationAws) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationAws) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package syntheticsconcurrencycap
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap",
+		"@cdktn/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap",
 		reflect.TypeOf((*SyntheticsConcurrencyCap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -61,12 +61,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsConcurrencyCap{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCapConfig",
+		"@cdktn/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCapConfig",
 		reflect.TypeOf((*SyntheticsConcurrencyCapConfig)(nil)).Elem(),
 	)
 }

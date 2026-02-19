@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package azureucconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfig",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfig",
 		reflect.TypeOf((*AzureUcConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -76,16 +76,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureUcConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfig",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfig",
 		reflect.TypeOf((*AzureUcConfigActualBillConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfigOutputReference",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfigOutputReference",
 		reflect.TypeOf((*AzureUcConfigActualBillConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,16 +120,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureUcConfigActualBillConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfig",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfig",
 		reflect.TypeOf((*AzureUcConfigAmortizedBillConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference",
 		reflect.TypeOf((*AzureUcConfigAmortizedBillConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,12 +164,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureUcConfigAmortizedBillConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.azureUcConfig.AzureUcConfigConfig",
+		"@cdktn/provider-datadog.azureUcConfig.AzureUcConfigConfig",
 		reflect.TypeOf((*AzureUcConfigConfig)(nil)).Elem(),
 	)
 }

@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package csmthreatsagentrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/csmthreatsagentrule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/csmthreatsagentrule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 type CsmThreatsAgentRule interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Actions() CsmThreatsAgentRuleActionsList
 	ActionsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -43,18 +43,18 @@ type CsmThreatsAgentRule interface {
 	SetExpression(val *string)
 	ExpressionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,17 +67,20 @@ type CsmThreatsAgentRule interface {
 	SetProductTags(val *[]*string)
 	ProductTagsInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Silent() interface{}
+	SetSilent(val interface{})
+	SilentInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -90,7 +93,7 @@ type CsmThreatsAgentRule interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -108,9 +111,9 @@ type CsmThreatsAgentRule interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,6 +137,7 @@ type CsmThreatsAgentRule interface {
 	ResetOverrideLogicalId()
 	ResetPolicyId()
 	ResetProductTags()
+	ResetSilent()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -149,7 +153,7 @@ type CsmThreatsAgentRule interface {
 
 // The jsii proxy struct for CsmThreatsAgentRule
 type jsiiProxy_CsmThreatsAgentRule struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CsmThreatsAgentRule) Actions() CsmThreatsAgentRuleActionsList {
@@ -172,8 +176,8 @@ func (j *jsiiProxy_CsmThreatsAgentRule) ActionsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CsmThreatsAgentRule) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -282,8 +286,8 @@ func (j *jsiiProxy_CsmThreatsAgentRule) ExpressionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CsmThreatsAgentRule) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -322,8 +326,8 @@ func (j *jsiiProxy_CsmThreatsAgentRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CsmThreatsAgentRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -402,8 +406,8 @@ func (j *jsiiProxy_CsmThreatsAgentRule) ProductTagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CsmThreatsAgentRule) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -432,8 +436,28 @@ func (j *jsiiProxy_CsmThreatsAgentRule) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CsmThreatsAgentRule) Silent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRule) SilentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"silentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsmThreatsAgentRule) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -463,7 +487,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
 func NewCsmThreatsAgentRule(scope constructs.Construct, id *string, config *CsmThreatsAgentRuleConfig) CsmThreatsAgentRule {
 	_init_.Initialize()
 
@@ -473,7 +497,7 @@ func NewCsmThreatsAgentRule(scope constructs.Construct, id *string, config *CsmT
 	j := jsiiProxy_CsmThreatsAgentRule{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,12 +505,12 @@ func NewCsmThreatsAgentRule(scope constructs.Construct, id *string, config *CsmT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
 func NewCsmThreatsAgentRule_Override(c CsmThreatsAgentRule, scope constructs.Construct, id *string, config *CsmThreatsAgentRuleConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -555,7 +579,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule)SetExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CsmThreatsAgentRule)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +587,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CsmThreatsAgentRule)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +631,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule)SetProductTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CsmThreatsAgentRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CsmThreatsAgentRule)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -626,17 +650,28 @@ func (j *jsiiProxy_CsmThreatsAgentRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a CsmThreatsAgentRule resource upon running "cdktf plan <stack-name>".
-func CsmThreatsAgentRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+func (j *jsiiProxy_CsmThreatsAgentRule)SetSilent(val interface{}) {
+	if err := j.validateSetSilentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"silent",
+		val,
+	)
+}
+
+// Generates CDKTN code for importing a CsmThreatsAgentRule resource upon running "cdktn plan <stack-name>".
+func CsmThreatsAgentRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCsmThreatsAgentRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -671,7 +706,7 @@ func CsmThreatsAgentRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +725,7 @@ func CsmThreatsAgentRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +744,7 @@ func CsmThreatsAgentRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +757,7 @@ func CsmThreatsAgentRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
+		"@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule",
 		"tfResourceType",
 		&returns,
 	)
@@ -767,11 +802,11 @@ func (c *jsiiProxy_CsmThreatsAgentRule) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRule) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -908,7 +943,7 @@ func (c *jsiiProxy_CsmThreatsAgentRule) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CsmThreatsAgentRule) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -919,11 +954,11 @@ func (c *jsiiProxy_CsmThreatsAgentRule) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (c *jsiiProxy_CsmThreatsAgentRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsmThreatsAgentRule) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1034,6 +1069,14 @@ func (c *jsiiProxy_CsmThreatsAgentRule) ResetProductTags() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProductTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRule) ResetSilent() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSilent",
 		nil, // no parameters
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (r *jsiiProxy_RestrictionPolicyBindingsList) validateGetParameters(index *f
 	return nil
 }
 
-func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RestrictionPolicyBindingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_RestrictionPolicyBindingsList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_RestrictionPolicyBindingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RestrictionPolicyBindingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_RestrictionPolicyBindingsList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewRestrictionPolicyBindingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRestrictionPolicyBindingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

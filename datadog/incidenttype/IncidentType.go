@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package incidenttype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/incidenttype/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/incidenttype/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type datadog_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type datadog_incident_type}.
 type IncidentType interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type IncidentType interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -47,18 +47,18 @@ type IncidentType interface {
 	SetIsDefault(val interface{})
 	IsDefaultInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,7 +66,7 @@ type IncidentType interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type IncidentType interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +97,9 @@ type IncidentType interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,11 +134,11 @@ type IncidentType interface {
 
 // The jsii proxy struct for IncidentType
 type jsiiProxy_IncidentType struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_IncidentType) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IncidentType) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_IncidentType) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentType) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_IncidentType) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_IncidentType) IsDefaultInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentType) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_IncidentType) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_IncidentType) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentType) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_IncidentType) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_IncidentType) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IncidentType) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_IncidentType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTypeConfig) IncidentType {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	j := jsiiProxy_IncidentType{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,12 +386,12 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType_Override(i IncidentType, scope constructs.Construct, id *string, config *IncidentTypeConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IncidentType)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IncidentType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IncidentType)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_IncidentType)SetIsDefault(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IncidentType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IncidentType)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +479,7 @@ func (j *jsiiProxy_IncidentType)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IncidentType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IncidentType)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -498,17 +498,17 @@ func (j *jsiiProxy_IncidentType)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a IncidentType resource upon running "cdktf plan <stack-name>".
-func IncidentType_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IncidentType resource upon running "cdktn plan <stack-name>".
+func IncidentType_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIncidentType_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -543,7 +543,7 @@ func IncidentType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func IncidentType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func IncidentType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func IncidentType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.incidentType.IncidentType",
+		"@cdktn/provider-datadog.incidentType.IncidentType",
 		"tfResourceType",
 		&returns,
 	)
@@ -639,11 +639,11 @@ func (i *jsiiProxy_IncidentType) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (i *jsiiProxy_IncidentType) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IncidentType) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -780,7 +780,7 @@ func (i *jsiiProxy_IncidentType) HasResourceMove() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IncidentType) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (i *jsiiProxy_IncidentType) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -791,11 +791,11 @@ func (i *jsiiProxy_IncidentType) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (i *jsiiProxy_IncidentType) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IncidentType) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,

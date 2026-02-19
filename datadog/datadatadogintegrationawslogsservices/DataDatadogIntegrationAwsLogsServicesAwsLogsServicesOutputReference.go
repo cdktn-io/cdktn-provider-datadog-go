@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogintegrationawslogsservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawslogsservices/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawslogsservices/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference interfa
 
 // The jsii proxy struct for DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference
 type jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) ComplexObjectIndex() interface{} {
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 }
 
 
-func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference {
+func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -181,7 +181,7 @@ func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference(terr
 	j := jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference(terr
 	return &j
 }
 
-func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference_Override(d DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference_Override(d DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference",
+		"@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataDatadogIntegrationAwsLogsServicesAwsLogsServicesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

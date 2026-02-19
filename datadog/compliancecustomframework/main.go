@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package compliancecustomframework
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFramework",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFramework",
 		reflect.TypeOf((*ComplianceCustomFramework)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,24 +72,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComplianceCustomFramework{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkConfig",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkConfig",
 		reflect.TypeOf((*ComplianceCustomFrameworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirements",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirements",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControls",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControls",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirementsControls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsList",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsList",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirementsControlsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComplianceCustomFrameworkRequirementsControlsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsOutputReference",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsControlsOutputReference",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirementsControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComplianceCustomFrameworkRequirementsControlsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsList",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsList",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirementsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -164,12 +164,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComplianceCustomFrameworkRequirementsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
+		"@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFrameworkRequirementsOutputReference",
 		reflect.TypeOf((*ComplianceCustomFrameworkRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,7 +202,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComplianceCustomFrameworkRequirementsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

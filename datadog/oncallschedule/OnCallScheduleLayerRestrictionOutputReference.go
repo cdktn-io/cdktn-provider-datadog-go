@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package oncallschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/oncallschedule/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/oncallschedule/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OnCallScheduleLayerRestrictionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type OnCallScheduleLayerRestrictionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type OnCallScheduleLayerRestrictionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type OnCallScheduleLayerRestrictionOutputReference interface {
 
 // The jsii proxy struct for OnCallScheduleLayerRestrictionOutputReference
 type jsiiProxy_OnCallScheduleLayerRestrictionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) TerraformResou
 }
 
 
-func NewOnCallScheduleLayerRestrictionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnCallScheduleLayerRestrictionOutputReference {
+func NewOnCallScheduleLayerRestrictionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OnCallScheduleLayerRestrictionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOnCallScheduleLayerRestrictionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -251,7 +251,7 @@ func NewOnCallScheduleLayerRestrictionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OnCallScheduleLayerRestrictionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewOnCallScheduleLayerRestrictionOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewOnCallScheduleLayerRestrictionOutputReference_Override(o OnCallScheduleLayerRestrictionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOnCallScheduleLayerRestrictionOutputReference_Override(o OnCallScheduleLayerRestrictionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
+		"@cdktn/provider-datadog.onCallSchedule.OnCallScheduleLayerRestrictionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -525,8 +525,8 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) GetStringMapAt
 	return returns
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -538,11 +538,11 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationA
 	return returns
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -554,7 +554,7 @@ func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) InterpolationF
 	return returns
 }
 
-func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OnCallScheduleLayerRestrictionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

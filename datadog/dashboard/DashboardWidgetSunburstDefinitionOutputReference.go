@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetSunburstDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +32,9 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 	CustomLinkInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	HideTotal() interface{}
 	SetHideTotal(val interface{})
 	HideTotalInput() interface{}
@@ -51,9 +54,9 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -68,7 +71,7 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,14 +87,15 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomLink(value interface{})
 	PutLegendInline(value *DashboardWidgetSunburstDefinitionLegendInline)
 	PutLegendTable(value *DashboardWidgetSunburstDefinitionLegendTable)
 	PutRequest(value interface{})
 	ResetCustomLink()
+	ResetHideIncompleteCostData()
 	ResetHideTotal()
 	ResetLegendInline()
 	ResetLegendTable()
@@ -102,7 +106,7 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +116,7 @@ type DashboardWidgetSunburstDefinitionOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetSunburstDefinitionOutputReference
 type jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -170,6 +174,26 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -295,8 +319,8 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -366,7 +390,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) TitleSizeIn
 }
 
 
-func NewDashboardWidgetSunburstDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSunburstDefinitionOutputReference {
+func NewDashboardWidgetSunburstDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetSunburstDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetSunburstDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -375,7 +399,7 @@ func NewDashboardWidgetSunburstDefinitionOutputReference(terraformResource cdktf
 	j := jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,11 +407,11 @@ func NewDashboardWidgetSunburstDefinitionOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDashboardWidgetSunburstDefinitionOutputReference_Override(d DashboardWidgetSunburstDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetSunburstDefinitionOutputReference_Override(d DashboardWidgetSunburstDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetSunburstDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -411,6 +435,17 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -459,7 +494,7 @@ func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,11 +567,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -660,8 +695,8 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -673,11 +708,11 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -737,6 +772,14 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) ResetCustom
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomLink",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
 		nil, // no parameters
 	)
 }
@@ -805,7 +848,7 @@ func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) ResetTitleS
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetSunburstDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

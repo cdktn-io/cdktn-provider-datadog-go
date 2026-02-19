@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetEventTimelineDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +30,9 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	InternalValue() *DashboardWidgetEventTimelineDefinition
 	SetInternalValue(val *DashboardWidgetEventTimelineDefinition)
 	LiveSpan() *string
@@ -46,9 +49,9 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -63,7 +66,7 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +82,10 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetTagsExecution()
 	ResetTitle()
@@ -89,7 +93,7 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +103,7 @@ type DashboardWidgetEventTimelineDefinitionOutputReference interface {
 
 // The jsii proxy struct for DashboardWidgetEventTimelineDefinitionOutputReference
 type jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -137,6 +141,26 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -222,8 +246,8 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -293,7 +317,7 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) TitleS
 }
 
 
-func NewDashboardWidgetEventTimelineDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetEventTimelineDefinitionOutputReference {
+func NewDashboardWidgetEventTimelineDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetEventTimelineDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetEventTimelineDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -302,7 +326,7 @@ func NewDashboardWidgetEventTimelineDefinitionOutputReference(terraformResource 
 	j := jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetEventTimelineDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetEventTimelineDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,11 +334,11 @@ func NewDashboardWidgetEventTimelineDefinitionOutputReference(terraformResource 
 	return &j
 }
 
-func NewDashboardWidgetEventTimelineDefinitionOutputReference_Override(d DashboardWidgetEventTimelineDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetEventTimelineDefinitionOutputReference_Override(d DashboardWidgetEventTimelineDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetEventTimelineDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetEventTimelineDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -338,6 +362,17 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -397,7 +432,7 @@ func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,11 +505,11 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -598,8 +633,8 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -611,11 +646,11 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -625,6 +660,14 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) ResetLiveSpan() {
@@ -667,7 +710,7 @@ func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) ResetT
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetEventTimelineDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

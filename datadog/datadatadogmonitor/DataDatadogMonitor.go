@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datadatadogmonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogmonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogmonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor datadog_monitor}.
 type DataDatadogMonitor interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -27,29 +27,29 @@ type DataDatadogMonitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableLogsSample() cdktf.IResolvable
-	EnableSamples() cdktf.IResolvable
+	EnableLogsSample() cdktn.IResolvable
+	EnableSamples() cdktn.IResolvable
 	EscalationMessage() *string
 	EvaluationDelay() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GroupbySimpleMonitor() cdktf.IResolvable
+	GroupbySimpleMonitor() cdktn.IResolvable
 	GroupRetentionDuration() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeTags() cdktf.IResolvable
+	IncludeTags() cdktn.IResolvable
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Locked() cdktf.IResolvable
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Locked() cdktn.IResolvable
 	Message() *string
 	MonitorTagsFilter() *[]*string
 	SetMonitorTagsFilter(val *[]*string)
@@ -66,21 +66,21 @@ type DataDatadogMonitor interface {
 	// The tree node.
 	Node() constructs.Node
 	NotificationPresetName() *string
-	NotifyAudit() cdktf.IResolvable
+	NotifyAudit() cdktn.IResolvable
 	NotifyBy() *[]*string
-	NotifyNoData() cdktf.IResolvable
+	NotifyNoData() cdktn.IResolvable
 	OnMissingData() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	Query() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RenotifyInterval() *float64
 	RenotifyOccurrences() *float64
 	RenotifyStatuses() *[]*string
-	RequireFullWindow() cdktf.IResolvable
+	RequireFullWindow() cdktn.IResolvable
 	RestrictedRoles() *[]*string
 	SchedulingOptions() DataDatadogMonitorSchedulingOptionsList
 	Tags() *[]*string
@@ -88,7 +88,7 @@ type DataDatadogMonitor interface {
 	SetTagsFilter(val *[]*string)
 	TagsFilterInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +100,7 @@ type DataDatadogMonitor interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -116,7 +116,7 @@ type DataDatadogMonitor interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -143,11 +143,11 @@ type DataDatadogMonitor interface {
 
 // The jsii proxy struct for DataDatadogMonitor
 type jsiiProxy_DataDatadogMonitor struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataDatadogMonitor) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataDatadogMonitor) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) EnableLogsSample() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) EnableLogsSample() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableLogsSample",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DataDatadogMonitor) EnableLogsSample() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) EnableSamples() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) EnableSamples() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableSamples",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DataDatadogMonitor) EvaluationDelay() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataDatadogMonitor) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataDatadogMonitor) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) GroupbySimpleMonitor() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) GroupbySimpleMonitor() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"groupbySimpleMonitor",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DataDatadogMonitor) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) IncludeTags() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) IncludeTags() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"includeTags",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataDatadogMonitor) IncludeTags() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataDatadogMonitor) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_DataDatadogMonitor) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) Locked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) Locked() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"locked",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_DataDatadogMonitor) NotificationPresetName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) NotifyAudit() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) NotifyAudit() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"notifyAudit",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_DataDatadogMonitor) NotifyBy() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) NotifyNoData() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) NotifyNoData() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"notifyNoData",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_DataDatadogMonitor) OnMissingData() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataDatadogMonitor) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_DataDatadogMonitor) RenotifyStatuses() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) RequireFullWindow() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataDatadogMonitor) RequireFullWindow() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"requireFullWindow",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_DataDatadogMonitor) TagsFilterInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDatadogMonitor) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataDatadogMonitor) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -667,7 +667,7 @@ func (j *jsiiProxy_DataDatadogMonitor) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor datadog_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor datadog_monitor} Data Source.
 func NewDataDatadogMonitor(scope constructs.Construct, id *string, config *DataDatadogMonitorConfig) DataDatadogMonitor {
 	_init_.Initialize()
 
@@ -677,7 +677,7 @@ func NewDataDatadogMonitor(scope constructs.Construct, id *string, config *DataD
 	j := jsiiProxy_DataDatadogMonitor{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -685,12 +685,12 @@ func NewDataDatadogMonitor(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor datadog_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor datadog_monitor} Data Source.
 func NewDataDatadogMonitor_Override(d DataDatadogMonitor, scope constructs.Construct, id *string, config *DataDatadogMonitorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -715,7 +715,7 @@ func (j *jsiiProxy_DataDatadogMonitor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataDatadogMonitor)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -734,7 +734,7 @@ func (j *jsiiProxy_DataDatadogMonitor)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataDatadogMonitor)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +767,7 @@ func (j *jsiiProxy_DataDatadogMonitor)SetNameFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataDatadogMonitor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataDatadogMonitor)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -786,17 +786,17 @@ func (j *jsiiProxy_DataDatadogMonitor)SetTagsFilter(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataDatadogMonitor resource upon running "cdktf plan <stack-name>".
-func DataDatadogMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataDatadogMonitor resource upon running "cdktn plan <stack-name>".
+func DataDatadogMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataDatadogMonitor_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -831,7 +831,7 @@ func DataDatadogMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -850,7 +850,7 @@ func DataDatadogMonitor_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -869,7 +869,7 @@ func DataDatadogMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -882,7 +882,7 @@ func DataDatadogMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
+		"@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor",
 		"tfResourceType",
 		&returns,
 	)
@@ -916,11 +916,11 @@ func (d *jsiiProxy_DataDatadogMonitor) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitor) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMonitor) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1044,11 +1044,11 @@ func (d *jsiiProxy_DataDatadogMonitor) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataDatadogMonitor) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataDatadogMonitor) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

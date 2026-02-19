@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/dashboard/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Columns() *[]*string
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
@@ -33,6 +33,9 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HideIncompleteCostData() interface{}
+	SetHideIncompleteCostData(val interface{})
+	HideIncompleteCostDataInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
 	IndexesInput() *[]*string
@@ -60,9 +63,9 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleAlign() *string
@@ -77,7 +80,7 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,11 +96,12 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSort(value *DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort)
 	ResetColumns()
+	ResetHideIncompleteCostData()
 	ResetIndexes()
 	ResetLiveSpan()
 	ResetMessageDisplay()
@@ -110,7 +114,7 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 	ResetTitleSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +124,7 @@ type DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference inte
 
 // The jsii proxy struct for DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference
 type jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) Columns() *[]*string {
@@ -178,6 +182,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) HideIncompleteCostData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) HideIncompleteCostDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hideIncompleteCostDataInput",
 		&returns,
 	)
 	return returns
@@ -343,8 +367,8 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	return returns
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -414,7 +438,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 }
 
 
-func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference {
+func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -423,7 +447,7 @@ func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(t
 	j := jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -431,11 +455,11 @@ func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(t
 	return &j
 }
 
-func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference_Override(d DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference",
+		"@cdktn/provider-datadog.dashboard.DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -470,6 +494,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference)SetHideIncompleteCostData(val interface{}) {
+	if err := j.validateSetHideIncompleteCostDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hideIncompleteCostData",
 		val,
 	)
 }
@@ -562,7 +597,7 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,11 +670,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -763,8 +798,8 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -776,11 +811,11 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	return returns
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -807,6 +842,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetColumns",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) ResetHideIncompleteCostData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHideIncompleteCostData",
 		nil, // no parameters
 	)
 }
@@ -891,7 +934,7 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutput
 	)
 }
 
-func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package spansmetric
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.spansMetric.SpansMetric",
+		"@cdktn/provider-datadog.spansMetric.SpansMetric",
 		reflect.TypeOf((*SpansMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -73,16 +73,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpansMetric{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricCompute",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricCompute",
 		reflect.TypeOf((*SpansMetricCompute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricComputeOutputReference",
 		reflect.TypeOf((*SpansMetricComputeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
@@ -117,20 +117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpansMetricComputeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricConfig",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricConfig",
 		reflect.TypeOf((*SpansMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricFilter",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricFilter",
 		reflect.TypeOf((*SpansMetricFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricFilterOutputReference",
 		reflect.TypeOf((*SpansMetricFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpansMetricFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricGroupBy",
 		reflect.TypeOf((*SpansMetricGroupBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricGroupByList",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricGroupByList",
 		reflect.TypeOf((*SpansMetricGroupByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -186,12 +186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpansMetricGroupByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference",
+		"@cdktn/provider-datadog.spansMetric.SpansMetricGroupByOutputReference",
 		reflect.TypeOf((*SpansMetricGroupByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +223,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpansMetricGroupByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

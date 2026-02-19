@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -119,7 +119,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetIsTotpParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -148,6 +148,14 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetTagsParameters(val *[]*s
 }
 
 func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetValueWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsGlobalVariable) validateSetValueWoVersionParameters(val *string) error {
 	return nil
 }
 

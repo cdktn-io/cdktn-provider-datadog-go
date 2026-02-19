@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dashboard
@@ -7,11 +7,11 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetPowerpackDefinitionTemplateVariables struct {
 	// controlled_by_powerpack block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#controlled_by_powerpack Dashboard#controlled_by_powerpack}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#controlled_by_powerpack Dashboard#controlled_by_powerpack}
 	ControlledByPowerpack interface{} `field:"optional" json:"controlledByPowerpack" yaml:"controlledByPowerpack"`
 	// controlled_externally block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#controlled_externally Dashboard#controlled_externally}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#controlled_externally Dashboard#controlled_externally}
 	ControlledExternally interface{} `field:"optional" json:"controlledExternally" yaml:"controlledExternally"`
 }
 

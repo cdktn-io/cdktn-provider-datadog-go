@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logscustomdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/logscustomdestination/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logscustomdestination/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LogsCustomDestinationElasticsearchDestinationList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type LogsCustomDestinationElasticsearchDestinationList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type LogsCustomDestinationElasticsearchDestinationList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) LogsCustomDestinationElasticsearchDestinationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type LogsCustomDestinationElasticsearchDestinationList interface {
 
 // The jsii proxy struct for LogsCustomDestinationElasticsearchDestinationList
 type jsiiProxy_LogsCustomDestinationElasticsearchDestinationList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) WrapsSet()
 }
 
 
-func NewLogsCustomDestinationElasticsearchDestinationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationList {
+func NewLogsCustomDestinationElasticsearchDestinationList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomDestinationElasticsearchDestinationList {
 	_init_.Initialize()
 
 	if err := validateNewLogsCustomDestinationElasticsearchDestinationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewLogsCustomDestinationElasticsearchDestinationList(terraformResource cdkt
 	j := jsiiProxy_LogsCustomDestinationElasticsearchDestinationList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewLogsCustomDestinationElasticsearchDestinationList(terraformResource cdkt
 	return &j
 }
 
-func NewLogsCustomDestinationElasticsearchDestinationList_Override(l LogsCustomDestinationElasticsearchDestinationList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewLogsCustomDestinationElasticsearchDestinationList_Override(l LogsCustomDestinationElasticsearchDestinationList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
+		"@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationElasticsearchDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList)SetWrapsSet
 	)
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := l.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		l,
@@ -231,7 +231,7 @@ func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) Get(index 
 	return returns
 }
 
-func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LogsCustomDestinationElasticsearchDestinationList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
