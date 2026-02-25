@@ -15,6 +15,8 @@ type ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference interface
 	cdktn.ComplexObject
 	Auth() ObservabilityPipelineConfigDestinationGoogleSecopsAuthList
 	AuthInput() interface{}
+	Buffer() ObservabilityPipelineConfigDestinationGoogleSecopsBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,7 +78,9 @@ type ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	ResetAuth()
+	ResetBuffer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputRefer
 	_jsii_.Get(
 		j,
 		"authInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) Buffer() ObservabilityPipelineConfigDestinationGoogleSecopsBufferList {
+	var returns ObservabilityPipelineConfigDestinationGoogleSecopsBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -555,10 +579,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) ResetAuth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

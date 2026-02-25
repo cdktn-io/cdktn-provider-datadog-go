@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters}.
 type DataDatadogSecurityMonitoringFilters interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -99,6 +99,15 @@ type DataDatadogSecurityMonitoringFilters interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogSecurityMonitoringFilters
@@ -287,7 +296,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
 func NewDataDatadogSecurityMonitoringFilters(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringFiltersConfig) DataDatadogSecurityMonitoringFilters {
 	_init_.Initialize()
 
@@ -305,7 +314,7 @@ func NewDataDatadogSecurityMonitoringFilters(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
 func NewDataDatadogSecurityMonitoringFilters_Override(d DataDatadogSecurityMonitoringFilters, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringFiltersConfig) {
 	_init_.Initialize()
 
@@ -746,6 +755,24 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) ToTerraform() interface
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogSecurityMonitoringFilters) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

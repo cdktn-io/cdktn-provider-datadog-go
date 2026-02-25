@@ -15,6 +15,8 @@ type ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference inter
 	cdktn.ComplexObject
 	Auth() ObservabilityPipelineConfigDestinationAmazonOpensearchAuthList
 	AuthInput() interface{}
+	Buffer() ObservabilityPipelineConfigDestinationAmazonOpensearchBufferList
+	BufferInput() interface{}
 	BulkIndex() *string
 	SetBulkIndex(val *string)
 	BulkIndexInput() *string
@@ -70,7 +72,9 @@ type ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	ResetAuth()
+	ResetBuffer()
 	ResetBulkIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +106,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputR
 	_jsii_.Get(
 		j,
 		"authInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) Buffer() ObservabilityPipelineConfigDestinationAmazonOpensearchBufferList {
+	var returns ObservabilityPipelineConfigDestinationAmazonOpensearchBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputR
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) ResetAuth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

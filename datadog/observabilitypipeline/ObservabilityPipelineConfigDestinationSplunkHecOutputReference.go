@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	AutoExtractTimestamp() interface{}
 	SetAutoExtractTimestamp(val interface{})
 	AutoExtractTimestampInput() interface{}
+	Buffer() ObservabilityPipelineConfigDestinationSplunkHecBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,7 +78,9 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	ResetAutoExtractTimestamp()
+	ResetBuffer()
 	ResetIndex()
 	ResetSourcetype()
 	// Produce the Token's value at resolution time.
@@ -109,6 +113,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.Get(
 		j,
 		"autoExtractTimestampInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) Buffer() ObservabilityPipelineConfigDestinationSplunkHecBufferList {
+	var returns ObservabilityPipelineConfigDestinationSplunkHecBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -557,10 +581,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetAutoExtractTimestamp() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAutoExtractTimestamp",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

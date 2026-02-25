@@ -18,6 +18,8 @@ type ObservabilityPipelineConfigDestinationAmazonS3OutputReference interface {
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationAmazonS3BufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,7 +81,9 @@ type ObservabilityPipelineConfigDestinationAmazonS3OutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	ResetAuth()
+	ResetBuffer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -130,6 +134,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) Buffer() ObservabilityPipelineConfigDestinationAmazonS3BufferList {
+	var returns ObservabilityPipelineConfigDestinationAmazonS3BufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -589,10 +613,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) ResetAuth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

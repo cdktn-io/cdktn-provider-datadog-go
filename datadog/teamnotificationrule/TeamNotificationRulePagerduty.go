@@ -7,7 +7,7 @@ package teamnotificationrule
 type TeamNotificationRulePagerduty struct {
 	// PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
 	ServiceName *string `field:"optional" json:"serviceName" yaml:"serviceName"`
 }
 

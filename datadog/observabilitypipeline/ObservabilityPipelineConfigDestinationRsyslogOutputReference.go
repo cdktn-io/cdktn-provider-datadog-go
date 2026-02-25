@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationRsyslogOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationRsyslogBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,7 +71,9 @@ type ObservabilityPipelineConfigDestinationRsyslogOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutTls(value interface{})
+	ResetBuffer()
 	ResetKeepalive()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type ObservabilityPipelineConfigDestinationRsyslogOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationRsyslogOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) Buffer() ObservabilityPipelineConfigDestinationRsyslogBufferList {
+	var returns ObservabilityPipelineConfigDestinationRsyslogBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) ComplexObjectIndex() interface{} {
@@ -477,6 +501,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference)
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) PutTls(value interface{}) {
 	if err := o.validatePutTlsParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference)
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
 	)
 }
 

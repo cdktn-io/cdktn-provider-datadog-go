@@ -40,6 +40,7 @@ type DataDatadogLogsIndexesLogsIndexesOutputReference interface {
 	SetInternalValue(val *DataDatadogLogsIndexesLogsIndexes)
 	Name() *string
 	RetentionDays() *float64
+	Tags() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) RetentionDa
 	_jsii_.Get(
 		j,
 		"retentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesOutputReference) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

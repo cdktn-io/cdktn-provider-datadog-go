@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings}.
 type DataDatadogOrganizationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -101,6 +101,15 @@ type DataDatadogOrganizationSettings interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogOrganizationSettings
@@ -309,7 +318,7 @@ func (j *jsiiProxy_DataDatadogOrganizationSettings) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) DataDatadogOrganizationSettings {
 	_init_.Initialize()
 
@@ -327,7 +336,7 @@ func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings_Override(d DataDatadogOrganizationSettings, scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -768,6 +777,24 @@ func (d *jsiiProxy_DataDatadogOrganizationSettings) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogOrganizationSettings) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

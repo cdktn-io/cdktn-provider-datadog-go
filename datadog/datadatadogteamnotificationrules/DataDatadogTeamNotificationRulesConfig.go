@@ -24,11 +24,11 @@ type DataDatadogTeamNotificationRulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The team ID to fetch notification rules for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// notification_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
 	NotificationRules interface{} `field:"optional" json:"notificationRules" yaml:"notificationRules"`
 }
 

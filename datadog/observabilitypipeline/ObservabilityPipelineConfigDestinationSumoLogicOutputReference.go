@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationSumoLogicOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationSumoLogicBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,7 +80,9 @@ type ObservabilityPipelineConfigDestinationSumoLogicOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutHeaderCustomField(value interface{})
+	ResetBuffer()
 	ResetEncoding()
 	ResetHeaderCustomField()
 	ResetHeaderHostName()
@@ -97,6 +101,26 @@ type ObservabilityPipelineConfigDestinationSumoLogicOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationSumoLogicOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) Buffer() ObservabilityPipelineConfigDestinationSumoLogicBufferList {
+	var returns ObservabilityPipelineConfigDestinationSumoLogicBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) ComplexObjectIndex() interface{} {
@@ -582,6 +606,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) PutHeaderCustomField(value interface{}) {
 	if err := o.validatePutHeaderCustomFieldParameters(value); err != nil {
 		panic(err)
@@ -590,6 +625,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 		o,
 		"putHeaderCustomField",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
 	)
 }
 

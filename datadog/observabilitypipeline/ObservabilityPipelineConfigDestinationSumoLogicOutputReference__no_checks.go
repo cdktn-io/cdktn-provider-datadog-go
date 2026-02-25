@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validatePutHeaderCustomFieldParameters(value interface{}) error {
 	return nil
 }

@@ -7,15 +7,15 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable struct {
 	// Path to the field in the log event to match against the reference table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 	KeyField *string `field:"required" json:"keyField" yaml:"keyField"`
 	// The unique identifier of the reference table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
 	TableId *string `field:"required" json:"tableId" yaml:"tableId"`
 	// List of column names to include from the reference table. If not provided, all columns are included.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
 	Columns *[]*string `field:"optional" json:"columns" yaml:"columns"`
 }
 

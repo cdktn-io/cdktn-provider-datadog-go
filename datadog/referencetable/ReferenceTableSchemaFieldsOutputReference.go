@@ -70,8 +70,6 @@ type ReferenceTableSchemaFieldsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetName()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (r *jsiiProxy_ReferenceTableSchemaFieldsOutputReference) InterpolationForAt
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_ReferenceTableSchemaFieldsOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_ReferenceTableSchemaFieldsOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_ReferenceTableSchemaFieldsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

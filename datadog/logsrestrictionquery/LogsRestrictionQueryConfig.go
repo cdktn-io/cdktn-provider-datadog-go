@@ -24,11 +24,11 @@ type LogsRestrictionQueryConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The query that defines the restriction. Only the content matching the query can be returned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
 	RestrictionQuery *string `field:"required" json:"restrictionQuery" yaml:"restrictionQuery"`
 	// An array of role IDs that have access to this restriction query.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
 	RoleIds *[]*string `field:"optional" json:"roleIds" yaml:"roleIds"`
 }
 

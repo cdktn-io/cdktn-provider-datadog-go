@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webhooksIpv4", GoGetter: "WebhooksIpv4"},
 			_jsii_.MemberProperty{JsiiProperty: "webhooksIpv6", GoGetter: "WebhooksIpv6"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogIpRanges{}

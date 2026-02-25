@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
 type AgentlessScanningGcpScanOptions interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type AgentlessScanningGcpScanOptions interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AgentlessScanningGcpScanOptions
@@ -366,7 +375,7 @@ func (j *jsiiProxy_AgentlessScanningGcpScanOptions) VulnHostOsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
 func NewAgentlessScanningGcpScanOptions(scope constructs.Construct, id *string, config *AgentlessScanningGcpScanOptionsConfig) AgentlessScanningGcpScanOptions {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewAgentlessScanningGcpScanOptions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
 func NewAgentlessScanningGcpScanOptions_Override(a AgentlessScanningGcpScanOptions, scope constructs.Construct, id *string, config *AgentlessScanningGcpScanOptionsConfig) {
 	_init_.Initialize()
 
@@ -929,6 +938,24 @@ func (a *jsiiProxy_AgentlessScanningGcpScanOptions) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AgentlessScanningGcpScanOptions) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

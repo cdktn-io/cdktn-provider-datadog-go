@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_link datadog_team_link}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_link datadog_team_link}.
 type TeamLink interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -132,6 +132,15 @@ type TeamLink interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TeamLink
@@ -390,7 +399,7 @@ func (j *jsiiProxy_TeamLink) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_link datadog_team_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_link datadog_team_link} Resource.
 func NewTeamLink(scope constructs.Construct, id *string, config *TeamLinkConfig) TeamLink {
 	_init_.Initialize()
 
@@ -408,7 +417,7 @@ func NewTeamLink(scope constructs.Construct, id *string, config *TeamLinkConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_link datadog_team_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_link datadog_team_link} Resource.
 func NewTeamLink_Override(t TeamLink, scope constructs.Construct, id *string, config *TeamLinkConfig) {
 	_init_.Initialize()
 
@@ -972,6 +981,24 @@ func (t *jsiiProxy_TeamLink) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamLink) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

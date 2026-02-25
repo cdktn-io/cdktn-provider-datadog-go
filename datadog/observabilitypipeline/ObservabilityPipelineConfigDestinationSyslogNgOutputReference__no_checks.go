@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference) validatePutTlsParameters(value interface{}) error {
 	return nil
 }

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

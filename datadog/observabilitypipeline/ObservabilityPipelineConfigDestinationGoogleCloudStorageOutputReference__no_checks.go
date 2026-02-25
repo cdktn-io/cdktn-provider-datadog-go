@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutpu
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) validatePutMetadataParameters(value interface{}) error {
 	return nil
 }

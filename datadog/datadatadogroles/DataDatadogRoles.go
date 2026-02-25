@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/roles datadog_roles}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/roles datadog_roles}.
 type DataDatadogRoles interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -102,6 +102,15 @@ type DataDatadogRoles interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogRoles
@@ -300,7 +309,7 @@ func (j *jsiiProxy_DataDatadogRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/roles datadog_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/roles datadog_roles} Data Source.
 func NewDataDatadogRoles(scope constructs.Construct, id *string, config *DataDatadogRolesConfig) DataDatadogRoles {
 	_init_.Initialize()
 
@@ -318,7 +327,7 @@ func NewDataDatadogRoles(scope constructs.Construct, id *string, config *DataDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/roles datadog_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/roles datadog_roles} Data Source.
 func NewDataDatadogRoles_Override(d DataDatadogRoles, scope constructs.Construct, id *string, config *DataDatadogRolesConfig) {
 	_init_.Initialize()
 
@@ -778,6 +787,24 @@ func (d *jsiiProxy_DataDatadogRoles) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogRoles) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

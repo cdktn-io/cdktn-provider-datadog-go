@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 type MonitorConfigPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -129,6 +129,15 @@ type MonitorConfigPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MonitorConfigPolicy
@@ -357,7 +366,7 @@ func (j *jsiiProxy_MonitorConfigPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) MonitorConfigPolicy {
 	_init_.Initialize()
 
@@ -375,7 +384,7 @@ func NewMonitorConfigPolicy(scope constructs.Construct, id *string, config *Moni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource.
 func NewMonitorConfigPolicy_Override(m MonitorConfigPolicy, scope constructs.Construct, id *string, config *MonitorConfigPolicyConfig) {
 	_init_.Initialize()
 
@@ -936,6 +945,24 @@ func (m *jsiiProxy_MonitorConfigPolicy) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MonitorConfigPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

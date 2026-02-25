@@ -100,6 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateInput", GoGetter: "ValidateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warningThreshold", GoGetter: "WarningThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "warningThresholdInput", GoGetter: "WarningThresholdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ServiceLevelObjective{}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
 type TeamHierarchyLinks interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -127,6 +127,15 @@ type TeamHierarchyLinks interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TeamHierarchyLinks
@@ -365,7 +374,7 @@ func (j *jsiiProxy_TeamHierarchyLinks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
 func NewTeamHierarchyLinks(scope constructs.Construct, id *string, config *TeamHierarchyLinksConfig) TeamHierarchyLinks {
 	_init_.Initialize()
 
@@ -383,7 +392,7 @@ func NewTeamHierarchyLinks(scope constructs.Construct, id *string, config *TeamH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
 func NewTeamHierarchyLinks_Override(t TeamHierarchyLinks, scope constructs.Construct, id *string, config *TeamHierarchyLinksConfig) {
 	_init_.Initialize()
 
@@ -917,6 +926,24 @@ func (t *jsiiProxy_TeamHierarchyLinks) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamHierarchyLinks) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

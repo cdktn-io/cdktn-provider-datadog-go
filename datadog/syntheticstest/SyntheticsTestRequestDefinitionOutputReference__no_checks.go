@@ -75,11 +75,19 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDestinationServiceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetE2EQueriesParameters(val *float64) error {
 	return nil
 }
 
@@ -100,6 +108,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetIn
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetIsMessageBase64EncodedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMaxTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -147,6 +159,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetSh
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetSourceServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTcpMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -156,6 +176,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTe
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTracerouteQueriesParameters(val *float64) error {
 	return nil
 }
 

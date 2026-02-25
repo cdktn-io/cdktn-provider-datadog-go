@@ -49,6 +49,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DestinationService() *string
+	SetDestinationService(val *string)
+	DestinationServiceInput() *string
 	DisableAiaIntermediateFetching() interface{}
 	SetDisableAiaIntermediateFetching(val interface{})
 	DisableAiaIntermediateFetchingInput() interface{}
@@ -58,6 +61,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	DnsServerPort() *string
 	SetDnsServerPort(val *string)
 	DnsServerPortInput() *string
+	E2EQueries() *float64
+	SetE2EQueries(val *float64)
+	E2EQueriesInput() *float64
 	FollowRedirects() interface{}
 	SetFollowRedirects(val interface{})
 	FollowRedirectsInput() interface{}
@@ -77,6 +83,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	IsMessageBase64Encoded() interface{}
 	SetIsMessageBase64Encoded(val interface{})
 	IsMessageBase64EncodedInput() interface{}
+	MaxTtl() *float64
+	SetMaxTtl(val *float64)
+	MaxTtlInput() *float64
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -110,6 +119,12 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ShouldTrackHops() interface{}
 	SetShouldTrackHops(val interface{})
 	ShouldTrackHopsInput() interface{}
+	SourceService() *string
+	SetSourceService(val *string)
+	SourceServiceInput() *string
+	TcpMethod() *string
+	SetTcpMethod(val *string)
+	TcpMethodInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +136,9 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
+	TracerouteQueries() *float64
+	SetTracerouteQueries(val *float64)
+	TracerouteQueriesInput() *float64
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -155,14 +173,17 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetCallType()
 	ResetCertificateDomains()
 	ResetCheckCertificateRevocation()
+	ResetDestinationService()
 	ResetDisableAiaIntermediateFetching()
 	ResetDnsServer()
 	ResetDnsServerPort()
+	ResetE2EQueries()
 	ResetFollowRedirects()
 	ResetForm()
 	ResetHost()
 	ResetHttpVersion()
 	ResetIsMessageBase64Encoded()
+	ResetMaxTtl()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -174,7 +195,10 @@ type SyntheticsTestApiStepRequestDefinitionOutputReference interface {
 	ResetServername()
 	ResetService()
 	ResetShouldTrackHops()
+	ResetSourceService()
+	ResetTcpMethod()
 	ResetTimeout()
+	ResetTracerouteQueries()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -361,6 +385,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Creati
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DestinationService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DestinationServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationServiceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DisableAiaIntermediateFetching() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -416,6 +460,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) DnsSer
 	_jsii_.Get(
 		j,
 		"dnsServerPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) E2EQueries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"e2EQueries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) E2EQueriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"e2EQueriesInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +600,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) IsMess
 	_jsii_.Get(
 		j,
 		"isMessageBase64EncodedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) MaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) MaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlInput",
 		&returns,
 	)
 	return returns
@@ -761,6 +845,46 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Should
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SourceService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) SourceServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) TcpMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tcpMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) TcpMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tcpMethodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -796,6 +920,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) Timeou
 	_jsii_.Get(
 		j,
 		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) TracerouteQueries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tracerouteQueries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) TracerouteQueriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tracerouteQueriesInput",
 		&returns,
 	)
 	return returns
@@ -948,6 +1092,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetComp
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDestinationService(val *string) {
+	if err := j.validateSetDestinationServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationService",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDisableAiaIntermediateFetching(val interface{}) {
 	if err := j.validateSetDisableAiaIntermediateFetchingParameters(val); err != nil {
 		panic(err)
@@ -977,6 +1132,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetDnsS
 	_jsii_.Set(
 		j,
 		"dnsServerPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetE2EQueries(val *float64) {
+	if err := j.validateSetE2EQueriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"e2EQueries",
 		val,
 	)
 }
@@ -1043,6 +1209,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetIsMe
 	_jsii_.Set(
 		j,
 		"isMessageBase64Encoded",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTtl",
 		val,
 	)
 }
@@ -1168,6 +1345,28 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetShou
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetSourceService(val *string) {
+	if err := j.validateSetSourceServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTcpMethod(val *string) {
+	if err := j.validateSetTcpMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpMethod",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -1197,6 +1396,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTime
 	_jsii_.Set(
 		j,
 		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference)SetTracerouteQueries(val *float64) {
+	if err := j.validateSetTracerouteQueriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tracerouteQueries",
 		val,
 	)
 }
@@ -1454,6 +1664,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetC
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetDestinationService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDestinationService",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetDisableAiaIntermediateFetching() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1474,6 +1692,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		s,
 		"resetDnsServerPort",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetE2EQueries() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetE2EQueries",
 		nil, // no parameters
 	)
 }
@@ -1514,6 +1740,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		s,
 		"resetIsMessageBase64Encoded",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetMaxTtl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMaxTtl",
 		nil, // no parameters
 	)
 }
@@ -1606,10 +1840,34 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetS
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetSourceService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceService",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetTcpMethod() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTcpMethod",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetTimeout() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) ResetTracerouteQueries() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTracerouteQueries",
 		nil, // no parameters
 	)
 }

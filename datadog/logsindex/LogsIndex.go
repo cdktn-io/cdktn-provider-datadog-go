@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index datadog_logs_index}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index datadog_logs_index}.
 type LogsIndex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -82,6 +82,9 @@ type LogsIndex interface {
 	RetentionDays() *float64
 	SetRetentionDays(val *float64)
 	RetentionDaysInput() *float64
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -145,6 +148,7 @@ type LogsIndex interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionDays()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -156,6 +160,15 @@ type LogsIndex interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LogsIndex
@@ -493,6 +506,26 @@ func (j *jsiiProxy_LogsIndex) RetentionDaysInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LogsIndex) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndex) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsIndex) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -524,7 +557,7 @@ func (j *jsiiProxy_LogsIndex) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfig) LogsIndex {
 	_init_.Initialize()
 
@@ -542,7 +575,7 @@ func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex_Override(l LogsIndex, scope constructs.Construct, id *string, config *LogsIndexConfig) {
 	_init_.Initialize()
 
@@ -694,6 +727,17 @@ func (j *jsiiProxy_LogsIndex)SetRetentionDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"retentionDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsIndex)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1156,6 +1200,14 @@ func (l *jsiiProxy_LogsIndex) ResetRetentionDays() {
 	)
 }
 
+func (l *jsiiProxy_LogsIndex) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsIndex) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -1228,6 +1280,24 @@ func (l *jsiiProxy_LogsIndex) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LogsIndex) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

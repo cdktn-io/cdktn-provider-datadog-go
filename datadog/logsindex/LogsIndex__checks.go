@@ -512,6 +512,14 @@ func (j *jsiiProxy_LogsIndex) validateSetRetentionDaysParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_LogsIndex) validateSetTagsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLogsIndexParameters(scope constructs.Construct, id *string, config *LogsIndexConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

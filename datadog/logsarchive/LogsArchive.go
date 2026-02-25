@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive datadog_logs_archive}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_archive datadog_logs_archive}.
 type LogsArchive interface {
 	cdktn.TerraformResource
 	AzureArchive() LogsArchiveAzureArchiveOutputReference
@@ -152,6 +152,15 @@ type LogsArchive interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LogsArchive
@@ -500,7 +509,7 @@ func (j *jsiiProxy_LogsArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveConfig) LogsArchive {
 	_init_.Initialize()
 
@@ -518,7 +527,7 @@ func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *string, config *LogsArchiveConfig) {
 	_init_.Initialize()
 
@@ -1185,6 +1194,24 @@ func (l *jsiiProxy_LogsArchive) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LogsArchive) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

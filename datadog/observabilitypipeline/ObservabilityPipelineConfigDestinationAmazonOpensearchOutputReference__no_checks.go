@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputR
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonOpensearchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

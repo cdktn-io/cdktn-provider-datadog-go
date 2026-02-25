@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 type WebhookCustomVariable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type WebhookCustomVariable interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WebhookCustomVariable
@@ -366,7 +375,7 @@ func (j *jsiiProxy_WebhookCustomVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) WebhookCustomVariable {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable_Override(w WebhookCustomVariable, scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) {
 	_init_.Initialize()
 
@@ -929,6 +938,24 @@ func (w *jsiiProxy_WebhookCustomVariable) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WebhookCustomVariable) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

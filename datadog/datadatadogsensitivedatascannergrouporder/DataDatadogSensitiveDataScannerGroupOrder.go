@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 type DataDatadogSensitiveDataScannerGroupOrder interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -95,6 +95,15 @@ type DataDatadogSensitiveDataScannerGroupOrder interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogSensitiveDataScannerGroupOrder
@@ -263,7 +272,7 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
 func NewDataDatadogSensitiveDataScannerGroupOrder(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerGroupOrderConfig) DataDatadogSensitiveDataScannerGroupOrder {
 	_init_.Initialize()
 
@@ -281,7 +290,7 @@ func NewDataDatadogSensitiveDataScannerGroupOrder(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Data Source.
 func NewDataDatadogSensitiveDataScannerGroupOrder_Override(d DataDatadogSensitiveDataScannerGroupOrder, scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerGroupOrderConfig) {
 	_init_.Initialize()
 
@@ -703,6 +712,24 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) ToTerraform() inte
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

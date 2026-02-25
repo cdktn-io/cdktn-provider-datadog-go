@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalMatching", GoGetter: "TotalMatching"},
 			_jsii_.MemberProperty{JsiiProperty: "totalReturned", GoGetter: "TotalReturned"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogHosts{}

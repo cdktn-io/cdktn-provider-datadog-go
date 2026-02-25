@@ -18,6 +18,8 @@ type ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference int
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,8 +80,10 @@ type ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference int
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	PutTls(value interface{})
 	ResetAuth()
+	ResetBuffer()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -131,6 +135,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutpu
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) Buffer() ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList {
+	var returns ObservabilityPipelineConfigDestinationAmazonSecurityLakeBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutpu
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) PutTls(value interface{}) {
 	if err := o.validatePutTlsParameters(value); err != nil {
 		panic(err)
@@ -594,6 +629,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutpu
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction datadog_slo_correction}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/slo_correction datadog_slo_correction}.
 type SloCorrection interface {
 	cdktn.TerraformResource
 	Category() *string
@@ -151,6 +151,15 @@ type SloCorrection interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SloCorrection
@@ -499,7 +508,7 @@ func (j *jsiiProxy_SloCorrection) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrectionConfig) SloCorrection {
 	_init_.Initialize()
 
@@ -517,7 +526,7 @@ func NewSloCorrection(scope constructs.Construct, id *string, config *SloCorrect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction datadog_slo_correction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/slo_correction datadog_slo_correction} Resource.
 func NewSloCorrection_Override(s SloCorrection, scope constructs.Construct, id *string, config *SloCorrectionConfig) {
 	_init_.Initialize()
 
@@ -1176,6 +1185,24 @@ func (s *jsiiProxy_SloCorrection) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SloCorrection) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

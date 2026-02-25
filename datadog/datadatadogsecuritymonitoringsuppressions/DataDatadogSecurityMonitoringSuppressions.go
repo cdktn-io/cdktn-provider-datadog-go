@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 type DataDatadogSecurityMonitoringSuppressions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -96,6 +96,15 @@ type DataDatadogSecurityMonitoringSuppressions interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogSecurityMonitoringSuppressions
@@ -274,7 +283,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressions) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) DataDatadogSecurityMonitoringSuppressions {
 	_init_.Initialize()
 
@@ -292,7 +301,7 @@ func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions_Override(d DataDatadogSecurityMonitoringSuppressions, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) {
 	_init_.Initialize()
 
@@ -714,6 +723,24 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringSuppressions) ToTerraform() inte
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogSecurityMonitoringSuppressions) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

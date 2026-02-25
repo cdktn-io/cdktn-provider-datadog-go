@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper struct {
 	// mapping block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 	Mapping interface{} `field:"optional" json:"mapping" yaml:"mapping"`
 }
 

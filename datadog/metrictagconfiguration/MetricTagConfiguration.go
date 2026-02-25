@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 type MetricTagConfiguration interface {
 	cdktn.TerraformResource
 	Aggregations() MetricTagConfigurationAggregationsList
@@ -143,6 +143,15 @@ type MetricTagConfiguration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MetricTagConfiguration
@@ -451,7 +460,7 @@ func (j *jsiiProxy_MetricTagConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) MetricTagConfiguration {
 	_init_.Initialize()
 
@@ -469,7 +478,7 @@ func NewMetricTagConfiguration(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 func NewMetricTagConfiguration_Override(m MetricTagConfiguration, scope constructs.Construct, id *string, config *MetricTagConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1099,24 @@ func (m *jsiiProxy_MetricTagConfiguration) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MetricTagConfiguration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_key_registration datadog_app_key_registration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration}.
 type AppKeyRegistration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -121,6 +121,15 @@ type AppKeyRegistration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AppKeyRegistration
@@ -309,7 +318,7 @@ func (j *jsiiProxy_AppKeyRegistration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
 func NewAppKeyRegistration(scope constructs.Construct, id *string, config *AppKeyRegistrationConfig) AppKeyRegistration {
 	_init_.Initialize()
 
@@ -327,7 +336,7 @@ func NewAppKeyRegistration(scope constructs.Construct, id *string, config *AppKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
 func NewAppKeyRegistration_Override(a AppKeyRegistration, scope constructs.Construct, id *string, config *AppKeyRegistrationConfig) {
 	_init_.Initialize()
 
@@ -850,6 +859,24 @@ func (a *jsiiProxy_AppKeyRegistration) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppKeyRegistration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

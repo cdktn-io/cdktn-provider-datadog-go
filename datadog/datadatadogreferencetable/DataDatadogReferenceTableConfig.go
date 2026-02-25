@@ -24,18 +24,18 @@ type DataDatadogReferenceTableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the reference table. Either id or table_name must be specified, but not both.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// schema block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
 	Schema *DataDatadogReferenceTableSchema `field:"optional" json:"schema" yaml:"schema"`
 	// The name of the reference table. Either id or table_name must be specified, but not both.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
 	TableName *string `field:"optional" json:"tableName" yaml:"tableName"`
 }
 

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) 
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) validatePutFramingParameters(value interface{}) error {
 	return nil
 }

@@ -21,6 +21,8 @@ type ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference int
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,9 +83,11 @@ type ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference int
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	PutMetadata(value interface{})
 	ResetAcl()
 	ResetAuth()
+	ResetBuffer()
 	ResetKeyPrefix()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutpu
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) Buffer() ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList {
+	var returns ObservabilityPipelineConfigDestinationGoogleCloudStorageBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -615,6 +639,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutpu
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) PutMetadata(value interface{}) {
 	if err := o.validatePutMetadataParameters(value); err != nil {
 		panic(err)
@@ -638,6 +673,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutpu
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleCloudStorageOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

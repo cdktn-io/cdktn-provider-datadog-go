@@ -5,13 +5,13 @@ package referencetable
 
 
 type ReferenceTableSchema struct {
-	// fields block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#fields ReferenceTable#fields}
-	Fields interface{} `field:"optional" json:"fields" yaml:"fields"`
 	// List of field names that serve as primary keys for the table. Currently only one primary key is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
-	PrimaryKeys *[]*string `field:"optional" json:"primaryKeys" yaml:"primaryKeys"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
+	PrimaryKeys *[]*string `field:"required" json:"primaryKeys" yaml:"primaryKeys"`
+	// fields block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#fields ReferenceTable#fields}
+	Fields interface{} `field:"optional" json:"fields" yaml:"fields"`
 }
 

@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	ApiVersion() *string
 	SetApiVersion(val *string)
 	ApiVersionInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationElasticsearchBufferList
+	BufferInput() interface{}
 	BulkIndex() *string
 	SetBulkIndex(val *string)
 	BulkIndexInput() *string
@@ -72,8 +74,10 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutDataStream(value interface{})
 	ResetApiVersion()
+	ResetBuffer()
 	ResetBulkIndex()
 	ResetDataStream()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Get(
 		j,
 		"apiVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) Buffer() ObservabilityPipelineConfigDestinationElasticsearchBufferList {
+	var returns ObservabilityPipelineConfigDestinationElasticsearchBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutDataStream(value interface{}) {
 	if err := o.validatePutDataStreamParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.InvokeVoid(
 		o,
 		"resetApiVersion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

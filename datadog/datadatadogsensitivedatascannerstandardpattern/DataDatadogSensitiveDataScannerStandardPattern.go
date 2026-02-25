@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
 type DataDatadogSensitiveDataScannerStandardPattern interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -105,6 +105,15 @@ type DataDatadogSensitiveDataScannerStandardPattern interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogSensitiveDataScannerStandardPattern
@@ -343,7 +352,7 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) DataDatadogSensitiveDataScannerStandardPattern {
 	_init_.Initialize()
 
@@ -361,7 +370,7 @@ func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern_Override(d DataDatadogSensitiveDataScannerStandardPattern, scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) {
 	_init_.Initialize()
 
@@ -813,6 +822,24 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) ToTerraform()
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

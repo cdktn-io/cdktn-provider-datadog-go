@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
 type GcpUcConfig interface {
 	cdktn.TerraformResource
 	BillingAccountId() *string
@@ -145,6 +145,15 @@ type GcpUcConfig interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for GcpUcConfig
@@ -513,7 +522,7 @@ func (j *jsiiProxy_GcpUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
 func NewGcpUcConfig(scope constructs.Construct, id *string, config *GcpUcConfigConfig) GcpUcConfig {
 	_init_.Initialize()
 
@@ -531,7 +540,7 @@ func NewGcpUcConfig(scope constructs.Construct, id *string, config *GcpUcConfigC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
 func NewGcpUcConfig_Override(g GcpUcConfig, scope constructs.Construct, id *string, config *GcpUcConfigConfig) {
 	_init_.Initialize()
 
@@ -1117,6 +1126,24 @@ func (g *jsiiProxy_GcpUcConfig) ToTerraform() interface{} {
 		g,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_GcpUcConfig) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		g,
+		"with",
+		args,
 		&returns,
 	)
 

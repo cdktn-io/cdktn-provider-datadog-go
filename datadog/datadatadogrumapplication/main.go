@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeFilter", GoGetter: "TypeFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "typeFilterInput", GoGetter: "TypeFilterInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogRumApplication{}

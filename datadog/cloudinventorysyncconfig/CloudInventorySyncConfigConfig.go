@@ -24,19 +24,19 @@ type CloudInventorySyncConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The cloud provider type. Valid values are `aws`, `azure`, `gcp`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
 	CloudProvider *string `field:"required" json:"cloudProvider" yaml:"cloudProvider"`
 	// aws block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
 	Aws *CloudInventorySyncConfigAws `field:"optional" json:"aws" yaml:"aws"`
 	// azure block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
 	Azure *CloudInventorySyncConfigAzure `field:"optional" json:"azure" yaml:"azure"`
 	// gcp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
 	Gcp *CloudInventorySyncConfigGcp `field:"optional" json:"gcp" yaml:"gcp"`
 }
 

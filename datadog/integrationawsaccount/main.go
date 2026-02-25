@@ -87,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tracesConfig", GoGetter: "TracesConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "tracesConfigInput", GoGetter: "TracesConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IntegrationAwsAccount{}

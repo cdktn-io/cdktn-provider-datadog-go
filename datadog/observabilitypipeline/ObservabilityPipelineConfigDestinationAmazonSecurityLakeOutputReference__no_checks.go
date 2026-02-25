@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutpu
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonSecurityLakeOutputReference) validatePutTlsParameters(value interface{}) error {
 	return nil
 }

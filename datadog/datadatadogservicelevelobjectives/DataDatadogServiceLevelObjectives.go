@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 type DataDatadogServiceLevelObjectives interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -122,6 +122,15 @@ type DataDatadogServiceLevelObjectives interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogServiceLevelObjectives
@@ -420,7 +429,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives {
 	_init_.Initialize()
 
@@ -438,7 +447,7 @@ func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObjectives, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) {
 	_init_.Initialize()
 
@@ -993,6 +1002,24 @@ func (d *jsiiProxy_DataDatadogServiceLevelObjectives) ToTerraform() interface{} 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogServiceLevelObjectives) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

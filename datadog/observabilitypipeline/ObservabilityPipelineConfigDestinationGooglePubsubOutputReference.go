@@ -15,6 +15,8 @@ type ObservabilityPipelineConfigDestinationGooglePubsubOutputReference interface
 	cdktn.ComplexObject
 	Auth() ObservabilityPipelineConfigDestinationGooglePubsubAuthList
 	AuthInput() interface{}
+	Buffer() ObservabilityPipelineConfigDestinationGooglePubsubBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,8 +80,10 @@ type ObservabilityPipelineConfigDestinationGooglePubsubOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
+	PutBuffer(value interface{})
 	PutTls(value interface{})
 	ResetAuth()
+	ResetBuffer()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -111,6 +115,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	_jsii_.Get(
 		j,
 		"authInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) Buffer() ObservabilityPipelineConfigDestinationGooglePubsubBufferList {
+	var returns ObservabilityPipelineConfigDestinationGooglePubsubBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) PutTls(value interface{}) {
 	if err := o.validatePutTlsParameters(value); err != nil {
 		panic(err)
@@ -594,6 +629,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

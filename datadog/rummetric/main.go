@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueness", GoGetter: "Uniqueness"},
 			_jsii_.MemberProperty{JsiiProperty: "uniquenessInput", GoGetter: "UniquenessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RumMetric{}

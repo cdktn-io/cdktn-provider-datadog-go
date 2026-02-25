@@ -7,7 +7,7 @@ package teamnotificationrule
 type TeamNotificationRuleMsTeams struct {
 	// MS Teams connector name used to route notifications to the appropriate channel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
 	ConnectorName *string `field:"optional" json:"connectorName" yaml:"connectorName"`
 }
 

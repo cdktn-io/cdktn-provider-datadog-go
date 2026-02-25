@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
 type DataDatadogTagPipelineRuleset interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -104,6 +104,15 @@ type DataDatadogTagPipelineRuleset interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogTagPipelineRuleset
@@ -332,7 +341,7 @@ func (j *jsiiProxy_DataDatadogTagPipelineRuleset) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) DataDatadogTagPipelineRuleset {
 	_init_.Initialize()
 
@@ -350,7 +359,7 @@ func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset_Override(d DataDatadogTagPipelineRuleset, scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) {
 	_init_.Initialize()
 
@@ -802,6 +811,24 @@ func (d *jsiiProxy_DataDatadogTagPipelineRuleset) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogTagPipelineRuleset) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validatePutCompressionParameters(value interface{}) error {
 	return nil
 }

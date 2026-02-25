@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset datadog_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/dataset datadog_dataset}.
 type Dataset interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -131,6 +131,15 @@ type Dataset interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Dataset
@@ -389,7 +398,7 @@ func (j *jsiiProxy_Dataset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset datadog_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/dataset datadog_dataset} Resource.
 func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) Dataset {
 	_init_.Initialize()
 
@@ -407,7 +416,7 @@ func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset datadog_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/dataset datadog_dataset} Resource.
 func NewDataset_Override(d Dataset, scope constructs.Construct, id *string, config *DatasetConfig) {
 	_init_.Initialize()
 
@@ -960,6 +969,24 @@ func (d *jsiiProxy_Dataset) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_Dataset) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

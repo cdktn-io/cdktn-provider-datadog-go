@@ -24,27 +24,27 @@ type DatastoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for the new datastore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/datastore#name Datastore#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore#name Datastore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the primary key column for this datastore.
 	//
 	// Primary column names:   - Must abide by both [PostgreSQL naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)   - Cannot exceed 63 characters
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
 	PrimaryColumnName *string `field:"required" json:"primaryColumnName" yaml:"primaryColumnName"`
 	// A human-readable description about the datastore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/datastore#description Datastore#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore#description Datastore#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The organization access level for the datastore. For example, 'contributor'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/datastore#org_access Datastore#org_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore#org_access Datastore#org_access}
 	OrgAccess *string `field:"optional" json:"orgAccess" yaml:"orgAccess"`
 	// Can be set to `uuid` to automatically generate primary keys when new items are added.
 	//
 	// Default value is `none`, which requires you to supply a primary key for each new item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
 	PrimaryKeyGenerationStrategy *string `field:"optional" json:"primaryKeyGenerationStrategy" yaml:"primaryKeyGenerationStrategy"`
 }
 

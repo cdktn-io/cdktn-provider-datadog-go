@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGoogleSecopsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

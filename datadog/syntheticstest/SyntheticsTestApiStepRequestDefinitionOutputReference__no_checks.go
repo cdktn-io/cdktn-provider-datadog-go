@@ -87,6 +87,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDestinationServiceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDisableAiaIntermediateFetchingParameters(val interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetE2EQueriesParameters(val *float64) error {
 	return nil
 }
 
@@ -120,6 +128,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetIsMessageBase64EncodedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetMaxTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -167,6 +179,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetSourceServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetTcpMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -176,6 +196,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) valida
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestDefinitionOutputReference) validateSetTracerouteQueriesParameters(val *float64) error {
 	return nil
 }
 

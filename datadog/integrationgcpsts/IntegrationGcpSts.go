@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktn.TerraformResource
 	AccountTags() *[]*string
@@ -175,6 +175,15 @@ type IntegrationGcpSts interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IntegrationGcpSts
@@ -643,7 +652,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -661,7 +670,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 
@@ -1431,6 +1440,24 @@ func (i *jsiiProxy_IntegrationGcpSts) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

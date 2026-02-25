@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationOpensearchOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationOpensearchBufferList
+	BufferInput() interface{}
 	BulkIndex() *string
 	SetBulkIndex(val *string)
 	BulkIndexInput() *string
@@ -69,7 +71,9 @@ type ObservabilityPipelineConfigDestinationOpensearchOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutDataStream(value interface{})
+	ResetBuffer()
 	ResetBulkIndex()
 	ResetDataStream()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type ObservabilityPipelineConfigDestinationOpensearchOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationOpensearchOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) Buffer() ObservabilityPipelineConfigDestinationOpensearchBufferList {
+	var returns ObservabilityPipelineConfigDestinationOpensearchBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) BulkIndex() *string {
@@ -477,6 +501,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReferen
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) PutDataStream(value interface{}) {
 	if err := o.validatePutDataStreamParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReferen
 		o,
 		"putDataStream",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
 	)
 }
 

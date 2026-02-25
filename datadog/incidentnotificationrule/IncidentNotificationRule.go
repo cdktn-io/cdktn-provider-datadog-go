@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
 type IncidentNotificationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -150,6 +150,15 @@ type IncidentNotificationRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IncidentNotificationRule
@@ -508,7 +517,7 @@ func (j *jsiiProxy_IncidentNotificationRule) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule(scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) IncidentNotificationRule {
 	_init_.Initialize()
 
@@ -526,7 +535,7 @@ func NewIncidentNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule_Override(i IncidentNotificationRule, scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) {
 	_init_.Initialize()
 
@@ -1166,6 +1175,24 @@ func (i *jsiiProxy_IncidentNotificationRule) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IncidentNotificationRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

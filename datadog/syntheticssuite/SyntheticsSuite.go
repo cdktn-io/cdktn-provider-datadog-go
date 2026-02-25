@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
 type SyntheticsSuite interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -138,6 +138,15 @@ type SyntheticsSuite interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SyntheticsSuite
@@ -416,7 +425,7 @@ func (j *jsiiProxy_SyntheticsSuite) TestsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
 func NewSyntheticsSuite(scope constructs.Construct, id *string, config *SyntheticsSuiteConfig) SyntheticsSuite {
 	_init_.Initialize()
 
@@ -434,7 +443,7 @@ func NewSyntheticsSuite(scope constructs.Construct, id *string, config *Syntheti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
 func NewSyntheticsSuite_Override(s SyntheticsSuite, scope constructs.Construct, id *string, config *SyntheticsSuiteConfig) {
 	_init_.Initialize()
 
@@ -1033,6 +1042,24 @@ func (s *jsiiProxy_SyntheticsSuite) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SyntheticsSuite) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

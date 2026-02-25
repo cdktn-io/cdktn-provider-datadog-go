@@ -96,6 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueWoInput", GoGetter: "ValueWoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueWoVersion", GoGetter: "ValueWoVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "valueWoVersionInput", GoGetter: "ValueWoVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsGlobalVariable{}

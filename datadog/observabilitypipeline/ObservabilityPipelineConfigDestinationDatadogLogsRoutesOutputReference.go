@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference inte
 	ApiKeyKey() *string
 	SetApiKeyKey(val *string)
 	ApiKeyKeyInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +78,8 @@ type ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
+	ResetBuffer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -106,6 +110,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutput
 	_jsii_.Get(
 		j,
 		"apiKeyKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference) Buffer() ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList {
+	var returns ObservabilityPipelineConfigDestinationDatadogLogsRoutesBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -552,6 +576,25 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutput
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsRoutesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

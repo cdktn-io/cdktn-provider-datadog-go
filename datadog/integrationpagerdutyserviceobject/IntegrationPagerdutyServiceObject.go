@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
 type IntegrationPagerdutyServiceObject interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type IntegrationPagerdutyServiceObject interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IntegrationPagerdutyServiceObject
@@ -356,7 +365,7 @@ func (j *jsiiProxy_IntegrationPagerdutyServiceObject) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
 func NewIntegrationPagerdutyServiceObject(scope constructs.Construct, id *string, config *IntegrationPagerdutyServiceObjectConfig) IntegrationPagerdutyServiceObject {
 	_init_.Initialize()
 
@@ -374,7 +383,7 @@ func NewIntegrationPagerdutyServiceObject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
 func NewIntegrationPagerdutyServiceObject_Override(i IntegrationPagerdutyServiceObject, scope constructs.Construct, id *string, config *IntegrationPagerdutyServiceObjectConfig) {
 	_init_.Initialize()
 
@@ -927,6 +936,24 @@ func (i *jsiiProxy_IntegrationPagerdutyServiceObject) ToTerraform() interface{} 
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IntegrationPagerdutyServiceObject) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

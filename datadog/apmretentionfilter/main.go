@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "traceRate", GoGetter: "TraceRate"},
 			_jsii_.MemberProperty{JsiiProperty: "traceRateInput", GoGetter: "TraceRateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ApmRetentionFilter{}

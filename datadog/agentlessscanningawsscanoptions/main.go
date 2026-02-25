@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vulnContainersOsInput", GoGetter: "VulnContainersOsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vulnHostOs", GoGetter: "VulnHostOs"},
 			_jsii_.MemberProperty{JsiiProperty: "vulnHostOsInput", GoGetter: "VulnHostOsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentlessScanningAwsScanOptions{}

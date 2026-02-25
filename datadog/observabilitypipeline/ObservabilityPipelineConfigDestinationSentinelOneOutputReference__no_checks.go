@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputRefere
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -7,7 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationNewRelic struct {
 	// The New Relic region.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
+	// buffer block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
 }
 

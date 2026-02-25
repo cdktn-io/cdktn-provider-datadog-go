@@ -198,6 +198,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDestinationServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -207,6 +215,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDn
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetDnsServerPortParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetE2EQueriesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -261,6 +277,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetIs
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMaxTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -390,6 +414,22 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetSh
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetSourceServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTcpMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -407,6 +447,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTe
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTracerouteQueriesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

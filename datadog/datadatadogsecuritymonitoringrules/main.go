@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userOnlyFilter", GoGetter: "UserOnlyFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "userOnlyFilterInput", GoGetter: "UserOnlyFilterInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataDatadogSecurityMonitoringRules{}

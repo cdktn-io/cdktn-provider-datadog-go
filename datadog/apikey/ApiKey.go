@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key}.
 type ApiKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -127,6 +127,15 @@ type ApiKey interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ApiKey
@@ -355,7 +364,7 @@ func (j *jsiiProxy_ApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) ApiKey {
 	_init_.Initialize()
 
@@ -373,7 +382,7 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey_Override(a ApiKey, scope constructs.Construct, id *string, config *ApiKeyConfig) {
 	_init_.Initialize()
 
@@ -915,6 +924,24 @@ func (a *jsiiProxy_ApiKey) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiKey) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

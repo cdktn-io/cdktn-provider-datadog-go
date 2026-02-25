@@ -24,25 +24,25 @@ type DeploymentGateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The target environment (example: dev).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/deployment_gate#env DeploymentGate#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/deployment_gate#env DeploymentGate#env}
 	Env *string `field:"required" json:"env" yaml:"env"`
 	// The service name (example: transaction-backend).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/deployment_gate#service DeploymentGate#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/deployment_gate#service DeploymentGate#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// Enable Dry Run to test gate behavior without impacting deployments.
 	//
 	// The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 	DryRun interface{} `field:"optional" json:"dryRun" yaml:"dryRun"`
 	// Unique name for multiple gates on the same service/environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 	Identifier *string `field:"optional" json:"identifier" yaml:"identifier"`
 	// rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 	Rule interface{} `field:"optional" json:"rule" yaml:"rule"`
 }
 

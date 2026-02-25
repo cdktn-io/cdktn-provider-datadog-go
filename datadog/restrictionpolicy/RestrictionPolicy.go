@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy datadog_restriction_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/restriction_policy datadog_restriction_policy}.
 type RestrictionPolicy interface {
 	cdktn.TerraformResource
 	Bindings() RestrictionPolicyBindingsList
@@ -126,6 +126,15 @@ type RestrictionPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for RestrictionPolicy
@@ -344,7 +353,7 @@ func (j *jsiiProxy_RestrictionPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
 func NewRestrictionPolicy(scope constructs.Construct, id *string, config *RestrictionPolicyConfig) RestrictionPolicy {
 	_init_.Initialize()
 
@@ -362,7 +371,7 @@ func NewRestrictionPolicy(scope constructs.Construct, id *string, config *Restri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/restriction_policy datadog_restriction_policy} Resource.
 func NewRestrictionPolicy_Override(r RestrictionPolicy, scope constructs.Construct, id *string, config *RestrictionPolicyConfig) {
 	_init_.Initialize()
 
@@ -904,6 +913,24 @@ func (r *jsiiProxy_RestrictionPolicy) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RestrictionPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

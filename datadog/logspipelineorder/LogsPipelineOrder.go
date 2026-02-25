@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order}.
 type LogsPipelineOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type LogsPipelineOrder interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LogsPipelineOrder
@@ -356,7 +365,7 @@ func (j *jsiiProxy_LogsPipelineOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) LogsPipelineOrder {
 	_init_.Initialize()
 
@@ -374,7 +383,7 @@ func NewLogsPipelineOrder(scope constructs.Construct, id *string, config *LogsPi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 func NewLogsPipelineOrder_Override(l LogsPipelineOrder, scope constructs.Construct, id *string, config *LogsPipelineOrderConfig) {
 	_init_.Initialize()
 
@@ -927,6 +936,24 @@ func (l *jsiiProxy_LogsPipelineOrder) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LogsPipelineOrder) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

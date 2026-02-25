@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationSocketBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,8 +76,10 @@ type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutFraming(value interface{})
 	PutTls(value interface{})
+	ResetBuffer()
 	ResetFraming()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -91,6 +95,26 @@ type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationSocketOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) Buffer() ObservabilityPipelineConfigDestinationSocketBufferList {
+	var returns ObservabilityPipelineConfigDestinationSocketBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) ComplexObjectIndex() interface{} {
@@ -534,6 +558,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) 
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) PutFraming(value interface{}) {
 	if err := o.validatePutFramingParameters(value); err != nil {
 		panic(err)
@@ -553,6 +588,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) 
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/software_catalog datadog_software_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog}.
 type SoftwareCatalog interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -122,6 +122,15 @@ type SoftwareCatalog interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for SoftwareCatalog
@@ -320,7 +329,7 @@ func (j *jsiiProxy_SoftwareCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/software_catalog datadog_software_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog} Resource.
 func NewSoftwareCatalog(scope constructs.Construct, id *string, config *SoftwareCatalogConfig) SoftwareCatalog {
 	_init_.Initialize()
 
@@ -338,7 +347,7 @@ func NewSoftwareCatalog(scope constructs.Construct, id *string, config *Software
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/software_catalog datadog_software_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog} Resource.
 func NewSoftwareCatalog_Override(s SoftwareCatalog, scope constructs.Construct, id *string, config *SoftwareCatalogConfig) {
 	_init_.Initialize()
 
@@ -861,6 +870,24 @@ func (s *jsiiProxy_SoftwareCatalog) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SoftwareCatalog) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

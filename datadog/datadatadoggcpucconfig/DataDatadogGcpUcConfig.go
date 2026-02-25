@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
 type DataDatadogGcpUcConfig interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -109,6 +109,15 @@ type DataDatadogGcpUcConfig interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataDatadogGcpUcConfig
@@ -407,7 +416,7 @@ func (j *jsiiProxy_DataDatadogGcpUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) DataDatadogGcpUcConfig {
 	_init_.Initialize()
 
@@ -425,7 +434,7 @@ func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig_Override(d DataDatadogGcpUcConfig, scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) {
 	_init_.Initialize()
 
@@ -858,6 +867,24 @@ func (d *jsiiProxy_DataDatadogGcpUcConfig) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataDatadogGcpUcConfig) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

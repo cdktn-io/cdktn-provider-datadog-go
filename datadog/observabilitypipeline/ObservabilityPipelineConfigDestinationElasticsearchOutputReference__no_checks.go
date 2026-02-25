@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutDataStreamParameters(value interface{}) error {
 	return nil
 }

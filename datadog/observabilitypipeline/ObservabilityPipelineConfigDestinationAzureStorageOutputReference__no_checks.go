@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

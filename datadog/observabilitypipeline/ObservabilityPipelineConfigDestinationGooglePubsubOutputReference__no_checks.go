@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) validatePutTlsParameters(value interface{}) error {
 	return nil
 }

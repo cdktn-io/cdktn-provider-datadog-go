@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

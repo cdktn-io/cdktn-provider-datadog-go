@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference)
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) validatePutTlsParameters(value interface{}) error {
 	return nil
 }

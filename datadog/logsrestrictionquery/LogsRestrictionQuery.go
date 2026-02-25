@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
 type LogsRestrictionQuery interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type LogsRestrictionQuery interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LogsRestrictionQuery
@@ -366,7 +375,7 @@ func (j *jsiiProxy_LogsRestrictionQuery) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
 func NewLogsRestrictionQuery(scope constructs.Construct, id *string, config *LogsRestrictionQueryConfig) LogsRestrictionQuery {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewLogsRestrictionQuery(scope constructs.Construct, id *string, config *Log
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
 func NewLogsRestrictionQuery_Override(l LogsRestrictionQuery, scope constructs.Construct, id *string, config *LogsRestrictionQueryConfig) {
 	_init_.Initialize()
 
@@ -926,6 +935,24 @@ func (l *jsiiProxy_LogsRestrictionQuery) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LogsRestrictionQuery) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

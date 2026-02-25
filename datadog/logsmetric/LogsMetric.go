@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric datadog_logs_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric}.
 type LogsMetric interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -135,6 +135,15 @@ type LogsMetric interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LogsMetric
@@ -403,7 +412,7 @@ func (j *jsiiProxy_LogsMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricConfig) LogsMetric {
 	_init_.Initialize()
 
@@ -421,7 +430,7 @@ func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric_Override(l LogsMetric, scope constructs.Construct, id *string, config *LogsMetricConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1013,24 @@ func (l *jsiiProxy_LogsMetric) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LogsMetric) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

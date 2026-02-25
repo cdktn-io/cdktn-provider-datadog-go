@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReferen
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validatePutDataStreamParameters(value interface{}) error {
 	return nil
 }

@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList
+	BufferInput() interface{}
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -76,6 +78,8 @@ type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
+	ResetBuffer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -89,6 +93,26 @@ type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference inte
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) Buffer() ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList {
+	var returns ObservabilityPipelineConfigDestinationMicrosoftSentinelBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ClientId() *string {
@@ -552,6 +576,25 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

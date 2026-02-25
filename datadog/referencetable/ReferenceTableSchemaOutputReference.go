@@ -71,7 +71,6 @@ type ReferenceTableSchemaOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFields(value interface{})
 	ResetFields()
-	ResetPrimaryKeys()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -492,14 +491,6 @@ func (r *jsiiProxy_ReferenceTableSchemaOutputReference) ResetFields() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetFields",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_ReferenceTableSchemaOutputReference) ResetPrimaryKeys() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPrimaryKeys",
 		nil, // no parameters
 	)
 }

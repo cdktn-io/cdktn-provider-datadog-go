@@ -167,6 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateInput", GoGetter: "ValidateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
 			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Monitor{}

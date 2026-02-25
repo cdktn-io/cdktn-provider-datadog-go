@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,8 +73,10 @@ type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutCompression(value interface{})
 	PutTls(value interface{})
+	ResetBuffer()
 	ResetCompression()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) Buffer() ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList {
+	var returns ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) ComplexObjectIndex() interface{} {
@@ -500,6 +524,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) PutCompression(value interface{}) {
 	if err := o.validatePutCompressionParameters(value); err != nil {
 		panic(err)
@@ -519,6 +554,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
 	)
 }
 

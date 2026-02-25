@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationAzureStorageOutputReference interface
 	BlobPrefix() *string
 	SetBlobPrefix(val *string)
 	BlobPrefixInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationAzureStorageBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,7 +72,9 @@ type ObservabilityPipelineConfigDestinationAzureStorageOutputReference interface
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	ResetBlobPrefix()
+	ResetBuffer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -101,6 +105,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	_jsii_.Get(
 		j,
 		"blobPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) Buffer() ObservabilityPipelineConfigDestinationAzureStorageBufferList {
+	var returns ObservabilityPipelineConfigDestinationAzureStorageBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +511,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) ResetBlobPrefix() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetBlobPrefix",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

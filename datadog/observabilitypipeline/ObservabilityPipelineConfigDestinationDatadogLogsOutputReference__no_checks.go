@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsOutputRefere
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatadogLogsOutputReference) validatePutRoutesParameters(value interface{}) error {
 	return nil
 }
