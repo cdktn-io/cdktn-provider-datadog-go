@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigSourceSplunkTcpOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,7 @@ type ObservabilityPipelineConfigSourceSplunkTcpOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	ResetAddressKey()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type ObservabilityPipelineConfigSourceSplunkTcpOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigSourceSplunkTcpOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference) ComplexObjectIndex() interface{} {
@@ -198,6 +222,17 @@ func NewObservabilityPipelineConfigSourceSplunkTcpOutputReference_Override(o Obs
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkTcpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -450,6 +485,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference) Pu
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
 	)
 }
 

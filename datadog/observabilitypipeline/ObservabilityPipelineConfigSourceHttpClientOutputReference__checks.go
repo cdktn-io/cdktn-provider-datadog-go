@@ -205,7 +205,23 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetCustomKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetDecodingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,6 +253,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetPasswordKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetScrapeIntervalSecsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -262,6 +286,22 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) v
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

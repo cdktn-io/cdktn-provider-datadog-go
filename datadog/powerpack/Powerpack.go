@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/powerpack datadog_powerpack}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/powerpack datadog_powerpack}.
 type Powerpack interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_Powerpack) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/powerpack datadog_powerpack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/powerpack datadog_powerpack} Resource.
 func NewPowerpack(scope constructs.Construct, id *string, config *PowerpackConfig) Powerpack {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewPowerpack(scope constructs.Construct, id *string, config *PowerpackConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/powerpack datadog_powerpack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/powerpack datadog_powerpack} Resource.
 func NewPowerpack_Override(p Powerpack, scope constructs.Construct, id *string, config *PowerpackConfig) {
 	_init_.Initialize()
 

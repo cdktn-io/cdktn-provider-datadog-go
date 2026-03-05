@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs datadog}.
 type DatadogProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -579,7 +579,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 

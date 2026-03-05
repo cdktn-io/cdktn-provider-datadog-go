@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	Auth() ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthList
 	AuthInput() interface{}
 	// the index of the complex object in a list.
@@ -70,6 +73,7 @@ type ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference interfac
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
 	PutTls(value interface{})
+	ResetAddressKey()
 	ResetAuth()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference interfac
 // The jsii proxy struct for ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) Auth() ObservabilityPipelineConfigSourceAmazonDataFirehoseAuthList {
@@ -222,6 +246,17 @@ func NewObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference_Overr
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputRefe
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
 	)
 }
 

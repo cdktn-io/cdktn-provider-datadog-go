@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

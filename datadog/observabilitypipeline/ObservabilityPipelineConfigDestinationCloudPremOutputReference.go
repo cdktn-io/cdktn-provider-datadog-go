@@ -28,6 +28,9 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -64,6 +67,7 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetEndpointUrlKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
 		&returns,
 	)
 	return returns
@@ -195,6 +219,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
 		val,
 	)
 }
@@ -416,6 +451,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

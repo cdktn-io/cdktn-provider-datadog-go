@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceFluentdOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentdOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -24,15 +24,15 @@ type DatastoreItemConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier of the datastore containing this item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
 	DatastoreId *string `field:"required" json:"datastoreId" yaml:"datastoreId"`
 	// The primary key value that identifies this item. Cannot exceed 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
 	ItemKey *string `field:"required" json:"itemKey" yaml:"itemKey"`
 	// The data content (as key-value pairs) of the datastore item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item#value DatastoreItem#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item#value DatastoreItem#value}
 	Value *map[string]*string `field:"required" json:"value" yaml:"value"`
 }
 

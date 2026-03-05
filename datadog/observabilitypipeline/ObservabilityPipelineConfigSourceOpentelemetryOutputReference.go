@@ -30,6 +30,12 @@ type ObservabilityPipelineConfigSourceOpentelemetryOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GrpcAddressKey() *string
+	SetGrpcAddressKey(val *string)
+	GrpcAddressKeyInput() *string
+	HttpAddressKey() *string
+	SetHttpAddressKey(val *string)
+	HttpAddressKeyInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -67,6 +73,8 @@ type ObservabilityPipelineConfigSourceOpentelemetryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	ResetGrpcAddressKey()
+	ResetHttpAddressKey()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +126,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) GrpcAddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grpcAddressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) GrpcAddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grpcAddressKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) HttpAddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpAddressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) HttpAddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpAddressKeyInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +267,28 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference)SetGrpcAddressKey(val *string) {
+	if err := j.validateSetGrpcAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grpcAddressKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference)SetHttpAddressKey(val *string) {
+	if err := j.validateSetHttpAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpAddressKey",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) ResetGrpcAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGrpcAddressKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) ResetHttpAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHttpAddressKey",
+		nil, // no parameters
 	)
 }
 

@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

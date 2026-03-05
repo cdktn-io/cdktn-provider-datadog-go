@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpTlsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

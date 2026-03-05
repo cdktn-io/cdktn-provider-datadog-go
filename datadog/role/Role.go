@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/role datadog_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/role datadog_role}.
 type Role interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_Role) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/role datadog_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/role datadog_role} Resource.
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/role datadog_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/role datadog_role} Resource.
 func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
 	_init_.Initialize()
 

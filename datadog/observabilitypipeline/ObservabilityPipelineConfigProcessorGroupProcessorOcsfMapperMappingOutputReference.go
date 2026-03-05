@@ -28,6 +28,8 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputRe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMapping() ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList
+	CustomMappingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Include() *string
@@ -70,6 +72,9 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputRe
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCustomMapping(value interface{})
+	ResetCustomMapping()
+	ResetLibraryMapping()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -110,6 +115,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) CustomMapping() ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingList
+	_jsii_.Get(
+		j,
+		"customMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) CustomMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMappingInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +509,33 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) PutCustomMapping(value interface{}) {
+	if err := o.validatePutCustomMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCustomMapping",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) ResetCustomMapping() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCustomMapping",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) ResetLibraryMapping() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLibraryMapping",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

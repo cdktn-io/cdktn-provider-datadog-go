@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorRenameFields struct {
 	// field block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 	Field interface{} `field:"optional" json:"field" yaml:"field"`
 }
 

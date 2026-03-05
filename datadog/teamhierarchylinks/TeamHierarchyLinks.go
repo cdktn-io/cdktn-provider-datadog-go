@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
 type TeamHierarchyLinks interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_TeamHierarchyLinks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
 func NewTeamHierarchyLinks(scope constructs.Construct, id *string, config *TeamHierarchyLinksConfig) TeamHierarchyLinks {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewTeamHierarchyLinks(scope constructs.Construct, id *string, config *TeamH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource.
 func NewTeamHierarchyLinks_Override(t TeamHierarchyLinks, scope constructs.Construct, id *string, config *TeamHierarchyLinksConfig) {
 	_init_.Initialize()
 

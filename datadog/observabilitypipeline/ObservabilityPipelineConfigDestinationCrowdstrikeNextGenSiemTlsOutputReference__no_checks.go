@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemT
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

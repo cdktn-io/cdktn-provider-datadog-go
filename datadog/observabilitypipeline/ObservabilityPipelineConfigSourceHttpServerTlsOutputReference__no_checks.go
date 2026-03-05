@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerTlsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

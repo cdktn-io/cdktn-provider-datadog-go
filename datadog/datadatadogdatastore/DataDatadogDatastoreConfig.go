@@ -24,7 +24,7 @@ type DataDatadogDatastoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier of the datastore to retrieve. If not specified, returns a single datastore from the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/datastore#datastore_id DataDatadogDatastore#datastore_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/datastore#datastore_id DataDatadogDatastore#datastore_id}
 	DatastoreId *string `field:"optional" json:"datastoreId" yaml:"datastoreId"`
 }
 

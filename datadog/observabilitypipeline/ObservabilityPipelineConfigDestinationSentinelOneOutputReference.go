@@ -45,6 +45,9 @@ type ObservabilityPipelineConfigDestinationSentinelOneOutputReference interface 
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TokenKey() *string
+	SetTokenKey(val *string)
+	TokenKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type ObservabilityPipelineConfigDestinationSentinelOneOutputReference interface 
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBuffer(value interface{})
 	ResetBuffer()
+	ResetTokenKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference) TokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference) TokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigDestinationSentinelOneOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSentinelOneOutputReference {
 	_init_.Initialize()
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputRefere
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference)SetTokenKey(val *string) {
+	if err := j.validateSetTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenKey",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputRefere
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSentinelOneOutputReference) ResetTokenKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenKey",
 		nil, // no parameters
 	)
 }

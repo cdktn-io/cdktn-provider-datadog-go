@@ -47,6 +47,9 @@ type ObservabilityPipelineConfigSourceAmazonS3OutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigSourceAmazonS3TlsList
 	TlsInput() interface{}
+	UrlKey() *string
+	SetUrlKey(val *string)
+	UrlKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type ObservabilityPipelineConfigSourceAmazonS3OutputReference interface {
 	PutTls(value interface{})
 	ResetAuth()
 	ResetTls()
+	ResetUrlKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -220,6 +224,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) Tls
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) UrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) UrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceAmazonS3OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceAmazonS3OutputReference {
 	_init_.Initialize()
@@ -310,6 +334,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference)SetT
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference)SetUrlKey(val *string) {
+	if err := j.validateSetUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"urlKey",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) Res
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) ResetUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUrlKey",
 		nil, // no parameters
 	)
 }

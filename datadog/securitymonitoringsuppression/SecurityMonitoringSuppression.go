@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression}.
 type SecurityMonitoringSuppression interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -543,7 +543,7 @@ func (j *jsiiProxy_SecurityMonitoringSuppression) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewSecurityMonitoringSuppression(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_suppression datadog_security_monitoring_suppression} Resource.
 func NewSecurityMonitoringSuppression_Override(s SecurityMonitoringSuppression, scope constructs.Construct, id *string, config *SecurityMonitoringSuppressionConfig) {
 	_init_.Initialize()
 

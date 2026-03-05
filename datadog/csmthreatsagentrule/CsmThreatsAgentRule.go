@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 type CsmThreatsAgentRule interface {
 	cdktn.TerraformResource
 	Actions() CsmThreatsAgentRuleActionsList
@@ -496,7 +496,7 @@ func (j *jsiiProxy_CsmThreatsAgentRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
 func NewCsmThreatsAgentRule(scope constructs.Construct, id *string, config *CsmThreatsAgentRuleConfig) CsmThreatsAgentRule {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewCsmThreatsAgentRule(scope constructs.Construct, id *string, config *CsmT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource.
 func NewCsmThreatsAgentRule_Override(c CsmThreatsAgentRule, scope constructs.Construct, id *string, config *CsmThreatsAgentRuleConfig) {
 	_init_.Initialize()
 

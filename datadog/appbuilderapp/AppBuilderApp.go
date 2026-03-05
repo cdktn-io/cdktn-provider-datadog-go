@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_builder_app datadog_app_builder_app}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_builder_app datadog_app_builder_app}.
 type AppBuilderApp interface {
 	cdktn.TerraformResource
 	ActionQueryNamesToConnectionIds() *map[string]*string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_AppBuilderApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_builder_app datadog_app_builder_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_builder_app datadog_app_builder_app} Resource.
 func NewAppBuilderApp(scope constructs.Construct, id *string, config *AppBuilderAppConfig) AppBuilderApp {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewAppBuilderApp(scope constructs.Construct, id *string, config *AppBuilder
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_builder_app datadog_app_builder_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_builder_app datadog_app_builder_app} Resource.
 func NewAppBuilderApp_Override(a AppBuilderApp, scope constructs.Construct, id *string, config *AppBuilderAppConfig) {
 	_init_.Initialize()
 

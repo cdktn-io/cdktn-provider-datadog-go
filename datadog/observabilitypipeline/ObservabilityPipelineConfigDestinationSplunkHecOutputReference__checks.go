@@ -225,6 +225,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetIndexParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -274,6 +282,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTokenKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

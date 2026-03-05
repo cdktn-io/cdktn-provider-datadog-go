@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_confluent_account datadog_integration_confluent_account}.
 type IntegrationConfluentAccount interface {
 	cdktn.TerraformResource
 	ApiKey() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_IntegrationConfluentAccount) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
 func NewIntegrationConfluentAccount(scope constructs.Construct, id *string, config *IntegrationConfluentAccountConfig) IntegrationConfluentAccount {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewIntegrationConfluentAccount(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_confluent_account datadog_integration_confluent_account} Resource.
 func NewIntegrationConfluentAccount_Override(i IntegrationConfluentAccount, scope constructs.Construct, id *string, config *IntegrationConfluentAccountConfig) {
 	_init_.Initialize()
 

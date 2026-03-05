@@ -35,6 +35,9 @@ type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -49,6 +52,9 @@ type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTlsList
 	TlsInput() interface{}
+	TokenKey() *string
+	SetTokenKey(val *string)
+	TokenKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -78,7 +84,9 @@ type ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference
 	PutTls(value interface{})
 	ResetBuffer()
 	ResetCompression()
+	ResetEndpointUrlKey()
 	ResetTls()
+	ResetTokenKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -184,6 +192,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -239,6 +267,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	_jsii_.Get(
 		j,
 		"tlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) TokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) TokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKeyInput",
 		&returns,
 	)
 	return returns
@@ -305,6 +353,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -334,6 +393,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference)SetTokenKey(val *string) {
+	if err := j.validateSetTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenKey",
 		val,
 	)
 }
@@ -573,10 +643,26 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) ResetTls() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) ResetTokenKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenKey",
 		nil, // no parameters
 	)
 }

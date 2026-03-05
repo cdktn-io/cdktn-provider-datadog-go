@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/child_organization datadog_child_organization}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/child_organization datadog_child_organization}.
 type ChildOrganization interface {
 	cdktn.TerraformResource
 	ApiKey() ChildOrganizationApiKeyList
@@ -408,7 +408,7 @@ func (j *jsiiProxy_ChildOrganization) User() ChildOrganizationUserList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/child_organization datadog_child_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/child_organization datadog_child_organization} Resource.
 func NewChildOrganization(scope constructs.Construct, id *string, config *ChildOrganizationConfig) ChildOrganization {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewChildOrganization(scope constructs.Construct, id *string, config *ChildO
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/child_organization datadog_child_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/child_organization datadog_child_organization} Resource.
 func NewChildOrganization_Override(c ChildOrganization, scope constructs.Construct, id *string, config *ChildOrganizationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
 type CloudInventorySyncConfig interface {
 	cdktn.TerraformResource
 	Aws() CloudInventorySyncConfigAwsOutputReference
@@ -401,7 +401,7 @@ func (j *jsiiProxy_CloudInventorySyncConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource.
 func NewCloudInventorySyncConfig(scope constructs.Construct, id *string, config *CloudInventorySyncConfigConfig) CloudInventorySyncConfig {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewCloudInventorySyncConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource.
 func NewCloudInventorySyncConfig_Override(c CloudInventorySyncConfig, scope constructs.Construct, id *string, config *CloudInventorySyncConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
 type IncidentNotificationTemplate interface {
 	cdktn.TerraformResource
 	Category() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_IncidentNotificationTemplate) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource.
 func NewIncidentNotificationTemplate(scope constructs.Construct, id *string, config *IncidentNotificationTemplateConfig) IncidentNotificationTemplate {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewIncidentNotificationTemplate(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template datadog_incident_notification_template} Resource.
 func NewIncidentNotificationTemplate_Override(i IncidentNotificationTemplate, scope constructs.Construct, id *string, config *IncidentNotificationTemplateConfig) {
 	_init_.Initialize()
 

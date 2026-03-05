@@ -236,6 +236,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validateSetHeaderHostNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

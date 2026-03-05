@@ -33,6 +33,9 @@ type ObservabilityPipelineConfigDestinationSumoLogicOutputReference interface {
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	HeaderCustomField() ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldList
@@ -84,6 +87,7 @@ type ObservabilityPipelineConfigDestinationSumoLogicOutputReference interface {
 	PutHeaderCustomField(value interface{})
 	ResetBuffer()
 	ResetEncoding()
+	ResetEndpointUrlKey()
 	ResetHeaderCustomField()
 	ResetHeaderHostName()
 	ResetHeaderSourceCategory()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	_jsii_.Get(
 		j,
 		"encodingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
 		&returns,
 	)
 	return returns
@@ -350,6 +374,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	_jsii_.Set(
 		j,
 		"encoding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
 		val,
 	)
 }
@@ -640,6 +675,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	_jsii_.InvokeVoid(
 		o,
 		"resetEncoding",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
 		nil, // no parameters
 	)
 }

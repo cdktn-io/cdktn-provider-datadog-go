@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 type SensitiveDataScannerGroupOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SensitiveDataScannerGroupOrder) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource.
 func NewSensitiveDataScannerGroupOrder(scope constructs.Construct, id *string, config *SensitiveDataScannerGroupOrderConfig) SensitiveDataScannerGroupOrder {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewSensitiveDataScannerGroupOrder(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource.
 func NewSensitiveDataScannerGroupOrder_Override(s SensitiveDataScannerGroupOrder, scope constructs.Construct, id *string, config *SensitiveDataScannerGroupOrderConfig) {
 	_init_.Initialize()
 

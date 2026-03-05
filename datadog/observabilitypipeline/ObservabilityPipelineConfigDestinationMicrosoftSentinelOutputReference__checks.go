@@ -140,6 +140,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetClientSecretKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -198,6 +206,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetDceUriKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

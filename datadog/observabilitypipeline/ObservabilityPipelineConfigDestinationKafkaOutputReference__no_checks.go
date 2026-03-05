@@ -63,6 +63,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) validateSetBootstrapServersKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

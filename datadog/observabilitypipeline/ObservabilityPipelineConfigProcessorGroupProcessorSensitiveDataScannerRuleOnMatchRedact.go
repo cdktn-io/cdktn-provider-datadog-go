@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact struct {
 	// Replacement string for redacted values (e.g., `***`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 	Replace *string `field:"optional" json:"replace" yaml:"replace"`
 }
 

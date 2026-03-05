@@ -35,6 +35,9 @@ type ObservabilityPipelineConfigDestinationGooglePubsubOutputReference interface
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -84,6 +87,7 @@ type ObservabilityPipelineConfigDestinationGooglePubsubOutputReference interface
 	PutTls(value interface{})
 	ResetAuth()
 	ResetBuffer()
+	ResetEndpointUrlKey()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -185,6 +189,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	_jsii_.Get(
 		j,
 		"encodingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
 		&returns,
 	)
 	return returns
@@ -347,6 +371,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	_jsii_.Set(
 		j,
 		"encoding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
 		val,
 	)
 }
@@ -637,6 +672,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
 		nil, // no parameters
 	)
 }

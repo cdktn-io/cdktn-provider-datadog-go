@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 type SensitiveDataScannerRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -606,7 +606,7 @@ func (j *jsiiProxy_SensitiveDataScannerRule) TextReplacementInput() *SensitiveDa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) SensitiveDataScannerRule {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule_Override(s SensitiveDataScannerRule, scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) {
 	_init_.Initialize()
 

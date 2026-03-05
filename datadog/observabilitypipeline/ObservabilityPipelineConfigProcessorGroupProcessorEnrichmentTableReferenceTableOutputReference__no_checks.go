@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) validateSetAppKeyKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) validateSetColumnsParameters(val *[]*string) error {
 	return nil
 }

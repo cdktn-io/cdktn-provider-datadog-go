@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -24,23 +24,23 @@ type TeamNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the team that this notification rule belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
 	// email block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 	Email *TeamNotificationRuleEmail `field:"optional" json:"email" yaml:"email"`
 	// ms_teams block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 	MsTeams *TeamNotificationRuleMsTeams `field:"optional" json:"msTeams" yaml:"msTeams"`
 	// pagerduty block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
 	Pagerduty *TeamNotificationRulePagerduty `field:"optional" json:"pagerduty" yaml:"pagerduty"`
 	// slack block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 	Slack *TeamNotificationRuleSlack `field:"optional" json:"slack" yaml:"slack"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
 type AppsecWafCustomRule interface {
 	cdktn.TerraformResource
 	Action() AppsecWafCustomRuleActionOutputReference
@@ -494,7 +494,7 @@ func (j *jsiiProxy_AppsecWafCustomRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) AppsecWafCustomRule {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *Apps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule_Override(a AppsecWafCustomRule, scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) {
 	_init_.Initialize()
 

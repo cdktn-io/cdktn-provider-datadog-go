@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
 type AgentlessScanningGcpScanOptions interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_AgentlessScanningGcpScanOptions) VulnHostOsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
 func NewAgentlessScanningGcpScanOptions(scope constructs.Construct, id *string, config *AgentlessScanningGcpScanOptionsConfig) AgentlessScanningGcpScanOptions {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewAgentlessScanningGcpScanOptions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options} Resource.
 func NewAgentlessScanningGcpScanOptions_Override(a AgentlessScanningGcpScanOptions, scope constructs.Construct, id *string, config *AgentlessScanningGcpScanOptionsConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,15 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationSentinelOne struct {
 	// The SentinelOne region to send logs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// buffer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
+	// Name of the environment variable or secret that holds the SentinelOne API token.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+	TokenKey *string `field:"optional" json:"tokenKey" yaml:"tokenKey"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty datadog_integration_pagerduty}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty datadog_integration_pagerduty}.
 type IntegrationPagerduty interface {
 	cdktn.TerraformResource
 	ApiToken() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IntegrationPagerduty) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
 func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) IntegrationPagerduty {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIntegrationPagerduty(scope constructs.Construct, id *string, config *Int
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource.
 func NewIntegrationPagerduty_Override(i IntegrationPagerduty, scope constructs.Construct, id *string, config *IntegrationPagerdutyConfig) {
 	_init_.Initialize()
 

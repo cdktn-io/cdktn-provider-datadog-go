@@ -24,23 +24,23 @@ type SyntheticsSuiteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the Synthetics suite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#name SyntheticsSuite#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#name SyntheticsSuite#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Message of the Synthetics suite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#message SyntheticsSuite#message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#message SyntheticsSuite#message}
 	Message *string `field:"optional" json:"message" yaml:"message"`
 	// options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#options SyntheticsSuite#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#options SyntheticsSuite#options}
 	Options interface{} `field:"optional" json:"options" yaml:"options"`
 	// A set of tags to associate with your synthetics suite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 	// tests block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
 	Tests interface{} `field:"optional" json:"tests" yaml:"tests"`
 }
 

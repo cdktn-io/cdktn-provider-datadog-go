@@ -24,15 +24,15 @@ type OnCallUserNotificationChannelConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the user to associate the notification channel with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// email block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
 	Email *OnCallUserNotificationChannelEmail `field:"optional" json:"email" yaml:"email"`
 	// phone block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
 	Phone *OnCallUserNotificationChannelPhone `field:"optional" json:"phone" yaml:"phone"`
 }
 

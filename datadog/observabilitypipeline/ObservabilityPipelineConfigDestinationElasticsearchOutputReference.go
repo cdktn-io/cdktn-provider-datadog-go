@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	ApiVersion() *string
 	SetApiVersion(val *string)
 	ApiVersionInput() *string
+	Auth() ObservabilityPipelineConfigDestinationElasticsearchAuthList
+	AuthInput() interface{}
 	Buffer() ObservabilityPipelineConfigDestinationElasticsearchBufferList
 	BufferInput() interface{}
 	BulkIndex() *string
@@ -38,6 +40,9 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	CreationStack() *[]*string
 	DataStream() ObservabilityPipelineConfigDestinationElasticsearchDataStreamList
 	DataStreamInput() interface{}
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -74,12 +79,15 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAuth(value interface{})
 	PutBuffer(value interface{})
 	PutDataStream(value interface{})
 	ResetApiVersion()
+	ResetAuth()
 	ResetBuffer()
 	ResetBulkIndex()
 	ResetDataStream()
+	ResetEndpointUrlKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -110,6 +118,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Get(
 		j,
 		"apiVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) Auth() ObservabilityPipelineConfigDestinationElasticsearchAuthList {
+	var returns ObservabilityPipelineConfigDestinationElasticsearchAuthList
+	_jsii_.Get(
+		j,
+		"auth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) AuthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +228,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Get(
 		j,
 		"dataStreamInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +361,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
 		val,
 	)
 }
@@ -536,6 +595,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutAuth(value interface{}) {
+	if err := o.validatePutAuthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAuth",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutBuffer(value interface{}) {
 	if err := o.validatePutBufferParameters(value); err != nil {
 		panic(err)
@@ -566,6 +636,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetAuth() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAuth",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetBuffer() {
 	_jsii_.InvokeVoid(
 		o,
@@ -586,6 +664,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.InvokeVoid(
 		o,
 		"resetDataStream",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
 		nil, // no parameters
 	)
 }

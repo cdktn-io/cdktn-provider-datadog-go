@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
 type SyntheticsSuite interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SyntheticsSuite) TestsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
 func NewSyntheticsSuite(scope constructs.Construct, id *string, config *SyntheticsSuiteConfig) SyntheticsSuite {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSyntheticsSuite(scope constructs.Construct, id *string, config *Syntheti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource.
 func NewSyntheticsSuite_Override(s SyntheticsSuite, scope constructs.Construct, id *string, config *SyntheticsSuiteConfig) {
 	_init_.Initialize()
 

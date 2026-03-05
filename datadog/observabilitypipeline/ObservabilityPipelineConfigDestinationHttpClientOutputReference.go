@@ -40,6 +40,9 @@ type ObservabilityPipelineConfigDestinationHttpClientOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PasswordKey() *string
+	SetPasswordKey(val *string)
+	PasswordKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,6 +53,15 @@ type ObservabilityPipelineConfigDestinationHttpClientOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigDestinationHttpClientTlsList
 	TlsInput() interface{}
+	TokenKey() *string
+	SetTokenKey(val *string)
+	TokenKeyInput() *string
+	UriKey() *string
+	SetUriKey(val *string)
+	UriKeyInput() *string
+	UsernameKey() *string
+	SetUsernameKey(val *string)
+	UsernameKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -78,7 +90,11 @@ type ObservabilityPipelineConfigDestinationHttpClientOutputReference interface {
 	PutTls(value interface{})
 	ResetAuthStrategy()
 	ResetCompression()
+	ResetPasswordKey()
 	ResetTls()
+	ResetTokenKey()
+	ResetUriKey()
+	ResetUsernameKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -204,6 +220,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) PasswordKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) PasswordKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -239,6 +275,66 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	_jsii_.Get(
 		j,
 		"tlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) TokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) TokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) UriKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uriKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) UriKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uriKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) UsernameKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) UsernameKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKeyInput",
 		&returns,
 	)
 	return returns
@@ -327,6 +423,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference)SetPasswordKey(val *string) {
+	if err := j.validateSetPasswordKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -345,6 +452,39 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference)SetTokenKey(val *string) {
+	if err := j.validateSetTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference)SetUriKey(val *string) {
+	if err := j.validateSetUriKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uriKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference)SetUsernameKey(val *string) {
+	if err := j.validateSetUsernameKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameKey",
 		val,
 	)
 }
@@ -573,10 +713,42 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetPasswordKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPasswordKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetTls() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetTokenKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetUriKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUriKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetUsernameKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUsernameKey",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings datadog_organization_settings}.
 type DataDatadogOrganizationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataDatadogOrganizationSettings) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) DataDatadogOrganizationSettings {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings_Override(d DataDatadogOrganizationSettings, scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetIndexParameters(val *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTokenKeyParameters(val *string) error {
 	return nil
 }
 

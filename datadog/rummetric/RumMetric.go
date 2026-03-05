@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/rum_metric datadog_rum_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric datadog_rum_metric}.
 type RumMetric interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_RumMetric) UniquenessInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/rum_metric datadog_rum_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric datadog_rum_metric} Resource.
 func NewRumMetric(scope constructs.Construct, id *string, config *RumMetricConfig) RumMetric {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewRumMetric(scope constructs.Construct, id *string, config *RumMetricConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/rum_metric datadog_rum_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric datadog_rum_metric} Resource.
 func NewRumMetric_Override(r RumMetric, scope constructs.Construct, id *string, config *RumMetricConfig) {
 	_init_.Initialize()
 

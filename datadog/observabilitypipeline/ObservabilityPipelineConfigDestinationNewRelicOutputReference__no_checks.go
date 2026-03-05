@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validateSetAccountIdKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) validateSetLicenseKeyKeyParameters(val *string) error {
 	return nil
 }
 

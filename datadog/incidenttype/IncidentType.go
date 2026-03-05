@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_type datadog_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type}.
 type IncidentType interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IncidentType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTypeConfig) IncidentType {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType_Override(i IncidentType, scope constructs.Construct, id *string, config *IncidentTypeConfig) {
 	_init_.Initialize()
 

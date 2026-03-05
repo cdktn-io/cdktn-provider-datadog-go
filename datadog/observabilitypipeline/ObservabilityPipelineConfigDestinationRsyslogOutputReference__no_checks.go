@@ -67,6 +67,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationRsyslogOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

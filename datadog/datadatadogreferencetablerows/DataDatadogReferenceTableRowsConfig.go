@@ -26,15 +26,15 @@ type DataDatadogReferenceTableRowsConfig struct {
 	//
 	// These are the values of the table's primary key field(s). Maximum 250 IDs per request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
 	RowIds *[]*string `field:"required" json:"rowIds" yaml:"rowIds"`
 	// The UUID of the reference table to query rows from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
 	TableId *string `field:"required" json:"tableId" yaml:"tableId"`
 	// rows block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
 	Rows interface{} `field:"optional" json:"rows" yaml:"rows"`
 }
 

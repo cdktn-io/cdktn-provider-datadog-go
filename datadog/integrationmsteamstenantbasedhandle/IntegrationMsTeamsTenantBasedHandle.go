@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle}.
 type IntegrationMsTeamsTenantBasedHandle interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource.
 func NewIntegrationMsTeamsTenantBasedHandle(scope constructs.Construct, id *string, config *IntegrationMsTeamsTenantBasedHandleConfig) IntegrationMsTeamsTenantBasedHandle {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewIntegrationMsTeamsTenantBasedHandle(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource.
 func NewIntegrationMsTeamsTenantBasedHandle_Override(i IntegrationMsTeamsTenantBasedHandle, scope constructs.Construct, id *string, config *IntegrationMsTeamsTenantBasedHandleConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package syntheticssuite
 type SyntheticsSuiteOptions struct {
 	// Alerting threshold for the suite. Value must be between 0.000000 and 1.000000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
 	AlertingThreshold *float64 `field:"required" json:"alertingThreshold" yaml:"alertingThreshold"`
 }
 

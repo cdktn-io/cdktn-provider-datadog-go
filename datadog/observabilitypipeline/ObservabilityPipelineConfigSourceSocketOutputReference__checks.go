@@ -163,6 +163,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSocketOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketOutputReference) validateSetAddressKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

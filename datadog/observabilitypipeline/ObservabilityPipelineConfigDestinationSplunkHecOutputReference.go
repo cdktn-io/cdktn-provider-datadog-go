@@ -36,6 +36,9 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	Index() *string
@@ -54,6 +57,9 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TokenKey() *string
+	SetTokenKey(val *string)
+	TokenKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,8 +87,10 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	PutBuffer(value interface{})
 	ResetAutoExtractTimestamp()
 	ResetBuffer()
+	ResetEndpointUrlKey()
 	ResetIndex()
 	ResetSourcetype()
+	ResetTokenKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -188,6 +196,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -268,6 +296,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) TokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) TokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigDestinationSplunkHecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigDestinationSplunkHecOutputReference {
 	_init_.Initialize()
@@ -340,6 +388,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetIndex(val *string) {
 	if err := j.validateSetIndexParameters(val); err != nil {
 		panic(err)
@@ -391,6 +450,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetTokenKey(val *string) {
+	if err := j.validateSetTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenKey",
 		val,
 	)
 }
@@ -608,6 +678,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetIndex() {
 	_jsii_.InvokeVoid(
 		o,
@@ -620,6 +698,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.InvokeVoid(
 		o,
 		"resetSourcetype",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetTokenKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenKey",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) validatePutCustomMappingParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

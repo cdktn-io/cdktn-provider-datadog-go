@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutAuthParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutBufferParameters(value interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
 	return nil
 }
 

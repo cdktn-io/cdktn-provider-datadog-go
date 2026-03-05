@@ -18,6 +18,9 @@ type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference inte
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	ClientSecretKey() *string
+	SetClientSecretKey(val *string)
+	ClientSecretKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +36,9 @@ type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DceUriKey() *string
+	SetDceUriKey(val *string)
+	DceUriKeyInput() *string
 	DcrImmutableId() *string
 	SetDcrImmutableId(val *string)
 	DcrImmutableIdInput() *string
@@ -80,6 +86,8 @@ type ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference inte
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBuffer(value interface{})
 	ResetBuffer()
+	ResetClientSecretKey()
+	ResetDceUriKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -135,6 +143,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ClientSecretKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ClientSecretKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -160,6 +188,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) DceUriKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dceUriKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) DceUriKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dceUriKeyInput",
 		&returns,
 	)
 	return returns
@@ -304,6 +352,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference)SetClientSecretKey(val *string) {
+	if err := j.validateSetClientSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientSecretKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -322,6 +381,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference)SetDceUriKey(val *string) {
+	if err := j.validateSetDceUriKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dceUriKey",
 		val,
 	)
 }
@@ -593,6 +663,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ResetClientSecretKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetClientSecretKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) ResetDceUriKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDceUriKey",
 		nil, // no parameters
 	)
 }

@@ -198,6 +198,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetPasswordKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -207,6 +215,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

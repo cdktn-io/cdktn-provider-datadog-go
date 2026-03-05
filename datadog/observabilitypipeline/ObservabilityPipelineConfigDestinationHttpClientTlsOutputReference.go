@@ -41,6 +41,9 @@ type ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference interfac
 	KeyFile() *string
 	SetKeyFile(val *string)
 	KeyFileInput() *string
+	KeyPassKey() *string
+	SetKeyPassKey(val *string)
+	KeyPassKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference interfac
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCaFile()
 	ResetKeyFile()
+	ResetKeyPassKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -200,6 +204,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference) KeyPassKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyPassKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference) KeyPassKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyPassKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -310,6 +334,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputRefe
 	_jsii_.Set(
 		j,
 		"keyFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference)SetKeyPassKey(val *string) {
+	if err := j.validateSetKeyPassKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyPassKey",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputRefe
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyFile",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientTlsOutputReference) ResetKeyPassKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKeyPassKey",
 		nil, // no parameters
 	)
 }

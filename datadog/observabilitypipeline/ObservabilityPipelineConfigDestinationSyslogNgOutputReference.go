@@ -30,6 +30,9 @@ type ObservabilityPipelineConfigDestinationSyslogNgOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -74,6 +77,7 @@ type ObservabilityPipelineConfigDestinationSyslogNgOutputReference interface {
 	PutBuffer(value interface{})
 	PutTls(value interface{})
 	ResetBuffer()
+	ResetEndpointUrlKey()
 	ResetKeepalive()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -136,6 +140,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +291,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
 		nil, // no parameters
 	)
 }

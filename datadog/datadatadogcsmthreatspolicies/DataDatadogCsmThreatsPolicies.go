@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}.
 type DataDatadogCsmThreatsPolicies interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataDatadogCsmThreatsPolicies) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source.
 func NewDataDatadogCsmThreatsPolicies(scope constructs.Construct, id *string, config *DataDatadogCsmThreatsPoliciesConfig) DataDatadogCsmThreatsPolicies {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataDatadogCsmThreatsPolicies(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source.
 func NewDataDatadogCsmThreatsPolicies_Override(d DataDatadogCsmThreatsPolicies, scope constructs.Construct, id *string, config *DataDatadogCsmThreatsPoliciesConfig) {
 	_init_.Initialize()
 

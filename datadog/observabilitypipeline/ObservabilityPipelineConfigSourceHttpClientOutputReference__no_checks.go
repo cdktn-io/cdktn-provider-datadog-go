@@ -67,11 +67,23 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetCustomKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetDecodingParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetPasswordKeyParameters(val *string) error {
 	return nil
 }
 
@@ -88,6 +100,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) v
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetTokenKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	return nil
 }
 

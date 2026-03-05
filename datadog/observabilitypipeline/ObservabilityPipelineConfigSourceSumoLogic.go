@@ -5,5 +5,9 @@ package observabilitypipeline
 
 
 type ObservabilityPipelineConfigSourceSumoLogic struct {
+	// Name of the environment variable or secret that holds the listen address.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+	AddressKey *string `field:"optional" json:"addressKey" yaml:"addressKey"`
 }
 

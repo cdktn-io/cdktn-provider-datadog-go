@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/openapi_api datadog_openapi_api}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/openapi_api datadog_openapi_api}.
 type OpenapiApi interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_OpenapiApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/openapi_api datadog_openapi_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/openapi_api datadog_openapi_api} Resource.
 func NewOpenapiApi(scope constructs.Construct, id *string, config *OpenapiApiConfig) OpenapiApi {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewOpenapiApi(scope constructs.Construct, id *string, config *OpenapiApiCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/openapi_api datadog_openapi_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/openapi_api datadog_openapi_api} Resource.
 func NewOpenapiApi_Override(o OpenapiApi, scope constructs.Construct, id *string, config *OpenapiApiConfig) {
 	_init_.Initialize()
 

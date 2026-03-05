@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/api_key datadog_api_key}.
 type ApiKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_ApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) ApiKey {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewApiKey(scope constructs.Construct, id *string, config *ApiKeyConfig) Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/api_key datadog_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/api_key datadog_api_key} Resource.
 func NewApiKey_Override(a ApiKey, scope constructs.Construct, id *string, config *ApiKeyConfig) {
 	_init_.Initialize()
 

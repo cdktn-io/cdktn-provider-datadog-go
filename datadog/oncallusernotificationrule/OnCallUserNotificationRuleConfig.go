@@ -24,23 +24,23 @@ type OnCallUserNotificationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Notification category to associate the rule with. Valid values are `high_urgency`, `low_urgency`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
 	Category *string `field:"required" json:"category" yaml:"category"`
 	// ID of the notification channel to associate the notification rule with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
 	ChannelId *string `field:"required" json:"channelId" yaml:"channelId"`
 	// Number of minutes to elapse before this rule is evaluated.  `0` indicates immediate evaluation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
 	DelayMinutes *float64 `field:"required" json:"delayMinutes" yaml:"delayMinutes"`
 	// ID of the user to associate the notification rule with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// phone block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
 	Phone *OnCallUserNotificationRulePhone `field:"optional" json:"phone" yaml:"phone"`
 }
 

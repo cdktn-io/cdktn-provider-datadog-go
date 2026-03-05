@@ -67,11 +67,19 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetPasswordKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	return nil
 }
 

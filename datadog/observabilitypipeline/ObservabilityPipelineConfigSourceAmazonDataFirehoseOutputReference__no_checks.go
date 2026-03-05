@@ -59,6 +59,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_tags datadog_metric_tags}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags}.
 type DataDatadogMetricTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataDatadogMetricTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
 func NewDataDatadogMetricTags(scope constructs.Construct, id *string, config *DataDatadogMetricTagsConfig) DataDatadogMetricTags {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataDatadogMetricTags(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
 func NewDataDatadogMetricTags_Override(d DataDatadogMetricTags, scope constructs.Construct, id *string, config *DataDatadogMetricTagsConfig) {
 	_init_.Initialize()
 

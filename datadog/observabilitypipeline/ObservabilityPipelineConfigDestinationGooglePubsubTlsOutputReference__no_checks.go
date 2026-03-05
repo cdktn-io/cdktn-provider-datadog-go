@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubTlsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

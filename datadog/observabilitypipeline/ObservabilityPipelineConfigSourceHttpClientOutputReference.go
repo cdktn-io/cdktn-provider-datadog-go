@@ -31,13 +31,22 @@ type ObservabilityPipelineConfigSourceHttpClientOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomKey() *string
+	SetCustomKey(val *string)
+	CustomKeyInput() *string
 	Decoding() *string
 	SetDecoding(val *string)
 	DecodingInput() *string
+	EndpointUrlKey() *string
+	SetEndpointUrlKey(val *string)
+	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PasswordKey() *string
+	SetPasswordKey(val *string)
+	PasswordKeyInput() *string
 	ScrapeIntervalSecs() *float64
 	SetScrapeIntervalSecs(val *float64)
 	ScrapeIntervalSecsInput() *float64
@@ -54,6 +63,12 @@ type ObservabilityPipelineConfigSourceHttpClientOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigSourceHttpClientTlsList
 	TlsInput() interface{}
+	TokenKey() *string
+	SetTokenKey(val *string)
+	TokenKeyInput() *string
+	UsernameKey() *string
+	SetUsernameKey(val *string)
+	UsernameKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -80,9 +95,14 @@ type ObservabilityPipelineConfigSourceHttpClientOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
 	ResetAuthStrategy()
+	ResetCustomKey()
+	ResetEndpointUrlKey()
+	ResetPasswordKey()
 	ResetScrapeIntervalSecs()
 	ResetScrapeTimeoutSecs()
 	ResetTls()
+	ResetTokenKey()
+	ResetUsernameKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +168,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) CustomKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) CustomKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) Decoding() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +208,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) D
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) EndpointUrlKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) EndpointUrlKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUrlKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -183,6 +243,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) PasswordKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) PasswordKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKeyInput",
 		&returns,
 	)
 	return returns
@@ -268,6 +348,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) T
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) TokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) TokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) UsernameKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) UsernameKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceHttpClientOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceHttpClientOutputReference {
 	_init_.Initialize()
@@ -329,6 +449,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetCustomKey(val *string) {
+	if err := j.validateSetCustomKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetDecoding(val *string) {
 	if err := j.validateSetDecodingParameters(val); err != nil {
 		panic(err)
@@ -340,6 +471,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetEndpointUrlKey(val *string) {
+	if err := j.validateSetEndpointUrlKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUrlKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -347,6 +489,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetPasswordKey(val *string) {
+	if err := j.validateSetPasswordKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordKey",
 		val,
 	)
 }
@@ -391,6 +544,28 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetTokenKey(val *string) {
+	if err := j.validateSetTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference)SetUsernameKey(val *string) {
+	if err := j.validateSetUsernameKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameKey",
 		val,
 	)
 }
@@ -600,6 +775,30 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) R
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetCustomKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCustomKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetEndpointUrlKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetPasswordKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPasswordKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetScrapeIntervalSecs() {
 	_jsii_.InvokeVoid(
 		o,
@@ -620,6 +819,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) R
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetTokenKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpClientOutputReference) ResetUsernameKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUsernameKey",
 		nil, // no parameters
 	)
 }

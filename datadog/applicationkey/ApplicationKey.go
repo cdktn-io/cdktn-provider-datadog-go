@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/application_key datadog_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/application_key datadog_application_key}.
 type ApplicationKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_ApplicationKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/application_key datadog_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/application_key datadog_application_key} Resource.
 func NewApplicationKey(scope constructs.Construct, id *string, config *ApplicationKeyConfig) ApplicationKey {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewApplicationKey(scope constructs.Construct, id *string, config *Applicati
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/application_key datadog_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/application_key datadog_application_key} Resource.
 func NewApplicationKey_Override(a ApplicationKey, scope constructs.Construct, id *string, config *ApplicationKeyConfig) {
 	_init_.Initialize()
 

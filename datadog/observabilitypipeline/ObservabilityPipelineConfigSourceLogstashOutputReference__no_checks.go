@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceLogstashOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceLogstashOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceLogstashOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

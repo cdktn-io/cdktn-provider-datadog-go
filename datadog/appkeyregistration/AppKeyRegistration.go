@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration datadog_app_key_registration}.
 type AppKeyRegistration interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_AppKeyRegistration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
 func NewAppKeyRegistration(scope constructs.Construct, id *string, config *AppKeyRegistrationConfig) AppKeyRegistration {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewAppKeyRegistration(scope constructs.Construct, id *string, config *AppKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration datadog_app_key_registration} Resource.
 func NewAppKeyRegistration_Override(a AppKeyRegistration, scope constructs.Construct, id *string, config *AppKeyRegistrationConfig) {
 	_init_.Initialize()
 

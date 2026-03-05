@@ -59,6 +59,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

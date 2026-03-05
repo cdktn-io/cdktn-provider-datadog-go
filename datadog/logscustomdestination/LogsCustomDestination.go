@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
 type LogsCustomDestination interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -545,7 +545,7 @@ func (j *jsiiProxy_LogsCustomDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
 func NewLogsCustomDestination(scope constructs.Construct, id *string, config *LogsCustomDestinationConfig) LogsCustomDestination {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewLogsCustomDestination(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource.
 func NewLogsCustomDestination_Override(l LogsCustomDestination, scope constructs.Construct, id *string, config *LogsCustomDestinationConfig) {
 	_init_.Initialize()
 

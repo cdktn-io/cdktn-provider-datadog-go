@@ -268,6 +268,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetPasswordKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -277,6 +285,30 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetUriKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

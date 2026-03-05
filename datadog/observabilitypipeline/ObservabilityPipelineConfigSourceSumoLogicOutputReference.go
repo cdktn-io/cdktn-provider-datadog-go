@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigSourceSumoLogicOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,6 +67,7 @@ type ObservabilityPipelineConfigSourceSumoLogicOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAddressKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -77,6 +81,26 @@ type ObservabilityPipelineConfigSourceSumoLogicOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigSourceSumoLogicOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) ComplexObjectIndex() interface{} {
@@ -174,6 +198,17 @@ func NewObservabilityPipelineConfigSourceSumoLogicOutputReference_Override(o Obs
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSumoLogicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -416,6 +451,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) In
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceSumoLogicOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

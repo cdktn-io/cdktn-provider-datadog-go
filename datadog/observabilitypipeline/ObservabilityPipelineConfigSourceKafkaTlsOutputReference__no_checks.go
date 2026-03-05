@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceKafkaTlsOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceKafkaTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceKafkaTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

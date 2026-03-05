@@ -214,6 +214,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

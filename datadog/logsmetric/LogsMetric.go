@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_metric datadog_logs_metric}.
 type LogsMetric interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_LogsMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricConfig) LogsMetric {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewLogsMetric(scope constructs.Construct, id *string, config *LogsMetricCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_metric datadog_logs_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_metric datadog_logs_metric} Resource.
 func NewLogsMetric_Override(l LogsMetric, scope constructs.Construct, id *string, config *LogsMetricConfig) {
 	_init_.Initialize()
 

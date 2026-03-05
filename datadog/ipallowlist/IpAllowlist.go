@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
 type IpAllowlist interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_IpAllowlist) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
 func NewIpAllowlist(scope constructs.Construct, id *string, config *IpAllowlistConfig) IpAllowlist {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewIpAllowlist(scope constructs.Construct, id *string, config *IpAllowlistC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/ip_allowlist datadog_ip_allowlist} Resource.
 func NewIpAllowlist_Override(i IpAllowlist, scope constructs.Construct, id *string, config *IpAllowlistConfig) {
 	_init_.Initialize()
 

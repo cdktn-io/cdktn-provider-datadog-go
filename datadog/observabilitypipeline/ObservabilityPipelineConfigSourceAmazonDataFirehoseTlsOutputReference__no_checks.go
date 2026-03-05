@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonDataFirehoseTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

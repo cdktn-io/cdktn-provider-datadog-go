@@ -36,6 +36,9 @@ type SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference interfa
 	DetectionToleranceInput() *float64
 	// Experimental.
 	Fqn() *string
+	InstantaneousBaseline() interface{}
+	SetInstantaneousBaseline(val interface{})
+	InstantaneousBaselineInput() interface{}
 	InternalValue() *SecurityMonitoringRuleOptionsAnomalyDetectionOptions
 	SetInternalValue(val *SecurityMonitoringRuleOptionsAnomalyDetectionOptions)
 	LearningDuration() *float64
@@ -78,6 +81,7 @@ type SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference interfa
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBucketDuration()
 	ResetDetectionTolerance()
+	ResetInstantaneousBaseline()
 	ResetLearningDuration()
 	ResetLearningPeriodBaseline()
 	// Produce the Token's value at resolution time.
@@ -170,6 +174,26 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) InstantaneousBaseline() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"instantaneousBaseline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) InstantaneousBaselineInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"instantaneousBaselineInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	_jsii_.Set(
 		j,
 		"detectionTolerance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference)SetInstantaneousBaseline(val interface{}) {
+	if err := j.validateSetInstantaneousBaselineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instantaneousBaseline",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	_jsii_.InvokeVoid(
 		s,
 		"resetDetectionTolerance",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) ResetInstantaneousBaseline() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInstantaneousBaseline",
 		nil, // no parameters
 	)
 }

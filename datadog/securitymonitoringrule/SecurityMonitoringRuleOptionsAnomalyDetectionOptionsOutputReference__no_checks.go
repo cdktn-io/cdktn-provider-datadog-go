@@ -67,6 +67,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) validateSetInstantaneousBaselineParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) validateSetInternalValueParameters(val *SecurityMonitoringRuleOptionsAnomalyDetectionOptions) error {
 	return nil
 }

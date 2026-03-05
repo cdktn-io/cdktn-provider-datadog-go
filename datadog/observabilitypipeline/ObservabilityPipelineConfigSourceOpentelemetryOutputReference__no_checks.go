@@ -63,6 +63,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) validateSetGrpcAddressKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) validateSetHttpAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

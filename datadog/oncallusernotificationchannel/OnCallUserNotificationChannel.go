@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
 type OnCallUserNotificationChannel interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_OnCallUserNotificationChannel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource.
 func NewOnCallUserNotificationChannel(scope constructs.Construct, id *string, config *OnCallUserNotificationChannelConfig) OnCallUserNotificationChannel {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewOnCallUserNotificationChannel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel} Resource.
 func NewOnCallUserNotificationChannel_Override(o OnCallUserNotificationChannel, scope constructs.Construct, id *string, config *OnCallUserNotificationChannelConfig) {
 	_init_.Initialize()
 

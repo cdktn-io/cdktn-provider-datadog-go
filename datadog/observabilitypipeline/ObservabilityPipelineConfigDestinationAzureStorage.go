@@ -7,15 +7,15 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationAzureStorage struct {
 	// The name of the Azure Blob Storage container to store logs in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
 	ContainerName *string `field:"required" json:"containerName" yaml:"containerName"`
 	// Optional prefix for blobs written to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
 	BlobPrefix *string `field:"optional" json:"blobPrefix" yaml:"blobPrefix"`
 	// buffer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
 }
 

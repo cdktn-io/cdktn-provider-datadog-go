@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetAuthStrategyParameters(val *string) error {
 	return nil
 }
@@ -75,11 +79,19 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetPasswordKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateSetUsernameKeyParameters(val *string) error {
 	return nil
 }
 

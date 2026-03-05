@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
 type MonitorNotificationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_MonitorNotificationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource.
 func NewMonitorNotificationRule(scope constructs.Construct, id *string, config *MonitorNotificationRuleConfig) MonitorNotificationRule {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewMonitorNotificationRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource.
 func NewMonitorNotificationRule_Override(m MonitorNotificationRule, scope constructs.Construct, id *string, config *MonitorNotificationRuleConfig) {
 	_init_.Initialize()
 

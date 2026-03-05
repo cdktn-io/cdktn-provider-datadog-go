@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/service_level_objective datadog_service_level_objective}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_level_objective datadog_service_level_objective}.
 type ServiceLevelObjective interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -652,7 +652,7 @@ func (j *jsiiProxy_ServiceLevelObjective) WarningThresholdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
 func NewServiceLevelObjective(scope constructs.Construct, id *string, config *ServiceLevelObjectiveConfig) ServiceLevelObjective {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewServiceLevelObjective(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
 func NewServiceLevelObjective_Override(s ServiceLevelObjective, scope constructs.Construct, id *string, config *ServiceLevelObjectiveConfig) {
 	_init_.Initialize()
 

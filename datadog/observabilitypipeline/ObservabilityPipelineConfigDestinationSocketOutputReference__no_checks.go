@@ -63,6 +63,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) validateSetAddressKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

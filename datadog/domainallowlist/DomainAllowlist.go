@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
 type DomainAllowlist interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DomainAllowlist) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource.
 func NewDomainAllowlist(scope constructs.Construct, id *string, config *DomainAllowlistConfig) DomainAllowlist {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDomainAllowlist(scope constructs.Construct, id *string, config *DomainAl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource.
 func NewDomainAllowlist_Override(d DomainAllowlist, scope constructs.Construct, id *string, config *DomainAllowlistConfig) {
 	_init_.Initialize()
 

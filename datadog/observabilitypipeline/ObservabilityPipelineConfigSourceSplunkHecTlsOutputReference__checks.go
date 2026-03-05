@@ -214,6 +214,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference) validateSetKeyPassKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

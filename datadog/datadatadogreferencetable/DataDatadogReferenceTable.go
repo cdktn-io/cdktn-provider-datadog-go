@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table}.
 type DataDatadogReferenceTable interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) DataDatadogReferenceTable {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable_Override(d DataDatadogReferenceTable, scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) {
 	_init_.Initialize()
 

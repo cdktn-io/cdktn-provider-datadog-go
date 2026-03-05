@@ -9,25 +9,31 @@ type SecurityMonitoringRuleOptionsAnomalyDetectionOptions struct {
 	//
 	// Valid values are 300, 600, 900, 1800, 3600, 10800. Valid values are `300`, `600`, `900`, `1800`, `3600`, `10800`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_rule#bucket_duration SecurityMonitoringRule#bucket_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule#bucket_duration SecurityMonitoringRule#bucket_duration}
 	BucketDuration *float64 `field:"optional" json:"bucketDuration" yaml:"bucketDuration"`
 	// An optional parameter that sets how permissive anomaly detection is.
 	//
 	// Higher values require higher deviations before triggering a signal. Valid values are 1, 2, 3, 4, 5. Valid values are `1`, `2`, `3`, `4`, `5`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_rule#detection_tolerance SecurityMonitoringRule#detection_tolerance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule#detection_tolerance SecurityMonitoringRule#detection_tolerance}
 	DetectionTolerance *float64 `field:"optional" json:"detectionTolerance" yaml:"detectionTolerance"`
+	// When set to true, Datadog uses previous values that fall within the defined learning window to construct the baseline, enabling the system to establish an accurate baseline more rapidly rather than relying solely on gradual learning over time.
+	//
+	// Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule#instantaneous_baseline SecurityMonitoringRule#instantaneous_baseline}
+	InstantaneousBaseline interface{} `field:"optional" json:"instantaneousBaseline" yaml:"instantaneousBaseline"`
 	// Learning duration in hours.
 	//
 	// Anomaly detection waits for at least this amount of historical data before it starts evaluating. Valid values are 1, 6, 12, 24, 48, 168, 336. Valid values are `1`, `6`, `12`, `24`, `48`, `168`, `336`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
 	LearningDuration *float64 `field:"optional" json:"learningDuration" yaml:"learningDuration"`
 	// An optional override baseline to apply while the rule is in the learning period.
 	//
 	// Must be greater than or equal to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/security_monitoring_rule#learning_period_baseline SecurityMonitoringRule#learning_period_baseline}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule#learning_period_baseline SecurityMonitoringRule#learning_period_baseline}
 	LearningPeriodBaseline *float64 `field:"optional" json:"learningPeriodBaseline" yaml:"learningPeriodBaseline"`
 }
 

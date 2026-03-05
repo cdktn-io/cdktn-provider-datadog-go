@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
 type CloudConfigurationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -577,7 +577,7 @@ func (j *jsiiProxy_CloudConfigurationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) CloudConfigurationRule {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule_Override(c CloudConfigurationRule, scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) {
 	_init_.Initialize()
 

@@ -93,6 +93,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutAuthParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigDestinationElasticsearchAuth:
+		value := value.(*[]*ObservabilityPipelineConfigDestinationElasticsearchAuth)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigDestinationElasticsearchAuth:
+		value_ := value.([]*ObservabilityPipelineConfigDestinationElasticsearchAuth)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigDestinationElasticsearchAuth; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutBufferParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -237,6 +268,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride struct {
 	// field block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 	Field interface{} `field:"optional" json:"field" yaml:"field"`
 	// limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 	Limit interface{} `field:"optional" json:"limit" yaml:"limit"`
 }
 

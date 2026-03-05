@@ -83,6 +83,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) validateSetUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func validateNewObservabilityPipelineConfigSourceAmazonS3OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

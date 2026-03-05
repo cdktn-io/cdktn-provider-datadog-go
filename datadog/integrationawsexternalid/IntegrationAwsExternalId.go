@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
 type IntegrationAwsExternalId interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_IntegrationAwsExternalId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
 func NewIntegrationAwsExternalId(scope constructs.Construct, id *string, config *IntegrationAwsExternalIdConfig) IntegrationAwsExternalId {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewIntegrationAwsExternalId(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id} Resource.
 func NewIntegrationAwsExternalId_Override(i IntegrationAwsExternalId, scope constructs.Construct, id *string, config *IntegrationAwsExternalIdConfig) {
 	_init_.Initialize()
 

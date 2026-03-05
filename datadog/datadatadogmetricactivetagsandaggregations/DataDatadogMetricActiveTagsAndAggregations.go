@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
 type DataDatadogMetricActiveTagsAndAggregations interface {
 	cdktn.TerraformDataSource
 	ActiveAggregations() DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) WindowInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
 func NewDataDatadogMetricActiveTagsAndAggregations(scope constructs.Construct, id *string, config *DataDatadogMetricActiveTagsAndAggregationsConfig) DataDatadogMetricActiveTagsAndAggregations {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataDatadogMetricActiveTagsAndAggregations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations} Data Source.
 func NewDataDatadogMetricActiveTagsAndAggregations_Override(d DataDatadogMetricActiveTagsAndAggregations, scope constructs.Construct, id *string, config *DataDatadogMetricActiveTagsAndAggregationsConfig) {
 	_init_.Initialize()
 

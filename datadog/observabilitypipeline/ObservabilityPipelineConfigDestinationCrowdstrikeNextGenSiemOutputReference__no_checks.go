@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetTokenKeyParameters(val *string) error {
 	return nil
 }
 

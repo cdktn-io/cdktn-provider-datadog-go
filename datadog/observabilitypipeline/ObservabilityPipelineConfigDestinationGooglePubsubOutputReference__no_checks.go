@@ -75,6 +75,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationGooglePubsubOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

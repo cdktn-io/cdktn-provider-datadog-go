@@ -7,23 +7,27 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationSocket struct {
 	// Encoding format for log events. Valid values are `json`, `raw_message`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 	Encoding *string `field:"required" json:"encoding" yaml:"encoding"`
 	// The protocol used to send logs. Valid values are `tcp`, `udp`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
+	// Name of the environment variable or secret that holds the socket address (host:port).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+	AddressKey *string `field:"optional" json:"addressKey" yaml:"addressKey"`
 	// buffer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
 	// framing block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 	Framing interface{} `field:"optional" json:"framing" yaml:"framing"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 }
 

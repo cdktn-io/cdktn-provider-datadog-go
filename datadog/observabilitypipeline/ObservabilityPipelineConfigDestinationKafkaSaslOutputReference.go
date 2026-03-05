@@ -35,6 +35,9 @@ type ObservabilityPipelineConfigDestinationKafkaSaslOutputReference interface {
 	Mechanism() *string
 	SetMechanism(val *string)
 	MechanismInput() *string
+	PasswordKey() *string
+	SetPasswordKey(val *string)
+	PasswordKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +46,9 @@ type ObservabilityPipelineConfigDestinationKafkaSaslOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UsernameKey() *string
+	SetUsernameKey(val *string)
+	UsernameKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type ObservabilityPipelineConfigDestinationKafkaSaslOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetPasswordKey()
+	ResetUsernameKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -152,6 +160,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) PasswordKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) PasswordKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -167,6 +195,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) UsernameKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) UsernameKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKeyInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +292,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference)SetPasswordKey(val *string) {
+	if err := j.validateSetPasswordKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -262,6 +321,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference)SetUsernameKey(val *string) {
+	if err := j.validateSetUsernameKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameKey",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReferenc
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) ResetPasswordKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPasswordKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) ResetUsernameKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUsernameKey",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaSaslOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

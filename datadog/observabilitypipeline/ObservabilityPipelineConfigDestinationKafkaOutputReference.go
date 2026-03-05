@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigDestinationKafkaOutputReference interface {
 	cdktn.ComplexObject
+	BootstrapServersKey() *string
+	SetBootstrapServersKey(val *string)
+	BootstrapServersKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -100,6 +103,7 @@ type ObservabilityPipelineConfigDestinationKafkaOutputReference interface {
 	PutLibrdkafkaOption(value interface{})
 	PutSasl(value interface{})
 	PutTls(value interface{})
+	ResetBootstrapServersKey()
 	ResetCompression()
 	ResetHeadersKey()
 	ResetKeyField()
@@ -123,6 +127,26 @@ type ObservabilityPipelineConfigDestinationKafkaOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationKafkaOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) BootstrapServersKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bootstrapServersKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) BootstrapServersKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bootstrapServersKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) ComplexObjectIndex() interface{} {
@@ -460,6 +484,17 @@ func NewObservabilityPipelineConfigDestinationKafkaOutputReference_Override(o Ob
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationKafkaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference)SetBootstrapServersKey(val *string) {
+	if err := j.validateSetBootstrapServersKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootstrapServersKey",
+		val,
 	)
 }
 
@@ -833,6 +868,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) P
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) ResetBootstrapServersKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBootstrapServersKey",
+		nil, // no parameters
 	)
 }
 

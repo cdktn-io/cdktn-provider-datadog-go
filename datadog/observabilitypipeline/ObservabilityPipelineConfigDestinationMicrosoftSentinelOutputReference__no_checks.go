@@ -59,11 +59,19 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutput
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetClientSecretKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationMicrosoftSentinelOutputReference) validateSetDceUriKeyParameters(val *string) error {
 	return nil
 }
 

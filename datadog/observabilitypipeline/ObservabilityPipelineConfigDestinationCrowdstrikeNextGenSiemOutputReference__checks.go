@@ -267,6 +267,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -300,6 +308,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemO
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemOutputReference) validateSetTokenKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

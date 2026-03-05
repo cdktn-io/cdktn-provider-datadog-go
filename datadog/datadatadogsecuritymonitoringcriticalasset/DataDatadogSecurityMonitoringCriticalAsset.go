@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
 type DataDatadogSecurityMonitoringCriticalAsset interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringCriticalAsset) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Data Source.
 func NewDataDatadogSecurityMonitoringCriticalAsset(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringCriticalAssetConfig) DataDatadogSecurityMonitoringCriticalAsset {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatadogSecurityMonitoringCriticalAsset(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Data Source.
 func NewDataDatadogSecurityMonitoringCriticalAsset_Override(d DataDatadogSecurityMonitoringCriticalAsset, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringCriticalAssetConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigDestinationNewRelicOutputReference interface {
 	cdktn.ComplexObject
+	AccountIdKey() *string
+	SetAccountIdKey(val *string)
+	AccountIdKeyInput() *string
 	Buffer() ObservabilityPipelineConfigDestinationNewRelicBufferList
 	BufferInput() interface{}
 	// the index of the complex object in a list.
@@ -34,6 +37,9 @@ type ObservabilityPipelineConfigDestinationNewRelicOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LicenseKeyKey() *string
+	SetLicenseKeyKey(val *string)
+	LicenseKeyKeyInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -70,7 +76,9 @@ type ObservabilityPipelineConfigDestinationNewRelicOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBuffer(value interface{})
+	ResetAccountIdKey()
 	ResetBuffer()
+	ResetLicenseKeyKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -84,6 +92,26 @@ type ObservabilityPipelineConfigDestinationNewRelicOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationNewRelicOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) AccountIdKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) AccountIdKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) Buffer() ObservabilityPipelineConfigDestinationNewRelicBufferList {
@@ -151,6 +179,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) LicenseKeyKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseKeyKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) LicenseKeyKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseKeyKeyInput",
 		&returns,
 	)
 	return returns
@@ -224,6 +272,17 @@ func NewObservabilityPipelineConfigDestinationNewRelicOutputReference_Override(o
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference)SetAccountIdKey(val *string) {
+	if err := j.validateSetAccountIdKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountIdKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -253,6 +312,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference)SetLicenseKeyKey(val *string) {
+	if err := j.validateSetLicenseKeyKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"licenseKeyKey",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) ResetAccountIdKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAccountIdKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) ResetBuffer() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationNewRelicOutputReference) ResetLicenseKeyKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLicenseKeyKey",
 		nil, // no parameters
 	)
 }

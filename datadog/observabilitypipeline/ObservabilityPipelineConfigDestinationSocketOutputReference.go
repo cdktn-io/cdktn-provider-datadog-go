@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	Buffer() ObservabilityPipelineConfigDestinationSocketBufferList
 	BufferInput() interface{}
 	// the index of the complex object in a list.
@@ -79,6 +82,7 @@ type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 	PutBuffer(value interface{})
 	PutFraming(value interface{})
 	PutTls(value interface{})
+	ResetAddressKey()
 	ResetBuffer()
 	ResetFraming()
 	ResetTls()
@@ -95,6 +99,26 @@ type ObservabilityPipelineConfigDestinationSocketOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationSocketOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) Buffer() ObservabilityPipelineConfigDestinationSocketBufferList {
@@ -292,6 +316,17 @@ func NewObservabilityPipelineConfigDestinationSocketOutputReference_Override(o O
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -588,6 +623,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) 
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSocketOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
 	)
 }
 

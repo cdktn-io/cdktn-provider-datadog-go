@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktn.TerraformResource
 	Assets() MonitorAssetsList
@@ -1179,7 +1179,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1197,7 +1197,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 

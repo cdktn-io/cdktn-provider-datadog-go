@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/software_catalog datadog_software_catalog}.
 type SoftwareCatalog interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SoftwareCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/software_catalog datadog_software_catalog} Resource.
 func NewSoftwareCatalog(scope constructs.Construct, id *string, config *SoftwareCatalogConfig) SoftwareCatalog {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewSoftwareCatalog(scope constructs.Construct, id *string, config *Software
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/software_catalog datadog_software_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/software_catalog datadog_software_catalog} Resource.
 func NewSoftwareCatalog_Override(s SoftwareCatalog, scope constructs.Construct, id *string, config *SoftwareCatalogConfig) {
 	_init_.Initialize()
 

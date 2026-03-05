@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item datadog_datastore_item}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item datadog_datastore_item}.
 type DatastoreItem interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DatastoreItem) ValueInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item datadog_datastore_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item datadog_datastore_item} Resource.
 func NewDatastoreItem(scope constructs.Construct, id *string, config *DatastoreItemConfig) DatastoreItem {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDatastoreItem(scope constructs.Construct, id *string, config *DatastoreI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/datastore_item datadog_datastore_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore_item datadog_datastore_item} Resource.
 func NewDatastoreItem_Override(d DatastoreItem, scope constructs.Construct, id *string, config *DatastoreItemConfig) {
 	_init_.Initialize()
 

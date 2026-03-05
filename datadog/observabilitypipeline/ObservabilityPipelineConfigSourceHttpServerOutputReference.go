@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	AuthStrategy() *string
 	SetAuthStrategy(val *string)
 	AuthStrategyInput() *string
@@ -38,6 +41,9 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PasswordKey() *string
+	SetPasswordKey(val *string)
+	PasswordKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,6 +54,9 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigSourceHttpServerTlsList
 	TlsInput() interface{}
+	UsernameKey() *string
+	SetUsernameKey(val *string)
+	UsernameKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,7 +82,10 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	ResetAddressKey()
+	ResetPasswordKey()
 	ResetTls()
+	ResetUsernameKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -87,6 +99,26 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigSourceHttpServerOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) AuthStrategy() *string {
@@ -179,6 +211,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) I
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) PasswordKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) PasswordKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -219,6 +271,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) T
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) UsernameKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) UsernameKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceHttpServerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceHttpServerOutputReference {
 	_init_.Initialize()
@@ -244,6 +316,17 @@ func NewObservabilityPipelineConfigSourceHttpServerOutputReference_Override(o Ob
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceHttpServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -302,6 +385,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)SetPasswordKey(val *string) {
+	if err := j.validateSetPasswordKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -320,6 +414,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference)SetUsernameKey(val *string) {
+	if err := j.validateSetUsernameKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usernameKey",
 		val,
 	)
 }
@@ -521,10 +626,34 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) P
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetPasswordKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPasswordKey",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetTls() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetUsernameKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUsernameKey",
 		nil, // no parameters
 	)
 }

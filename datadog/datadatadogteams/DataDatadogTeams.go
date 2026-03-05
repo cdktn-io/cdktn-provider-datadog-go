@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/teams datadog_teams}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/teams datadog_teams}.
 type DataDatadogTeams interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataDatadogTeams) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/teams datadog_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/teams datadog_teams} Data Source.
 func NewDataDatadogTeams(scope constructs.Construct, id *string, config *DataDatadogTeamsConfig) DataDatadogTeams {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataDatadogTeams(scope constructs.Construct, id *string, config *DataDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/teams datadog_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/teams datadog_teams} Data Source.
 func NewDataDatadogTeams_Override(d DataDatadogTeams, scope constructs.Construct, id *string, config *DataDatadogTeamsConfig) {
 	_init_.Initialize()
 

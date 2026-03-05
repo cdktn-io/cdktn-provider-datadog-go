@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigSourceRsyslogOutputReference interface {
 	cdktn.ComplexObject
+	AddressKey() *string
+	SetAddressKey(val *string)
+	AddressKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type ObservabilityPipelineConfigSourceRsyslogOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	ResetAddressKey()
 	ResetMode()
 	ResetTls()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type ObservabilityPipelineConfigSourceRsyslogOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigSourceRsyslogOutputReference
 type jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference) AddressKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference) AddressKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference) ComplexObjectIndex() interface{} {
@@ -222,6 +246,17 @@ func NewObservabilityPipelineConfigSourceRsyslogOutputReference_Override(o Obser
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceRsyslogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference)SetAddressKey(val *string) {
+	if err := j.validateSetAddressKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addressKey",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference) PutT
 		o,
 		"putTls",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogOutputReference) ResetAddressKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddressKey",
+		nil, // no parameters
 	)
 }
 

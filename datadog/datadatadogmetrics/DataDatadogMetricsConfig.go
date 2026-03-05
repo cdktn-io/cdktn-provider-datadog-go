@@ -24,7 +24,7 @@ type DataDatadogMetricsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The search query to use when listing metrics.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

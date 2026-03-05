@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index_order datadog_logs_index_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index_order datadog_logs_index_order}.
 type LogsIndexOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LogsIndexOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index_order datadog_logs_index_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index_order datadog_logs_index_order} Resource.
 func NewLogsIndexOrder(scope constructs.Construct, id *string, config *LogsIndexOrderConfig) LogsIndexOrder {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewLogsIndexOrder(scope constructs.Construct, id *string, config *LogsIndex
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/logs_index_order datadog_logs_index_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index_order datadog_logs_index_order} Resource.
 func NewLogsIndexOrder_Override(l LogsIndexOrder, scope constructs.Construct, id *string, config *LogsIndexOrderConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}.
 type DataDatadogAzureUcConfig interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataDatadogAzureUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source.
 func NewDataDatadogAzureUcConfig(scope constructs.Construct, id *string, config *DataDatadogAzureUcConfigConfig) DataDatadogAzureUcConfig {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataDatadogAzureUcConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source.
 func NewDataDatadogAzureUcConfig_Override(d DataDatadogAzureUcConfig, scope constructs.Construct, id *string, config *DataDatadogAzureUcConfigConfig) {
 	_init_.Initialize()
 

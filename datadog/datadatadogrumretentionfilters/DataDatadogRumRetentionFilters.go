@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}.
 type DataDatadogRumRetentionFilters interface {
 	cdktn.TerraformDataSource
 	ApplicationId() *string
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataDatadogRumRetentionFilters) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
 func NewDataDatadogRumRetentionFilters(scope constructs.Construct, id *string, config *DataDatadogRumRetentionFiltersConfig) DataDatadogRumRetentionFilters {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataDatadogRumRetentionFilters(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source.
 func NewDataDatadogRumRetentionFilters_Override(d DataDatadogRumRetentionFilters, scope constructs.Construct, id *string, config *DataDatadogRumRetentionFiltersConfig) {
 	_init_.Initialize()
 

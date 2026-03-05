@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
 type DataDatadogTagPipelineRuleset interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataDatadogTagPipelineRuleset) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) DataDatadogTagPipelineRuleset {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset_Override(d DataDatadogTagPipelineRuleset, scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) {
 	_init_.Initialize()
 

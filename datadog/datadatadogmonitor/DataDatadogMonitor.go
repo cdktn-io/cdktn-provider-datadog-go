@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor datadog_monitor}.
 type DataDatadogMonitor interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -676,7 +676,7 @@ func (j *jsiiProxy_DataDatadogMonitor) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitor datadog_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor datadog_monitor} Data Source.
 func NewDataDatadogMonitor(scope constructs.Construct, id *string, config *DataDatadogMonitorConfig) DataDatadogMonitor {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewDataDatadogMonitor(scope constructs.Construct, id *string, config *DataD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitor datadog_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor datadog_monitor} Data Source.
 func NewDataDatadogMonitor_Override(d DataDatadogMonitor, scope constructs.Construct, id *string, config *DataDatadogMonitorConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSumoLogicOutputReference) validateSetHeaderHostNameParameters(val *string) error {
 	return nil
 }

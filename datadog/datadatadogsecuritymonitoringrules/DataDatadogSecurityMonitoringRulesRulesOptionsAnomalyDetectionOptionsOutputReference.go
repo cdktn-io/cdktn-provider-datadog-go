@@ -32,6 +32,7 @@ type DataDatadogSecurityMonitoringRulesRulesOptionsAnomalyDetectionOptionsOutput
 	DetectionTolerance() *float64
 	// Experimental.
 	Fqn() *string
+	InstantaneousBaseline() cdktn.IResolvable
 	InternalValue() *DataDatadogSecurityMonitoringRulesRulesOptionsAnomalyDetectionOptions
 	SetInternalValue(val *DataDatadogSecurityMonitoringRulesRulesOptionsAnomalyDetectionOptions)
 	LearningDuration() *float64
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsAnomalyDetectio
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsAnomalyDetectionOptionsOutputReference) InstantaneousBaseline() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"instantaneousBaseline",
 		&returns,
 	)
 	return returns

@@ -7,23 +7,31 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationMicrosoftSentinel struct {
 	// Azure AD client ID used for authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 	// The immutable ID of the Data Collection Rule (DCR).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
 	DcrImmutableId *string `field:"required" json:"dcrImmutableId" yaml:"dcrImmutableId"`
 	// The name of the Log Analytics table where logs will be sent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 	Table *string `field:"required" json:"table" yaml:"table"`
 	// Azure AD tenant ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
 	TenantId *string `field:"required" json:"tenantId" yaml:"tenantId"`
 	// buffer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
+	// Name of the environment variable or secret that holds the Azure AD client secret.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
+	ClientSecretKey *string `field:"optional" json:"clientSecretKey" yaml:"clientSecretKey"`
+	// Name of the environment variable or secret that holds the Data Collection Endpoint (DCE) URI.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dce_uri_key ObservabilityPipeline#dce_uri_key}
+	DceUriKey *string `field:"optional" json:"dceUriKey" yaml:"dceUriKey"`
 }
 

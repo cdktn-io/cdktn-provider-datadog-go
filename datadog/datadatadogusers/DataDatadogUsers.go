@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/users datadog_users}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users datadog_users}.
 type DataDatadogUsers interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataDatadogUsers) Users() DataDatadogUsersUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/users datadog_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users datadog_users} Data Source.
 func NewDataDatadogUsers(scope constructs.Construct, id *string, config *DataDatadogUsersConfig) DataDatadogUsers {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataDatadogUsers(scope constructs.Construct, id *string, config *DataDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/users datadog_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users datadog_users} Data Source.
 func NewDataDatadogUsers_Override(d DataDatadogUsers, scope constructs.Construct, id *string, config *DataDatadogUsersConfig) {
 	_init_.Initialize()
 

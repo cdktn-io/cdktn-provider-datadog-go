@@ -13,6 +13,9 @@ import (
 
 type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference interface {
 	cdktn.ComplexObject
+	AppKeyKey() *string
+	SetAppKeyKey(val *string)
+	AppKeyKeyInput() *string
 	Columns() *[]*string
 	SetColumns(val *[]*string)
 	ColumnsInput() *[]*string
@@ -73,6 +76,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceT
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAppKeyKey()
 	ResetColumns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -87,6 +91,26 @@ type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceT
 // The jsii proxy struct for ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference
 type jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) AppKeyKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appKeyKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) AppKeyKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appKeyKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) Columns() *[]*string {
@@ -244,6 +268,17 @@ func NewObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferen
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference)SetAppKeyKey(val *string) {
+	if err := j.validateSetAppKeyKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appKeyKey",
+		val,
 	)
 }
 
@@ -519,6 +554,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) ResetAppKeyKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAppKeyKey",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableOutputReference) ResetColumns() {

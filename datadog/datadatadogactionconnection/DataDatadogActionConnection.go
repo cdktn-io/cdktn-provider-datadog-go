@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/action_connection datadog_action_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection}.
 type DataDatadogActionConnection interface {
 	cdktn.TerraformDataSource
 	Aws() DataDatadogActionConnectionAwsOutputReference
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatadogActionConnection) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection(scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) DataDatadogActionConnection {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataDatadogActionConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection_Override(d DataDatadogActionConnection, scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) {
 	_init_.Initialize()
 
