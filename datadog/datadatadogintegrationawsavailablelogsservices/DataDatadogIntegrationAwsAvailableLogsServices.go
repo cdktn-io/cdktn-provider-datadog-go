@@ -5,10 +5,10 @@ package datadatadogintegrationawsavailablelogsservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
