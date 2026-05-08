@@ -83,6 +83,10 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

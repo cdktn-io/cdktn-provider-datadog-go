@@ -5,14 +5,14 @@ package integrationgcpsts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcpsts/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcpsts/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 type IntegrationGcpSts interface {
 	cdktn.TerraformResource
 	AccountTags() *[]*string
@@ -652,7 +652,7 @@ func (j *jsiiProxy_IntegrationGcpSts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) IntegrationGcpSts {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewIntegrationGcpSts(scope constructs.Construct, id *string, config *Integr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource.
 func NewIntegrationGcpSts_Override(i IntegrationGcpSts, scope constructs.Construct, id *string, config *IntegrationGcpStsConfig) {
 	_init_.Initialize()
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQ
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

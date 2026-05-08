@@ -228,6 +228,14 @@ func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetQueryTableDefinitionOutputReference) validateSetHasSearchBarParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

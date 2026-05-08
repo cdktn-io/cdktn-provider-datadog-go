@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -30,6 +30,9 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefiniti
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HasValueLabels() interface{}
+	SetHasValueLabels(val interface{})
+	HasValueLabelsInput() interface{}
 	InternalValue() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyle
 	SetInternalValue(val *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyle)
 	LineType() *string
@@ -76,6 +79,7 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefiniti
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetHasValueLabels()
 	ResetLineType()
 	ResetLineWidth()
 	ResetOrderBy()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTime
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyleOutputReference) HasValueLabels() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasValueLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyleOutputReference) HasValueLabelsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasValueLabelsInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +315,17 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTime
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyleOutputReference)SetHasValueLabels(val interface{}) {
+	if err := j.validateSetHasValueLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasValueLabels",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTime
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyleOutputReference) ResetHasValueLabels() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHasValueLabels",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestStyleOutputReference) ResetLineType() {

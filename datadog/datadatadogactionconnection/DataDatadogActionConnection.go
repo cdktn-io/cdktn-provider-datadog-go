@@ -5,14 +5,14 @@ package datadatadogactionconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogactionconnection/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogactionconnection/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/action_connection datadog_action_connection}.
 type DataDatadogActionConnection interface {
 	cdktn.TerraformDataSource
 	Aws() DataDatadogActionConnectionAwsOutputReference
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataDatadogActionConnection) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection(scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) DataDatadogActionConnection {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataDatadogActionConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection_Override(d DataDatadogActionConnection, scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) {
 	_init_.Initialize()
 

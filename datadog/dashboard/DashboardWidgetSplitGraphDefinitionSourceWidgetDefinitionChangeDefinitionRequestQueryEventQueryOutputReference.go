@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,8 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRe
 	// Experimental.
 	Fqn() *string
 	GroupBy() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByList
+	GroupByFields() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	GroupByFieldsInput() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFields
 	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
@@ -87,9 +89,11 @@ type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRe
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
+	PutGroupByFields(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFields)
 	PutSearch(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQuerySearch)
 	ResetCrossOrgUuids()
 	ResetGroupBy()
+	ResetGroupByFields()
 	ResetIndexes()
 	ResetSearch()
 	ResetStorage()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChan
 	_jsii_.Get(
 		j,
 		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryOutputReference) GroupByFields() DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference {
+	var returns DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"groupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryOutputReference) GroupByFieldsInput() *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFields {
+	var returns *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFields
+	_jsii_.Get(
+		j,
+		"groupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,17 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChan
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryOutputReference) PutGroupByFields(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryGroupByFields) {
+	if err := d.validatePutGroupByFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGroupByFields",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryOutputReference) PutSearch(value *DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQuerySearch) {
 	if err := d.validatePutSearchParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChan
 	_jsii_.InvokeVoid(
 		d,
 		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionChangeDefinitionRequestQueryEventQueryOutputReference) ResetGroupByFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupByFields",
 		nil, // no parameters
 	)
 }

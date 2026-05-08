@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetChangeDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

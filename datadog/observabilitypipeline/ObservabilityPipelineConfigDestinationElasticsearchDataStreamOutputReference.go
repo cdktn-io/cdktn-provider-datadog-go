@@ -5,14 +5,17 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference interface {
 	cdktn.ComplexObject
+	AutoRouting() interface{}
+	SetAutoRouting(val interface{})
+	AutoRoutingInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,6 +44,9 @@ type ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReferenc
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
+	SyncFields() interface{}
+	SetSyncFields(val interface{})
+	SyncFieldsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +79,11 @@ type ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReferenc
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAutoRouting()
 	ResetDataset()
 	ResetDtype()
 	ResetNamespace()
+	ResetSyncFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -89,6 +97,26 @@ type ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReferenc
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) AutoRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) AutoRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRoutingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) ComplexObjectIndex() interface{} {
@@ -201,6 +229,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) SyncFields() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"syncFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) SyncFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"syncFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -246,6 +294,17 @@ func NewObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputRefer
 		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference)SetAutoRouting(val interface{}) {
+	if err := j.validateSetAutoRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRouting",
+		val,
 	)
 }
 
@@ -311,6 +370,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference)SetSyncFields(val interface{}) {
+	if err := j.validateSetSyncFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syncFields",
 		val,
 	)
 }
@@ -523,6 +593,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) ResetAutoRouting() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoRouting",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) ResetDataset() {
 	_jsii_.InvokeVoid(
 		o,
@@ -543,6 +621,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 	_jsii_.InvokeVoid(
 		o,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) ResetSyncFields() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSyncFields",
 		nil, // no parameters
 	)
 }

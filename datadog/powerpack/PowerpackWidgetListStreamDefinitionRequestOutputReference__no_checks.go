@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -155,6 +155,10 @@ func (j *jsiiProxy_IntegrationAzure) validateSetResourceCollectionEnabledParamet
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationAzure) validateSetSecretlessAuthEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationAzure) validateSetTenantNameParameters(val *string) error {
 	return nil
 }

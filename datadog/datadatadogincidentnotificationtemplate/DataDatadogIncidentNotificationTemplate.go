@@ -5,14 +5,14 @@ package datadatadogincidentnotificationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationtemplate/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationtemplate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_template datadog_incident_notification_template}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_template datadog_incident_notification_template}.
 type DataDatadogIncidentNotificationTemplate interface {
 	cdktn.TerraformDataSource
 	Category() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataDatadogIncidentNotificationTemplate) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_template datadog_incident_notification_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_template datadog_incident_notification_template} Data Source.
 func NewDataDatadogIncidentNotificationTemplate(scope constructs.Construct, id *string, config *DataDatadogIncidentNotificationTemplateConfig) DataDatadogIncidentNotificationTemplate {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataDatadogIncidentNotificationTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_template datadog_incident_notification_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_template datadog_incident_notification_template} Data Source.
 func NewDataDatadogIncidentNotificationTemplate_Override(d DataDatadogIncidentNotificationTemplate, scope constructs.Construct, id *string, config *DataDatadogIncidentNotificationTemplateConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetToplistDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

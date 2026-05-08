@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOu
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOutputReference) validateSetInternalValueParameters(val *DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort) error {
 	return nil
 }

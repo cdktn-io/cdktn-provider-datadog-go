@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefi
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference) validateSetGlobalTimeTargetParameters(val *string) error {
 	return nil
 }

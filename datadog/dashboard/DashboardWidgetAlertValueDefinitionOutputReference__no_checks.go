@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetAlertValueDefinitionOutputReference) validateSetInternalValueParameters(val *DashboardWidgetAlertValueDefinition) error {
 	return nil
 }

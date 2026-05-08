@@ -155,6 +155,17 @@ func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupByFields) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

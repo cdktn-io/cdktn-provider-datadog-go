@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTreemapDefinitionOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetTreemapDefinition) error {
 	return nil
 }

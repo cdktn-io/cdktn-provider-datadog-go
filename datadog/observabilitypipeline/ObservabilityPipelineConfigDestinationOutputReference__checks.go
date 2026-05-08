@@ -155,6 +155,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutAmazonS3GenericParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigDestinationAmazonS3Generic:
+		value := value.(*[]*ObservabilityPipelineConfigDestinationAmazonS3Generic)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigDestinationAmazonS3Generic:
+		value_ := value.([]*ObservabilityPipelineConfigDestinationAmazonS3Generic)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigDestinationAmazonS3Generic; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutAmazonSecurityLakeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -273,6 +304,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutDatabricksZerobusParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigDestinationDatabricksZerobus:
+		value := value.(*[]*ObservabilityPipelineConfigDestinationDatabricksZerobus)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigDestinationDatabricksZerobus:
+		value_ := value.([]*ObservabilityPipelineConfigDestinationDatabricksZerobus)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigDestinationDatabricksZerobus; received %#v (a %T)", value, value)
 		}
 	}
 

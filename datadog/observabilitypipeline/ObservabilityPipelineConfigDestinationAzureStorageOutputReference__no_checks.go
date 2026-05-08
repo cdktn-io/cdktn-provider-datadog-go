@@ -67,6 +67,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validateSetConnectionStringKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validateSetContainerNameParameters(val *string) error {
 	return nil
 }

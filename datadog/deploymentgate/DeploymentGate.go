@@ -5,14 +5,14 @@ package deploymentgate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate datadog_deployment_gate}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate datadog_deployment_gate}.
 type DeploymentGate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DeploymentGate) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate datadog_deployment_gate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate datadog_deployment_gate} Resource.
 func NewDeploymentGate(scope constructs.Construct, id *string, config *DeploymentGateConfig) DeploymentGate {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewDeploymentGate(scope constructs.Construct, id *string, config *Deploymen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate datadog_deployment_gate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate datadog_deployment_gate} Resource.
 func NewDeploymentGate_Override(d DeploymentGate, scope constructs.Construct, id *string, config *DeploymentGateConfig) {
 	_init_.Initialize()
 

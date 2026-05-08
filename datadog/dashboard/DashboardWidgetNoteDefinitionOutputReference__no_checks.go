@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetNoteDefinitionOutputReference) validateSetCont
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetNoteDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetNoteDefinitionOutputReference) validateSetFontSizeParameters(val *string) error {
 	return nil
 }

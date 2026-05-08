@@ -5,14 +5,14 @@ package datadatadoggcpucconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
 type DataDatadogGcpUcConfig interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataDatadogGcpUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) DataDatadogGcpUcConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataDatadogGcpUcConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config} Data Source.
 func NewDataDatadogGcpUcConfig_Override(d DataDatadogGcpUcConfig, scope constructs.Construct, id *string, config *DataDatadogGcpUcConfigConfig) {
 	_init_.Initialize()
 

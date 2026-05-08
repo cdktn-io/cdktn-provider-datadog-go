@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,6 +36,9 @@ type PowerpackWidgetQueryValueDefinitionOutputReference interface {
 	CustomUnit() *string
 	SetCustomUnit(val *string)
 	CustomUnitInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	HideIncompleteCostData() interface{}
@@ -103,6 +106,7 @@ type PowerpackWidgetQueryValueDefinitionOutputReference interface {
 	ResetAutoscale()
 	ResetCustomLink()
 	ResetCustomUnit()
+	ResetDescription()
 	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetPrecision()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference) CustomUni
 	_jsii_.Get(
 		j,
 		"customUnitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +529,17 @@ func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference)SetCustomU
 	_jsii_.Set(
 		j,
 		"customUnit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -858,6 +893,14 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference) ResetCust
 	_jsii_.InvokeVoid(
 		p,
 		"resetCustomUnit",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

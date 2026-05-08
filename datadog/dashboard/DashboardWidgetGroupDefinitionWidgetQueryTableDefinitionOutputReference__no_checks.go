@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutpu
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference) validateSetHasSearchBarParameters(val *string) error {
 	return nil
 }

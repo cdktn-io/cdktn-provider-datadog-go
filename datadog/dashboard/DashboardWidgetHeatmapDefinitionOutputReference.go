@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -30,6 +30,9 @@ type DashboardWidgetHeatmapDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	CustomLink() DashboardWidgetHeatmapDefinitionCustomLinkList
 	CustomLinkInput() interface{}
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Event() DashboardWidgetHeatmapDefinitionEventList
 	EventInput() interface{}
 	// Experimental.
@@ -98,6 +101,7 @@ type DashboardWidgetHeatmapDefinitionOutputReference interface {
 	PutRequest(value interface{})
 	PutYaxis(value *DashboardWidgetHeatmapDefinitionYaxis)
 	ResetCustomLink()
+	ResetDescription()
 	ResetEvent()
 	ResetHideIncompleteCostData()
 	ResetLegendSize()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) CustomLinkIn
 	_jsii_.Get(
 		j,
 		"customLinkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -459,6 +483,17 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -807,6 +842,14 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) ResetCustomL
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomLink",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

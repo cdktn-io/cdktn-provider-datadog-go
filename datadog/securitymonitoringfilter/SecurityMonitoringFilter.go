@@ -5,14 +5,14 @@ package securitymonitoringfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringfilter/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringfilter/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 type SecurityMonitoringFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_SecurityMonitoringFilter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) SecurityMonitoringFilter {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter_Override(s SecurityMonitoringFilter, scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) {
 	_init_.Initialize()
 

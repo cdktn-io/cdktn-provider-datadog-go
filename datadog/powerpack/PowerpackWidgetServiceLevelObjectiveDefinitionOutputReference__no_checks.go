@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference) validateSetGlobalTimeTargetParameters(val *string) error {
 	return nil
 }

@@ -55,7 +55,15 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutCompressionParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutDataStreamParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validatePutTlsParameters(value interface{}) error {
 	return nil
 }
 
@@ -83,7 +91,19 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetIdKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetPipelineParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) validateSetRequestRetryPartialParameters(val interface{}) error {
 	return nil
 }
 

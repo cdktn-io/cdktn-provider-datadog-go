@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionOutp
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetRunWorkflowDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

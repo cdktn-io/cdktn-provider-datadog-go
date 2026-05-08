@@ -75,6 +75,10 @@ func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetHeatmapDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

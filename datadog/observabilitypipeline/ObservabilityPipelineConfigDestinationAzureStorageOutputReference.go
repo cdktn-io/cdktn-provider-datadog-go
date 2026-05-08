@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type ObservabilityPipelineConfigDestinationAzureStorageOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionStringKey() *string
+	SetConnectionStringKey(val *string)
+	ConnectionStringKeyInput() *string
 	ContainerName() *string
 	SetContainerName(val *string)
 	ContainerNameInput() *string
@@ -75,6 +78,7 @@ type ObservabilityPipelineConfigDestinationAzureStorageOutputReference interface
 	PutBuffer(value interface{})
 	ResetBlobPrefix()
 	ResetBuffer()
+	ResetConnectionStringKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) ConnectionStringKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionStringKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) ConnectionStringKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionStringKeyInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +301,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference)SetConnectionStringKey(val *string) {
+	if err := j.validateSetConnectionStringKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionStringKey",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetBuffer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) ResetConnectionStringKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetConnectionStringKey",
 		nil, // no parameters
 	)
 }

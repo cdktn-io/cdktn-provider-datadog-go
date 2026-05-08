@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,8 @@ type PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference in
 	// Experimental.
 	Fqn() *string
 	GroupBy() PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList
+	GroupByFields() PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	GroupByFieldsInput() *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields
 	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
@@ -87,9 +89,11 @@ type PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference in
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
+	PutGroupByFields(value *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields)
 	PutSearch(value *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch)
 	ResetCrossOrgUuids()
 	ResetGroupBy()
+	ResetGroupByFields()
 	ResetIndexes()
 	ResetSearch()
 	ResetStorage()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	_jsii_.Get(
 		j,
 		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) GroupByFields() PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference {
+	var returns PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"groupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) GroupByFieldsInput() *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields {
+	var returns *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields
+	_jsii_.Get(
+		j,
+		"groupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,17 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	)
 }
 
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) PutGroupByFields(value *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields) {
+	if err := p.validatePutGroupByFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGroupByFields",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) PutSearch(value *PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch) {
 	if err := p.validatePutSearchParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	_jsii_.InvokeVoid(
 		p,
 		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) ResetGroupByFields() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupByFields",
 		nil, // no parameters
 	)
 }

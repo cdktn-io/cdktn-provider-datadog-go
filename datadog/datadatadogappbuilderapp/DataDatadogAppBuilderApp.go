@@ -5,14 +5,14 @@ package datadatadogappbuilderapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
 type DataDatadogAppBuilderApp interface {
 	cdktn.TerraformDataSource
 	ActionQueryNamesToConnectionIds() cdktn.StringMap
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataDatadogAppBuilderApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) DataDatadogAppBuilderApp {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataDatadogAppBuilderApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app datadog_app_builder_app} Data Source.
 func NewDataDatadogAppBuilderApp_Override(d DataDatadogAppBuilderApp, scope constructs.Construct, id *string, config *DataDatadogAppBuilderAppConfig) {
 	_init_.Initialize()
 

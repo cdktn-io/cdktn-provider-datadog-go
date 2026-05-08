@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestO
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequestOutputReference) validateSetInternalValueParameters(val *DashboardWidgetGroupDefinitionWidgetSloListDefinitionRequest) error {
 	return nil
 }

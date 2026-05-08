@@ -5,14 +5,14 @@ package datadatadogtagpipelineruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogtagpipelineruleset/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogtagpipelineruleset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
 type DataDatadogTagPipelineRuleset interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataDatadogTagPipelineRuleset) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) DataDatadogTagPipelineRuleset {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataDatadogTagPipelineRuleset(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source.
 func NewDataDatadogTagPipelineRuleset_Override(d DataDatadogTagPipelineRuleset, scope constructs.Construct, id *string, config *DataDatadogTagPipelineRulesetConfig) {
 	_init_.Initialize()
 

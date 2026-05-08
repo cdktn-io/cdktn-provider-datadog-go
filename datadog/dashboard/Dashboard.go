@@ -5,14 +5,14 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard datadog_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard datadog_dashboard}.
 type Dashboard interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -80,6 +80,8 @@ type Dashboard interface {
 	RestrictedRoles() *[]*string
 	SetRestrictedRoles(val *[]*string)
 	RestrictedRolesInput() *[]*string
+	Tab() DashboardTabList
+	TabInput() interface{}
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -144,6 +146,7 @@ type Dashboard interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTab(value interface{})
 	PutTemplateVariable(value interface{})
 	PutTemplateVariablePreset(value interface{})
 	PutWidget(value interface{})
@@ -157,6 +160,7 @@ type Dashboard interface {
 	ResetOverrideLogicalId()
 	ResetReflowType()
 	ResetRestrictedRoles()
+	ResetTab()
 	ResetTags()
 	ResetTemplateVariable()
 	ResetTemplateVariablePreset()
@@ -489,6 +493,26 @@ func (j *jsiiProxy_Dashboard) RestrictedRolesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Dashboard) Tab() DashboardTabList {
+	var returns DashboardTabList
+	_jsii_.Get(
+		j,
+		"tab",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) TabInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tabInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Dashboard) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard datadog_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard datadog_dashboard} Resource.
 func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 
@@ -1211,6 +1235,17 @@ func (d *jsiiProxy_Dashboard) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_Dashboard) PutTab(value interface{}) {
+	if err := d.validatePutTabParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTab",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_Dashboard) PutTemplateVariable(value interface{}) {
 	if err := d.validatePutTemplateVariableParameters(value); err != nil {
 		panic(err)
@@ -1304,6 +1339,14 @@ func (d *jsiiProxy_Dashboard) ResetRestrictedRoles() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRestrictedRoles",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetTab() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTab",
 		nil, // no parameters
 	)
 }

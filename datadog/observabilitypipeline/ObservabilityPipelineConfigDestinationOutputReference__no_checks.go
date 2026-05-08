@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutAmazonS3GenericParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutAmazonSecurityLakeParameters(value interface{}) error {
 	return nil
 }
@@ -68,6 +72,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutCrowdstrikeNextGenSiemParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutDatabricksZerobusParameters(value interface{}) error {
 	return nil
 }
 

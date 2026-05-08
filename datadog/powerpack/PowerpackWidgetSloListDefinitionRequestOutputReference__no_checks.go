@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetSloListDefinitionRequestOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetSloListDefinitionRequest) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,6 +34,9 @@ type PowerpackWidgetNoteDefinitionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	FontSize() *string
 	SetFontSize(val *string)
 	FontSizeInput() *string
@@ -92,6 +95,7 @@ type PowerpackWidgetNoteDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBackgroundColor()
+	ResetDescription()
 	ResetFontSize()
 	ResetHasPadding()
 	ResetShowTick()
@@ -179,6 +183,26 @@ func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -432,6 +456,17 @@ func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference)SetContent(val *
 	_jsii_.Set(
 		j,
 		"content",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -736,6 +771,14 @@ func (p *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) ResetBackground
 	_jsii_.InvokeVoid(
 		p,
 		"resetBackgroundColor",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetListStreamDefinitionRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

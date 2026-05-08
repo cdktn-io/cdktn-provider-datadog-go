@@ -5,14 +5,14 @@ package datadatadogmetrictags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags datadog_metric_tags}.
 type DataDatadogMetricTags interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataDatadogMetricTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
 func NewDataDatadogMetricTags(scope constructs.Construct, id *string, config *DataDatadogMetricTagsConfig) DataDatadogMetricTags {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataDatadogMetricTags(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source.
 func NewDataDatadogMetricTags_Override(d DataDatadogMetricTags, scope constructs.Construct, id *string, config *DataDatadogMetricTagsConfig) {
 	_init_.Initialize()
 

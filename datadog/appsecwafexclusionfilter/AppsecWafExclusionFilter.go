@@ -5,14 +5,14 @@ package appsecwafexclusionfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appsecwafexclusionfilter/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafexclusionfilter/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}.
 type AppsecWafExclusionFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_AppsecWafExclusionFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
 func NewAppsecWafExclusionFilter(scope constructs.Construct, id *string, config *AppsecWafExclusionFilterConfig) AppsecWafExclusionFilter {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewAppsecWafExclusionFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource.
 func NewAppsecWafExclusionFilter_Override(a AppsecWafExclusionFilter, scope constructs.Construct, id *string, config *AppsecWafExclusionFilterConfig) {
 	_init_.Initialize()
 

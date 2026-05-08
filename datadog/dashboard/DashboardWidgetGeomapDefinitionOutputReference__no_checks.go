@@ -75,6 +75,10 @@ func (j *jsiiProxy_DashboardWidgetGeomapDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGeomapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGeomapDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

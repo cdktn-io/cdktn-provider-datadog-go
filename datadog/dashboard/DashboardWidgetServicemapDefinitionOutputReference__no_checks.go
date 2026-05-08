@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetServicemapDefinitionOutputReference) validateSetFiltersParameters(val *[]*string) error {
 	return nil
 }

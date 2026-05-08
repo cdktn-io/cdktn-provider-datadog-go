@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetServicemapDefinitionOutputReference) validateSetFiltersParameters(val *[]*string) error {
 	return nil
 }

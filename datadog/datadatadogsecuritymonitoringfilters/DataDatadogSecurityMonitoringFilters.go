@@ -5,14 +5,14 @@ package datadatadogsecuritymonitoringfilters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringfilters/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringfilters/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters}.
 type DataDatadogSecurityMonitoringFilters interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringFilters) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
 func NewDataDatadogSecurityMonitoringFilters(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringFiltersConfig) DataDatadogSecurityMonitoringFilters {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataDatadogSecurityMonitoringFilters(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
 func NewDataDatadogSecurityMonitoringFilters_Override(d DataDatadogSecurityMonitoringFilters, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringFiltersConfig) {
 	_init_.Initialize()
 

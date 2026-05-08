@@ -166,6 +166,14 @@ func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validateSetEventSizeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

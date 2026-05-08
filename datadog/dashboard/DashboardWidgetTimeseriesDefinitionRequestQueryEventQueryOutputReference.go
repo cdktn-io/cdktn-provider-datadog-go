@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,8 @@ type DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference in
 	// Experimental.
 	Fqn() *string
 	GroupBy() DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByList
+	GroupByFields() DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	GroupByFieldsInput() *DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields
 	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
@@ -87,9 +89,11 @@ type DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference in
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
+	PutGroupByFields(value *DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields)
 	PutSearch(value *DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch)
 	ResetCrossOrgUuids()
 	ResetGroupBy()
+	ResetGroupByFields()
 	ResetIndexes()
 	ResetSearch()
 	ResetStorage()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	_jsii_.Get(
 		j,
 		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) GroupByFields() DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference {
+	var returns DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"groupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) GroupByFieldsInput() *DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields {
+	var returns *DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields
+	_jsii_.Get(
+		j,
+		"groupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,17 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) PutGroupByFields(value *DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields) {
+	if err := d.validatePutGroupByFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGroupByFields",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) PutSearch(value *DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch) {
 	if err := d.validatePutSearchParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutp
 	_jsii_.InvokeVoid(
 		d,
 		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference) ResetGroupByFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupByFields",
 		nil, // no parameters
 	)
 }

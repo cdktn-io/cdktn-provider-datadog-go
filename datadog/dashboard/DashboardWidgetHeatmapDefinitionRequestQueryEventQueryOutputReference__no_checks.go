@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *DashboardWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *DashboardWidgetHeatmapDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

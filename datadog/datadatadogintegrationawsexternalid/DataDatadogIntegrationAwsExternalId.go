@@ -5,14 +5,14 @@ package datadatadogintegrationawsexternalid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsexternalid/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsexternalid/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
 type DataDatadogIntegrationAwsExternalId interface {
 	cdktn.TerraformDataSource
 	AwsAccountId() *string
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsExternalId) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id} Data Source.
 func NewDataDatadogIntegrationAwsExternalId(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsExternalIdConfig) DataDatadogIntegrationAwsExternalId {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataDatadogIntegrationAwsExternalId(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id} Data Source.
 func NewDataDatadogIntegrationAwsExternalId_Override(d DataDatadogIntegrationAwsExternalId, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsExternalIdConfig) {
 	_init_.Initialize()
 

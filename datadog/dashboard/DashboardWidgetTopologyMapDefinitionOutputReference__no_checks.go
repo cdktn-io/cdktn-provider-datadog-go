@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetTopologyMapDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTopologyMapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTopologyMapDefinitionOutputReference) validateSetInternalValueParameters(val *DashboardWidgetTopologyMapDefinition) error {
 	return nil
 }

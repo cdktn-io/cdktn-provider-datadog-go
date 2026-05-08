@@ -5,14 +5,14 @@ package integrationawsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsaccount/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsaccount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_aws_account datadog_integration_aws_account}.
 type IntegrationAwsAccount interface {
 	cdktn.TerraformResource
 	AccountTags() *[]*string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_IntegrationAwsAccount) TracesConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
 func NewIntegrationAwsAccount(scope constructs.Construct, id *string, config *IntegrationAwsAccountConfig) IntegrationAwsAccount {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewIntegrationAwsAccount(scope constructs.Construct, id *string, config *In
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource.
 func NewIntegrationAwsAccount_Override(i IntegrationAwsAccount, scope constructs.Construct, id *string, config *IntegrationAwsAccountConfig) {
 	_init_.Initialize()
 

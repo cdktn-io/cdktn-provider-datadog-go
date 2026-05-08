@@ -47,6 +47,10 @@ func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) valida
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) validatePutSourcetypeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

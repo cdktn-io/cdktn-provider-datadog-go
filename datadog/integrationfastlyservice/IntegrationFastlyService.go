@@ -5,14 +5,14 @@ package integrationfastlyservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyservice/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyservice/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 type IntegrationFastlyService interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IntegrationFastlyService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService(scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) IntegrationFastlyService {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewIntegrationFastlyService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_service datadog_integration_fastly_service} Resource.
 func NewIntegrationFastlyService_Override(i IntegrationFastlyService, scope constructs.Construct, id *string, config *IntegrationFastlyServiceConfig) {
 	_init_.Initialize()
 

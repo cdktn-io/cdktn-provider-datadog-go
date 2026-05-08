@@ -5,14 +5,14 @@ package costbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/costbudget/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/costbudget/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cost_budget datadog_cost_budget}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cost_budget datadog_cost_budget}.
 type CostBudget interface {
 	cdktn.TerraformResource
 	BudgetLine() CostBudgetBudgetLineList
@@ -470,7 +470,7 @@ func (j *jsiiProxy_CostBudget) TotalAmount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cost_budget datadog_cost_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cost_budget datadog_cost_budget} Resource.
 func NewCostBudget(scope constructs.Construct, id *string, config *CostBudgetConfig) CostBudget {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewCostBudget(scope constructs.Construct, id *string, config *CostBudgetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cost_budget datadog_cost_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cost_budget datadog_cost_budget} Resource.
 func NewCostBudget_Override(c CostBudget, scope constructs.Construct, id *string, config *CostBudgetConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package sensitivedatascannerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannerrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannerrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}.
 type SensitiveDataScannerRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -87,6 +87,8 @@ type SensitiveDataScannerRule interface {
 	StandardPatternId() *string
 	SetStandardPatternId(val *string)
 	StandardPatternIdInput() *string
+	Suppressions() SensitiveDataScannerRuleSuppressionsOutputReference
+	SuppressionsInput() *SensitiveDataScannerRuleSuppressions
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -142,6 +144,7 @@ type SensitiveDataScannerRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIncludedKeywordConfiguration(value *SensitiveDataScannerRuleIncludedKeywordConfiguration)
+	PutSuppressions(value *SensitiveDataScannerRuleSuppressions)
 	PutTextReplacement(value *SensitiveDataScannerRuleTextReplacement)
 	ResetDescription()
 	ResetExcludedNamespaces()
@@ -156,6 +159,7 @@ type SensitiveDataScannerRule interface {
 	ResetPattern()
 	ResetPriority()
 	ResetStandardPatternId()
+	ResetSuppressions()
 	ResetTags()
 	ResetTextReplacement()
 	SynthesizeAttributes() *map[string]interface{}
@@ -535,6 +539,26 @@ func (j *jsiiProxy_SensitiveDataScannerRule) StandardPatternIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SensitiveDataScannerRule) Suppressions() SensitiveDataScannerRuleSuppressionsOutputReference {
+	var returns SensitiveDataScannerRuleSuppressionsOutputReference
+	_jsii_.Get(
+		j,
+		"suppressions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SensitiveDataScannerRule) SuppressionsInput() *SensitiveDataScannerRuleSuppressions {
+	var returns *SensitiveDataScannerRuleSuppressions
+	_jsii_.Get(
+		j,
+		"suppressionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SensitiveDataScannerRule) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -606,7 +630,7 @@ func (j *jsiiProxy_SensitiveDataScannerRule) TextReplacementInput() *SensitiveDa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) SensitiveDataScannerRule {
 	_init_.Initialize()
 
@@ -624,7 +648,7 @@ func NewSensitiveDataScannerRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource.
 func NewSensitiveDataScannerRule_Override(s SensitiveDataScannerRule, scope constructs.Construct, id *string, config *SensitiveDataScannerRuleConfig) {
 	_init_.Initialize()
 
@@ -1188,6 +1212,17 @@ func (s *jsiiProxy_SensitiveDataScannerRule) PutIncludedKeywordConfiguration(val
 	)
 }
 
+func (s *jsiiProxy_SensitiveDataScannerRule) PutSuppressions(value *SensitiveDataScannerRuleSuppressions) {
+	if err := s.validatePutSuppressionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSuppressions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SensitiveDataScannerRule) PutTextReplacement(value *SensitiveDataScannerRuleTextReplacement) {
 	if err := s.validatePutTextReplacementParameters(value); err != nil {
 		panic(err)
@@ -1283,6 +1318,14 @@ func (s *jsiiProxy_SensitiveDataScannerRule) ResetStandardPatternId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStandardPatternId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SensitiveDataScannerRule) ResetSuppressions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSuppressions",
 		nil, // no parameters
 	)
 }

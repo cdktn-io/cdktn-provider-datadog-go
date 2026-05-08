@@ -5,14 +5,14 @@ package monitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitor/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitor/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktn.TerraformResource
 	Assets() MonitorAssetsList
@@ -75,9 +75,6 @@ type Monitor interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
-	Locked() interface{}
-	SetLocked(val interface{})
-	LockedInput() interface{}
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -226,7 +223,6 @@ type Monitor interface {
 	ResetGroupRetentionDuration()
 	ResetId()
 	ResetIncludeTags()
-	ResetLocked()
 	ResetMonitorThresholds()
 	ResetMonitorThresholdWindows()
 	ResetNewGroupDelay()
@@ -583,26 +579,6 @@ func (j *jsiiProxy_Monitor) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Monitor) Locked() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"locked",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Monitor) LockedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"lockedInput",
 		&returns,
 	)
 	return returns
@@ -1179,7 +1155,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1197,7 +1173,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1363,17 +1339,6 @@ func (j *jsiiProxy_Monitor)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Monitor)SetLocked(val interface{}) {
-	if err := j.validateSetLockedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"locked",
 		val,
 	)
 }
@@ -2120,14 +2085,6 @@ func (m *jsiiProxy_Monitor) ResetIncludeTags() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIncludeTags",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_Monitor) ResetLocked() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLocked",
 		nil, // no parameters
 	)
 }

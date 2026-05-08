@@ -5,14 +5,14 @@ package webhookcustomvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 type WebhookCustomVariable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_WebhookCustomVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) WebhookCustomVariable {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewWebhookCustomVariable(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 func NewWebhookCustomVariable_Override(w WebhookCustomVariable, scope constructs.Construct, id *string, config *WebhookCustomVariableConfig) {
 	_init_.Initialize()
 

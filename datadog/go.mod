@@ -1,4 +1,4 @@
-module github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14
+module github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15
 
 go 1.25
 

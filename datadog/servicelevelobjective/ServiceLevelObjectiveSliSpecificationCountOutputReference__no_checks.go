@@ -55,6 +55,10 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) validateSetBadEventsFormulaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

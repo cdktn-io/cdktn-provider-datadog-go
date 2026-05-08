@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -25,6 +25,9 @@ type ObservabilityPipelineConfigSourceAmazonS3OutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Compression() *string
+	SetCompression(val *string)
+	CompressionInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -77,6 +80,7 @@ type ObservabilityPipelineConfigSourceAmazonS3OutputReference interface {
 	PutAuth(value interface{})
 	PutTls(value interface{})
 	ResetAuth()
+	ResetCompression()
 	ResetTls()
 	ResetUrlKey()
 	// Produce the Token's value at resolution time.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) Com
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) Compression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) CompressionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +314,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference)SetCompression(val *string) {
+	if err := j.validateSetCompressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compression",
 		val,
 	)
 }
@@ -561,6 +596,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) Res
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) ResetCompression() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCompression",
 		nil, // no parameters
 	)
 }

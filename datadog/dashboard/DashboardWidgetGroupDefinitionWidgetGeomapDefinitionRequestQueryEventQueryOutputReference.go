@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,8 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryO
 	// Experimental.
 	Fqn() *string
 	GroupBy() DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByList
+	GroupByFields() DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	GroupByFieldsInput() *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields
 	GroupByInput() interface{}
 	Indexes() *[]*string
 	SetIndexes(val *[]*string)
@@ -87,9 +89,11 @@ type DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryO
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCompute(value interface{})
 	PutGroupBy(value interface{})
+	PutGroupByFields(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields)
 	PutSearch(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch)
 	ResetCrossOrgUuids()
 	ResetGroupBy()
+	ResetGroupByFields()
 	ResetIndexes()
 	ResetSearch()
 	ResetStorage()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQu
 	_jsii_.Get(
 		j,
 		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) GroupByFields() DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference {
+	var returns DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"groupByFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) GroupByFieldsInput() *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields {
+	var returns *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields
+	_jsii_.Get(
+		j,
+		"groupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,17 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQu
 	)
 }
 
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) PutGroupByFields(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields) {
+	if err := d.validatePutGroupByFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGroupByFields",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) PutSearch(value *DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch) {
 	if err := d.validatePutSearchParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQu
 	_jsii_.InvokeVoid(
 		d,
 		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) ResetGroupByFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupByFields",
 		nil, // no parameters
 	)
 }

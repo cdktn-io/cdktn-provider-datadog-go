@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,8 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Compression() ObservabilityPipelineConfigDestinationElasticsearchCompressionList
+	CompressionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -45,8 +47,17 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	EndpointUrlKeyInput() *string
 	// Experimental.
 	Fqn() *string
+	IdKey() *string
+	SetIdKey(val *string)
+	IdKeyInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Pipeline() *string
+	SetPipeline(val *string)
+	PipelineInput() *string
+	RequestRetryPartial() interface{}
+	SetRequestRetryPartial(val interface{})
+	RequestRetryPartialInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,6 +66,8 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Tls() ObservabilityPipelineConfigDestinationElasticsearchTlsList
+	TlsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,13 +94,20 @@ type ObservabilityPipelineConfigDestinationElasticsearchOutputReference interfac
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
 	PutBuffer(value interface{})
+	PutCompression(value interface{})
 	PutDataStream(value interface{})
+	PutTls(value interface{})
 	ResetApiVersion()
 	ResetAuth()
 	ResetBuffer()
 	ResetBulkIndex()
+	ResetCompression()
 	ResetDataStream()
 	ResetEndpointUrlKey()
+	ResetIdKey()
+	ResetPipeline()
+	ResetRequestRetryPartial()
+	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -203,6 +223,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) Compression() ObservabilityPipelineConfigDestinationElasticsearchCompressionList {
+	var returns ObservabilityPipelineConfigDestinationElasticsearchCompressionList
+	_jsii_.Get(
+		j,
+		"compression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) CompressionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"compressionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -263,11 +303,71 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) IdKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) IdKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) Pipeline() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipeline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PipelineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) RequestRetryPartial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestRetryPartial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) RequestRetryPartialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestRetryPartialInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +388,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) Tls() ObservabilityPipelineConfigDestinationElasticsearchTlsList {
+	var returns ObservabilityPipelineConfigDestinationElasticsearchTlsList
+	_jsii_.Get(
+		j,
+		"tls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) TlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInput",
 		&returns,
 	)
 	return returns
@@ -376,6 +496,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference)SetIdKey(val *string) {
+	if err := j.validateSetIdKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -383,6 +514,28 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference)SetPipeline(val *string) {
+	if err := j.validateSetPipelineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipeline",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference)SetRequestRetryPartial(val interface{}) {
+	if err := j.validateSetRequestRetryPartialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestRetryPartial",
 		val,
 	)
 }
@@ -617,6 +770,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutCompression(value interface{}) {
+	if err := o.validatePutCompressionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCompression",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutDataStream(value interface{}) {
 	if err := o.validatePutDataStreamParameters(value); err != nil {
 		panic(err)
@@ -624,6 +788,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.InvokeVoid(
 		o,
 		"putDataStream",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) PutTls(value interface{}) {
+	if err := o.validatePutTlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTls",
 		[]interface{}{value},
 	)
 }
@@ -660,6 +835,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetCompression() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCompression",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetDataStream() {
 	_jsii_.InvokeVoid(
 		o,
@@ -672,6 +855,38 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputRefe
 	_jsii_.InvokeVoid(
 		o,
 		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetIdKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIdKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetPipeline() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPipeline",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetRequestRetryPartial() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRequestRetryPartial",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchOutputReference) ResetTls() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTls",
 		nil, // no parameters
 	)
 }

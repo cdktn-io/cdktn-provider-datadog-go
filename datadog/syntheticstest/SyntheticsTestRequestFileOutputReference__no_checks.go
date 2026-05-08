@@ -63,6 +63,10 @@ func (j *jsiiProxy_SyntheticsTestRequestFileOutputReference) validateSetContentP
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestFileOutputReference) validateSetEncodingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestFileOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

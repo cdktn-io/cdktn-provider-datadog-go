@@ -5,14 +5,14 @@ package dataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset datadog_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset datadog_dataset}.
 type Dataset interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_Dataset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset datadog_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset datadog_dataset} Resource.
 func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) Dataset {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset datadog_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset datadog_dataset} Resource.
 func NewDataset_Override(d Dataset, scope constructs.Construct, id *string, config *DatasetConfig) {
 	_init_.Initialize()
 

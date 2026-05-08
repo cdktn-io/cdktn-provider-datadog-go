@@ -5,14 +5,14 @@ package datadatadogcustomallocationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogcustomallocationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogcustomallocationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
 type DataDatadogCustomAllocationRule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRule) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) DataDatadogCustomAllocationRule {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule_Override(d DataDatadogCustomAllocationRule, scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) {
 	_init_.Initialize()
 

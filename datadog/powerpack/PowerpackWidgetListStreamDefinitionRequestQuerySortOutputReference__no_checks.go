@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetListStreamDefinitionRequestQuerySort) error {
 	return nil
 }

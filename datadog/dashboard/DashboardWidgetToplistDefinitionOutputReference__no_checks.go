@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetToplistDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetToplistDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetToplistDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

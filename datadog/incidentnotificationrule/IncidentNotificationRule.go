@@ -5,14 +5,14 @@ package incidentnotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
 type IncidentNotificationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -517,7 +517,7 @@ func (j *jsiiProxy_IncidentNotificationRule) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule(scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) IncidentNotificationRule {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewIncidentNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource.
 func NewIncidentNotificationRule_Override(i IncidentNotificationRule, scope constructs.Construct, id *string, config *IncidentNotificationRuleConfig) {
 	_init_.Initialize()
 

@@ -155,6 +155,17 @@ func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputRe
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetChangeDefinitionRequestQueryEventQueryGroupByFields) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetChangeDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetChangeDefinitionRequestQueryEventQuerySearch) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

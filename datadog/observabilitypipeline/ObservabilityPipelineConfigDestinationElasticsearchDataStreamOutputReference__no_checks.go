@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) validateSetAutoRoutingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStream
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference) validateSetSyncFieldsParameters(val interface{}) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package incidenttype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type datadog_incident_type}.
 type IncidentType interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IncidentType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTypeConfig) IncidentType {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType_Override(i IncidentType, scope constructs.Construct, id *string, config *IncidentTypeConfig) {
 	_init_.Initialize()
 

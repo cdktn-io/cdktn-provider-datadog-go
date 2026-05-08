@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -43,6 +43,9 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	Fqn() *string
 	Index() *string
 	SetIndex(val *string)
+	IndexedFields() *[]*string
+	SetIndexedFields(val *[]*string)
+	IndexedFieldsInput() *[]*string
 	IndexInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
@@ -60,6 +63,9 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	TokenKey() *string
 	SetTokenKey(val *string)
 	TokenKeyInput() *string
+	TokenStrategy() *string
+	SetTokenStrategy(val *string)
+	TokenStrategyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,8 +95,10 @@ type ObservabilityPipelineConfigDestinationSplunkHecOutputReference interface {
 	ResetBuffer()
 	ResetEndpointUrlKey()
 	ResetIndex()
+	ResetIndexedFields()
 	ResetSourcetype()
 	ResetTokenKey()
+	ResetTokenStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -236,6 +244,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) IndexedFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"indexedFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) IndexedFieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"indexedFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) IndexInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +339,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.Get(
 		j,
 		"tokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) TokenStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) TokenStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenStrategyInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +458,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetIndexedFields(val *[]*string) {
+	if err := j.validateSetIndexedFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"indexedFields",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -461,6 +520,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.Set(
 		j,
 		"tokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference)SetTokenStrategy(val *string) {
+	if err := j.validateSetTokenStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenStrategy",
 		val,
 	)
 }
@@ -694,6 +764,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetIndexedFields() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIndexedFields",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetSourcetype() {
 	_jsii_.InvokeVoid(
 		o,
@@ -706,6 +784,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	_jsii_.InvokeVoid(
 		o,
 		"resetTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) ResetTokenStrategy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenStrategy",
 		nil, // no parameters
 	)
 }

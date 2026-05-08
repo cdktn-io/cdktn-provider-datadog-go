@@ -238,6 +238,14 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

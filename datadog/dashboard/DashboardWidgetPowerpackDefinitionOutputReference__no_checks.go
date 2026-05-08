@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetPowerpackDefinitionOutputReference) validateSetInternalValueParameters(val *DashboardWidgetPowerpackDefinition) error {
 	return nil
 }

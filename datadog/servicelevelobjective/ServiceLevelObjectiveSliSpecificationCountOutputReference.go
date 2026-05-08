@@ -5,14 +5,17 @@ package servicelevelobjective
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicelevelobjective/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/servicelevelobjective/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ServiceLevelObjectiveSliSpecificationCountOutputReference interface {
 	cdktn.ComplexObject
+	BadEventsFormula() *string
+	SetBadEventsFormula(val *string)
+	BadEventsFormulaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,8 @@ type ServiceLevelObjectiveSliSpecificationCountOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutQueries(value interface{})
+	ResetBadEventsFormula()
+	ResetTotalEventsFormula()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -86,6 +91,26 @@ type ServiceLevelObjectiveSliSpecificationCountOutputReference interface {
 // The jsii proxy struct for ServiceLevelObjectiveSliSpecificationCountOutputReference
 type jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) BadEventsFormula() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"badEventsFormula",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) BadEventsFormulaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"badEventsFormulaInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) ComplexObjectIndex() interface{} {
@@ -243,6 +268,17 @@ func NewServiceLevelObjectiveSliSpecificationCountOutputReference_Override(s Ser
 		"@cdktn/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference)SetBadEventsFormula(val *string) {
+	if err := j.validateSetBadEventsFormulaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"badEventsFormula",
+		val,
 	)
 }
 
@@ -517,6 +553,22 @@ func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) Pu
 		s,
 		"putQueries",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) ResetBadEventsFormula() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBadEventsFormula",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjectiveSliSpecificationCountOutputReference) ResetTotalEventsFormula() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTotalEventsFormula",
+		nil, // no parameters
 	)
 }
 

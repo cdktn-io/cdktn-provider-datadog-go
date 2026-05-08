@@ -5,14 +5,14 @@ package integrationazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationazure/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_azure datadog_integration_azure}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_azure datadog_integration_azure}.
 type IntegrationAzure interface {
 	cdktn.TerraformResource
 	AppServicePlanFilters() *string
@@ -91,6 +91,9 @@ type IntegrationAzure interface {
 	ResourceCollectionEnabledInput() interface{}
 	ResourceProviderConfigs() IntegrationAzureResourceProviderConfigsList
 	ResourceProviderConfigsInput() interface{}
+	SecretlessAuthEnabled() interface{}
+	SetSecretlessAuthEnabled(val interface{})
+	SecretlessAuthEnabledInput() interface{}
 	TenantName() *string
 	SetTenantName(val *string)
 	TenantNameInput() *string
@@ -149,6 +152,7 @@ type IntegrationAzure interface {
 	PutResourceProviderConfigs(value interface{})
 	ResetAppServicePlanFilters()
 	ResetAutomute()
+	ResetClientSecret()
 	ResetContainerAppFilters()
 	ResetCspmEnabled()
 	ResetCustomMetricsEnabled()
@@ -160,6 +164,7 @@ type IntegrationAzure interface {
 	ResetOverrideLogicalId()
 	ResetResourceCollectionEnabled()
 	ResetResourceProviderConfigs()
+	ResetSecretlessAuthEnabled()
 	ResetUsageMetricsEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -568,6 +573,26 @@ func (j *jsiiProxy_IntegrationAzure) ResourceProviderConfigsInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_IntegrationAzure) SecretlessAuthEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretlessAuthEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAzure) SecretlessAuthEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretlessAuthEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IntegrationAzure) TenantName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -639,7 +664,7 @@ func (j *jsiiProxy_IntegrationAzure) UsageMetricsEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure(scope constructs.Construct, id *string, config *IntegrationAzureConfig) IntegrationAzure {
 	_init_.Initialize()
 
@@ -657,7 +682,7 @@ func NewIntegrationAzure(scope constructs.Construct, id *string, config *Integra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_azure datadog_integration_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_azure datadog_integration_azure} Resource.
 func NewIntegrationAzure_Override(i IntegrationAzure, scope constructs.Construct, id *string, config *IntegrationAzureConfig) {
 	_init_.Initialize()
 
@@ -853,6 +878,17 @@ func (j *jsiiProxy_IntegrationAzure)SetResourceCollectionEnabled(val interface{}
 	_jsii_.Set(
 		j,
 		"resourceCollectionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationAzure)SetSecretlessAuthEnabled(val interface{}) {
+	if err := j.validateSetSecretlessAuthEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretlessAuthEnabled",
 		val,
 	)
 }
@@ -1259,6 +1295,14 @@ func (i *jsiiProxy_IntegrationAzure) ResetAutomute() {
 	)
 }
 
+func (i *jsiiProxy_IntegrationAzure) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IntegrationAzure) ResetContainerAppFilters() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1327,6 +1371,14 @@ func (i *jsiiProxy_IntegrationAzure) ResetResourceProviderConfigs() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetResourceProviderConfigs",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAzure) ResetSecretlessAuthEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSecretlessAuthEnabled",
 		nil, // no parameters
 	)
 }

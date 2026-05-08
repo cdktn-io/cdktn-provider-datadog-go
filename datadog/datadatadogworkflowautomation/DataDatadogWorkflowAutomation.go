@@ -5,14 +5,14 @@ package datadatadogworkflowautomation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogworkflowautomation/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogworkflowautomation/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/workflow_automation datadog_workflow_automation}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/workflow_automation datadog_workflow_automation}.
 type DataDatadogWorkflowAutomation interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatadogWorkflowAutomation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
 func NewDataDatadogWorkflowAutomation(scope constructs.Construct, id *string, config *DataDatadogWorkflowAutomationConfig) DataDatadogWorkflowAutomation {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatadogWorkflowAutomation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
 func NewDataDatadogWorkflowAutomation_Override(d DataDatadogWorkflowAutomation, scope constructs.Construct, id *string, config *DataDatadogWorkflowAutomationConfig) {
 	_init_.Initialize()
 

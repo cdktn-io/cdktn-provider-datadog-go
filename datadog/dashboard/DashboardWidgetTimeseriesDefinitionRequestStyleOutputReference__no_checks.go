@@ -59,6 +59,10 @@ func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetHasValueLabelsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetInternalValueParameters(val *DashboardWidgetTimeseriesDefinitionRequestStyle) error {
 	return nil
 }

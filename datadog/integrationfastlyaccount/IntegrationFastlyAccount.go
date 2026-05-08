@@ -5,19 +5,25 @@ package integrationfastlyaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationfastlyaccount/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 type IntegrationFastlyAccount interface {
 	cdktn.TerraformResource
 	ApiKey() *string
 	SetApiKey(val *string)
 	ApiKeyInput() *string
+	ApiKeyWo() *string
+	SetApiKeyWo(val *string)
+	ApiKeyWoInput() *string
+	ApiKeyWoVersion() *string
+	SetApiKeyWoVersion(val *string)
+	ApiKeyWoVersionInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -111,6 +117,9 @@ type IntegrationFastlyAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApiKey()
+	ResetApiKeyWo()
+	ResetApiKeyWoVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -156,6 +165,46 @@ func (j *jsiiProxy_IntegrationFastlyAccount) ApiKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"apiKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) ApiKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) ApiKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) ApiKeyWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) ApiKeyWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -352,7 +401,7 @@ func (j *jsiiProxy_IntegrationFastlyAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) IntegrationFastlyAccount {
 	_init_.Initialize()
 
@@ -370,7 +419,7 @@ func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount_Override(i IntegrationFastlyAccount, scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) {
 	_init_.Initialize()
 
@@ -388,6 +437,28 @@ func (j *jsiiProxy_IntegrationFastlyAccount)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount)SetApiKeyWo(val *string) {
+	if err := j.validateSetApiKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount)SetApiKeyWoVersion(val *string) {
+	if err := j.validateSetApiKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKeyWoVersion",
 		val,
 	)
 }
@@ -821,6 +892,30 @@ func (i *jsiiProxy_IntegrationFastlyAccount) OverrideLogicalId(newLogicalId *str
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IntegrationFastlyAccount) ResetApiKey() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetApiKey",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationFastlyAccount) ResetApiKeyWo() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetApiKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationFastlyAccount) ResetApiKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetApiKeyWoVersion",
+		nil, // no parameters
 	)
 }
 

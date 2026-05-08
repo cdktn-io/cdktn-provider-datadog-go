@@ -79,6 +79,10 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

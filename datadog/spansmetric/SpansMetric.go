@@ -5,14 +5,14 @@ package spansmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/spansmetric/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/spansmetric/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/spans_metric datadog_spans_metric}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/spans_metric datadog_spans_metric}.
 type SpansMetric interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SpansMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricConfig) SpansMetric {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSpansMetric(scope constructs.Construct, id *string, config *SpansMetricC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/spans_metric datadog_spans_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/spans_metric datadog_spans_metric} Resource.
 func NewSpansMetric_Override(s SpansMetric, scope constructs.Construct, id *string, config *SpansMetricConfig) {
 	_init_.Initialize()
 

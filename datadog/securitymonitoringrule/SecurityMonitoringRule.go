@@ -5,14 +5,14 @@ package securitymonitoringrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
 type SecurityMonitoringRule interface {
 	cdktn.TerraformResource
 	CalculatedField() SecurityMonitoringRuleCalculatedFieldList
@@ -725,7 +725,7 @@ func (j *jsiiProxy_SecurityMonitoringRule) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) SecurityMonitoringRule {
 	_init_.Initialize()
 
@@ -743,7 +743,7 @@ func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule_Override(s SecurityMonitoringRule, scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) {
 	_init_.Initialize()
 

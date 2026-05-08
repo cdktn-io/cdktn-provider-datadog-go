@@ -59,6 +59,10 @@ func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetEventStreamDefinitionOutputReference) validateSetEventSizeParameters(val *string) error {
 	return nil
 }

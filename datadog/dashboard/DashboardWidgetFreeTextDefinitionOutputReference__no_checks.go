@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetFreeTextDefinitionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetFreeTextDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetFreeTextDefinitionOutputReference) validateSetFontSizeParameters(val *string) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetTreemapDefinitionOutputReference) validateSetInternalValueParameters(val *DashboardWidgetTreemapDefinition) error {
 	return nil
 }

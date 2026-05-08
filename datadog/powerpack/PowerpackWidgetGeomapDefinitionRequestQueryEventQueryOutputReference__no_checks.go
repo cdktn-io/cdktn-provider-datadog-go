@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputRe
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetGeomapDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

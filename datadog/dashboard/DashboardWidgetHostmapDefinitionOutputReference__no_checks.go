@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetHostmapDefinitionOutputReference) validateSetGroupParameters(val *[]*string) error {
 	return nil
 }

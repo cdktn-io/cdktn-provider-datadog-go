@@ -5,14 +5,14 @@ package securitymonitoringrulejson
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
 type SecurityMonitoringRuleJson interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleJson) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
 func NewSecurityMonitoringRuleJson(scope constructs.Construct, id *string, config *SecurityMonitoringRuleJsonConfig) SecurityMonitoringRuleJson {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewSecurityMonitoringRuleJson(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
 func NewSecurityMonitoringRuleJson_Override(s SecurityMonitoringRuleJson, scope constructs.Construct, id *string, config *SecurityMonitoringRuleJsonConfig) {
 	_init_.Initialize()
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOu
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

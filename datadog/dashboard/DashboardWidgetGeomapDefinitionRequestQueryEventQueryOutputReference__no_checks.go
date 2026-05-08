@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputRe
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

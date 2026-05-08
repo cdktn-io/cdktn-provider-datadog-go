@@ -163,10 +163,6 @@ func (j *jsiiProxy_Monitor) validateSetLifecycleParameters(val *cdktn.TerraformR
 	return nil
 }
 
-func (j *jsiiProxy_Monitor) validateSetLockedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Monitor) validateSetMessageParameters(val *string) error {
 	return nil
 }

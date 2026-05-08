@@ -5,14 +5,14 @@ package datadatadoglogspipelines
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoglogspipelines/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogspipelines/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
 type DataDatadogLogsPipelines interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataDatadogLogsPipelines) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
 func NewDataDatadogLogsPipelines(scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesConfig) DataDatadogLogsPipelines {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataDatadogLogsPipelines(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source.
 func NewDataDatadogLogsPipelines_Override(d DataDatadogLogsPipelines, scope constructs.Construct, id *string, config *DataDatadogLogsPipelinesConfig) {
 	_init_.Initialize()
 

@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetRunWorkflowDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

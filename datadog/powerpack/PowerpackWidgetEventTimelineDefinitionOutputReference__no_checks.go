@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetEventTimelineDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

@@ -95,6 +95,14 @@ func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationFastlyAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

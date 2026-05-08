@@ -5,14 +5,14 @@ package agentlessscanningawsscanoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
 type AgentlessScanningAwsScanOptions interface {
 	cdktn.TerraformResource
 	AwsAccountId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_AgentlessScanningAwsScanOptions) VulnHostOsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
 func NewAgentlessScanningAwsScanOptions(scope constructs.Construct, id *string, config *AgentlessScanningAwsScanOptionsConfig) AgentlessScanningAwsScanOptions {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewAgentlessScanningAwsScanOptions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
 func NewAgentlessScanningAwsScanOptions_Override(a AgentlessScanningAwsScanOptions, scope constructs.Construct, id *string, config *AgentlessScanningAwsScanOptionsConfig) {
 	_init_.Initialize()
 

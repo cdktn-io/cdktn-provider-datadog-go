@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -32,6 +32,9 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeepUnmatched() interface{}
+	SetKeepUnmatched(val interface{})
+	KeepUnmatchedInput() interface{}
 	Mapping() ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList
 	MappingInput() interface{}
 	// Experimental.
@@ -67,6 +70,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMapping(value interface{})
+	ResetKeepUnmatched()
 	ResetMapping()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference) KeepUnmatched() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepUnmatched",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference) KeepUnmatchedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepUnmatchedInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperO
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference)SetKeepUnmatched(val interface{}) {
+	if err := j.validateSetKeepUnmatchedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keepUnmatched",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperO
 		o,
 		"putMapping",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference) ResetKeepUnmatched() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKeepUnmatched",
+		nil, // no parameters
 	)
 }
 

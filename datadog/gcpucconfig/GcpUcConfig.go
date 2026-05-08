@@ -5,14 +5,14 @@ package gcpucconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/gcpucconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/gcpucconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}.
 type GcpUcConfig interface {
 	cdktn.TerraformResource
 	BillingAccountId() *string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_GcpUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
 func NewGcpUcConfig(scope constructs.Construct, id *string, config *GcpUcConfigConfig) GcpUcConfig {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewGcpUcConfig(scope constructs.Construct, id *string, config *GcpUcConfigC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource.
 func NewGcpUcConfig_Override(g GcpUcConfig, scope constructs.Construct, id *string, config *GcpUcConfigConfig) {
 	_init_.Initialize()
 

@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetAlertValueDefinitionOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetAlertValueDefinition) error {
 	return nil
 }

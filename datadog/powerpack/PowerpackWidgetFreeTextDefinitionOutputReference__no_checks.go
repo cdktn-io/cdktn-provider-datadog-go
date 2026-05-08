@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetFreeTextDefinitionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetFreeTextDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetFreeTextDefinitionOutputReference) validateSetFontSizeParameters(val *string) error {
 	return nil
 }

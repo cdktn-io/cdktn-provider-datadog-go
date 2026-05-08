@@ -67,6 +67,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) validateSetCompressionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceAmazonS3OutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validateSetStoreHecTokenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

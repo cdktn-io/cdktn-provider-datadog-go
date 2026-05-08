@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetHostmapDefinitionOutputReference) validateSetGroupParameters(val *[]*string) error {
 	return nil
 }

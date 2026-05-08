@@ -5,14 +5,14 @@ package integrationmsteamsworkflowswebhookhandle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationmsteamsworkflowswebhookhandle/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationmsteamsworkflowswebhookhandle/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}.
 type IntegrationMsTeamsWorkflowsWebhookHandle interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) UrlInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource.
 func NewIntegrationMsTeamsWorkflowsWebhookHandle(scope constructs.Construct, id *string, config *IntegrationMsTeamsWorkflowsWebhookHandleConfig) IntegrationMsTeamsWorkflowsWebhookHandle {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewIntegrationMsTeamsWorkflowsWebhookHandle(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource.
 func NewIntegrationMsTeamsWorkflowsWebhookHandle_Override(i IntegrationMsTeamsWorkflowsWebhookHandle, scope constructs.Construct, id *string, config *IntegrationMsTeamsWorkflowsWebhookHandleConfig) {
 	_init_.Initialize()
 

@@ -205,6 +205,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validateSetConnectionStringKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAzureStorageOutputReference) validateSetContainerNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

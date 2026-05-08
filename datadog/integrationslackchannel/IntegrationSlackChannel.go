@@ -5,14 +5,14 @@ package integrationslackchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
 type IntegrationSlackChannel interface {
 	cdktn.TerraformResource
 	AccountName() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_IntegrationSlackChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
 func NewIntegrationSlackChannel(scope constructs.Construct, id *string, config *IntegrationSlackChannelConfig) IntegrationSlackChannel {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewIntegrationSlackChannel(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource.
 func NewIntegrationSlackChannel_Override(i IntegrationSlackChannel, scope constructs.Construct, id *string, config *IntegrationSlackChannelConfig) {
 	_init_.Initialize()
 

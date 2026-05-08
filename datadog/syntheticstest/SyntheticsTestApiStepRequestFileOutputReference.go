@@ -5,9 +5,9 @@ package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -32,6 +32,9 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Encoding() *string
+	SetEncoding(val *string)
+	EncodingInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -81,6 +84,7 @@ type SyntheticsTestApiStepRequestFileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContent()
+	ResetEncoding()
 	ResetOriginalFileName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) Encoding() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encoding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) EncodingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference)SetContent(va
 	_jsii_.Set(
 		j,
 		"content",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference)SetEncoding(val *string) {
+	if err := j.validateSetEncodingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encoding",
 		val,
 	)
 }
@@ -605,6 +640,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) ResetContent
 	_jsii_.InvokeVoid(
 		s,
 		"resetContent",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepRequestFileOutputReference) ResetEncoding() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncoding",
 		nil, // no parameters
 	)
 }

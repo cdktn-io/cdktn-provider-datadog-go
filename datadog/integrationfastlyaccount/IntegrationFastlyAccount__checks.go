@@ -255,6 +255,22 @@ func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IntegrationFastlyAccount) validateSetApiKeyWoVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationFastlyAccount) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktn.SSHProvisionerConnection:

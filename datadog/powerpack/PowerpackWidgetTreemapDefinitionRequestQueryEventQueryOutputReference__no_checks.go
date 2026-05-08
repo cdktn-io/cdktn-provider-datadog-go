@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetTreemapDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetTreemapDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetTreemapDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

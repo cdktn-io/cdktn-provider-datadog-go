@@ -5,14 +5,14 @@ package sensitivedatascannergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 type SensitiveDataScannerGroup interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SensitiveDataScannerGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) SensitiveDataScannerGroup {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewSensitiveDataScannerGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group} Resource.
 func NewSensitiveDataScannerGroup_Override(s SensitiveDataScannerGroup, scope constructs.Construct, id *string, config *SensitiveDataScannerGroupConfig) {
 	_init_.Initialize()
 

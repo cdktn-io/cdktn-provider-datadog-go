@@ -5,14 +5,14 @@ package compliancecustomframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/compliancecustomframework/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/compliancecustomframework/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
 type ComplianceCustomFramework interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ComplianceCustomFramework) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
 func NewComplianceCustomFramework(scope constructs.Construct, id *string, config *ComplianceCustomFrameworkConfig) ComplianceCustomFramework {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewComplianceCustomFramework(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource.
 func NewComplianceCustomFramework_Override(c ComplianceCustomFramework, scope constructs.Construct, id *string, config *ComplianceCustomFrameworkConfig) {
 	_init_.Initialize()
 

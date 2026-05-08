@@ -5,14 +5,14 @@ package serviceaccountapplicationkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/serviceaccountapplicationkey/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/serviceaccountapplicationkey/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 type ServiceAccountApplicationKey interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_ServiceAccountApplicationKey) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) ServiceAccountApplicationKey {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewServiceAccountApplicationKey(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource.
 func NewServiceAccountApplicationKey_Override(s ServiceAccountApplicationKey, scope constructs.Construct, id *string, config *ServiceAccountApplicationKeyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package syntheticsconcurrencycap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticsconcurrencycap/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticsconcurrencycap/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
 type SyntheticsConcurrencyCap interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -329,7 +329,7 @@ func (j *jsiiProxy_SyntheticsConcurrencyCap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
 func NewSyntheticsConcurrencyCap(scope constructs.Construct, id *string, config *SyntheticsConcurrencyCapConfig) SyntheticsConcurrencyCap {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewSyntheticsConcurrencyCap(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap} Resource.
 func NewSyntheticsConcurrencyCap_Override(s SyntheticsConcurrencyCap, scope constructs.Construct, id *string, config *SyntheticsConcurrencyCapConfig) {
 	_init_.Initialize()
 

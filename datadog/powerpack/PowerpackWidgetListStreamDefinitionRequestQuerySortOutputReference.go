@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,6 +31,9 @@ type PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PowerpackWidgetListStreamDefinitionRequestQuerySort
@@ -70,6 +73,7 @@ type PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference interfac
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -130,6 +134,26 @@ func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +276,17 @@ func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputRefe
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PowerpackWidgetListStreamDefinitionRequestQuerySortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

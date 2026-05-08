@@ -5,14 +5,14 @@ package datadatadogsecuritymonitoringsuppressions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringsuppressions/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsecuritymonitoringsuppressions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 type DataDatadogSecurityMonitoringSuppressions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressions) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) DataDatadogSecurityMonitoringSuppressions {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions_Override(d DataDatadogSecurityMonitoringSuppressions, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) {
 	_init_.Initialize()
 

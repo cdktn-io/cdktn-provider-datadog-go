@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetQueryTableDefinitionOutputReference) validateSetHasSearchBarParameters(val *string) error {
 	return nil
 }

@@ -164,6 +164,8 @@ func init() {
 		"@cdktn/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveSliSpecificationCountOutputReference",
 		reflect.TypeOf((*ServiceLevelObjectiveSliSpecificationCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "badEventsFormula", GoGetter: "BadEventsFormula"},
+			_jsii_.MemberProperty{JsiiProperty: "badEventsFormulaInput", GoGetter: "BadEventsFormulaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,6 +188,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putQueries", GoMethod: "PutQueries"},
 			_jsii_.MemberProperty{JsiiProperty: "queries", GoGetter: "Queries"},
 			_jsii_.MemberProperty{JsiiProperty: "queriesInput", GoGetter: "QueriesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBadEventsFormula", GoMethod: "ResetBadEventsFormula"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTotalEventsFormula", GoMethod: "ResetTotalEventsFormula"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

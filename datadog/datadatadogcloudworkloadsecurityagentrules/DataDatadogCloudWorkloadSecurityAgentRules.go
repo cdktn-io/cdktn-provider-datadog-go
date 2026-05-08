@@ -5,14 +5,14 @@ package datadatadogcloudworkloadsecurityagentrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogcloudworkloadsecurityagentrules/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogcloudworkloadsecurityagentrules/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
 type DataDatadogCloudWorkloadSecurityAgentRules interface {
 	cdktn.TerraformDataSource
 	AgentRules() DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatadogCloudWorkloadSecurityAgentRules) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
 func NewDataDatadogCloudWorkloadSecurityAgentRules(scope constructs.Construct, id *string, config *DataDatadogCloudWorkloadSecurityAgentRulesConfig) DataDatadogCloudWorkloadSecurityAgentRules {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatadogCloudWorkloadSecurityAgentRules(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
 func NewDataDatadogCloudWorkloadSecurityAgentRules_Override(d DataDatadogCloudWorkloadSecurityAgentRules, scope constructs.Construct, id *string, config *DataDatadogCloudWorkloadSecurityAgentRulesConfig) {
 	_init_.Initialize()
 

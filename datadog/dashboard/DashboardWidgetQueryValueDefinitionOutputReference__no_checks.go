@@ -79,6 +79,10 @@ func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetQueryValueDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

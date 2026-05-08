@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQu
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

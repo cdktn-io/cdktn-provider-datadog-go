@@ -75,6 +75,10 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

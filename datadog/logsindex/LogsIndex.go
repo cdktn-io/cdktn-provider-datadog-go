@@ -5,14 +5,14 @@ package logsindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsindex/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsindex/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index datadog_logs_index}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_index datadog_logs_index}.
 type LogsIndex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_LogsIndex) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfig) LogsIndex {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewLogsIndex(scope constructs.Construct, id *string, config *LogsIndexConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_index datadog_logs_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_index datadog_logs_index} Resource.
 func NewLogsIndex_Override(l LogsIndex, scope constructs.Construct, id *string, config *LogsIndexConfig) {
 	_init_.Initialize()
 

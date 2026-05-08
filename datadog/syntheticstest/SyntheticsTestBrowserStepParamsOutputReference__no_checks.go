@@ -47,6 +47,10 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validateInter
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutDragDropOptionsParameters(value *SyntheticsTestBrowserStepParamsDragDropOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) validatePutElementUserLocatorParameters(value *SyntheticsTestBrowserStepParamsElementUserLocator) error {
 	return nil
 }

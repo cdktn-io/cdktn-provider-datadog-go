@@ -75,6 +75,10 @@ func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetSunburstDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

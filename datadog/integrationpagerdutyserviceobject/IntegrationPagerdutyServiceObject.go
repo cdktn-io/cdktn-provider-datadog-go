@@ -5,14 +5,14 @@ package integrationpagerdutyserviceobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationpagerdutyserviceobject/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationpagerdutyserviceobject/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
 type IntegrationPagerdutyServiceObject interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_IntegrationPagerdutyServiceObject) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
 func NewIntegrationPagerdutyServiceObject(scope constructs.Construct, id *string, config *IntegrationPagerdutyServiceObjectConfig) IntegrationPagerdutyServiceObject {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewIntegrationPagerdutyServiceObject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
 func NewIntegrationPagerdutyServiceObject_Override(i IntegrationPagerdutyServiceObject, scope constructs.Construct, id *string, config *IntegrationPagerdutyServiceObjectConfig) {
 	_init_.Initialize()
 

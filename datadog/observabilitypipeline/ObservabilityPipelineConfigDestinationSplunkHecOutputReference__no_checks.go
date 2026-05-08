@@ -79,6 +79,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetIndexedFieldsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReferenc
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTokenKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecOutputReference) validateSetTokenStrategyParameters(val *string) error {
 	return nil
 }
 

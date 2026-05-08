@@ -5,14 +5,14 @@ package cloudconfigurationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudconfigurationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudconfigurationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
 type CloudConfigurationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -577,7 +577,7 @@ func (j *jsiiProxy_CloudConfigurationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) CloudConfigurationRule {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewCloudConfigurationRule(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource.
 func NewCloudConfigurationRule_Override(c CloudConfigurationRule, scope constructs.Construct, id *string, config *CloudConfigurationRuleConfig) {
 	_init_.Initialize()
 

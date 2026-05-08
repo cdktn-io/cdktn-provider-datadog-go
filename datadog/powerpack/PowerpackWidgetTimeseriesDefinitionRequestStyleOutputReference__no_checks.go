@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetHasValueLabelsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetTimeseriesDefinitionRequestStyle) error {
 	return nil
 }

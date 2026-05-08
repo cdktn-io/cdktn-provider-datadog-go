@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -35,6 +35,9 @@ type ObservabilityPipelineConfigSourceSplunkHecOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	StoreHecToken() interface{}
+	SetStoreHecToken(val interface{})
+	StoreHecTokenInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type ObservabilityPipelineConfigSourceSplunkHecOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
 	ResetAddressKey()
+	ResetStoreHecToken()
 	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) StoreHecToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storeHecToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) StoreHecTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storeHecTokenInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference)SetStoreHecToken(val interface{}) {
+	if err := j.validateSetStoreHecTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storeHecToken",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetAddressKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) ResetStoreHecToken() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStoreHecToken",
 		nil, // no parameters
 	)
 }

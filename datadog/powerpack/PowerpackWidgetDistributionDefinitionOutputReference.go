@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type PowerpackWidgetDistributionDefinitionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	HideIncompleteCostData() interface{}
@@ -94,6 +97,7 @@ type PowerpackWidgetDistributionDefinitionOutputReference interface {
 	PutRequest(value interface{})
 	PutXaxis(value *PowerpackWidgetDistributionDefinitionXaxis)
 	PutYaxis(value *PowerpackWidgetDistributionDefinitionYaxis)
+	ResetDescription()
 	ResetHideIncompleteCostData()
 	ResetLegendSize()
 	ResetLiveSpan()
@@ -144,6 +148,26 @@ func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -435,6 +459,17 @@ func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -765,6 +800,14 @@ func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) PutYaxi
 		p,
 		"putYaxis",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetDistributionDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

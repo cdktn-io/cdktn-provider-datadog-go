@@ -5,14 +5,14 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 type ObservabilityPipeline interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ObservabilityPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline(scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) ObservabilityPipeline {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewObservabilityPipeline(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline datadog_observability_pipeline} Resource.
 func NewObservabilityPipeline_Override(o ObservabilityPipeline, scope constructs.Construct, id *string, config *ObservabilityPipelineConfig) {
 	_init_.Initialize()
 

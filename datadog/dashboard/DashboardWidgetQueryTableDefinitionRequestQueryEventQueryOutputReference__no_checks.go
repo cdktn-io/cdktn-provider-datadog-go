@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutp
 	return nil
 }
 
+func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

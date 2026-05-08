@@ -5,14 +5,14 @@ package datadatadogreferencetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogreferencetable/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogreferencetable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/reference_table datadog_reference_table}.
 type DataDatadogReferenceTable interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataDatadogReferenceTable) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) DataDatadogReferenceTable {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataDatadogReferenceTable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/reference_table datadog_reference_table} Data Source.
 func NewDataDatadogReferenceTable_Override(d DataDatadogReferenceTable, scope constructs.Construct, id *string, config *DataDatadogReferenceTableConfig) {
 	_init_.Initialize()
 

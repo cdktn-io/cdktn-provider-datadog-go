@@ -5,14 +5,14 @@ package datadatadogteammemberships
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteammemberships/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteammemberships/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_memberships datadog_team_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_memberships datadog_team_memberships}.
 type DataDatadogTeamMemberships interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataDatadogTeamMemberships) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) DataDatadogTeamMemberships {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships_Override(d DataDatadogTeamMemberships, scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) {
 	_init_.Initialize()
 

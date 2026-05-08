@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) validatePutFieldParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
@@ -64,10 +68,6 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) validateSetFieldParameters(val *string) error {
 	return nil
 }
 

@@ -67,6 +67,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperO
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference) validateSetKeepUnmatchedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

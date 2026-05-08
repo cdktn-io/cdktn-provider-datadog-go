@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	AmazonOpensearch() ObservabilityPipelineConfigDestinationAmazonOpensearchList
 	AmazonOpensearchInput() interface{}
 	AmazonS3() ObservabilityPipelineConfigDestinationAmazonS3List
+	AmazonS3Generic() ObservabilityPipelineConfigDestinationAmazonS3GenericList
+	AmazonS3GenericInput() interface{}
 	AmazonS3Input() interface{}
 	AmazonSecurityLake() ObservabilityPipelineConfigDestinationAmazonSecurityLakeList
 	AmazonSecurityLakeInput() interface{}
@@ -40,6 +42,8 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	CreationStack() *[]*string
 	CrowdstrikeNextGenSiem() ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList
 	CrowdstrikeNextGenSiemInput() interface{}
+	DatabricksZerobus() ObservabilityPipelineConfigDestinationDatabricksZerobusList
+	DatabricksZerobusInput() interface{}
 	DatadogLogs() ObservabilityPipelineConfigDestinationDatadogLogsList
 	DatadogLogsInput() interface{}
 	DatadogMetrics() ObservabilityPipelineConfigDestinationDatadogMetricsList
@@ -118,10 +122,12 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAmazonOpensearch(value interface{})
 	PutAmazonS3(value interface{})
+	PutAmazonS3Generic(value interface{})
 	PutAmazonSecurityLake(value interface{})
 	PutAzureStorage(value interface{})
 	PutCloudPrem(value interface{})
 	PutCrowdstrikeNextGenSiem(value interface{})
+	PutDatabricksZerobus(value interface{})
 	PutDatadogLogs(value interface{})
 	PutDatadogMetrics(value interface{})
 	PutElasticsearch(value interface{})
@@ -141,10 +147,12 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	PutSyslogNg(value interface{})
 	ResetAmazonOpensearch()
 	ResetAmazonS3()
+	ResetAmazonS3Generic()
 	ResetAmazonSecurityLake()
 	ResetAzureStorage()
 	ResetCloudPrem()
 	ResetCrowdstrikeNextGenSiem()
+	ResetDatabricksZerobus()
 	ResetDatadogLogs()
 	ResetDatadogMetrics()
 	ResetElasticsearch()
@@ -202,6 +210,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) Amazon
 	_jsii_.Get(
 		j,
 		"amazonS3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) AmazonS3Generic() ObservabilityPipelineConfigDestinationAmazonS3GenericList {
+	var returns ObservabilityPipelineConfigDestinationAmazonS3GenericList
+	_jsii_.Get(
+		j,
+		"amazonS3Generic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) AmazonS3GenericInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"amazonS3GenericInput",
 		&returns,
 	)
 	return returns
@@ -322,6 +350,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) Crowds
 	_jsii_.Get(
 		j,
 		"crowdstrikeNextGenSiemInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) DatabricksZerobus() ObservabilityPipelineConfigDestinationDatabricksZerobusList {
+	var returns ObservabilityPipelineConfigDestinationDatabricksZerobusList
+	_jsii_.Get(
+		j,
+		"databricksZerobus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) DatabricksZerobusInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"databricksZerobusInput",
 		&returns,
 	)
 	return returns
@@ -1060,6 +1108,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutAma
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutAmazonS3Generic(value interface{}) {
+	if err := o.validatePutAmazonS3GenericParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAmazonS3Generic",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutAmazonSecurityLake(value interface{}) {
 	if err := o.validatePutAmazonSecurityLakeParameters(value); err != nil {
 		panic(err)
@@ -1100,6 +1159,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutCro
 	_jsii_.InvokeVoid(
 		o,
 		"putCrowdstrikeNextGenSiem",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutDatabricksZerobus(value interface{}) {
+	if err := o.validatePutDatabricksZerobusParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDatabricksZerobus",
 		[]interface{}{value},
 	)
 }
@@ -1307,6 +1377,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetA
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetAmazonS3Generic() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAmazonS3Generic",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetAmazonSecurityLake() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1335,6 +1413,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		o,
 		"resetCrowdstrikeNextGenSiem",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetDatabricksZerobus() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDatabricksZerobus",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetHeatmapDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

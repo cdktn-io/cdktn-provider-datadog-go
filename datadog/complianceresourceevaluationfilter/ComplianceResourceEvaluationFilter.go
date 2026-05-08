@@ -5,14 +5,14 @@ package complianceresourceevaluationfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
 type ComplianceResourceEvaluationFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_ComplianceResourceEvaluationFilter) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource.
 func NewComplianceResourceEvaluationFilter(scope constructs.Construct, id *string, config *ComplianceResourceEvaluationFilterConfig) ComplianceResourceEvaluationFilter {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewComplianceResourceEvaluationFilter(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter} Resource.
 func NewComplianceResourceEvaluationFilter_Override(c ComplianceResourceEvaluationFilter, scope constructs.Construct, id *string, config *ComplianceResourceEvaluationFilterConfig) {
 	_init_.Initialize()
 

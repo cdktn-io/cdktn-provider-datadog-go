@@ -63,6 +63,10 @@ func (j *jsiiProxy_PowerpackWidgetLogStreamDefinitionSortOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetLogStreamDefinitionSortOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetLogStreamDefinitionSortOutputReference) validateSetInternalValueParameters(val *PowerpackWidgetLogStreamDefinitionSort) error {
 	return nil
 }

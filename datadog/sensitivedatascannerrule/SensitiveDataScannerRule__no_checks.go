@@ -79,6 +79,10 @@ func (s *jsiiProxy_SensitiveDataScannerRule) validatePutIncludedKeywordConfigura
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerRule) validatePutSuppressionsParameters(value *SensitiveDataScannerRuleSuppressions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerRule) validatePutTextReplacementParameters(value *SensitiveDataScannerRuleTextReplacement) error {
 	return nil
 }

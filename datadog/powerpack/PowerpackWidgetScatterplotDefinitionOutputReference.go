@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,9 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	CustomLink() PowerpackWidgetScatterplotDefinitionCustomLinkList
 	CustomLinkInput() interface{}
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	HideIncompleteCostData() interface{}
@@ -96,6 +99,7 @@ type PowerpackWidgetScatterplotDefinitionOutputReference interface {
 	PutYaxis(value *PowerpackWidgetScatterplotDefinitionYaxis)
 	ResetColorByGroups()
 	ResetCustomLink()
+	ResetDescription()
 	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) CustomLi
 	_jsii_.Get(
 		j,
 		"customLinkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -446,6 +470,17 @@ func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -780,6 +815,14 @@ func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetCus
 	_jsii_.InvokeVoid(
 		p,
 		"resetCustomLink",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetScatterplotDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

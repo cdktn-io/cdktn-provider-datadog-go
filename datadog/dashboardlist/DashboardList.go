@@ -5,14 +5,14 @@ package dashboardlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list datadog_dashboard_list}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list datadog_dashboard_list}.
 type DashboardList interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DashboardList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList(scope constructs.Construct, id *string, config *DashboardListConfig) DashboardList {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDashboardList(scope constructs.Construct, id *string, config *DashboardL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list datadog_dashboard_list} Resource.
 func NewDashboardList_Override(d DashboardList, scope constructs.Construct, id *string, config *DashboardListConfig) {
 	_init_.Initialize()
 

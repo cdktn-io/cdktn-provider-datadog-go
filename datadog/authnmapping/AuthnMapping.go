@@ -5,14 +5,14 @@ package authnmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/authnmapping/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/authnmapping/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/authn_mapping datadog_authn_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/authn_mapping datadog_authn_mapping}.
 type AuthnMapping interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_AuthnMapping) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
 func NewAuthnMapping(scope constructs.Construct, id *string, config *AuthnMappingConfig) AuthnMapping {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewAuthnMapping(scope constructs.Construct, id *string, config *AuthnMappin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/authn_mapping datadog_authn_mapping} Resource.
 func NewAuthnMapping_Override(a AuthnMapping, scope constructs.Construct, id *string, config *AuthnMappingConfig) {
 	_init_.Initialize()
 

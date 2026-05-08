@@ -5,9 +5,9 @@ package dashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboard/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboard/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,6 +31,9 @@ type DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	FontSize() *string
 	SetFontSize(val *string)
 	FontSizeInput() *string
@@ -77,6 +80,7 @@ type DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetColor()
+	ResetDescription()
 	ResetFontSize()
 	ResetTextAlign()
 	// Produce the Token's value at resolution time.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -301,6 +325,17 @@ func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -561,6 +596,14 @@ func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"resetColor",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

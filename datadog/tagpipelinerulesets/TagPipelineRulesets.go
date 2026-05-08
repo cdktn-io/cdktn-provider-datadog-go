@@ -5,14 +5,14 @@ package tagpipelinerulesets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelinerulesets/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelinerulesets/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets}.
 type TagPipelineRulesets interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_TagPipelineRulesets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) TagPipelineRulesets {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewTagPipelineRulesets(scope constructs.Construct, id *string, config *TagP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_rulesets datadog_tag_pipeline_rulesets} Resource.
 func NewTagPipelineRulesets_Override(t TagPipelineRulesets, scope constructs.Construct, id *string, config *TagPipelineRulesetsConfig) {
 	_init_.Initialize()
 

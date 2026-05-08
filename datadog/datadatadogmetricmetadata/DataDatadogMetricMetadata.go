@@ -5,14 +5,14 @@ package datadatadogmetricmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
 type DataDatadogMetricMetadata interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataDatadogMetricMetadata) Unit() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata datadog_metric_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata datadog_metric_metadata} Data Source.
 func NewDataDatadogMetricMetadata(scope constructs.Construct, id *string, config *DataDatadogMetricMetadataConfig) DataDatadogMetricMetadata {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataDatadogMetricMetadata(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata datadog_metric_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata datadog_metric_metadata} Data Source.
 func NewDataDatadogMetricMetadata_Override(d DataDatadogMetricMetadata, scope constructs.Construct, id *string, config *DataDatadogMetricMetadataConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package csmthreatspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
 type CsmThreatsPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CsmThreatsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy datadog_csm_threats_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy datadog_csm_threats_policy} Resource.
 func NewCsmThreatsPolicy(scope constructs.Construct, id *string, config *CsmThreatsPolicyConfig) CsmThreatsPolicy {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCsmThreatsPolicy(scope constructs.Construct, id *string, config *CsmThre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy datadog_csm_threats_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy datadog_csm_threats_policy} Resource.
 func NewCsmThreatsPolicy_Override(c CsmThreatsPolicy, scope constructs.Construct, id *string, config *CsmThreatsPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package securitynotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitynotificationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitynotificationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_notification_rule datadog_security_notification_rule}.
 type SecurityNotificationRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -501,7 +501,7 @@ func (j *jsiiProxy_SecurityNotificationRule) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule(scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) SecurityNotificationRule {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewSecurityNotificationRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource.
 func NewSecurityNotificationRule_Override(s SecurityNotificationRule, scope constructs.Construct, id *string, config *SecurityNotificationRuleConfig) {
 	_init_.Initialize()
 

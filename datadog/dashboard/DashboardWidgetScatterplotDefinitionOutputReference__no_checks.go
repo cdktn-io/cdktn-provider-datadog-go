@@ -79,6 +79,10 @@ func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetScatterplotDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

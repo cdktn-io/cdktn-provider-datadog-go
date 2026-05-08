@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutp
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetQueryValueDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

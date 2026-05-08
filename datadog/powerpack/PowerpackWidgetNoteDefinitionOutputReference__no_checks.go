@@ -67,6 +67,10 @@ func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) validateSetCont
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetNoteDefinitionOutputReference) validateSetFontSizeParameters(val *string) error {
 	return nil
 }

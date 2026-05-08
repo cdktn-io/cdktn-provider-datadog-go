@@ -5,9 +5,9 @@ package powerpack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/powerpack/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/powerpack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -30,6 +30,9 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	CreationStack() *[]*string
 	CustomLink() PowerpackWidgetGeomapDefinitionCustomLinkList
 	CustomLinkInput() interface{}
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	HideIncompleteCostData() interface{}
@@ -92,6 +95,7 @@ type PowerpackWidgetGeomapDefinitionOutputReference interface {
 	PutStyle(value *PowerpackWidgetGeomapDefinitionStyle)
 	PutView(value *PowerpackWidgetGeomapDefinitionView)
 	ResetCustomLink()
+	ResetDescription()
 	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
@@ -159,6 +163,26 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) CustomLinkInp
 	_jsii_.Get(
 		j,
 		"customLinkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +434,17 @@ func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -736,6 +771,14 @@ func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetCustomLi
 	_jsii_.InvokeVoid(
 		p,
 		"resetCustomLink",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackWidgetGeomapDefinitionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

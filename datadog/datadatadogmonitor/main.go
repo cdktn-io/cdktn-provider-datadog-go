@@ -42,7 +42,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "includeTags", GoGetter: "IncludeTags"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "locked", GoGetter: "Locked"},
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorTagsFilter", GoGetter: "MonitorTagsFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorTagsFilterInput", GoGetter: "MonitorTagsFilterInput"},

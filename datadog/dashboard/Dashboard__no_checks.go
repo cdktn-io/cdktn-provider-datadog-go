@@ -75,6 +75,10 @@ func (d *jsiiProxy_Dashboard) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (d *jsiiProxy_Dashboard) validatePutTabParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Dashboard) validatePutTemplateVariableParameters(value interface{}) error {
 	return nil
 }

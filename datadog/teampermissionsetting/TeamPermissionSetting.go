@@ -5,14 +5,14 @@ package teampermissionsetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 type TeamPermissionSetting interface {
 	cdktn.TerraformResource
 	Action() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_TeamPermissionSetting) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) TeamPermissionSetting {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewTeamPermissionSetting(scope constructs.Construct, id *string, config *Te
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource.
 func NewTeamPermissionSetting_Override(t TeamPermissionSetting, scope constructs.Construct, id *string, config *TeamPermissionSettingConfig) {
 	_init_.Initialize()
 

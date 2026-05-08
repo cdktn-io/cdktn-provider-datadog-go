@@ -5,14 +5,14 @@ package datadatadogsensitivedatascannerstandardpattern
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsensitivedatascannerstandardpattern/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsensitivedatascannerstandardpattern/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
 type DataDatadogSensitiveDataScannerStandardPattern interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,9 @@ type DataDatadogSensitiveDataScannerStandardPattern interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	StandardPatternId() *string
+	SetStandardPatternId(val *string)
+	StandardPatternIdInput() *string
 	Tags() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -89,10 +92,12 @@ type DataDatadogSensitiveDataScannerStandardPattern interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStandardPatternId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -311,6 +316,26 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) RawOverrides(
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) StandardPatternId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"standardPatternId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) StandardPatternIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"standardPatternIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -352,7 +377,7 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) DataDatadogSensitiveDataScannerStandardPattern {
 	_init_.Initialize()
 
@@ -370,7 +395,7 @@ func NewDataDatadogSensitiveDataScannerStandardPattern(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern} Data Source.
 func NewDataDatadogSensitiveDataScannerStandardPattern_Override(d DataDatadogSensitiveDataScannerStandardPattern, scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) {
 	_init_.Initialize()
 
@@ -445,6 +470,17 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern)SetProvider(va
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern)SetStandardPatternId(val *string) {
+	if err := j.validateSetStandardPatternIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"standardPatternId",
 		val,
 	)
 }
@@ -734,6 +770,14 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) OverrideLogic
 	)
 }
 
+func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -746,6 +790,14 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) ResetOverride
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) ResetStandardPatternId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStandardPatternId",
 		nil, // no parameters
 	)
 }

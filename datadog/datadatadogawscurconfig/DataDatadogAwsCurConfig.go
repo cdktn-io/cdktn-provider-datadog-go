@@ -5,14 +5,14 @@ package datadatadogawscurconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
 type DataDatadogAwsCurConfig interface {
 	cdktn.TerraformDataSource
 	AccountFilters() DataDatadogAwsCurConfigAccountFiltersOutputReference
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataDatadogAwsCurConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
 func NewDataDatadogAwsCurConfig(scope constructs.Construct, id *string, config *DataDatadogAwsCurConfigConfig) DataDatadogAwsCurConfig {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataDatadogAwsCurConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source.
 func NewDataDatadogAwsCurConfig_Override(d DataDatadogAwsCurConfig, scope constructs.Construct, id *string, config *DataDatadogAwsCurConfigConfig) {
 	_init_.Initialize()
 

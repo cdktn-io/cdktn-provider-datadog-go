@@ -5,14 +5,14 @@ package datadatadoglogsindexesorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoglogsindexesorder/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoglogsindexesorder/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order}.
 type DataDatadogLogsIndexesOrder interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexesOrder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) DataDatadogLogsIndexesOrder {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatadogLogsIndexesOrder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/logs_indexes_order datadog_logs_indexes_order} Data Source.
 func NewDataDatadogLogsIndexesOrder_Override(d DataDatadogLogsIndexesOrder, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesOrderConfig) {
 	_init_.Initialize()
 

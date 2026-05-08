@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) validateSetLi
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogSensitiveDataScannerStandardPattern) validateSetStandardPatternIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataDatadogSensitiveDataScannerStandardPatternParameters(scope constructs.Construct, id *string, config *DataDatadogSensitiveDataScannerStandardPatternConfig) error {
 	return nil
 }

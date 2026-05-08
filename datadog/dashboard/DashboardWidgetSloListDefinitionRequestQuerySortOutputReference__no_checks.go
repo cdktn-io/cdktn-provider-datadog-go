@@ -63,6 +63,10 @@ func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetSloListDefinitionRequestQuerySortOutputReference) validateSetInternalValueParameters(val *DashboardWidgetSloListDefinitionRequestQuerySort) error {
 	return nil
 }

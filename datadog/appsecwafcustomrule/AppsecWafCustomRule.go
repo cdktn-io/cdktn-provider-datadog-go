@@ -5,14 +5,14 @@ package appsecwafcustomrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appsecwafcustomrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appsecwafcustomrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}.
 type AppsecWafCustomRule interface {
 	cdktn.TerraformResource
 	Action() AppsecWafCustomRuleActionOutputReference
@@ -494,7 +494,7 @@ func (j *jsiiProxy_AppsecWafCustomRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) AppsecWafCustomRule {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewAppsecWafCustomRule(scope constructs.Construct, id *string, config *Apps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource.
 func NewAppsecWafCustomRule_Override(a AppsecWafCustomRule, scope constructs.Construct, id *string, config *AppsecWafCustomRuleConfig) {
 	_init_.Initialize()
 

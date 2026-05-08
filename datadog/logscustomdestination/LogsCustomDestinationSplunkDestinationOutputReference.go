@@ -5,9 +5,9 @@ package logscustomdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logscustomdestination/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logscustomdestination/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -38,6 +38,8 @@ type LogsCustomDestinationSplunkDestinationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Sourcetype() LogsCustomDestinationSplunkDestinationSourcetypeList
+	SourcetypeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,8 @@ type LogsCustomDestinationSplunkDestinationOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutSourcetype(value interface{})
+	ResetSourcetype()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) Sourcetype() LogsCustomDestinationSplunkDestinationSourcetypeList {
+	var returns LogsCustomDestinationSplunkDestinationSourcetypeList
+	_jsii_.Get(
+		j,
+		"sourcetype",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) SourcetypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourcetypeInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +508,25 @@ func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) PutSourcetype(value interface{}) {
+	if err := l.validatePutSourcetypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSourcetype",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) ResetSourcetype() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSourcetype",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LogsCustomDestinationSplunkDestinationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

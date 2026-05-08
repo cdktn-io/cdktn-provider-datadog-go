@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,9 +34,8 @@ type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Field() *string
-	SetField(val *string)
-	FieldInput() *string
+	Field() ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList
+	FieldInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,6 +72,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOut
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutField(value interface{})
 	ResetColumn()
 	ResetComparison()
 	ResetField()
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) Field() *string {
-	var returns *string
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) Field() ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList
 	_jsii_.Get(
 		j,
 		"field",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) FieldInput() *string {
-	var returns *string
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) FieldInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"fieldInput",
@@ -289,17 +289,6 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference)SetField(val *string) {
-	if err := j.validateSetFieldParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"field",
 		val,
 	)
 }
@@ -521,6 +510,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) PutField(value interface{}) {
+	if err := o.validatePutFieldParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putField",
+		[]interface{}{value},
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference) ResetColumn() {

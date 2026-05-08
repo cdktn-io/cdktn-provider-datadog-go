@@ -228,6 +228,14 @@ func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DashboardWidgetChangeDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputR
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validatePutGroupByFieldsParameters(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackWidgetHeatmapDefinitionRequestQueryEventQueryOutputReference) validatePutSearchParameters(value *PowerpackWidgetHeatmapDefinitionRequestQueryEventQuerySearch) error {
 	return nil
 }

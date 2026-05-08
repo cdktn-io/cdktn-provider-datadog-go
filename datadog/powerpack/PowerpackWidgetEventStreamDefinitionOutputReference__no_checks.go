@@ -59,6 +59,10 @@ func (j *jsiiProxy_PowerpackWidgetEventStreamDefinitionOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackWidgetEventStreamDefinitionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackWidgetEventStreamDefinitionOutputReference) validateSetEventSizeParameters(val *string) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package observabilitypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/observabilitypipeline/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/observabilitypipeline/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -86,6 +86,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleO
 	ResetOnMatch()
 	ResetPattern()
 	ResetScope()
+	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -654,6 +655,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 	_jsii_.InvokeVoid(
 		o,
 		"resetScope",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference) ResetTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTags",
 		nil, // no parameters
 	)
 }

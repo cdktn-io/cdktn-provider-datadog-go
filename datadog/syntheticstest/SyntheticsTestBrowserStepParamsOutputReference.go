@@ -5,9 +5,9 @@ package syntheticstest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -49,6 +49,8 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	Delay() *float64
 	SetDelay(val *float64)
 	DelayInput() *float64
+	DragDropOptions() SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference
+	DragDropOptionsInput() *SyntheticsTestBrowserStepParamsDragDropOptions
 	Element() *string
 	SetElement(val *string)
 	ElementInput() *string
@@ -130,6 +132,7 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDragDropOptions(value *SyntheticsTestBrowserStepParamsDragDropOptions)
 	PutElementUserLocator(value *SyntheticsTestBrowserStepParamsElementUserLocator)
 	PutPattern(value *SyntheticsTestBrowserStepParamsPattern)
 	PutVariable(value *SyntheticsTestBrowserStepParamsVariable)
@@ -140,6 +143,7 @@ type SyntheticsTestBrowserStepParamsOutputReference interface {
 	ResetClickWithJavascript()
 	ResetCode()
 	ResetDelay()
+	ResetDragDropOptions()
 	ResetElement()
 	ResetElementUserLocator()
 	ResetEmail()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) DelayInput() 
 	_jsii_.Get(
 		j,
 		"delayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) DragDropOptions() SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference {
+	var returns SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"dragDropOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) DragDropOptionsInput() *SyntheticsTestBrowserStepParamsDragDropOptions {
+	var returns *SyntheticsTestBrowserStepParamsDragDropOptions
+	_jsii_.Get(
+		j,
+		"dragDropOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1190,6 +1214,17 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) Interpolation
 	return returns
 }
 
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutDragDropOptions(value *SyntheticsTestBrowserStepParamsDragDropOptions) {
+	if err := s.validatePutDragDropOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDragDropOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) PutElementUserLocator(value *SyntheticsTestBrowserStepParamsElementUserLocator) {
 	if err := s.validatePutElementUserLocatorParameters(value); err != nil {
 		panic(err)
@@ -1275,6 +1310,14 @@ func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetDelay() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetDelay",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestBrowserStepParamsOutputReference) ResetDragDropOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDragDropOptions",
 		nil, // no parameters
 	)
 }

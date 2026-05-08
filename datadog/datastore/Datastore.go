@@ -5,14 +5,14 @@ package datastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datastore/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datastore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore datadog_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore datadog_datastore}.
 type Datastore interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -479,7 +479,7 @@ func (j *jsiiProxy_Datastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore datadog_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore datadog_datastore} Resource.
 func NewDatastore(scope constructs.Construct, id *string, config *DatastoreConfig) Datastore {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewDatastore(scope constructs.Construct, id *string, config *DatastoreConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/datastore datadog_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore datadog_datastore} Resource.
 func NewDatastore_Override(d Datastore, scope constructs.Construct, id *string, config *DatastoreConfig) {
 	_init_.Initialize()
 
