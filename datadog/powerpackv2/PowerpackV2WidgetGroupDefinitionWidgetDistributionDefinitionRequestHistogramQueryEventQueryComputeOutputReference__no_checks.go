@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetAggregationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetMetricParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQueryComputeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

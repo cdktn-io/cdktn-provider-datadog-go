@@ -59,6 +59,10 @@ func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validatePutHistogramQueryParameters(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validatePutLogQueryParameters(value *DashboardV2WidgetDistributionDefinitionRequestLogQuery) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference
 }
 
 func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validateSetQParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validateSetRequestTypeParameters(val *string) error {
 	return nil
 }
 

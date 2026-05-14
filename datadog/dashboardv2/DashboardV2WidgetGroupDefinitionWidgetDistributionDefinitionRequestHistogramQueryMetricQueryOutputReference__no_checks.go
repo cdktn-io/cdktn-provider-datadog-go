@@ -1,0 +1,101 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetAggregatorParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetCrossOrgUuidsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetDataSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQuery) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetSemanticModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -36,6 +36,8 @@ type PowerpackV2WidgetDistributionDefinitionRequestOutputReference interface {
 	FormulaInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HistogramQuery() PowerpackV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference
+	HistogramQueryInput() *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LogQuery() PowerpackV2WidgetDistributionDefinitionRequestLogQueryOutputReference
@@ -47,6 +49,9 @@ type PowerpackV2WidgetDistributionDefinitionRequestOutputReference interface {
 	QInput() *string
 	Query() PowerpackV2WidgetDistributionDefinitionRequestQueryList
 	QueryInput() interface{}
+	RequestType() *string
+	SetRequestType(val *string)
+	RequestTypeInput() *string
 	RumQuery() PowerpackV2WidgetDistributionDefinitionRequestRumQueryOutputReference
 	RumQueryInput() *PowerpackV2WidgetDistributionDefinitionRequestRumQuery
 	SecurityQuery() PowerpackV2WidgetDistributionDefinitionRequestSecurityQueryOutputReference
@@ -88,6 +93,7 @@ type PowerpackV2WidgetDistributionDefinitionRequestOutputReference interface {
 	PutApmQuery(value *PowerpackV2WidgetDistributionDefinitionRequestApmQuery)
 	PutApmStatsQuery(value *PowerpackV2WidgetDistributionDefinitionRequestApmStatsQuery)
 	PutFormula(value interface{})
+	PutHistogramQuery(value *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery)
 	PutLogQuery(value *PowerpackV2WidgetDistributionDefinitionRequestLogQuery)
 	PutProcessQuery(value *PowerpackV2WidgetDistributionDefinitionRequestProcessQuery)
 	PutQuery(value interface{})
@@ -97,10 +103,12 @@ type PowerpackV2WidgetDistributionDefinitionRequestOutputReference interface {
 	ResetApmQuery()
 	ResetApmStatsQuery()
 	ResetFormula()
+	ResetHistogramQuery()
 	ResetLogQuery()
 	ResetProcessQuery()
 	ResetQ()
 	ResetQuery()
+	ResetRequestType()
 	ResetRumQuery()
 	ResetSecurityQuery()
 	ResetStyle()
@@ -219,6 +227,26 @@ func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) HistogramQuery() PowerpackV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference {
+	var returns PowerpackV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference
+	_jsii_.Get(
+		j,
+		"histogramQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) HistogramQueryInput() *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery {
+	var returns *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery
+	_jsii_.Get(
+		j,
+		"histogramQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -304,6 +332,26 @@ func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	_jsii_.Get(
 		j,
 		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) RequestType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) RequestTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestTypeInput",
 		&returns,
 	)
 	return returns
@@ -457,6 +505,17 @@ func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	_jsii_.Set(
 		j,
 		"q",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference)SetRequestType(val *string) {
+	if err := j.validateSetRequestTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestType",
 		val,
 	)
 }
@@ -702,6 +761,17 @@ func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) PutHistogramQuery(value *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery) {
+	if err := p.validatePutHistogramQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putHistogramQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) PutLogQuery(value *PowerpackV2WidgetDistributionDefinitionRequestLogQuery) {
 	if err := p.validatePutLogQueryParameters(value); err != nil {
 		panic(err)
@@ -792,6 +862,14 @@ func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) ResetHistogramQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHistogramQuery",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) ResetLogQuery() {
 	_jsii_.InvokeVoid(
 		p,
@@ -820,6 +898,14 @@ func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	_jsii_.InvokeVoid(
 		p,
 		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) ResetRequestType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRequestType",
 		nil, // no parameters
 	)
 }

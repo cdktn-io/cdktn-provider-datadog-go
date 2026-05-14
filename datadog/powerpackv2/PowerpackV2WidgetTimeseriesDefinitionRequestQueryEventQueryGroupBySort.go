@@ -9,15 +9,15 @@ type PowerpackV2WidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort stru
 	//
 	// Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// The metric used for sorting group by results.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
 	Metric *string `field:"optional" json:"metric" yaml:"metric"`
 	// Direction of sort. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#order PowerpackV2#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 }
 

@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validatePutSortParameters(value *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsSort) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetFieldsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFields) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

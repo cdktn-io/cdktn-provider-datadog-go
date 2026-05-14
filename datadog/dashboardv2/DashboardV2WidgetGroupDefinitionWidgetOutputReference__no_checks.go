@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutBarChartDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutChangeDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition) error {
 	return nil
 }
@@ -131,6 +135,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutSankeyDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutScatterplotDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition) error {
 	return nil
 }
@@ -172,6 +180,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 }
 
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutWidgetLayoutParameters(value *DashboardV2WidgetGroupDefinitionWidgetWidgetLayout) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutWildcardDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition) error {
 	return nil
 }
 

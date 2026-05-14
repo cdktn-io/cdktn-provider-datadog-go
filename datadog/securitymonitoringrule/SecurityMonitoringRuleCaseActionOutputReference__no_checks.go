@@ -47,7 +47,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) validateInte
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) validatePutOptionsParameters(value *SecurityMonitoringRuleCaseActionOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) validatePutOptionsParameters(value interface{}) error {
 	return nil
 }
 

@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryTableDefinitionRequestTextFormatsTextFormatMatch struct {
 	// Match or compare option. Valid values are `is`, `is_not`, `contains`, `does_not_contain`, `starts_with`, `ends_with`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#type DashboardV2#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#type DashboardV2#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Table Widget Match String.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#value DashboardV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#value DashboardV2#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

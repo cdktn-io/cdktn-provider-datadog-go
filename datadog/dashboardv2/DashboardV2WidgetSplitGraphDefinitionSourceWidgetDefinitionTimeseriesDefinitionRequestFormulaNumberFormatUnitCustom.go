@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom struct {
 	// Unit label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#label DashboardV2#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#label DashboardV2#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 

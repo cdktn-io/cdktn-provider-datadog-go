@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_group_policy datadog_org_group_policy}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy datadog_org_group_policy}.
 type OrgGroupPolicy interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_OrgGroupPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_group_policy datadog_org_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy datadog_org_group_policy} Resource.
 func NewOrgGroupPolicy(scope constructs.Construct, id *string, config *OrgGroupPolicyConfig) OrgGroupPolicy {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewOrgGroupPolicy(scope constructs.Construct, id *string, config *OrgGroupP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_group_policy datadog_org_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy datadog_org_group_policy} Resource.
 func NewOrgGroupPolicy_Override(o OrgGroupPolicy, scope constructs.Construct, id *string, config *OrgGroupPolicyConfig) {
 	_init_.Initialize()
 

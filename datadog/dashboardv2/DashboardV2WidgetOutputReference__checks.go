@@ -115,6 +115,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutAlertValueDefini
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutBarChartDefinitionParameters(value *DashboardV2WidgetBarChartDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutChangeDefinitionParameters(value *DashboardV2WidgetChangeDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -346,6 +357,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutRunWorkflowDefin
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutSankeyDefinitionParameters(value *DashboardV2WidgetSankeyDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutScatterplotDefinitionParameters(value *DashboardV2WidgetScatterplotDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -468,6 +490,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutTreemapDefinitio
 }
 
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutWidgetLayoutParameters(value *DashboardV2WidgetWidgetLayout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutWildcardDefinitionParameters(value *DashboardV2WidgetWildcardDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

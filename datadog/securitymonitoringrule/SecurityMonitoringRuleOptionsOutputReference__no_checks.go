@@ -47,23 +47,23 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateInterpo
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutAnomalyDetectionOptionsParameters(value *SecurityMonitoringRuleOptionsAnomalyDetectionOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutAnomalyDetectionOptionsParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutImpossibleTravelOptionsParameters(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutImpossibleTravelOptionsParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutNewValueOptionsParameters(value *SecurityMonitoringRuleOptionsNewValueOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutNewValueOptionsParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutSequenceDetectionOptionsParameters(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutSequenceDetectionOptionsParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutThirdPartyRuleOptionsParameters(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validatePutThirdPartyRuleOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetEval
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetInternalValueParameters(val *SecurityMonitoringRuleOptions) error {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -111,7 +111,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) validateSetTerr
 	return nil
 }
 
-func validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -91,6 +91,10 @@ func validateAgentlessScanningGcpScanOptions_IsTerraformResourceParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_AgentlessScanningGcpScanOptions) validateSetComplianceHostParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AgentlessScanningGcpScanOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

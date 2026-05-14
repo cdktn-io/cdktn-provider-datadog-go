@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutBarChartDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetBarChartDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutChangeDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetChangeDefinition) error {
 	return nil
 }
@@ -131,6 +135,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutSankeyDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutScatterplotDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetScatterplotDefinition) error {
 	return nil
 }
@@ -172,6 +180,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutWidgetLayoutParameters(value *PowerpackV2WidgetGroupDefinitionWidgetWidgetLayout) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutWildcardDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinition) error {
 	return nil
 }
 

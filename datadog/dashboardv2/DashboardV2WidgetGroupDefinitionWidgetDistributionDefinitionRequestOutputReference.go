@@ -36,6 +36,8 @@ type DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputRe
 	FormulaInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HistogramQuery() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference
+	HistogramQueryInput() *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LogQuery() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryOutputReference
@@ -47,6 +49,9 @@ type DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputRe
 	QInput() *string
 	Query() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryList
 	QueryInput() interface{}
+	RequestType() *string
+	SetRequestType(val *string)
+	RequestTypeInput() *string
 	RumQuery() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryOutputReference
 	RumQueryInput() *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQuery
 	SecurityQuery() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryOutputReference
@@ -88,6 +93,7 @@ type DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputRe
 	PutApmQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQuery)
 	PutApmStatsQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQuery)
 	PutFormula(value interface{})
+	PutHistogramQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery)
 	PutLogQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery)
 	PutProcessQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQuery)
 	PutQuery(value interface{})
@@ -97,10 +103,12 @@ type DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputRe
 	ResetApmQuery()
 	ResetApmStatsQuery()
 	ResetFormula()
+	ResetHistogramQuery()
 	ResetLogQuery()
 	ResetProcessQuery()
 	ResetQ()
 	ResetQuery()
+	ResetRequestType()
 	ResetRumQuery()
 	ResetSecurityQuery()
 	ResetStyle()
@@ -219,6 +227,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) HistogramQuery() DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference
+	_jsii_.Get(
+		j,
+		"histogramQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) HistogramQueryInput() *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery
+	_jsii_.Get(
+		j,
+		"histogramQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -304,6 +332,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	_jsii_.Get(
 		j,
 		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) RequestType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) RequestTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestTypeInput",
 		&returns,
 	)
 	return returns
@@ -457,6 +505,17 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	_jsii_.Set(
 		j,
 		"q",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference)SetRequestType(val *string) {
+	if err := j.validateSetRequestTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestType",
 		val,
 	)
 }
@@ -702,6 +761,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) PutHistogramQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery) {
+	if err := d.validatePutHistogramQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHistogramQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) PutLogQuery(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery) {
 	if err := d.validatePutLogQueryParameters(value); err != nil {
 		panic(err)
@@ -792,6 +862,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) ResetHistogramQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHistogramQuery",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) ResetLogQuery() {
 	_jsii_.InvokeVoid(
 		d,
@@ -820,6 +898,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	_jsii_.InvokeVoid(
 		d,
 		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) ResetRequestType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRequestType",
 		nil, // no parameters
 	)
 }

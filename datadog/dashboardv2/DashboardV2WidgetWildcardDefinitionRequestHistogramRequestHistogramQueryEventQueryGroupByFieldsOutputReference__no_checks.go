@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validatePutSortParameters(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsSort) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetFieldsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFields) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQueryGroupByFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

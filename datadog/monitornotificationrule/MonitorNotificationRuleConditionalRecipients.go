@@ -7,11 +7,11 @@ package monitornotificationrule
 type MonitorNotificationRuleConditionalRecipients struct {
 	// conditions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
 	Conditions interface{} `field:"optional" json:"conditions" yaml:"conditions"`
 	// If none of the `conditions` applied, `fallback_recipients` will get notified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
 	FallbackRecipients *[]*string `field:"optional" json:"fallbackRecipients" yaml:"fallbackRecipients"`
 }
 

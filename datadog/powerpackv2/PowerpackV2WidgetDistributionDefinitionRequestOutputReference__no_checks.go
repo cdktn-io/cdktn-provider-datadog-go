@@ -59,6 +59,10 @@ func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) validatePutHistogramQueryParameters(value *PowerpackV2WidgetDistributionDefinitionRequestHistogramQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) validatePutLogQueryParameters(value *PowerpackV2WidgetDistributionDefinitionRequestLogQuery) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference
 }
 
 func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) validateSetQParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetDistributionDefinitionRequestOutputReference) validateSetRequestTypeParameters(val *string) error {
 	return nil
 }
 

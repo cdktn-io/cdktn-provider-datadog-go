@@ -87,7 +87,7 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutFilterParameters(value int
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) validatePutOptionsParameters(value *SecurityMonitoringRuleOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -99,7 +99,7 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutReferenceTablesParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) validatePutSchedulingOptionsParameters(value *SecurityMonitoringRuleSchedulingOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutSchedulingOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -144,10 +144,6 @@ func (j *jsiiProxy_SecurityMonitoringRule) validateSetGroupSignalsByParameters(v
 }
 
 func (j *jsiiProxy_SecurityMonitoringRule) validateSetHasExtendedTitleParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 

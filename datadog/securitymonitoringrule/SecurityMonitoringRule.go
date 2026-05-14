@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
 type SecurityMonitoringRule interface {
 	cdktn.TerraformResource
 	CalculatedField() SecurityMonitoringRuleCalculatedFieldList
@@ -35,6 +35,7 @@ type SecurityMonitoringRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveTags() *[]*string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -55,8 +56,6 @@ type SecurityMonitoringRule interface {
 	SetHasExtendedTitle(val interface{})
 	HasExtendedTitleInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -69,8 +68,8 @@ type SecurityMonitoringRule interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Options() SecurityMonitoringRuleOptionsOutputReference
-	OptionsInput() *SecurityMonitoringRuleOptions
+	Options() SecurityMonitoringRuleOptionsList
+	OptionsInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -85,8 +84,8 @@ type SecurityMonitoringRule interface {
 	RawOverrides() interface{}
 	ReferenceTables() SecurityMonitoringRuleReferenceTablesList
 	ReferenceTablesInput() interface{}
-	SchedulingOptions() SecurityMonitoringRuleSchedulingOptionsOutputReference
-	SchedulingOptionsInput() *SecurityMonitoringRuleSchedulingOptions
+	SchedulingOptions() SecurityMonitoringRuleSchedulingOptionsList
+	SchedulingOptionsInput() interface{}
 	SignalQuery() SecurityMonitoringRuleSignalQueryList
 	SignalQueryInput() interface{}
 	Tags() *[]*string
@@ -152,10 +151,10 @@ type SecurityMonitoringRule interface {
 	PutCalculatedField(value interface{})
 	PutCase(value interface{})
 	PutFilter(value interface{})
-	PutOptions(value *SecurityMonitoringRuleOptions)
+	PutOptions(value interface{})
 	PutQuery(value interface{})
 	PutReferenceTables(value interface{})
-	PutSchedulingOptions(value *SecurityMonitoringRuleSchedulingOptions)
+	PutSchedulingOptions(value interface{})
 	PutSignalQuery(value interface{})
 	PutThirdPartyCase(value interface{})
 	ResetCalculatedField()
@@ -164,7 +163,6 @@ type SecurityMonitoringRule interface {
 	ResetFilter()
 	ResetGroupSignalsBy()
 	ResetHasExtendedTitle()
-	ResetId()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -294,6 +292,16 @@ func (j *jsiiProxy_SecurityMonitoringRule) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityMonitoringRule) EffectiveTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"effectiveTags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityMonitoringRule) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -414,16 +422,6 @@ func (j *jsiiProxy_SecurityMonitoringRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -484,8 +482,8 @@ func (j *jsiiProxy_SecurityMonitoringRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRule) Options() SecurityMonitoringRuleOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRule) Options() SecurityMonitoringRuleOptionsList {
+	var returns SecurityMonitoringRuleOptionsList
 	_jsii_.Get(
 		j,
 		"options",
@@ -494,8 +492,8 @@ func (j *jsiiProxy_SecurityMonitoringRule) Options() SecurityMonitoringRuleOptio
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRule) OptionsInput() *SecurityMonitoringRuleOptions {
-	var returns *SecurityMonitoringRuleOptions
+func (j *jsiiProxy_SecurityMonitoringRule) OptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"optionsInput",
@@ -574,8 +572,8 @@ func (j *jsiiProxy_SecurityMonitoringRule) ReferenceTablesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRule) SchedulingOptions() SecurityMonitoringRuleSchedulingOptionsOutputReference {
-	var returns SecurityMonitoringRuleSchedulingOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRule) SchedulingOptions() SecurityMonitoringRuleSchedulingOptionsList {
+	var returns SecurityMonitoringRuleSchedulingOptionsList
 	_jsii_.Get(
 		j,
 		"schedulingOptions",
@@ -584,8 +582,8 @@ func (j *jsiiProxy_SecurityMonitoringRule) SchedulingOptions() SecurityMonitorin
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRule) SchedulingOptionsInput() *SecurityMonitoringRuleSchedulingOptions {
-	var returns *SecurityMonitoringRuleSchedulingOptions
+func (j *jsiiProxy_SecurityMonitoringRule) SchedulingOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"schedulingOptionsInput",
@@ -725,7 +723,7 @@ func (j *jsiiProxy_SecurityMonitoringRule) ValidateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) SecurityMonitoringRule {
 	_init_.Initialize()
 
@@ -743,7 +741,7 @@ func NewSecurityMonitoringRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 func NewSecurityMonitoringRule_Override(s SecurityMonitoringRule, scope constructs.Construct, id *string, config *SecurityMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -821,17 +819,6 @@ func (j *jsiiProxy_SecurityMonitoringRule)SetHasExtendedTitle(val interface{}) {
 	_jsii_.Set(
 		j,
 		"hasExtendedTitle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1307,7 +1294,7 @@ func (s *jsiiProxy_SecurityMonitoringRule) PutFilter(value interface{}) {
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) PutOptions(value *SecurityMonitoringRuleOptions) {
+func (s *jsiiProxy_SecurityMonitoringRule) PutOptions(value interface{}) {
 	if err := s.validatePutOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1340,7 +1327,7 @@ func (s *jsiiProxy_SecurityMonitoringRule) PutReferenceTables(value interface{})
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) PutSchedulingOptions(value *SecurityMonitoringRuleSchedulingOptions) {
+func (s *jsiiProxy_SecurityMonitoringRule) PutSchedulingOptions(value interface{}) {
 	if err := s.validatePutSchedulingOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1417,14 +1404,6 @@ func (s *jsiiProxy_SecurityMonitoringRule) ResetHasExtendedTitle() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHasExtendedTitle",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringRule) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

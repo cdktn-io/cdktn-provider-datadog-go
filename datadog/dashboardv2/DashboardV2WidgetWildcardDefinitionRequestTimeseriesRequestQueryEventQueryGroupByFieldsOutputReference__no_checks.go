@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validatePutSortParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSort) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetFieldsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFields) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

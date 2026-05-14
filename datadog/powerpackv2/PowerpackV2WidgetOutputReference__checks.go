@@ -115,6 +115,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutAlertValueDefini
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutBarChartDefinitionParameters(value *PowerpackV2WidgetBarChartDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutChangeDefinitionParameters(value *PowerpackV2WidgetChangeDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -335,6 +346,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutRunWorkflowDefin
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutSankeyDefinitionParameters(value *PowerpackV2WidgetSankeyDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutScatterplotDefinitionParameters(value *PowerpackV2WidgetScatterplotDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -446,6 +468,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutTreemapDefinitio
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutWidgetLayoutParameters(value *PowerpackV2WidgetWidgetLayout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutWildcardDefinitionParameters(value *PowerpackV2WidgetWildcardDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

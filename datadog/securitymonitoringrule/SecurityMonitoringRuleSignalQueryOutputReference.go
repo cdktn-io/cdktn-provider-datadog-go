@@ -38,8 +38,6 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DefaultRuleId() *string
-	SetDefaultRuleId(val *string)
-	DefaultRuleIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -85,7 +83,6 @@ type SecurityMonitoringRuleSignalQueryOutputReference interface {
 	ResetAggregation()
 	ResetCorrelatedByFields()
 	ResetCorrelatedQueryIndex()
-	ResetDefaultRuleId()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,16 +194,6 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) DefaultRule
 	_jsii_.Get(
 		j,
 		"defaultRuleId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) DefaultRuleIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultRuleIdInput",
 		&returns,
 	)
 	return returns
@@ -371,17 +358,6 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference)SetCorrelate
 	_jsii_.Set(
 		j,
 		"correlatedQueryIndex",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference)SetDefaultRuleId(val *string) {
-	if err := j.validateSetDefaultRuleIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultRuleId",
 		val,
 	)
 }
@@ -647,14 +623,6 @@ func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) ResetCorrel
 	_jsii_.InvokeVoid(
 		s,
 		"resetCorrelatedQueryIndex",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) ResetDefaultRuleId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetDefaultRuleId",
 		nil, // no parameters
 	)
 }

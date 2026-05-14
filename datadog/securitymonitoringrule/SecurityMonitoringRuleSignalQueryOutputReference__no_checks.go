@@ -71,10 +71,6 @@ func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) validateSetDefaultRuleIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringRuleSignalQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

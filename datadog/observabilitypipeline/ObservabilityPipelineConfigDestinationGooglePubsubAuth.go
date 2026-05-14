@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationGooglePubsubAuth struct {
 	// Path to the Google Cloud service account key file.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 	CredentialsFile *string `field:"required" json:"credentialsFile" yaml:"credentialsFile"`
 }
 

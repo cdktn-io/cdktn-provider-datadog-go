@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutAlertValueDefini
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutBarChartDefinitionParameters(value *DashboardV2WidgetBarChartDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutChangeDefinitionParameters(value *DashboardV2WidgetChangeDefinition) error {
 	return nil
 }
@@ -139,6 +143,10 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutRunWorkflowDefin
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutSankeyDefinitionParameters(value *DashboardV2WidgetSankeyDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutScatterplotDefinitionParameters(value *DashboardV2WidgetScatterplotDefinition) error {
 	return nil
 }
@@ -184,6 +192,10 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutTreemapDefinitio
 }
 
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutWidgetLayoutParameters(value *DashboardV2WidgetWidgetLayout) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutWildcardDefinitionParameters(value *DashboardV2WidgetWildcardDefinition) error {
 	return nil
 }
 

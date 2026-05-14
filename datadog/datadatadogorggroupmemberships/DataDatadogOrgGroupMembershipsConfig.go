@@ -26,13 +26,13 @@ type DataDatadogOrgGroupMembershipsConfig struct {
 	//
 	// At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
 	OrgGroupId *string `field:"optional" json:"orgGroupId" yaml:"orgGroupId"`
 	// Filter memberships to those for the given organization.
 	//
 	// At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
 	OrgUuid *string `field:"optional" json:"orgUuid" yaml:"orgUuid"`
 }
 

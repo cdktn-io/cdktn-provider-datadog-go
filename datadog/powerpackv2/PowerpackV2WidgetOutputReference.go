@@ -17,6 +17,8 @@ type PowerpackV2WidgetOutputReference interface {
 	AlertGraphDefinitionInput() *PowerpackV2WidgetAlertGraphDefinition
 	AlertValueDefinition() PowerpackV2WidgetAlertValueDefinitionOutputReference
 	AlertValueDefinitionInput() *PowerpackV2WidgetAlertValueDefinition
+	BarChartDefinition() PowerpackV2WidgetBarChartDefinitionOutputReference
+	BarChartDefinitionInput() *PowerpackV2WidgetBarChartDefinition
 	ChangeDefinition() PowerpackV2WidgetChangeDefinitionOutputReference
 	ChangeDefinitionInput() *PowerpackV2WidgetChangeDefinition
 	CheckStatusDefinition() PowerpackV2WidgetCheckStatusDefinitionOutputReference
@@ -79,6 +81,8 @@ type PowerpackV2WidgetOutputReference interface {
 	QueryValueDefinitionInput() *PowerpackV2WidgetQueryValueDefinition
 	RunWorkflowDefinition() PowerpackV2WidgetRunWorkflowDefinitionOutputReference
 	RunWorkflowDefinitionInput() *PowerpackV2WidgetRunWorkflowDefinition
+	SankeyDefinition() PowerpackV2WidgetSankeyDefinitionOutputReference
+	SankeyDefinitionInput() *PowerpackV2WidgetSankeyDefinition
 	ScatterplotDefinition() PowerpackV2WidgetScatterplotDefinitionOutputReference
 	ScatterplotDefinitionInput() *PowerpackV2WidgetScatterplotDefinition
 	ServiceLevelObjectiveDefinition() PowerpackV2WidgetServiceLevelObjectiveDefinitionOutputReference
@@ -109,6 +113,8 @@ type PowerpackV2WidgetOutputReference interface {
 	TreemapDefinitionInput() *PowerpackV2WidgetTreemapDefinition
 	WidgetLayout() PowerpackV2WidgetWidgetLayoutOutputReference
 	WidgetLayoutInput() *PowerpackV2WidgetWidgetLayout
+	WildcardDefinition() PowerpackV2WidgetWildcardDefinitionOutputReference
+	WildcardDefinitionInput() *PowerpackV2WidgetWildcardDefinition
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -135,6 +141,7 @@ type PowerpackV2WidgetOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAlertGraphDefinition(value *PowerpackV2WidgetAlertGraphDefinition)
 	PutAlertValueDefinition(value *PowerpackV2WidgetAlertValueDefinition)
+	PutBarChartDefinition(value *PowerpackV2WidgetBarChartDefinition)
 	PutChangeDefinition(value *PowerpackV2WidgetChangeDefinition)
 	PutCheckStatusDefinition(value *PowerpackV2WidgetCheckStatusDefinition)
 	PutDistributionDefinition(value *PowerpackV2WidgetDistributionDefinition)
@@ -155,6 +162,7 @@ type PowerpackV2WidgetOutputReference interface {
 	PutQueryTableDefinition(value *PowerpackV2WidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *PowerpackV2WidgetQueryValueDefinition)
 	PutRunWorkflowDefinition(value *PowerpackV2WidgetRunWorkflowDefinition)
+	PutSankeyDefinition(value *PowerpackV2WidgetSankeyDefinition)
 	PutScatterplotDefinition(value *PowerpackV2WidgetScatterplotDefinition)
 	PutServiceLevelObjectiveDefinition(value *PowerpackV2WidgetServiceLevelObjectiveDefinition)
 	PutServicemapDefinition(value *PowerpackV2WidgetServicemapDefinition)
@@ -166,8 +174,10 @@ type PowerpackV2WidgetOutputReference interface {
 	PutTraceServiceDefinition(value *PowerpackV2WidgetTraceServiceDefinition)
 	PutTreemapDefinition(value *PowerpackV2WidgetTreemapDefinition)
 	PutWidgetLayout(value *PowerpackV2WidgetWidgetLayout)
+	PutWildcardDefinition(value *PowerpackV2WidgetWildcardDefinition)
 	ResetAlertGraphDefinition()
 	ResetAlertValueDefinition()
+	ResetBarChartDefinition()
 	ResetChangeDefinition()
 	ResetCheckStatusDefinition()
 	ResetDistributionDefinition()
@@ -189,6 +199,7 @@ type PowerpackV2WidgetOutputReference interface {
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
 	ResetRunWorkflowDefinition()
+	ResetSankeyDefinition()
 	ResetScatterplotDefinition()
 	ResetServiceLevelObjectiveDefinition()
 	ResetServicemapDefinition()
@@ -200,6 +211,7 @@ type PowerpackV2WidgetOutputReference interface {
 	ResetTraceServiceDefinition()
 	ResetTreemapDefinition()
 	ResetWidgetLayout()
+	ResetWildcardDefinition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -250,6 +262,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) AlertValueDefinitionInput()
 	_jsii_.Get(
 		j,
 		"alertValueDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) BarChartDefinition() PowerpackV2WidgetBarChartDefinitionOutputReference {
+	var returns PowerpackV2WidgetBarChartDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"barChartDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) BarChartDefinitionInput() *PowerpackV2WidgetBarChartDefinition {
+	var returns *PowerpackV2WidgetBarChartDefinition
+	_jsii_.Get(
+		j,
+		"barChartDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -725,6 +757,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) RunWorkflowDefinitionInput(
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) SankeyDefinition() PowerpackV2WidgetSankeyDefinitionOutputReference {
+	var returns PowerpackV2WidgetSankeyDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"sankeyDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) SankeyDefinitionInput() *PowerpackV2WidgetSankeyDefinition {
+	var returns *PowerpackV2WidgetSankeyDefinition
+	_jsii_.Get(
+		j,
+		"sankeyDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetOutputReference) ScatterplotDefinition() PowerpackV2WidgetScatterplotDefinitionOutputReference {
 	var returns PowerpackV2WidgetScatterplotDefinitionOutputReference
 	_jsii_.Get(
@@ -960,6 +1012,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) WidgetLayoutInput() *Powerp
 	_jsii_.Get(
 		j,
 		"widgetLayoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) WildcardDefinition() PowerpackV2WidgetWildcardDefinitionOutputReference {
+	var returns PowerpackV2WidgetWildcardDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"wildcardDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) WildcardDefinitionInput() *PowerpackV2WidgetWildcardDefinition {
+	var returns *PowerpackV2WidgetWildcardDefinition
+	_jsii_.Get(
+		j,
+		"wildcardDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1267,6 +1339,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutAlertValueDefinition(val
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutBarChartDefinition(value *PowerpackV2WidgetBarChartDefinition) {
+	if err := p.validatePutBarChartDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putBarChartDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutChangeDefinition(value *PowerpackV2WidgetChangeDefinition) {
 	if err := p.validatePutChangeDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1487,6 +1570,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutRunWorkflowDefinition(va
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutSankeyDefinition(value *PowerpackV2WidgetSankeyDefinition) {
+	if err := p.validatePutSankeyDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSankeyDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutScatterplotDefinition(value *PowerpackV2WidgetScatterplotDefinition) {
 	if err := p.validatePutScatterplotDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1608,6 +1702,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutWidgetLayout(value *Powe
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutWildcardDefinition(value *PowerpackV2WidgetWildcardDefinition) {
+	if err := p.validatePutWildcardDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putWildcardDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetAlertGraphDefinition() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1620,6 +1725,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetAlertValueDefinition()
 	_jsii_.InvokeVoid(
 		p,
 		"resetAlertValueDefinition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetBarChartDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBarChartDefinition",
 		nil, // no parameters
 	)
 }
@@ -1792,6 +1905,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetRunWorkflowDefinition(
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetSankeyDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSankeyDefinition",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetScatterplotDefinition() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1876,6 +1997,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetWidgetLayout() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetWidgetLayout",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetWildcardDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWildcardDefinition",
 		nil, // no parameters
 	)
 }

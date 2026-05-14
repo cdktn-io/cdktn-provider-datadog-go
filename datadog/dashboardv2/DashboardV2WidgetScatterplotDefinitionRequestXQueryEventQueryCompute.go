@@ -9,15 +9,15 @@ type DashboardV2WidgetScatterplotDefinitionRequestXQueryEventQueryCompute struct
 	//
 	// Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// A time interval in milliseconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
 	// The measurable attribute to compute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
 	Metric *string `field:"optional" json:"metric" yaml:"metric"`
 }
 

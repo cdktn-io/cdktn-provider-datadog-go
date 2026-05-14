@@ -115,6 +115,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutBarChartDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetBarChartDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutChangeDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetChangeDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -324,6 +335,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutSankeyDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutScatterplotDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetScatterplotDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -435,6 +457,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutWidgetLayoutParameters(value *PowerpackV2WidgetGroupDefinitionWidgetWidgetLayout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutWildcardDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetToplistDefinitionStyleDisplayStacked struct {
 	// Legend behavior for the stacked top list. Valid values are `automatic`, `inline`, `none`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_v2#legend DashboardV2#legend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard_v2#legend DashboardV2#legend}
 	Legend *string `field:"optional" json:"legend" yaml:"legend"`
 }
 

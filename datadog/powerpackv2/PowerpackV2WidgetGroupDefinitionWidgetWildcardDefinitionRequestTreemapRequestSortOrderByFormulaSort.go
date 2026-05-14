@@ -1,0 +1,17 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package powerpackv2
+
+
+type PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestTreemapRequestSortOrderByFormulaSort struct {
+	// The index of the formula to sort by.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#index PowerpackV2#index}
+	Index *float64 `field:"required" json:"index" yaml:"index"`
+	// Widget sorting direction. Valid values are `asc`, `desc`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+	Order *string `field:"required" json:"order" yaml:"order"`
+}
+

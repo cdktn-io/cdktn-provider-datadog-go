@@ -36,8 +36,8 @@ type SecurityMonitoringRuleOptionsNewValueOptionsOutputReference interface {
 	InstantaneousBaseline() interface{}
 	SetInstantaneousBaseline(val interface{})
 	InstantaneousBaselineInput() interface{}
-	InternalValue() *SecurityMonitoringRuleOptionsNewValueOptions
-	SetInternalValue(val *SecurityMonitoringRuleOptionsNewValueOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	LearningDuration() *float64
 	SetLearningDuration(val *float64)
 	LearningDurationInput() *float64
@@ -178,8 +178,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) InternalValue() *SecurityMonitoringRuleOptionsNewValueOptions {
-	var returns *SecurityMonitoringRuleOptionsNewValueOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -269,29 +269,29 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) 
 }
 
 
-func NewSecurityMonitoringRuleOptionsNewValueOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsNewValueOptionsOutputReference {
+func NewSecurityMonitoringRuleOptionsNewValueOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleOptionsNewValueOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSecurityMonitoringRuleOptionsNewValueOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSecurityMonitoringRuleOptionsNewValueOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSecurityMonitoringRuleOptionsNewValueOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsNewValueOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
+func NewSecurityMonitoringRuleOptionsNewValueOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsNewValueOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -340,7 +340,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleOptionsNewValueOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

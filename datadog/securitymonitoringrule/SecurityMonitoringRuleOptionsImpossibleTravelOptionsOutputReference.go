@@ -33,8 +33,8 @@ type SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SecurityMonitoringRuleOptionsImpossibleTravelOptions
-	SetInternalValue(val *SecurityMonitoringRuleOptionsImpossibleTravelOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) InternalValue() *SecurityMonitoringRuleOptionsImpossibleTravelOptions {
-	var returns *SecurityMonitoringRuleOptionsImpossibleTravelOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 }
 
 
-func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference {
+func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
+func NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleOptionsImpossibleTravelOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

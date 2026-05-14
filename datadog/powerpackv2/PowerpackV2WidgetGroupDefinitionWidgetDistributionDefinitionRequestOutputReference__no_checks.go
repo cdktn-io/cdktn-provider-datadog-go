@@ -59,6 +59,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) validatePutHistogramQueryParameters(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) validatePutLogQueryParameters(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 }
 
 func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) validateSetQParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestOutputReference) validateSetRequestTypeParameters(val *string) error {
 	return nil
 }
 

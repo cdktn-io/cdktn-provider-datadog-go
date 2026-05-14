@@ -13,8 +13,8 @@ import (
 
 type SecurityMonitoringRuleOptionsOutputReference interface {
 	cdktn.ComplexObject
-	AnomalyDetectionOptions() SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference
-	AnomalyDetectionOptionsInput() *SecurityMonitoringRuleOptionsAnomalyDetectionOptions
+	AnomalyDetectionOptions() SecurityMonitoringRuleOptionsAnomalyDetectionOptionsList
+	AnomalyDetectionOptionsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,20 +41,20 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	EvaluationWindowInput() *float64
 	// Experimental.
 	Fqn() *string
-	ImpossibleTravelOptions() SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference
-	ImpossibleTravelOptionsInput() *SecurityMonitoringRuleOptionsImpossibleTravelOptions
-	InternalValue() *SecurityMonitoringRuleOptions
-	SetInternalValue(val *SecurityMonitoringRuleOptions)
+	ImpossibleTravelOptions() SecurityMonitoringRuleOptionsImpossibleTravelOptionsList
+	ImpossibleTravelOptionsInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeepAlive() *float64
 	SetKeepAlive(val *float64)
 	KeepAliveInput() *float64
 	MaxSignalDuration() *float64
 	SetMaxSignalDuration(val *float64)
 	MaxSignalDurationInput() *float64
-	NewValueOptions() SecurityMonitoringRuleOptionsNewValueOptionsOutputReference
-	NewValueOptionsInput() *SecurityMonitoringRuleOptionsNewValueOptions
-	SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference
-	SequenceDetectionOptionsInput() *SecurityMonitoringRuleOptionsSequenceDetectionOptions
+	NewValueOptions() SecurityMonitoringRuleOptionsNewValueOptionsList
+	NewValueOptionsInput() interface{}
+	SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsList
+	SequenceDetectionOptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,8 +63,8 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference
-	ThirdPartyRuleOptionsInput() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
+	ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsList
+	ThirdPartyRuleOptionsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,11 +89,11 @@ type SecurityMonitoringRuleOptionsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutAnomalyDetectionOptions(value *SecurityMonitoringRuleOptionsAnomalyDetectionOptions)
-	PutImpossibleTravelOptions(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions)
-	PutNewValueOptions(value *SecurityMonitoringRuleOptionsNewValueOptions)
-	PutSequenceDetectionOptions(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions)
-	PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions)
+	PutAnomalyDetectionOptions(value interface{})
+	PutImpossibleTravelOptions(value interface{})
+	PutNewValueOptions(value interface{})
+	PutSequenceDetectionOptions(value interface{})
+	PutThirdPartyRuleOptions(value interface{})
 	ResetAnomalyDetectionOptions()
 	ResetDecreaseCriticalityBasedOnEnv()
 	ResetDetectionMethod()
@@ -119,8 +119,8 @@ type jsiiProxy_SecurityMonitoringRuleOptionsOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) AnomalyDetectionOptions() SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) AnomalyDetectionOptions() SecurityMonitoringRuleOptionsAnomalyDetectionOptionsList {
+	var returns SecurityMonitoringRuleOptionsAnomalyDetectionOptionsList
 	_jsii_.Get(
 		j,
 		"anomalyDetectionOptions",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) AnomalyDetectio
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) AnomalyDetectionOptionsInput() *SecurityMonitoringRuleOptionsAnomalyDetectionOptions {
-	var returns *SecurityMonitoringRuleOptionsAnomalyDetectionOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) AnomalyDetectionOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"anomalyDetectionOptionsInput",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTravelOptions() SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTravelOptions() SecurityMonitoringRuleOptionsImpossibleTravelOptionsList {
+	var returns SecurityMonitoringRuleOptionsImpossibleTravelOptionsList
 	_jsii_.Get(
 		j,
 		"impossibleTravelOptions",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTrave
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTravelOptionsInput() *SecurityMonitoringRuleOptionsImpossibleTravelOptions {
-	var returns *SecurityMonitoringRuleOptionsImpossibleTravelOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTravelOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"impossibleTravelOptionsInput",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ImpossibleTrave
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) InternalValue() *SecurityMonitoringRuleOptions {
-	var returns *SecurityMonitoringRuleOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) MaxSignalDurati
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptions() SecurityMonitoringRuleOptionsNewValueOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsNewValueOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptions() SecurityMonitoringRuleOptionsNewValueOptionsList {
+	var returns SecurityMonitoringRuleOptionsNewValueOptionsList
 	_jsii_.Get(
 		j,
 		"newValueOptions",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptions
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptionsInput() *SecurityMonitoringRuleOptionsNewValueOptions {
-	var returns *SecurityMonitoringRuleOptionsNewValueOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"newValueOptionsInput",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) NewValueOptions
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsSequenceDetectionOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptions() SecurityMonitoringRuleOptionsSequenceDetectionOptionsList {
+	var returns SecurityMonitoringRuleOptionsSequenceDetectionOptionsList
 	_jsii_.Get(
 		j,
 		"sequenceDetectionOptions",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetecti
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptionsInput() *SecurityMonitoringRuleOptionsSequenceDetectionOptions {
-	var returns *SecurityMonitoringRuleOptionsSequenceDetectionOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) SequenceDetectionOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"sequenceDetectionOptionsInput",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference {
-	var returns SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptions() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsList {
+	var returns SecurityMonitoringRuleOptionsThirdPartyRuleOptionsList
 	_jsii_.Get(
 		j,
 		"thirdPartyRuleOptions",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleO
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptionsInput() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions {
-	var returns *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"thirdPartyRuleOptionsInput",
@@ -390,29 +390,29 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) ThirdPartyRuleO
 }
 
 
-func NewSecurityMonitoringRuleOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsOutputReference {
+func NewSecurityMonitoringRuleOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSecurityMonitoringRuleOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SecurityMonitoringRuleOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSecurityMonitoringRuleOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
+func NewSecurityMonitoringRuleOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -472,7 +472,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference)SetEvaluationWin
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +713,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) InterpolationFo
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutAnomalyDetectionOptions(value *SecurityMonitoringRuleOptionsAnomalyDetectionOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutAnomalyDetectionOptions(value interface{}) {
 	if err := s.validatePutAnomalyDetectionOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -724,7 +724,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutAnomalyDetec
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutImpossibleTravelOptions(value *SecurityMonitoringRuleOptionsImpossibleTravelOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutImpossibleTravelOptions(value interface{}) {
 	if err := s.validatePutImpossibleTravelOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -735,7 +735,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutImpossibleTr
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutNewValueOptions(value *SecurityMonitoringRuleOptionsNewValueOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutNewValueOptions(value interface{}) {
 	if err := s.validatePutNewValueOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -746,7 +746,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutNewValueOpti
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutSequenceDetectionOptions(value *SecurityMonitoringRuleOptionsSequenceDetectionOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutSequenceDetectionOptions(value interface{}) {
 	if err := s.validatePutSequenceDetectionOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -757,7 +757,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutSequenceDete
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutThirdPartyRuleOptions(value *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsOutputReference) PutThirdPartyRuleOptions(value interface{}) {
 	if err := s.validatePutThirdPartyRuleOptionsParameters(value); err != nil {
 		panic(err)
 	}

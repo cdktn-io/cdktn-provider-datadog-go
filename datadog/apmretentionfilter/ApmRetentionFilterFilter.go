@@ -9,7 +9,7 @@ type ApmRetentionFilterFilter struct {
 	//
 	// Defaults to `"*"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/apm_retention_filter#query ApmRetentionFilter#query}
 	Query *string `field:"optional" json:"query" yaml:"query"`
 }
 

@@ -17,6 +17,8 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	AlertGraphDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetAlertGraphDefinition
 	AlertValueDefinition() DashboardV2WidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference
 	AlertValueDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetAlertValueDefinition
+	BarChartDefinition() DashboardV2WidgetGroupDefinitionWidgetBarChartDefinitionOutputReference
+	BarChartDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition
 	ChangeDefinition() DashboardV2WidgetGroupDefinitionWidgetChangeDefinitionOutputReference
 	ChangeDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition
 	CheckStatusDefinition() DashboardV2WidgetGroupDefinitionWidgetCheckStatusDefinitionOutputReference
@@ -77,6 +79,8 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	QueryValueDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition
 	RunWorkflowDefinition() DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinitionOutputReference
 	RunWorkflowDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinition
+	SankeyDefinition() DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionOutputReference
+	SankeyDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition
 	ScatterplotDefinition() DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference
 	ScatterplotDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition
 	ServiceLevelObjectiveDefinition() DashboardV2WidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference
@@ -107,6 +111,8 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	TreemapDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetTreemapDefinition
 	WidgetLayout() DashboardV2WidgetGroupDefinitionWidgetWidgetLayoutOutputReference
 	WidgetLayoutInput() *DashboardV2WidgetGroupDefinitionWidgetWidgetLayout
+	WildcardDefinition() DashboardV2WidgetGroupDefinitionWidgetWildcardDefinitionOutputReference
+	WildcardDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -133,6 +139,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAlertGraphDefinition(value *DashboardV2WidgetGroupDefinitionWidgetAlertGraphDefinition)
 	PutAlertValueDefinition(value *DashboardV2WidgetGroupDefinitionWidgetAlertValueDefinition)
+	PutBarChartDefinition(value *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition)
 	PutChangeDefinition(value *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition)
 	PutCheckStatusDefinition(value *DashboardV2WidgetGroupDefinitionWidgetCheckStatusDefinition)
 	PutDistributionDefinition(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinition)
@@ -152,6 +159,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	PutQueryTableDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition)
 	PutRunWorkflowDefinition(value *DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinition)
+	PutSankeyDefinition(value *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition)
 	PutScatterplotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition)
 	PutServiceLevelObjectiveDefinition(value *DashboardV2WidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition)
 	PutServicemapDefinition(value *DashboardV2WidgetGroupDefinitionWidgetServicemapDefinition)
@@ -163,8 +171,10 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	PutTraceServiceDefinition(value *DashboardV2WidgetGroupDefinitionWidgetTraceServiceDefinition)
 	PutTreemapDefinition(value *DashboardV2WidgetGroupDefinitionWidgetTreemapDefinition)
 	PutWidgetLayout(value *DashboardV2WidgetGroupDefinitionWidgetWidgetLayout)
+	PutWildcardDefinition(value *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition)
 	ResetAlertGraphDefinition()
 	ResetAlertValueDefinition()
+	ResetBarChartDefinition()
 	ResetChangeDefinition()
 	ResetCheckStatusDefinition()
 	ResetDistributionDefinition()
@@ -185,6 +195,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
 	ResetRunWorkflowDefinition()
+	ResetSankeyDefinition()
 	ResetScatterplotDefinition()
 	ResetServiceLevelObjectiveDefinition()
 	ResetServicemapDefinition()
@@ -196,6 +207,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ResetTraceServiceDefinition()
 	ResetTreemapDefinition()
 	ResetWidgetLayout()
+	ResetWildcardDefinition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -246,6 +258,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) AlertV
 	_jsii_.Get(
 		j,
 		"alertValueDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) BarChartDefinition() DashboardV2WidgetGroupDefinitionWidgetBarChartDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetBarChartDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"barChartDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) BarChartDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition
+	_jsii_.Get(
+		j,
+		"barChartDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -701,6 +733,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) RunWor
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) SankeyDefinition() DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"sankeyDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) SankeyDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition
+	_jsii_.Get(
+		j,
+		"sankeyDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ScatterplotDefinition() DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference {
 	var returns DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference
 	_jsii_.Get(
@@ -936,6 +988,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) Widget
 	_jsii_.Get(
 		j,
 		"widgetLayoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) WildcardDefinition() DashboardV2WidgetGroupDefinitionWidgetWildcardDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetWildcardDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"wildcardDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) WildcardDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition
+	_jsii_.Get(
+		j,
+		"wildcardDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1243,6 +1315,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutAle
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutBarChartDefinition(value *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition) {
+	if err := d.validatePutBarChartDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBarChartDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutChangeDefinition(value *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition) {
 	if err := d.validatePutChangeDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1452,6 +1535,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutRun
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutSankeyDefinition(value *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition) {
+	if err := d.validatePutSankeyDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSankeyDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutScatterplotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition) {
 	if err := d.validatePutScatterplotDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1573,6 +1667,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutWid
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutWildcardDefinition(value *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition) {
+	if err := d.validatePutWildcardDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWildcardDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetAlertGraphDefinition() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1585,6 +1690,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		d,
 		"resetAlertValueDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetBarChartDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBarChartDefinition",
 		nil, // no parameters
 	)
 }
@@ -1749,6 +1862,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetR
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetSankeyDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSankeyDefinition",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetScatterplotDefinition() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1833,6 +1954,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetW
 	_jsii_.InvokeVoid(
 		d,
 		"resetWidgetLayout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetWildcardDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWildcardDefinition",
 		nil, // no parameters
 	)
 }

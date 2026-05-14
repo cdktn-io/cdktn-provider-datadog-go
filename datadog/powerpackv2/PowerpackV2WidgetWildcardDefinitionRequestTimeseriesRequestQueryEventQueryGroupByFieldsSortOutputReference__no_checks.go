@@ -1,0 +1,89 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetAggregationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSort) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetMetricParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryEventQueryGroupByFieldsSortOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

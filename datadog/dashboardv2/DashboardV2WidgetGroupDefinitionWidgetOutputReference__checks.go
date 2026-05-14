@@ -115,6 +115,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutBarChartDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutChangeDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -324,6 +335,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutSankeyDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutScatterplotDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -435,6 +457,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 }
 
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutWidgetLayoutParameters(value *DashboardV2WidgetGroupDefinitionWidgetWidgetLayout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutWildcardDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetWildcardDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

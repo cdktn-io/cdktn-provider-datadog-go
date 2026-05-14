@@ -95,6 +95,10 @@ func (j *jsiiProxy_AgentlessScanningAwsScanOptions) validateSetAwsAccountIdParam
 	return nil
 }
 
+func (j *jsiiProxy_AgentlessScanningAwsScanOptions) validateSetComplianceHostParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AgentlessScanningAwsScanOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

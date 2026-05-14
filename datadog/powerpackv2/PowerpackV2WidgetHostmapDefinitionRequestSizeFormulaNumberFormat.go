@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetHostmapDefinitionRequestSizeFormulaNumberFormat struct {
 	// unit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
 	Unit *PowerpackV2WidgetHostmapDefinitionRequestSizeFormulaNumberFormatUnit `field:"required" json:"unit" yaml:"unit"`
 	// unit_scale block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
 	UnitScale *PowerpackV2WidgetHostmapDefinitionRequestSizeFormulaNumberFormatUnitScale `field:"optional" json:"unitScale" yaml:"unitScale"`
 }
 

@@ -36,8 +36,8 @@ type SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference interface
 	DefaultStatusInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
-	SetInternalValue(val *SecurityMonitoringRuleOptionsThirdPartyRuleOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RootQuery() SecurityMonitoringRuleOptionsThirdPartyRuleOptionsRootQueryList
 	RootQueryInput() interface{}
 	SignalTitleTemplate() *string
@@ -77,6 +77,7 @@ type SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference interface
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRootQuery(value interface{})
 	ResetDefaultNotifications()
+	ResetRootQuery()
 	ResetSignalTitleTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,8 +174,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference) InternalValue() *SecurityMonitoringRuleOptionsThirdPartyRuleOptions {
-	var returns *SecurityMonitoringRuleOptionsThirdPartyRuleOptions
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,29 +245,29 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputRefer
 }
 
 
-func NewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference {
+func NewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
+func NewSecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference_Override(s SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -315,7 +316,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleOptionsThirdPartyRuleOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,6 +561,14 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputRefer
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultNotifications",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsThirdPartyRuleOptionsOutputReference) ResetRootQuery() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRootQuery",
 		nil, // no parameters
 	)
 }

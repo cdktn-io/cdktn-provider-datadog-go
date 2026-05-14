@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigSourceFluentBit struct {
 	// Name of the environment variable or secret that holds the listen address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 	AddressKey *string `field:"optional" json:"addressKey" yaml:"addressKey"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 }
 

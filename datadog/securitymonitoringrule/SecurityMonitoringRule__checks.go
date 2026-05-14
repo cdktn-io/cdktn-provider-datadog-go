@@ -300,12 +300,32 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutFilterParameters(value int
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) validatePutOptionsParameters(value *SecurityMonitoringRuleOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutOptionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*SecurityMonitoringRuleOptions:
+		value := value.(*[]*SecurityMonitoringRuleOptions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SecurityMonitoringRuleOptions:
+		value_ := value.([]*SecurityMonitoringRuleOptions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SecurityMonitoringRuleOptions; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -373,12 +393,32 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutReferenceTablesParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringRule) validatePutSchedulingOptionsParameters(value *SecurityMonitoringRuleSchedulingOptions) error {
+func (s *jsiiProxy_SecurityMonitoringRule) validatePutSchedulingOptionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*SecurityMonitoringRuleSchedulingOptions:
+		value := value.(*[]*SecurityMonitoringRuleSchedulingOptions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SecurityMonitoringRuleSchedulingOptions:
+		value_ := value.([]*SecurityMonitoringRuleSchedulingOptions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SecurityMonitoringRuleSchedulingOptions; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -619,14 +659,6 @@ func (j *jsiiProxy_SecurityMonitoringRule) validateSetHasExtendedTitleParameters
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringRule) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

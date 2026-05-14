@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
 type AgentlessScanningAwsScanOptions interface {
 	cdktn.TerraformResource
 	AwsAccountId() *string
@@ -20,6 +20,9 @@ type AgentlessScanningAwsScanOptions interface {
 	AwsAccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ComplianceHost() interface{}
+	SetComplianceHost(val interface{})
+	ComplianceHostInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -120,6 +123,7 @@ type AgentlessScanningAwsScanOptions interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetComplianceHost()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_AgentlessScanningAwsScanOptions) CdktfStack() cdktn.Terraform
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AgentlessScanningAwsScanOptions) ComplianceHost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complianceHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AgentlessScanningAwsScanOptions) ComplianceHostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complianceHostInput",
 		&returns,
 	)
 	return returns
@@ -421,7 +445,7 @@ func (j *jsiiProxy_AgentlessScanningAwsScanOptions) VulnHostOsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
 func NewAgentlessScanningAwsScanOptions(scope constructs.Construct, id *string, config *AgentlessScanningAwsScanOptionsConfig) AgentlessScanningAwsScanOptions {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewAgentlessScanningAwsScanOptions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource.
 func NewAgentlessScanningAwsScanOptions_Override(a AgentlessScanningAwsScanOptions, scope constructs.Construct, id *string, config *AgentlessScanningAwsScanOptionsConfig) {
 	_init_.Initialize()
 
@@ -457,6 +481,17 @@ func (j *jsiiProxy_AgentlessScanningAwsScanOptions)SetAwsAccountId(val *string) 
 	_jsii_.Set(
 		j,
 		"awsAccountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AgentlessScanningAwsScanOptions)SetComplianceHost(val interface{}) {
+	if err := j.validateSetComplianceHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complianceHost",
 		val,
 	)
 }
@@ -923,6 +958,14 @@ func (a *jsiiProxy_AgentlessScanningAwsScanOptions) OverrideLogicalId(newLogical
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AgentlessScanningAwsScanOptions) ResetComplianceHost() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetComplianceHost",
+		nil, // no parameters
 	)
 }
 

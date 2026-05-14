@@ -146,6 +146,17 @@ func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validatePutHistogramQueryParameters(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validatePutLogQueryParameters(value *DashboardV2WidgetDistributionDefinitionRequestLogQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -330,6 +341,14 @@ func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference
 }
 
 func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validateSetQParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestOutputReference) validateSetRequestTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

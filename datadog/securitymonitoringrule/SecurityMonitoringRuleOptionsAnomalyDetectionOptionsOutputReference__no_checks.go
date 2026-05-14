@@ -71,7 +71,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) validateSetInternalValueParameters(val *SecurityMonitoringRuleOptionsAnomalyDetectionOptions) error {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputRef
 	return nil
 }
 
-func validateNewSecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSecurityMonitoringRuleOptionsAnomalyDetectionOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

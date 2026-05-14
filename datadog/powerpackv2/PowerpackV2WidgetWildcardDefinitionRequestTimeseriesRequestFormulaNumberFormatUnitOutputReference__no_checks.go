@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validatePutCanonicalParameters(value *PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitCanonical) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validatePutCustomParameters(value *PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitCustom) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnit) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

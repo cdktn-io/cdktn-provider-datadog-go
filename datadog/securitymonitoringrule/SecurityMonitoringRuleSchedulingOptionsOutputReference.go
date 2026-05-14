@@ -30,8 +30,8 @@ type SecurityMonitoringRuleSchedulingOptionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SecurityMonitoringRuleSchedulingOptions
-	SetInternalValue(val *SecurityMonitoringRuleSchedulingOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Rrule() *string
 	SetRrule(val *string)
 	RruleInput() *string
@@ -128,8 +128,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference) InternalValue() *SecurityMonitoringRuleSchedulingOptions {
-	var returns *SecurityMonitoringRuleSchedulingOptions
+func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference) Timez
 }
 
 
-func NewSecurityMonitoringRuleSchedulingOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleSchedulingOptionsOutputReference {
+func NewSecurityMonitoringRuleSchedulingOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityMonitoringRuleSchedulingOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSecurityMonitoringRuleSchedulingOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSecurityMonitoringRuleSchedulingOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSecurityMonitoringRuleSchedulingOptionsOutputReference_Override(s SecurityMonitoringRuleSchedulingOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
+func NewSecurityMonitoringRuleSchedulingOptionsOutputReference_Override(s SecurityMonitoringRuleSchedulingOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktn/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSchedulingOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -268,7 +268,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference)SetInternalValue(val *SecurityMonitoringRuleSchedulingOptions) {
+func (j *jsiiProxy_SecurityMonitoringRuleSchedulingOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

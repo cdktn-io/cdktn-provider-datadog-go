@@ -24,7 +24,7 @@ type DataDatadogOrganizationSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
 	Settings interface{} `field:"optional" json:"settings" yaml:"settings"`
 }
 

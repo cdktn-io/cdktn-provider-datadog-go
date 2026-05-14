@@ -67,7 +67,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) validateSetInternalValueParameters(val *SecurityMonitoringRuleOptionsNewValueOptions) error {
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsNewValueOptionsOutputReference) 
 	return nil
 }
 
-func validateNewSecurityMonitoringRuleOptionsNewValueOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSecurityMonitoringRuleOptionsNewValueOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

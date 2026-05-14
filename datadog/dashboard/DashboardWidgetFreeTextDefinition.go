@@ -7,23 +7,23 @@ package dashboard
 type DashboardWidgetFreeTextDefinition struct {
 	// The text to display in the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard#text Dashboard#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard#text Dashboard#text}
 	Text *string `field:"required" json:"text" yaml:"text"`
 	// The color of the text in the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard#color Dashboard#color}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard#color Dashboard#color}
 	Color *string `field:"optional" json:"color" yaml:"color"`
 	// The description of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard#description Dashboard#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard#description Dashboard#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The size of the text in the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard#font_size Dashboard#font_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard#font_size Dashboard#font_size}
 	FontSize *string `field:"optional" json:"fontSize" yaml:"fontSize"`
 	// The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard#text_align Dashboard#text_align}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/dashboard#text_align Dashboard#text_align}
 	TextAlign *string `field:"optional" json:"textAlign" yaml:"textAlign"`
 }
 

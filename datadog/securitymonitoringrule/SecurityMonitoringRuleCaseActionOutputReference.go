@@ -32,8 +32,8 @@ type SecurityMonitoringRuleCaseActionOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Options() SecurityMonitoringRuleCaseActionOptionsOutputReference
-	OptionsInput() *SecurityMonitoringRuleCaseActionOptions
+	Options() SecurityMonitoringRuleCaseActionOptionsList
+	OptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +69,7 @@ type SecurityMonitoringRuleCaseActionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutOptions(value *SecurityMonitoringRuleCaseActionOptions)
+	PutOptions(value interface{})
 	ResetOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) Options() SecurityMonitoringRuleCaseActionOptionsOutputReference {
-	var returns SecurityMonitoringRuleCaseActionOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) Options() SecurityMonitoringRuleCaseActionOptionsList {
+	var returns SecurityMonitoringRuleCaseActionOptionsList
 	_jsii_.Get(
 		j,
 		"options",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) Options() Se
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) OptionsInput() *SecurityMonitoringRuleCaseActionOptions {
-	var returns *SecurityMonitoringRuleCaseActionOptions
+func (j *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) OptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"optionsInput",
@@ -476,7 +476,7 @@ func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) Interpolatio
 	return returns
 }
 
-func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) PutOptions(value *SecurityMonitoringRuleCaseActionOptions) {
+func (s *jsiiProxy_SecurityMonitoringRuleCaseActionOutputReference) PutOptions(value interface{}) {
 	if err := s.validatePutOptionsParameters(value); err != nil {
 		panic(err)
 	}

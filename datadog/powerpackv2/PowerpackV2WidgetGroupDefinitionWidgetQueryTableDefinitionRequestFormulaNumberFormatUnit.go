@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaNumberFormatUnit struct {
 	// canonical block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#canonical PowerpackV2#canonical}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#canonical PowerpackV2#canonical}
 	Canonical *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCanonical `field:"optional" json:"canonical" yaml:"canonical"`
 	// custom block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/powerpack_v2#custom PowerpackV2#custom}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#custom PowerpackV2#custom}
 	Custom *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaNumberFormatUnitCustom `field:"optional" json:"custom" yaml:"custom"`
 }
 

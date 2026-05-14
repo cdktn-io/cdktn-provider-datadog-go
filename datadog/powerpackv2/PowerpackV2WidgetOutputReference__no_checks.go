@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutAlertValueDefini
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutBarChartDefinitionParameters(value *PowerpackV2WidgetBarChartDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutChangeDefinitionParameters(value *PowerpackV2WidgetChangeDefinition) error {
 	return nil
 }
@@ -135,6 +139,10 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutRunWorkflowDefin
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutSankeyDefinitionParameters(value *PowerpackV2WidgetSankeyDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutScatterplotDefinitionParameters(value *PowerpackV2WidgetScatterplotDefinition) error {
 	return nil
 }
@@ -176,6 +184,10 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutTreemapDefinitio
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutWidgetLayoutParameters(value *PowerpackV2WidgetWidgetLayout) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutWildcardDefinitionParameters(value *PowerpackV2WidgetWildcardDefinition) error {
 	return nil
 }
 
