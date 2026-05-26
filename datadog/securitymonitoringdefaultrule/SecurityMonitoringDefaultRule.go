@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 type SecurityMonitoringDefaultRule interface {
 	cdktn.TerraformResource
 	Case() SecurityMonitoringDefaultRuleCaseList
@@ -56,16 +56,14 @@ type SecurityMonitoringDefaultRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Options() SecurityMonitoringDefaultRuleOptionsOutputReference
-	OptionsInput() *SecurityMonitoringDefaultRuleOptions
+	Options() SecurityMonitoringDefaultRuleOptionsList
+	OptionsInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -130,7 +128,7 @@ type SecurityMonitoringDefaultRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCase(value interface{})
 	PutFilter(value interface{})
-	PutOptions(value *SecurityMonitoringDefaultRuleOptions)
+	PutOptions(value interface{})
 	PutQuery(value interface{})
 	ResetCase()
 	ResetCustomMessage()
@@ -138,7 +136,6 @@ type SecurityMonitoringDefaultRule interface {
 	ResetCustomTags()
 	ResetEnabled()
 	ResetFilter()
-	ResetId()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -381,16 +378,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -411,8 +398,8 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRule) Options() SecurityMonitoringDefaultRuleOptionsOutputReference {
-	var returns SecurityMonitoringDefaultRuleOptionsOutputReference
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) Options() SecurityMonitoringDefaultRuleOptionsList {
+	var returns SecurityMonitoringDefaultRuleOptionsList
 	_jsii_.Get(
 		j,
 		"options",
@@ -421,8 +408,8 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Options() SecurityMonitoringDe
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRule) OptionsInput() *SecurityMonitoringDefaultRuleOptions {
-	var returns *SecurityMonitoringDefaultRuleOptions
+func (j *jsiiProxy_SecurityMonitoringDefaultRule) OptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"optionsInput",
@@ -522,7 +509,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule {
 	_init_.Initialize()
 
@@ -540,7 +527,7 @@ func NewSecurityMonitoringDefaultRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 func NewSecurityMonitoringDefaultRule_Override(s SecurityMonitoringDefaultRule, scope constructs.Construct, id *string, config *SecurityMonitoringDefaultRuleConfig) {
 	_init_.Initialize()
 
@@ -629,17 +616,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetForEach(val cdktn.ITerraform
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1049,7 +1025,7 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) PutFilter(value interface{}) {
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRule) PutOptions(value *SecurityMonitoringDefaultRuleOptions) {
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) PutOptions(value interface{}) {
 	if err := s.validatePutOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1115,14 +1091,6 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetFilter() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilter",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRule) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

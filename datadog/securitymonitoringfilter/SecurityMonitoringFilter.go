@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 type SecurityMonitoringFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -45,8 +45,6 @@ type SecurityMonitoringFilter interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IsEnabled() interface{}
 	SetIsEnabled(val interface{})
 	IsEnabledInput() interface{}
@@ -125,7 +123,6 @@ type SecurityMonitoringFilter interface {
 	PutExclusionFilter(value interface{})
 	ResetExclusionFilter()
 	ResetFilteredDataType()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -286,16 +283,6 @@ func (j *jsiiProxy_SecurityMonitoringFilter) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringFilter) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringFilter) IsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -447,7 +434,7 @@ func (j *jsiiProxy_SecurityMonitoringFilter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) SecurityMonitoringFilter {
 	_init_.Initialize()
 
@@ -465,7 +452,7 @@ func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter_Override(s SecurityMonitoringFilter, scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) {
 	_init_.Initialize()
 
@@ -521,17 +508,6 @@ func (j *jsiiProxy_SecurityMonitoringFilter)SetForEach(val cdktn.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringFilter)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -975,14 +951,6 @@ func (s *jsiiProxy_SecurityMonitoringFilter) ResetFilteredDataType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilteredDataType",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringFilter) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

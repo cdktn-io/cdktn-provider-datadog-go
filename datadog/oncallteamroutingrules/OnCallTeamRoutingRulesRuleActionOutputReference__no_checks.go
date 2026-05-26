@@ -55,6 +55,10 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validatePutS
 	return nil
 }
 
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validatePutTriggerWorkflowAutomationParameters(value *OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

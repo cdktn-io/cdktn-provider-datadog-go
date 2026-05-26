@@ -7,15 +7,15 @@ package powerpack
 type PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields struct {
 	// List of event facets to group by.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack#fields Powerpack#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#fields Powerpack#fields}
 	Fields *[]*string `field:"required" json:"fields" yaml:"fields"`
 	// The number of groups to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack#limit Powerpack#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#limit Powerpack#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack#sort Powerpack#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#sort Powerpack#sort}
 	Sort *PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort `field:"optional" json:"sort" yaml:"sort"`
 }
 

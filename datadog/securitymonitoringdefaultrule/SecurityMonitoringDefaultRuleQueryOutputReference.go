@@ -16,8 +16,6 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	AgentRule() SecurityMonitoringDefaultRuleQueryAgentRuleList
 	AgentRuleInput() interface{}
 	Aggregation() *string
-	SetAggregation(val *string)
-	AggregationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,33 +35,17 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	SetCustomQueryExtension(val *string)
 	CustomQueryExtensionInput() *string
 	DataSource() *string
-	SetDataSource(val *string)
-	DataSourceInput() *string
 	DistinctFields() *[]*string
-	SetDistinctFields(val *[]*string)
-	DistinctFieldsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	GroupByFields() *[]*string
-	SetGroupByFields(val *[]*string)
-	GroupByFieldsInput() *[]*string
-	HasOptionalGroupByFields() interface{}
-	SetHasOptionalGroupByFields(val interface{})
-	HasOptionalGroupByFieldsInput() interface{}
+	HasOptionalGroupByFields() cdktn.IResolvable
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Metric() *string
-	SetMetric(val *string)
-	MetricInput() *string
 	Metrics() *[]*string
-	SetMetrics(val *[]*string)
-	MetricsInput() *[]*string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	Query() *string
-	SetQuery(val *string)
-	QueryInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -98,16 +80,7 @@ type SecurityMonitoringDefaultRuleQueryOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAgentRule(value interface{})
 	ResetAgentRule()
-	ResetAggregation()
 	ResetCustomQueryExtension()
-	ResetDataSource()
-	ResetDistinctFields()
-	ResetGroupByFields()
-	ResetHasOptionalGroupByFields()
-	ResetMetric()
-	ResetMetrics()
-	ResetName()
-	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,16 +121,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) Aggregatio
 	_jsii_.Get(
 		j,
 		"aggregation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) AggregationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"aggregationInput",
 		&returns,
 	)
 	return returns
@@ -223,31 +186,11 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) DataSource
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) DataSourceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dataSourceInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) DistinctFields() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"distinctFields",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) DistinctFieldsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"distinctFieldsInput",
 		&returns,
 	)
 	return returns
@@ -273,31 +216,11 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) GroupByFie
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) GroupByFieldsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupByFieldsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) HasOptionalGroupByFields() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) HasOptionalGroupByFields() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"hasOptionalGroupByFields",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) HasOptionalGroupByFieldsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"hasOptionalGroupByFieldsInput",
 		&returns,
 	)
 	return returns
@@ -323,31 +246,11 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) Metric() *
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) MetricInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"metricInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) Metrics() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"metrics",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) MetricsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"metricsInput",
 		&returns,
 	)
 	return returns
@@ -363,31 +266,11 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) Name() *st
 	return returns
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) Query() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"query",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) QueryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"queryInput",
 		&returns,
 	)
 	return returns
@@ -441,17 +324,6 @@ func NewSecurityMonitoringDefaultRuleQueryOutputReference_Override(s SecurityMon
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetAggregation(val *string) {
-	if err := j.validateSetAggregationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"aggregation",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -485,50 +357,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetCustomQu
 	)
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetDataSource(val *string) {
-	if err := j.validateSetDataSourceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dataSource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetDistinctFields(val *[]*string) {
-	if err := j.validateSetDistinctFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"distinctFields",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetGroupByFields(val *[]*string) {
-	if err := j.validateSetGroupByFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupByFields",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetHasOptionalGroupByFields(val interface{}) {
-	if err := j.validateSetHasOptionalGroupByFieldsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hasOptionalGroupByFields",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -536,50 +364,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetMetric(val *string) {
-	if err := j.validateSetMetricParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metric",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetMetrics(val *[]*string) {
-	if err := j.validateSetMetricsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"metrics",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference)SetQuery(val *string) {
-	if err := j.validateSetQueryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"query",
 		val,
 	)
 }
@@ -811,82 +595,10 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetAgent
 	)
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetAggregation() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAggregation",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetCustomQueryExtension() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomQueryExtension",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetDataSource() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetDataSource",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetDistinctFields() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetDistinctFields",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetGroupByFields() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetGroupByFields",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetHasOptionalGroupByFields() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetHasOptionalGroupByFields",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetMetric() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetMetric",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetMetrics() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetMetrics",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) ResetQuery() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetQuery",
 		nil, // no parameters
 	)
 }

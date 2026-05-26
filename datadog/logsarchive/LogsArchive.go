@@ -12,13 +12,16 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_archive datadog_logs_archive}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/logs_archive datadog_logs_archive}.
 type LogsArchive interface {
 	cdktn.TerraformResource
 	AzureArchive() LogsArchiveAzureArchiveOutputReference
 	AzureArchiveInput() *LogsArchiveAzureArchive
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CompressionMethod() *string
+	SetCompressionMethod(val *string)
+	CompressionMethodInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -132,6 +135,7 @@ type LogsArchive interface {
 	PutGcsArchive(value *LogsArchiveGcsArchive)
 	PutS3Archive(value *LogsArchiveS3Archive)
 	ResetAzureArchive()
+	ResetCompressionMethod()
 	ResetGcsArchive()
 	ResetId()
 	ResetIncludeTags()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_LogsArchive) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchive) CompressionMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchive) CompressionMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMethodInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +533,7 @@ func (j *jsiiProxy_LogsArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveConfig) LogsArchive {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *string, config *LogsArchiveConfig) {
 	_init_.Initialize()
 
@@ -535,6 +559,17 @@ func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *stri
 		"@cdktn/provider-datadog.logsArchive.LogsArchive",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LogsArchive)SetCompressionMethod(val *string) {
+	if err := j.validateSetCompressionMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionMethod",
+		val,
 	)
 }
 
@@ -1062,6 +1097,14 @@ func (l *jsiiProxy_LogsArchive) ResetAzureArchive() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAzureArchive",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchive) ResetCompressionMethod() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCompressionMethod",
 		nil, // no parameters
 	)
 }

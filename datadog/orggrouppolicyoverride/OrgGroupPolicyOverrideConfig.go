@@ -24,19 +24,19 @@ type OrgGroupPolicyOverrideConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the org group that owns the policy. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
 	OrgGroupId *string `field:"required" json:"orgGroupId" yaml:"orgGroupId"`
 	// The short site name of the organization (e.g., `us1`, `eu1`, `us1-fed`). Part of the override's server-side identity; changing it replaces the resource. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
 	OrgSite *string `field:"required" json:"orgSite" yaml:"orgSite"`
 	// The UUID of the organization being exempted from the policy. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
 	OrgUuid *string `field:"required" json:"orgUuid" yaml:"orgUuid"`
 	// The UUID of the org group policy the override applies to. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

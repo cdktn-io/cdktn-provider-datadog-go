@@ -83,7 +83,7 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRule) validatePutFilterParameters(va
 	return nil
 }
 
-func (s *jsiiProxy_SecurityMonitoringDefaultRule) validatePutOptionsParameters(value *SecurityMonitoringDefaultRuleOptions) error {
+func (s *jsiiProxy_SecurityMonitoringDefaultRule) validatePutOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -128,10 +128,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetCustomTagsParameter
 }
 
 func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 

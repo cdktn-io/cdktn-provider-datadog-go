@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/workflow_automation datadog_workflow_automation}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/workflow_automation datadog_workflow_automation}.
 type DataDatadogWorkflowAutomation interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataDatadogWorkflowAutomation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
 func NewDataDatadogWorkflowAutomation(scope constructs.Construct, id *string, config *DataDatadogWorkflowAutomationConfig) DataDatadogWorkflowAutomation {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataDatadogWorkflowAutomation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/workflow_automation datadog_workflow_automation} Data Source.
 func NewDataDatadogWorkflowAutomation_Override(d DataDatadogWorkflowAutomation, scope constructs.Construct, id *string, config *DataDatadogWorkflowAutomationConfig) {
 	_init_.Initialize()
 

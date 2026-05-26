@@ -7,7 +7,7 @@ package datadatadogtagpipelineruleset
 type DataDatadogTagPipelineRulesetRulesReferenceTable struct {
 	// field_pairs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
 	FieldPairs interface{} `field:"optional" json:"fieldPairs" yaml:"fieldPairs"`
 }
 

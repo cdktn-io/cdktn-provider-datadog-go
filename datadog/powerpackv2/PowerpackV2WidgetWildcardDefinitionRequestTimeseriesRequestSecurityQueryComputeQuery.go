@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestSecurityQueryComputeQuery struct {
 	// The aggregation method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// The facet name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
 	Facet *string `field:"optional" json:"facet" yaml:"facet"`
 	// Define the time interval in seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#interval PowerpackV2#interval}
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
 }
 

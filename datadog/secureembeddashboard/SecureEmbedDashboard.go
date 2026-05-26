@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}.
 type SecureEmbedDashboard interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -529,7 +529,7 @@ func (j *jsiiProxy_SecureEmbedDashboard) ViewingPreferencesThemeInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource.
 func NewSecureEmbedDashboard(scope constructs.Construct, id *string, config *SecureEmbedDashboardConfig) SecureEmbedDashboard {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewSecureEmbedDashboard(scope constructs.Construct, id *string, config *Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource.
 func NewSecureEmbedDashboard_Override(s SecureEmbedDashboard, scope constructs.Construct, id *string, config *SecureEmbedDashboardConfig) {
 	_init_.Initialize()
 

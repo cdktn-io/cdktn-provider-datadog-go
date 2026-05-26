@@ -44,6 +44,8 @@ type OnCallTeamRoutingRulesRuleActionOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TriggerWorkflowAutomation() OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference
+	TriggerWorkflowAutomationInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type OnCallTeamRoutingRulesRuleActionOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSendSlackMessage(value *OnCallTeamRoutingRulesRuleActionSendSlackMessage)
 	PutSendTeamsMessage(value *OnCallTeamRoutingRulesRuleActionSendTeamsMessage)
+	PutTriggerWorkflowAutomation(value *OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation)
 	ResetSendSlackMessage()
 	ResetSendTeamsMessage()
+	ResetTriggerWorkflowAutomation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) TriggerWorkflowAutomation() OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference {
+	var returns OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference
+	_jsii_.Get(
+		j,
+		"triggerWorkflowAutomation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) TriggerWorkflowAutomationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"triggerWorkflowAutomationInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) PutSendTeams
 	)
 }
 
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) PutTriggerWorkflowAutomation(value *OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation) {
+	if err := o.validatePutTriggerWorkflowAutomationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTriggerWorkflowAutomation",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) ResetSendSlackMessage() {
 	_jsii_.InvokeVoid(
 		o,
@@ -500,6 +535,14 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) ResetSendTea
 	_jsii_.InvokeVoid(
 		o,
 		"resetSendTeamsMessage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) ResetTriggerWorkflowAutomation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTriggerWorkflowAutomation",
 		nil, // no parameters
 	)
 }

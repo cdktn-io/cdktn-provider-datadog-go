@@ -9,7 +9,7 @@ type PowerpackV2WidgetHeatmapDefinitionXaxis struct {
 	//
 	// This is only applicable for distribution of points (group distributions use the roll-up modifier).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#num_buckets PowerpackV2#num_buckets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#num_buckets PowerpackV2#num_buckets}
 	NumBuckets *float64 `field:"optional" json:"numBuckets" yaml:"numBuckets"`
 }
 

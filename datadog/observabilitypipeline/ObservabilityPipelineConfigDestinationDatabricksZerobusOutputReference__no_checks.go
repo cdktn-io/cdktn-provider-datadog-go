@@ -63,7 +63,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetIngestionEndpointParameters(val *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetIngestionEndpointKeyParameters(val *string) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetUnityCatalogEndpointParameters(val *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetUnityCatalogEndpointKeyParameters(val *string) error {
 	return nil
 }
 

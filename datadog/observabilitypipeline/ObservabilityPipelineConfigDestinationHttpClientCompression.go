@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationHttpClientCompression struct {
 	// Compression algorithm. Valid values are `gzip`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 	Algorithm *string `field:"required" json:"algorithm" yaml:"algorithm"`
 }
 

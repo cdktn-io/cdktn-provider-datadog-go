@@ -30,6 +30,8 @@ type MonitorVariablesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataJobsQuery() MonitorVariablesDataJobsQueryList
+	DataJobsQueryInput() interface{}
 	DataQualityQuery() MonitorVariablesDataQualityQueryList
 	DataQualityQueryInput() interface{}
 	EventQuery() MonitorVariablesEventQueryList
@@ -71,9 +73,11 @@ type MonitorVariablesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCloudCostQuery(value interface{})
+	PutDataJobsQuery(value interface{})
 	PutDataQualityQuery(value interface{})
 	PutEventQuery(value interface{})
 	ResetCloudCostQuery()
+	ResetDataJobsQuery()
 	ResetDataQualityQuery()
 	ResetEventQuery()
 	// Produce the Token's value at resolution time.
@@ -136,6 +140,26 @@ func (j *jsiiProxy_MonitorVariablesOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) DataJobsQuery() MonitorVariablesDataJobsQueryList {
+	var returns MonitorVariablesDataJobsQueryList
+	_jsii_.Get(
+		j,
+		"dataJobsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) DataJobsQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataJobsQueryInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) PutCloudCostQuery(value inte
 	)
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) PutDataJobsQuery(value interface{}) {
+	if err := m.validatePutDataJobsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDataJobsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) PutDataQualityQuery(value interface{}) {
 	if err := m.validatePutDataQualityQueryParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) ResetCloudCostQuery() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCloudCostQuery",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) ResetDataJobsQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataJobsQuery",
 		nil, // no parameters
 	)
 }

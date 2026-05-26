@@ -132,14 +132,6 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetAggregationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -213,50 +205,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetDataSourceParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetDistinctFieldsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetGroupByFieldsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetHasOptionalGroupByFieldsParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktn.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -276,38 +224,6 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSe
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *SecurityMonitoringDefaultRuleQuery; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetMetricParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetMetricsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetQueryParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

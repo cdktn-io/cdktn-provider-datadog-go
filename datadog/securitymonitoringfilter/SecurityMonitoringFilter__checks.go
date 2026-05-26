@@ -376,14 +376,6 @@ func (j *jsiiProxy_SecurityMonitoringFilter) validateSetFilteredDataTypeParamete
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringFilter) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringFilter) validateSetIsEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

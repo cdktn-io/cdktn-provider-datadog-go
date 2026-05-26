@@ -51,6 +51,10 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutCloudCostQueryPar
 	return nil
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutDataJobsQueryParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutDataQualityQueryParameters(value interface{}) error {
 	return nil
 }

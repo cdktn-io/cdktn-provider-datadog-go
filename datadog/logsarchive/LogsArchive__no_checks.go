@@ -103,6 +103,10 @@ func validateLogsArchive_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchive) validateSetCompressionMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchive) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

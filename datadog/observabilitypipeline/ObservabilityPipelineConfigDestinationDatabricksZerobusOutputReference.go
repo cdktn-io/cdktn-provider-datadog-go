@@ -32,9 +32,9 @@ type ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference inte
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IngestionEndpoint() *string
-	SetIngestionEndpoint(val *string)
-	IngestionEndpointInput() *string
+	IngestionEndpointKey() *string
+	SetIngestionEndpointKey(val *string)
+	IngestionEndpointKeyInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	TableName() *string
@@ -48,9 +48,9 @@ type ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference inte
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	UnityCatalogEndpoint() *string
-	SetUnityCatalogEndpoint(val *string)
-	UnityCatalogEndpointInput() *string
+	UnityCatalogEndpointKey() *string
+	SetUnityCatalogEndpointKey(val *string)
+	UnityCatalogEndpointKeyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -77,6 +77,8 @@ type ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference inte
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
 	ResetAuth()
+	ResetIngestionEndpointKey()
+	ResetUnityCatalogEndpointKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -152,21 +154,21 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) IngestionEndpoint() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) IngestionEndpointKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"ingestionEndpoint",
+		"ingestionEndpointKey",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) IngestionEndpointInput() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) IngestionEndpointKeyInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"ingestionEndpointInput",
+		"ingestionEndpointKeyInput",
 		&returns,
 	)
 	return returns
@@ -222,21 +224,21 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) UnityCatalogEndpoint() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) UnityCatalogEndpointKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"unityCatalogEndpoint",
+		"unityCatalogEndpointKey",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) UnityCatalogEndpointInput() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) UnityCatalogEndpointKeyInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"unityCatalogEndpointInput",
+		"unityCatalogEndpointKeyInput",
 		&returns,
 	)
 	return returns
@@ -292,13 +294,13 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference)SetIngestionEndpoint(val *string) {
-	if err := j.validateSetIngestionEndpointParameters(val); err != nil {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference)SetIngestionEndpointKey(val *string) {
+	if err := j.validateSetIngestionEndpointKeyParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"ingestionEndpoint",
+		"ingestionEndpointKey",
 		val,
 	)
 }
@@ -347,13 +349,13 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference)SetUnityCatalogEndpoint(val *string) {
-	if err := j.validateSetUnityCatalogEndpointParameters(val); err != nil {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference)SetUnityCatalogEndpointKey(val *string) {
+	if err := j.validateSetUnityCatalogEndpointKeyParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"unityCatalogEndpoint",
+		"unityCatalogEndpointKey",
 		val,
 	)
 }
@@ -559,6 +561,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) ResetIngestionEndpointKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIngestionEndpointKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) ResetUnityCatalogEndpointKey() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUnityCatalogEndpointKey",
 		nil, // no parameters
 	)
 }

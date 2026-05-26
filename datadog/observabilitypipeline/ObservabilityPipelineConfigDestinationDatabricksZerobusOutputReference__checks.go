@@ -197,7 +197,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetIngestionEndpointParameters(val *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetIngestionEndpointKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutput
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetUnityCatalogEndpointParameters(val *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference) validateSetUnityCatalogEndpointKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

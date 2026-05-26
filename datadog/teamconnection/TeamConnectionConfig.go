@@ -24,15 +24,15 @@ type TeamConnectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// connected_team block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
 	ConnectedTeam *TeamConnectionConnectedTeam `field:"required" json:"connectedTeam" yaml:"connectedTeam"`
 	// team block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_connection#team TeamConnection#team}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_connection#team TeamConnection#team}
 	Team *TeamConnectionTeam `field:"required" json:"team" yaml:"team"`
 	// The source of the connection (e.g. github).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_connection#source TeamConnection#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_connection#source TeamConnection#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
 

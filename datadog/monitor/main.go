@@ -587,6 +587,72 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQuery",
+		reflect.TypeOf((*MonitorVariablesDataJobsQuery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryList",
+		reflect.TypeOf((*MonitorVariablesDataJobsQueryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorVariablesDataJobsQueryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.monitor.MonitorVariablesDataJobsQueryOutputReference",
+		reflect.TypeOf((*MonitorVariablesDataJobsQueryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jobsQuery", GoGetter: "JobsQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "jobsQueryInput", GoGetter: "JobsQueryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "jobType", GoGetter: "JobType"},
+			_jsii_.MemberProperty{JsiiProperty: "jobTypeInput", GoGetter: "JobTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryDialect", GoGetter: "QueryDialect"},
+			_jsii_.MemberProperty{JsiiProperty: "queryDialectInput", GoGetter: "QueryDialectInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitorVariablesDataJobsQueryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery",
 		reflect.TypeOf((*MonitorVariablesDataQualityQuery)(nil)).Elem(),
 	)
@@ -1016,6 +1082,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataJobsQuery", GoGetter: "DataJobsQuery"},
+			_jsii_.MemberProperty{JsiiProperty: "dataJobsQueryInput", GoGetter: "DataJobsQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dataQualityQuery", GoGetter: "DataQualityQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "dataQualityQueryInput", GoGetter: "DataQualityQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventQuery", GoGetter: "EventQuery"},
@@ -1034,9 +1102,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudCostQuery", GoMethod: "PutCloudCostQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataJobsQuery", GoMethod: "PutDataJobsQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putDataQualityQuery", GoMethod: "PutDataQualityQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putEventQuery", GoMethod: "PutEventQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudCostQuery", GoMethod: "ResetCloudCostQuery"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataJobsQuery", GoMethod: "ResetDataJobsQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataQualityQuery", GoMethod: "ResetDataQualityQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventQuery", GoMethod: "ResetEventQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

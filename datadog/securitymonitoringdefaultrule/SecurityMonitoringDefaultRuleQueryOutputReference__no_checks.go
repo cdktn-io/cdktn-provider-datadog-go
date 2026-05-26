@@ -55,10 +55,6 @@ func (s *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetAggregationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -71,39 +67,7 @@ func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetDataSourceParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetDistinctFieldsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetGroupByFieldsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetHasOptionalGroupByFieldsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetMetricParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetMetricsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecurityMonitoringDefaultRuleQueryOutputReference) validateSetQueryParameters(val *string) error {
 	return nil
 }
 

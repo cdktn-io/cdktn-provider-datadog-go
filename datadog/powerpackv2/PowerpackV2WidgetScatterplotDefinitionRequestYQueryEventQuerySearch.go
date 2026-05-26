@@ -7,7 +7,7 @@ package powerpackv2
 type PowerpackV2WidgetScatterplotDefinitionRequestYQueryEventQuerySearch struct {
 	// The events search string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 
