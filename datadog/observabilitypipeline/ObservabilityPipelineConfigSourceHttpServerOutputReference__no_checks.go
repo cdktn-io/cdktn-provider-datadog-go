@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) v
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validatePutValidTokenParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

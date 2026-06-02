@@ -48,6 +48,8 @@ type ObservabilityPipelineConfigSourceSplunkHecOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() ObservabilityPipelineConfigSourceSplunkHecTlsList
 	TlsInput() interface{}
+	ValidToken() ObservabilityPipelineConfigSourceSplunkHecValidTokenList
+	ValidTokenInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,9 +75,11 @@ type ObservabilityPipelineConfigSourceSplunkHecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	PutValidToken(value interface{})
 	ResetAddressKey()
 	ResetStoreHecToken()
 	ResetTls()
+	ResetValidToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -216,6 +220,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) Tl
 	_jsii_.Get(
 		j,
 		"tlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) ValidToken() ObservabilityPipelineConfigSourceSplunkHecValidTokenList {
+	var returns ObservabilityPipelineConfigSourceSplunkHecValidTokenList
+	_jsii_.Get(
+		j,
+		"validToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) ValidTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validTokenInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) Pu
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) PutValidToken(value interface{}) {
+	if err := o.validatePutValidTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putValidToken",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) ResetAddressKey() {
 	_jsii_.InvokeVoid(
 		o,
@@ -543,6 +578,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetTls",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) ResetValidToken() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetValidToken",
 		nil, // no parameters
 	)
 }

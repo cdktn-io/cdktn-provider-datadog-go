@@ -31,9 +31,15 @@ type MonitorMonitorThresholdsOutputReference interface {
 	Critical() *string
 	SetCritical(val *string)
 	CriticalInput() *string
+	CriticalQuery() *string
+	SetCriticalQuery(val *string)
+	CriticalQueryInput() *string
 	CriticalRecovery() *string
 	SetCriticalRecovery(val *string)
 	CriticalRecoveryInput() *string
+	CriticalRecoveryQuery() *string
+	SetCriticalRecoveryQuery(val *string)
+	CriticalRecoveryQueryInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MonitorMonitorThresholds
@@ -83,7 +89,9 @@ type MonitorMonitorThresholdsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCritical()
+	ResetCriticalQuery()
 	ResetCriticalRecovery()
+	ResetCriticalRecoveryQuery()
 	ResetOk()
 	ResetUnknown()
 	ResetWarning()
@@ -153,6 +161,26 @@ func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"criticalQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"criticalQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalRecovery() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +196,26 @@ func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalRecoveryInpu
 	_jsii_.Get(
 		j,
 		"criticalRecoveryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalRecoveryQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"criticalRecoveryQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) CriticalRecoveryQueryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"criticalRecoveryQueryInput",
 		&returns,
 	)
 	return returns
@@ -354,6 +402,17 @@ func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference)SetCritical(val *stri
 	)
 }
 
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference)SetCriticalQuery(val *string) {
+	if err := j.validateSetCriticalQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"criticalQuery",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference)SetCriticalRecovery(val *string) {
 	if err := j.validateSetCriticalRecoveryParameters(val); err != nil {
 		panic(err)
@@ -361,6 +420,17 @@ func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference)SetCriticalRecovery(v
 	_jsii_.Set(
 		j,
 		"criticalRecovery",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference)SetCriticalRecoveryQuery(val *string) {
+	if err := j.validateSetCriticalRecoveryQueryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"criticalRecoveryQuery",
 		val,
 	)
 }
@@ -636,10 +706,26 @@ func (m *jsiiProxy_MonitorMonitorThresholdsOutputReference) ResetCritical() {
 	)
 }
 
+func (m *jsiiProxy_MonitorMonitorThresholdsOutputReference) ResetCriticalQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCriticalQuery",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorMonitorThresholdsOutputReference) ResetCriticalRecovery() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCriticalRecovery",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorMonitorThresholdsOutputReference) ResetCriticalRecoveryQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCriticalRecoveryQuery",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs datadog}.
 type DatadogProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -36,6 +36,9 @@ type DatadogProvider interface {
 	AwsSessionToken() *string
 	SetAwsSessionToken(val *string)
 	AwsSessionTokenInput() *string
+	BearerToken() *string
+	SetBearerToken(val *string)
+	BearerTokenInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CloudProviderRegion() *string
@@ -98,6 +101,7 @@ type DatadogProvider interface {
 	ResetAwsAccessKeyId()
 	ResetAwsSecretAccessKey()
 	ResetAwsSessionToken()
+	ResetBearerToken()
 	ResetCloudProviderRegion()
 	ResetCloudProviderType()
 	ResetDefaultTags()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_DatadogProvider) AwsSessionTokenInput() *string {
 	_jsii_.Get(
 		j,
 		"awsSessionTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) BearerToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bearerToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) BearerTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bearerTokenInput",
 		&returns,
 	)
 	return returns
@@ -579,7 +603,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -597,7 +621,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,14 @@ func (j *jsiiProxy_DatadogProvider)SetAwsSessionToken(val *string) {
 	_jsii_.Set(
 		j,
 		"awsSessionToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetBearerToken(val *string) {
+	_jsii_.Set(
+		j,
+		"bearerToken",
 		val,
 	)
 }
@@ -924,6 +956,14 @@ func (d *jsiiProxy_DatadogProvider) ResetAwsSessionToken() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAwsSessionToken",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetBearerToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBearerToken",
 		nil, // no parameters
 	)
 }

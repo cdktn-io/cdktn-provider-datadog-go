@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) v
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) validatePutLibrdkafkaOptionParameters(value interface{}) error {
 	return nil
 }

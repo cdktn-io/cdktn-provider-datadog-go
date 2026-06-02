@@ -13,6 +13,8 @@ import (
 
 type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	cdktn.ComplexObject
+	Buffer() ObservabilityPipelineConfigDestinationCloudPremBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,8 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
+	ResetBuffer()
 	ResetEndpointUrlKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 // The jsii proxy struct for ObservabilityPipelineConfigDestinationCloudPremOutputReference
 type jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) Buffer() ObservabilityPipelineConfigDestinationCloudPremBufferList {
+	var returns ObservabilityPipelineConfigDestinationCloudPremBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ComplexObjectIndex() interface{} {
@@ -451,6 +475,25 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ResetEndpointUrlKey() {

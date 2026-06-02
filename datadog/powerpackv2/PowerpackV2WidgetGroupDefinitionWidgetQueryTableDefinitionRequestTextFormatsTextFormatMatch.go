@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormatsTextFormatMatch struct {
 	// Match or compare option. Valid values are `is`, `is_not`, `contains`, `does_not_contain`, `starts_with`, `ends_with`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#type PowerpackV2#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Table Widget Match String.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#value PowerpackV2#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

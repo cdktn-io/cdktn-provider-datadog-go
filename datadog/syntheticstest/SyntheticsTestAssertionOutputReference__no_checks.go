@@ -55,6 +55,10 @@ func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetjson
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetMcpCapabilitiesParameters(value *SyntheticsTestAssertionTargetMcpCapabilities) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestAssertionTargetxpath) error {
 	return nil
 }

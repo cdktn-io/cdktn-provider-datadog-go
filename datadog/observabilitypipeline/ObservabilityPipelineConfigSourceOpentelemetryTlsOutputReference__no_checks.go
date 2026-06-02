@@ -87,6 +87,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryTlsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOpentelemetryTlsOutputReference) validateSetVerifyCertificateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewObservabilityPipelineConfigSourceOpentelemetryTlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

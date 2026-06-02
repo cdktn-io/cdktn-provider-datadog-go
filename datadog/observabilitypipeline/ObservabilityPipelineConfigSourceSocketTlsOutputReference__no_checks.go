@@ -87,6 +87,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) validateSetVerifyCertificateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewObservabilityPipelineConfigSourceSocketTlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

@@ -52,6 +52,9 @@ type ObservabilityPipelineConfigSourceFluentBitTlsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	VerifyCertificate() interface{}
+	SetVerifyCertificate(val interface{})
+	VerifyCertificateInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type ObservabilityPipelineConfigSourceFluentBitTlsOutputReference interface {
 	ResetCaFile()
 	ResetKeyFile()
 	ResetKeyPassKey()
+	ResetVerifyCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference) VerifyCertificate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference) VerifyCertificateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceFluentBitTlsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceFluentBitTlsOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference)SetVerifyCertificate(val interface{}) {
+	if err := j.validateSetVerifyCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verifyCertificate",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference)
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyPassKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceFluentBitTlsOutputReference) ResetVerifyCertificate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVerifyCertificate",
 		nil, // no parameters
 	)
 }

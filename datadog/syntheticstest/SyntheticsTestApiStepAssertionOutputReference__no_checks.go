@@ -55,6 +55,10 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validatePutTar
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validatePutTargetMcpCapabilitiesParameters(value *SyntheticsTestApiStepAssertionTargetMcpCapabilities) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) validatePutTargetxpathParameters(value *SyntheticsTestApiStepAssertionTargetxpath) error {
 	return nil
 }

@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

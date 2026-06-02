@@ -41,6 +41,9 @@ type MonitorVariablesEventQueryComputeOutputReference interface {
 	Metric() *string
 	SetMetric(val *string)
 	MetricInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type MonitorVariablesEventQueryComputeOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetInterval()
 	ResetMetric()
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -200,6 +204,26 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) MetricInput
 	return returns
 }
 
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -310,6 +334,17 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference)SetMetric(va
 	_jsii_.Set(
 		j,
 		"metric",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (m *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) ResetMetric
 	_jsii_.InvokeVoid(
 		m,
 		"resetMetric",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetName",
 		nil, // no parameters
 	)
 }

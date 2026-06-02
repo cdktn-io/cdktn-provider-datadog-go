@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) validatePutCompressionParameters(value interface{}) error {
 	return nil
 }

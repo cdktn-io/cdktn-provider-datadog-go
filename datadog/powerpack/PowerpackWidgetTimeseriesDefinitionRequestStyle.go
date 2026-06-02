@@ -7,23 +7,23 @@ package powerpack
 type PowerpackWidgetTimeseriesDefinitionRequestStyle struct {
 	// If true, the value is displayed as a label relative to the data point.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#has_value_labels Powerpack#has_value_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack#has_value_labels Powerpack#has_value_labels}
 	HasValueLabels interface{} `field:"optional" json:"hasValueLabels" yaml:"hasValueLabels"`
 	// The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#line_type Powerpack#line_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack#line_type Powerpack#line_type}
 	LineType *string `field:"optional" json:"lineType" yaml:"lineType"`
 	// The width of line displayed. Valid values are `normal`, `thick`, `thin`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#line_width Powerpack#line_width}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack#line_width Powerpack#line_width}
 	LineWidth *string `field:"optional" json:"lineWidth" yaml:"lineWidth"`
 	// How to order series in timeseries visualizations. Valid values are `tags`, `values`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#order_by Powerpack#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack#order_by Powerpack#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack#palette Powerpack#palette}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack#palette Powerpack#palette}
 	Palette *string `field:"optional" json:"palette" yaml:"palette"`
 }
 

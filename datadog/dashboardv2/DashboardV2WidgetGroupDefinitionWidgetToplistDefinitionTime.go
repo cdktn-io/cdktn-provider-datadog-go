@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetToplistDefinitionTime struct {
 	// fixed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
 	Fixed *DashboardV2WidgetGroupDefinitionWidgetToplistDefinitionTimeFixed `field:"optional" json:"fixed" yaml:"fixed"`
 	// live block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/dashboard_v2#live DashboardV2#live}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#live DashboardV2#live}
 	Live *DashboardV2WidgetGroupDefinitionWidgetToplistDefinitionTimeLive `field:"optional" json:"live" yaml:"live"`
 }
 

@@ -47,6 +47,14 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) validateInterpolationForAttr
 	return nil
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutAggregateAugmentedQueryParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutAggregateFilteredQueryParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) validatePutCloudCostQueryParameters(value interface{}) error {
 	return nil
 }

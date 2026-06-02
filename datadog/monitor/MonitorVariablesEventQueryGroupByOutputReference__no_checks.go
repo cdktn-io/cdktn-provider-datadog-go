@@ -75,6 +75,10 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateSetSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

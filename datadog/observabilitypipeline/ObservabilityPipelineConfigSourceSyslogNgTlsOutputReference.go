@@ -52,6 +52,9 @@ type ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	VerifyCertificate() interface{}
+	SetVerifyCertificate(val interface{})
+	VerifyCertificateInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference interface {
 	ResetCaFile()
 	ResetKeyFile()
 	ResetKeyPassKey()
+	ResetVerifyCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference) VerifyCertificate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference) VerifyCertificateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceSyslogNgTlsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference)S
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference)SetVerifyCertificate(val interface{}) {
+	if err := j.validateSetVerifyCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verifyCertificate",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference) 
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyPassKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSyslogNgTlsOutputReference) ResetVerifyCertificate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVerifyCertificate",
 		nil, // no parameters
 	)
 }

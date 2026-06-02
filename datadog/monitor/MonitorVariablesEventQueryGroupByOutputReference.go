@@ -40,6 +40,9 @@ type MonitorVariablesEventQueryGroupByOutputReference interface {
 	LimitInput() *float64
 	Sort() MonitorVariablesEventQueryGroupBySortOutputReference
 	SortInput() *MonitorVariablesEventQueryGroupBySort
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type MonitorVariablesEventQueryGroupByOutputReference interface {
 	PutSort(value *MonitorVariablesEventQueryGroupBySort)
 	ResetLimit()
 	ResetSort()
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -200,6 +204,26 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) SortInput()
 	return returns
 }
 
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -299,6 +323,17 @@ func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference)SetLimit(val
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) ResetSort()
 	_jsii_.InvokeVoid(
 		m,
 		"resetSort",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesEventQueryGroupByOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSource",
 		nil, // no parameters
 	)
 }

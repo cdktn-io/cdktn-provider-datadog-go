@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorMetricTags struct {
 	// rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 	Rule interface{} `field:"optional" json:"rule" yaml:"rule"`
 }
 

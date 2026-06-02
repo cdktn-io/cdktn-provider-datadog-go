@@ -48,6 +48,8 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	TargetjsonpathInput() *SyntheticsTestApiStepAssertionTargetjsonpath
 	Targetjsonschema() SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference
 	TargetjsonschemaInput() *SyntheticsTestApiStepAssertionTargetjsonschema
+	TargetMcpCapabilities() SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference
+	TargetMcpCapabilitiesInput() *SyntheticsTestApiStepAssertionTargetMcpCapabilities
 	Targetxpath() SyntheticsTestApiStepAssertionTargetxpathOutputReference
 	TargetxpathInput() *SyntheticsTestApiStepAssertionTargetxpath
 	// Experimental.
@@ -90,6 +92,7 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTargetjsonpath(value *SyntheticsTestApiStepAssertionTargetjsonpath)
 	PutTargetjsonschema(value *SyntheticsTestApiStepAssertionTargetjsonschema)
+	PutTargetMcpCapabilities(value *SyntheticsTestApiStepAssertionTargetMcpCapabilities)
 	PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath)
 	ResetCode()
 	ResetOperator()
@@ -97,6 +100,7 @@ type SyntheticsTestApiStepAssertionOutputReference interface {
 	ResetTarget()
 	ResetTargetjsonpath()
 	ResetTargetjsonschema()
+	ResetTargetMcpCapabilities()
 	ResetTargetxpath()
 	ResetTimingsScope()
 	// Produce the Token's value at resolution time.
@@ -279,6 +283,26 @@ func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) Targetjsonsche
 	_jsii_.Get(
 		j,
 		"targetjsonschemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TargetMcpCapabilities() SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference {
+	var returns SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference
+	_jsii_.Get(
+		j,
+		"targetMcpCapabilities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) TargetMcpCapabilitiesInput() *SyntheticsTestApiStepAssertionTargetMcpCapabilities {
+	var returns *SyntheticsTestApiStepAssertionTargetMcpCapabilities
+	_jsii_.Get(
+		j,
+		"targetMcpCapabilitiesInput",
 		&returns,
 	)
 	return returns
@@ -721,6 +745,17 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetjsons
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetMcpCapabilities(value *SyntheticsTestApiStepAssertionTargetMcpCapabilities) {
+	if err := s.validatePutTargetMcpCapabilitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetMcpCapabilities",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) PutTargetxpath(value *SyntheticsTestApiStepAssertionTargetxpath) {
 	if err := s.validatePutTargetxpathParameters(value); err != nil {
 		panic(err)
@@ -776,6 +811,14 @@ func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetjso
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetjsonschema",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestApiStepAssertionOutputReference) ResetTargetMcpCapabilities() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetMcpCapabilities",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,9 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	MaxTtl() *float64
 	SetMaxTtl(val *float64)
 	MaxTtlInput() *float64
+	McpProtocolVersion() *string
+	SetMcpProtocolVersion(val *string)
+	McpProtocolVersionInput() *string
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -121,6 +124,12 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
+	ToolArgs() *string
+	SetToolArgs(val *string)
+	ToolArgsInput() *string
+	ToolName() *string
+	SetToolName(val *string)
+	ToolNameInput() *string
 	TracerouteQueries() *float64
 	SetTracerouteQueries(val *float64)
 	TracerouteQueriesInput() *float64
@@ -164,6 +173,7 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetHttpVersion()
 	ResetIsMessageBase64Encoded()
 	ResetMaxTtl()
+	ResetMcpProtocolVersion()
 	ResetMessage()
 	ResetMethod()
 	ResetNoSavingResponseBody()
@@ -178,6 +188,8 @@ type SyntheticsTestRequestDefinitionOutputReference interface {
 	ResetSourceService()
 	ResetTcpMethod()
 	ResetTimeout()
+	ResetToolArgs()
+	ResetToolName()
 	ResetTracerouteQueries()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
@@ -505,6 +517,26 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) MaxTtlInput()
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) McpProtocolVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpProtocolVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) McpProtocolVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpProtocolVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) Message() *string {
 	var returns *string
 	_jsii_.Get(
@@ -805,6 +837,46 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) TimeoutInput(
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ToolArgs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"toolArgs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ToolArgsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"toolArgsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ToolName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"toolName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ToolNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"toolNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) TracerouteQueries() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1049,6 +1121,17 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetMaxTtl(val 
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetMcpProtocolVersion(val *string) {
+	if err := j.validateSetMcpProtocolVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mcpProtocolVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetMessage(val *string) {
 	if err := j.validateSetMessageParameters(val); err != nil {
 		panic(err)
@@ -1221,6 +1304,28 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetTimeout(val
 	_jsii_.Set(
 		j,
 		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetToolArgs(val *string) {
+	if err := j.validateSetToolArgsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"toolArgs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference)SetToolName(val *string) {
+	if err := j.validateSetToolNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"toolName",
 		val,
 	)
 }
@@ -1537,6 +1642,14 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetMaxTtl()
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetMcpProtocolVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMcpProtocolVersion",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetMessage() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1645,6 +1758,22 @@ func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetTimeout(
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetToolArgs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetToolArgs",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) ResetToolName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetToolName",
 		nil, // no parameters
 	)
 }

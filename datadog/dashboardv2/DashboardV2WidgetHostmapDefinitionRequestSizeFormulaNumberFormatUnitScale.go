@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetHostmapDefinitionRequestSizeFormulaNumberFormatUnitScale struct {
 	// The name of the unit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
 	UnitName *string `field:"required" json:"unitName" yaml:"unitName"`
 }
 

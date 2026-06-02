@@ -14,6 +14,7 @@ import (
 type DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference interface {
 	cdktn.ComplexObject
 	BaselineUserLocations() cdktn.IResolvable
+	BaselineUserLocationsDuration() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +86,16 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTrave
 	_jsii_.Get(
 		j,
 		"baselineUserLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference) BaselineUserLocationsDuration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"baselineUserLocationsDuration",
 		&returns,
 	)
 	return returns

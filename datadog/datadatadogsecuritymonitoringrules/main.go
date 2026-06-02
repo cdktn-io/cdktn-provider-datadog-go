@@ -494,6 +494,7 @@ func init() {
 		reflect.TypeOf((*DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocations", GoGetter: "BaselineUserLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocationsDuration", GoGetter: "BaselineUserLocationsDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

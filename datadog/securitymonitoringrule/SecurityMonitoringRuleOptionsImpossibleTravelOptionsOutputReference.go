@@ -15,6 +15,9 @@ type SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference interfa
 	cdktn.ComplexObject
 	BaselineUserLocations() interface{}
 	SetBaselineUserLocations(val interface{})
+	BaselineUserLocationsDuration() *float64
+	SetBaselineUserLocationsDuration(val *float64)
+	BaselineUserLocationsDurationInput() *float64
 	BaselineUserLocationsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -68,6 +71,7 @@ type SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference interfa
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBaselineUserLocations()
+	ResetBaselineUserLocationsDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -88,6 +92,26 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	_jsii_.Get(
 		j,
 		"baselineUserLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) BaselineUserLocationsDuration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"baselineUserLocationsDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) BaselineUserLocationsDurationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"baselineUserLocationsDurationInput",
 		&returns,
 	)
 	return returns
@@ -208,6 +232,17 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	_jsii_.Set(
 		j,
 		"baselineUserLocations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)SetBaselineUserLocationsDuration(val *float64) {
+	if err := j.validateSetBaselineUserLocationsDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baselineUserLocationsDuration",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	_jsii_.InvokeVoid(
 		s,
 		"resetBaselineUserLocations",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) ResetBaselineUserLocationsDuration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBaselineUserLocationsDuration",
 		nil, // no parameters
 	)
 }

@@ -219,6 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonschema", GoMethod: "PutTargetjsonschema"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetMcpCapabilities", GoMethod: "PutTargetMcpCapabilities"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCode", GoMethod: "ResetCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
@@ -226,6 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonschema", GoMethod: "ResetTargetjsonschema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetMcpCapabilities", GoMethod: "ResetTargetMcpCapabilities"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimingsScope", GoMethod: "ResetTimingsScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -235,6 +237,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonschema", GoGetter: "Targetjsonschema"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonschemaInput", GoGetter: "TargetjsonschemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetMcpCapabilities", GoGetter: "TargetMcpCapabilities"},
+			_jsii_.MemberProperty{JsiiProperty: "targetMcpCapabilitiesInput", GoGetter: "TargetMcpCapabilitiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -247,6 +251,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestApiStepAssertionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetMcpCapabilities",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetMcpCapabilities)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference",
+		reflect.TypeOf((*SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "capabilities", GoGetter: "Capabilities"},
+			_jsii_.MemberProperty{JsiiProperty: "capabilitiesInput", GoGetter: "CapabilitiesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestApiStepAssertionTargetMcpCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -886,6 +928,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isMessageBase64EncodedInput", GoGetter: "IsMessageBase64EncodedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtl", GoGetter: "MaxTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtlInput", GoGetter: "MaxTtlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mcpProtocolVersion", GoGetter: "McpProtocolVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "mcpProtocolVersionInput", GoGetter: "McpProtocolVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
 			_jsii_.MemberProperty{JsiiProperty: "messageInput", GoGetter: "MessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "method", GoGetter: "Method"},
@@ -920,6 +964,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpVersion", GoMethod: "ResetHttpVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsMessageBase64Encoded", GoMethod: "ResetIsMessageBase64Encoded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTtl", GoMethod: "ResetMaxTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMcpProtocolVersion", GoMethod: "ResetMcpProtocolVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessage", GoMethod: "ResetMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoSavingResponseBody", GoMethod: "ResetNoSavingResponseBody"},
@@ -934,6 +979,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceService", GoMethod: "ResetSourceService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpMethod", GoMethod: "ResetTcpMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetToolArgs", GoMethod: "ResetToolArgs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetToolName", GoMethod: "ResetToolName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTracerouteQueries", GoMethod: "ResetTracerouteQueries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -951,6 +998,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "toolArgs", GoGetter: "ToolArgs"},
+			_jsii_.MemberProperty{JsiiProperty: "toolArgsInput", GoGetter: "ToolArgsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "toolName", GoGetter: "ToolName"},
+			_jsii_.MemberProperty{JsiiProperty: "toolNameInput", GoGetter: "ToolNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "tracerouteQueries", GoGetter: "TracerouteQueries"},
 			_jsii_.MemberProperty{JsiiProperty: "tracerouteQueriesInput", GoGetter: "TracerouteQueriesInput"},
@@ -1175,6 +1226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonpath", GoMethod: "PutTargetjsonpath"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetjsonschema", GoMethod: "PutTargetjsonschema"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetMcpCapabilities", GoMethod: "PutTargetMcpCapabilities"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetxpath", GoMethod: "PutTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCode", GoMethod: "ResetCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
@@ -1182,6 +1234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonpath", GoMethod: "ResetTargetjsonpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetjsonschema", GoMethod: "ResetTargetjsonschema"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetMcpCapabilities", GoMethod: "ResetTargetMcpCapabilities"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetxpath", GoMethod: "ResetTargetxpath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimingsScope", GoMethod: "ResetTimingsScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -1191,6 +1244,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonpathInput", GoGetter: "TargetjsonpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonschema", GoGetter: "Targetjsonschema"},
 			_jsii_.MemberProperty{JsiiProperty: "targetjsonschemaInput", GoGetter: "TargetjsonschemaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetMcpCapabilities", GoGetter: "TargetMcpCapabilities"},
+			_jsii_.MemberProperty{JsiiProperty: "targetMcpCapabilitiesInput", GoGetter: "TargetMcpCapabilitiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpath", GoGetter: "Targetxpath"},
 			_jsii_.MemberProperty{JsiiProperty: "targetxpathInput", GoGetter: "TargetxpathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1203,6 +1258,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsTestAssertionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetMcpCapabilities",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetMcpCapabilities)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetMcpCapabilitiesOutputReference",
+		reflect.TypeOf((*SyntheticsTestAssertionTargetMcpCapabilitiesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "capabilities", GoGetter: "Capabilities"},
+			_jsii_.MemberProperty{JsiiProperty: "capabilitiesInput", GoGetter: "CapabilitiesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SyntheticsTestAssertionTargetMcpCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -3503,6 +3596,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isMessageBase64EncodedInput", GoGetter: "IsMessageBase64EncodedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtl", GoGetter: "MaxTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtlInput", GoGetter: "MaxTtlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mcpProtocolVersion", GoGetter: "McpProtocolVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "mcpProtocolVersionInput", GoGetter: "McpProtocolVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
 			_jsii_.MemberProperty{JsiiProperty: "messageInput", GoGetter: "MessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "method", GoGetter: "Method"},
@@ -3532,6 +3627,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpVersion", GoMethod: "ResetHttpVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsMessageBase64Encoded", GoMethod: "ResetIsMessageBase64Encoded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTtl", GoMethod: "ResetMaxTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMcpProtocolVersion", GoMethod: "ResetMcpProtocolVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMessage", GoMethod: "ResetMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMethod", GoMethod: "ResetMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoSavingResponseBody", GoMethod: "ResetNoSavingResponseBody"},
@@ -3546,6 +3642,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceService", GoMethod: "ResetSourceService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpMethod", GoMethod: "ResetTcpMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetToolArgs", GoMethod: "ResetToolArgs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetToolName", GoMethod: "ResetToolName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTracerouteQueries", GoMethod: "ResetTracerouteQueries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -3563,6 +3661,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "toolArgs", GoGetter: "ToolArgs"},
+			_jsii_.MemberProperty{JsiiProperty: "toolArgsInput", GoGetter: "ToolArgsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "toolName", GoGetter: "ToolName"},
+			_jsii_.MemberProperty{JsiiProperty: "toolNameInput", GoGetter: "ToolNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "tracerouteQueries", GoGetter: "TracerouteQueries"},
 			_jsii_.MemberProperty{JsiiProperty: "tracerouteQueriesInput", GoGetter: "TracerouteQueriesInput"},

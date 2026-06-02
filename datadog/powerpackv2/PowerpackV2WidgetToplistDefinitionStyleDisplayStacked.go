@@ -7,7 +7,7 @@ package powerpackv2
 type PowerpackV2WidgetToplistDefinitionStyleDisplayStacked struct {
 	// Legend behavior for the stacked top list. Valid values are `automatic`, `inline`, `none`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#legend PowerpackV2#legend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#legend PowerpackV2#legend}
 	Legend *string `field:"optional" json:"legend" yaml:"legend"`
 }
 

@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable struct {
 	// formula block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
 	Formula interface{} `field:"optional" json:"formula" yaml:"formula"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 }
 

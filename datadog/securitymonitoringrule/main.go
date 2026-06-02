@@ -557,6 +557,8 @@ func init() {
 		reflect.TypeOf((*SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocations", GoGetter: "BaselineUserLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocationsDuration", GoGetter: "BaselineUserLocationsDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocationsDurationInput", GoGetter: "BaselineUserLocationsDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "baselineUserLocationsInput", GoGetter: "BaselineUserLocationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -576,6 +578,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaselineUserLocations", GoMethod: "ResetBaselineUserLocations"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBaselineUserLocationsDuration", GoMethod: "ResetBaselineUserLocationsDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

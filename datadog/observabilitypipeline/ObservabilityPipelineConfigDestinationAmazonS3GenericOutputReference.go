@@ -20,6 +20,8 @@ type ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference interf
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationAmazonS3GenericBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,10 +88,12 @@ type ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference interf
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuth(value interface{})
 	PutBatchSettings(value interface{})
+	PutBuffer(value interface{})
 	PutCompression(value interface{})
 	PutEncoding(value interface{})
 	ResetAuth()
 	ResetBatchSettings()
+	ResetBuffer()
 	ResetCompression()
 	ResetEncoding()
 	ResetKeyPrefix()
@@ -163,6 +167,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) Buffer() ObservabilityPipelineConfigDestinationAmazonS3GenericBufferList {
+	var returns ObservabilityPipelineConfigDestinationAmazonS3GenericBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) PutCompression(value interface{}) {
 	if err := o.validatePutCompressionParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	_jsii_.InvokeVoid(
 		o,
 		"resetBatchSettings",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

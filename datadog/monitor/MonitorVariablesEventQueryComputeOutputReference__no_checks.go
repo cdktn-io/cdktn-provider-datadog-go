@@ -75,6 +75,10 @@ func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorVariablesEventQueryComputeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

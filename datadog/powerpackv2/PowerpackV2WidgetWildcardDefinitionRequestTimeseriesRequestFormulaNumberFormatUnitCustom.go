@@ -7,7 +7,7 @@ package powerpackv2
 type PowerpackV2WidgetWildcardDefinitionRequestTimeseriesRequestFormulaNumberFormatUnitCustom struct {
 	// Unit label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#label PowerpackV2#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#label PowerpackV2#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
 }
 

@@ -55,6 +55,10 @@ func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) validateSetBaselineUserLocationsDurationParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

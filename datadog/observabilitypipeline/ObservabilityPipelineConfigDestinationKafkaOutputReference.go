@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationKafkaOutputReference interface {
 	BootstrapServersKey() *string
 	SetBootstrapServersKey(val *string)
 	BootstrapServersKeyInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationKafkaBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -100,10 +102,12 @@ type ObservabilityPipelineConfigDestinationKafkaOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutLibrdkafkaOption(value interface{})
 	PutSasl(value interface{})
 	PutTls(value interface{})
 	ResetBootstrapServersKey()
+	ResetBuffer()
 	ResetCompression()
 	ResetHeadersKey()
 	ResetKeyField()
@@ -144,6 +148,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) B
 	_jsii_.Get(
 		j,
 		"bootstrapServersKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) Buffer() ObservabilityPipelineConfigDestinationKafkaBufferList {
+	var returns ObservabilityPipelineConfigDestinationKafkaBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -838,6 +862,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) I
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) PutLibrdkafkaOption(value interface{}) {
 	if err := o.validatePutLibrdkafkaOptionParameters(value); err != nil {
 		panic(err)
@@ -875,6 +910,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) R
 	_jsii_.InvokeVoid(
 		o,
 		"resetBootstrapServersKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationKafkaOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

@@ -63,7 +63,15 @@ func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) validateSetCriticalP
 	return nil
 }
 
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) validateSetCriticalQueryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) validateSetCriticalRecoveryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitorMonitorThresholdsOutputReference) validateSetCriticalRecoveryQueryParameters(val *string) error {
 	return nil
 }
 

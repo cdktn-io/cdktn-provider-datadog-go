@@ -55,6 +55,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) validatePutBufferParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) validatePutCompressionParameters(value interface{}) error {
 	return nil
 }

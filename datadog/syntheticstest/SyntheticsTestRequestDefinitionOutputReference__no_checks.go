@@ -115,6 +115,10 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMa
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMcpProtocolVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMessageParameters(val *string) error {
 	return nil
 }
@@ -176,6 +180,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTe
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetToolArgsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetToolNameParameters(val *string) error {
 	return nil
 }
 

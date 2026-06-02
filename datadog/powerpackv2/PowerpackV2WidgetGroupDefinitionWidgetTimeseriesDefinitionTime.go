@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetTimeseriesDefinitionTime struct {
 	// fixed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
 	Fixed *PowerpackV2WidgetGroupDefinitionWidgetTimeseriesDefinitionTimeFixed `field:"optional" json:"fixed" yaml:"fixed"`
 	// live block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#live PowerpackV2#live}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#live PowerpackV2#live}
 	Live *PowerpackV2WidgetGroupDefinitionWidgetTimeseriesDefinitionTimeLive `field:"optional" json:"live" yaml:"live"`
 }
 

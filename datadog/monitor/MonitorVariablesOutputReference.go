@@ -13,6 +13,10 @@ import (
 
 type MonitorVariablesOutputReference interface {
 	cdktn.ComplexObject
+	AggregateAugmentedQuery() MonitorVariablesAggregateAugmentedQueryList
+	AggregateAugmentedQueryInput() interface{}
+	AggregateFilteredQuery() MonitorVariablesAggregateFilteredQueryList
+	AggregateFilteredQueryInput() interface{}
 	CloudCostQuery() MonitorVariablesCloudCostQueryList
 	CloudCostQueryInput() interface{}
 	// the index of the complex object in a list.
@@ -72,10 +76,14 @@ type MonitorVariablesOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAggregateAugmentedQuery(value interface{})
+	PutAggregateFilteredQuery(value interface{})
 	PutCloudCostQuery(value interface{})
 	PutDataJobsQuery(value interface{})
 	PutDataQualityQuery(value interface{})
 	PutEventQuery(value interface{})
+	ResetAggregateAugmentedQuery()
+	ResetAggregateFilteredQuery()
 	ResetCloudCostQuery()
 	ResetDataJobsQuery()
 	ResetDataQualityQuery()
@@ -93,6 +101,46 @@ type MonitorVariablesOutputReference interface {
 // The jsii proxy struct for MonitorVariablesOutputReference
 type jsiiProxy_MonitorVariablesOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) AggregateAugmentedQuery() MonitorVariablesAggregateAugmentedQueryList {
+	var returns MonitorVariablesAggregateAugmentedQueryList
+	_jsii_.Get(
+		j,
+		"aggregateAugmentedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) AggregateAugmentedQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregateAugmentedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) AggregateFilteredQuery() MonitorVariablesAggregateFilteredQueryList {
+	var returns MonitorVariablesAggregateFilteredQueryList
+	_jsii_.Get(
+		j,
+		"aggregateFilteredQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorVariablesOutputReference) AggregateFilteredQueryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregateFilteredQueryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MonitorVariablesOutputReference) CloudCostQuery() MonitorVariablesCloudCostQueryList {
@@ -514,6 +562,28 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) InterpolationForAttribute(te
 	return returns
 }
 
+func (m *jsiiProxy_MonitorVariablesOutputReference) PutAggregateAugmentedQuery(value interface{}) {
+	if err := m.validatePutAggregateAugmentedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAggregateAugmentedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) PutAggregateFilteredQuery(value interface{}) {
+	if err := m.validatePutAggregateFilteredQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAggregateFilteredQuery",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorVariablesOutputReference) PutCloudCostQuery(value interface{}) {
 	if err := m.validatePutCloudCostQueryParameters(value); err != nil {
 		panic(err)
@@ -555,6 +625,22 @@ func (m *jsiiProxy_MonitorVariablesOutputReference) PutEventQuery(value interfac
 		m,
 		"putEventQuery",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) ResetAggregateAugmentedQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAggregateAugmentedQuery",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorVariablesOutputReference) ResetAggregateFilteredQuery() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAggregateFilteredQuery",
+		nil, // no parameters
 	)
 }
 

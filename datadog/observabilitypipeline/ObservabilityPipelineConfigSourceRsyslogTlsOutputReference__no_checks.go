@@ -87,6 +87,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogTlsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceRsyslogTlsOutputReference) validateSetVerifyCertificateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewObservabilityPipelineConfigSourceRsyslogTlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

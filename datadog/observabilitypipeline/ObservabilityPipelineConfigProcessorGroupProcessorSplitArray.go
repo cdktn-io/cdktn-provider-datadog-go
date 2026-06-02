@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorSplitArray struct {
 	// array block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
 	Array interface{} `field:"optional" json:"array" yaml:"array"`
 }
 

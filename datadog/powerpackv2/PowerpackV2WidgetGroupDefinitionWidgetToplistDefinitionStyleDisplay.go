@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetToplistDefinitionStyleDisplay struct {
 	// flat block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#flat PowerpackV2#flat}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#flat PowerpackV2#flat}
 	Flat *PowerpackV2WidgetGroupDefinitionWidgetToplistDefinitionStyleDisplayFlat `field:"optional" json:"flat" yaml:"flat"`
 	// stacked block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#stacked PowerpackV2#stacked}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#stacked PowerpackV2#stacked}
 	Stacked *PowerpackV2WidgetGroupDefinitionWidgetToplistDefinitionStyleDisplayStacked `field:"optional" json:"stacked" yaml:"stacked"`
 }
 

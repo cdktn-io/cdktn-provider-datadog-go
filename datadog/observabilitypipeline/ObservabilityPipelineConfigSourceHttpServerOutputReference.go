@@ -57,6 +57,8 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	UsernameKey() *string
 	SetUsernameKey(val *string)
 	UsernameKeyInput() *string
+	ValidToken() ObservabilityPipelineConfigSourceHttpServerValidTokenList
+	ValidTokenInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,10 +84,12 @@ type ObservabilityPipelineConfigSourceHttpServerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTls(value interface{})
+	PutValidToken(value interface{})
 	ResetAddressKey()
 	ResetPasswordKey()
 	ResetTls()
 	ResetUsernameKey()
+	ResetValidToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -286,6 +290,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) U
 	_jsii_.Get(
 		j,
 		"usernameKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ValidToken() ObservabilityPipelineConfigSourceHttpServerValidTokenList {
+	var returns ObservabilityPipelineConfigSourceHttpServerValidTokenList
+	_jsii_.Get(
+		j,
+		"validToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ValidTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validTokenInput",
 		&returns,
 	)
 	return returns
@@ -626,6 +650,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) P
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) PutValidToken(value interface{}) {
+	if err := o.validatePutValidTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putValidToken",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetAddressKey() {
 	_jsii_.InvokeVoid(
 		o,
@@ -654,6 +689,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) R
 	_jsii_.InvokeVoid(
 		o,
 		"resetUsernameKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceHttpServerOutputReference) ResetValidToken() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetValidToken",
 		nil, // no parameters
 	)
 }

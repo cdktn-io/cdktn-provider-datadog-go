@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) va
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validatePutValidTokenParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceSplunkHecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

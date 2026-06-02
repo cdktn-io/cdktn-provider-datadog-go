@@ -87,6 +87,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpTlsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSplunkTcpTlsOutputReference) validateSetVerifyCertificateParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewObservabilityPipelineConfigSourceSplunkTcpTlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

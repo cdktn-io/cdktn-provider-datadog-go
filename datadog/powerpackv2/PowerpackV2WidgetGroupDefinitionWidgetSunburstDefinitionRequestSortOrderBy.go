@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderBy struct {
 	// formula_sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#formula_sort PowerpackV2#formula_sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#formula_sort PowerpackV2#formula_sort}
 	FormulaSort *PowerpackV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSort `field:"optional" json:"formulaSort" yaml:"formulaSort"`
 	// group_sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/powerpack_v2#group_sort PowerpackV2#group_sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#group_sort PowerpackV2#group_sort}
 	GroupSort *PowerpackV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSort `field:"optional" json:"groupSort" yaml:"groupSort"`
 }
 

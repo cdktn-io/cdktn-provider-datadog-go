@@ -52,6 +52,9 @@ type ObservabilityPipelineConfigSourceSocketTlsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	VerifyCertificate() interface{}
+	SetVerifyCertificate(val interface{})
+	VerifyCertificateInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type ObservabilityPipelineConfigSourceSocketTlsOutputReference interface {
 	ResetCaFile()
 	ResetKeyFile()
 	ResetKeyPassKey()
+	ResetVerifyCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) Te
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) VerifyCertificate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) VerifyCertificateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verifyCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewObservabilityPipelineConfigSourceSocketTlsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ObservabilityPipelineConfigSourceSocketTlsOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference)SetVerifyCertificate(val interface{}) {
+	if err := j.validateSetVerifyCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verifyCertificate",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyPassKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceSocketTlsOutputReference) ResetVerifyCertificate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVerifyCertificate",
 		nil, // no parameters
 	)
 }

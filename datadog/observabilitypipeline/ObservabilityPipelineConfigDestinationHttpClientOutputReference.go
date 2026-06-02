@@ -16,6 +16,8 @@ type ObservabilityPipelineConfigDestinationHttpClientOutputReference interface {
 	AuthStrategy() *string
 	SetAuthStrategy(val *string)
 	AuthStrategyInput() *string
+	Buffer() ObservabilityPipelineConfigDestinationHttpClientBufferList
+	BufferInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,9 +88,11 @@ type ObservabilityPipelineConfigDestinationHttpClientOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBuffer(value interface{})
 	PutCompression(value interface{})
 	PutTls(value interface{})
 	ResetAuthStrategy()
+	ResetBuffer()
 	ResetCompression()
 	ResetPasswordKey()
 	ResetTls()
@@ -125,6 +129,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	_jsii_.Get(
 		j,
 		"authStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) Buffer() ObservabilityPipelineConfigDestinationHttpClientBufferList {
+	var returns ObservabilityPipelineConfigDestinationHttpClientBufferList
+	_jsii_.Get(
+		j,
+		"buffer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) BufferInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bufferInput",
 		&returns,
 	)
 	return returns
@@ -675,6 +699,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) PutBuffer(value interface{}) {
+	if err := o.validatePutBufferParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBuffer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) PutCompression(value interface{}) {
 	if err := o.validatePutCompressionParameters(value); err != nil {
 		panic(err)
@@ -701,6 +736,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReferen
 	_jsii_.InvokeVoid(
 		o,
 		"resetAuthStrategy",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationHttpClientOutputReference) ResetBuffer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBuffer",
 		nil, // no parameters
 	)
 }

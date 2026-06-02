@@ -290,6 +290,14 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMa
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMcpProtocolVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetMessageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -447,6 +455,22 @@ func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTe
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetToolArgsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestDefinitionOutputReference) validateSetToolNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
