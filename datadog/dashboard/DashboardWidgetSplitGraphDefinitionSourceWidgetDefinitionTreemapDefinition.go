@@ -7,19 +7,19 @@ package dashboard
 type DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTreemapDefinition struct {
 	// custom_links block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard#custom_links Dashboard#custom_links}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard#custom_links Dashboard#custom_links}
 	CustomLinks interface{} `field:"optional" json:"customLinks" yaml:"customLinks"`
 	// The description of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard#description Dashboard#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard#description Dashboard#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard#request Dashboard#request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard#request Dashboard#request}
 	Request interface{} `field:"optional" json:"request" yaml:"request"`
 	// The title of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard#title Dashboard#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard#title Dashboard#title}
 	Title *string `field:"optional" json:"title" yaml:"title"`
 }
 

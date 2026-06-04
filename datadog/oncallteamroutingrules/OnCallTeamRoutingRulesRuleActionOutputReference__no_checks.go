@@ -47,6 +47,10 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validateInte
 	return nil
 }
 
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validatePutEscalationPolicyParameters(value *OnCallTeamRoutingRulesRuleActionEscalationPolicy) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) validatePutSendSlackMessageParameters(value *OnCallTeamRoutingRulesRuleActionSendSlackMessage) error {
 	return nil
 }

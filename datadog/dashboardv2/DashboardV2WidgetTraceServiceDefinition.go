@@ -7,77 +7,77 @@ package dashboardv2
 type DashboardV2WidgetTraceServiceDefinition struct {
 	// APM environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#env DashboardV2#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#env DashboardV2#env}
 	Env *string `field:"required" json:"env" yaml:"env"`
 	// APM service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#service DashboardV2#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#service DashboardV2#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// APM span name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#span_name DashboardV2#span_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#span_name DashboardV2#span_name}
 	SpanName *string `field:"required" json:"spanName" yaml:"spanName"`
 	// The description of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#description DashboardV2#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#description DashboardV2#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#display_format DashboardV2#display_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#display_format DashboardV2#display_format}
 	DisplayFormat *string `field:"optional" json:"displayFormat" yaml:"displayFormat"`
 	// Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#hide_incomplete_cost_data DashboardV2#hide_incomplete_cost_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#hide_incomplete_cost_data DashboardV2#hide_incomplete_cost_data}
 	HideIncompleteCostData interface{} `field:"optional" json:"hideIncompleteCostData" yaml:"hideIncompleteCostData"`
 	// The timeframe to use when displaying the widget.
 	//
 	// Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#live_span DashboardV2#live_span}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#live_span DashboardV2#live_span}
 	LiveSpan *string `field:"optional" json:"liveSpan" yaml:"liveSpan"`
 	// Whether to show the latency breakdown or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_breakdown DashboardV2#show_breakdown}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_breakdown DashboardV2#show_breakdown}
 	ShowBreakdown interface{} `field:"optional" json:"showBreakdown" yaml:"showBreakdown"`
 	// Whether to show the latency distribution or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_distribution DashboardV2#show_distribution}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_distribution DashboardV2#show_distribution}
 	ShowDistribution interface{} `field:"optional" json:"showDistribution" yaml:"showDistribution"`
 	// Whether to show the error metrics or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_errors DashboardV2#show_errors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_errors DashboardV2#show_errors}
 	ShowErrors interface{} `field:"optional" json:"showErrors" yaml:"showErrors"`
 	// Whether to show the hits metrics or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_hits DashboardV2#show_hits}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_hits DashboardV2#show_hits}
 	ShowHits interface{} `field:"optional" json:"showHits" yaml:"showHits"`
 	// Whether to show the latency metrics or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_latency DashboardV2#show_latency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_latency DashboardV2#show_latency}
 	ShowLatency interface{} `field:"optional" json:"showLatency" yaml:"showLatency"`
 	// Whether to show the resource list or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#show_resource_list DashboardV2#show_resource_list}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#show_resource_list DashboardV2#show_resource_list}
 	ShowResourceList interface{} `field:"optional" json:"showResourceList" yaml:"showResourceList"`
 	// The size of the widget. Valid values are `small`, `medium`, `large`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#size_format DashboardV2#size_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#size_format DashboardV2#size_format}
 	SizeFormat *string `field:"optional" json:"sizeFormat" yaml:"sizeFormat"`
 	// time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#time DashboardV2#time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#time DashboardV2#time}
 	Time *DashboardV2WidgetTraceServiceDefinitionTime `field:"optional" json:"time" yaml:"time"`
 	// The title of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#title DashboardV2#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#title DashboardV2#title}
 	Title *string `field:"optional" json:"title" yaml:"title"`
 	// The alignment of the widget's title. Valid values are `center`, `left`, `right`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#title_align DashboardV2#title_align}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#title_align DashboardV2#title_align}
 	TitleAlign *string `field:"optional" json:"titleAlign" yaml:"titleAlign"`
 	// The size of the widget's title (defaults to 16).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#title_size DashboardV2#title_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#title_size DashboardV2#title_size}
 	TitleSize *string `field:"optional" json:"titleSize" yaml:"titleSize"`
 }
 

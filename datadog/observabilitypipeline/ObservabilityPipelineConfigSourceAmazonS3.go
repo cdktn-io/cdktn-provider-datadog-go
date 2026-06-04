@@ -7,25 +7,25 @@ package observabilitypipeline
 type ObservabilityPipelineConfigSourceAmazonS3 struct {
 	// AWS region where the S3 bucket resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// auth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 	Auth interface{} `field:"optional" json:"auth" yaml:"auth"`
 	// Compression format for objects retrieved from the S3 bucket.
 	//
 	// Use `auto` to detect compression from the object's Content-Encoding header or file extension. Valid values are `auto`, `none`, `gzip`, `zstd`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 	Compression *string `field:"optional" json:"compression" yaml:"compression"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 	// Name of the environment variable or secret that holds the S3 bucket URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
 	UrlKey *string `field:"optional" json:"urlKey" yaml:"urlKey"`
 }
 

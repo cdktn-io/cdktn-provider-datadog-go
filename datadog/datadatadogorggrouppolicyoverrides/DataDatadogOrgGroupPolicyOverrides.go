@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides}.
 type DataDatadogOrgGroupPolicyOverrides interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataDatadogOrgGroupPolicyOverrides) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source.
 func NewDataDatadogOrgGroupPolicyOverrides(scope constructs.Construct, id *string, config *DataDatadogOrgGroupPolicyOverridesConfig) DataDatadogOrgGroupPolicyOverrides {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataDatadogOrgGroupPolicyOverrides(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source.
 func NewDataDatadogOrgGroupPolicyOverrides_Override(d DataDatadogOrgGroupPolicyOverrides, scope constructs.Construct, id *string, config *DataDatadogOrgGroupPolicyOverridesConfig) {
 	_init_.Initialize()
 

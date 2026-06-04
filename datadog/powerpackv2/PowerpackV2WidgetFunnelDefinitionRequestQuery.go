@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetFunnelDefinitionRequestQuery struct {
 	// The data source for funnel queries. Valid values are `rum`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`
 	// The widget query.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#query_string PowerpackV2#query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#query_string PowerpackV2#query_string}
 	QueryString *string `field:"required" json:"queryString" yaml:"queryString"`
 	// step block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#step PowerpackV2#step}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#step PowerpackV2#step}
 	Step interface{} `field:"optional" json:"step" yaml:"step"`
 }
 

@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequest struct {
 	// fill block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#fill DashboardV2#fill}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#fill DashboardV2#fill}
 	Fill *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFill `field:"optional" json:"fill" yaml:"fill"`
 	// size block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#size DashboardV2#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#size DashboardV2#size}
 	Size *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestSize `field:"optional" json:"size" yaml:"size"`
 }
 

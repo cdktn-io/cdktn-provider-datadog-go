@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetQueryTableDefinitionRequestLogQueryGroupBy struct {
 	// The facet name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
 	Facet *string `field:"optional" json:"facet" yaml:"facet"`
 	// The maximum number of items in the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#sort_query PowerpackV2#sort_query}
 	SortQuery *PowerpackV2WidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery `field:"optional" json:"sortQuery" yaml:"sortQuery"`
 }
 

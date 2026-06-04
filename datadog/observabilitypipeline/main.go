@@ -7024,6 +7024,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSentinelOne", GoMethod: "PutSentinelOne"},
 			_jsii_.MemberMethod{JsiiMethod: "putSocket", GoMethod: "PutSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "putSplunkHec", GoMethod: "PutSplunkHec"},
+			_jsii_.MemberMethod{JsiiMethod: "putSplunkHecMetrics", GoMethod: "PutSplunkHecMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putSumoLogic", GoMethod: "PutSumoLogic"},
 			_jsii_.MemberMethod{JsiiMethod: "putSyslogNg", GoMethod: "PutSyslogNg"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAmazonOpensearch", GoMethod: "ResetAmazonOpensearch"},
@@ -7049,6 +7050,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSentinelOne", GoMethod: "ResetSentinelOne"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSocket", GoMethod: "ResetSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSplunkHec", GoMethod: "ResetSplunkHec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSplunkHecMetrics", GoMethod: "ResetSplunkHecMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSumoLogic", GoMethod: "ResetSumoLogic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSyslogNg", GoMethod: "ResetSyslogNg"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -7060,6 +7062,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "socketInput", GoGetter: "SocketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "splunkHec", GoGetter: "SplunkHec"},
 			_jsii_.MemberProperty{JsiiProperty: "splunkHecInput", GoGetter: "SplunkHecInput"},
+			_jsii_.MemberProperty{JsiiProperty: "splunkHecMetrics", GoGetter: "SplunkHecMetrics"},
+			_jsii_.MemberProperty{JsiiProperty: "splunkHecMetricsInput", GoGetter: "SplunkHecMetricsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sumoLogic", GoGetter: "SumoLogic"},
 			_jsii_.MemberProperty{JsiiProperty: "sumoLogicInput", GoGetter: "SumoLogicInput"},
 			_jsii_.MemberProperty{JsiiProperty: "syslogNg", GoGetter: "SyslogNg"},
@@ -8363,6 +8367,359 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetrics",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetrics)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSize", GoGetter: "MaxSize"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSizeInput", GoGetter: "MaxSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxSize", GoMethod: "ResetMaxSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWhenFull", GoMethod: "ResetWhenFull"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "whenFull", GoGetter: "WhenFull"},
+			_jsii_.MemberProperty{JsiiProperty: "whenFullInput", GoGetter: "WhenFullInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxEvents", GoGetter: "MaxEvents"},
+			_jsii_.MemberProperty{JsiiProperty: "maxEventsInput", GoGetter: "MaxEventsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSize", GoGetter: "MaxSize"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSizeInput", GoGetter: "MaxSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxEvents", GoMethod: "ResetMaxEvents"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxSize", GoMethod: "ResetMaxSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWhenFull", GoMethod: "ResetWhenFull"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "whenFull", GoGetter: "WhenFull"},
+			_jsii_.MemberProperty{JsiiProperty: "whenFullInput", GoGetter: "WhenFullInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disk", GoGetter: "Disk"},
+			_jsii_.MemberProperty{JsiiProperty: "diskInput", GoGetter: "DiskInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "memory", GoGetter: "Memory"},
+			_jsii_.MemberProperty{JsiiProperty: "memoryInput", GoGetter: "MemoryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDisk", GoMethod: "PutDisk"},
+			_jsii_.MemberMethod{JsiiMethod: "putMemory", GoMethod: "PutMemory"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisk", GoMethod: "ResetDisk"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMemory", GoMethod: "ResetMemory"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsList",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "buffer", GoGetter: "Buffer"},
+			_jsii_.MemberProperty{JsiiProperty: "bufferInput", GoGetter: "BufferInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "compression", GoGetter: "Compression"},
+			_jsii_.MemberProperty{JsiiProperty: "compressionInput", GoGetter: "CompressionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultNamespace", GoGetter: "DefaultNamespace"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultNamespaceInput", GoGetter: "DefaultNamespaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointUrlKey", GoGetter: "EndpointUrlKey"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointUrlKeyInput", GoGetter: "EndpointUrlKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "index", GoGetter: "Index"},
+			_jsii_.MemberProperty{JsiiProperty: "indexInput", GoGetter: "IndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putBuffer", GoMethod: "PutBuffer"},
+			_jsii_.MemberMethod{JsiiMethod: "putTls", GoMethod: "PutTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuffer", GoMethod: "ResetBuffer"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCompression", GoMethod: "ResetCompression"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultNamespace", GoMethod: "ResetDefaultNamespace"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointUrlKey", GoMethod: "ResetEndpointUrlKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIndex", GoMethod: "ResetIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourcetype", GoMethod: "ResetSourcetype"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTls", GoMethod: "ResetTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenKey", GoMethod: "ResetTokenKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourcetype", GoGetter: "Sourcetype"},
+			_jsii_.MemberProperty{JsiiProperty: "sourcetypeInput", GoGetter: "SourcetypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tls", GoGetter: "Tls"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenKey", GoGetter: "TokenKey"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenKeyInput", GoGetter: "TokenKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTls",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsTls)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference",
+		reflect.TypeOf((*ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "caFile", GoGetter: "CaFile"},
+			_jsii_.MemberProperty{JsiiProperty: "caFileInput", GoGetter: "CaFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "crtFile", GoGetter: "CrtFile"},
+			_jsii_.MemberProperty{JsiiProperty: "crtFileInput", GoGetter: "CrtFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFile", GoGetter: "KeyFile"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFileInput", GoGetter: "KeyFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "keyPassKey", GoGetter: "KeyPassKey"},
+			_jsii_.MemberProperty{JsiiProperty: "keyPassKeyInput", GoGetter: "KeyPassKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCaFile", GoMethod: "ResetCaFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyFile", GoMethod: "ResetKeyFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyPassKey", GoMethod: "ResetKeyPassKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ObservabilityPipelineConfigDestinationSplunkHecMetricsTlsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

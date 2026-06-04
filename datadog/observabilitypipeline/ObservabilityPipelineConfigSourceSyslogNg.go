@@ -7,15 +7,15 @@ package observabilitypipeline
 type ObservabilityPipelineConfigSourceSyslogNg struct {
 	// Name of the environment variable or secret that holds the listen address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 	AddressKey *string `field:"optional" json:"addressKey" yaml:"addressKey"`
 	// Protocol used by the syslog source to receive messages.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 }
 

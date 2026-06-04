@@ -139,6 +139,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutSplunkHecMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutSumoLogicParameters(value interface{}) error {
 	return nil
 }

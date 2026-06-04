@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup struct {
 	// The default value to use if no lookup match is found.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
 	Default *string `field:"optional" json:"default" yaml:"default"`
 	// table block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 	Table interface{} `field:"optional" json:"table" yaml:"table"`
 }
 

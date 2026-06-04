@@ -7,19 +7,19 @@ package dashboardv2
 type DashboardV2WidgetTreemapDefinitionRequest struct {
 	// formula block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#formula DashboardV2#formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#formula DashboardV2#formula}
 	Formula interface{} `field:"optional" json:"formula" yaml:"formula"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#query DashboardV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#query DashboardV2#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
 	Sort *DashboardV2WidgetTreemapDefinitionRequestSort `field:"optional" json:"sort" yaml:"sort"`
 	// style block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#style DashboardV2#style}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#style DashboardV2#style}
 	Style *DashboardV2WidgetTreemapDefinitionRequestStyle `field:"optional" json:"style" yaml:"style"`
 }
 

@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQuery struct {
 	// apm_resource_stats_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#apm_resource_stats_query PowerpackV2#apm_resource_stats_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#apm_resource_stats_query PowerpackV2#apm_resource_stats_query}
 	ApmResourceStatsQuery *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery `field:"optional" json:"apmResourceStatsQuery" yaml:"apmResourceStatsQuery"`
 	// event_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#event_query PowerpackV2#event_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#event_query PowerpackV2#event_query}
 	EventQuery *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQuery `field:"optional" json:"eventQuery" yaml:"eventQuery"`
 	// metric_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#metric_query PowerpackV2#metric_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#metric_query PowerpackV2#metric_query}
 	MetricQuery *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQuery `field:"optional" json:"metricQuery" yaml:"metricQuery"`
 }
 

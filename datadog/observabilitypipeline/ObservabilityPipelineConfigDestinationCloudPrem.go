@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationCloudPrem struct {
 	// buffer block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 	Buffer interface{} `field:"optional" json:"buffer" yaml:"buffer"`
 	// Name of the environment variable or secret that holds the endpoint URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 	EndpointUrlKey *string `field:"optional" json:"endpointUrlKey" yaml:"endpointUrlKey"`
 }
 

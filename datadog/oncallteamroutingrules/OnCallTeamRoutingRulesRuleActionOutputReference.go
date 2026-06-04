@@ -28,6 +28,8 @@ type OnCallTeamRoutingRulesRuleActionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EscalationPolicy() OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference
+	EscalationPolicyInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,9 +72,11 @@ type OnCallTeamRoutingRulesRuleActionOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutEscalationPolicy(value *OnCallTeamRoutingRulesRuleActionEscalationPolicy)
 	PutSendSlackMessage(value *OnCallTeamRoutingRulesRuleActionSendSlackMessage)
 	PutSendTeamsMessage(value *OnCallTeamRoutingRulesRuleActionSendTeamsMessage)
 	PutTriggerWorkflowAutomation(value *OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation)
+	ResetEscalationPolicy()
 	ResetSendSlackMessage()
 	ResetSendTeamsMessage()
 	ResetTriggerWorkflowAutomation()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) EscalationPolicy() OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference {
+	var returns OnCallTeamRoutingRulesRuleActionEscalationPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"escalationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) EscalationPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"escalationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -490,6 +514,17 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) Interpolatio
 	return returns
 }
 
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) PutEscalationPolicy(value *OnCallTeamRoutingRulesRuleActionEscalationPolicy) {
+	if err := o.validatePutEscalationPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEscalationPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) PutSendSlackMessage(value *OnCallTeamRoutingRulesRuleActionSendSlackMessage) {
 	if err := o.validatePutSendSlackMessageParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) PutTriggerWo
 		o,
 		"putTriggerWorkflowAutomation",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OnCallTeamRoutingRulesRuleActionOutputReference) ResetEscalationPolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEscalationPolicy",
+		nil, // no parameters
 	)
 }
 

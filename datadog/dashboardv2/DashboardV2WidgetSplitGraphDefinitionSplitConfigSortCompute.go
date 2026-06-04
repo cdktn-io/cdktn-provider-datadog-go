@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetSplitGraphDefinitionSplitConfigSortCompute struct {
 	// The metric to use for sorting graphs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
 	Metric *string `field:"required" json:"metric" yaml:"metric"`
 	// How to aggregate the sort metric for the purposes of ordering.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
 	Aggregation *string `field:"optional" json:"aggregation" yaml:"aggregation"`
 }
 

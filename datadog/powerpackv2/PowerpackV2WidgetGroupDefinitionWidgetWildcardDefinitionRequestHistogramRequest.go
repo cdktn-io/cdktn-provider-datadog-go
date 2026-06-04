@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequest struct {
 	// histogram_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#histogram_query PowerpackV2#histogram_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#histogram_query PowerpackV2#histogram_query}
 	HistogramQuery *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestHistogramQuery `field:"required" json:"histogramQuery" yaml:"histogramQuery"`
 	// style block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#style PowerpackV2#style}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#style PowerpackV2#style}
 	Style *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequestStyle `field:"optional" json:"style" yaml:"style"`
 }
 

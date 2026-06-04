@@ -84,6 +84,8 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	SocketInput() interface{}
 	SplunkHec() ObservabilityPipelineConfigDestinationSplunkHecList
 	SplunkHecInput() interface{}
+	SplunkHecMetrics() ObservabilityPipelineConfigDestinationSplunkHecMetricsList
+	SplunkHecMetricsInput() interface{}
 	SumoLogic() ObservabilityPipelineConfigDestinationSumoLogicList
 	SumoLogicInput() interface{}
 	SyslogNg() ObservabilityPipelineConfigDestinationSyslogNgList
@@ -143,6 +145,7 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	PutSentinelOne(value interface{})
 	PutSocket(value interface{})
 	PutSplunkHec(value interface{})
+	PutSplunkHecMetrics(value interface{})
 	PutSumoLogic(value interface{})
 	PutSyslogNg(value interface{})
 	ResetAmazonOpensearch()
@@ -168,6 +171,7 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	ResetSentinelOne()
 	ResetSocket()
 	ResetSplunkHec()
+	ResetSplunkHecMetrics()
 	ResetSumoLogic()
 	ResetSyslogNg()
 	// Produce the Token's value at resolution time.
@@ -730,6 +734,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) Splunk
 	_jsii_.Get(
 		j,
 		"splunkHecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) SplunkHecMetrics() ObservabilityPipelineConfigDestinationSplunkHecMetricsList {
+	var returns ObservabilityPipelineConfigDestinationSplunkHecMetricsList
+	_jsii_.Get(
+		j,
+		"splunkHecMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) SplunkHecMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splunkHecMetricsInput",
 		&returns,
 	)
 	return returns
@@ -1339,6 +1363,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutSpl
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutSplunkHecMetrics(value interface{}) {
+	if err := o.validatePutSplunkHecMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSplunkHecMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutSumoLogic(value interface{}) {
 	if err := o.validatePutSumoLogicParameters(value); err != nil {
 		panic(err)
@@ -1541,6 +1576,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetS
 	_jsii_.InvokeVoid(
 		o,
 		"resetSplunkHec",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetSplunkHecMetrics() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSplunkHecMetrics",
 		nil, // no parameters
 	)
 }

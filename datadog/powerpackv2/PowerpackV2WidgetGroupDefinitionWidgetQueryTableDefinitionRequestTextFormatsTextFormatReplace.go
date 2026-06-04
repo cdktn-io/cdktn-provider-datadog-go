@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormatsTextFormatReplace struct {
 	// Table widget text format replace all type. Valid values are `all`, `substring`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#type PowerpackV2#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#type PowerpackV2#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Table Widget Match String.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#with PowerpackV2#with}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#with PowerpackV2#with}
 	With *string `field:"required" json:"with" yaml:"with"`
 	// Text that will be replaced. Must be used with type `substring`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/powerpack_v2#substring PowerpackV2#substring}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#substring PowerpackV2#substring}
 	Substring *string `field:"optional" json:"substring" yaml:"substring"`
 }
 
