@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetSankeyDefinitionRequestNetworkRequest struct {
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#query DashboardV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
 	Query *DashboardV2WidgetSankeyDefinitionRequestNetworkRequestQuery `field:"required" json:"query" yaml:"query"`
 }
 

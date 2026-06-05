@@ -9,7 +9,7 @@ type DashboardV2WidgetHeatmapDefinitionXaxis struct {
 	//
 	// This is only applicable for distribution of points (group distributions use the roll-up modifier).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#num_buckets DashboardV2#num_buckets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#num_buckets DashboardV2#num_buckets}
 	NumBuckets *float64 `field:"optional" json:"numBuckets" yaml:"numBuckets"`
 }
 

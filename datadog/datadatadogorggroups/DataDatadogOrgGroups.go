@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_groups datadog_org_groups}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_groups datadog_org_groups}.
 type DataDatadogOrgGroups interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataDatadogOrgGroups) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_groups datadog_org_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_groups datadog_org_groups} Data Source.
 func NewDataDatadogOrgGroups(scope constructs.Construct, id *string, config *DataDatadogOrgGroupsConfig) DataDatadogOrgGroups {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataDatadogOrgGroups(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/org_groups datadog_org_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_groups datadog_org_groups} Data Source.
 func NewDataDatadogOrgGroups_Override(d DataDatadogOrgGroups, scope constructs.Construct, id *string, config *DataDatadogOrgGroupsConfig) {
 	_init_.Initialize()
 

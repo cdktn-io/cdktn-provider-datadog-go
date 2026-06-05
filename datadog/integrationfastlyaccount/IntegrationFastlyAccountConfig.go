@@ -24,21 +24,21 @@ type IntegrationFastlyAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Fastly account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
 	ApiKey *string `field:"optional" json:"apiKey" yaml:"apiKey"`
 	// Write-only API key for the Fastly account.
 	//
 	// Exactly one of `api_key` or `api_key_wo` must be set. Must be used with `api_key_wo_version`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
 	ApiKeyWo *string `field:"optional" json:"apiKeyWo" yaml:"apiKeyWo"`
 	// Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
 	ApiKeyWoVersion *string `field:"optional" json:"apiKeyWoVersion" yaml:"apiKeyWoVersion"`
 }
 

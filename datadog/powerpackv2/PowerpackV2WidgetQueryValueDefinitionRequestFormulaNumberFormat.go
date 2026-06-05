@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetQueryValueDefinitionRequestFormulaNumberFormat struct {
 	// unit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#unit PowerpackV2#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#unit PowerpackV2#unit}
 	Unit *PowerpackV2WidgetQueryValueDefinitionRequestFormulaNumberFormatUnit `field:"required" json:"unit" yaml:"unit"`
 	// unit_scale block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#unit_scale PowerpackV2#unit_scale}
 	UnitScale *PowerpackV2WidgetQueryValueDefinitionRequestFormulaNumberFormatUnitScale `field:"optional" json:"unitScale" yaml:"unitScale"`
 }
 

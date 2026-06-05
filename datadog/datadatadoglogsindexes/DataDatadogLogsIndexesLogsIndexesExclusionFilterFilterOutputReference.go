@@ -33,6 +33,7 @@ type DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference inter
 	InternalValue() *DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter
 	SetInternalValue(val *DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter)
 	Query() *string
+	SampleAttribute() *string
 	SampleRate() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputR
 	_jsii_.Get(
 		j,
 		"query",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference) SampleAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sampleAttribute",
 		&returns,
 	)
 	return returns

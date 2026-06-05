@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetRunWorkflowDefinitionInput struct {
 	// Name of the workflow input.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#name PowerpackV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Dashboard template variable. Can be suffixed with `.value` or `.key`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#value PowerpackV2#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

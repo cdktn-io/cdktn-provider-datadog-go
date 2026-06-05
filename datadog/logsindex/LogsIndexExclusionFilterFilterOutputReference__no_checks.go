@@ -67,6 +67,10 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) validateSetQue
 	return nil
 }
 
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) validateSetSampleAttributeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) validateSetSampleRateParameters(val *float64) error {
 	return nil
 }

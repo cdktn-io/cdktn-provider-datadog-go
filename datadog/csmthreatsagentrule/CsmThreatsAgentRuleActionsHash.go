@@ -7,7 +7,7 @@ package csmthreatsagentrule
 type CsmThreatsAgentRuleActionsHash struct {
 	// The field to hash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
 	Field *string `field:"optional" json:"field" yaml:"field"`
 }
 

@@ -7,15 +7,15 @@ package monitor
 type MonitorVariablesAggregateAugmentedQueryJoinCondition struct {
 	// Attribute from the augment query to join on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
 	AugmentAttribute *string `field:"required" json:"augmentAttribute" yaml:"augmentAttribute"`
 	// Attribute from the base query to join on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_attribute Monitor#base_attribute}
 	BaseAttribute *string `field:"required" json:"baseAttribute" yaml:"baseAttribute"`
 	// Join type (for example `inner`). Valid values are `inner`, `left`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/monitor#join_type Monitor#join_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#join_type Monitor#join_type}
 	JoinType *string `field:"required" json:"joinType" yaml:"joinType"`
 }
 

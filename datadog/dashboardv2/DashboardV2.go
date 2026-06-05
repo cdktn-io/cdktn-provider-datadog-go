@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2 datadog_dashboard_v2}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2 datadog_dashboard_v2}.
 type DashboardV2 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -677,7 +677,7 @@ func (j *jsiiProxy_DashboardV2) WidgetInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource.
 func NewDashboardV2(scope constructs.Construct, id *string, config *DashboardV2Config) DashboardV2 {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewDashboardV2(scope constructs.Construct, id *string, config *DashboardV2C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2 datadog_dashboard_v2} Resource.
 func NewDashboardV2_Override(d DashboardV2, scope constructs.Construct, id *string, config *DashboardV2Config) {
 	_init_.Initialize()
 

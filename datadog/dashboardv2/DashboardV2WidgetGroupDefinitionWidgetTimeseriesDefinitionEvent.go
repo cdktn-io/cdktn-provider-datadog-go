@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEvent struct {
 	// The event query to use in the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#q DashboardV2#q}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#q DashboardV2#q}
 	Q *string `field:"required" json:"q" yaml:"q"`
 	// The execution method for multi-value filters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/dashboard_v2#tags_execution DashboardV2#tags_execution}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#tags_execution DashboardV2#tags_execution}
 	TagsExecution *string `field:"optional" json:"tagsExecution" yaml:"tagsExecution"`
 }
 

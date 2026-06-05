@@ -35,6 +35,9 @@ type LogsIndexExclusionFilterFilterOutputReference interface {
 	Query() *string
 	SetQuery(val *string)
 	QueryInput() *string
+	SampleAttribute() *string
+	SetSampleAttribute(val *string)
+	SampleAttributeInput() *string
 	SampleRate() *float64
 	SetSampleRate(val *float64)
 	SampleRateInput() *float64
@@ -71,6 +74,7 @@ type LogsIndexExclusionFilterFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetQuery()
+	ResetSampleAttribute()
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) QueryInput() *
 	_jsii_.Get(
 		j,
 		"queryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) SampleAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sampleAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) SampleAttributeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sampleAttributeInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference)SetQuery(val *s
 	_jsii_.Set(
 		j,
 		"query",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference)SetSampleAttribute(val *string) {
+	if err := j.validateSetSampleAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sampleAttribute",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (l *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) ResetQuery() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQuery",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsIndexExclusionFilterFilterOutputReference) ResetSampleAttribute() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSampleAttribute",
 		nil, // no parameters
 	)
 }
