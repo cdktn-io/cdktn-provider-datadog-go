@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields struct {
 	// List of fields to remove from the events.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 	Fields *[]*string `field:"required" json:"fields" yaml:"fields"`
 }
 

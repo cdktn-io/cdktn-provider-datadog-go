@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetWildcardDefinitionRequestListstreamRequest struct {
 	// columns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#columns PowerpackV2#columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#columns PowerpackV2#columns}
 	Columns interface{} `field:"required" json:"columns" yaml:"columns"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query *PowerpackV2WidgetWildcardDefinitionRequestListstreamRequestQuery `field:"required" json:"query" yaml:"query"`
 }
 

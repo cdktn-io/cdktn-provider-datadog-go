@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetSloListDefinitionRequestQuerySort struct {
 	// The facet path for the column.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#column PowerpackV2#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#column PowerpackV2#column}
 	Column *string `field:"required" json:"column" yaml:"column"`
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#order PowerpackV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#order PowerpackV2#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 }
 

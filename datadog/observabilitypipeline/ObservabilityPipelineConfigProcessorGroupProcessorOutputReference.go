@@ -54,6 +54,8 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	Fqn() *string
 	GenerateDatadogMetrics() ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList
 	GenerateDatadogMetricsInput() interface{}
+	GenerateMetrics() ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList
+	GenerateMetricsInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -129,6 +131,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	PutEnrichmentTable(value interface{})
 	PutFilter(value interface{})
 	PutGenerateDatadogMetrics(value interface{})
+	PutGenerateMetrics(value interface{})
 	PutMetricTags(value interface{})
 	PutOcsfMapper(value interface{})
 	PutParseGrok(value interface{})
@@ -152,6 +155,7 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	ResetEnrichmentTable()
 	ResetFilter()
 	ResetGenerateDatadogMetrics()
+	ResetGenerateMetrics()
 	ResetMetricTags()
 	ResetOcsfMapper()
 	ResetParseGrok()
@@ -435,6 +439,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.Get(
 		j,
 		"generateDatadogMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) GenerateMetrics() ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList
+	_jsii_.Get(
+		j,
+		"generateMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) GenerateMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"generateMetricsInput",
 		&returns,
 	)
 	return returns
@@ -1182,6 +1206,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutGenerateMetrics(value interface{}) {
+	if err := o.validatePutGenerateMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putGenerateMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutMetricTags(value interface{}) {
 	if err := o.validatePutMetricTagsParameters(value); err != nil {
 		panic(err)
@@ -1401,6 +1436,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetGenerateDatadogMetrics",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetGenerateMetrics() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGenerateMetrics",
 		nil, // no parameters
 	)
 }

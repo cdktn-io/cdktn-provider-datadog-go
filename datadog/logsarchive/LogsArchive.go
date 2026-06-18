@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_archive datadog_logs_archive}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive datadog_logs_archive}.
 type LogsArchive interface {
 	cdktn.TerraformResource
 	AzureArchive() LogsArchiveAzureArchiveOutputReference
@@ -56,11 +56,17 @@ type LogsArchive interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LookupAttributes() *[]*string
+	SetLookupAttributes(val *[]*string)
+	LookupAttributesInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PartitioningAttributes() *[]*string
+	SetPartitioningAttributes(val *[]*string)
+	PartitioningAttributesInput() *[]*string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -139,9 +145,11 @@ type LogsArchive interface {
 	ResetGcsArchive()
 	ResetId()
 	ResetIncludeTags()
+	ResetLookupAttributes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartitioningAttributes()
 	ResetRehydrationMaxScanSizeInGb()
 	ResetRehydrationTags()
 	ResetS3Archive()
@@ -362,6 +370,26 @@ func (j *jsiiProxy_LogsArchive) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_LogsArchive) LookupAttributes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"lookupAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchive) LookupAttributesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"lookupAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsArchive) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -387,6 +415,26 @@ func (j *jsiiProxy_LogsArchive) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchive) PartitioningAttributes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitioningAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchive) PartitioningAttributesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitioningAttributesInput",
 		&returns,
 	)
 	return returns
@@ -533,7 +581,7 @@ func (j *jsiiProxy_LogsArchive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveConfig) LogsArchive {
 	_init_.Initialize()
 
@@ -551,7 +599,7 @@ func NewLogsArchive(scope constructs.Construct, id *string, config *LogsArchiveC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_archive datadog_logs_archive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_archive datadog_logs_archive} Resource.
 func NewLogsArchive_Override(l LogsArchive, scope constructs.Construct, id *string, config *LogsArchiveConfig) {
 	_init_.Initialize()
 
@@ -644,6 +692,17 @@ func (j *jsiiProxy_LogsArchive)SetLifecycle(val *cdktn.TerraformResourceLifecycl
 	)
 }
 
+func (j *jsiiProxy_LogsArchive)SetLookupAttributes(val *[]*string) {
+	if err := j.validateSetLookupAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lookupAttributes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LogsArchive)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -651,6 +710,17 @@ func (j *jsiiProxy_LogsArchive)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsArchive)SetPartitioningAttributes(val *[]*string) {
+	if err := j.validateSetPartitioningAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitioningAttributes",
 		val,
 	)
 }
@@ -1133,10 +1203,26 @@ func (l *jsiiProxy_LogsArchive) ResetIncludeTags() {
 	)
 }
 
+func (l *jsiiProxy_LogsArchive) ResetLookupAttributes() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLookupAttributes",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsArchive) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchive) ResetPartitioningAttributes() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPartitioningAttributes",
 		nil, // no parameters
 	)
 }

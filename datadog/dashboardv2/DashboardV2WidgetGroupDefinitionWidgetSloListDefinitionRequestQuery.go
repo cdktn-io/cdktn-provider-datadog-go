@@ -7,15 +7,15 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetSloListDefinitionRequestQuery struct {
 	// Widget query.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query_string DashboardV2#query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query_string DashboardV2#query_string}
 	QueryString *string `field:"required" json:"queryString" yaml:"queryString"`
 	// Maximum number of results to display in the table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
 	Sort interface{} `field:"optional" json:"sort" yaml:"sort"`
 }
 

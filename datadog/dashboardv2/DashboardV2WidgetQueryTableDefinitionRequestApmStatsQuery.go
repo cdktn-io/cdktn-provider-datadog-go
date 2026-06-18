@@ -7,31 +7,31 @@ package dashboardv2
 type DashboardV2WidgetQueryTableDefinitionRequestApmStatsQuery struct {
 	// The environment name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#env DashboardV2#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#env DashboardV2#env}
 	Env *string `field:"required" json:"env" yaml:"env"`
 	// The operation name associated with the service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The organization's host group name and value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag DashboardV2#primary_tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag DashboardV2#primary_tag}
 	PrimaryTag *string `field:"required" json:"primaryTag" yaml:"primaryTag"`
 	// The level of detail for the request. Valid values are `service`, `resource`, `span`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#row_type DashboardV2#row_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#row_type DashboardV2#row_type}
 	RowType *string `field:"required" json:"rowType" yaml:"rowType"`
 	// The service name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#service DashboardV2#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#service DashboardV2#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// columns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#columns DashboardV2#columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#columns DashboardV2#columns}
 	Columns interface{} `field:"optional" json:"columns" yaml:"columns"`
 	// The resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#resource DashboardV2#resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#resource DashboardV2#resource}
 	Resource *string `field:"optional" json:"resource" yaml:"resource"`
 }
 

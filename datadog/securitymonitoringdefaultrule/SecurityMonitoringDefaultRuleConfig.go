@@ -24,35 +24,35 @@ type SecurityMonitoringDefaultRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// case block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 	Case interface{} `field:"optional" json:"case" yaml:"case"`
 	// Custom Message (will override default message) for generated signals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
 	CustomMessage *string `field:"optional" json:"customMessage" yaml:"customMessage"`
 	// The name (will override default name) of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
 	CustomName *string `field:"optional" json:"customName" yaml:"customName"`
 	// Custom tags for generated signals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
 	CustomTags *[]*string `field:"optional" json:"customTags" yaml:"customTags"`
 	// Enable the rule. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
 	// options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 	Options interface{} `field:"optional" json:"options" yaml:"options"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 }
 

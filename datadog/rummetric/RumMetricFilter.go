@@ -7,7 +7,7 @@ package rummetric
 type RumMetricFilter struct {
 	// The search query. Follows RUM search syntax.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/rum_metric#query RumMetric#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/rum_metric#query RumMetric#query}
 	Query *string `field:"optional" json:"query" yaml:"query"`
 }
 

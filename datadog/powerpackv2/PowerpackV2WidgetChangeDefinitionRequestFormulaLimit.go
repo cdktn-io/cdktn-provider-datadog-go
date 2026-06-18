@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetChangeDefinitionRequestFormulaLimit struct {
 	// The number of results to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#count PowerpackV2#count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#count PowerpackV2#count}
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#order PowerpackV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#order PowerpackV2#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 }
 

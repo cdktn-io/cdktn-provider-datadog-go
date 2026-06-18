@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 type IntegrationFastlyAccount interface {
 	cdktn.TerraformResource
 	ApiKey() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_IntegrationFastlyAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) IntegrationFastlyAccount {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewIntegrationFastlyAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_fastly_account datadog_integration_fastly_account} Resource.
 func NewIntegrationFastlyAccount_Override(i IntegrationFastlyAccount, scope constructs.Construct, id *string, config *IntegrationFastlyAccountConfig) {
 	_init_.Initialize()
 

@@ -7,31 +7,31 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQuery struct {
 	// apm_dependency_stats_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
 	ApmDependencyStatsQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmDependencyStatsQuery `field:"optional" json:"apmDependencyStatsQuery" yaml:"apmDependencyStatsQuery"`
 	// apm_resource_stats_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
 	ApmResourceStatsQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryApmResourceStatsQuery `field:"optional" json:"apmResourceStatsQuery" yaml:"apmResourceStatsQuery"`
 	// cloud_cost_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
 	CloudCostQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryCloudCostQuery `field:"optional" json:"cloudCostQuery" yaml:"cloudCostQuery"`
 	// event_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
 	EventQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryEventQuery `field:"optional" json:"eventQuery" yaml:"eventQuery"`
 	// metric_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
 	MetricQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryMetricQuery `field:"optional" json:"metricQuery" yaml:"metricQuery"`
 	// process_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
 	ProcessQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQueryProcessQuery `field:"optional" json:"processQuery" yaml:"processQuery"`
 	// slo_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
 	SloQuery *DashboardV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFillQuerySloQuery `field:"optional" json:"sloQuery" yaml:"sloQuery"`
 }
 

@@ -7,23 +7,23 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionYaxis struct {
 	// True includes zero.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#include_zero PowerpackV2#include_zero}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#include_zero PowerpackV2#include_zero}
 	IncludeZero interface{} `field:"optional" json:"includeZero" yaml:"includeZero"`
 	// The label of the axis to display on the graph.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#label PowerpackV2#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#label PowerpackV2#label}
 	Label *string `field:"optional" json:"label" yaml:"label"`
 	// Specifies the maximum value to show on the y-axis. It takes a number, or auto for default behavior.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#max PowerpackV2#max}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#max PowerpackV2#max}
 	Max *string `field:"optional" json:"max" yaml:"max"`
 	// Specifies minimum value to show on the y-axis. It takes a number, or auto for default behavior.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#min PowerpackV2#min}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#min PowerpackV2#min}
 	Min *string `field:"optional" json:"min" yaml:"min"`
 	// Specifies the scale type. Possible values are `linear` or `log`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#scale PowerpackV2#scale}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#scale PowerpackV2#scale}
 	Scale *string `field:"optional" json:"scale" yaml:"scale"`
 }
 

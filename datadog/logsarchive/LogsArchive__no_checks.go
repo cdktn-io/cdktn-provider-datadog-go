@@ -127,7 +127,15 @@ func (j *jsiiProxy_LogsArchive) validateSetLifecycleParameters(val *cdktn.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchive) validateSetLookupAttributesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchive) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsArchive) validateSetPartitioningAttributesParameters(val *[]*string) error {
 	return nil
 }
 

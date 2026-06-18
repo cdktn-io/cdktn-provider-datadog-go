@@ -83,6 +83,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutGenerateMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutMetricTagsParameters(value interface{}) error {
 	return nil
 }

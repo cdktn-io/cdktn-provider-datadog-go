@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_sync datadog_team_sync}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync datadog_team_sync}.
 type TeamSync interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_TeamSync) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_sync datadog_team_sync} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync datadog_team_sync} Resource.
 func NewTeamSync(scope constructs.Construct, id *string, config *TeamSyncConfig) TeamSync {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewTeamSync(scope constructs.Construct, id *string, config *TeamSyncConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_sync datadog_team_sync} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_sync datadog_team_sync} Resource.
 func NewTeamSync_Override(t TeamSync, scope constructs.Construct, id *string, config *TeamSyncConfig) {
 	_init_.Initialize()
 

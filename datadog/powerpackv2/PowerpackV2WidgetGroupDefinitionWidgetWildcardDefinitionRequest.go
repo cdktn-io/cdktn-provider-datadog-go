@@ -7,19 +7,19 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequest struct {
 	// histogram_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#histogram_request PowerpackV2#histogram_request}
 	HistogramRequest *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestHistogramRequest `field:"optional" json:"histogramRequest" yaml:"histogramRequest"`
 	// liststream_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#liststream_request PowerpackV2#liststream_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#liststream_request PowerpackV2#liststream_request}
 	ListstreamRequest *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestListstreamRequest `field:"optional" json:"liststreamRequest" yaml:"liststreamRequest"`
 	// timeseries_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#timeseries_request PowerpackV2#timeseries_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#timeseries_request PowerpackV2#timeseries_request}
 	TimeseriesRequest *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestTimeseriesRequest `field:"optional" json:"timeseriesRequest" yaml:"timeseriesRequest"`
 	// treemap_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#treemap_request PowerpackV2#treemap_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#treemap_request PowerpackV2#treemap_request}
 	TreemapRequest *PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestTreemapRequest `field:"optional" json:"treemapRequest" yaml:"treemapRequest"`
 }
 

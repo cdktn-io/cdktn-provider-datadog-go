@@ -24,7 +24,7 @@ type OrgGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the org group. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group#name OrgGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group#name OrgGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

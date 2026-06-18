@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetWildcardDefinitionRequestTimeseriesRequestSort struct {
 	// The number of items to limit the widget to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#count PowerpackV2#count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#count PowerpackV2#count}
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// order_by block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#order_by PowerpackV2#order_by}
 	OrderBy interface{} `field:"optional" json:"orderBy" yaml:"orderBy"`
 }
 

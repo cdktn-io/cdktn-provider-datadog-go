@@ -5,13 +5,13 @@ package teamnotificationrule
 
 
 type TeamNotificationRuleSlack struct {
-	// Slack channel name for notifications (for example, #alerts or #team-notifications).
+	// Slack channel name for notifications, without a leading '#'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
 	Channel *string `field:"optional" json:"channel" yaml:"channel"`
 	// Slack workspace name where the channel is located.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
 	Workspace *string `field:"optional" json:"workspace" yaml:"workspace"`
 }
 
