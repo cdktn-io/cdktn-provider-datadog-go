@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order}.
 type TagIndexingRuleOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_TagIndexingRuleOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource.
 func NewTagIndexingRuleOrder(scope constructs.Construct, id *string, config *TagIndexingRuleOrderConfig) TagIndexingRuleOrder {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewTagIndexingRuleOrder(scope constructs.Construct, id *string, config *Tag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/tag_indexing_rule_order datadog_tag_indexing_rule_order} Resource.
 func NewTagIndexingRuleOrder_Override(t TagIndexingRuleOrder, scope constructs.Construct, id *string, config *TagIndexingRuleOrderConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSort struct {
 	// The index of the formula to sort by.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#index PowerpackV2#index}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#index PowerpackV2#index}
 	Index *float64 `field:"required" json:"index" yaml:"index"`
 	// Widget sorting direction. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#order PowerpackV2#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 }
 

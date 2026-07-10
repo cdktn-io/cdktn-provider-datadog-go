@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/service_level_objective datadog_service_level_objective}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective datadog_service_level_objective}.
 type ServiceLevelObjective interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -51,6 +51,9 @@ type ServiceLevelObjective interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreTagKeys() *[]*string
+	SetIgnoreTagKeys(val *[]*string)
+	IgnoreTagKeysInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -153,6 +156,7 @@ type ServiceLevelObjective interface {
 	ResetForceDelete()
 	ResetGroups()
 	ResetId()
+	ResetIgnoreTagKeys()
 	ResetMonitorIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_ServiceLevelObjective) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) IgnoreTagKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelObjective) IgnoreTagKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeysInput",
 		&returns,
 	)
 	return returns
@@ -652,7 +676,7 @@ func (j *jsiiProxy_ServiceLevelObjective) WarningThresholdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
 func NewServiceLevelObjective(scope constructs.Construct, id *string, config *ServiceLevelObjectiveConfig) ServiceLevelObjective {
 	_init_.Initialize()
 
@@ -670,7 +694,7 @@ func NewServiceLevelObjective(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective datadog_service_level_objective} Resource.
 func NewServiceLevelObjective_Override(s ServiceLevelObjective, scope constructs.Construct, id *string, config *ServiceLevelObjectiveConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,17 @@ func (j *jsiiProxy_ServiceLevelObjective)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelObjective)SetIgnoreTagKeys(val *[]*string) {
+	if err := j.validateSetIgnoreTagKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreTagKeys",
 		val,
 	)
 }
@@ -1295,6 +1330,14 @@ func (s *jsiiProxy_ServiceLevelObjective) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelObjective) ResetIgnoreTagKeys() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIgnoreTagKeys",
 		nil, // no parameters
 	)
 }

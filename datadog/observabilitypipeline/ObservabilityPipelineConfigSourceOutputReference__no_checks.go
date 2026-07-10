@@ -115,6 +115,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validatePut
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validatePutWebsocketParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

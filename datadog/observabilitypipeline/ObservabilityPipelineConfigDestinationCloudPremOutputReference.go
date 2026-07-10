@@ -45,6 +45,8 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Tls() ObservabilityPipelineConfigDestinationCloudPremTlsList
+	TlsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type ObservabilityPipelineConfigDestinationCloudPremOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBuffer(value interface{})
+	PutTls(value interface{})
 	ResetBuffer()
 	ResetEndpointUrlKey()
+	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) Tls() ObservabilityPipelineConfigDestinationCloudPremTlsList {
+	var returns ObservabilityPipelineConfigDestinationCloudPremTlsList
+	_jsii_.Get(
+		j,
+		"tls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) TlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) PutTls(value interface{}) {
+	if err := o.validatePutTlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTls",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ResetBuffer() {
 	_jsii_.InvokeVoid(
 		o,
@@ -500,6 +535,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReferenc
 	_jsii_.InvokeVoid(
 		o,
 		"resetEndpointUrlKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremOutputReference) ResetTls() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTls",
 		nil, // no parameters
 	)
 }

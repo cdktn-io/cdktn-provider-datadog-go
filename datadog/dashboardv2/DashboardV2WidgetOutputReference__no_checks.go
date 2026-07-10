@@ -127,6 +127,10 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutNoteDefinitionPa
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutPointPlotDefinitionParameters(value *DashboardV2WidgetPointPlotDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutPowerpackDefinitionParameters(value *DashboardV2WidgetPowerpackDefinition) error {
 	return nil
 }

@@ -620,6 +620,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validatePut
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validatePutWebsocketParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigSourceWebsocket:
+		value := value.(*[]*ObservabilityPipelineConfigSourceWebsocket)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigSourceWebsocket:
+		value_ := value.([]*ObservabilityPipelineConfigSourceWebsocket)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigSourceWebsocket; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")

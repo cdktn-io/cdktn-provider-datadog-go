@@ -7,7 +7,7 @@ package powerpackv2
 type PowerpackV2WidgetSankeyDefinitionRequestNetworkRequest struct {
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query *PowerpackV2WidgetSankeyDefinitionRequestNetworkRequestQuery `field:"required" json:"query" yaml:"query"`
 }
 

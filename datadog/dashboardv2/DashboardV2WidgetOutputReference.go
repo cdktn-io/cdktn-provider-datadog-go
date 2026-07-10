@@ -75,6 +75,8 @@ type DashboardV2WidgetOutputReference interface {
 	ManageStatusDefinitionInput() *DashboardV2WidgetManageStatusDefinition
 	NoteDefinition() DashboardV2WidgetNoteDefinitionOutputReference
 	NoteDefinitionInput() *DashboardV2WidgetNoteDefinition
+	PointPlotDefinition() DashboardV2WidgetPointPlotDefinitionOutputReference
+	PointPlotDefinitionInput() *DashboardV2WidgetPointPlotDefinition
 	PowerpackDefinition() DashboardV2WidgetPowerpackDefinitionOutputReference
 	PowerpackDefinitionInput() *DashboardV2WidgetPowerpackDefinition
 	QueryTableDefinition() DashboardV2WidgetQueryTableDefinitionOutputReference
@@ -163,6 +165,7 @@ type DashboardV2WidgetOutputReference interface {
 	PutLogStreamDefinition(value *DashboardV2WidgetLogStreamDefinition)
 	PutManageStatusDefinition(value *DashboardV2WidgetManageStatusDefinition)
 	PutNoteDefinition(value *DashboardV2WidgetNoteDefinition)
+	PutPointPlotDefinition(value *DashboardV2WidgetPointPlotDefinition)
 	PutPowerpackDefinition(value *DashboardV2WidgetPowerpackDefinition)
 	PutQueryTableDefinition(value *DashboardV2WidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *DashboardV2WidgetQueryValueDefinition)
@@ -202,6 +205,7 @@ type DashboardV2WidgetOutputReference interface {
 	ResetLogStreamDefinition()
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
+	ResetPointPlotDefinition()
 	ResetPowerpackDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
@@ -700,6 +704,26 @@ func (j *jsiiProxy_DashboardV2WidgetOutputReference) NoteDefinitionInput() *Dash
 	_jsii_.Get(
 		j,
 		"noteDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetOutputReference) PointPlotDefinition() DashboardV2WidgetPointPlotDefinitionOutputReference {
+	var returns DashboardV2WidgetPointPlotDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"pointPlotDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetOutputReference) PointPlotDefinitionInput() *DashboardV2WidgetPointPlotDefinition {
+	var returns *DashboardV2WidgetPointPlotDefinition
+	_jsii_.Get(
+		j,
+		"pointPlotDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1585,6 +1609,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) PutNoteDefinition(value *Da
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) PutPointPlotDefinition(value *DashboardV2WidgetPointPlotDefinition) {
+	if err := d.validatePutPointPlotDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPointPlotDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) PutPowerpackDefinition(value *DashboardV2WidgetPowerpackDefinition) {
 	if err := d.validatePutPowerpackDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1947,6 +1982,14 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) ResetNoteDefinition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNoteDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) ResetPointPlotDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPointPlotDefinition",
 		nil, // no parameters
 	)
 }

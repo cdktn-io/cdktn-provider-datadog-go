@@ -73,6 +73,8 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ManageStatusDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetManageStatusDefinition
 	NoteDefinition() DashboardV2WidgetGroupDefinitionWidgetNoteDefinitionOutputReference
 	NoteDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetNoteDefinition
+	PointPlotDefinition() DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinitionOutputReference
+	PointPlotDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition
 	QueryTableDefinition() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference
 	QueryTableDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition
 	QueryValueDefinition() DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference
@@ -156,6 +158,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	PutLogStreamDefinition(value *DashboardV2WidgetGroupDefinitionWidgetLogStreamDefinition)
 	PutManageStatusDefinition(value *DashboardV2WidgetGroupDefinitionWidgetManageStatusDefinition)
 	PutNoteDefinition(value *DashboardV2WidgetGroupDefinitionWidgetNoteDefinition)
+	PutPointPlotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition)
 	PutQueryTableDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition)
 	PutRunWorkflowDefinition(value *DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinition)
@@ -192,6 +195,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ResetLogStreamDefinition()
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
+	ResetPointPlotDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
 	ResetRunWorkflowDefinition()
@@ -668,6 +672,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) NoteDe
 	_jsii_.Get(
 		j,
 		"noteDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PointPlotDefinition() DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"pointPlotDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PointPlotDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition
+	_jsii_.Get(
+		j,
+		"pointPlotDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1502,6 +1526,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutNot
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutPointPlotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition) {
+	if err := d.validatePutPointPlotDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPointPlotDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutQueryTableDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition) {
 	if err := d.validatePutQueryTableDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1834,6 +1869,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetN
 	_jsii_.InvokeVoid(
 		d,
 		"resetNoteDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetPointPlotDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPointPlotDefinition",
 		nil, // no parameters
 	)
 }

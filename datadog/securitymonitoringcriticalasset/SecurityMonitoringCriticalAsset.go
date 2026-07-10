@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset}.
 type SecurityMonitoringCriticalAsset interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type SecurityMonitoringCriticalAsset interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -120,6 +123,7 @@ type SecurityMonitoringCriticalAsset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_SecurityMonitoringCriticalAsset) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringCriticalAsset) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityMonitoringCriticalAsset) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -423,7 +447,7 @@ func (j *jsiiProxy_SecurityMonitoringCriticalAsset) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource.
 func NewSecurityMonitoringCriticalAsset(scope constructs.Construct, id *string, config *SecurityMonitoringCriticalAssetConfig) SecurityMonitoringCriticalAsset {
 	_init_.Initialize()
 
@@ -441,7 +465,7 @@ func NewSecurityMonitoringCriticalAsset(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_critical_asset datadog_security_monitoring_critical_asset} Resource.
 func NewSecurityMonitoringCriticalAsset_Override(s SecurityMonitoringCriticalAsset, scope constructs.Construct, id *string, config *SecurityMonitoringCriticalAssetConfig) {
 	_init_.Initialize()
 
@@ -478,6 +502,17 @@ func (j *jsiiProxy_SecurityMonitoringCriticalAsset)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityMonitoringCriticalAsset)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -925,6 +960,14 @@ func (s *jsiiProxy_SecurityMonitoringCriticalAsset) OverrideLogicalId(newLogical
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurityMonitoringCriticalAsset) ResetDescription() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

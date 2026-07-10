@@ -77,6 +77,8 @@ type ObservabilityPipelineConfigSourceOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Websocket() ObservabilityPipelineConfigSourceWebsocketList
+	WebsocketInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -118,6 +120,7 @@ type ObservabilityPipelineConfigSourceOutputReference interface {
 	PutSplunkTcp(value interface{})
 	PutSumoLogic(value interface{})
 	PutSyslogNg(value interface{})
+	PutWebsocket(value interface{})
 	ResetAmazonDataFirehose()
 	ResetAmazonS3()
 	ResetDatadogAgent()
@@ -135,6 +138,7 @@ type ObservabilityPipelineConfigSourceOutputReference interface {
 	ResetSplunkTcp()
 	ResetSumoLogic()
 	ResetSyslogNg()
+	ResetWebsocket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -575,6 +579,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) Websocket() ObservabilityPipelineConfigSourceWebsocketList {
+	var returns ObservabilityPipelineConfigSourceWebsocketList
+	_jsii_.Get(
+		j,
+		"websocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) WebsocketInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"websocketInput",
 		&returns,
 	)
 	return returns
@@ -1047,6 +1071,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) PutSyslogNg
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) PutWebsocket(value interface{}) {
+	if err := o.validatePutWebsocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putWebsocket",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) ResetAmazonDataFirehose() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1179,6 +1214,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) ResetSyslog
 	_jsii_.InvokeVoid(
 		o,
 		"resetSyslogNg",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigSourceOutputReference) ResetWebsocket() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWebsocket",
 		nil, // no parameters
 	)
 }

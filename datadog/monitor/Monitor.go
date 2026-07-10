@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor datadog_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor datadog_monitor}.
 type Monitor interface {
 	cdktn.TerraformResource
 	Assets() MonitorAssetsList
@@ -68,6 +68,9 @@ type Monitor interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreTagKeys() *[]*string
+	SetIgnoreTagKeys(val *[]*string)
+	IgnoreTagKeysInput() *[]*string
 	IncludeTags() interface{}
 	SetIncludeTags(val interface{})
 	IncludeTagsInput() interface{}
@@ -222,6 +225,7 @@ type Monitor interface {
 	ResetGroupbySimpleMonitor()
 	ResetGroupRetentionDuration()
 	ResetId()
+	ResetIgnoreTagKeys()
 	ResetIncludeTags()
 	ResetMonitorThresholds()
 	ResetMonitorThresholdWindows()
@@ -549,6 +553,26 @@ func (j *jsiiProxy_Monitor) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) IgnoreTagKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Monitor) IgnoreTagKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeysInput",
 		&returns,
 	)
 	return returns
@@ -1155,7 +1179,7 @@ func (j *jsiiProxy_Monitor) VariablesInput() *MonitorVariables {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) Monitor {
 	_init_.Initialize()
 
@@ -1173,7 +1197,7 @@ func NewMonitor(scope constructs.Construct, id *string, config *MonitorConfig) M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor datadog_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor datadog_monitor} Resource.
 func NewMonitor_Override(m Monitor, scope constructs.Construct, id *string, config *MonitorConfig) {
 	_init_.Initialize()
 
@@ -1317,6 +1341,17 @@ func (j *jsiiProxy_Monitor)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Monitor)SetIgnoreTagKeys(val *[]*string) {
+	if err := j.validateSetIgnoreTagKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreTagKeys",
 		val,
 	)
 }
@@ -2077,6 +2112,14 @@ func (m *jsiiProxy_Monitor) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Monitor) ResetIgnoreTagKeys() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIgnoreTagKeys",
 		nil, // no parameters
 	)
 }

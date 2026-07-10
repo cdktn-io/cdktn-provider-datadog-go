@@ -186,6 +186,68 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutAddMetricTagsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTags; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutAggregateParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorGroupProcessorAggregate:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorGroupProcessorAggregate)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorGroupProcessorAggregate:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorGroupProcessorAggregate)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigProcessorGroupProcessorAggregate; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutCustomProcessorParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -682,6 +744,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutRenameMetricTagsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTags; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutSampleParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -769,6 +862,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigProcessorGroupProcessorSplitArray; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutTagCardinalityLimitParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit:
+		value := value.(*[]*ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit:
+		value_ := value.([]*ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimit; received %#v (a %T)", value, value)
 		}
 	}
 

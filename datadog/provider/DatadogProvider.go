@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs datadog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs datadog}.
 type DatadogProvider interface {
 	cdktn.TerraformProvider
 	Alias() *string
@@ -71,6 +71,9 @@ type DatadogProvider interface {
 	HttpClientRetryTimeout() *float64
 	SetHttpClientRetryTimeout(val *float64)
 	HttpClientRetryTimeoutInput() *float64
+	IgnoreTagKeys() *[]*string
+	SetIgnoreTagKeys(val *[]*string)
+	IgnoreTagKeysInput() *[]*string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
@@ -110,6 +113,7 @@ type DatadogProvider interface {
 	ResetHttpClientRetryEnabled()
 	ResetHttpClientRetryMaxRetries()
 	ResetHttpClientRetryTimeout()
+	ResetIgnoreTagKeys()
 	ResetOrgUuid()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -502,6 +506,26 @@ func (j *jsiiProxy_DatadogProvider) HttpClientRetryTimeoutInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DatadogProvider) IgnoreTagKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatadogProvider) IgnoreTagKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreTagKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatadogProvider) MetaAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -603,7 +627,7 @@ func (j *jsiiProxy_DatadogProvider) ValidateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs datadog} Resource.
 func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogProviderConfig) DatadogProvider {
 	_init_.Initialize()
 
@@ -621,7 +645,7 @@ func NewDatadogProvider(scope constructs.Construct, id *string, config *DatadogP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs datadog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs datadog} Resource.
 func NewDatadogProvider_Override(d DatadogProvider, scope constructs.Construct, id *string, config *DatadogProviderConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,14 @@ func (j *jsiiProxy_DatadogProvider)SetHttpClientRetryTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"httpClientRetryTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatadogProvider)SetIgnoreTagKeys(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"ignoreTagKeys",
 		val,
 	)
 }
@@ -1028,6 +1060,14 @@ func (d *jsiiProxy_DatadogProvider) ResetHttpClientRetryTimeout() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetHttpClientRetryTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatadogProvider) ResetIgnoreTagKeys() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIgnoreTagKeys",
 		nil, // no parameters
 	)
 }

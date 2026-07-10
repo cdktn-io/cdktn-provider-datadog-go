@@ -19,6 +19,10 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	AddFieldsInput() interface{}
 	AddHostname() ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList
 	AddHostnameInput() interface{}
+	AddMetricTags() ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList
+	AddMetricTagsInput() interface{}
+	Aggregate() ObservabilityPipelineConfigProcessorGroupProcessorAggregateList
+	AggregateInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,12 +86,16 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	RemoveFieldsInput() interface{}
 	RenameFields() ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList
 	RenameFieldsInput() interface{}
+	RenameMetricTags() ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList
+	RenameMetricTagsInput() interface{}
 	Sample() ObservabilityPipelineConfigProcessorGroupProcessorSampleList
 	SampleInput() interface{}
 	SensitiveDataScanner() ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList
 	SensitiveDataScannerInput() interface{}
 	SplitArray() ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList
 	SplitArrayInput() interface{}
+	TagCardinalityLimit() ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList
+	TagCardinalityLimitInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -125,6 +133,8 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	PutAddEnvVars(value interface{})
 	PutAddFields(value interface{})
 	PutAddHostname(value interface{})
+	PutAddMetricTags(value interface{})
+	PutAggregate(value interface{})
 	PutCustomProcessor(value interface{})
 	PutDatadogTags(value interface{})
 	PutDedupe(value interface{})
@@ -141,13 +151,17 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	PutReduce(value interface{})
 	PutRemoveFields(value interface{})
 	PutRenameFields(value interface{})
+	PutRenameMetricTags(value interface{})
 	PutSample(value interface{})
 	PutSensitiveDataScanner(value interface{})
 	PutSplitArray(value interface{})
+	PutTagCardinalityLimit(value interface{})
 	PutThrottle(value interface{})
 	ResetAddEnvVars()
 	ResetAddFields()
 	ResetAddHostname()
+	ResetAddMetricTags()
+	ResetAggregate()
 	ResetCustomProcessor()
 	ResetDatadogTags()
 	ResetDedupe()
@@ -165,9 +179,11 @@ type ObservabilityPipelineConfigProcessorGroupProcessorOutputReference interface
 	ResetReduce()
 	ResetRemoveFields()
 	ResetRenameFields()
+	ResetRenameMetricTags()
 	ResetSample()
 	ResetSensitiveDataScanner()
 	ResetSplitArray()
+	ResetTagCardinalityLimit()
 	ResetThrottle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -239,6 +255,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.Get(
 		j,
 		"addHostnameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) AddMetricTags() ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorAddMetricTagsList
+	_jsii_.Get(
+		j,
+		"addMetricTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) AddMetricTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addMetricTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) Aggregate() ObservabilityPipelineConfigProcessorGroupProcessorAggregateList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorAggregateList
+	_jsii_.Get(
+		j,
+		"aggregate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) AggregateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aggregateInput",
 		&returns,
 	)
 	return returns
@@ -694,6 +750,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) RenameMetricTags() ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorRenameMetricTagsList
+	_jsii_.Get(
+		j,
+		"renameMetricTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) RenameMetricTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"renameMetricTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) Sample() ObservabilityPipelineConfigProcessorGroupProcessorSampleList {
 	var returns ObservabilityPipelineConfigProcessorGroupProcessorSampleList
 	_jsii_.Get(
@@ -749,6 +825,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.Get(
 		j,
 		"splitArrayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) TagCardinalityLimit() ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitList
+	_jsii_.Get(
+		j,
+		"tagCardinalityLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) TagCardinalityLimitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagCardinalityLimitInput",
 		&returns,
 	)
 	return returns
@@ -1140,6 +1236,28 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutAddMetricTags(value interface{}) {
+	if err := o.validatePutAddMetricTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAddMetricTags",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutAggregate(value interface{}) {
+	if err := o.validatePutAggregateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAggregate",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutCustomProcessor(value interface{}) {
 	if err := o.validatePutCustomProcessorParameters(value); err != nil {
 		panic(err)
@@ -1316,6 +1434,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutRenameMetricTags(value interface{}) {
+	if err := o.validatePutRenameMetricTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRenameMetricTags",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutSample(value interface{}) {
 	if err := o.validatePutSampleParameters(value); err != nil {
 		panic(err)
@@ -1345,6 +1474,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"putSplitArray",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) PutTagCardinalityLimit(value interface{}) {
+	if err := o.validatePutTagCardinalityLimitParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTagCardinalityLimit",
 		[]interface{}{value},
 	)
 }
@@ -1380,6 +1520,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetAddHostname",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetAddMetricTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAddMetricTags",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetAggregate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAggregate",
 		nil, // no parameters
 	)
 }
@@ -1520,6 +1676,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetRenameMetricTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRenameMetricTags",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetSample() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1540,6 +1704,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetSplitArray",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) ResetTagCardinalityLimit() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTagCardinalityLimit",
 		nil, // no parameters
 	)
 }

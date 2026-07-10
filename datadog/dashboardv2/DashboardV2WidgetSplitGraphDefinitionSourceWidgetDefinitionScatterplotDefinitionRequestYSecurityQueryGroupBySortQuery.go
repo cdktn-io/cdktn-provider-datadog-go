@@ -7,15 +7,15 @@ package dashboardv2
 type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery struct {
 	// The aggregation method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#order DashboardV2#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 	// The facet name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
 	Facet *string `field:"optional" json:"facet" yaml:"facet"`
 }
 

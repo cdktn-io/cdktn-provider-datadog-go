@@ -155,6 +155,10 @@ func (j *jsiiProxy_Monitor) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Monitor) validateSetIgnoreTagKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Monitor) validateSetIncludeTagsParameters(val interface{}) error {
 	return nil
 }

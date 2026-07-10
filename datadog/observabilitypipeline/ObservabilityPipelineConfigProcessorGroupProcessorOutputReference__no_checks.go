@@ -59,6 +59,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutAddMetricTagsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutAggregateParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutCustomProcessorParameters(value interface{}) error {
 	return nil
 }
@@ -123,6 +131,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutRenameMetricTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutSampleParameters(value interface{}) error {
 	return nil
 }
@@ -132,6 +144,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputRefer
 }
 
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutSplitArrayParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorOutputReference) validatePutTagCardinalityLimitParameters(value interface{}) error {
 	return nil
 }
 

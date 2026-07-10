@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetTopologyMapDefinitionRequest struct {
 	// The request type for the Topology request ('topology').
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#request_type PowerpackV2#request_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#request_type PowerpackV2#request_type}
 	RequestType *string `field:"required" json:"requestType" yaml:"requestType"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query *PowerpackV2WidgetTopologyMapDefinitionRequestQuery `field:"optional" json:"query" yaml:"query"`
 }
 

@@ -22,6 +22,9 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	BlockedRequestPatterns() *[]*string
 	SetBlockedRequestPatterns(val *[]*string)
 	BlockedRequestPatternsInput() *[]*string
+	CaptureNetworkPayloads() interface{}
+	SetCaptureNetworkPayloads(val interface{})
+	CaptureNetworkPayloadsInput() interface{}
 	CheckCertificateRevocation() interface{}
 	SetCheckCertificateRevocation(val interface{})
 	CheckCertificateRevocationInput() interface{}
@@ -136,6 +139,7 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	ResetAcceptSelfSigned()
 	ResetAllowInsecure()
 	ResetBlockedRequestPatterns()
+	ResetCaptureNetworkPayloads()
 	ResetCheckCertificateRevocation()
 	ResetCi()
 	ResetDisableAiaIntermediateFetching()
@@ -225,6 +229,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) BlockedReques
 	_jsii_.Get(
 		j,
 		"blockedRequestPatternsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CaptureNetworkPayloads() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"captureNetworkPayloads",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) CaptureNetworkPayloadsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"captureNetworkPayloadsInput",
 		&returns,
 	)
 	return returns
@@ -761,6 +785,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetBlockedRequ
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetCaptureNetworkPayloads(val interface{}) {
+	if err := j.validateSetCaptureNetworkPayloadsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"captureNetworkPayloads",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetCheckCertificateRevocation(val interface{}) {
 	if err := j.validateSetCheckCertificateRevocationParameters(val); err != nil {
 		panic(err)
@@ -1242,6 +1277,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetBlockedR
 	_jsii_.InvokeVoid(
 		s,
 		"resetBlockedRequestPatterns",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetCaptureNetworkPayloads() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCaptureNetworkPayloads",
 		nil, // no parameters
 	)
 }

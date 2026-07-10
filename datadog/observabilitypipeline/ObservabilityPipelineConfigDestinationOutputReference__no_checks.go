@@ -67,6 +67,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) valida
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutClickhouseParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) validatePutCloudPremParameters(value interface{}) error {
 	return nil
 }

@@ -13,6 +13,9 @@ import (
 
 type LogsArchiveS3ArchiveOutputReference interface {
 	cdktn.ComplexObject
+	AccessKeyId() *string
+	SetAccessKeyId(val *string)
+	AccessKeyIdInput() *string
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -85,9 +88,12 @@ type LogsArchiveS3ArchiveOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAccessKeyId()
+	ResetAccountId()
 	ResetEncryptionKey()
 	ResetEncryptionType()
 	ResetPath()
+	ResetRoleName()
 	ResetStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +108,26 @@ type LogsArchiveS3ArchiveOutputReference interface {
 // The jsii proxy struct for LogsArchiveS3ArchiveOutputReference
 type jsiiProxy_LogsArchiveS3ArchiveOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) AccessKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) AccessKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessKeyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) AccountId() *string {
@@ -339,6 +365,17 @@ func NewLogsArchiveS3ArchiveOutputReference_Override(l LogsArchiveS3ArchiveOutpu
 		"@cdktn/provider-datadog.logsArchive.LogsArchiveS3ArchiveOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference)SetAccessKeyId(val *string) {
+	if err := j.validateSetAccessKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessKeyId",
+		val,
 	)
 }
 
@@ -660,6 +697,22 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetAccessKeyId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccessKeyId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetEncryptionKey() {
 	_jsii_.InvokeVoid(
 		l,
@@ -680,6 +733,14 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetPath() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) ResetRoleName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoleName",
 		nil, // no parameters
 	)
 }

@@ -7,15 +7,15 @@ package observabilitypipeline
 type ObservabilityPipelineConfigSourceOpentelemetry struct {
 	// Environment variable name containing the gRPC server address for receiving OTLP data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
 	GrpcAddressKey *string `field:"optional" json:"grpcAddressKey" yaml:"grpcAddressKey"`
 	// Environment variable name containing the HTTP server address for receiving OTLP data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
 	HttpAddressKey *string `field:"optional" json:"httpAddressKey" yaml:"httpAddressKey"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 }
 

@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetFunnelDefinitionRequest struct {
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#query DashboardV2#query}
 	Query *DashboardV2WidgetFunnelDefinitionRequestQuery `field:"required" json:"query" yaml:"query"`
 }
 

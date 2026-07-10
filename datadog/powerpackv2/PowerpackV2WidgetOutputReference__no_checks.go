@@ -127,6 +127,10 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutNoteDefinitionPa
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutPointPlotDefinitionParameters(value *PowerpackV2WidgetPointPlotDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutQueryTableDefinitionParameters(value *PowerpackV2WidgetQueryTableDefinition) error {
 	return nil
 }

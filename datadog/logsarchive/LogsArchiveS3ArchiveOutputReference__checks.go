@@ -101,6 +101,14 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetAccessKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

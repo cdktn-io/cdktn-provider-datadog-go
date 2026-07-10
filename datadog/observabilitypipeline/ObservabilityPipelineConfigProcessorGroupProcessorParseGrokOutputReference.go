@@ -31,8 +31,13 @@ type ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference 
 	DisableLibraryRules() interface{}
 	SetDisableLibraryRules(val interface{})
 	DisableLibraryRulesInput() interface{}
+	Field() *string
+	SetField(val *string)
+	FieldInput() *string
 	// Experimental.
 	Fqn() *string
+	IncludeRule() ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList
+	IncludeRuleInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Rule() ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleList
@@ -69,8 +74,11 @@ type ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference 
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutIncludeRule(value interface{})
 	PutRule(value interface{})
 	ResetDisableLibraryRules()
+	ResetField()
+	ResetIncludeRule()
 	ResetRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,11 +145,51 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) Field() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"field",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) FieldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) IncludeRule() ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorParseGrokIncludeRuleList
+	_jsii_.Get(
+		j,
+		"includeRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) IncludeRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeRuleInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +302,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 	_jsii_.Set(
 		j,
 		"disableLibraryRules",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference)SetField(val *string) {
+	if err := j.validateSetFieldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"field",
 		val,
 	)
 }
@@ -477,6 +536,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) PutIncludeRule(value interface{}) {
+	if err := o.validatePutIncludeRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putIncludeRule",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) PutRule(value interface{}) {
 	if err := o.validatePutRuleParameters(value); err != nil {
 		panic(err)
@@ -492,6 +562,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 	_jsii_.InvokeVoid(
 		o,
 		"resetDisableLibraryRules",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) ResetField() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetField",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) ResetIncludeRule() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIncludeRule",
 		nil, // no parameters
 	)
 }

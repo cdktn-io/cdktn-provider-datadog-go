@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package logscustompipeline
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetInternalValueParameters(val *LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilter) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewLogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessorCategoryFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

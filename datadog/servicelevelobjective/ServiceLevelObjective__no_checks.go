@@ -127,6 +127,10 @@ func (j *jsiiProxy_ServiceLevelObjective) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ServiceLevelObjective) validateSetIgnoreTagKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceLevelObjective) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

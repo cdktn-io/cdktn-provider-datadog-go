@@ -7,19 +7,19 @@ package powerpackv2
 type PowerpackV2WidgetTreemapDefinitionRequest struct {
 	// formula block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#formula PowerpackV2#formula}
 	Formula interface{} `field:"optional" json:"formula" yaml:"formula"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
 	Sort *PowerpackV2WidgetTreemapDefinitionRequestSort `field:"optional" json:"sort" yaml:"sort"`
 	// style block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#style PowerpackV2#style}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#style PowerpackV2#style}
 	Style *PowerpackV2WidgetTreemapDefinitionRequestStyle `field:"optional" json:"style" yaml:"style"`
 }
 

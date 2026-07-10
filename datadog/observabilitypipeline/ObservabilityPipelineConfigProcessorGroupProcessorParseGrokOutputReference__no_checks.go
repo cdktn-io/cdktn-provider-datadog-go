@@ -47,6 +47,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) validatePutIncludeRuleParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) validatePutRuleParameters(value interface{}) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOu
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) validateSetDisableLibraryRulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorParseGrokOutputReference) validateSetFieldParameters(val *string) error {
 	return nil
 }
 

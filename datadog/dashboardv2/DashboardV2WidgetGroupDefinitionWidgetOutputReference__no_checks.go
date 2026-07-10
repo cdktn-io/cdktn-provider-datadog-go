@@ -123,6 +123,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutPointPlotDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	return nil
 }

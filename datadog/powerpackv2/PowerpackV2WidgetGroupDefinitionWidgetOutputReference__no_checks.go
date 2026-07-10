@@ -123,6 +123,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutPointPlotDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetPointPlotDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	return nil
 }

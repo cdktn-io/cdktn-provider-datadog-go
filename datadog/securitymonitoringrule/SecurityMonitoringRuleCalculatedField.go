@@ -7,11 +7,11 @@ package securitymonitoringrule
 type SecurityMonitoringRuleCalculatedField struct {
 	// Expression. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// Field name. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

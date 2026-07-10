@@ -51,6 +51,10 @@ func (l *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetAccessKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogsArchiveS3ArchiveOutputReference) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -99,6 +99,10 @@ func (j *jsiiProxy_SecurityMonitoringCriticalAsset) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecurityMonitoringCriticalAsset) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityMonitoringCriticalAsset) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -302,6 +302,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutPointPlotDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetPointPlotDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

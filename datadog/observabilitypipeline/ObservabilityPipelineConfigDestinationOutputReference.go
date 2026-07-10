@@ -23,6 +23,8 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	AmazonSecurityLakeInput() interface{}
 	AzureStorage() ObservabilityPipelineConfigDestinationAzureStorageList
 	AzureStorageInput() interface{}
+	Clickhouse() ObservabilityPipelineConfigDestinationClickhouseList
+	ClickhouseInput() interface{}
 	CloudPrem() ObservabilityPipelineConfigDestinationCloudPremList
 	CloudPremInput() interface{}
 	// the index of the complex object in a list.
@@ -127,6 +129,7 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	PutAmazonS3Generic(value interface{})
 	PutAmazonSecurityLake(value interface{})
 	PutAzureStorage(value interface{})
+	PutClickhouse(value interface{})
 	PutCloudPrem(value interface{})
 	PutCrowdstrikeNextGenSiem(value interface{})
 	PutDatabricksZerobus(value interface{})
@@ -153,6 +156,7 @@ type ObservabilityPipelineConfigDestinationOutputReference interface {
 	ResetAmazonS3Generic()
 	ResetAmazonSecurityLake()
 	ResetAzureStorage()
+	ResetClickhouse()
 	ResetCloudPrem()
 	ResetCrowdstrikeNextGenSiem()
 	ResetDatabricksZerobus()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) AzureS
 	_jsii_.Get(
 		j,
 		"azureStorageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) Clickhouse() ObservabilityPipelineConfigDestinationClickhouseList {
+	var returns ObservabilityPipelineConfigDestinationClickhouseList
+	_jsii_.Get(
+		j,
+		"clickhouse",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ClickhouseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clickhouseInput",
 		&returns,
 	)
 	return returns
@@ -1165,6 +1189,17 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutAzu
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutClickhouse(value interface{}) {
+	if err := o.validatePutClickhouseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putClickhouse",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) PutCloudPrem(value interface{}) {
 	if err := o.validatePutCloudPremParameters(value); err != nil {
 		panic(err)
@@ -1432,6 +1467,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		o,
 		"resetAzureStorage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOutputReference) ResetClickhouse() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetClickhouse",
 		nil, // no parameters
 	)
 }

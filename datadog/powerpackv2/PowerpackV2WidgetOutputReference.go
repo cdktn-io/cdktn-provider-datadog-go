@@ -75,6 +75,8 @@ type PowerpackV2WidgetOutputReference interface {
 	ManageStatusDefinitionInput() *PowerpackV2WidgetManageStatusDefinition
 	NoteDefinition() PowerpackV2WidgetNoteDefinitionOutputReference
 	NoteDefinitionInput() *PowerpackV2WidgetNoteDefinition
+	PointPlotDefinition() PowerpackV2WidgetPointPlotDefinitionOutputReference
+	PointPlotDefinitionInput() *PowerpackV2WidgetPointPlotDefinition
 	QueryTableDefinition() PowerpackV2WidgetQueryTableDefinitionOutputReference
 	QueryTableDefinitionInput() *PowerpackV2WidgetQueryTableDefinition
 	QueryValueDefinition() PowerpackV2WidgetQueryValueDefinitionOutputReference
@@ -159,6 +161,7 @@ type PowerpackV2WidgetOutputReference interface {
 	PutLogStreamDefinition(value *PowerpackV2WidgetLogStreamDefinition)
 	PutManageStatusDefinition(value *PowerpackV2WidgetManageStatusDefinition)
 	PutNoteDefinition(value *PowerpackV2WidgetNoteDefinition)
+	PutPointPlotDefinition(value *PowerpackV2WidgetPointPlotDefinition)
 	PutQueryTableDefinition(value *PowerpackV2WidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *PowerpackV2WidgetQueryValueDefinition)
 	PutRunWorkflowDefinition(value *PowerpackV2WidgetRunWorkflowDefinition)
@@ -196,6 +199,7 @@ type PowerpackV2WidgetOutputReference interface {
 	ResetLogStreamDefinition()
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
+	ResetPointPlotDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
 	ResetRunWorkflowDefinition()
@@ -692,6 +696,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) NoteDefinitionInput() *Powe
 	_jsii_.Get(
 		j,
 		"noteDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) PointPlotDefinition() PowerpackV2WidgetPointPlotDefinitionOutputReference {
+	var returns PowerpackV2WidgetPointPlotDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"pointPlotDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) PointPlotDefinitionInput() *PowerpackV2WidgetPointPlotDefinition {
+	var returns *PowerpackV2WidgetPointPlotDefinition
+	_jsii_.Get(
+		j,
+		"pointPlotDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1537,6 +1561,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutNoteDefinition(value *Po
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutPointPlotDefinition(value *PowerpackV2WidgetPointPlotDefinition) {
+	if err := p.validatePutPointPlotDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putPointPlotDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutQueryTableDefinition(value *PowerpackV2WidgetQueryTableDefinition) {
 	if err := p.validatePutQueryTableDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1877,6 +1912,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetNoteDefinition() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNoteDefinition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetPointPlotDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPointPlotDefinition",
 		nil, // no parameters
 	)
 }

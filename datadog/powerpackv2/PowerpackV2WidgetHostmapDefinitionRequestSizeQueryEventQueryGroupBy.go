@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetHostmapDefinitionRequestSizeQueryEventQueryGroupBy struct {
 	// The event facet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
 	Facet *string `field:"required" json:"facet" yaml:"facet"`
 	// The number of groups to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#sort PowerpackV2#sort}
 	Sort *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryEventQueryGroupBySort `field:"optional" json:"sort" yaml:"sort"`
 }
 

@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetFunnelDefinitionRequestQueryStep struct {
 	// The facet of the step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#facet PowerpackV2#facet}
 	Facet *string `field:"required" json:"facet" yaml:"facet"`
 	// The value of the step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack_v2#value PowerpackV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#value PowerpackV2#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 
