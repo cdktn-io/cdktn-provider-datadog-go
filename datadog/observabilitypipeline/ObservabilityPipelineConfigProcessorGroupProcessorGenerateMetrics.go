@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics struct {
 	// metric block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
 	Metric interface{} `field:"optional" json:"metric" yaml:"metric"`
 }
 

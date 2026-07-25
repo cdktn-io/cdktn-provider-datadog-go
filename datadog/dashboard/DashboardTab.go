@@ -7,7 +7,7 @@ package dashboard
 type DashboardTab struct {
 	// The name of the tab.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard#name Dashboard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard#name Dashboard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// List of widget references for this tab.
 	//

@@ -44,6 +44,8 @@ type IntegrationAwsAccountMetricsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MetricNameFilters() IntegrationAwsAccountMetricsConfigMetricNameFiltersList
+	MetricNameFiltersInput() interface{}
 	NamespaceFilters() IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference
 	NamespaceFiltersInput() interface{}
 	TagFilters() IntegrationAwsAccountMetricsConfigTagFiltersList
@@ -80,12 +82,14 @@ type IntegrationAwsAccountMetricsConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutMetricNameFilters(value interface{})
 	PutNamespaceFilters(value *IntegrationAwsAccountMetricsConfigNamespaceFilters)
 	PutTagFilters(value interface{})
 	ResetAutomuteEnabled()
 	ResetCollectCloudwatchAlarms()
 	ResetCollectCustomMetrics()
 	ResetEnabled()
+	ResetMetricNameFilters()
 	ResetNamespaceFilters()
 	ResetTagFilters()
 	// Produce the Token's value at resolution time.
@@ -228,6 +232,26 @@ func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) MetricNameFilters() IntegrationAwsAccountMetricsConfigMetricNameFiltersList {
+	var returns IntegrationAwsAccountMetricsConfigMetricNameFiltersList
+	_jsii_.Get(
+		j,
+		"metricNameFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) MetricNameFiltersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metricNameFiltersInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +630,17 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) Interpolat
 	return returns
 }
 
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) PutMetricNameFilters(value interface{}) {
+	if err := i.validatePutMetricNameFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMetricNameFilters",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) PutNamespaceFilters(value *IntegrationAwsAccountMetricsConfigNamespaceFilters) {
 	if err := i.validatePutNamespaceFiltersParameters(value); err != nil {
 		panic(err)
@@ -656,6 +691,14 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) ResetEnabl
 	_jsii_.InvokeVoid(
 		i,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) ResetMetricNameFilters() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMetricNameFilters",
 		nil, // no parameters
 	)
 }

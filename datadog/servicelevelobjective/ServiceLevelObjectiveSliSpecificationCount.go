@@ -7,19 +7,19 @@ package servicelevelobjective
 type ServiceLevelObjectiveSliSpecificationCount struct {
 	// The formula that specifies how to compute the good events.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective#good_events_formula ServiceLevelObjective#good_events_formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_level_objective#good_events_formula ServiceLevelObjective#good_events_formula}
 	GoodEventsFormula *string `field:"required" json:"goodEventsFormula" yaml:"goodEventsFormula"`
 	// queries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective#queries ServiceLevelObjective#queries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_level_objective#queries ServiceLevelObjective#queries}
 	Queries interface{} `field:"required" json:"queries" yaml:"queries"`
 	// The formula that specifies how to compute the bad events. Mutually exclusive with `total_events_formula`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective#bad_events_formula ServiceLevelObjective#bad_events_formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_level_objective#bad_events_formula ServiceLevelObjective#bad_events_formula}
 	BadEventsFormula *string `field:"optional" json:"badEventsFormula" yaml:"badEventsFormula"`
 	// The formula that specifies how to compute the total events. Mutually exclusive with `bad_events_formula`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_level_objective#total_events_formula ServiceLevelObjective#total_events_formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_level_objective#total_events_formula ServiceLevelObjective#total_events_formula}
 	TotalEventsFormula *string `field:"optional" json:"totalEventsFormula" yaml:"totalEventsFormula"`
 }
 

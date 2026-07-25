@@ -59,6 +59,18 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAcc
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAddClaimsExpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAddClaimsIatParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
 	return nil
 }
@@ -83,11 +95,23 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetDom
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetExpiresInParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetHeaderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetInternalValueParameters(val *SyntheticsTestRequestBasicauth) error {
 	return nil
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 
@@ -100,6 +124,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetRes
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetSecretParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +152,10 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTer
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTokenPrefixParameters(val *string) error {
 	return nil
 }
 

@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinitionTimeLive struct {
 	// Unit of the time span. Valid values are `minute`, `hour`, `day`, `week`, `month`, `year`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#unit DashboardV2#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#unit DashboardV2#unit}
 	Unit *string `field:"required" json:"unit" yaml:"unit"`
 	// Value of the time span.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#value DashboardV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#value DashboardV2#value}
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 

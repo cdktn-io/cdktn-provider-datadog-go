@@ -59,6 +59,18 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAddClaimsExpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAddClaimsIatParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
 	return nil
 }
@@ -83,11 +95,23 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetExpiresInParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetHeaderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetInternalValueParameters(val *SyntheticsTestApiStepRequestBasicauth) error {
 	return nil
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 
@@ -100,6 +124,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetSecretParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +152,10 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTokenPrefixParameters(val *string) error {
 	return nil
 }
 

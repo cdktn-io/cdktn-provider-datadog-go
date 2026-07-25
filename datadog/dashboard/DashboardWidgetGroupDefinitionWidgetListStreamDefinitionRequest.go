@@ -7,19 +7,19 @@ package dashboard
 type DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequest struct {
 	// columns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard#columns Dashboard#columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard#columns Dashboard#columns}
 	Columns interface{} `field:"required" json:"columns" yaml:"columns"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard#query Dashboard#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard#query Dashboard#query}
 	Query *DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuery `field:"required" json:"query" yaml:"query"`
 	// Widget response format. Valid values are `event_list`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard#response_format Dashboard#response_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard#response_format Dashboard#response_format}
 	ResponseFormat *string `field:"required" json:"responseFormat" yaml:"responseFormat"`
 	// The description of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard#description Dashboard#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard#description Dashboard#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

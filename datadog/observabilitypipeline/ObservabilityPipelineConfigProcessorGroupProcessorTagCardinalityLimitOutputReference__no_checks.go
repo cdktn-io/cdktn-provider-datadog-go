@@ -51,6 +51,10 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) validatePutTrackingModeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

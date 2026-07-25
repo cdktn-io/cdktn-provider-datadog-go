@@ -1138,6 +1138,50 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorExcludeAttributeProcessor",
+		reflect.TypeOf((*LogsCustomPipelineProcessorExcludeAttributeProcessor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorExcludeAttributeProcessorOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorExcludeAttributeProcessorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attributeToExclude", GoGetter: "AttributeToExclude"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeToExcludeInput", GoGetter: "AttributeToExcludeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsEnabled", GoMethod: "ResetIsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorExcludeAttributeProcessorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGeoIpParser",
 		reflect.TypeOf((*LogsCustomPipelineProcessorGeoIpParser)(nil)).Elem(),
 	)
@@ -1412,6 +1456,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dateRemapperInput", GoGetter: "DateRemapperInput"},
 			_jsii_.MemberProperty{JsiiProperty: "decoderProcessor", GoGetter: "DecoderProcessor"},
 			_jsii_.MemberProperty{JsiiProperty: "decoderProcessorInput", GoGetter: "DecoderProcessorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeAttributeProcessor", GoGetter: "ExcludeAttributeProcessor"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeAttributeProcessorInput", GoGetter: "ExcludeAttributeProcessorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "geoIpParser", GoGetter: "GeoIpParser"},
 			_jsii_.MemberProperty{JsiiProperty: "geoIpParserInput", GoGetter: "GeoIpParserInput"},
@@ -1442,6 +1488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCategoryProcessor", GoMethod: "PutCategoryProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putDateRemapper", GoMethod: "PutDateRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putDecoderProcessor", GoMethod: "PutDecoderProcessor"},
+			_jsii_.MemberMethod{JsiiMethod: "putExcludeAttributeProcessor", GoMethod: "PutExcludeAttributeProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putGeoIpParser", GoMethod: "PutGeoIpParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrokParser", GoMethod: "PutGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putLookupProcessor", GoMethod: "PutLookupProcessor"},
@@ -1465,6 +1512,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCategoryProcessor", GoMethod: "ResetCategoryProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDateRemapper", GoMethod: "ResetDateRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDecoderProcessor", GoMethod: "ResetDecoderProcessor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeAttributeProcessor", GoMethod: "ResetExcludeAttributeProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoIpParser", GoMethod: "ResetGeoIpParser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrokParser", GoMethod: "ResetGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLookupProcessor", GoMethod: "ResetLookupProcessor"},
@@ -2610,6 +2658,50 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attributeToExclude", GoGetter: "AttributeToExclude"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeToExcludeInput", GoGetter: "AttributeToExcludeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsEnabled", GoMethod: "ResetIsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParser",
 		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorGeoIpParser)(nil)).Elem(),
 	)
@@ -2884,6 +2976,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dateRemapperInput", GoGetter: "DateRemapperInput"},
 			_jsii_.MemberProperty{JsiiProperty: "decoderProcessor", GoGetter: "DecoderProcessor"},
 			_jsii_.MemberProperty{JsiiProperty: "decoderProcessorInput", GoGetter: "DecoderProcessorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeAttributeProcessor", GoGetter: "ExcludeAttributeProcessor"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeAttributeProcessorInput", GoGetter: "ExcludeAttributeProcessorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "geoIpParser", GoGetter: "GeoIpParser"},
 			_jsii_.MemberProperty{JsiiProperty: "geoIpParserInput", GoGetter: "GeoIpParserInput"},
@@ -2912,6 +3006,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCategoryProcessor", GoMethod: "PutCategoryProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putDateRemapper", GoMethod: "PutDateRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "putDecoderProcessor", GoMethod: "PutDecoderProcessor"},
+			_jsii_.MemberMethod{JsiiMethod: "putExcludeAttributeProcessor", GoMethod: "PutExcludeAttributeProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "putGeoIpParser", GoMethod: "PutGeoIpParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrokParser", GoMethod: "PutGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "putLookupProcessor", GoMethod: "PutLookupProcessor"},
@@ -2934,6 +3029,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCategoryProcessor", GoMethod: "ResetCategoryProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDateRemapper", GoMethod: "ResetDateRemapper"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDecoderProcessor", GoMethod: "ResetDecoderProcessor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeAttributeProcessor", GoMethod: "ResetExcludeAttributeProcessor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoIpParser", GoMethod: "ResetGeoIpParser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrokParser", GoMethod: "ResetGrokParser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLookupProcessor", GoMethod: "ResetLookupProcessor"},

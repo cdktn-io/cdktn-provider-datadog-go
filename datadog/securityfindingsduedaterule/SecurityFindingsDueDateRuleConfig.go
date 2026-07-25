@@ -24,19 +24,19 @@ type SecurityFindingsDueDateRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The action to take when the due date rule matches a finding.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule#action SecurityFindingsDueDateRule#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule#action SecurityFindingsDueDateRule#action}
 	Action *SecurityFindingsDueDateRuleAction `field:"required" json:"action" yaml:"action"`
 	// The name of the due date rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule#name SecurityFindingsDueDateRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule#name SecurityFindingsDueDateRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Defines the scope of findings to which the automation rule applies.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule#rule SecurityFindingsDueDateRule#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule#rule SecurityFindingsDueDateRule#rule}
 	Rule *SecurityFindingsDueDateRuleRule `field:"required" json:"rule" yaml:"rule"`
 	// Whether the due date rule is enabled. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule#enabled SecurityFindingsDueDateRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule#enabled SecurityFindingsDueDateRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

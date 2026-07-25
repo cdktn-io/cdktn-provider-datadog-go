@@ -75,6 +75,10 @@ func (i *jsiiProxy_IncidentType) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (i *jsiiProxy_IncidentType) validatePutConfigurationParameters(value *IncidentTypeConfiguration) error {
+	return nil
+}
+
 func validateIncidentType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

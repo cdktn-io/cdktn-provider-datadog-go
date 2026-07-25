@@ -107,6 +107,10 @@ func (j *jsiiProxy_AgentlessScanningAzureScanOptions) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_AgentlessScanningAzureScanOptions) validateSetFunctionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AgentlessScanningAzureScanOptions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

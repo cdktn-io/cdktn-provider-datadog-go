@@ -44,6 +44,9 @@ type ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference interface
 	KeyPassKey() *string
 	SetKeyPassKey(val *string)
 	KeyPassKeyInput() *string
+	ServerName() *string
+	SetServerName(val *string)
+	ServerNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference interface
 	ResetCaFile()
 	ResetKeyFile()
 	ResetKeyPassKey()
+	ResetServerName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -224,6 +228,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference) ServerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference) ServerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -345,6 +369,17 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputRefer
 	_jsii_.Set(
 		j,
 		"keyPassKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference)SetServerName(val *string) {
+	if err := j.validateSetServerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverName",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputRefer
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyPassKey",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationCloudPremTlsOutputReference) ResetServerName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetServerName",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_access_token datadog_service_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_access_token datadog_service_access_token}.
 type ServiceAccessToken interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -443,7 +443,7 @@ func (j *jsiiProxy_ServiceAccessToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_access_token datadog_service_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_access_token datadog_service_access_token} Resource.
 func NewServiceAccessToken(scope constructs.Construct, id *string, config *ServiceAccessTokenConfig) ServiceAccessToken {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewServiceAccessToken(scope constructs.Construct, id *string, config *Servi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/service_access_token datadog_service_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/service_access_token datadog_service_access_token} Resource.
 func NewServiceAccessToken_Override(s ServiceAccessToken, scope constructs.Construct, id *string, config *ServiceAccessTokenConfig) {
 	_init_.Initialize()
 

@@ -12,11 +12,13 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type datadog_incident_type}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type}.
 type IncidentType interface {
 	cdktn.TerraformResource
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	Configuration() IncidentTypeConfigurationOutputReference
+	ConfigurationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -114,6 +116,8 @@ type IncidentType interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConfiguration(value *IncidentTypeConfiguration)
+	ResetConfiguration()
 	ResetDescription()
 	ResetIsDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -151,6 +155,26 @@ func (j *jsiiProxy_IncidentType) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentType) Configuration() IncidentTypeConfigurationOutputReference {
+	var returns IncidentTypeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IncidentType) ConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +401,7 @@ func (j *jsiiProxy_IncidentType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTypeConfig) IncidentType {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewIncidentType(scope constructs.Construct, id *string, config *IncidentTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/incident_type datadog_incident_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/incident_type datadog_incident_type} Resource.
 func NewIncidentType_Override(i IncidentType, scope constructs.Construct, id *string, config *IncidentTypeConfig) {
 	_init_.Initialize()
 
@@ -857,6 +881,25 @@ func (i *jsiiProxy_IncidentType) OverrideLogicalId(newLogicalId *string) {
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IncidentType) PutConfiguration(value *IncidentTypeConfiguration) {
+	if err := i.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IncidentType) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetConfiguration",
+		nil, // no parameters
 	)
 }
 

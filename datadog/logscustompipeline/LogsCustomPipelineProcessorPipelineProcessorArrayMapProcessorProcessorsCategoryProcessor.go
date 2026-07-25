@@ -7,15 +7,15 @@ package logscustompipeline
 type LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor struct {
 	// category block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
 	Category interface{} `field:"required" json:"category" yaml:"category"`
 	// Target attribute path for the category value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 	// Name of the sub-processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

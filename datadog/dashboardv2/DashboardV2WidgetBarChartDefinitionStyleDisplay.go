@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetBarChartDefinitionStyleDisplay struct {
 	// flat block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#flat DashboardV2#flat}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#flat DashboardV2#flat}
 	Flat *DashboardV2WidgetBarChartDefinitionStyleDisplayFlat `field:"optional" json:"flat" yaml:"flat"`
 	// stacked block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#stacked DashboardV2#stacked}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#stacked DashboardV2#stacked}
 	Stacked *DashboardV2WidgetBarChartDefinitionStyleDisplayStacked `field:"optional" json:"stacked" yaml:"stacked"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule}.
 type SecurityFindingsDueDateRule interface {
 	cdktn.TerraformResource
 	Action() SecurityFindingsDueDateRuleActionOutputReference
@@ -399,7 +399,7 @@ func (j *jsiiProxy_SecurityFindingsDueDateRule) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule} Resource.
 func NewSecurityFindingsDueDateRule(scope constructs.Construct, id *string, config *SecurityFindingsDueDateRuleConfig) SecurityFindingsDueDateRule {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewSecurityFindingsDueDateRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_due_date_rule datadog_security_findings_due_date_rule} Resource.
 func NewSecurityFindingsDueDateRule_Override(s SecurityFindingsDueDateRule, scope constructs.Construct, id *string, config *SecurityFindingsDueDateRuleConfig) {
 	_init_.Initialize()
 

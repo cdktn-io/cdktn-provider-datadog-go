@@ -95,6 +95,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) validateSetServerSideEncryptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) validateSetSsekmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

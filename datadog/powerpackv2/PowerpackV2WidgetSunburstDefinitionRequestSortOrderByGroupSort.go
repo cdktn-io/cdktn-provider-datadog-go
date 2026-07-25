@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetSunburstDefinitionRequestSortOrderByGroupSort struct {
 	// The name of the group tag to sort by.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#name PowerpackV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Widget sorting direction. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#order PowerpackV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#order PowerpackV2#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 }
 

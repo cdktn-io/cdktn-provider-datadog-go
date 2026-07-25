@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order}.
 type SecurityFindingsTicketCreationRulesOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_SecurityFindingsTicketCreationRulesOrder) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order} Resource.
 func NewSecurityFindingsTicketCreationRulesOrder(scope constructs.Construct, id *string, config *SecurityFindingsTicketCreationRulesOrderConfig) SecurityFindingsTicketCreationRulesOrder {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewSecurityFindingsTicketCreationRulesOrder(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_ticket_creation_rules_order datadog_security_findings_ticket_creation_rules_order} Resource.
 func NewSecurityFindingsTicketCreationRulesOrder_Override(s SecurityFindingsTicketCreationRulesOrder, scope constructs.Construct, id *string, config *SecurityFindingsTicketCreationRulesOrderConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetListStreamDefinitionRequestQuerySort struct {
 	// The facet path for the column.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#column DashboardV2#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#column DashboardV2#column}
 	Column *string `field:"required" json:"column" yaml:"column"`
 	// Widget sorting methods. Valid values are `asc`, `desc`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#order DashboardV2#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#order DashboardV2#order}
 	Order *string `field:"required" json:"order" yaml:"order"`
 }
 

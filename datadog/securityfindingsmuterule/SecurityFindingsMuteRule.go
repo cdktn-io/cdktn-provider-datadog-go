@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule}.
 type SecurityFindingsMuteRule interface {
 	cdktn.TerraformResource
 	Action() SecurityFindingsMuteRuleActionOutputReference
@@ -399,7 +399,7 @@ func (j *jsiiProxy_SecurityFindingsMuteRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource.
 func NewSecurityFindingsMuteRule(scope constructs.Construct, id *string, config *SecurityFindingsMuteRuleConfig) SecurityFindingsMuteRule {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewSecurityFindingsMuteRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_findings_mute_rule datadog_security_findings_mute_rule} Resource.
 func NewSecurityFindingsMuteRule_Override(s SecurityFindingsMuteRule, scope constructs.Construct, id *string, config *SecurityFindingsMuteRuleConfig) {
 	_init_.Initialize()
 

@@ -93,6 +93,37 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReferen
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validatePutAuthParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ObservabilityPipelineConfigDestinationOpensearchAuth:
+		value := value.(*[]*ObservabilityPipelineConfigDestinationOpensearchAuth)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ObservabilityPipelineConfigDestinationOpensearchAuth:
+		value_ := value.([]*ObservabilityPipelineConfigDestinationOpensearchAuth)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ObservabilityPipelineConfigDestinationOpensearchAuth; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validatePutBufferParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -229,6 +260,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReferen
 }
 
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationOpensearchOutputReference) validateSetEndpointUrlKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

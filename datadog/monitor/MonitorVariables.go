@@ -7,27 +7,27 @@ package monitor
 type MonitorVariables struct {
 	// aggregate_augmented_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
 	AggregateAugmentedQuery interface{} `field:"optional" json:"aggregateAugmentedQuery" yaml:"aggregateAugmentedQuery"`
 	// aggregate_filtered_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
 	AggregateFilteredQuery interface{} `field:"optional" json:"aggregateFilteredQuery" yaml:"aggregateFilteredQuery"`
 	// cloud_cost_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 	CloudCostQuery interface{} `field:"optional" json:"cloudCostQuery" yaml:"cloudCostQuery"`
 	// data_jobs_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
 	DataJobsQuery interface{} `field:"optional" json:"dataJobsQuery" yaml:"dataJobsQuery"`
 	// data_quality_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
 	DataQualityQuery interface{} `field:"optional" json:"dataQualityQuery" yaml:"dataQualityQuery"`
 	// event_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/monitor#event_query Monitor#event_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#event_query Monitor#event_query}
 	EventQuery interface{} `field:"optional" json:"eventQuery" yaml:"eventQuery"`
 }
 

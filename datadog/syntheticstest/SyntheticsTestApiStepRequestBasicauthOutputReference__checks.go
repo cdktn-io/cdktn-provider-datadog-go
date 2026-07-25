@@ -117,6 +117,54 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAddClaimsExpParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAddClaimsIatParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAlgorithmParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -214,6 +262,22 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetExpiresInParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetHeaderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetInternalValueParameters(val *SyntheticsTestApiStepRequestBasicauth) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -223,6 +287,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetPayloadParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,6 +319,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetSecretParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,6 +375,14 @@ func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validat
 }
 
 func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestApiStepRequestBasicauthOutputReference) validateSetTokenPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

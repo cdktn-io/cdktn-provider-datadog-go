@@ -45,6 +45,8 @@ type ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutput
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TrackingMode() ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList
+	TrackingModeInput() interface{}
 	ValueLimit() *float64
 	SetValueLimit(val *float64)
 	ValueLimitInput() *float64
@@ -73,7 +75,9 @@ type ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutput
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPerMetricLimit(value interface{})
+	PutTrackingMode(value interface{})
 	ResetPerMetricLimit()
+	ResetTrackingMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) TrackingMode() ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList {
+	var returns ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitTrackingModeList
+	_jsii_.Get(
+		j,
+		"trackingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) TrackingModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trackingModeInput",
 		&returns,
 	)
 	return returns
@@ -521,10 +545,29 @@ func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	)
 }
 
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) PutTrackingMode(value interface{}) {
+	if err := o.validatePutTrackingModeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTrackingMode",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) ResetPerMetricLimit() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPerMetricLimit",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitOutputReference) ResetTrackingMode() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTrackingMode",
 		nil, // no parameters
 	)
 }

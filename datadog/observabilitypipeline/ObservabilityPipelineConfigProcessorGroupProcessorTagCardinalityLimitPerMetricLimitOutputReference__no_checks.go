@@ -75,7 +75,7 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference) validateSetModeParameters(val *string) error {
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitOutputReference) validateSetOverrideTypeParameters(val *string) error {
 	return nil
 }
 

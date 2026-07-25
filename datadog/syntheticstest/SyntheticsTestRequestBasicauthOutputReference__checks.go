@@ -117,6 +117,54 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAcc
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAddClaimsExpParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAddClaimsIatParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAlgorithmParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetAudienceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -214,6 +262,22 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetDom
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetExpiresInParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetHeaderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetInternalValueParameters(val *SyntheticsTestRequestBasicauth) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -223,6 +287,14 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetInt
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetPayloadParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,6 +319,14 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetRes
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetSecretParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,6 +375,14 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTer
 }
 
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTokenApiAuthenticationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) validateSetTokenPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

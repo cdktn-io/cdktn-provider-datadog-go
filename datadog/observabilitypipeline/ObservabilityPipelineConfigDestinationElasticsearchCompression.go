@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationElasticsearchCompression struct {
 	// The compression algorithm applied when sending data to Elasticsearch. Valid values are `none`, `gzip`, `zlib`, `zstd`, `snappy`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 	Algorithm *string `field:"required" json:"algorithm" yaml:"algorithm"`
 	// The compression level. Only applicable for `gzip`, `zlib`, and `zstd` algorithms.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 	Level *float64 `field:"optional" json:"level" yaml:"level"`
 }
 

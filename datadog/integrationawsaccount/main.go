@@ -462,6 +462,72 @@ func init() {
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFilters",
+		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigMetricNameFilters)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFiltersList",
+		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigMetricNameFiltersList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_IntegrationAwsAccountMetricsConfigMetricNameFiltersList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigMetricNameFiltersOutputReference",
+		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigMetricNameFiltersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeOnly", GoGetter: "ExcludeOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeOnlyInput", GoGetter: "ExcludeOnlyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeOnly", GoGetter: "IncludeOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "includeOnlyInput", GoGetter: "IncludeOnlyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
+			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeOnly", GoMethod: "ResetExcludeOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeOnly", GoMethod: "ResetIncludeOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_IntegrationAwsAccountMetricsConfigMetricNameFiltersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.integrationAwsAccount.IntegrationAwsAccountMetricsConfigNamespaceFilters",
 		reflect.TypeOf((*IntegrationAwsAccountMetricsConfigNamespaceFilters)(nil)).Elem(),
 	)
@@ -532,14 +598,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNameFilters", GoGetter: "MetricNameFilters"},
+			_jsii_.MemberProperty{JsiiProperty: "metricNameFiltersInput", GoGetter: "MetricNameFiltersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceFilters", GoGetter: "NamespaceFilters"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceFiltersInput", GoGetter: "NamespaceFiltersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putMetricNameFilters", GoMethod: "PutMetricNameFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "putNamespaceFilters", GoMethod: "PutNamespaceFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "putTagFilters", GoMethod: "PutTagFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomuteEnabled", GoMethod: "ResetAutomuteEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCollectCloudwatchAlarms", GoMethod: "ResetCollectCloudwatchAlarms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCollectCustomMetrics", GoMethod: "ResetCollectCustomMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricNameFilters", GoMethod: "ResetMetricNameFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespaceFilters", GoMethod: "ResetNamespaceFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagFilters", GoMethod: "ResetTagFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

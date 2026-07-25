@@ -75,6 +75,10 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutDecode
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutExcludeAttributeProcessorParameters(value *LogsCustomPipelineProcessorExcludeAttributeProcessor) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorOutputReference) validatePutGeoIpParserParameters(value *LogsCustomPipelineProcessorGeoIpParser) error {
 	return nil
 }

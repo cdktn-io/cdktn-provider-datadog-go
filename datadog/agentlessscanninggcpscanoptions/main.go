@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudFunction", GoGetter: "CloudFunction"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudFunctionInput", GoGetter: "CloudFunctionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complianceHost", GoGetter: "ComplianceHost"},
 			_jsii_.MemberProperty{JsiiProperty: "complianceHostInput", GoGetter: "ComplianceHostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},

@@ -42,6 +42,8 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	DateRemapperInput() *LogsCustomPipelineProcessorPipelineProcessorDateRemapper
 	DecoderProcessor() LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference
 	DecoderProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor
+	ExcludeAttributeProcessor() LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference
+	ExcludeAttributeProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor
 	// Experimental.
 	Fqn() *string
 	GeoIpParser() LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference
@@ -111,6 +113,7 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	PutCategoryProcessor(value *LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor)
 	PutDateRemapper(value *LogsCustomPipelineProcessorPipelineProcessorDateRemapper)
 	PutDecoderProcessor(value *LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor)
+	PutExcludeAttributeProcessor(value *LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor)
 	PutGeoIpParser(value *LogsCustomPipelineProcessorPipelineProcessorGeoIpParser)
 	PutGrokParser(value *LogsCustomPipelineProcessorPipelineProcessorGrokParser)
 	PutLookupProcessor(value *LogsCustomPipelineProcessorPipelineProcessorLookupProcessor)
@@ -131,6 +134,7 @@ type LogsCustomPipelineProcessorPipelineProcessorOutputReference interface {
 	ResetCategoryProcessor()
 	ResetDateRemapper()
 	ResetDecoderProcessor()
+	ResetExcludeAttributeProcessor()
 	ResetGeoIpParser()
 	ResetGrokParser()
 	ResetLookupProcessor()
@@ -324,6 +328,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	_jsii_.Get(
 		j,
 		"decoderProcessorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ExcludeAttributeProcessor() LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference {
+	var returns LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"excludeAttributeProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ExcludeAttributeProcessorInput() *LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor {
+	var returns *LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor
+	_jsii_.Get(
+		j,
+		"excludeAttributeProcessorInput",
 		&returns,
 	)
 	return returns
@@ -975,6 +999,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) PutExcludeAttributeProcessor(value *LogsCustomPipelineProcessorPipelineProcessorExcludeAttributeProcessor) {
+	if err := l.validatePutExcludeAttributeProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putExcludeAttributeProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) PutGeoIpParser(value *LogsCustomPipelineProcessorPipelineProcessorGeoIpParser) {
 	if err := l.validatePutGeoIpParserParameters(value); err != nil {
 		panic(err)
@@ -1170,6 +1205,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) 
 	_jsii_.InvokeVoid(
 		l,
 		"resetDecoderProcessor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorOutputReference) ResetExcludeAttributeProcessor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetExcludeAttributeProcessor",
 		nil, // no parameters
 	)
 }

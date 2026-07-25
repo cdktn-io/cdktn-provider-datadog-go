@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor struct {
 	// remap block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
 	Remap interface{} `field:"optional" json:"remap" yaml:"remap"`
 }
 

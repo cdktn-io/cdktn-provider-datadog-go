@@ -176,6 +176,8 @@ func (j *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateSetComp
 
 func (j *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktn.IResolvable:
+		// ok
 	case *ActionConnectionAwsAssumeRole:
 		val := val.(*ActionConnectionAwsAssumeRole)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_ActionConnectionAwsAssumeRoleOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktn.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ActionConnectionAwsAssumeRole, cdktn.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ActionConnectionAwsAssumeRole; received %#v (a %T)", val, val)
 		}
 	}
 

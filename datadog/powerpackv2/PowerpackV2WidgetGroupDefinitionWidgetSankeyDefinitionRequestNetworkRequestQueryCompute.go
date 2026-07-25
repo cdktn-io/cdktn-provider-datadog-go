@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestNetworkRequestQueryCompute struct {
 	// The aggregation method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#aggregation PowerpackV2#aggregation}
 	Aggregation *string `field:"required" json:"aggregation" yaml:"aggregation"`
 	// The metric to aggregate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#metric PowerpackV2#metric}
 	Metric *string `field:"required" json:"metric" yaml:"metric"`
 }
 

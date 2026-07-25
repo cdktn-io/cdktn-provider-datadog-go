@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataDatadogSoftwareCatalog) validateSetFilterRelationTypePara
 	return nil
 }
 
+func (j *jsiiProxy_DataDatadogSoftwareCatalog) validateSetIncludeDiscoveredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDatadogSoftwareCatalog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

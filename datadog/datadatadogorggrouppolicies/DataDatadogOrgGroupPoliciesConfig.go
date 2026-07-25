@@ -24,11 +24,11 @@ type DataDatadogOrgGroupPoliciesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the org group whose policies to list. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
 	OrgGroupId *string `field:"required" json:"orgGroupId" yaml:"orgGroupId"`
 	// Filter policies by name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
 	PolicyName *string `field:"optional" json:"policyName" yaml:"policyName"`
 }
 

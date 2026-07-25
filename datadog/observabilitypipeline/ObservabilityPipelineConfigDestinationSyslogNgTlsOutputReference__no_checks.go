@@ -79,6 +79,10 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgTlsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference) validateSetServerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationSyslogNgTlsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

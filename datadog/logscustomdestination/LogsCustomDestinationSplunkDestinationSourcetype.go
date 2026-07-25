@@ -7,7 +7,7 @@ package logscustomdestination
 type LogsCustomDestinationSplunkDestinationSourcetype struct {
 	// The source type string. Set to `null` to omit the sourcetype from forwarded events.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_destination#value LogsCustomDestination#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_destination#value LogsCustomDestination#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

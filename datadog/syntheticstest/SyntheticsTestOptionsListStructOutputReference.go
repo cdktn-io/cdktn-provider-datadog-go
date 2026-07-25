@@ -62,6 +62,9 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	HttpVersion() *string
 	SetHttpVersion(val *string)
 	HttpVersionInput() *string
+	IgnoreCertificateValidation() interface{}
+	SetIgnoreCertificateValidation(val interface{})
+	IgnoreCertificateValidationInput() interface{}
 	IgnoreServerCertificateError() interface{}
 	SetIgnoreServerCertificateError(val interface{})
 	IgnoreServerCertificateErrorInput() interface{}
@@ -147,6 +150,7 @@ type SyntheticsTestOptionsListStructOutputReference interface {
 	ResetDisableCsp()
 	ResetFollowRedirects()
 	ResetHttpVersion()
+	ResetIgnoreCertificateValidation()
 	ResetIgnoreServerCertificateError()
 	ResetInitialNavigationTimeout()
 	ResetMinFailureDuration()
@@ -429,6 +433,26 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) HttpVersionIn
 	_jsii_.Get(
 		j,
 		"httpVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) IgnoreCertificateValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) IgnoreCertificateValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCertificateValidationInput",
 		&returns,
 	)
 	return returns
@@ -880,6 +904,17 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetHttpVersion
 	_jsii_.Set(
 		j,
 		"httpVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference)SetIgnoreCertificateValidation(val interface{}) {
+	if err := j.validateSetIgnoreCertificateValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreCertificateValidation",
 		val,
 	)
 }
@@ -1341,6 +1376,14 @@ func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetHttpVers
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) ResetIgnoreCertificateValidation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIgnoreCertificateValidation",
 		nil, // no parameters
 	)
 }

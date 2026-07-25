@@ -24,11 +24,11 @@ type OrgGroupMembershipConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the org group to assign the organization to. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
 	OrgGroupId *string `field:"required" json:"orgGroupId" yaml:"orgGroupId"`
 	// The UUID of the organization. Must be a valid UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
 	OrgUuid *string `field:"required" json:"orgUuid" yaml:"orgUuid"`
 }
 

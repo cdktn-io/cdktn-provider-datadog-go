@@ -24,39 +24,39 @@ type CloudConfigurationRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the cloud configuration rule is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The message associated to the rule that will be shown in findings and signals.
 	//
 	// For cloud configuration rules, the message is rendered in the finding side panel. When the message is written as Markdown, you can use the following top-level section headers to control where each part appears in the finding: `Description` and `Rationale` appear under **What Happened**, `Remediation` appears in its own **Remediation** section, and `References` are shown separately. All of these sections are optional and can appear in any order; a typical message uses only `Description` and `Remediation`. Use level-2 (`##`) headers for each section. If none of these headers are present, the entire message is shown as the description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
 	Message *string `field:"required" json:"message" yaml:"message"`
 	// The name of the cloud configuration rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Policy written in Rego format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 	// Main resource type to be checked by the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
 	// Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
 	Severity *string `field:"required" json:"severity" yaml:"severity"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
 	// Defaults to empty list.
 	//
 	// This function will be deprecated soon. Use the notification rules function instead. Fields to group by when generating signals, e.g.
 	GroupBy *[]*string `field:"optional" json:"groupBy" yaml:"groupBy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,15 +65,15 @@ type CloudConfigurationRuleConfig struct {
 	//
 	// Use the notification rules function instead. Notification targets for signals. Defaults to empty list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
 	Notifications *[]*string `field:"optional" json:"notifications" yaml:"notifications"`
 	// Related resource types to be checked by the rule. Defaults to empty list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
 	RelatedResourceTypes *[]*string `field:"optional" json:"relatedResourceTypes" yaml:"relatedResourceTypes"`
 	// Tags of the rule, propagated to findings and signals. Defaults to empty list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

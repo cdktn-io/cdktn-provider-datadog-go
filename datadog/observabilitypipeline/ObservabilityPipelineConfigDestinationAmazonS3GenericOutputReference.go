@@ -51,6 +51,12 @@ type ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference interf
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ServerSideEncryption() *string
+	SetServerSideEncryption(val *string)
+	ServerSideEncryptionInput() *string
+	SsekmsKeyId() *string
+	SetSsekmsKeyId(val *string)
+	SsekmsKeyIdInput() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
@@ -97,6 +103,8 @@ type ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference interf
 	ResetCompression()
 	ResetEncoding()
 	ResetKeyPrefix()
+	ResetServerSideEncryption()
+	ResetSsekmsKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -322,6 +330,46 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) ServerSideEncryption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverSideEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) ServerSideEncryptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverSideEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) SsekmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssekmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) SsekmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssekmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -452,6 +500,28 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference)SetServerSideEncryption(val *string) {
+	if err := j.validateSetServerSideEncryptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverSideEncryption",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference)SetSsekmsKeyId(val *string) {
+	if err := j.validateSetSsekmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ssekmsKeyId",
 		val,
 	)
 }
@@ -774,6 +844,22 @@ func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputRe
 	_jsii_.InvokeVoid(
 		o,
 		"resetKeyPrefix",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) ResetServerSideEncryption() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetServerSideEncryption",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference) ResetSsekmsKeyId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSsekmsKeyId",
 		nil, // no parameters
 	)
 }

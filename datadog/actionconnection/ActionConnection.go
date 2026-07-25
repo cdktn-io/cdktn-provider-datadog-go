@@ -12,13 +12,27 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection datadog_action_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection datadog_action_connection}.
 type ActionConnection interface {
 	cdktn.TerraformResource
+	Anthropic() ActionConnectionAnthropicOutputReference
+	AnthropicInput() interface{}
+	Asana() ActionConnectionAsanaOutputReference
+	AsanaInput() interface{}
 	Aws() ActionConnectionAwsOutputReference
 	AwsInput() interface{}
+	Azure() ActionConnectionAzureOutputReference
+	AzureInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CircleCi() ActionConnectionCircleCiOutputReference
+	CircleCiInput() interface{}
+	Clickup() ActionConnectionClickupOutputReference
+	ClickupInput() interface{}
+	Cloudflare() ActionConnectionCloudflareOutputReference
+	CloudflareInput() interface{}
+	ConfigCat() ActionConnectionConfigCatOutputReference
+	ConfigCatInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -29,21 +43,37 @@ type ActionConnection interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Datadog() ActionConnectionDatadogOutputReference
+	DatadogInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fastly() ActionConnectionFastlyOutputReference
+	FastlyInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Freshservice() ActionConnectionFreshserviceOutputReference
+	FreshserviceInput() interface{}
 	// Experimental.
 	FriendlyUniqueId() *string
+	Gcp() ActionConnectionGcpOutputReference
+	GcpInput() interface{}
+	Gemini() ActionConnectionGeminiOutputReference
+	GeminiInput() interface{}
+	Gitlab() ActionConnectionGitlabOutputReference
+	GitlabInput() interface{}
+	GreyNoise() ActionConnectionGreyNoiseOutputReference
+	GreyNoiseInput() interface{}
 	Http() ActionConnectionHttpOutputReference
 	HttpInput() interface{}
 	Id() *string
+	LaunchDarkly() ActionConnectionLaunchDarklyOutputReference
+	LaunchDarklyInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -53,6 +83,12 @@ type ActionConnection interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Notion() ActionConnectionNotionOutputReference
+	NotionInput() interface{}
+	Okta() ActionConnectionOktaOutputReference
+	OktaInput() interface{}
+	Openai() ActionConnectionOpenaiOutputReference
+	OpenaiInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -63,12 +99,20 @@ type ActionConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceNow() ActionConnectionServiceNowOutputReference
+	ServiceNowInput() interface{}
+	Split() ActionConnectionSplitOutputReference
+	SplitInput() interface{}
+	Statsig() ActionConnectionStatsigOutputReference
+	StatsigInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VirusTotal() ActionConnectionVirusTotalOutputReference
+	VirusTotalInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -112,13 +156,57 @@ type ActionConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAnthropic(value *ActionConnectionAnthropic)
+	PutAsana(value *ActionConnectionAsana)
 	PutAws(value *ActionConnectionAws)
+	PutAzure(value *ActionConnectionAzure)
+	PutCircleCi(value *ActionConnectionCircleCi)
+	PutClickup(value *ActionConnectionClickup)
+	PutCloudflare(value *ActionConnectionCloudflare)
+	PutConfigCat(value *ActionConnectionConfigCat)
+	PutDatadog(value *ActionConnectionDatadog)
+	PutFastly(value *ActionConnectionFastly)
+	PutFreshservice(value *ActionConnectionFreshservice)
+	PutGcp(value *ActionConnectionGcp)
+	PutGemini(value *ActionConnectionGemini)
+	PutGitlab(value *ActionConnectionGitlab)
+	PutGreyNoise(value *ActionConnectionGreyNoise)
 	PutHttp(value *ActionConnectionHttp)
+	PutLaunchDarkly(value *ActionConnectionLaunchDarkly)
+	PutNotion(value *ActionConnectionNotion)
+	PutOkta(value *ActionConnectionOkta)
+	PutOpenai(value *ActionConnectionOpenai)
+	PutServiceNow(value *ActionConnectionServiceNow)
+	PutSplit(value *ActionConnectionSplit)
+	PutStatsig(value *ActionConnectionStatsig)
+	PutVirusTotal(value *ActionConnectionVirusTotal)
+	ResetAnthropic()
+	ResetAsana()
 	ResetAws()
+	ResetAzure()
+	ResetCircleCi()
+	ResetClickup()
+	ResetCloudflare()
+	ResetConfigCat()
+	ResetDatadog()
+	ResetFastly()
+	ResetFreshservice()
+	ResetGcp()
+	ResetGemini()
+	ResetGitlab()
+	ResetGreyNoise()
 	ResetHttp()
+	ResetLaunchDarkly()
+	ResetNotion()
+	ResetOkta()
+	ResetOpenai()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceNow()
+	ResetSplit()
+	ResetStatsig()
+	ResetVirusTotal()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -146,6 +234,46 @@ type jsiiProxy_ActionConnection struct {
 	internal.Type__cdktnTerraformResource
 }
 
+func (j *jsiiProxy_ActionConnection) Anthropic() ActionConnectionAnthropicOutputReference {
+	var returns ActionConnectionAnthropicOutputReference
+	_jsii_.Get(
+		j,
+		"anthropic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) AnthropicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"anthropicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Asana() ActionConnectionAsanaOutputReference {
+	var returns ActionConnectionAsanaOutputReference
+	_jsii_.Get(
+		j,
+		"asana",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) AsanaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"asanaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionConnection) Aws() ActionConnectionAwsOutputReference {
 	var returns ActionConnectionAwsOutputReference
 	_jsii_.Get(
@@ -166,11 +294,111 @@ func (j *jsiiProxy_ActionConnection) AwsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ActionConnection) Azure() ActionConnectionAzureOutputReference {
+	var returns ActionConnectionAzureOutputReference
+	_jsii_.Get(
+		j,
+		"azure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) AzureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionConnection) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) CircleCi() ActionConnectionCircleCiOutputReference {
+	var returns ActionConnectionCircleCiOutputReference
+	_jsii_.Get(
+		j,
+		"circleCi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) CircleCiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"circleCiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Clickup() ActionConnectionClickupOutputReference {
+	var returns ActionConnectionClickupOutputReference
+	_jsii_.Get(
+		j,
+		"clickup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) ClickupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clickupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Cloudflare() ActionConnectionCloudflareOutputReference {
+	var returns ActionConnectionCloudflareOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflare",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) CloudflareInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) ConfigCat() ActionConnectionConfigCatOutputReference {
+	var returns ActionConnectionConfigCatOutputReference
+	_jsii_.Get(
+		j,
+		"configCat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) ConfigCatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configCatInput",
 		&returns,
 	)
 	return returns
@@ -206,11 +434,51 @@ func (j *jsiiProxy_ActionConnection) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ActionConnection) Datadog() ActionConnectionDatadogOutputReference {
+	var returns ActionConnectionDatadogOutputReference
+	_jsii_.Get(
+		j,
+		"datadog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) DatadogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"datadogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionConnection) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Fastly() ActionConnectionFastlyOutputReference {
+	var returns ActionConnectionFastlyOutputReference
+	_jsii_.Get(
+		j,
+		"fastly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) FastlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fastlyInput",
 		&returns,
 	)
 	return returns
@@ -236,11 +504,111 @@ func (j *jsiiProxy_ActionConnection) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ActionConnection) Freshservice() ActionConnectionFreshserviceOutputReference {
+	var returns ActionConnectionFreshserviceOutputReference
+	_jsii_.Get(
+		j,
+		"freshservice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) FreshserviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"freshserviceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionConnection) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Gcp() ActionConnectionGcpOutputReference {
+	var returns ActionConnectionGcpOutputReference
+	_jsii_.Get(
+		j,
+		"gcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) GcpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gcpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Gemini() ActionConnectionGeminiOutputReference {
+	var returns ActionConnectionGeminiOutputReference
+	_jsii_.Get(
+		j,
+		"gemini",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) GeminiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geminiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Gitlab() ActionConnectionGitlabOutputReference {
+	var returns ActionConnectionGitlabOutputReference
+	_jsii_.Get(
+		j,
+		"gitlab",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) GitlabInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitlabInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) GreyNoise() ActionConnectionGreyNoiseOutputReference {
+	var returns ActionConnectionGreyNoiseOutputReference
+	_jsii_.Get(
+		j,
+		"greyNoise",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) GreyNoiseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"greyNoiseInput",
 		&returns,
 	)
 	return returns
@@ -271,6 +639,26 @@ func (j *jsiiProxy_ActionConnection) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) LaunchDarkly() ActionConnectionLaunchDarklyOutputReference {
+	var returns ActionConnectionLaunchDarklyOutputReference
+	_jsii_.Get(
+		j,
+		"launchDarkly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) LaunchDarklyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"launchDarklyInput",
 		&returns,
 	)
 	return returns
@@ -316,6 +704,66 @@ func (j *jsiiProxy_ActionConnection) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ActionConnection) Notion() ActionConnectionNotionOutputReference {
+	var returns ActionConnectionNotionOutputReference
+	_jsii_.Get(
+		j,
+		"notion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) NotionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Okta() ActionConnectionOktaOutputReference {
+	var returns ActionConnectionOktaOutputReference
+	_jsii_.Get(
+		j,
+		"okta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) OktaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oktaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Openai() ActionConnectionOpenaiOutputReference {
+	var returns ActionConnectionOpenaiOutputReference
+	_jsii_.Get(
+		j,
+		"openai",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) OpenaiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"openaiInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionConnection) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -341,6 +789,66 @@ func (j *jsiiProxy_ActionConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) ServiceNow() ActionConnectionServiceNowOutputReference {
+	var returns ActionConnectionServiceNowOutputReference
+	_jsii_.Get(
+		j,
+		"serviceNow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) ServiceNowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceNowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Split() ActionConnectionSplitOutputReference {
+	var returns ActionConnectionSplitOutputReference
+	_jsii_.Get(
+		j,
+		"split",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) SplitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) Statsig() ActionConnectionStatsigOutputReference {
+	var returns ActionConnectionStatsigOutputReference
+	_jsii_.Get(
+		j,
+		"statsig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionConnection) StatsigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statsigInput",
 		&returns,
 	)
 	return returns
@@ -376,8 +884,28 @@ func (j *jsiiProxy_ActionConnection) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ActionConnection) VirusTotal() ActionConnectionVirusTotalOutputReference {
+	var returns ActionConnectionVirusTotalOutputReference
+	_jsii_.Get(
+		j,
+		"virusTotal",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection datadog_action_connection} Resource.
+func (j *jsiiProxy_ActionConnection) VirusTotalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virusTotalInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection datadog_action_connection} Resource.
 func NewActionConnection(scope constructs.Construct, id *string, config *ActionConnectionConfig) ActionConnection {
 	_init_.Initialize()
 
@@ -395,7 +923,7 @@ func NewActionConnection(scope constructs.Construct, id *string, config *ActionC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/action_connection datadog_action_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection datadog_action_connection} Resource.
 func NewActionConnection_Override(a ActionConnection, scope constructs.Construct, id *string, config *ActionConnectionConfig) {
 	_init_.Initialize()
 
@@ -838,6 +1366,28 @@ func (a *jsiiProxy_ActionConnection) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ActionConnection) PutAnthropic(value *ActionConnectionAnthropic) {
+	if err := a.validatePutAnthropicParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAnthropic",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutAsana(value *ActionConnectionAsana) {
+	if err := a.validatePutAsanaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAsana",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ActionConnection) PutAws(value *ActionConnectionAws) {
 	if err := a.validatePutAwsParameters(value); err != nil {
 		panic(err)
@@ -845,6 +1395,138 @@ func (a *jsiiProxy_ActionConnection) PutAws(value *ActionConnectionAws) {
 	_jsii_.InvokeVoid(
 		a,
 		"putAws",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutAzure(value *ActionConnectionAzure) {
+	if err := a.validatePutAzureParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAzure",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutCircleCi(value *ActionConnectionCircleCi) {
+	if err := a.validatePutCircleCiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCircleCi",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutClickup(value *ActionConnectionClickup) {
+	if err := a.validatePutClickupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putClickup",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutCloudflare(value *ActionConnectionCloudflare) {
+	if err := a.validatePutCloudflareParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCloudflare",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutConfigCat(value *ActionConnectionConfigCat) {
+	if err := a.validatePutConfigCatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConfigCat",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutDatadog(value *ActionConnectionDatadog) {
+	if err := a.validatePutDatadogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDatadog",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutFastly(value *ActionConnectionFastly) {
+	if err := a.validatePutFastlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFastly",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutFreshservice(value *ActionConnectionFreshservice) {
+	if err := a.validatePutFreshserviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFreshservice",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutGcp(value *ActionConnectionGcp) {
+	if err := a.validatePutGcpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGcp",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutGemini(value *ActionConnectionGemini) {
+	if err := a.validatePutGeminiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGemini",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutGitlab(value *ActionConnectionGitlab) {
+	if err := a.validatePutGitlabParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGitlab",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutGreyNoise(value *ActionConnectionGreyNoise) {
+	if err := a.validatePutGreyNoiseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGreyNoise",
 		[]interface{}{value},
 	)
 }
@@ -860,10 +1542,210 @@ func (a *jsiiProxy_ActionConnection) PutHttp(value *ActionConnectionHttp) {
 	)
 }
 
+func (a *jsiiProxy_ActionConnection) PutLaunchDarkly(value *ActionConnectionLaunchDarkly) {
+	if err := a.validatePutLaunchDarklyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putLaunchDarkly",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutNotion(value *ActionConnectionNotion) {
+	if err := a.validatePutNotionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putNotion",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutOkta(value *ActionConnectionOkta) {
+	if err := a.validatePutOktaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOkta",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutOpenai(value *ActionConnectionOpenai) {
+	if err := a.validatePutOpenaiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOpenai",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutServiceNow(value *ActionConnectionServiceNow) {
+	if err := a.validatePutServiceNowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putServiceNow",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutSplit(value *ActionConnectionSplit) {
+	if err := a.validatePutSplitParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSplit",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutStatsig(value *ActionConnectionStatsig) {
+	if err := a.validatePutStatsigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putStatsig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) PutVirusTotal(value *ActionConnectionVirusTotal) {
+	if err := a.validatePutVirusTotalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVirusTotal",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetAnthropic() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAnthropic",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetAsana() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAsana",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ActionConnection) ResetAws() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAws",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetAzure() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAzure",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetCircleCi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCircleCi",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetClickup() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClickup",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetCloudflare() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCloudflare",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetConfigCat() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConfigCat",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetDatadog() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDatadog",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetFastly() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFastly",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetFreshservice() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFreshservice",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetGcp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGcp",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetGemini() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGemini",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetGitlab() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGitlab",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetGreyNoise() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGreyNoise",
 		nil, // no parameters
 	)
 }
@@ -876,10 +1758,74 @@ func (a *jsiiProxy_ActionConnection) ResetHttp() {
 	)
 }
 
+func (a *jsiiProxy_ActionConnection) ResetLaunchDarkly() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLaunchDarkly",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetNotion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNotion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetOkta() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOkta",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetOpenai() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOpenai",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ActionConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetServiceNow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceNow",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetSplit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSplit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetStatsig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStatsig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionConnection) ResetVirusTotal() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVirusTotal",
 		nil, // no parameters
 	)
 }

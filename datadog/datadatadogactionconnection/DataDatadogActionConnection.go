@@ -12,35 +12,50 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/action_connection datadog_action_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/action_connection datadog_action_connection}.
 type DataDatadogActionConnection interface {
 	cdktn.TerraformDataSource
+	Anthropic() DataDatadogActionConnectionAnthropicOutputReference
+	Asana() DataDatadogActionConnectionAsanaOutputReference
 	Aws() DataDatadogActionConnectionAwsOutputReference
+	Azure() DataDatadogActionConnectionAzureOutputReference
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CircleCi() DataDatadogActionConnectionCircleCiOutputReference
+	Clickup() DataDatadogActionConnectionClickupOutputReference
+	Cloudflare() DataDatadogActionConnectionCloudflareOutputReference
+	ConfigCat() DataDatadogActionConnectionConfigCatOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Datadog() DataDatadogActionConnectionDatadogOutputReference
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fastly() DataDatadogActionConnectionFastlyOutputReference
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Freshservice() DataDatadogActionConnectionFreshserviceOutputReference
 	// Experimental.
 	FriendlyUniqueId() *string
+	Gcp() DataDatadogActionConnectionGcpOutputReference
+	Gemini() DataDatadogActionConnectionGeminiOutputReference
+	Gitlab() DataDatadogActionConnectionGitlabOutputReference
+	GreyNoise() DataDatadogActionConnectionGreyNoiseOutputReference
 	Http() DataDatadogActionConnectionHttpOutputReference
 	HttpInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LaunchDarkly() DataDatadogActionConnectionLaunchDarklyOutputReference
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -48,18 +63,25 @@ type DataDatadogActionConnection interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Notion() DataDatadogActionConnectionNotionOutputReference
+	Okta() DataDatadogActionConnectionOktaOutputReference
+	Openai() DataDatadogActionConnectionOpenaiOutputReference
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceNow() DataDatadogActionConnectionServiceNowOutputReference
+	Split() DataDatadogActionConnectionSplitOutputReference
+	Statsig() DataDatadogActionConnectionStatsigOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VirusTotal() DataDatadogActionConnectionVirusTotalOutputReference
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -118,6 +140,26 @@ type jsiiProxy_DataDatadogActionConnection struct {
 	internal.Type__cdktnTerraformDataSource
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) Anthropic() DataDatadogActionConnectionAnthropicOutputReference {
+	var returns DataDatadogActionConnectionAnthropicOutputReference
+	_jsii_.Get(
+		j,
+		"anthropic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Asana() DataDatadogActionConnectionAsanaOutputReference {
+	var returns DataDatadogActionConnectionAsanaOutputReference
+	_jsii_.Get(
+		j,
+		"asana",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) Aws() DataDatadogActionConnectionAwsOutputReference {
 	var returns DataDatadogActionConnectionAwsOutputReference
 	_jsii_.Get(
@@ -128,11 +170,61 @@ func (j *jsiiProxy_DataDatadogActionConnection) Aws() DataDatadogActionConnectio
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) Azure() DataDatadogActionConnectionAzureOutputReference {
+	var returns DataDatadogActionConnectionAzureOutputReference
+	_jsii_.Get(
+		j,
+		"azure",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) CircleCi() DataDatadogActionConnectionCircleCiOutputReference {
+	var returns DataDatadogActionConnectionCircleCiOutputReference
+	_jsii_.Get(
+		j,
+		"circleCi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Clickup() DataDatadogActionConnectionClickupOutputReference {
+	var returns DataDatadogActionConnectionClickupOutputReference
+	_jsii_.Get(
+		j,
+		"clickup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Cloudflare() DataDatadogActionConnectionCloudflareOutputReference {
+	var returns DataDatadogActionConnectionCloudflareOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflare",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) ConfigCat() DataDatadogActionConnectionConfigCatOutputReference {
+	var returns DataDatadogActionConnectionConfigCatOutputReference
+	_jsii_.Get(
+		j,
+		"configCat",
 		&returns,
 	)
 	return returns
@@ -158,11 +250,31 @@ func (j *jsiiProxy_DataDatadogActionConnection) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) Datadog() DataDatadogActionConnectionDatadogOutputReference {
+	var returns DataDatadogActionConnectionDatadogOutputReference
+	_jsii_.Get(
+		j,
+		"datadog",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Fastly() DataDatadogActionConnectionFastlyOutputReference {
+	var returns DataDatadogActionConnectionFastlyOutputReference
+	_jsii_.Get(
+		j,
+		"fastly",
 		&returns,
 	)
 	return returns
@@ -188,11 +300,61 @@ func (j *jsiiProxy_DataDatadogActionConnection) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) Freshservice() DataDatadogActionConnectionFreshserviceOutputReference {
+	var returns DataDatadogActionConnectionFreshserviceOutputReference
+	_jsii_.Get(
+		j,
+		"freshservice",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Gcp() DataDatadogActionConnectionGcpOutputReference {
+	var returns DataDatadogActionConnectionGcpOutputReference
+	_jsii_.Get(
+		j,
+		"gcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Gemini() DataDatadogActionConnectionGeminiOutputReference {
+	var returns DataDatadogActionConnectionGeminiOutputReference
+	_jsii_.Get(
+		j,
+		"gemini",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Gitlab() DataDatadogActionConnectionGitlabOutputReference {
+	var returns DataDatadogActionConnectionGitlabOutputReference
+	_jsii_.Get(
+		j,
+		"gitlab",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) GreyNoise() DataDatadogActionConnectionGreyNoiseOutputReference {
+	var returns DataDatadogActionConnectionGreyNoiseOutputReference
+	_jsii_.Get(
+		j,
+		"greyNoise",
 		&returns,
 	)
 	return returns
@@ -238,6 +400,16 @@ func (j *jsiiProxy_DataDatadogActionConnection) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) LaunchDarkly() DataDatadogActionConnectionLaunchDarklyOutputReference {
+	var returns DataDatadogActionConnectionLaunchDarklyOutputReference
+	_jsii_.Get(
+		j,
+		"launchDarkly",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -268,6 +440,36 @@ func (j *jsiiProxy_DataDatadogActionConnection) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) Notion() DataDatadogActionConnectionNotionOutputReference {
+	var returns DataDatadogActionConnectionNotionOutputReference
+	_jsii_.Get(
+		j,
+		"notion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Okta() DataDatadogActionConnectionOktaOutputReference {
+	var returns DataDatadogActionConnectionOktaOutputReference
+	_jsii_.Get(
+		j,
+		"okta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Openai() DataDatadogActionConnectionOpenaiOutputReference {
+	var returns DataDatadogActionConnectionOpenaiOutputReference
+	_jsii_.Get(
+		j,
+		"openai",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogActionConnection) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -283,6 +485,36 @@ func (j *jsiiProxy_DataDatadogActionConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) ServiceNow() DataDatadogActionConnectionServiceNowOutputReference {
+	var returns DataDatadogActionConnectionServiceNowOutputReference
+	_jsii_.Get(
+		j,
+		"serviceNow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Split() DataDatadogActionConnectionSplitOutputReference {
+	var returns DataDatadogActionConnectionSplitOutputReference
+	_jsii_.Get(
+		j,
+		"split",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogActionConnection) Statsig() DataDatadogActionConnectionStatsigOutputReference {
+	var returns DataDatadogActionConnectionStatsigOutputReference
+	_jsii_.Get(
+		j,
+		"statsig",
 		&returns,
 	)
 	return returns
@@ -318,8 +550,18 @@ func (j *jsiiProxy_DataDatadogActionConnection) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogActionConnection) VirusTotal() DataDatadogActionConnectionVirusTotalOutputReference {
+	var returns DataDatadogActionConnectionVirusTotalOutputReference
+	_jsii_.Get(
+		j,
+		"virusTotal",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection(scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) DataDatadogActionConnection {
 	_init_.Initialize()
 
@@ -337,7 +579,7 @@ func NewDataDatadogActionConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/action_connection datadog_action_connection} Data Source.
 func NewDataDatadogActionConnection_Override(d DataDatadogActionConnection, scope constructs.Construct, id *string, config *DataDatadogActionConnectionConfig) {
 	_init_.Initialize()
 

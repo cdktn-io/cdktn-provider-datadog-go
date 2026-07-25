@@ -19,6 +19,15 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	AccessTokenUrl() *string
 	SetAccessTokenUrl(val *string)
 	AccessTokenUrlInput() *string
+	AddClaimsExp() interface{}
+	SetAddClaimsExp(val interface{})
+	AddClaimsExpInput() interface{}
+	AddClaimsIat() interface{}
+	SetAddClaimsIat(val interface{})
+	AddClaimsIatInput() interface{}
+	Algorithm() *string
+	SetAlgorithm(val *string)
+	AlgorithmInput() *string
 	Audience() *string
 	SetAudience(val *string)
 	AudienceInput() *string
@@ -46,13 +55,22 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	ExpiresIn() *float64
+	SetExpiresIn(val *float64)
+	ExpiresInInput() *float64
 	// Experimental.
 	Fqn() *string
+	Header() *string
+	SetHeader(val *string)
+	HeaderInput() *string
 	InternalValue() *SyntheticsTestRequestBasicauth
 	SetInternalValue(val *SyntheticsTestRequestBasicauth)
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	Payload() *string
+	SetPayload(val *string)
+	PayloadInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -62,6 +80,9 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
+	Secret() *string
+	SetSecret(val *string)
+	SecretInput() *string
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -82,6 +103,9 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	TokenApiAuthentication() *string
 	SetTokenApiAuthentication(val *string)
 	TokenApiAuthenticationInput() *string
+	TokenPrefix() *string
+	SetTokenPrefix(val *string)
+	TokenPrefixInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -117,18 +141,26 @@ type SyntheticsTestRequestBasicauthOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessKey()
 	ResetAccessTokenUrl()
+	ResetAddClaimsExp()
+	ResetAddClaimsIat()
+	ResetAlgorithm()
 	ResetAudience()
 	ResetClientId()
 	ResetClientSecret()
 	ResetDomain()
+	ResetExpiresIn()
+	ResetHeader()
 	ResetPassword()
+	ResetPayload()
 	ResetRegion()
 	ResetResource()
 	ResetScope()
+	ResetSecret()
 	ResetSecretKey()
 	ResetServiceName()
 	ResetSessionToken()
 	ResetTokenApiAuthentication()
+	ResetTokenPrefix()
 	ResetType()
 	ResetUsername()
 	ResetWorkstation()
@@ -182,6 +214,66 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AccessTokenUrl
 	_jsii_.Get(
 		j,
 		"accessTokenUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AddClaimsExp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addClaimsExp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AddClaimsExpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addClaimsExpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AddClaimsIat() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addClaimsIat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AddClaimsIatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addClaimsIatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Algorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"algorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) AlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"algorithmInput",
 		&returns,
 	)
 	return returns
@@ -297,11 +389,51 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) DomainInput() 
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ExpiresIn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expiresIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ExpiresInInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expiresInInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Header() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"header",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) HeaderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +464,26 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) PasswordInput(
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Payload() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) PayloadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payloadInput",
 		&returns,
 	)
 	return returns
@@ -392,6 +544,26 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ScopeInput() *
 	_jsii_.Get(
 		j,
 		"scopeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) Secret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) SecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretInput",
 		&returns,
 	)
 	return returns
@@ -492,6 +664,26 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TokenApiAuthen
 	_jsii_.Get(
 		j,
 		"tokenApiAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TokenPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) TokenPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefixInput",
 		&returns,
 	)
 	return returns
@@ -607,6 +799,39 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAccessTokenU
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAddClaimsExp(val interface{}) {
+	if err := j.validateSetAddClaimsExpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addClaimsExp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAddClaimsIat(val interface{}) {
+	if err := j.validateSetAddClaimsIatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addClaimsIat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAlgorithm(val *string) {
+	if err := j.validateSetAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"algorithm",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetAudience(val *string) {
 	if err := j.validateSetAudienceParameters(val); err != nil {
 		panic(err)
@@ -673,6 +898,28 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetDomain(val *
 	)
 }
 
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetExpiresIn(val *float64) {
+	if err := j.validateSetExpiresInParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresIn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetHeader(val *string) {
+	if err := j.validateSetHeaderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"header",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetInternalValue(val *SyntheticsTestRequestBasicauth) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -691,6 +938,17 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetPassword(val
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetPayload(val *string) {
+	if err := j.validateSetPayloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"payload",
 		val,
 	)
 }
@@ -724,6 +982,17 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetScope(val *s
 	_jsii_.Set(
 		j,
 		"scope",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetSecret(val *string) {
+	if err := j.validateSetSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secret",
 		val,
 	)
 }
@@ -790,6 +1059,17 @@ func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTokenApiAuth
 	_jsii_.Set(
 		j,
 		"tokenApiAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference)SetTokenPrefix(val *string) {
+	if err := j.validateSetTokenPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenPrefix",
 		val,
 	)
 }
@@ -1029,6 +1309,30 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAccessTok
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAddClaimsExp() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddClaimsExp",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAddClaimsIat() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAddClaimsIat",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAlgorithm() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAlgorithm",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetAudience() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1061,10 +1365,34 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetDomain() 
 	)
 }
 
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetExpiresIn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpiresIn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetHeader() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHeader",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetPassword() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetPayload() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPayload",
 		nil, // no parameters
 	)
 }
@@ -1089,6 +1417,14 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetScope() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetScope",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetSecret() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecret",
 		nil, // no parameters
 	)
 }
@@ -1121,6 +1457,14 @@ func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetTokenApiA
 	_jsii_.InvokeVoid(
 		s,
 		"resetTokenApiAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsTestRequestBasicauthOutputReference) ResetTokenPrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTokenPrefix",
 		nil, // no parameters
 	)
 }

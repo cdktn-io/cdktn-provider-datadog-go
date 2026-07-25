@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog datadog_software_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog datadog_software_catalog}.
 type DataDatadogSoftwareCatalog interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -58,6 +58,9 @@ type DataDatadogSoftwareCatalog interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IncludeDiscovered() interface{}
+	SetIncludeDiscovered(val interface{})
+	IncludeDiscoveredInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -108,6 +111,7 @@ type DataDatadogSoftwareCatalog interface {
 	ResetFilterOwner()
 	ResetFilterRef()
 	ResetFilterRelationType()
+	ResetIncludeDiscovered()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -369,6 +373,26 @@ func (j *jsiiProxy_DataDatadogSoftwareCatalog) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSoftwareCatalog) IncludeDiscovered() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDiscovered",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSoftwareCatalog) IncludeDiscoveredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDiscoveredInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSoftwareCatalog) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -440,7 +464,7 @@ func (j *jsiiProxy_DataDatadogSoftwareCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source.
 func NewDataDatadogSoftwareCatalog(scope constructs.Construct, id *string, config *DataDatadogSoftwareCatalogConfig) DataDatadogSoftwareCatalog {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewDataDatadogSoftwareCatalog(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source.
 func NewDataDatadogSoftwareCatalog_Override(d DataDatadogSoftwareCatalog, scope constructs.Construct, id *string, config *DataDatadogSoftwareCatalogConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_DataDatadogSoftwareCatalog)SetForEach(val cdktn.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataDatadogSoftwareCatalog)SetIncludeDiscovered(val interface{}) {
+	if err := j.validateSetIncludeDiscoveredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeDiscovered",
 		val,
 	)
 }
@@ -929,6 +964,14 @@ func (d *jsiiProxy_DataDatadogSoftwareCatalog) ResetFilterRelationType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilterRelationType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDatadogSoftwareCatalog) ResetIncludeDiscovered() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeDiscovered",
 		nil, // no parameters
 	)
 }

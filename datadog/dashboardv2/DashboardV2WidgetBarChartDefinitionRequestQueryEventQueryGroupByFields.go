@@ -7,15 +7,15 @@ package dashboardv2
 type DashboardV2WidgetBarChartDefinitionRequestQueryEventQueryGroupByFields struct {
 	// List of event facets to group by.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#fields DashboardV2#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#fields DashboardV2#fields}
 	Fields *[]*string `field:"required" json:"fields" yaml:"fields"`
 	// The number of groups to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// sort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
 	Sort *DashboardV2WidgetBarChartDefinitionRequestQueryEventQueryGroupByFieldsSort `field:"optional" json:"sort" yaml:"sort"`
 }
 

@@ -47,6 +47,10 @@ func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) validateIn
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) validatePutMetricNameFiltersParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsAccountMetricsConfigOutputReference) validatePutNamespaceFiltersParameters(value *IntegrationAwsAccountMetricsConfigNamespaceFilters) error {
 	return nil
 }

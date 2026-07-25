@@ -119,6 +119,10 @@ func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetHt
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetIgnoreCertificateValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsTestOptionsListStructOutputReference) validateSetIgnoreServerCertificateErrorParameters(val interface{}) error {
 	return nil
 }

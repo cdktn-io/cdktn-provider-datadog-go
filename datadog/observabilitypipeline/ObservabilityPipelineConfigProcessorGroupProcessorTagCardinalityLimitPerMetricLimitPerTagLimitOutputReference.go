@@ -32,9 +32,9 @@ type ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMet
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Mode() *string
-	SetMode(val *string)
-	ModeInput() *string
+	OverrideType() *string
+	SetOverrideType(val *string)
+	OverrideTypeInput() *string
 	TagKey() *string
 	SetTagKey(val *string)
 	TagKeyInput() *string
@@ -139,21 +139,21 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference) Mode() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference) OverrideType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"mode",
+		"overrideType",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference) ModeInput() *string {
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference) OverrideTypeInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"modeInput",
+		"overrideTypeInput",
 		&returns,
 	)
 	return returns
@@ -280,13 +280,13 @@ func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinal
 	)
 }
 
-func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference)SetMode(val *string) {
-	if err := j.validateSetModeParameters(val); err != nil {
+func (j *jsiiProxy_ObservabilityPipelineConfigProcessorGroupProcessorTagCardinalityLimitPerMetricLimitPerTagLimitOutputReference)SetOverrideType(val *string) {
+	if err := j.validateSetOverrideTypeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"mode",
+		"overrideType",
 		val,
 	)
 }

@@ -7,19 +7,19 @@ package logscustompipeline
 type LogsCustomPipelineProcessorArrayMapProcessorProcessors struct {
 	// arithmetic_processor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
 	ArithmeticProcessor *LogsCustomPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor `field:"optional" json:"arithmeticProcessor" yaml:"arithmeticProcessor"`
 	// attribute_remapper block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
 	AttributeRemapper *LogsCustomPipelineProcessorArrayMapProcessorProcessorsAttributeRemapper `field:"optional" json:"attributeRemapper" yaml:"attributeRemapper"`
 	// category_processor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
 	CategoryProcessor *LogsCustomPipelineProcessorArrayMapProcessorProcessorsCategoryProcessor `field:"optional" json:"categoryProcessor" yaml:"categoryProcessor"`
 	// string_builder_processor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
 	StringBuilderProcessor *LogsCustomPipelineProcessorArrayMapProcessorProcessorsStringBuilderProcessor `field:"optional" json:"stringBuilderProcessor" yaml:"stringBuilderProcessor"`
 }
 

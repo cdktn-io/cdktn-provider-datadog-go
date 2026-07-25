@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 type SecurityMonitoringFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_SecurityMonitoringFilter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) SecurityMonitoringFilter {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewSecurityMonitoringFilter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.15.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 func NewSecurityMonitoringFilter_Override(s SecurityMonitoringFilter, scope constructs.Construct, id *string, config *SecurityMonitoringFilterConfig) {
 	_init_.Initialize()
 

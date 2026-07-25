@@ -75,11 +75,99 @@ func (a *jsiiProxy_ActionConnection) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (a *jsiiProxy_ActionConnection) validatePutAnthropicParameters(value *ActionConnectionAnthropic) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutAsanaParameters(value *ActionConnectionAsana) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionConnection) validatePutAwsParameters(value *ActionConnectionAws) error {
 	return nil
 }
 
+func (a *jsiiProxy_ActionConnection) validatePutAzureParameters(value *ActionConnectionAzure) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutCircleCiParameters(value *ActionConnectionCircleCi) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutClickupParameters(value *ActionConnectionClickup) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutCloudflareParameters(value *ActionConnectionCloudflare) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutConfigCatParameters(value *ActionConnectionConfigCat) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutDatadogParameters(value *ActionConnectionDatadog) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutFastlyParameters(value *ActionConnectionFastly) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutFreshserviceParameters(value *ActionConnectionFreshservice) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutGcpParameters(value *ActionConnectionGcp) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutGeminiParameters(value *ActionConnectionGemini) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutGitlabParameters(value *ActionConnectionGitlab) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutGreyNoiseParameters(value *ActionConnectionGreyNoise) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionConnection) validatePutHttpParameters(value *ActionConnectionHttp) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutLaunchDarklyParameters(value *ActionConnectionLaunchDarkly) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutNotionParameters(value *ActionConnectionNotion) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutOktaParameters(value *ActionConnectionOkta) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutOpenaiParameters(value *ActionConnectionOpenai) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutServiceNowParameters(value *ActionConnectionServiceNow) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutSplitParameters(value *ActionConnectionSplit) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutStatsigParameters(value *ActionConnectionStatsig) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validatePutVirusTotalParameters(value *ActionConnectionVirusTotal) error {
 	return nil
 }
 
