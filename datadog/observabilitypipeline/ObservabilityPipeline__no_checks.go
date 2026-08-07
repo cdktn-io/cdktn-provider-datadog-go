@@ -59,6 +59,10 @@ func (o *jsiiProxy_ObservabilityPipeline) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (o *jsiiProxy_ObservabilityPipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservabilityPipeline) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_ObservabilityPipeline) validateOverrideLogicalIdParameters(ne
 }
 
 func (o *jsiiProxy_ObservabilityPipeline) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservabilityPipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

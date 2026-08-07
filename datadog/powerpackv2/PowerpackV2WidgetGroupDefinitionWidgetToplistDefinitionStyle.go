@@ -7,15 +7,15 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetToplistDefinitionStyle struct {
 	// display block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#display PowerpackV2#display}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#display PowerpackV2#display}
 	Display *PowerpackV2WidgetGroupDefinitionWidgetToplistDefinitionStyleDisplay `field:"optional" json:"display" yaml:"display"`
 	// The color palette for the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#palette PowerpackV2#palette}
 	Palette *string `field:"optional" json:"palette" yaml:"palette"`
 	// The scaling mode for the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#scaling PowerpackV2#scaling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#scaling PowerpackV2#scaling}
 	Scaling *string `field:"optional" json:"scaling" yaml:"scaling"`
 }
 

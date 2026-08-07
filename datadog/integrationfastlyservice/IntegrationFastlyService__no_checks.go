@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationFastlyService) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationFastlyService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationFastlyService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationFastlyService) validateMoveToIdParameters(id *stri
 }
 
 func (i *jsiiProxy_IntegrationFastlyService) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationFastlyService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

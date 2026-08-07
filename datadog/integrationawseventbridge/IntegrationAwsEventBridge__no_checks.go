@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationAwsEventBridge) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsEventBridge) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsEventBridge) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationAwsEventBridge) validateMoveToIdParameters(id *str
 }
 
 func (i *jsiiProxy_IntegrationAwsEventBridge) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsEventBridge) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

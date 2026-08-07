@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissionsResourceCollection) va
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogIntegrationAwsIamPermissionsResourceCollection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogIntegrationAwsIamPermissionsResourceCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package datadatadogorganizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogorganizationsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings datadog_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings datadog_organization_settings}.
 type DataDatadogOrganizationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -85,6 +85,19 @@ type DataDatadogOrganizationSettings interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSettings(value interface{})
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -318,7 +331,7 @@ func (j *jsiiProxy_DataDatadogOrganizationSettings) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) DataDatadogOrganizationSettings {
 	_init_.Initialize()
 
@@ -336,7 +349,7 @@ func NewDataDatadogOrganizationSettings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source.
 func NewDataDatadogOrganizationSettings_Override(d DataDatadogOrganizationSettings, scope constructs.Construct, id *string, config *DataDatadogOrganizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -686,6 +699,17 @@ func (d *jsiiProxy_DataDatadogOrganizationSettings) PutSettings(value interface{
 		d,
 		"putSettings",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogOrganizationSettings) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

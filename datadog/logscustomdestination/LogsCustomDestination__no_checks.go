@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsCustomDestination) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomDestination) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomDestination) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (l *jsiiProxy_LogsCustomDestination) validatePutMicrosoftSentinelDestinatio
 }
 
 func (l *jsiiProxy_LogsCustomDestination) validatePutSplunkDestinationParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomDestination) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

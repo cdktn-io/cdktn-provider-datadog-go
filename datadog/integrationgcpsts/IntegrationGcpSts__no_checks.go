@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationGcpSts) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationGcpSts) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationGcpSts) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (i *jsiiProxy_IntegrationGcpSts) validatePutMetricNamespaceConfigsParameter
 }
 
 func (i *jsiiProxy_IntegrationGcpSts) validatePutMonitoredResourceConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationGcpSts) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

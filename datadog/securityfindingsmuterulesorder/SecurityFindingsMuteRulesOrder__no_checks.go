@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateMoveToIdParameters(id
 }
 
 func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityFindingsMuteRulesOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

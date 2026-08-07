@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSoftwareCatalog) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogSoftwareCatalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogSoftwareCatalog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

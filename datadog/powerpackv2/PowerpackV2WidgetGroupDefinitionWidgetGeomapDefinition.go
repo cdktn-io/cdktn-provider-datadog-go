@@ -7,49 +7,49 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetGeomapDefinition struct {
 	// custom_link block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#custom_link PowerpackV2#custom_link}
 	CustomLink interface{} `field:"optional" json:"customLink" yaml:"customLink"`
 	// The description of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#description PowerpackV2#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#description PowerpackV2#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#hide_incomplete_cost_data PowerpackV2#hide_incomplete_cost_data}
 	HideIncompleteCostData interface{} `field:"optional" json:"hideIncompleteCostData" yaml:"hideIncompleteCostData"`
 	// The timeframe to use when displaying the widget.
 	//
 	// Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#live_span PowerpackV2#live_span}
 	LiveSpan *string `field:"optional" json:"liveSpan" yaml:"liveSpan"`
 	// request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#request PowerpackV2#request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#request PowerpackV2#request}
 	Request interface{} `field:"optional" json:"request" yaml:"request"`
 	// style block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#style PowerpackV2#style}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#style PowerpackV2#style}
 	Style *PowerpackV2WidgetGroupDefinitionWidgetGeomapDefinitionStyle `field:"optional" json:"style" yaml:"style"`
 	// time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#time PowerpackV2#time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#time PowerpackV2#time}
 	Time *PowerpackV2WidgetGroupDefinitionWidgetGeomapDefinitionTime `field:"optional" json:"time" yaml:"time"`
 	// The title of the widget.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title PowerpackV2#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#title PowerpackV2#title}
 	Title *string `field:"optional" json:"title" yaml:"title"`
 	// The alignment of the widget's title. Valid values are `center`, `left`, `right`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#title_align PowerpackV2#title_align}
 	TitleAlign *string `field:"optional" json:"titleAlign" yaml:"titleAlign"`
 	// The size of the widget's title (defaults to 16).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#title_size PowerpackV2#title_size}
 	TitleSize *string `field:"optional" json:"titleSize" yaml:"titleSize"`
 	// view block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#view PowerpackV2#view}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#view PowerpackV2#view}
 	View *PowerpackV2WidgetGroupDefinitionWidgetGeomapDefinitionView `field:"optional" json:"view" yaml:"view"`
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogCostCustomForecast) validatePutEntriesParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogCostCustomForecast) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogCostCustomForecast_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

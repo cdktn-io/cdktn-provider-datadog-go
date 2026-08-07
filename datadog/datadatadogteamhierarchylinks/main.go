@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedBy", GoGetter: "ProvisionedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilterParentTeam", GoMethod: "ResetFilterParentTeam"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilterSubTeam", GoMethod: "ResetFilterSubTeam"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkId", GoMethod: "ResetLinkId"},

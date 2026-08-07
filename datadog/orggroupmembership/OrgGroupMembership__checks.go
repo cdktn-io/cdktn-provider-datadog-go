@@ -122,6 +122,14 @@ func (o *jsiiProxy_OrgGroupMembership) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (o *jsiiProxy_OrgGroupMembership) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OrgGroupMembership) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (o *jsiiProxy_OrgGroupMembership) validateMoveToIdParameters(id *string) er
 func (o *jsiiProxy_OrgGroupMembership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OrgGroupMembership) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

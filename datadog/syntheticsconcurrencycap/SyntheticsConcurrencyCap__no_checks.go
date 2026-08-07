@@ -59,6 +59,10 @@ func (s *jsiiProxy_SyntheticsConcurrencyCap) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsConcurrencyCap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsConcurrencyCap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_SyntheticsConcurrencyCap) validateMoveToIdParameters(id *stri
 }
 
 func (s *jsiiProxy_SyntheticsConcurrencyCap) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsConcurrencyCap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

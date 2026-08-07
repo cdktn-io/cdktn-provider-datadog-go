@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validateInterpolationForAttri
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validateOverrideLogicalIdPara
 }
 
 func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validatePutCcmConfigParameters(value *IntegrationAwsAccountCcmConfigCcmConfig) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsAccountCcmConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

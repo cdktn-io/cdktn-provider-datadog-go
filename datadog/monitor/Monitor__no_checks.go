@@ -59,6 +59,10 @@ func (m *jsiiProxy_Monitor) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_Monitor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Monitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (m *jsiiProxy_Monitor) validatePutSchedulingOptionsParameters(value *Monito
 }
 
 func (m *jsiiProxy_Monitor) validatePutVariablesParameters(value *MonitorVariables) error {
+	return nil
+}
+
+func (m *jsiiProxy_Monitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

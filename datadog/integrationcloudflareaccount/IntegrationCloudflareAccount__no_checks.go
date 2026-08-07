@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) validateInterpolationForAttribu
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationCloudflareAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationCloudflareAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationCloudflareAccount) validateMoveToIdParameters(id *
 }
 
 func (i *jsiiProxy_IntegrationCloudflareAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationCloudflareAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_SpansMetric) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SpansMetric) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpansMetric) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_SpansMetric) validatePutFilterParameters(value *SpansMetricFi
 }
 
 func (s *jsiiProxy_SpansMetric) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpansMetric) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsPrivateLocation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsPrivateLocation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SyntheticsPrivateLocation) validatePutMetadataParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsPrivateLocation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

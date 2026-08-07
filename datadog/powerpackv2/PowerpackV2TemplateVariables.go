@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2TemplateVariables struct {
 	// The name of the powerpack template variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#name PowerpackV2#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#name PowerpackV2#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// One or many default values for powerpack template variables on load.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#defaults PowerpackV2#defaults}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#defaults PowerpackV2#defaults}
 	Defaults *[]*string `field:"optional" json:"defaults" yaml:"defaults"`
 }
 

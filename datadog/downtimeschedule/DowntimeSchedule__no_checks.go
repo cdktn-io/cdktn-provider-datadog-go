@@ -59,6 +59,10 @@ func (d *jsiiProxy_DowntimeSchedule) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DowntimeSchedule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DowntimeSchedule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (d *jsiiProxy_DowntimeSchedule) validatePutOneTimeScheduleParameters(value 
 }
 
 func (d *jsiiProxy_DowntimeSchedule) validatePutRecurringScheduleParameters(value *DowntimeScheduleRecurringSchedule) error {
+	return nil
+}
+
+func (d *jsiiProxy_DowntimeSchedule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

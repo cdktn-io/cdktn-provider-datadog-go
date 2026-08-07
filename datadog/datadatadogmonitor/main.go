@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "renotifyInterval", GoGetter: "RenotifyInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "renotifyOccurrences", GoGetter: "RenotifyOccurrences"},
 			_jsii_.MemberProperty{JsiiProperty: "renotifyStatuses", GoGetter: "RenotifyStatuses"},

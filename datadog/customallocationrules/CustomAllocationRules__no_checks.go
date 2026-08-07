@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomAllocationRules) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CustomAllocationRules) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomAllocationRules) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CustomAllocationRules) validateMoveToIdParameters(id *string)
 }
 
 func (c *jsiiProxy_CustomAllocationRules) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomAllocationRules) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsMetric) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LogsMetric) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsMetric) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (l *jsiiProxy_LogsMetric) validatePutFilterParameters(value *LogsMetricFilt
 }
 
 func (l *jsiiProxy_LogsMetric) validatePutGroupByParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsMetric) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

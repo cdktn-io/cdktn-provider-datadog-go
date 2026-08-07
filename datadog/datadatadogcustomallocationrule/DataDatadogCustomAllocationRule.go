@@ -5,14 +5,14 @@ package datadatadogcustomallocationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogcustomallocationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogcustomallocationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}.
 type DataDatadogCustomAllocationRule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,19 @@ type DataDatadogCustomAllocationRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCostsToAllocate(value interface{})
 	PutStrategy(value *DataDatadogCustomAllocationRuleStrategy)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCostsToAllocate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -443,7 +456,7 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRule) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) DataDatadogCustomAllocationRule {
 	_init_.Initialize()
 
@@ -461,7 +474,7 @@ func NewDataDatadogCustomAllocationRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source.
 func NewDataDatadogCustomAllocationRule_Override(d DataDatadogCustomAllocationRule, scope constructs.Construct, id *string, config *DataDatadogCustomAllocationRuleConfig) {
 	_init_.Initialize()
 
@@ -833,6 +846,17 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRule) PutStrategy(value *DataDatad
 		d,
 		"putStrategy",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogCustomAllocationRule) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

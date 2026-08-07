@@ -59,6 +59,10 @@ func (t *jsiiProxy_TeamConnection) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (t *jsiiProxy_TeamConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (t *jsiiProxy_TeamConnection) validatePutConnectedTeamParameters(value *Tea
 }
 
 func (t *jsiiProxy_TeamConnection) validatePutTeamParameters(value *TeamConnectionTeam) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

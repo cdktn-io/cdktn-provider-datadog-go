@@ -59,6 +59,10 @@ func (s *jsiiProxy_SyntheticsTest) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsTest) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsTest) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (s *jsiiProxy_SyntheticsTest) validatePutRequestFileParameters(value interf
 }
 
 func (s *jsiiProxy_SyntheticsTest) validatePutRequestProxyParameters(value *SyntheticsTestRequestProxy) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsTest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

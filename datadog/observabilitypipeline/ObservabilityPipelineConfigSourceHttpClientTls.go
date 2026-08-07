@@ -7,25 +7,25 @@ package observabilitypipeline
 type ObservabilityPipelineConfigSourceHttpClientTls struct {
 	// Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 	CrtFile *string `field:"required" json:"crtFile" yaml:"crtFile"`
 	// Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 	CaFile *string `field:"optional" json:"caFile" yaml:"caFile"`
 	// Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 	KeyFile *string `field:"optional" json:"keyFile" yaml:"keyFile"`
 	// Name of the environment variable or secret that holds the passphrase for the private key file.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 	KeyPassKey *string `field:"optional" json:"keyPassKey" yaml:"keyPassKey"`
 	// Server name to use for Server Name Indication (SNI) and to verify against the certificate presented by the remote host.
 	//
 	// Use this when the address you connect to doesn't match the certificate's Common Name or Subject Alternative Name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#server_name ObservabilityPipeline#server_name}
 	ServerName *string `field:"optional" json:"serverName" yaml:"serverName"`
 }
 

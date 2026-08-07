@@ -59,6 +59,10 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGlobalVariable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGlobalVariable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutOptionsParameters(value 
 }
 
 func (s *jsiiProxy_SyntheticsGlobalVariable) validatePutParseTestOptionsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsGlobalVariable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

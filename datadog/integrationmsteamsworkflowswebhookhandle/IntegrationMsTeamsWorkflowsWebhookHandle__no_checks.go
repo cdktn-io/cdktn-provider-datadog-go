@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateInterpolati
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateMoveToIdPar
 }
 
 func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationMsTeamsWorkflowsWebhookHandle) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

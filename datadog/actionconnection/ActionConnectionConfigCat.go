@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionConfigCat struct {
 	// sdk_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#sdk_key ActionConnection#sdk_key}
 	SdkKey *ActionConnectionConfigCatSdkKey `field:"optional" json:"sdkKey" yaml:"sdkKey"`
 }
 

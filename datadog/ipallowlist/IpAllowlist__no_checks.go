@@ -59,6 +59,10 @@ func (i *jsiiProxy_IpAllowlist) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IpAllowlist) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpAllowlist) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IpAllowlist) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (i *jsiiProxy_IpAllowlist) validatePutEntryParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IpAllowlist) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

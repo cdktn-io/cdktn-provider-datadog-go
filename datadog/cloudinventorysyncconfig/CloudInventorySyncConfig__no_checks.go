@@ -59,6 +59,10 @@ func (c *jsiiProxy_CloudInventorySyncConfig) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CloudInventorySyncConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudInventorySyncConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (c *jsiiProxy_CloudInventorySyncConfig) validatePutAzureParameters(value *C
 }
 
 func (c *jsiiProxy_CloudInventorySyncConfig) validatePutGcpParameters(value *CloudInventorySyncConfigGcp) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudInventorySyncConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

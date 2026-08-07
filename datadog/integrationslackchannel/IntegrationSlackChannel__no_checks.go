@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationSlackChannel) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationSlackChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationSlackChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IntegrationSlackChannel) validateOverrideLogicalIdParameters(
 }
 
 func (i *jsiiProxy_IntegrationSlackChannel) validatePutDisplayParameters(value *IntegrationSlackChannelDisplay) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationSlackChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

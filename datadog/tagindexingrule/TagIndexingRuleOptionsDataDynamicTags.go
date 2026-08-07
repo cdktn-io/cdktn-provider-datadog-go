@@ -5,13 +5,15 @@ package tagindexingrule
 
 
 type TagIndexingRuleOptionsDataDynamicTags struct {
-	// Lookback window for determining which tags were recently queried.
+	// Lookback window, in seconds, for excluding tags that were not queried in that period.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#queried_tags_window_seconds TagIndexingRule#queried_tags_window_seconds}
-	QueriedTagsWindowSeconds *float64 `field:"optional" json:"queriedTagsWindowSeconds" yaml:"queriedTagsWindowSeconds"`
-	// When true, tags from related assets are included.
+	// Requires `exclude_tags_mode` to be `true`. Value must be between 1 and 7776000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/tag_indexing_rule#related_asset_tags TagIndexingRule#related_asset_tags}
-	RelatedAssetTags interface{} `field:"optional" json:"relatedAssetTags" yaml:"relatedAssetTags"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_not_queried_window_seconds TagIndexingRule#exclude_not_queried_window_seconds}
+	ExcludeNotQueriedWindowSeconds *float64 `field:"optional" json:"excludeNotQueriedWindowSeconds" yaml:"excludeNotQueriedWindowSeconds"`
+	// When true, excludes tags not used in any dashboards or monitors. Requires `exclude_tags_mode` to be `true`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule#exclude_not_used_in_assets TagIndexingRule#exclude_not_used_in_assets}
+	ExcludeNotUsedInAssets interface{} `field:"optional" json:"excludeNotUsedInAssets" yaml:"excludeNotUsedInAssets"`
 }
 

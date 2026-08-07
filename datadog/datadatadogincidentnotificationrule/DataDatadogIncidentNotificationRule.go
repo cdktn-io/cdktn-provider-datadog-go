@@ -5,14 +5,14 @@ package datadatadogincidentnotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogincidentnotificationrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule}.
 type DataDatadogIncidentNotificationRule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -93,6 +93,19 @@ type DataDatadogIncidentNotificationRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConditions(value interface{})
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetConditions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -396,7 +409,7 @@ func (j *jsiiProxy_DataDatadogIncidentNotificationRule) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule} Data Source.
 func NewDataDatadogIncidentNotificationRule(scope constructs.Construct, id *string, config *DataDatadogIncidentNotificationRuleConfig) DataDatadogIncidentNotificationRule {
 	_init_.Initialize()
 
@@ -414,7 +427,7 @@ func NewDataDatadogIncidentNotificationRule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule} Data Source.
 func NewDataDatadogIncidentNotificationRule_Override(d DataDatadogIncidentNotificationRule, scope constructs.Construct, id *string, config *DataDatadogIncidentNotificationRuleConfig) {
 	_init_.Initialize()
 
@@ -775,6 +788,17 @@ func (d *jsiiProxy_DataDatadogIncidentNotificationRule) PutConditions(value inte
 		d,
 		"putConditions",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogIncidentNotificationRule) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

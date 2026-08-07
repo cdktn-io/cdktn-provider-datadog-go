@@ -7,23 +7,23 @@ package dashboardv2
 type DashboardV2WidgetGeomapDefinitionRequest struct {
 	// formula block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#formula DashboardV2#formula}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#formula DashboardV2#formula}
 	Formula interface{} `field:"optional" json:"formula" yaml:"formula"`
 	// log_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#log_query DashboardV2#log_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#log_query DashboardV2#log_query}
 	LogQuery *DashboardV2WidgetGeomapDefinitionRequestLogQuery `field:"optional" json:"logQuery" yaml:"logQuery"`
 	// The metric query to use for this widget. **Deprecated.** Use queries and formulas instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#q DashboardV2#q}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#q DashboardV2#q}
 	Q *string `field:"optional" json:"q" yaml:"q"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#query DashboardV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#query DashboardV2#query}
 	Query interface{} `field:"optional" json:"query" yaml:"query"`
 	// rum_query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#rum_query DashboardV2#rum_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#rum_query DashboardV2#rum_query}
 	RumQuery *DashboardV2WidgetGeomapDefinitionRequestRumQuery `field:"optional" json:"rumQuery" yaml:"rumQuery"`
 }
 

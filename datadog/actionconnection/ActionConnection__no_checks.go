@@ -59,6 +59,10 @@ func (a *jsiiProxy_ActionConnection) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ActionConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (a *jsiiProxy_ActionConnection) validatePutStatsigParameters(value *ActionC
 }
 
 func (a *jsiiProxy_ActionConnection) validatePutVirusTotalParameters(value *ActionConnectionVirusTotal) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

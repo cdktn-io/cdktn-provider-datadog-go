@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecurityFindingsMuteRule) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SecurityFindingsMuteRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityFindingsMuteRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SecurityFindingsMuteRule) validatePutActionParameters(value *
 }
 
 func (s *jsiiProxy_SecurityFindingsMuteRule) validatePutRuleParameters(value *SecurityFindingsMuteRuleRule) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityFindingsMuteRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

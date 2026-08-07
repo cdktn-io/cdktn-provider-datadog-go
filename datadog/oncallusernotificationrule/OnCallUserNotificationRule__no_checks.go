@@ -59,6 +59,10 @@ func (o *jsiiProxy_OnCallUserNotificationRule) validateInterpolationForAttribute
 	return nil
 }
 
+func (o *jsiiProxy_OnCallUserNotificationRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnCallUserNotificationRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OnCallUserNotificationRule) validateOverrideLogicalIdParamete
 }
 
 func (o *jsiiProxy_OnCallUserNotificationRule) validatePutPhoneParameters(value *OnCallUserNotificationRulePhone) error {
+	return nil
+}
+
+func (o *jsiiProxy_OnCallUserNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

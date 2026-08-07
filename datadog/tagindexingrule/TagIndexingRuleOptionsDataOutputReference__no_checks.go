@@ -51,10 +51,6 @@ func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) validatePutDynamic
 	return nil
 }
 
-func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) validatePutMetricMatchParameters(value *TagIndexingRuleOptionsDataMetricMatch) error {
-	return nil
-}
-
 func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

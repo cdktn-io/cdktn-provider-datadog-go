@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogOrgGroupMemberships) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogOrgGroupMemberships) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogOrgGroupMemberships_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

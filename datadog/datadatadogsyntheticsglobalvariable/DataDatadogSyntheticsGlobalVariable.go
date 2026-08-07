@@ -5,14 +5,14 @@ package datadatadogsyntheticsglobalvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogsyntheticsglobalvariable/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
 type DataDatadogSyntheticsGlobalVariable interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -83,6 +83,19 @@ type DataDatadogSyntheticsGlobalVariable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -295,7 +308,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsGlobalVariable) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
 func NewDataDatadogSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *DataDatadogSyntheticsGlobalVariableConfig) DataDatadogSyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -313,7 +326,7 @@ func NewDataDatadogSyntheticsGlobalVariable(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
 func NewDataDatadogSyntheticsGlobalVariable_Override(d DataDatadogSyntheticsGlobalVariable, scope constructs.Construct, id *string, config *DataDatadogSyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 
@@ -663,6 +676,17 @@ func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogSyntheticsGlobalVariable) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

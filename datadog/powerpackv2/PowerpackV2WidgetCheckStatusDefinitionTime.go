@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetCheckStatusDefinitionTime struct {
 	// fixed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#fixed PowerpackV2#fixed}
 	Fixed *PowerpackV2WidgetCheckStatusDefinitionTimeFixed `field:"optional" json:"fixed" yaml:"fixed"`
 	// live block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#live PowerpackV2#live}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#live PowerpackV2#live}
 	Live *PowerpackV2WidgetCheckStatusDefinitionTimeLive `field:"optional" json:"live" yaml:"live"`
 }
 

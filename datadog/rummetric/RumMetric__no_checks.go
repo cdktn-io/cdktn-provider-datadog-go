@@ -59,6 +59,10 @@ func (r *jsiiProxy_RumMetric) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RumMetric) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RumMetric) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (r *jsiiProxy_RumMetric) validatePutGroupByParameters(value interface{}) er
 }
 
 func (r *jsiiProxy_RumMetric) validatePutUniquenessParameters(value *RumMetricUniqueness) error {
+	return nil
+}
+
+func (r *jsiiProxy_RumMetric) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

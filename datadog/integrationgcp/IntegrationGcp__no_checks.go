@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationGcp) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationGcp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationGcp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IntegrationGcp) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (i *jsiiProxy_IntegrationGcp) validatePutMonitoredResourceConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationGcp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

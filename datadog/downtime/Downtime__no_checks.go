@@ -59,6 +59,10 @@ func (d *jsiiProxy_Downtime) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_Downtime) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Downtime) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_Downtime) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (d *jsiiProxy_Downtime) validatePutRecurrenceParameters(value *DowntimeRecurrence) error {
+	return nil
+}
+
+func (d *jsiiProxy_Downtime) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

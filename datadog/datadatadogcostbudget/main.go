@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBudgetLine", GoMethod: "PutBudgetLine"},
 			_jsii_.MemberMethod{JsiiMethod: "putEntries", GoMethod: "PutEntries"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBudgetLine", GoMethod: "ResetBudgetLine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntries", GoMethod: "ResetEntries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

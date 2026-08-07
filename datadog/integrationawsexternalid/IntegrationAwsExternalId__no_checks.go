@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationAwsExternalId) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAwsExternalId) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAwsExternalId) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationAwsExternalId) validateMoveToIdParameters(id *stri
 }
 
 func (i *jsiiProxy_IntegrationAwsExternalId) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAwsExternalId) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

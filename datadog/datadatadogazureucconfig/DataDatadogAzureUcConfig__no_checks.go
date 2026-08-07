@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogAzureUcConfig) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogAzureUcConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogAzureUcConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

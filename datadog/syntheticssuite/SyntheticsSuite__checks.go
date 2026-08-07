@@ -122,6 +122,14 @@ func (s *jsiiProxy_SyntheticsSuite) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsSuite) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsSuite) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -264,6 +272,14 @@ func (s *jsiiProxy_SyntheticsSuite) validatePutTestsParameters(value interface{}
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*SyntheticsSuiteTests; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsSuite) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

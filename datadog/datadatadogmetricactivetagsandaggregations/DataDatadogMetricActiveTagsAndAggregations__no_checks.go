@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogMetricActiveTagsAndAggregations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

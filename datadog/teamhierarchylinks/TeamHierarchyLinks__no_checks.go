@@ -59,6 +59,10 @@ func (t *jsiiProxy_TeamHierarchyLinks) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (t *jsiiProxy_TeamHierarchyLinks) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamHierarchyLinks) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (t *jsiiProxy_TeamHierarchyLinks) validateMoveToIdParameters(id *string) er
 }
 
 func (t *jsiiProxy_TeamHierarchyLinks) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamHierarchyLinks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

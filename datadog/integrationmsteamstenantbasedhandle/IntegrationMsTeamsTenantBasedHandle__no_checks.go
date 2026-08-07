@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateInterpolationFor
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateMoveToIdParamete
 }
 
 func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationMsTeamsTenantBasedHandle) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

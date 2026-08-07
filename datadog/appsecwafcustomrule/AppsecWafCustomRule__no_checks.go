@@ -59,6 +59,10 @@ func (a *jsiiProxy_AppsecWafCustomRule) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppsecWafCustomRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsecWafCustomRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (a *jsiiProxy_AppsecWafCustomRule) validatePutConditionParameters(value int
 }
 
 func (a *jsiiProxy_AppsecWafCustomRule) validatePutScopeParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsecWafCustomRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

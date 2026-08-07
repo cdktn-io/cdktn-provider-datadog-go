@@ -59,6 +59,10 @@ func (i *jsiiProxy_IncidentUserDefinedRole) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IncidentUserDefinedRole) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IncidentUserDefinedRole) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IncidentUserDefinedRole) validateOverrideLogicalIdParameters(
 }
 
 func (i *jsiiProxy_IncidentUserDefinedRole) validatePutPolicyParameters(value *IncidentUserDefinedRolePolicy) error {
+	return nil
+}
+
+func (i *jsiiProxy_IncidentUserDefinedRole) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

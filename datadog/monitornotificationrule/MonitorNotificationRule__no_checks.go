@@ -59,6 +59,10 @@ func (m *jsiiProxy_MonitorNotificationRule) validateInterpolationForAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_MonitorNotificationRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorNotificationRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MonitorNotificationRule) validatePutConditionalRecipientsPara
 }
 
 func (m *jsiiProxy_MonitorNotificationRule) validatePutFilterParameters(value *MonitorNotificationRuleFilter) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

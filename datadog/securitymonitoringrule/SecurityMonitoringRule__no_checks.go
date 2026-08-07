@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SecurityMonitoringRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityMonitoringRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (s *jsiiProxy_SecurityMonitoringRule) validatePutSignalQueryParameters(valu
 }
 
 func (s *jsiiProxy_SecurityMonitoringRule) validatePutThirdPartyCaseParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityMonitoringRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

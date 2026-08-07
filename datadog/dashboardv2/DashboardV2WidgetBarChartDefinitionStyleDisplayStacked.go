@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetBarChartDefinitionStyleDisplayStacked struct {
 	// Legend display behavior for stacked bars. Valid values are `automatic`, `inline`, `none`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/dashboard_v2#legend DashboardV2#legend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#legend DashboardV2#legend}
 	Legend *string `field:"optional" json:"legend" yaml:"legend"`
 }
 

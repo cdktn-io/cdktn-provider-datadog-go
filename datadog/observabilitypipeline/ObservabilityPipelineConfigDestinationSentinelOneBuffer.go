@@ -7,11 +7,11 @@ package observabilitypipeline
 type ObservabilityPipelineConfigDestinationSentinelOneBuffer struct {
 	// disk block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 	Disk interface{} `field:"optional" json:"disk" yaml:"disk"`
 	// memory block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 	Memory interface{} `field:"optional" json:"memory" yaml:"memory"`
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogOrganizationSettings) validatePutSettingsParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogOrganizationSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

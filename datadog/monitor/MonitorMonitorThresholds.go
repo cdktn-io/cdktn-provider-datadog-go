@@ -7,39 +7,39 @@ package monitor
 type MonitorMonitorThresholds struct {
 	// The monitor `CRITICAL` threshold. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#critical Monitor#critical}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#critical Monitor#critical}
 	Critical *string `field:"optional" json:"critical" yaml:"critical"`
 	// Query evaluated as a dynamic `CRITICAL` threshold.
 	//
 	// Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#critical_query Monitor#critical_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#critical_query Monitor#critical_query}
 	CriticalQuery *string `field:"optional" json:"criticalQuery" yaml:"criticalQuery"`
 	// The monitor `CRITICAL` recovery threshold. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 	CriticalRecovery *string `field:"optional" json:"criticalRecovery" yaml:"criticalRecovery"`
 	// Query evaluated as a dynamic `CRITICAL` recovery threshold.
 	//
 	// Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
 	CriticalRecoveryQuery *string `field:"optional" json:"criticalRecoveryQuery" yaml:"criticalRecoveryQuery"`
 	// The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#ok Monitor#ok}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#ok Monitor#ok}
 	Ok *string `field:"optional" json:"ok" yaml:"ok"`
 	// The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#unknown Monitor#unknown}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#unknown Monitor#unknown}
 	Unknown *string `field:"optional" json:"unknown" yaml:"unknown"`
 	// The monitor `WARNING` threshold. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#warning Monitor#warning}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#warning Monitor#warning}
 	Warning *string `field:"optional" json:"warning" yaml:"warning"`
 	// The monitor `WARNING` recovery threshold. Must be a number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 	WarningRecovery *string `field:"optional" json:"warningRecovery" yaml:"warningRecovery"`
 }
 

@@ -59,6 +59,10 @@ func (o *jsiiProxy_OpenapiApi) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (o *jsiiProxy_OpenapiApi) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpenapiApi) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (o *jsiiProxy_OpenapiApi) validateMoveToIdParameters(id *string) error {
 }
 
 func (o *jsiiProxy_OpenapiApi) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpenapiApi) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

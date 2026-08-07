@@ -7,19 +7,19 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetPointPlotDefinitionRequest struct {
 	// projection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#projection PowerpackV2#projection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#projection PowerpackV2#projection}
 	Projection *PowerpackV2WidgetGroupDefinitionWidgetPointPlotDefinitionRequestProjection `field:"required" json:"projection" yaml:"projection"`
 	// query block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#query PowerpackV2#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#query PowerpackV2#query}
 	Query *PowerpackV2WidgetGroupDefinitionWidgetPointPlotDefinitionRequestQuery `field:"required" json:"query" yaml:"query"`
 	// The type of data request. Must be `data_projection`. Valid values are `data_projection`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#request_type PowerpackV2#request_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#request_type PowerpackV2#request_type}
 	RequestType *string `field:"required" json:"requestType" yaml:"requestType"`
 	// Maximum number of data points to return.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#limit PowerpackV2#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 }
 

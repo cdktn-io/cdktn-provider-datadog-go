@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsArchiveOrder) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LogsArchiveOrder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsArchiveOrder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (l *jsiiProxy_LogsArchiveOrder) validateMoveToIdParameters(id *string) erro
 }
 
 func (l *jsiiProxy_LogsArchiveOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsArchiveOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

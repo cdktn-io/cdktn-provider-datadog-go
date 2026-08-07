@@ -7,19 +7,19 @@ package logscustompipeline
 type LogsCustomPipelineProcessorPipelineProcessorArrayMapProcessorProcessorsArithmeticProcessor struct {
 	// Arithmetic formula.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// Target attribute path for the result.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 	// Replace missing attributes with `0`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
 	IsReplaceMissing interface{} `field:"optional" json:"isReplaceMissing" yaml:"isReplaceMissing"`
 	// Name of the sub-processor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

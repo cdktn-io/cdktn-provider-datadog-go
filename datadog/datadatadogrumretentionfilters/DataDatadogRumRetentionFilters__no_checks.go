@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogRumRetentionFilters) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogRumRetentionFilters) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogRumRetentionFilters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

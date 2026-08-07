@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomAllocationRule) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CustomAllocationRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomAllocationRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_CustomAllocationRule) validatePutCostsToAllocateParameters(va
 }
 
 func (c *jsiiProxy_CustomAllocationRule) validatePutStrategyParameters(value *CustomAllocationRuleStrategy) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomAllocationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

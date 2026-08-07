@@ -59,6 +59,10 @@ func (t *jsiiProxy_TagPipelineRulesets) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (t *jsiiProxy_TagPipelineRulesets) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagPipelineRulesets) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (t *jsiiProxy_TagPipelineRulesets) validateMoveToIdParameters(id *string) e
 }
 
 func (t *jsiiProxy_TagPipelineRulesets) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagPipelineRulesets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

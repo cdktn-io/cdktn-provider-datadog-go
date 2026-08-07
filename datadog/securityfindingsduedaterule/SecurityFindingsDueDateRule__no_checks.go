@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecurityFindingsDueDateRule) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SecurityFindingsDueDateRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityFindingsDueDateRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SecurityFindingsDueDateRule) validatePutActionParameters(valu
 }
 
 func (s *jsiiProxy_SecurityFindingsDueDateRule) validatePutRuleParameters(value *SecurityFindingsDueDateRuleRule) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityFindingsDueDateRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

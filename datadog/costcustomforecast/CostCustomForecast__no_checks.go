@@ -59,6 +59,10 @@ func (c *jsiiProxy_CostCustomForecast) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CostCustomForecast) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CostCustomForecast) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CostCustomForecast) validateOverrideLogicalIdParameters(newLo
 }
 
 func (c *jsiiProxy_CostCustomForecast) validatePutEntriesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CostCustomForecast) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

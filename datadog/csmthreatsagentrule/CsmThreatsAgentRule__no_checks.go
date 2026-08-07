@@ -59,6 +59,10 @@ func (c *jsiiProxy_CsmThreatsAgentRule) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CsmThreatsAgentRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsmThreatsAgentRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CsmThreatsAgentRule) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_CsmThreatsAgentRule) validatePutActionsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CsmThreatsAgentRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

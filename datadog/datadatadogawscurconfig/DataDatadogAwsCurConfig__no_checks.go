@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogAwsCurConfig) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogAwsCurConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogAwsCurConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

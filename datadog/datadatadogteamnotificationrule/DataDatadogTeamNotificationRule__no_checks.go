@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogTeamNotificationRule) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogTeamNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogTeamNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

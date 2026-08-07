@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogTeams) validatePutTeamsParameters(value interface{
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogTeams) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogTeams_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

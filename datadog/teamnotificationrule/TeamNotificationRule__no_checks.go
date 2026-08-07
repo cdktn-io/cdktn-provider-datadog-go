@@ -59,6 +59,10 @@ func (t *jsiiProxy_TeamNotificationRule) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TeamNotificationRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamNotificationRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (t *jsiiProxy_TeamNotificationRule) validatePutPagerdutyParameters(value *T
 }
 
 func (t *jsiiProxy_TeamNotificationRule) validatePutSlackParameters(value *TeamNotificationRuleSlack) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

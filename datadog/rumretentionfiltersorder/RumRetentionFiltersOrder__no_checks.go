@@ -59,6 +59,10 @@ func (r *jsiiProxy_RumRetentionFiltersOrder) validateInterpolationForAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_RumRetentionFiltersOrder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RumRetentionFiltersOrder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (r *jsiiProxy_RumRetentionFiltersOrder) validateMoveToIdParameters(id *stri
 }
 
 func (r *jsiiProxy_RumRetentionFiltersOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RumRetentionFiltersOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

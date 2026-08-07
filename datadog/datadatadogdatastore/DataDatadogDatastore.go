@@ -5,14 +5,14 @@ package datadatadogdatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastore/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/datadatadogdatastore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/datastore datadog_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/datastore datadog_datastore}.
 type DataDatadogDatastore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -91,6 +91,19 @@ type DataDatadogDatastore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDatastoreId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -384,7 +397,7 @@ func (j *jsiiProxy_DataDatadogDatastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/datastore datadog_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/datastore datadog_datastore} Data Source.
 func NewDataDatadogDatastore(scope constructs.Construct, id *string, config *DataDatadogDatastoreConfig) DataDatadogDatastore {
 	_init_.Initialize()
 
@@ -402,7 +415,7 @@ func NewDataDatadogDatastore(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/data-sources/datastore datadog_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/datastore datadog_datastore} Data Source.
 func NewDataDatadogDatastore_Override(d DataDatadogDatastore, scope constructs.Construct, id *string, config *DataDatadogDatastoreConfig) {
 	_init_.Initialize()
 
@@ -752,6 +765,17 @@ func (d *jsiiProxy_DataDatadogDatastore) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataDatadogDatastore) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

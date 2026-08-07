@@ -59,6 +59,10 @@ func (a *jsiiProxy_AzureUcConfig) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AzureUcConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureUcConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AzureUcConfig) validatePutActualBillConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AzureUcConfig) validatePutAmortizedBillConfigParameters(value *AzureUcConfigAmortizedBillConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureUcConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

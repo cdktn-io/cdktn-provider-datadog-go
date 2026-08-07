@@ -59,6 +59,10 @@ func (w *jsiiProxy_Webhook) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (w *jsiiProxy_Webhook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Webhook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (w *jsiiProxy_Webhook) validateMoveToIdParameters(id *string) error {
 }
 
 func (w *jsiiProxy_Webhook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Webhook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

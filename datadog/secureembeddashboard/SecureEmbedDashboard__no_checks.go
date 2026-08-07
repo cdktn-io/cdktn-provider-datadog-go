@@ -59,6 +59,10 @@ func (s *jsiiProxy_SecureEmbedDashboard) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SecureEmbedDashboard) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureEmbedDashboard) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_SecureEmbedDashboard) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_SecureEmbedDashboard) validatePutSelectableTemplateVarsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecureEmbedDashboard) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

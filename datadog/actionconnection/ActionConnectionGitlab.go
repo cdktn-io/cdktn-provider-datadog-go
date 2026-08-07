@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionGitlab struct {
 	// api_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 	ApiKey *ActionConnectionGitlabApiKey `field:"optional" json:"apiKey" yaml:"apiKey"`
 }
 

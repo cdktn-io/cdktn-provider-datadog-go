@@ -114,6 +114,14 @@ func (d *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) validateOverrideLo
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogSensitiveDataScannerGroupOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataDatadogSensitiveDataScannerGroupOrder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

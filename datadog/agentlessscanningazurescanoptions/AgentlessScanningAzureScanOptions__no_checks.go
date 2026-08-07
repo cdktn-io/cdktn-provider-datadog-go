@@ -59,6 +59,10 @@ func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateMoveToIdParameters
 }
 
 func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentlessScanningAzureScanOptions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

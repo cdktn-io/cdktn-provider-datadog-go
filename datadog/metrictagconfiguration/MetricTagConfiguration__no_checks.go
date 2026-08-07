@@ -59,6 +59,10 @@ func (m *jsiiProxy_MetricTagConfiguration) validateInterpolationForAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MetricTagConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MetricTagConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MetricTagConfiguration) validateOverrideLogicalIdParameters(n
 }
 
 func (m *jsiiProxy_MetricTagConfiguration) validatePutAggregationsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MetricTagConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

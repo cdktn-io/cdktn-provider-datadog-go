@@ -5,9 +5,9 @@ package tagindexingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -37,8 +37,6 @@ type TagIndexingRuleOptionsDataOutputReference interface {
 	ManagePreexistingMetrics() interface{}
 	SetManagePreexistingMetrics(val interface{})
 	ManagePreexistingMetricsInput() interface{}
-	MetricMatch() TagIndexingRuleOptionsDataMetricMatchOutputReference
-	MetricMatchInput() interface{}
 	OverridePreviousRules() interface{}
 	SetOverridePreviousRules(val interface{})
 	OverridePreviousRulesInput() interface{}
@@ -75,10 +73,8 @@ type TagIndexingRuleOptionsDataOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDynamicTags(value *TagIndexingRuleOptionsDataDynamicTags)
-	PutMetricMatch(value *TagIndexingRuleOptionsDataMetricMatch)
 	ResetDynamicTags()
 	ResetManagePreexistingMetrics()
-	ResetMetricMatch()
 	ResetOverridePreviousRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -180,26 +176,6 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) ManagePreexistingM
 	_jsii_.Get(
 		j,
 		"managePreexistingMetricsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) MetricMatch() TagIndexingRuleOptionsDataMetricMatchOutputReference {
-	var returns TagIndexingRuleOptionsDataMetricMatchOutputReference
-	_jsii_.Get(
-		j,
-		"metricMatch",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) MetricMatchInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"metricMatchInput",
 		&returns,
 	)
 	return returns
@@ -547,17 +523,6 @@ func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) PutDynamicTags(val
 	)
 }
 
-func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) PutMetricMatch(value *TagIndexingRuleOptionsDataMetricMatch) {
-	if err := t.validatePutMetricMatchParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		t,
-		"putMetricMatch",
-		[]interface{}{value},
-	)
-}
-
 func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) ResetDynamicTags() {
 	_jsii_.InvokeVoid(
 		t,
@@ -570,14 +535,6 @@ func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) ResetManagePreexis
 	_jsii_.InvokeVoid(
 		t,
 		"resetManagePreexistingMetrics",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TagIndexingRuleOptionsDataOutputReference) ResetMetricMatch() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetMetricMatch",
 		nil, // no parameters
 	)
 }

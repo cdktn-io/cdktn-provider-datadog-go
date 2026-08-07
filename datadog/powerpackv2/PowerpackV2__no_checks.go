@@ -59,6 +59,10 @@ func (p *jsiiProxy_PowerpackV2) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (p *jsiiProxy_PowerpackV2) validatePutTemplateVariablesParameters(value int
 }
 
 func (p *jsiiProxy_PowerpackV2) validatePutWidgetParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

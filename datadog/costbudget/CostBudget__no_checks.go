@@ -59,6 +59,10 @@ func (c *jsiiProxy_CostBudget) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CostBudget) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CostBudget) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_CostBudget) validatePutBudgetLineParameters(value interface{}
 }
 
 func (c *jsiiProxy_CostBudget) validatePutEntriesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CostBudget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

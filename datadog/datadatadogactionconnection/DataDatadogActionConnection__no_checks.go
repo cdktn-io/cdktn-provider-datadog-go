@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogActionConnection) validatePutHttpParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogActionConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogActionConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

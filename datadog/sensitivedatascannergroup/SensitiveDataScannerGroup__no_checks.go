@@ -59,6 +59,10 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveDataScannerGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveDataScannerGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_SensitiveDataScannerGroup) validatePutFilterParameters(value 
 }
 
 func (s *jsiiProxy_SensitiveDataScannerGroup) validatePutSamplingsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveDataScannerGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

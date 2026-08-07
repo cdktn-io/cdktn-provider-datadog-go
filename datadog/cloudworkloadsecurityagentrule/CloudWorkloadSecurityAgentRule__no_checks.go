@@ -59,6 +59,10 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateMoveToIdParameters(id
 }
 
 func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudWorkloadSecurityAgentRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

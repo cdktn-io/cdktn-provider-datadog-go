@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringCriticalAssets) validateOverride
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogSecurityMonitoringCriticalAssets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogSecurityMonitoringCriticalAssets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

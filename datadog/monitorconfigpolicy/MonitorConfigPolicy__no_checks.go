@@ -59,6 +59,10 @@ func (m *jsiiProxy_MonitorConfigPolicy) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitorConfigPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorConfigPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MonitorConfigPolicy) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MonitorConfigPolicy) validatePutTagPolicyParameters(value *MonitorConfigPolicyTagPolicy) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorConfigPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

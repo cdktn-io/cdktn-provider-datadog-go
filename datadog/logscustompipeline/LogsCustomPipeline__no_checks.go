@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsCustomPipeline) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (l *jsiiProxy_LogsCustomPipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsCustomPipeline) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (l *jsiiProxy_LogsCustomPipeline) validatePutFilterParameters(value interfa
 }
 
 func (l *jsiiProxy_LogsCustomPipeline) validatePutProcessorParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsCustomPipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

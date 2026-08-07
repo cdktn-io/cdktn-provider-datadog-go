@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogTeamHierarchyLinks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogTeamHierarchyLinks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsArchive) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LogsArchive) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsArchive) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (l *jsiiProxy_LogsArchive) validatePutGcsArchiveParameters(value *LogsArchi
 }
 
 func (l *jsiiProxy_LogsArchive) validatePutS3ArchiveParameters(value *LogsArchiveS3Archive) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsArchive) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

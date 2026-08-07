@@ -59,6 +59,10 @@ func (i *jsiiProxy_IntegrationAzure) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationAzure) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationAzure) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_IntegrationAzure) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (i *jsiiProxy_IntegrationAzure) validatePutResourceProviderConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationAzure) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (o *jsiiProxy_OnCallSchedule) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OnCallSchedule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnCallSchedule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OnCallSchedule) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (o *jsiiProxy_OnCallSchedule) validatePutLayerParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OnCallSchedule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

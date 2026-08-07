@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApmRetentionFilterOrder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApmRetentionFilterOrder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_ApmRetentionFilterOrder) validateMoveToIdParameters(id *strin
 }
 
 func (a *jsiiProxy_ApmRetentionFilterOrder) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApmRetentionFilterOrder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

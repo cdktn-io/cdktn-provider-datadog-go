@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogIncidentNotificationRule) validatePutConditionsPar
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogIncidentNotificationRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogIncidentNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

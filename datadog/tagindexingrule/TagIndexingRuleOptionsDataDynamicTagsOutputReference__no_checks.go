@@ -59,15 +59,15 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validateSetExcludeNotQueriedWindowSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validateSetExcludeNotUsedInAssetsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validateSetQueriedTagsWindowSecondsParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) validateSetRelatedAssetTagsParameters(val interface{}) error {
 	return nil
 }
 

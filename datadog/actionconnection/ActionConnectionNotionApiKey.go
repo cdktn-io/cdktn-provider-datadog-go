@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionNotionApiKey struct {
 	// Notion API token. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 	ApiToken *string `field:"optional" json:"apiToken" yaml:"apiToken"`
 }
 

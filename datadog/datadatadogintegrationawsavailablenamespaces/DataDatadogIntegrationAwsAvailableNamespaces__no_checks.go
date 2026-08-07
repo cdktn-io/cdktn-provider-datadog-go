@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogIntegrationAwsAvailableNamespaces) validateOverrid
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogIntegrationAwsAvailableNamespaces) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogIntegrationAwsAvailableNamespaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

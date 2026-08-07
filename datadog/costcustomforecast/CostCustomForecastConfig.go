@@ -26,11 +26,11 @@ type CostCustomForecastConfig struct {
 	//
 	// Changing this value forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#budget_uid CostCustomForecast#budget_uid}
 	BudgetUid *string `field:"required" json:"budgetUid" yaml:"budgetUid"`
 	// entries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.16.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast#entries CostCustomForecast#entries}
 	Entries interface{} `field:"optional" json:"entries" yaml:"entries"`
 }
 

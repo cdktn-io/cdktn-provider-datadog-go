@@ -59,6 +59,10 @@ func (r *jsiiProxy_RestrictionPolicy) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RestrictionPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RestrictionPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (r *jsiiProxy_RestrictionPolicy) validateOverrideLogicalIdParameters(newLog
 }
 
 func (r *jsiiProxy_RestrictionPolicy) validatePutBindingsParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RestrictionPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

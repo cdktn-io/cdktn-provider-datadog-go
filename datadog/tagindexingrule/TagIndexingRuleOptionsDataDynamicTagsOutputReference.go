@@ -5,9 +5,9 @@ package tagindexingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagindexingrule/internal"
+	"github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16/tagindexingrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,16 +28,16 @@ type TagIndexingRuleOptionsDataDynamicTagsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeNotQueriedWindowSeconds() *float64
+	SetExcludeNotQueriedWindowSeconds(val *float64)
+	ExcludeNotQueriedWindowSecondsInput() *float64
+	ExcludeNotUsedInAssets() interface{}
+	SetExcludeNotUsedInAssets(val interface{})
+	ExcludeNotUsedInAssetsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	QueriedTagsWindowSeconds() *float64
-	SetQueriedTagsWindowSeconds(val *float64)
-	QueriedTagsWindowSecondsInput() *float64
-	RelatedAssetTags() interface{}
-	SetRelatedAssetTags(val interface{})
-	RelatedAssetTagsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +70,8 @@ type TagIndexingRuleOptionsDataDynamicTagsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetQueriedTagsWindowSeconds()
-	ResetRelatedAssetTags()
+	ResetExcludeNotQueriedWindowSeconds()
+	ResetExcludeNotUsedInAssets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -117,6 +117,46 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ExcludeNotQueriedWindowSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"excludeNotQueriedWindowSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ExcludeNotQueriedWindowSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"excludeNotQueriedWindowSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ExcludeNotUsedInAssets() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeNotUsedInAssets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ExcludeNotUsedInAssetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeNotUsedInAssetsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -132,46 +172,6 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) QueriedTagsWindowSeconds() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"queriedTagsWindowSeconds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) QueriedTagsWindowSecondsInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"queriedTagsWindowSecondsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) RelatedAssetTags() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"relatedAssetTags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) RelatedAssetTagsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"relatedAssetTagsInput",
 		&returns,
 	)
 	return returns
@@ -247,6 +247,28 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetCompl
 	)
 }
 
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetExcludeNotQueriedWindowSeconds(val *float64) {
+	if err := j.validateSetExcludeNotQueriedWindowSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeNotQueriedWindowSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetExcludeNotUsedInAssets(val interface{}) {
+	if err := j.validateSetExcludeNotUsedInAssetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeNotUsedInAssets",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -254,28 +276,6 @@ func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetQueriedTagsWindowSeconds(val *float64) {
-	if err := j.validateSetQueriedTagsWindowSecondsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"queriedTagsWindowSeconds",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference)SetRelatedAssetTags(val interface{}) {
-	if err := j.validateSetRelatedAssetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"relatedAssetTags",
 		val,
 	)
 }
@@ -488,18 +488,18 @@ func (t *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) Interpo
 	return returns
 }
 
-func (t *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ResetQueriedTagsWindowSeconds() {
+func (t *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ResetExcludeNotQueriedWindowSeconds() {
 	_jsii_.InvokeVoid(
 		t,
-		"resetQueriedTagsWindowSeconds",
+		"resetExcludeNotQueriedWindowSeconds",
 		nil, // no parameters
 	)
 }
 
-func (t *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ResetRelatedAssetTags() {
+func (t *jsiiProxy_TagIndexingRuleOptionsDataDynamicTagsOutputReference) ResetExcludeNotUsedInAssets() {
 	_jsii_.InvokeVoid(
 		t,
-		"resetRelatedAssetTags",
+		"resetExcludeNotUsedInAssets",
 		nil, // no parameters
 	)
 }

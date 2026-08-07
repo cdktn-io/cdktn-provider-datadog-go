@@ -59,6 +59,10 @@ func (r *jsiiProxy_ReferenceTable) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (r *jsiiProxy_ReferenceTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReferenceTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_ReferenceTable) validatePutFileMetadataParameters(value *Refe
 }
 
 func (r *jsiiProxy_ReferenceTable) validatePutSchemaParameters(value *ReferenceTableSchema) error {
+	return nil
+}
+
+func (r *jsiiProxy_ReferenceTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

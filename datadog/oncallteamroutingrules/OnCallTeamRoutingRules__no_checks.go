@@ -59,6 +59,10 @@ func (o *jsiiProxy_OnCallTeamRoutingRules) validateInterpolationForAttributePara
 	return nil
 }
 
+func (o *jsiiProxy_OnCallTeamRoutingRules) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OnCallTeamRoutingRules) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (o *jsiiProxy_OnCallTeamRoutingRules) validateOverrideLogicalIdParameters(n
 }
 
 func (o *jsiiProxy_OnCallTeamRoutingRules) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OnCallTeamRoutingRules) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

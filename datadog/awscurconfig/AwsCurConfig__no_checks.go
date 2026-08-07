@@ -59,6 +59,10 @@ func (a *jsiiProxy_AwsCurConfig) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AwsCurConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsCurConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AwsCurConfig) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (a *jsiiProxy_AwsCurConfig) validatePutAccountFiltersParameters(value *AwsCurConfigAccountFilters) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsCurConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

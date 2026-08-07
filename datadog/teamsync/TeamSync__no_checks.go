@@ -59,6 +59,10 @@ func (t *jsiiProxy_TeamSync) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (t *jsiiProxy_TeamSync) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamSync) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (t *jsiiProxy_TeamSync) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (t *jsiiProxy_TeamSync) validatePutSelectionStateParameters(value interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamSync) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

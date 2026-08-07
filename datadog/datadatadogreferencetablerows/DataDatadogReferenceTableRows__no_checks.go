@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataDatadogReferenceTableRows) validatePutRowsParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogReferenceTableRows) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogReferenceTableRows_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

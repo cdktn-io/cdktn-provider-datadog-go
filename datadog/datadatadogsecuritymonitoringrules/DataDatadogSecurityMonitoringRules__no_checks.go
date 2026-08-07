@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataDatadogSecurityMonitoringRules) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataDatadogSecurityMonitoringRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

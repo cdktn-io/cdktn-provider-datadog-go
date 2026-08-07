@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogsIndex) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LogsIndex) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogsIndex) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (l *jsiiProxy_LogsIndex) validatePutExclusionFilterParameters(value interfa
 }
 
 func (l *jsiiProxy_LogsIndex) validatePutFilterParameters(value *LogsIndexFilter) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogsIndex) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

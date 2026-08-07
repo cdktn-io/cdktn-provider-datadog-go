@@ -59,6 +59,10 @@ func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateMoveToIdParameters(i
 }
 
 func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentlessScanningAwsScanOptions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

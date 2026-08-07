@@ -59,6 +59,10 @@ func (d *jsiiProxy_Dataset) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (d *jsiiProxy_Dataset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Dataset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_Dataset) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (d *jsiiProxy_Dataset) validatePutProductFiltersParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Dataset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
