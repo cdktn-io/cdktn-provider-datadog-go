@@ -34,6 +34,8 @@ type DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReferen
 	FormulaInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HistogramRequest() DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequestOutputReference
+	HistogramRequestInput() *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LogQuery() DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryOutputReference
@@ -85,6 +87,7 @@ type DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReferen
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQuery)
 	PutFormula(value interface{})
+	PutHistogramRequest(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest)
 	PutLogQuery(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery)
 	PutProcessQuery(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQuery)
 	PutQuery(value interface{})
@@ -93,6 +96,7 @@ type DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReferen
 	PutStyle(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyle)
 	ResetApmQuery()
 	ResetFormula()
+	ResetHistogramRequest()
 	ResetLogQuery()
 	ResetProcessQuery()
 	ResetQ()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) HistogramRequest() DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequestOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequestOutputReference
+	_jsii_.Get(
+		j,
+		"histogramRequest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) HistogramRequestInput() *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest
+	_jsii_.Get(
+		j,
+		"histogramRequestInput",
 		&returns,
 	)
 	return returns
@@ -667,6 +691,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) PutHistogramRequest(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest) {
+	if err := d.validatePutHistogramRequestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHistogramRequest",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) PutLogQuery(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery) {
 	if err := d.validatePutLogQueryParameters(value); err != nil {
 		panic(err)
@@ -745,6 +780,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	_jsii_.InvokeVoid(
 		d,
 		"resetFormula",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) ResetHistogramRequest() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHistogramRequest",
 		nil, // no parameters
 	)
 }

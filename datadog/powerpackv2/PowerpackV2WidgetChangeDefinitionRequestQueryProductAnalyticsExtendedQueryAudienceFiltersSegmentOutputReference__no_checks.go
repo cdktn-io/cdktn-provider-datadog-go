@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetSegmentIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetChangeDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersSegmentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

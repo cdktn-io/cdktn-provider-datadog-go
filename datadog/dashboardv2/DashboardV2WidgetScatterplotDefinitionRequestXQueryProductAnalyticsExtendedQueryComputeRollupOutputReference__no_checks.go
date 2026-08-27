@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetAlignmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollup) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetQuantityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetTimezoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQueryComputeRollupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_memberships datadog_team_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_memberships datadog_team_memberships}.
 type DataDatadogTeamMemberships interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataDatadogTeamMemberships) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) DataDatadogTeamMemberships {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataDatadogTeamMemberships(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source.
 func NewDataDatadogTeamMemberships_Override(d DataDatadogTeamMemberships, scope constructs.Construct, id *string, config *DataDatadogTeamMembershipsConfig) {
 	_init_.Initialize()
 

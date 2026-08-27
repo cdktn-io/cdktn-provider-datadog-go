@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuerySearchFiltersAudienceFiltersAccountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

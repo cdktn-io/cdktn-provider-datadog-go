@@ -15,6 +15,8 @@ type PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference interface 
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery
 	CloudCostQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference interface 
 	MetricQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryMetricQuery
 	ProcessQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery
 	SloQuery() PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQueryOutputReference
 	SloQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference interface 
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery)
 	PutSloQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQuery)
+	PutUserJourneyQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ApmMetricsQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQueryOutputReference {
+	var returns PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ApmMetricsQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery {
+	var returns *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery {
+	var returns *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) RetentionQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQueryOutputReference {
+	var returns PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) RetentionQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery {
+	var returns *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) SloQuery() PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQueryOutputReference {
 	var returns PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) UserJourneyQuery() PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQueryOutputReference {
+	var returns PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) UserJourneyQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery {
+	var returns *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutApmMetricsQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery) {
+	if err := p.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery) {
 	if err := p.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery) {
+	if err := p.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutRetentionQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery) {
+	if err := p.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutSloQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQuery) {
 	if err := p.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) PutUserJourneyQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery) {
+	if err := p.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

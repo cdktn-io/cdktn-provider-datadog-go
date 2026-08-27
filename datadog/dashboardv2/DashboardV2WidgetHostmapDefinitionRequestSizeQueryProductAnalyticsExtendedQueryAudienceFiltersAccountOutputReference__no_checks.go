@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryAudienceFiltersAccountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

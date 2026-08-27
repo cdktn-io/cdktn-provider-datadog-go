@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validatePutValueParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeInterval) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

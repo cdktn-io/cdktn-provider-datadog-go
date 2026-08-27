@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

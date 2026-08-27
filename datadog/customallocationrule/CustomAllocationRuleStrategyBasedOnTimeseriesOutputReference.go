@@ -32,6 +32,9 @@ type CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Json() *string
+	SetJson(val *string)
+	JsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetJson()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) Json() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"json",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) JsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonInput",
 		&returns,
 	)
 	return returns
@@ -206,6 +230,17 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)SetJson(val *string) {
+	if err := j.validateSetJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"json",
 		val,
 	)
 }
@@ -416,6 +451,14 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) ResetJson() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetJson",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

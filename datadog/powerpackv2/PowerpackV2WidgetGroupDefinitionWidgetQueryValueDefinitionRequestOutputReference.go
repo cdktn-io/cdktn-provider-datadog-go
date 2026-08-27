@@ -20,6 +20,8 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	ApmQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery
 	AuditQuery() PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryOutputReference
 	AuditQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery
+	Comparison() PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference
+	ComparisonInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -90,6 +92,7 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery)
 	PutAuditQuery(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery)
+	PutComparison(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison)
 	PutConditionalFormats(value interface{})
 	PutFormula(value interface{})
 	PutLogQuery(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQuery)
@@ -100,6 +103,7 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	ResetAggregator()
 	ResetApmQuery()
 	ResetAuditQuery()
+	ResetComparison()
 	ResetConditionalFormats()
 	ResetFormula()
 	ResetLogQuery()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	_jsii_.Get(
 		j,
 		"auditQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) Comparison() PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference
+	_jsii_.Get(
+		j,
+		"comparison",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) ComparisonInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison
+	_jsii_.Get(
+		j,
+		"comparisonInput",
 		&returns,
 	)
 	return returns
@@ -726,6 +750,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) PutComparison(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison) {
+	if err := p.validatePutComparisonParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putComparison",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) PutConditionalFormats(value interface{}) {
 	if err := p.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -823,6 +858,14 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	_jsii_.InvokeVoid(
 		p,
 		"resetAuditQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) ResetComparison() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetComparison",
 		nil, // no parameters
 	)
 }

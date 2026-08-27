@@ -104,6 +104,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -159,7 +170,40 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryRetentionQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQuerySloQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestQueryUserJourneyQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -196,6 +196,14 @@ func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) validateSetGroupedDisplayParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

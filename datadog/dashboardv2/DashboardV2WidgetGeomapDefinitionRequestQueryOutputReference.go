@@ -15,6 +15,8 @@ type DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference interface {
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() DashboardV2WidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQuery
 	CloudCostQuery() DashboardV2WidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference interface {
 	MetricQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardV2WidgetGeomapDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery
 	SloQuery() DashboardV2WidgetGeomapDefinitionRequestQuerySloQueryOutputReference
 	SloQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery)
 	PutSloQuery(value *DashboardV2WidgetGeomapDefinitionRequestQuerySloQuery)
+	PutUserJourneyQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQuery() DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery {
+	var returns *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) RetentionQuery() DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQueryOutputReference {
+	var returns DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) RetentionQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery {
+	var returns *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) SloQuery() DashboardV2WidgetGeomapDefinitionRequestQuerySloQueryOutputReference {
 	var returns DashboardV2WidgetGeomapDefinitionRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) UserJourneyQuery() DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQueryOutputReference {
+	var returns DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) UserJourneyQueryInput() *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery {
+	var returns *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery) {
+	if err := d.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutRetentionQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery) {
+	if err := d.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardV2WidgetGeomapDefinitionRequestQuerySloQuery) {
 	if err := d.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) PutUserJourneyQuery(value *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery) {
+	if err := d.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

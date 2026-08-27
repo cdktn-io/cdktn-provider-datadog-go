@@ -24,13 +24,13 @@ type SecurityFindingsMuteRulesOrderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order#name SecurityFindingsMuteRulesOrder#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rules_order#name SecurityFindingsMuteRulesOrder#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ordered list of all mute rule IDs.
 	//
 	// The order of IDs in this attribute defines the evaluation order of the mute rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order#rule_ids SecurityFindingsMuteRulesOrder#rule_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rules_order#rule_ids SecurityFindingsMuteRulesOrder#rule_ids}
 	RuleIds *[]*string `field:"required" json:"ruleIds" yaml:"ruleIds"`
 }
 

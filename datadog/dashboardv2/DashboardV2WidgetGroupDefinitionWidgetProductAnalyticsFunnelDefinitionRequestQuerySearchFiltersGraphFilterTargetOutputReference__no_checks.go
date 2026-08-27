@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetEndParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTarget) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetStartParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReference) validateSetValueParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionRequestQuerySearchFiltersGraphFilterTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

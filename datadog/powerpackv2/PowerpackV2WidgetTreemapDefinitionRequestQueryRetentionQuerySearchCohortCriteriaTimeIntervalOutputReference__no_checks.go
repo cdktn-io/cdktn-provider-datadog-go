@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validatePutValueParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeInterval) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

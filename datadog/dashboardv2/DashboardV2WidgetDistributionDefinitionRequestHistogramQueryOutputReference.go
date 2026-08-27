@@ -13,6 +13,8 @@ import (
 
 type DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference interface {
 	cdktn.ComplexObject
+	ApmMetricsQuery() DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery
 	// the index of the complex object in a list.
@@ -70,9 +72,11 @@ type DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApmMetricsQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery)
 	PutEventQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryMetricQuery)
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
@@ -89,6 +93,26 @@ type DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference
 // The jsii proxy struct for DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference
 type jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmResourceStatsQuery() DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQueryOutputReference {
@@ -490,6 +514,17 @@ func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryO
 	return returns
 }
 
+func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryO
 		d,
 		"putMetricQuery",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetDistributionDefinitionRequestHistogramQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
+		nil, // no parameters
 	)
 }
 

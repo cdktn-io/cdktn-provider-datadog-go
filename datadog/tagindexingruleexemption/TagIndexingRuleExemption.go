@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
 type TagIndexingRuleExemption interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_TagIndexingRuleExemption) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption} Resource.
 func NewTagIndexingRuleExemption(scope constructs.Construct, id *string, config *TagIndexingRuleExemptionConfig) TagIndexingRuleExemption {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewTagIndexingRuleExemption(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption} Resource.
 func NewTagIndexingRuleExemption_Override(t TagIndexingRuleExemption, scope constructs.Construct, id *string, config *TagIndexingRuleExemptionConfig) {
 	_init_.Initialize()
 

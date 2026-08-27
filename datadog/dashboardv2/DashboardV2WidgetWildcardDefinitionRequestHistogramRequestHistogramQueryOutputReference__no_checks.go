@@ -47,6 +47,10 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHis
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery) error {
 	return nil
 }

@@ -1,0 +1,85 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validatePutSearchParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQuerySearch) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetDataSourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQuery) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuerySearchReturnCriteriaBaseQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

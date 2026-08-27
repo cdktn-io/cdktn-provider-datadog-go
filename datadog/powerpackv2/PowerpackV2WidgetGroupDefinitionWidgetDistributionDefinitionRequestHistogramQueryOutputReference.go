@@ -13,6 +13,8 @@ import (
 
 type PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference interface {
 	cdktn.ComplexObject
+	ApmMetricsQuery() PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery
 	ApmResourceStatsQuery() PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery
 	// the index of the complex object in a list.
@@ -70,9 +72,11 @@ type PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogra
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApmMetricsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery)
 	PutEventQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryEventQuery)
 	PutMetricQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryMetricQuery)
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
@@ -89,6 +93,26 @@ type PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogra
 // The jsii proxy struct for PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference
 type jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmMetricsQuery() PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmMetricsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) ApmResourceStatsQuery() PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQueryOutputReference {
@@ -490,6 +514,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 	return returns
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) PutApmMetricsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmMetricsQuery) {
+	if err := p.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) PutApmResourceStatsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryApmResourceStatsQuery) {
 	if err := p.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionR
 		p,
 		"putMetricQuery",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinitionRequestHistogramQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApmMetricsQuery",
+		nil, // no parameters
 	)
 }
 

@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetAlignmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValue) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetQuantityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetTimezoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetSunburstDefinitionRequestQueryRetentionQuerySearchCohortCriteriaTimeIntervalValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

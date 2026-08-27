@@ -1,0 +1,81 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearch) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQueryQuerySearchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validatePutAccountParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validatePutSegmentParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetFilterConditionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFilters) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQueryAudienceFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

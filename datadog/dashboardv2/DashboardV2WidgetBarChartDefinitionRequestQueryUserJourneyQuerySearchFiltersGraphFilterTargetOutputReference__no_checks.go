@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package dashboardv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetEndParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetInternalValueParameters(val *DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTarget) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetStartParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReference) validateSetValueParameters(val *string) error {
+	return nil
+}
+
+func validateNewDashboardV2WidgetBarChartDefinitionRequestQueryUserJourneyQuerySearchFiltersGraphFilterTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

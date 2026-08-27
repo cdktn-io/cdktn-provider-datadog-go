@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 type DataDatadogServiceLevelObjectives interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataDatadogServiceLevelObjectives) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataDatadogServiceLevelObjectives(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/service_level_objectives datadog_service_level_objectives} Data Source.
 func NewDataDatadogServiceLevelObjectives_Override(d DataDatadogServiceLevelObjectives, scope constructs.Construct, id *string, config *DataDatadogServiceLevelObjectivesConfig) {
 	_init_.Initialize()
 

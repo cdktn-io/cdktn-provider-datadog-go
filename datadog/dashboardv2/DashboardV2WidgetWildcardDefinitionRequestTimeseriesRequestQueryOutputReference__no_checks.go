@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQu
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQu
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTimeseriesRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

@@ -104,6 +104,17 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -159,7 +170,40 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -1,0 +1,93 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package powerpackv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validatePutAccountParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validatePutSegmentParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetFilterConditionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetInternalValueParameters(val *PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFilters) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewPowerpackV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuerySearchFiltersAudienceFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

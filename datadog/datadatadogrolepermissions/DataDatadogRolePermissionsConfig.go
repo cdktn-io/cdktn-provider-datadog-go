@@ -24,7 +24,7 @@ type DataDatadogRolePermissionsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The role's identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/role_permissions#role_id DataDatadogRolePermissions#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/role_permissions#role_id DataDatadogRolePermissions#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 }
 

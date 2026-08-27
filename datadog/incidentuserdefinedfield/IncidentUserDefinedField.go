@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field}.
 type IncidentUserDefinedField interface {
 	cdktn.TerraformResource
 	Category() *string
@@ -647,7 +647,7 @@ func (j *jsiiProxy_IncidentUserDefinedField) ValidValueInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field} Resource.
 func NewIncidentUserDefinedField(scope constructs.Construct, id *string, config *IncidentUserDefinedFieldConfig) IncidentUserDefinedField {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewIncidentUserDefinedField(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_field datadog_incident_user_defined_field} Resource.
 func NewIncidentUserDefinedField_Override(i IncidentUserDefinedField, scope constructs.Construct, id *string, config *IncidentUserDefinedFieldConfig) {
 	_init_.Initialize()
 

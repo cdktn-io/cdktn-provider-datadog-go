@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}.
 type RumRetentionFiltersOrder interface {
 	cdktn.TerraformResource
 	ApplicationId() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_RumRetentionFiltersOrder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource.
 func NewRumRetentionFiltersOrder(scope constructs.Construct, id *string, config *RumRetentionFiltersOrderConfig) RumRetentionFiltersOrder {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewRumRetentionFiltersOrder(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource.
 func NewRumRetentionFiltersOrder_Override(r RumRetentionFiltersOrder, scope constructs.Construct, id *string, config *RumRetentionFiltersOrderConfig) {
 	_init_.Initialize()
 

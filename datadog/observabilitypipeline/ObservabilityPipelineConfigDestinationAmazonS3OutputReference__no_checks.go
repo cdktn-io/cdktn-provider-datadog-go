@@ -83,6 +83,14 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetServerSideEncryptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetSsekmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

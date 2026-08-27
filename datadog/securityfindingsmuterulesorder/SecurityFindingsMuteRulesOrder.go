@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order}.
 type SecurityFindingsMuteRulesOrder interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SecurityFindingsMuteRulesOrder) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order} Resource.
 func NewSecurityFindingsMuteRulesOrder(scope constructs.Construct, id *string, config *SecurityFindingsMuteRulesOrderConfig) SecurityFindingsMuteRulesOrder {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSecurityFindingsMuteRulesOrder(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_mute_rules_order datadog_security_findings_mute_rules_order} Resource.
 func NewSecurityFindingsMuteRulesOrder_Override(s SecurityFindingsMuteRulesOrder, scope constructs.Construct, id *string, config *SecurityFindingsMuteRulesOrderConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_archives_order datadog_logs_archives_order}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_archives_order datadog_logs_archives_order}.
 type DataDatadogLogsArchivesOrder interface {
 	cdktn.TerraformDataSource
 	ArchiveIds() *[]*string
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataDatadogLogsArchivesOrder) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_archives_order datadog_logs_archives_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_archives_order datadog_logs_archives_order} Data Source.
 func NewDataDatadogLogsArchivesOrder(scope constructs.Construct, id *string, config *DataDatadogLogsArchivesOrderConfig) DataDatadogLogsArchivesOrder {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataDatadogLogsArchivesOrder(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_archives_order datadog_logs_archives_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_archives_order datadog_logs_archives_order} Data Source.
 func NewDataDatadogLogsArchivesOrder_Override(d DataDatadogLogsArchivesOrder, scope constructs.Construct, id *string, config *DataDatadogLogsArchivesOrderConfig) {
 	_init_.Initialize()
 

@@ -15,6 +15,8 @@ type PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputRe
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery
 	CloudCostQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputRe
 	MetricQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryMetricQuery
 	ProcessQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery
 	SloQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference
 	SloQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputRe
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputRe
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery)
 	PutSloQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQuery)
+	PutUserJourneyQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ApmMetricsQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQueryOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ApmMetricsQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) RetentionQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) RetentionQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) SloQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference {
 	var returns PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) UserJourneyQuery() PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) UserJourneyQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutApmMetricsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmMetricsQuery) {
+	if err := p.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery) {
 	if err := p.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery) {
+	if err := p.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutRetentionQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryRetentionQuery) {
+	if err := p.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutSloQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQuerySloQuery) {
 	if err := p.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) PutUserJourneyQuery(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryUserJourneyQuery) {
+	if err := p.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

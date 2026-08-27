@@ -276,6 +276,22 @@ func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetServerSideEncryptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetSsekmsKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityPipelineConfigDestinationAmazonS3OutputReference) validateSetStorageClassParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

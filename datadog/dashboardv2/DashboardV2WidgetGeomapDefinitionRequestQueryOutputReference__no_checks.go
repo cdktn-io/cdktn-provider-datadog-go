@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ package syntheticstest
 type SyntheticsTestApiStepAssertionTargetMcpCapabilities struct {
 	// List of MCP server capabilities to assert against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/synthetics_test#capabilities SyntheticsTest#capabilities}
 	Capabilities *[]*string `field:"required" json:"capabilities" yaml:"capabilities"`
 }
 

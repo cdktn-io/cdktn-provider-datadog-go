@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

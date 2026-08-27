@@ -24,13 +24,13 @@ type TagIndexingRuleExemptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The metric name to exempt. Changing this value forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
 	MetricName *string `field:"required" json:"metricName" yaml:"metricName"`
 	// The reason the metric is exempt from tag indexing rules.
 	//
 	// Changing this value forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
 	Reason *string `field:"required" json:"reason" yaml:"reason"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_connection datadog_team_connection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_connection datadog_team_connection}.
 type TeamConnection interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_TeamConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_connection datadog_team_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_connection datadog_team_connection} Resource.
 func NewTeamConnection(scope constructs.Construct, id *string, config *TeamConnectionConfig) TeamConnection {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewTeamConnection(scope constructs.Construct, id *string, config *TeamConne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/team_connection datadog_team_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/team_connection datadog_team_connection} Resource.
 func NewTeamConnection_Override(t TeamConnection, scope constructs.Construct, id *string, config *TeamConnectionConfig) {
 	_init_.Initialize()
 

@@ -67,6 +67,10 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutCheckStatusDefin
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutCohortDefinitionParameters(value *DashboardV2WidgetCohortDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutDistributionDefinitionParameters(value *DashboardV2WidgetDistributionDefinition) error {
 	return nil
 }
@@ -135,11 +139,19 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutPowerpackDefinit
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *DashboardV2WidgetProductAnalyticsFunnelDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardV2WidgetQueryTableDefinition) error {
 	return nil
 }
 
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutQueryValueDefinitionParameters(value *DashboardV2WidgetQueryValueDefinition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *DashboardV2WidgetRetentionCurveDefinition) error {
 	return nil
 }
 

@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetHeatmapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

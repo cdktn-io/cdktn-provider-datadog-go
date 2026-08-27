@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
 type DataDatadogLogsIndexes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataDatadogLogsIndexes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) DataDatadogLogsIndexes {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataDatadogLogsIndexes(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source.
 func NewDataDatadogLogsIndexes_Override(d DataDatadogLogsIndexes, scope constructs.Construct, id *string, config *DataDatadogLogsIndexesConfig) {
 	_init_.Initialize()
 

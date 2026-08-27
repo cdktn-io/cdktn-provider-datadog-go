@@ -7,11 +7,11 @@ package powerpackv2
 type PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequest struct {
 	// fill block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#fill PowerpackV2#fill}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#fill PowerpackV2#fill}
 	Fill *PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestFill `field:"optional" json:"fill" yaml:"fill"`
 	// size block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#size PowerpackV2#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#size PowerpackV2#size}
 	Size *PowerpackV2WidgetGroupDefinitionWidgetHostmapDefinitionRequestSize `field:"optional" json:"size" yaml:"size"`
 }
 

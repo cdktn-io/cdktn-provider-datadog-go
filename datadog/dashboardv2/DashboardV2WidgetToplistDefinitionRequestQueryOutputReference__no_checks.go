@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

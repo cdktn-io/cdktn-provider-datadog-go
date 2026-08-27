@@ -24,21 +24,21 @@ type IncidentTypeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the incident type. Must be between 1 and 50 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#name IncidentType#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_type#name IncidentType#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The incident type's behavior settings.
 	//
 	// Any field left unset takes its server-side default. This block is applied in a separate call after the incident type is created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#configuration IncidentType#configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_type#configuration IncidentType#configuration}
 	Configuration *IncidentTypeConfiguration `field:"optional" json:"configuration" yaml:"configuration"`
 	// Description of the incident type. The description can have a maximum of 512 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#description IncidentType#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_type#description IncidentType#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether this incident type is the default type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_type#is_default IncidentType#is_default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_type#is_default IncidentType#is_default}
 	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
 }
 

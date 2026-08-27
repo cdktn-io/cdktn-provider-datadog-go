@@ -59,10 +59,6 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) validatePutBasedOnTimeseriesParameters(value *DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) validatePutEvaluateGroupedByFiltersParameters(value interface{}) error {
 	return nil
 }

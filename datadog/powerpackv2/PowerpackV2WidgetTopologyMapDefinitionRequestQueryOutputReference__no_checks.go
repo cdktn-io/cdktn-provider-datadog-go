@@ -71,6 +71,10 @@ func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetQueryStringParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetServiceParameters(val *string) error {
 	return nil
 }

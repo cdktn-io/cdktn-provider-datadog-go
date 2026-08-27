@@ -104,6 +104,17 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -159,7 +170,40 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

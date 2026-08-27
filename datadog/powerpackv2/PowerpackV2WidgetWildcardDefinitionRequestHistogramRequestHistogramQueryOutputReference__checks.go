@@ -93,6 +93,17 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHis
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

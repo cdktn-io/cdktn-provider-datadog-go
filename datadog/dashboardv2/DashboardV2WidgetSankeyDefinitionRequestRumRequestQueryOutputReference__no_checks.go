@@ -47,6 +47,18 @@ func (d *jsiiProxy_DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOutput
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) validatePutAudienceFiltersParameters(value *DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) validatePutJoinKeysParameters(value *DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) validatePutOccurrenceParameters(value *DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

@@ -47,6 +47,10 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHis
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery) error {
 	return nil
 }

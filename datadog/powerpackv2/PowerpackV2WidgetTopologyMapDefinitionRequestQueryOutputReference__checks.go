@@ -190,6 +190,14 @@ func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetQueryStringParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetServiceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

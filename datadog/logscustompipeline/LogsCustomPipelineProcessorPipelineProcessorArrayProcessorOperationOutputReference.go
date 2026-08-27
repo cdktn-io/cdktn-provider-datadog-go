@@ -34,6 +34,8 @@ type LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputRe
 	Fqn() *string
 	InternalValue() *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation
 	SetInternalValue(val *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation)
+	KeyValue() LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference
+	KeyValueInput() *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue
 	Length() LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference
 	LengthInput() *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength
 	Select() LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference
@@ -71,9 +73,11 @@ type LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputRe
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAppend(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend)
+	PutKeyValue(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue)
 	PutLength(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength)
 	PutSelect(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect)
 	ResetAppend()
+	ResetKeyValue()
 	ResetLength()
 	ResetSelect()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference) KeyValue() LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference {
+	var returns LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference
+	_jsii_.Get(
+		j,
+		"keyValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference) KeyValueInput() *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue {
+	var returns *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue
+	_jsii_.Get(
+		j,
+		"keyValueInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpe
 	)
 }
 
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference) PutKeyValue(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue) {
+	if err := l.validatePutKeyValueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putKeyValue",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference) PutLength(value *LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength) {
 	if err := l.validatePutLengthParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpe
 	_jsii_.InvokeVoid(
 		l,
 		"resetAppend",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference) ResetKeyValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetKeyValue",
 		nil, // no parameters
 	)
 }

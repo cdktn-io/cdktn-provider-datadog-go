@@ -24,11 +24,11 @@ type DataDatadogCostCustomForecastConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of the budget that this custom forecast belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/cost_custom_forecast#budget_uid DataDatadogCostCustomForecast#budget_uid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#budget_uid DataDatadogCostCustomForecast#budget_uid}
 	BudgetUid *string `field:"required" json:"budgetUid" yaml:"budgetUid"`
 	// entries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/cost_custom_forecast#entries DataDatadogCostCustomForecast#entries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/cost_custom_forecast#entries DataDatadogCostCustomForecast#entries}
 	Entries interface{} `field:"optional" json:"entries" yaml:"entries"`
 }
 

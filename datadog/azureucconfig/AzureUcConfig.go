@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
 type AzureUcConfig interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -525,7 +525,7 @@ func (j *jsiiProxy_AzureUcConfig) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource.
 func NewAzureUcConfig(scope constructs.Construct, id *string, config *AzureUcConfigConfig) AzureUcConfig {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewAzureUcConfig(scope constructs.Construct, id *string, config *AzureUcCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource.
 func NewAzureUcConfig_Override(a AzureUcConfig, scope constructs.Construct, id *string, config *AzureUcConfigConfig) {
 	_init_.Initialize()
 

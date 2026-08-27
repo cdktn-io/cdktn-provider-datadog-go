@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionOkta struct {
 	// api_token block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_token ActionConnection#api_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_token ActionConnection#api_token}
 	ApiToken *ActionConnectionOktaApiToken `field:"optional" json:"apiToken" yaml:"apiToken"`
 }
 

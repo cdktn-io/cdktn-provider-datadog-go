@@ -24,21 +24,21 @@ type IncidentUserDefinedRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the incident type this user-defined role is associated with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#incident_type IncidentUserDefinedRole#incident_type}
 	IncidentType *string `field:"required" json:"incidentType" yaml:"incidentType"`
 	// The name of the user-defined role.
 	//
 	// Cannot be a reserved name ("Incident Commander" or "Responder") and must be at most 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#name IncidentUserDefinedRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A description of the user-defined role. At most 1024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#description IncidentUserDefinedRole#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Policy configuration for the user-defined role. Defaults to a multi-assignee policy when omitted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role#policy IncidentUserDefinedRole#policy}
 	Policy *IncidentUserDefinedRolePolicy `field:"optional" json:"policy" yaml:"policy"`
 }
 

@@ -7,7 +7,7 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestTextFormats struct {
 	// text_format block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#text_format DashboardV2#text_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#text_format DashboardV2#text_format}
 	TextFormat interface{} `field:"optional" json:"textFormat" yaml:"textFormat"`
 }
 

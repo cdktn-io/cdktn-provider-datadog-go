@@ -83,6 +83,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) validatePutSortParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) validatePutTextFormatsParameters(value interface{}) error {
 	return nil
 }

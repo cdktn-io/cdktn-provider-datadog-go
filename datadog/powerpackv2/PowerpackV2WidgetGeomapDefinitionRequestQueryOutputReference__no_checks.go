@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference)
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGeomapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetGeomapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

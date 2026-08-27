@@ -68,6 +68,8 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	RumQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery
 	SecurityQuery() PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery
+	Sort() PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference
+	SortInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -111,6 +113,7 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	PutQuery(value interface{})
 	PutRumQuery(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery)
+	PutSort(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort)
 	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
@@ -127,6 +130,7 @@ type PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetSort()
 	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) Sort() PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) SortInput() *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -967,6 +991,17 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) PutSort(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort) {
+	if err := p.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
 	if err := p.validatePutTextFormatsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	_jsii_.InvokeVoid(
 		p,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSort",
 		nil, // no parameters
 	)
 }

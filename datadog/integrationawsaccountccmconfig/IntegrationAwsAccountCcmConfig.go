@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config}.
 type IntegrationAwsAccountCcmConfig interface {
 	cdktn.TerraformResource
 	AwsAccountConfigId() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IntegrationAwsAccountCcmConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource.
 func NewIntegrationAwsAccountCcmConfig(scope constructs.Construct, id *string, config *IntegrationAwsAccountCcmConfigConfig) IntegrationAwsAccountCcmConfig {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIntegrationAwsAccountCcmConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/integration_aws_account_ccm_config datadog_integration_aws_account_ccm_config} Resource.
 func NewIntegrationAwsAccountCcmConfig_Override(i IntegrationAwsAccountCcmConfig, scope constructs.Construct, id *string, config *IntegrationAwsAccountCcmConfigConfig) {
 	_init_.Initialize()
 

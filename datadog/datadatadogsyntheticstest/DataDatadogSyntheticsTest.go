@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
 type DataDatadogSyntheticsTest interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataDatadogSyntheticsTest interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceIds() *[]*string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -42,15 +43,22 @@ type DataDatadogSyntheticsTest interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Locations() *[]*string
+	Message() *string
+	MobileOptionsList() DataDatadogSyntheticsTestMobileOptionsListStructList
+	MonitorId() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	OptionsList() DataDatadogSyntheticsTestOptionsListStructList
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
+	Subtype() *string
 	Tags() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -61,6 +69,7 @@ type DataDatadogSyntheticsTest interface {
 	TestId() *string
 	SetTestId(val *string)
 	TestIdInput() *string
+	Type() *string
 	Url() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -172,6 +181,16 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSyntheticsTest) DeviceIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deviceIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -232,6 +251,46 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) Lifecycle() *cdktn.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSyntheticsTest) Locations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSyntheticsTest) Message() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSyntheticsTest) MobileOptionsList() DataDatadogSyntheticsTestMobileOptionsListStructList {
+	var returns DataDatadogSyntheticsTestMobileOptionsListStructList
+	_jsii_.Get(
+		j,
+		"mobileOptionsList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSyntheticsTest) MonitorId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitorId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -252,6 +311,16 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSyntheticsTest) OptionsList() DataDatadogSyntheticsTestOptionsListStructList {
+	var returns DataDatadogSyntheticsTestOptionsListStructList
+	_jsii_.Get(
+		j,
+		"optionsList",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -267,6 +336,26 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSyntheticsTest) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogSyntheticsTest) Subtype() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subtype",
 		&returns,
 	)
 	return returns
@@ -332,6 +421,16 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) TestIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDatadogSyntheticsTest) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataDatadogSyntheticsTest) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,7 +442,7 @@ func (j *jsiiProxy_DataDatadogSyntheticsTest) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
 func NewDataDatadogSyntheticsTest(scope constructs.Construct, id *string, config *DataDatadogSyntheticsTestConfig) DataDatadogSyntheticsTest {
 	_init_.Initialize()
 
@@ -361,7 +460,7 @@ func NewDataDatadogSyntheticsTest(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/synthetics_test datadog_synthetics_test} Data Source.
 func NewDataDatadogSyntheticsTest_Override(d DataDatadogSyntheticsTest, scope constructs.Construct, id *string, config *DataDatadogSyntheticsTestConfig) {
 	_init_.Initialize()
 

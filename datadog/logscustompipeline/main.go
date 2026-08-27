@@ -670,6 +670,54 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessorOperationKeyValue",
+		reflect.TypeOf((*LogsCustomPipelineProcessorArrayProcessorOperationKeyValue)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessorOperationKeyValueOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorArrayProcessorOperationKeyValueOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyToExtract", GoGetter: "KeyToExtract"},
+			_jsii_.MemberProperty{JsiiProperty: "keyToExtractInput", GoGetter: "KeyToExtractInput"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideOnConflict", GoGetter: "OverrideOnConflict"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideOnConflictInput", GoGetter: "OverrideOnConflictInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideOnConflict", GoMethod: "ResetOverrideOnConflict"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
+			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "valueToExtract", GoGetter: "ValueToExtract"},
+			_jsii_.MemberProperty{JsiiProperty: "valueToExtractInput", GoGetter: "ValueToExtractInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorArrayProcessorOperationKeyValueOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArrayProcessorOperationLength",
 		reflect.TypeOf((*LogsCustomPipelineProcessorArrayProcessorOperationLength)(nil)).Elem(),
 	)
@@ -732,12 +780,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyValue", GoGetter: "KeyValue"},
+			_jsii_.MemberProperty{JsiiProperty: "keyValueInput", GoGetter: "KeyValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "length", GoGetter: "Length"},
 			_jsii_.MemberProperty{JsiiProperty: "lengthInput", GoGetter: "LengthInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppend", GoMethod: "PutAppend"},
+			_jsii_.MemberMethod{JsiiMethod: "putKeyValue", GoMethod: "PutKeyValue"},
 			_jsii_.MemberMethod{JsiiMethod: "putLength", GoMethod: "PutLength"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelect", GoMethod: "PutSelect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppend", GoMethod: "ResetAppend"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyValue", GoMethod: "ResetKeyValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLength", GoMethod: "ResetLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSelect", GoMethod: "ResetSelect"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -2190,6 +2242,54 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValue)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference",
+		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyToExtract", GoGetter: "KeyToExtract"},
+			_jsii_.MemberProperty{JsiiProperty: "keyToExtractInput", GoGetter: "KeyToExtractInput"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideOnConflict", GoGetter: "OverrideOnConflict"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideOnConflictInput", GoGetter: "OverrideOnConflictInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideOnConflict", GoMethod: "ResetOverrideOnConflict"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
+			_jsii_.MemberProperty{JsiiProperty: "targetInput", GoGetter: "TargetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "valueToExtract", GoGetter: "ValueToExtract"},
+			_jsii_.MemberProperty{JsiiProperty: "valueToExtractInput", GoGetter: "ValueToExtractInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationKeyValueOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength",
 		reflect.TypeOf((*LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength)(nil)).Elem(),
 	)
@@ -2252,12 +2352,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyValue", GoGetter: "KeyValue"},
+			_jsii_.MemberProperty{JsiiProperty: "keyValueInput", GoGetter: "KeyValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "length", GoGetter: "Length"},
 			_jsii_.MemberProperty{JsiiProperty: "lengthInput", GoGetter: "LengthInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppend", GoMethod: "PutAppend"},
+			_jsii_.MemberMethod{JsiiMethod: "putKeyValue", GoMethod: "PutKeyValue"},
 			_jsii_.MemberMethod{JsiiMethod: "putLength", GoMethod: "PutLength"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelect", GoMethod: "PutSelect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppend", GoMethod: "ResetAppend"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyValue", GoMethod: "ResetKeyValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLength", GoMethod: "ResetLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSelect", GoMethod: "ResetSelect"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

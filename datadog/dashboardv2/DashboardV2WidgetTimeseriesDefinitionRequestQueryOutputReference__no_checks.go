@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

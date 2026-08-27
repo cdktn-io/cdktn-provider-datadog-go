@@ -63,6 +63,10 @@ func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) validateSetJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

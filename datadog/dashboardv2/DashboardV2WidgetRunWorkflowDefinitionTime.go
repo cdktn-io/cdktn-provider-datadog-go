@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetRunWorkflowDefinitionTime struct {
 	// fixed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
 	Fixed *DashboardV2WidgetRunWorkflowDefinitionTimeFixed `field:"optional" json:"fixed" yaml:"fixed"`
 	// live block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#live DashboardV2#live}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#live DashboardV2#live}
 	Live *DashboardV2WidgetRunWorkflowDefinitionTimeLive `field:"optional" json:"live" yaml:"live"`
 }
 

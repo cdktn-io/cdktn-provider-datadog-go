@@ -33,6 +33,9 @@ type DashboardV2WidgetFunnelDefinitionOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	GroupedDisplay() *string
+	SetGroupedDisplay(val *string)
+	GroupedDisplayInput() *string
 	HideIncompleteCostData() interface{}
 	SetHideIncompleteCostData(val interface{})
 	HideIncompleteCostDataInput() interface{}
@@ -89,6 +92,7 @@ type DashboardV2WidgetFunnelDefinitionOutputReference interface {
 	PutRequest(value *DashboardV2WidgetFunnelDefinitionRequest)
 	PutTime(value *DashboardV2WidgetFunnelDefinitionTime)
 	ResetDescription()
+	ResetGroupedDisplay()
 	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
@@ -166,6 +170,26 @@ func (j *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference) GroupedDisplay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupedDisplay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference) GroupedDisplayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupedDisplayInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +422,17 @@ func (j *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference)SetDescripti
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference)SetGroupedDisplay(val *string) {
+	if err := j.validateSetGroupedDisplayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupedDisplay",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference) ResetDescri
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetFunnelDefinitionOutputReference) ResetGroupedDisplay() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGroupedDisplay",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/org_group_membership datadog_org_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_membership datadog_org_group_membership}.
 type OrgGroupMembership interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_OrgGroupMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/org_group_membership datadog_org_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_membership datadog_org_group_membership} Resource.
 func NewOrgGroupMembership(scope constructs.Construct, id *string, config *OrgGroupMembershipConfig) OrgGroupMembership {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewOrgGroupMembership(scope constructs.Construct, id *string, config *OrgGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/org_group_membership datadog_org_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/org_group_membership datadog_org_group_membership} Resource.
 func NewOrgGroupMembership_Override(o OrgGroupMembership, scope constructs.Construct, id *string, config *OrgGroupMembershipConfig) {
 	_init_.Initialize()
 

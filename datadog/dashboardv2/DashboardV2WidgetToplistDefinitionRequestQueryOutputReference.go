@@ -15,6 +15,8 @@ type DashboardV2WidgetToplistDefinitionRequestQueryOutputReference interface {
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() DashboardV2WidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryApmResourceStatsQuery
 	CloudCostQuery() DashboardV2WidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type DashboardV2WidgetToplistDefinitionRequestQueryOutputReference interface {
 	MetricQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardV2WidgetToplistDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() DashboardV2WidgetToplistDefinitionRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery
 	SloQuery() DashboardV2WidgetToplistDefinitionRequestQuerySloQueryOutputReference
 	SloQueryInput() *DashboardV2WidgetToplistDefinitionRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type DashboardV2WidgetToplistDefinitionRequestQueryOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type DashboardV2WidgetToplistDefinitionRequestQueryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery)
 	PutSloQuery(value *DashboardV2WidgetToplistDefinitionRequestQuerySloQuery)
+	PutUserJourneyQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQuery() DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery {
+	var returns *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) RetentionQuery() DashboardV2WidgetToplistDefinitionRequestQueryRetentionQueryOutputReference {
+	var returns DashboardV2WidgetToplistDefinitionRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) RetentionQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery {
+	var returns *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) SloQuery() DashboardV2WidgetToplistDefinitionRequestQuerySloQueryOutputReference {
 	var returns DashboardV2WidgetToplistDefinitionRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) UserJourneyQuery() DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQueryOutputReference {
+	var returns DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) UserJourneyQueryInput() *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery {
+	var returns *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery) {
+	if err := d.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutRetentionQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryRetentionQuery) {
+	if err := d.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardV2WidgetToplistDefinitionRequestQuerySloQuery) {
 	if err := d.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) PutUserJourneyQuery(value *DashboardV2WidgetToplistDefinitionRequestQueryUserJourneyQuery) {
+	if err := d.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetToplistDefinitionRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection}.
 type DataDatadogIntegrationAwsIamPermissionsResourceCollection interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataDatadogIntegrationAwsIamPermissionsResourceCollection) Te
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissionsResourceCollection(scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsResourceCollectionConfig) DataDatadogIntegrationAwsIamPermissionsResourceCollection {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataDatadogIntegrationAwsIamPermissionsResourceCollection(scope construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection} Data Source.
 func NewDataDatadogIntegrationAwsIamPermissionsResourceCollection_Override(d DataDatadogIntegrationAwsIamPermissionsResourceCollection, scope constructs.Construct, id *string, config *DataDatadogIntegrationAwsIamPermissionsResourceCollectionConfig) {
 	_init_.Initialize()
 

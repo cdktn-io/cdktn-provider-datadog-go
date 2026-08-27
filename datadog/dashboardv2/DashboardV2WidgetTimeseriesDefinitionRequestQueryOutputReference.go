@@ -15,6 +15,8 @@ type DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference interface 
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery
 	CloudCostQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference interface 
 	MetricQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryMetricQuery
 	ProcessQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery
 	SloQuery() DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference
 	SloQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference interface 
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryCloudCostQuery)
 	PutEventQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryMetricQuery)
 	PutProcessQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery)
 	PutSloQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQuery)
+	PutUserJourneyQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery {
+	var returns *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) RetentionQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQueryOutputReference {
+	var returns DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) RetentionQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery {
+	var returns *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) SloQuery() DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference {
 	var returns DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) UserJourneyQuery() DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQueryOutputReference {
+	var returns DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) UserJourneyQueryInput() *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery {
+	var returns *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery) {
+	if err := d.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutRetentionQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery) {
+	if err := d.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutSloQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQuerySloQuery) {
 	if err := d.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) PutUserJourneyQuery(value *DashboardV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery) {
+	if err := d.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTimeseriesDefinitionRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

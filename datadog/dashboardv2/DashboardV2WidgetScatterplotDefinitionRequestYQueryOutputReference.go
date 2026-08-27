@@ -15,6 +15,8 @@ type DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference interfac
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmDependencyStatsQuery
+	ApmMetricsQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmResourceStatsQuery
 	CloudCostQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference interfac
 	MetricQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryMetricQuery
 	ProcessQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryProcessQueryOutputReference
 	ProcessQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryProcessQuery
+	ProductAnalyticsExtendedQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQuery
+	RetentionQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQueryOutputReference
+	RetentionQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQuery
 	SloQuery() DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQueryOutputReference
 	SloQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference interfac
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryCloudCostQuery)
 	PutEventQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryMetricQuery)
 	PutProcessQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQuery)
 	PutSloQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQuery)
+	PutUserJourneyQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ProductAnalyticsExtendedQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ProductAnalyticsExtendedQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQuery {
+	var returns *DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) RetentionQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQueryOutputReference {
+	var returns DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) RetentionQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQuery {
+	var returns *DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) SloQuery() DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQueryOutputReference {
 	var returns DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) UserJourneyQuery() DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQueryOutputReference {
+	var returns DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) UserJourneyQueryInput() *DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuery {
+	var returns *DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutProductAnalyticsExtendedQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryProductAnalyticsExtendedQuery) {
+	if err := d.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutRetentionQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryRetentionQuery) {
+	if err := d.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutSloQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQuerySloQuery) {
 	if err := d.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) PutUserJourneyQuery(value *DashboardV2WidgetScatterplotDefinitionRequestYQueryUserJourneyQuery) {
+	if err := d.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestYQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

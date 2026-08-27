@@ -5,17 +5,21 @@ package powerpackv2
 
 
 type PowerpackV2WidgetTopologyMapDefinitionRequestQuery struct {
-	// The data source for the Topology request ('service_map' or 'data_streams').
+	// The data source for the Topology request. Valid values are `service_map`, `data_streams`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#data_source PowerpackV2#data_source}
 	DataSource *string `field:"required" json:"dataSource" yaml:"dataSource"`
 	// Your environment and primary tag (or `*` if enabled for your account).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#filters PowerpackV2#filters}
 	Filters *[]*string `field:"required" json:"filters" yaml:"filters"`
-	// Name of the service.
+	// Name of the service. Leave this empty and use `query_string` instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/powerpack_v2#service PowerpackV2#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#service PowerpackV2#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
+	// A search string for filtering services. When set, this replaces the `service` field.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/powerpack_v2#query_string PowerpackV2#query_string}
+	QueryString *string `field:"optional" json:"queryString" yaml:"queryString"`
 }
 

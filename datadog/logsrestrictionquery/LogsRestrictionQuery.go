@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
 type LogsRestrictionQuery interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_LogsRestrictionQuery) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
 func NewLogsRestrictionQuery(scope constructs.Construct, id *string, config *LogsRestrictionQueryConfig) LogsRestrictionQuery {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewLogsRestrictionQuery(scope constructs.Construct, id *string, config *Log
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_restriction_query datadog_logs_restriction_query} Resource.
 func NewLogsRestrictionQuery_Override(l LogsRestrictionQuery, scope constructs.Construct, id *string, config *LogsRestrictionQueryConfig) {
 	_init_.Initialize()
 

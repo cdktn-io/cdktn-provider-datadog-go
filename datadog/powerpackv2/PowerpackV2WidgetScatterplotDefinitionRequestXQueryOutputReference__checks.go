@@ -104,6 +104,17 @@ func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputRefe
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -159,7 +170,40 @@ func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputRefe
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQueryRetentionQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQuerySloQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestXQueryUserJourneyQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

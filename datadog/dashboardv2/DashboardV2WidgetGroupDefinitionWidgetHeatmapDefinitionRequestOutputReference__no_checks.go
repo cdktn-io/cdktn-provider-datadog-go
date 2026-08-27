@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutHistogramRequestParameters(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutLogQueryParameters(value *DashboardV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery) error {
 	return nil
 }

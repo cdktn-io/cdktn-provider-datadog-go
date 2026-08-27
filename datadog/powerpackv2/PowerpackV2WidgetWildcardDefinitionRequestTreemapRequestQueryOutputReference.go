@@ -15,6 +15,8 @@ type PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReferenc
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmDependencyStatsQuery
+	ApmMetricsQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery
 	ApmResourceStatsQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmResourceStatsQuery
 	CloudCostQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReferenc
 	MetricQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryMetricQuery
 	ProcessQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProcessQueryOutputReference
 	ProcessQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProcessQuery
+	ProductAnalyticsExtendedQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery
+	RetentionQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQueryOutputReference
+	RetentionQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery
 	SloQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQueryOutputReference
 	SloQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReferenc
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReferenc
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryEventQuery)
 	PutMetricQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryMetricQuery)
 	PutProcessQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery)
 	PutSloQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQuery)
+	PutUserJourneyQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ApmMetricsQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQueryOutputReference {
+	var returns PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ApmMetricsQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery {
+	var returns *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ProductAnalyticsExtendedQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery {
+	var returns *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) RetentionQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQueryOutputReference {
+	var returns PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) RetentionQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery {
+	var returns *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) SloQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQueryOutputReference {
 	var returns PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) UserJourneyQuery() PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQueryOutputReference {
+	var returns PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) UserJourneyQueryInput() *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery {
+	var returns *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutApmMetricsQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmMetricsQuery) {
+	if err := p.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutApmResourceStatsQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryApmResourceStatsQuery) {
 	if err := p.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryProductAnalyticsExtendedQuery) {
+	if err := p.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutRetentionQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryRetentionQuery) {
+	if err := p.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutSloQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuerySloQuery) {
 	if err := p.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) PutUserJourneyQuery(value *PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryUserJourneyQuery) {
+	if err := p.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQuery
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetWildcardDefinitionRequestTreemapRequestQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

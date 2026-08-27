@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_notification_rules datadog_team_notification_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_notification_rules datadog_team_notification_rules}.
 type DataDatadogTeamNotificationRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataDatadogTeamNotificationRules) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_notification_rules datadog_team_notification_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_notification_rules datadog_team_notification_rules} Data Source.
 func NewDataDatadogTeamNotificationRules(scope constructs.Construct, id *string, config *DataDatadogTeamNotificationRulesConfig) DataDatadogTeamNotificationRules {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataDatadogTeamNotificationRules(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/team_notification_rules datadog_team_notification_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/team_notification_rules datadog_team_notification_rules} Data Source.
 func NewDataDatadogTeamNotificationRules_Override(d DataDatadogTeamNotificationRules, scope constructs.Construct, id *string, config *DataDatadogTeamNotificationRulesConfig) {
 	_init_.Initialize()
 

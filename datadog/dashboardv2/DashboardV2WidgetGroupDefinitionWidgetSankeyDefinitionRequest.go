@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionRequest struct {
 	// network_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#network_request DashboardV2#network_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#network_request DashboardV2#network_request}
 	NetworkRequest *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestNetworkRequest `field:"optional" json:"networkRequest" yaml:"networkRequest"`
 	// rum_request block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#rum_request DashboardV2#rum_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#rum_request DashboardV2#rum_request}
 	RumRequest *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequest `field:"optional" json:"rumRequest" yaml:"rumRequest"`
 }
 

@@ -148,6 +148,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutCohortDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutDistributionDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -313,6 +324,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -325,6 +347,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 }
 
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryValueDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

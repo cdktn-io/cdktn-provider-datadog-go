@@ -7,15 +7,19 @@ package logscustompipeline
 type LogsCustomPipelineProcessorArrayProcessorOperation struct {
 	// append block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
 	Append *LogsCustomPipelineProcessorArrayProcessorOperationAppend `field:"optional" json:"append" yaml:"append"`
+	// key_value block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_custom_pipeline#key_value LogsCustomPipeline#key_value}
+	KeyValue *LogsCustomPipelineProcessorArrayProcessorOperationKeyValue `field:"optional" json:"keyValue" yaml:"keyValue"`
 	// length block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
 	Length *LogsCustomPipelineProcessorArrayProcessorOperationLength `field:"optional" json:"length" yaml:"length"`
 	// select block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
 	Select *LogsCustomPipelineProcessorArrayProcessorOperationSelect `field:"optional" json:"select" yaml:"select"`
 }
 

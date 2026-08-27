@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTable
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTable
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetScatterplotDefinitionRequestScatterplotTableQueryUserJourneyQuery) error {
 	return nil
 }
 

@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetTreemapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetToplistDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetToplistDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

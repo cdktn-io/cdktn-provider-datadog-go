@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionReques
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutHistogramRequestParameters(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestHistogramRequest) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestOutputReference) validatePutLogQueryParameters(value *PowerpackV2WidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery) error {
 	return nil
 }

@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionFreshservice struct {
 	// api_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 	ApiKey *ActionConnectionFreshserviceApiKey `field:"optional" json:"apiKey" yaml:"apiKey"`
 }
 

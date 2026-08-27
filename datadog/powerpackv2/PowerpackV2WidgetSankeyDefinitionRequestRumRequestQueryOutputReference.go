@@ -13,6 +13,8 @@ import (
 
 type PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference interface {
 	cdktn.ComplexObject
+	AudienceFilters() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference
+	AudienceFiltersInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,12 +40,16 @@ type PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference inte
 	Fqn() *string
 	InternalValue() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQuery
 	SetInternalValue(val *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQuery)
+	JoinKeys() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference
+	JoinKeysInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	NumberOfSteps() *float64
 	SetNumberOfSteps(val *float64)
 	NumberOfStepsInput() *float64
+	Occurrence() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference
+	OccurrenceInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
@@ -88,8 +94,14 @@ type PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAudienceFilters(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters)
+	PutJoinKeys(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys)
+	PutOccurrence(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence)
+	ResetAudienceFilters()
 	ResetEntriesPerStep()
+	ResetJoinKeys()
 	ResetNumberOfSteps()
+	ResetOccurrence()
 	ResetSource()
 	ResetSubqueryId()
 	ResetTarget()
@@ -106,6 +118,26 @@ type PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference inte
 // The jsii proxy struct for PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference
 type jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) AudienceFilters() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference {
+	var returns PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"audienceFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) AudienceFiltersInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters {
+	var returns *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters
+	_jsii_.Get(
+		j,
+		"audienceFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -198,6 +230,26 @@ func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutput
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) JoinKeys() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference {
+	var returns PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference
+	_jsii_.Get(
+		j,
+		"joinKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) JoinKeysInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys {
+	var returns *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys
+	_jsii_.Get(
+		j,
+		"joinKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) Mode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -233,6 +285,26 @@ func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutput
 	_jsii_.Get(
 		j,
 		"numberOfStepsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) Occurrence() PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference {
+	var returns PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference
+	_jsii_.Get(
+		j,
+		"occurrence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) OccurrenceInput() *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence {
+	var returns *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence
+	_jsii_.Get(
+		j,
+		"occurrenceInput",
 		&returns,
 	)
 	return returns
@@ -695,6 +767,47 @@ func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutput
 	return returns
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutAudienceFilters(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters) {
+	if err := p.validatePutAudienceFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAudienceFilters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutJoinKeys(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryJoinKeys) {
+	if err := p.validatePutJoinKeysParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putJoinKeys",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutOccurrence(value *PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOccurrence) {
+	if err := p.validatePutOccurrenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putOccurrence",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetAudienceFilters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAudienceFilters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetEntriesPerStep() {
 	_jsii_.InvokeVoid(
 		p,
@@ -703,10 +816,26 @@ func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutput
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetJoinKeys() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetJoinKeys",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetNumberOfSteps() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNumberOfSteps",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetOccurrence() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOccurrence",
 		nil, // no parameters
 	)
 }

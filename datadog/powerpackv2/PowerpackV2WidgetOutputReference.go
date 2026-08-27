@@ -23,6 +23,8 @@ type PowerpackV2WidgetOutputReference interface {
 	ChangeDefinitionInput() *PowerpackV2WidgetChangeDefinition
 	CheckStatusDefinition() PowerpackV2WidgetCheckStatusDefinitionOutputReference
 	CheckStatusDefinitionInput() *PowerpackV2WidgetCheckStatusDefinition
+	CohortDefinition() PowerpackV2WidgetCohortDefinitionOutputReference
+	CohortDefinitionInput() *PowerpackV2WidgetCohortDefinition
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,10 +79,14 @@ type PowerpackV2WidgetOutputReference interface {
 	NoteDefinitionInput() *PowerpackV2WidgetNoteDefinition
 	PointPlotDefinition() PowerpackV2WidgetPointPlotDefinitionOutputReference
 	PointPlotDefinitionInput() *PowerpackV2WidgetPointPlotDefinition
+	ProductAnalyticsFunnelDefinition() PowerpackV2WidgetProductAnalyticsFunnelDefinitionOutputReference
+	ProductAnalyticsFunnelDefinitionInput() *PowerpackV2WidgetProductAnalyticsFunnelDefinition
 	QueryTableDefinition() PowerpackV2WidgetQueryTableDefinitionOutputReference
 	QueryTableDefinitionInput() *PowerpackV2WidgetQueryTableDefinition
 	QueryValueDefinition() PowerpackV2WidgetQueryValueDefinitionOutputReference
 	QueryValueDefinitionInput() *PowerpackV2WidgetQueryValueDefinition
+	RetentionCurveDefinition() PowerpackV2WidgetRetentionCurveDefinitionOutputReference
+	RetentionCurveDefinitionInput() *PowerpackV2WidgetRetentionCurveDefinition
 	RunWorkflowDefinition() PowerpackV2WidgetRunWorkflowDefinitionOutputReference
 	RunWorkflowDefinitionInput() *PowerpackV2WidgetRunWorkflowDefinition
 	SankeyDefinition() PowerpackV2WidgetSankeyDefinitionOutputReference
@@ -146,6 +152,7 @@ type PowerpackV2WidgetOutputReference interface {
 	PutBarChartDefinition(value *PowerpackV2WidgetBarChartDefinition)
 	PutChangeDefinition(value *PowerpackV2WidgetChangeDefinition)
 	PutCheckStatusDefinition(value *PowerpackV2WidgetCheckStatusDefinition)
+	PutCohortDefinition(value *PowerpackV2WidgetCohortDefinition)
 	PutDistributionDefinition(value *PowerpackV2WidgetDistributionDefinition)
 	PutEventStreamDefinition(value *PowerpackV2WidgetEventStreamDefinition)
 	PutEventTimelineDefinition(value *PowerpackV2WidgetEventTimelineDefinition)
@@ -162,8 +169,10 @@ type PowerpackV2WidgetOutputReference interface {
 	PutManageStatusDefinition(value *PowerpackV2WidgetManageStatusDefinition)
 	PutNoteDefinition(value *PowerpackV2WidgetNoteDefinition)
 	PutPointPlotDefinition(value *PowerpackV2WidgetPointPlotDefinition)
+	PutProductAnalyticsFunnelDefinition(value *PowerpackV2WidgetProductAnalyticsFunnelDefinition)
 	PutQueryTableDefinition(value *PowerpackV2WidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *PowerpackV2WidgetQueryValueDefinition)
+	PutRetentionCurveDefinition(value *PowerpackV2WidgetRetentionCurveDefinition)
 	PutRunWorkflowDefinition(value *PowerpackV2WidgetRunWorkflowDefinition)
 	PutSankeyDefinition(value *PowerpackV2WidgetSankeyDefinition)
 	PutScatterplotDefinition(value *PowerpackV2WidgetScatterplotDefinition)
@@ -183,6 +192,7 @@ type PowerpackV2WidgetOutputReference interface {
 	ResetBarChartDefinition()
 	ResetChangeDefinition()
 	ResetCheckStatusDefinition()
+	ResetCohortDefinition()
 	ResetDistributionDefinition()
 	ResetEventStreamDefinition()
 	ResetEventTimelineDefinition()
@@ -200,8 +210,10 @@ type PowerpackV2WidgetOutputReference interface {
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
 	ResetPointPlotDefinition()
+	ResetProductAnalyticsFunnelDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
+	ResetRetentionCurveDefinition()
 	ResetRunWorkflowDefinition()
 	ResetSankeyDefinition()
 	ResetScatterplotDefinition()
@@ -326,6 +338,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) CheckStatusDefinitionInput(
 	_jsii_.Get(
 		j,
 		"checkStatusDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) CohortDefinition() PowerpackV2WidgetCohortDefinitionOutputReference {
+	var returns PowerpackV2WidgetCohortDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"cohortDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) CohortDefinitionInput() *PowerpackV2WidgetCohortDefinition {
+	var returns *PowerpackV2WidgetCohortDefinition
+	_jsii_.Get(
+		j,
+		"cohortDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -721,6 +753,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) PointPlotDefinitionInput() 
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) ProductAnalyticsFunnelDefinition() PowerpackV2WidgetProductAnalyticsFunnelDefinitionOutputReference {
+	var returns PowerpackV2WidgetProductAnalyticsFunnelDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsFunnelDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) ProductAnalyticsFunnelDefinitionInput() *PowerpackV2WidgetProductAnalyticsFunnelDefinition {
+	var returns *PowerpackV2WidgetProductAnalyticsFunnelDefinition
+	_jsii_.Get(
+		j,
+		"productAnalyticsFunnelDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetOutputReference) QueryTableDefinition() PowerpackV2WidgetQueryTableDefinitionOutputReference {
 	var returns PowerpackV2WidgetQueryTableDefinitionOutputReference
 	_jsii_.Get(
@@ -756,6 +808,26 @@ func (j *jsiiProxy_PowerpackV2WidgetOutputReference) QueryValueDefinitionInput()
 	_jsii_.Get(
 		j,
 		"queryValueDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) RetentionCurveDefinition() PowerpackV2WidgetRetentionCurveDefinitionOutputReference {
+	var returns PowerpackV2WidgetRetentionCurveDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"retentionCurveDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetOutputReference) RetentionCurveDefinitionInput() *PowerpackV2WidgetRetentionCurveDefinition {
+	var returns *PowerpackV2WidgetRetentionCurveDefinition
+	_jsii_.Get(
+		j,
+		"retentionCurveDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1396,6 +1468,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutCheckStatusDefinition(va
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutCohortDefinition(value *PowerpackV2WidgetCohortDefinition) {
+	if err := p.validatePutCohortDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCohortDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutDistributionDefinition(value *PowerpackV2WidgetDistributionDefinition) {
 	if err := p.validatePutDistributionDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1572,6 +1655,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutPointPlotDefinition(valu
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutProductAnalyticsFunnelDefinition(value *PowerpackV2WidgetProductAnalyticsFunnelDefinition) {
+	if err := p.validatePutProductAnalyticsFunnelDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProductAnalyticsFunnelDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutQueryTableDefinition(value *PowerpackV2WidgetQueryTableDefinition) {
 	if err := p.validatePutQueryTableDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1590,6 +1684,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutQueryValueDefinition(val
 	_jsii_.InvokeVoid(
 		p,
 		"putQueryValueDefinition",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) PutRetentionCurveDefinition(value *PowerpackV2WidgetRetentionCurveDefinition) {
+	if err := p.validatePutRetentionCurveDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRetentionCurveDefinition",
 		[]interface{}{value},
 	)
 }
@@ -1788,6 +1893,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetCheckStatusDefinition(
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetCohortDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCohortDefinition",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetDistributionDefinition() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1924,6 +2037,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetPointPlotDefinition() 
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetProductAnalyticsFunnelDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductAnalyticsFunnelDefinition",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetQueryTableDefinition() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1936,6 +2057,14 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetQueryValueDefinition()
 	_jsii_.InvokeVoid(
 		p,
 		"resetQueryValueDefinition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) ResetRetentionCurveDefinition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionCurveDefinition",
 		nil, // no parameters
 	)
 }

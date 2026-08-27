@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/role_permissions datadog_role_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/role_permissions datadog_role_permissions}.
 type DataDatadogRolePermissions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataDatadogRolePermissions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/role_permissions datadog_role_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/role_permissions datadog_role_permissions} Data Source.
 func NewDataDatadogRolePermissions(scope constructs.Construct, id *string, config *DataDatadogRolePermissionsConfig) DataDatadogRolePermissions {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataDatadogRolePermissions(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/role_permissions datadog_role_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/role_permissions datadog_role_permissions} Data Source.
 func NewDataDatadogRolePermissions_Override(d DataDatadogRolePermissions, scope constructs.Construct, id *string, config *DataDatadogRolePermissionsConfig) {
 	_init_.Initialize()
 

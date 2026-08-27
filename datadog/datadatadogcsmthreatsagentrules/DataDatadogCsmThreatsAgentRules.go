@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}.
 type DataDatadogCsmThreatsAgentRules interface {
 	cdktn.TerraformDataSource
 	AgentRules() DataDatadogCsmThreatsAgentRulesAgentRulesList
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataDatadogCsmThreatsAgentRules) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
 func NewDataDatadogCsmThreatsAgentRules(scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) DataDatadogCsmThreatsAgentRules {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataDatadogCsmThreatsAgentRules(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source.
 func NewDataDatadogCsmThreatsAgentRules_Override(d DataDatadogCsmThreatsAgentRules, scope constructs.Construct, id *string, config *DataDatadogCsmThreatsAgentRulesConfig) {
 	_init_.Initialize()
 

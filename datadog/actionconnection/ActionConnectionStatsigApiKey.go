@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionStatsigApiKey struct {
 	// Statsig API key. String length must be at least 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 	ApiKey *string `field:"optional" json:"apiKey" yaml:"apiKey"`
 }
 

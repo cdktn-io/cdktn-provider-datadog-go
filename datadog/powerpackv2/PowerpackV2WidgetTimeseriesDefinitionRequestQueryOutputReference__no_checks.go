@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputRefere
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTimeseriesDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetTimeseriesDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

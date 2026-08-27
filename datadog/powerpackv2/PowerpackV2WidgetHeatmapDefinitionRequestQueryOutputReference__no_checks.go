@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetHeatmapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

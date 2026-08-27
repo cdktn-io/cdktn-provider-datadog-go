@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template}.
 type IncidentPostmortemTemplate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_IncidentPostmortemTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource.
 func NewIncidentPostmortemTemplate(scope constructs.Construct, id *string, config *IncidentPostmortemTemplateConfig) IncidentPostmortemTemplate {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewIncidentPostmortemTemplate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_postmortem_template datadog_incident_postmortem_template} Resource.
 func NewIncidentPostmortemTemplate_Override(i IncidentPostmortemTemplate, scope constructs.Construct, id *string, config *IncidentPostmortemTemplateConfig) {
 	_init_.Initialize()
 

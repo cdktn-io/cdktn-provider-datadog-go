@@ -68,6 +68,8 @@ type PowerpackV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	RumQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestRumQuery
 	SecurityQuery() PowerpackV2WidgetQueryTableDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *PowerpackV2WidgetQueryTableDefinitionRequestSecurityQuery
+	Sort() PowerpackV2WidgetQueryTableDefinitionRequestSortOutputReference
+	SortInput() *PowerpackV2WidgetQueryTableDefinitionRequestSort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -111,6 +113,7 @@ type PowerpackV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	PutQuery(value interface{})
 	PutRumQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *PowerpackV2WidgetQueryTableDefinitionRequestSecurityQuery)
+	PutSort(value *PowerpackV2WidgetQueryTableDefinitionRequestSort)
 	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
@@ -127,6 +130,7 @@ type PowerpackV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetSort()
 	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) 
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) Sort() PowerpackV2WidgetQueryTableDefinitionRequestSortOutputReference {
+	var returns PowerpackV2WidgetQueryTableDefinitionRequestSortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) SortInput() *PowerpackV2WidgetQueryTableDefinitionRequestSort {
+	var returns *PowerpackV2WidgetQueryTableDefinitionRequestSort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -967,6 +991,17 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) 
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) PutSort(value *PowerpackV2WidgetQueryTableDefinitionRequestSort) {
+	if err := p.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
 	if err := p.validatePutTextFormatsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSort",
 		nil, // no parameters
 	)
 }

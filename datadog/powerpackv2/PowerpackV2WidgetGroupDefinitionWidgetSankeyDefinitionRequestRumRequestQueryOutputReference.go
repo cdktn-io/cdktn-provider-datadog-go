@@ -13,6 +13,8 @@ import (
 
 type PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference interface {
 	cdktn.ComplexObject
+	AudienceFilters() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference
+	AudienceFiltersInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,12 +40,16 @@ type PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQuer
 	Fqn() *string
 	InternalValue() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQuery
 	SetInternalValue(val *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQuery)
+	JoinKeys() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference
+	JoinKeysInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeys
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
 	NumberOfSteps() *float64
 	SetNumberOfSteps(val *float64)
 	NumberOfStepsInput() *float64
+	Occurrence() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference
+	OccurrenceInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrence
 	QueryString() *string
 	SetQueryString(val *string)
 	QueryStringInput() *string
@@ -88,8 +94,14 @@ type PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQuer
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutAudienceFilters(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters)
+	PutJoinKeys(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeys)
+	PutOccurrence(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrence)
+	ResetAudienceFilters()
 	ResetEntriesPerStep()
+	ResetJoinKeys()
 	ResetNumberOfSteps()
+	ResetOccurrence()
 	ResetSource()
 	ResetSubqueryId()
 	ResetTarget()
@@ -106,6 +118,26 @@ type PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQuer
 // The jsii proxy struct for PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference
 type jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) AudienceFilters() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"audienceFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) AudienceFiltersInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters
+	_jsii_.Get(
+		j,
+		"audienceFiltersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ComplexObjectIndex() interface{} {
@@ -198,6 +230,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequest
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) JoinKeys() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeysOutputReference
+	_jsii_.Get(
+		j,
+		"joinKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) JoinKeysInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeys {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeys
+	_jsii_.Get(
+		j,
+		"joinKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) Mode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -233,6 +285,26 @@ func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequest
 	_jsii_.Get(
 		j,
 		"numberOfStepsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) Occurrence() PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference {
+	var returns PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrenceOutputReference
+	_jsii_.Get(
+		j,
+		"occurrence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) OccurrenceInput() *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrence {
+	var returns *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrence
+	_jsii_.Get(
+		j,
+		"occurrenceInput",
 		&returns,
 	)
 	return returns
@@ -695,6 +767,47 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequest
 	return returns
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutAudienceFilters(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryAudienceFilters) {
+	if err := p.validatePutAudienceFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAudienceFilters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutJoinKeys(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryJoinKeys) {
+	if err := p.validatePutJoinKeysParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putJoinKeys",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) PutOccurrence(value *PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOccurrence) {
+	if err := p.validatePutOccurrenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putOccurrence",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetAudienceFilters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAudienceFilters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetEntriesPerStep() {
 	_jsii_.InvokeVoid(
 		p,
@@ -703,10 +816,26 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequest
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetJoinKeys() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetJoinKeys",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetNumberOfSteps() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNumberOfSteps",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetSankeyDefinitionRequestRumRequestQueryOutputReference) ResetOccurrence() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOccurrence",
 		nil, // no parameters
 	)
 }

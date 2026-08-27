@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
 type SecurityMonitoringRuleJson interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_SecurityMonitoringRuleJson) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
 func NewSecurityMonitoringRuleJson(scope constructs.Construct, id *string, config *SecurityMonitoringRuleJsonConfig) SecurityMonitoringRuleJson {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewSecurityMonitoringRuleJson(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json} Resource.
 func NewSecurityMonitoringRuleJson_Override(s SecurityMonitoringRuleJson, scope constructs.Construct, id *string, config *SecurityMonitoringRuleJsonConfig) {
 	_init_.Initialize()
 

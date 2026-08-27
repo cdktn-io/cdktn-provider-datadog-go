@@ -83,6 +83,10 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) validatePutSortParameters(value *PowerpackV2WidgetQueryTableDefinitionRequestSort) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryTableDefinitionRequestOutputReference) validatePutTextFormatsParameters(value interface{}) error {
 	return nil
 }

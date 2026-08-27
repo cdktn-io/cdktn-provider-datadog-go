@@ -148,6 +148,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutCheckStatusDefin
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutCohortDefinitionParameters(value *PowerpackV2WidgetCohortDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutDistributionDefinitionParameters(value *PowerpackV2WidgetDistributionDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -324,6 +335,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutPointPlotDefinit
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *PowerpackV2WidgetProductAnalyticsFunnelDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutQueryTableDefinitionParameters(value *PowerpackV2WidgetQueryTableDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -336,6 +358,17 @@ func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutQueryTableDefini
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutQueryValueDefinitionParameters(value *PowerpackV2WidgetQueryValueDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *PowerpackV2WidgetRetentionCurveDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

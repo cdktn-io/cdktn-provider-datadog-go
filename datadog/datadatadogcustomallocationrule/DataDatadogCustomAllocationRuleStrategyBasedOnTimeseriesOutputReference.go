@@ -32,6 +32,7 @@ type DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutputReference int
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Json() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -124,6 +125,16 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutputReference) Json() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"json",
 		&returns,
 	)
 	return returns

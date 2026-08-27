@@ -38,6 +38,9 @@ type DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutp
 	Fqn() *string
 	InternalValue() *DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery
 	SetInternalValue(val *DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQuery)
+	QueryString() *string
+	SetQueryString(val *string)
+	QueryStringInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -73,6 +76,7 @@ type DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutp
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetQueryString()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference) QueryString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference) QueryStringInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryStringInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference)SetQueryString(val *string) {
+	if err := j.validateSetQueryStringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryString",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRe
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference) ResetQueryString() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetQueryString",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetTopologyMapDefinitionRequestQueryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

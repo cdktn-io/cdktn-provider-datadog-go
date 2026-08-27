@@ -67,6 +67,10 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutCohortDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetCohortDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutDistributionDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetDistributionDefinition) error {
 	return nil
 }
@@ -127,11 +131,19 @@ func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	return nil
 }
 
 func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryValueDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetQueryValueDefinition) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetGroupDefinitionWidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *PowerpackV2WidgetGroupDefinitionWidgetRetentionCurveDefinition) error {
 	return nil
 }
 

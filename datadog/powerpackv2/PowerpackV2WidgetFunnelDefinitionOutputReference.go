@@ -33,6 +33,9 @@ type PowerpackV2WidgetFunnelDefinitionOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	GroupedDisplay() *string
+	SetGroupedDisplay(val *string)
+	GroupedDisplayInput() *string
 	HideIncompleteCostData() interface{}
 	SetHideIncompleteCostData(val interface{})
 	HideIncompleteCostDataInput() interface{}
@@ -89,6 +92,7 @@ type PowerpackV2WidgetFunnelDefinitionOutputReference interface {
 	PutRequest(value *PowerpackV2WidgetFunnelDefinitionRequest)
 	PutTime(value *PowerpackV2WidgetFunnelDefinitionTime)
 	ResetDescription()
+	ResetGroupedDisplay()
 	ResetHideIncompleteCostData()
 	ResetLiveSpan()
 	ResetRequest()
@@ -166,6 +170,26 @@ func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) GroupedDisplay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupedDisplay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) GroupedDisplayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupedDisplayInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +422,17 @@ func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference)SetDescripti
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference)SetGroupedDisplay(val *string) {
+	if err := j.validateSetGroupedDisplayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupedDisplay",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (p *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) ResetDescri
 	_jsii_.InvokeVoid(
 		p,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetFunnelDefinitionOutputReference) ResetGroupedDisplay() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGroupedDisplay",
 		nil, // no parameters
 	)
 }

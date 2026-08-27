@@ -20,6 +20,8 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	ApmQueryInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery
 	AuditQuery() DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryOutputReference
 	AuditQueryInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery
+	Comparison() DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference
+	ComparisonInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -90,6 +92,7 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery)
 	PutAuditQuery(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery)
+	PutComparison(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison)
 	PutConditionalFormats(value interface{})
 	PutFormula(value interface{})
 	PutLogQuery(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQuery)
@@ -100,6 +103,7 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputRefe
 	ResetAggregator()
 	ResetApmQuery()
 	ResetAuditQuery()
+	ResetComparison()
 	ResetConditionalFormats()
 	ResetFormula()
 	ResetLogQuery()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	_jsii_.Get(
 		j,
 		"auditQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) Comparison() DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparisonOutputReference
+	_jsii_.Get(
+		j,
+		"comparison",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) ComparisonInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison
+	_jsii_.Get(
+		j,
+		"comparisonInput",
 		&returns,
 	)
 	return returns
@@ -726,6 +750,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) PutComparison(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestComparison) {
+	if err := d.validatePutComparisonParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putComparison",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) PutConditionalFormats(value interface{}) {
 	if err := d.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -823,6 +858,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionReq
 	_jsii_.InvokeVoid(
 		d,
 		"resetAuditQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionRequestOutputReference) ResetComparison() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComparison",
 		nil, // no parameters
 	)
 }

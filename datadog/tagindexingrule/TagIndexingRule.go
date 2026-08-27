@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule}.
 type TagIndexingRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -552,7 +552,7 @@ func (j *jsiiProxy_TagIndexingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule} Resource.
 func NewTagIndexingRule(scope constructs.Construct, id *string, config *TagIndexingRuleConfig) TagIndexingRule {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewTagIndexingRule(scope constructs.Construct, id *string, config *TagIndex
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/tag_indexing_rule datadog_tag_indexing_rule} Resource.
 func NewTagIndexingRule_Override(t TagIndexingRule, scope constructs.Construct, id *string, config *TagIndexingRuleConfig) {
 	_init_.Initialize()
 

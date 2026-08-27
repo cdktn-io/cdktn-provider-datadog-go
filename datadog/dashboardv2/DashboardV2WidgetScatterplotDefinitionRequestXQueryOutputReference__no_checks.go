@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputRefe
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputRefe
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetScatterplotDefinitionRequestXQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetScatterplotDefinitionRequestXQueryUserJourneyQuery) error {
 	return nil
 }
 

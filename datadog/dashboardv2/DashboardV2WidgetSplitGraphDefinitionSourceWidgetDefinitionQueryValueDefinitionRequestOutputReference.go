@@ -20,6 +20,8 @@ type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefini
 	ApmQueryInput() *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestApmQuery
 	AuditQuery() DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestAuditQueryOutputReference
 	AuditQueryInput() *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestAuditQuery
+	Comparison() DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparisonOutputReference
+	ComparisonInput() *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparison
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -90,6 +92,7 @@ type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefini
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestApmQuery)
 	PutAuditQuery(value *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestAuditQuery)
+	PutComparison(value *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparison)
 	PutConditionalFormats(value interface{})
 	PutFormula(value interface{})
 	PutLogQuery(value *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestLogQuery)
@@ -100,6 +103,7 @@ type DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefini
 	ResetAggregator()
 	ResetApmQuery()
 	ResetAuditQuery()
+	ResetComparison()
 	ResetConditionalFormats()
 	ResetFormula()
 	ResetLogQuery()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQu
 	_jsii_.Get(
 		j,
 		"auditQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestOutputReference) Comparison() DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparisonOutputReference {
+	var returns DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparisonOutputReference
+	_jsii_.Get(
+		j,
+		"comparison",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestOutputReference) ComparisonInput() *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparison {
+	var returns *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparison
+	_jsii_.Get(
+		j,
+		"comparisonInput",
 		&returns,
 	)
 	return returns
@@ -726,6 +750,17 @@ func (d *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQu
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestOutputReference) PutComparison(value *DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestComparison) {
+	if err := d.validatePutComparisonParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putComparison",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestOutputReference) PutConditionalFormats(value interface{}) {
 	if err := d.validatePutConditionalFormatsParameters(value); err != nil {
 		panic(err)
@@ -823,6 +858,14 @@ func (d *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQu
 	_jsii_.InvokeVoid(
 		d,
 		"resetAuditQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetSplitGraphDefinitionSourceWidgetDefinitionQueryValueDefinitionRequestOutputReference) ResetComparison() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetComparison",
 		nil, // no parameters
 	)
 }

@@ -34,6 +34,8 @@ type PowerpackV2WidgetHeatmapDefinitionRequestOutputReference interface {
 	FormulaInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HistogramRequest() PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequestOutputReference
+	HistogramRequestInput() *PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequest
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LogQuery() PowerpackV2WidgetHeatmapDefinitionRequestLogQueryOutputReference
@@ -85,6 +87,7 @@ type PowerpackV2WidgetHeatmapDefinitionRequestOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmQuery(value *PowerpackV2WidgetHeatmapDefinitionRequestApmQuery)
 	PutFormula(value interface{})
+	PutHistogramRequest(value *PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequest)
 	PutLogQuery(value *PowerpackV2WidgetHeatmapDefinitionRequestLogQuery)
 	PutProcessQuery(value *PowerpackV2WidgetHeatmapDefinitionRequestProcessQuery)
 	PutQuery(value interface{})
@@ -93,6 +96,7 @@ type PowerpackV2WidgetHeatmapDefinitionRequestOutputReference interface {
 	PutStyle(value *PowerpackV2WidgetHeatmapDefinitionRequestStyle)
 	ResetApmQuery()
 	ResetFormula()
+	ResetHistogramRequest()
 	ResetLogQuery()
 	ResetProcessQuery()
 	ResetQ()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) HistogramRequest() PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequestOutputReference {
+	var returns PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequestOutputReference
+	_jsii_.Get(
+		j,
+		"histogramRequest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) HistogramRequestInput() *PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequest {
+	var returns *PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequest
+	_jsii_.Get(
+		j,
+		"histogramRequestInput",
 		&returns,
 	)
 	return returns
@@ -667,6 +691,17 @@ func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) Put
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) PutHistogramRequest(value *PowerpackV2WidgetHeatmapDefinitionRequestHistogramRequest) {
+	if err := p.validatePutHistogramRequestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putHistogramRequest",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) PutLogQuery(value *PowerpackV2WidgetHeatmapDefinitionRequestLogQuery) {
 	if err := p.validatePutLogQueryParameters(value); err != nil {
 		panic(err)
@@ -745,6 +780,14 @@ func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) Res
 	_jsii_.InvokeVoid(
 		p,
 		"resetFormula",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHeatmapDefinitionRequestOutputReference) ResetHistogramRequest() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHistogramRequest",
 		nil, // no parameters
 	)
 }

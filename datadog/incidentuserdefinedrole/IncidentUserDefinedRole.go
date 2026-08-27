@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role}.
 type IncidentUserDefinedRole interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_IncidentUserDefinedRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource.
 func NewIncidentUserDefinedRole(scope constructs.Construct, id *string, config *IncidentUserDefinedRoleConfig) IncidentUserDefinedRole {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewIncidentUserDefinedRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/incident_user_defined_role datadog_incident_user_defined_role} Resource.
 func NewIncidentUserDefinedRole_Override(i IncidentUserDefinedRole, scope constructs.Construct, id *string, config *IncidentUserDefinedRoleConfig) {
 	_init_.Initialize()
 

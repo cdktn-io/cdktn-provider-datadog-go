@@ -104,6 +104,17 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -159,7 +170,40 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQuery) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

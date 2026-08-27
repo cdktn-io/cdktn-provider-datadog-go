@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions}.
 type DataDatadogSecurityMonitoringSuppressions interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataDatadogSecurityMonitoringSuppressions) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) DataDatadogSecurityMonitoringSuppressions {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataDatadogSecurityMonitoringSuppressions(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/security_monitoring_suppressions datadog_security_monitoring_suppressions} Data Source.
 func NewDataDatadogSecurityMonitoringSuppressions_Override(d DataDatadogSecurityMonitoringSuppressions, scope constructs.Construct, id *string, config *DataDatadogSecurityMonitoringSuppressionsConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package dashboardv2
 type DashboardV2WidgetFunnelDefinitionRequestQueryStep struct {
 	// The facet of the step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
 	Facet *string `field:"required" json:"facet" yaml:"facet"`
 	// The value of the step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/dashboard_v2#value DashboardV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/dashboard_v2#value DashboardV2#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -148,6 +148,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutCheckStatusDefin
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutCohortDefinitionParameters(value *DashboardV2WidgetCohortDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutDistributionDefinitionParameters(value *DashboardV2WidgetDistributionDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -335,6 +346,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutPowerpackDefinit
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *DashboardV2WidgetProductAnalyticsFunnelDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardV2WidgetQueryTableDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -347,6 +369,17 @@ func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutQueryTableDefini
 }
 
 func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutQueryValueDefinitionParameters(value *DashboardV2WidgetQueryValueDefinition) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *DashboardV2WidgetRetentionCurveDefinition) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

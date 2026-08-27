@@ -67,6 +67,10 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutCohortDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutDistributionDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinition) error {
 	return nil
 }
@@ -127,11 +131,19 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutProductAnalyticsFunnelDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryTableDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition) error {
 	return nil
 }
 
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutQueryValueDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) validatePutRetentionCurveDefinitionParameters(value *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition) error {
 	return nil
 }
 

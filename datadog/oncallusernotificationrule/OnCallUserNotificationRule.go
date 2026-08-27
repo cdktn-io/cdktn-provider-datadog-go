@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
 type OnCallUserNotificationRule interface {
 	cdktn.TerraformResource
 	Category() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_OnCallUserNotificationRule) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource.
 func NewOnCallUserNotificationRule(scope constructs.Construct, id *string, config *OnCallUserNotificationRuleConfig) OnCallUserNotificationRule {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewOnCallUserNotificationRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource.
 func NewOnCallUserNotificationRule_Override(o OnCallUserNotificationRule, scope constructs.Construct, id *string, config *OnCallUserNotificationRuleConfig) {
 	_init_.Initialize()
 

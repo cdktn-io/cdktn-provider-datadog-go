@@ -55,6 +55,10 @@ func (p *jsiiProxy_PowerpackV2WidgetQueryValueDefinitionRequestOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetQueryValueDefinitionRequestOutputReference) validatePutComparisonParameters(value *PowerpackV2WidgetQueryValueDefinitionRequestComparison) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetQueryValueDefinitionRequestOutputReference) validatePutConditionalFormatsParameters(value interface{}) error {
 	return nil
 }

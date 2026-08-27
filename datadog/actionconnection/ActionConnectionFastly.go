@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionFastly struct {
 	// api_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#api_key ActionConnection#api_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#api_key ActionConnection#api_key}
 	ApiKey *ActionConnectionFastlyApiKey `field:"optional" json:"apiKey" yaml:"apiKey"`
 }
 

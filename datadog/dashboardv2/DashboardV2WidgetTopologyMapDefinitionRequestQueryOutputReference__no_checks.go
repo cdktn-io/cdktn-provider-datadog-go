@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardV2WidgetTopologyMapDefinitionRequestQueryOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DashboardV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetQueryStringParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardV2WidgetTopologyMapDefinitionRequestQueryOutputReference) validateSetServiceParameters(val *string) error {
 	return nil
 }

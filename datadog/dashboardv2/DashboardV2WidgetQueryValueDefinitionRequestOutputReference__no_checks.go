@@ -55,6 +55,10 @@ func (d *jsiiProxy_DashboardV2WidgetQueryValueDefinitionRequestOutputReference) 
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetQueryValueDefinitionRequestOutputReference) validatePutComparisonParameters(value *DashboardV2WidgetQueryValueDefinitionRequestComparison) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetQueryValueDefinitionRequestOutputReference) validatePutConditionalFormatsParameters(value interface{}) error {
 	return nil
 }

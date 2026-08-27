@@ -13,6 +13,8 @@ import (
 
 type DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference interface {
 	cdktn.ComplexObject
+	ApmMetricsQuery() DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery
 	ApmResourceStatsQuery() DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery
 	// the index of the complex object in a list.
@@ -70,9 +72,11 @@ type DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOut
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutApmMetricsQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery)
 	PutEventQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryEventQuery)
 	PutMetricQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryMetricQuery)
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
@@ -89,6 +93,26 @@ type DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOut
 // The jsii proxy struct for DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference
 type jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) ApmMetricsQuery() DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQueryOutputReference {
+	var returns DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) ApmMetricsQueryInput() *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery {
+	var returns *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) ApmResourceStatsQuery() DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQueryOutputReference {
@@ -490,6 +514,17 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHis
 	return returns
 }
 
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) PutApmMetricsQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmMetricsQuery) {
+	if err := d.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) PutApmResourceStatsQuery(value *DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryApmResourceStatsQuery) {
 	if err := d.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHis
 		d,
 		"putMetricQuery",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetWildcardDefinitionRequestHistogramRequestHistogramQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApmMetricsQuery",
+		nil, // no parameters
 	)
 }
 

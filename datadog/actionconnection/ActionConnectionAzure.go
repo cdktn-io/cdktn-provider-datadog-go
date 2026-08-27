@@ -7,7 +7,7 @@ package actionconnection
 type ActionConnectionAzure struct {
 	// tenant block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/action_connection#tenant ActionConnection#tenant}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/action_connection#tenant ActionConnection#tenant}
 	Tenant *ActionConnectionAzureTenant `field:"optional" json:"tenant" yaml:"tenant"`
 }
 

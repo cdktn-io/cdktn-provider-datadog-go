@@ -95,6 +95,7 @@ type CustomAllocationRuleStrategyOutputReference interface {
 	ResetAllocatedByFilters()
 	ResetAllocatedByTagKeys()
 	ResetBasedOnCosts()
+	ResetBasedOnTimeseries()
 	ResetEvaluateGroupedByFilters()
 	ResetEvaluateGroupedByTagKeys()
 	ResetGranularity()
@@ -760,6 +761,14 @@ func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) ResetBasedOnCost
 	_jsii_.InvokeVoid(
 		c,
 		"resetBasedOnCosts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomAllocationRuleStrategyOutputReference) ResetBasedOnTimeseries() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBasedOnTimeseries",
 		nil, // no parameters
 	)
 }

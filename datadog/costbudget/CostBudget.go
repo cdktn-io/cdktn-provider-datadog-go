@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_budget datadog_cost_budget}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_budget datadog_cost_budget}.
 type CostBudget interface {
 	cdktn.TerraformResource
 	BudgetLine() CostBudgetBudgetLineList
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CostBudget) TotalAmount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_budget datadog_cost_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_budget datadog_cost_budget} Resource.
 func NewCostBudget(scope constructs.Construct, id *string, config *CostBudgetConfig) CostBudget {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCostBudget(scope constructs.Construct, id *string, config *CostBudgetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_budget datadog_cost_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_budget datadog_cost_budget} Resource.
 func NewCostBudget_Override(c CostBudget, scope constructs.Construct, id *string, config *CostBudgetConfig) {
 	_init_.Initialize()
 

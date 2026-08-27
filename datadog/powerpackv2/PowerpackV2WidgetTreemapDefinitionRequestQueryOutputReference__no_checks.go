@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetTreemapDefinitionRequestQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetTreemapDefinitionRequestQueryUserJourneyQuery) error {
 	return nil
 }
 

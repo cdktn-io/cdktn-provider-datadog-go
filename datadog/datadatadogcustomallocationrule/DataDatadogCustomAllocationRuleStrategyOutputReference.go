@@ -21,7 +21,6 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 	BasedOnCosts() DataDatadogCustomAllocationRuleStrategyBasedOnCostsList
 	BasedOnCostsInput() interface{}
 	BasedOnTimeseries() DataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesOutputReference
-	BasedOnTimeseriesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,7 +80,6 @@ type DataDatadogCustomAllocationRuleStrategyOutputReference interface {
 	PutAllocatedBy(value interface{})
 	PutAllocatedByFilters(value interface{})
 	PutBasedOnCosts(value interface{})
-	PutBasedOnTimeseries(value *DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries)
 	PutEvaluateGroupedByFilters(value interface{})
 	ResetAllocatedBy()
 	ResetAllocatedByFilters()
@@ -177,16 +175,6 @@ func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) Based
 	_jsii_.Get(
 		j,
 		"basedOnTimeseries",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) BasedOnTimeseriesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"basedOnTimeseriesInput",
 		&returns,
 	)
 	return returns
@@ -610,17 +598,6 @@ func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) PutBa
 	_jsii_.InvokeVoid(
 		d,
 		"putBasedOnCosts",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataDatadogCustomAllocationRuleStrategyOutputReference) PutBasedOnTimeseries(value *DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries) {
-	if err := d.validatePutBasedOnTimeseriesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putBasedOnTimeseries",
 		[]interface{}{value},
 	)
 }

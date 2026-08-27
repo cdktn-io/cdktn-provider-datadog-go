@@ -51,6 +51,10 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmMetricsQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutRetentionQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutSloQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQuery) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutUserJourneyQueryParameters(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery) error {
 	return nil
 }
 

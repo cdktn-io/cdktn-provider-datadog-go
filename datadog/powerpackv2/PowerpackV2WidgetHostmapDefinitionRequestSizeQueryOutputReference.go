@@ -15,6 +15,8 @@ type PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference interface
 	cdktn.ComplexObject
 	ApmDependencyStatsQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmDependencyStatsQueryOutputReference
 	ApmDependencyStatsQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmDependencyStatsQuery
+	ApmMetricsQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQueryOutputReference
+	ApmMetricsQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery
 	ApmResourceStatsQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQueryOutputReference
 	ApmResourceStatsQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery
 	CloudCostQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryCloudCostQueryOutputReference
@@ -44,6 +46,10 @@ type PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference interface
 	MetricQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryMetricQuery
 	ProcessQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProcessQueryOutputReference
 	ProcessQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProcessQuery
+	ProductAnalyticsExtendedQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryOutputReference
+	ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery
+	RetentionQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQueryOutputReference
+	RetentionQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery
 	SloQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQueryOutputReference
 	SloQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQuery
 	// Experimental.
@@ -54,6 +60,8 @@ type PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference interface
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserJourneyQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQueryOutputReference
+	UserJourneyQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,19 +87,27 @@ type PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApmDependencyStatsQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmDependencyStatsQuery)
+	PutApmMetricsQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery)
 	PutApmResourceStatsQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery)
 	PutCloudCostQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryCloudCostQuery)
 	PutEventQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryEventQuery)
 	PutMetricQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryMetricQuery)
 	PutProcessQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProcessQuery)
+	PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery)
+	PutRetentionQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery)
 	PutSloQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQuery)
+	PutUserJourneyQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery)
 	ResetApmDependencyStatsQuery()
+	ResetApmMetricsQuery()
 	ResetApmResourceStatsQuery()
 	ResetCloudCostQuery()
 	ResetEventQuery()
 	ResetMetricQuery()
 	ResetProcessQuery()
+	ResetProductAnalyticsExtendedQuery()
+	ResetRetentionQuery()
 	ResetSloQuery()
+	ResetUserJourneyQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -122,6 +138,26 @@ func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	_jsii_.Get(
 		j,
 		"apmDependencyStatsQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ApmMetricsQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQueryOutputReference {
+	var returns PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQueryOutputReference
+	_jsii_.Get(
+		j,
+		"apmMetricsQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ApmMetricsQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery {
+	var returns *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery
+	_jsii_.Get(
+		j,
+		"apmMetricsQueryInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +313,46 @@ func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ProductAnalyticsExtendedQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryOutputReference {
+	var returns PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQueryOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ProductAnalyticsExtendedQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery {
+	var returns *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery
+	_jsii_.Get(
+		j,
+		"productAnalyticsExtendedQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) RetentionQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQueryOutputReference {
+	var returns PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQueryOutputReference
+	_jsii_.Get(
+		j,
+		"retentionQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) RetentionQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery {
+	var returns *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery
+	_jsii_.Get(
+		j,
+		"retentionQueryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) SloQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQueryOutputReference {
 	var returns PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQueryOutputReference
 	_jsii_.Get(
@@ -312,6 +388,26 @@ func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) UserJourneyQuery() PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQueryOutputReference {
+	var returns PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQueryOutputReference
+	_jsii_.Get(
+		j,
+		"userJourneyQuery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) UserJourneyQueryInput() *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery {
+	var returns *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery
+	_jsii_.Get(
+		j,
+		"userJourneyQueryInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +693,17 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutApmMetricsQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery) {
+	if err := p.validatePutApmMetricsQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putApmMetricsQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutApmResourceStatsQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery) {
 	if err := p.validatePutApmResourceStatsQueryParameters(value); err != nil {
 		panic(err)
@@ -652,6 +759,28 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutProductAnalyticsExtendedQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery) {
+	if err := p.validatePutProductAnalyticsExtendedQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putProductAnalyticsExtendedQuery",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutRetentionQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery) {
+	if err := p.validatePutRetentionQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRetentionQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutSloQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQuerySloQuery) {
 	if err := p.validatePutSloQueryParameters(value); err != nil {
 		panic(err)
@@ -663,10 +792,29 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) PutUserJourneyQuery(value *PowerpackV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery) {
+	if err := p.validatePutUserJourneyQueryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putUserJourneyQuery",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetApmDependencyStatsQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetApmDependencyStatsQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetApmMetricsQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApmMetricsQuery",
 		nil, // no parameters
 	)
 }
@@ -711,10 +859,34 @@ func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	)
 }
 
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetProductAnalyticsExtendedQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductAnalyticsExtendedQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetRetentionQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionQuery",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetSloQuery() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSloQuery",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PowerpackV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) ResetUserJourneyQuery() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserJourneyQuery",
 		nil, // no parameters
 	)
 }

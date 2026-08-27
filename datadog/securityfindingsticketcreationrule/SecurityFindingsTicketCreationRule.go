@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule}.
 type SecurityFindingsTicketCreationRule interface {
 	cdktn.TerraformResource
 	Action() SecurityFindingsTicketCreationRuleActionOutputReference
@@ -448,7 +448,7 @@ func (j *jsiiProxy_SecurityFindingsTicketCreationRule) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule} Resource.
 func NewSecurityFindingsTicketCreationRule(scope constructs.Construct, id *string, config *SecurityFindingsTicketCreationRuleConfig) SecurityFindingsTicketCreationRule {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewSecurityFindingsTicketCreationRule(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rule datadog_security_findings_ticket_creation_rule} Resource.
 func NewSecurityFindingsTicketCreationRule_Override(s SecurityFindingsTicketCreationRule, scope constructs.Construct, id *string, config *SecurityFindingsTicketCreationRuleConfig) {
 	_init_.Initialize()
 

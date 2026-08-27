@@ -71,6 +71,10 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetFunnelDefinitionOutputR
 	return nil
 }
 
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetFunnelDefinitionOutputReference) validateSetGroupedDisplayParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetFunnelDefinitionOutputReference) validateSetHideIncompleteCostDataParameters(val interface{}) error {
 	return nil
 }

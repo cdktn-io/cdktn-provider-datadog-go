@@ -24,13 +24,13 @@ type SecurityFindingsTicketCreationRulesOrderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A unique identifier for the order resource. This field has no server-side equivalent; Datadog recommends matching the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_ticket_creation_rules_order#name SecurityFindingsTicketCreationRulesOrder#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rules_order#name SecurityFindingsTicketCreationRulesOrder#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ordered list of all ticket creation rule IDs.
 	//
 	// The order of IDs in this attribute defines the evaluation order of the ticket creation rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/security_findings_ticket_creation_rules_order#rule_ids SecurityFindingsTicketCreationRulesOrder#rule_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/security_findings_ticket_creation_rules_order#rule_ids SecurityFindingsTicketCreationRulesOrder#rule_ids}
 	RuleIds *[]*string `field:"required" json:"ruleIds" yaml:"ruleIds"`
 }
 

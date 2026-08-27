@@ -51,6 +51,10 @@ func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmMetricsQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQueryApmMetricsQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutApmResourceStatsQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQueryApmResourceStatsQuery) error {
 	return nil
 }
@@ -71,7 +75,19 @@ func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputRefer
 	return nil
 }
 
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutProductAnalyticsExtendedQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQueryProductAnalyticsExtendedQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutRetentionQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQueryRetentionQuery) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutSloQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQuerySloQuery) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardV2WidgetHostmapDefinitionRequestSizeQueryOutputReference) validatePutUserJourneyQueryParameters(value *DashboardV2WidgetHostmapDefinitionRequestSizeQueryUserJourneyQuery) error {
 	return nil
 }
 

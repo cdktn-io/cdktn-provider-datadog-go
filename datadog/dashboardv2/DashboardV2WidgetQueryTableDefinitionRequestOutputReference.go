@@ -68,6 +68,8 @@ type DashboardV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	RumQueryInput() *DashboardV2WidgetQueryTableDefinitionRequestRumQuery
 	SecurityQuery() DashboardV2WidgetQueryTableDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *DashboardV2WidgetQueryTableDefinitionRequestSecurityQuery
+	Sort() DashboardV2WidgetQueryTableDefinitionRequestSortOutputReference
+	SortInput() *DashboardV2WidgetQueryTableDefinitionRequestSort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -111,6 +113,7 @@ type DashboardV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	PutQuery(value interface{})
 	PutRumQuery(value *DashboardV2WidgetQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardV2WidgetQueryTableDefinitionRequestSecurityQuery)
+	PutSort(value *DashboardV2WidgetQueryTableDefinitionRequestSort)
 	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
@@ -127,6 +130,7 @@ type DashboardV2WidgetQueryTableDefinitionRequestOutputReference interface {
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetSort()
 	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) 
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) Sort() DashboardV2WidgetQueryTableDefinitionRequestSortOutputReference {
+	var returns DashboardV2WidgetQueryTableDefinitionRequestSortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) SortInput() *DashboardV2WidgetQueryTableDefinitionRequestSort {
+	var returns *DashboardV2WidgetQueryTableDefinitionRequestSort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -967,6 +991,17 @@ func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) 
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) PutSort(value *DashboardV2WidgetQueryTableDefinitionRequestSort) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
 	if err := d.validatePutTextFormatsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetQueryTableDefinitionRequestOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSort",
 		nil, // no parameters
 	)
 }

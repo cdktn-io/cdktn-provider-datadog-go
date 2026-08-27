@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast}.
 type CostCustomForecast interface {
 	cdktn.TerraformResource
 	BudgetUid() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_CostCustomForecast) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast} Resource.
 func NewCostCustomForecast(scope constructs.Construct, id *string, config *CostCustomForecastConfig) CostCustomForecast {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewCostCustomForecast(scope constructs.Construct, id *string, config *CostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/cost_custom_forecast datadog_cost_custom_forecast} Resource.
 func NewCostCustomForecast_Override(c CostCustomForecast, scope constructs.Construct, id *string, config *CostCustomForecastConfig) {
 	_init_.Initialize()
 

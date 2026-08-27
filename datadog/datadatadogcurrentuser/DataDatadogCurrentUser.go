@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user datadog_current_user}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user datadog_current_user}.
 type DataDatadogCurrentUser interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataDatadogCurrentUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user datadog_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user datadog_current_user} Data Source.
 func NewDataDatadogCurrentUser(scope constructs.Construct, id *string, config *DataDatadogCurrentUserConfig) DataDatadogCurrentUser {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataDatadogCurrentUser(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/data-sources/current_user datadog_current_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/data-sources/current_user datadog_current_user} Data Source.
 func NewDataDatadogCurrentUser_Override(d DataDatadogCurrentUser, scope constructs.Construct, id *string, config *DataDatadogCurrentUserConfig) {
 	_init_.Initialize()
 

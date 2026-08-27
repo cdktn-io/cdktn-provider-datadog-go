@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/apm_retention_filter datadog_apm_retention_filter}.
 type ApmRetentionFilter interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_ApmRetentionFilter) TraceRateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
 func NewApmRetentionFilter(scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) ApmRetentionFilter {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewApmRetentionFilter(scope constructs.Construct, id *string, config *ApmRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/apm_retention_filter datadog_apm_retention_filter} Resource.
 func NewApmRetentionFilter_Override(a ApmRetentionFilter, scope constructs.Construct, id *string, config *ApmRetentionFilterConfig) {
 	_init_.Initialize()
 

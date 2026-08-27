@@ -7,7 +7,7 @@ package observabilitypipeline
 type ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars struct {
 	// variable block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
 	Variable interface{} `field:"optional" json:"variable" yaml:"variable"`
 }
 

@@ -68,6 +68,8 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	RumQueryInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery
 	SecurityQuery() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryOutputReference
 	SecurityQueryInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery
+	Sort() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference
+	SortInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -111,6 +113,7 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	PutQuery(value interface{})
 	PutRumQuery(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery)
 	PutSecurityQuery(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery)
+	PutSort(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort)
 	PutTextFormats(value interface{})
 	ResetAggregator()
 	ResetAlias()
@@ -127,6 +130,7 @@ type DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputRefe
 	ResetQuery()
 	ResetRumQuery()
 	ResetSecurityQuery()
+	ResetSort()
 	ResetTextFormats()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	_jsii_.Get(
 		j,
 		"securityQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) Sort() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSortOutputReference
+	_jsii_.Get(
+		j,
+		"sort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) SortInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort
+	_jsii_.Get(
+		j,
+		"sortInput",
 		&returns,
 	)
 	return returns
@@ -967,6 +991,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) PutSort(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestSort) {
+	if err := d.validatePutSortParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSort",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) PutTextFormats(value interface{}) {
 	if err := d.validatePutTextFormatsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1129,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionReq
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecurityQuery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionRequestOutputReference) ResetSort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSort",
 		nil, // no parameters
 	)
 }

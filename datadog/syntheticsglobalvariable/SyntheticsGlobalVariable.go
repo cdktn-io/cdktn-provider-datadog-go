@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+// Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 type SyntheticsGlobalVariable interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -668,7 +668,7 @@ func (j *jsiiProxy_SyntheticsGlobalVariable) ValueWoVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable {
 	_init_.Initialize()
 
@@ -686,7 +686,7 @@ func NewSyntheticsGlobalVariable(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.17.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.19.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 func NewSyntheticsGlobalVariable_Override(s SyntheticsGlobalVariable, scope constructs.Construct, id *string, config *SyntheticsGlobalVariableConfig) {
 	_init_.Initialize()
 

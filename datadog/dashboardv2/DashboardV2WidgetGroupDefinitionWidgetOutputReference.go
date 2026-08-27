@@ -23,6 +23,8 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ChangeDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition
 	CheckStatusDefinition() DashboardV2WidgetGroupDefinitionWidgetCheckStatusDefinitionOutputReference
 	CheckStatusDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetCheckStatusDefinition
+	CohortDefinition() DashboardV2WidgetGroupDefinitionWidgetCohortDefinitionOutputReference
+	CohortDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,10 +77,14 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	NoteDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetNoteDefinition
 	PointPlotDefinition() DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinitionOutputReference
 	PointPlotDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition
+	ProductAnalyticsFunnelDefinition() DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionOutputReference
+	ProductAnalyticsFunnelDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition
 	QueryTableDefinition() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference
 	QueryTableDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition
 	QueryValueDefinition() DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference
 	QueryValueDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition
+	RetentionCurveDefinition() DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinitionOutputReference
+	RetentionCurveDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition
 	RunWorkflowDefinition() DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinitionOutputReference
 	RunWorkflowDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinition
 	SankeyDefinition() DashboardV2WidgetGroupDefinitionWidgetSankeyDefinitionOutputReference
@@ -144,6 +150,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	PutBarChartDefinition(value *DashboardV2WidgetGroupDefinitionWidgetBarChartDefinition)
 	PutChangeDefinition(value *DashboardV2WidgetGroupDefinitionWidgetChangeDefinition)
 	PutCheckStatusDefinition(value *DashboardV2WidgetGroupDefinitionWidgetCheckStatusDefinition)
+	PutCohortDefinition(value *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition)
 	PutDistributionDefinition(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinition)
 	PutEventStreamDefinition(value *DashboardV2WidgetGroupDefinitionWidgetEventStreamDefinition)
 	PutEventTimelineDefinition(value *DashboardV2WidgetGroupDefinitionWidgetEventTimelineDefinition)
@@ -159,8 +166,10 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	PutManageStatusDefinition(value *DashboardV2WidgetGroupDefinitionWidgetManageStatusDefinition)
 	PutNoteDefinition(value *DashboardV2WidgetGroupDefinitionWidgetNoteDefinition)
 	PutPointPlotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetPointPlotDefinition)
+	PutProductAnalyticsFunnelDefinition(value *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition)
 	PutQueryTableDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition)
 	PutQueryValueDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryValueDefinition)
+	PutRetentionCurveDefinition(value *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition)
 	PutRunWorkflowDefinition(value *DashboardV2WidgetGroupDefinitionWidgetRunWorkflowDefinition)
 	PutSankeyDefinition(value *DashboardV2WidgetGroupDefinitionWidgetSankeyDefinition)
 	PutScatterplotDefinition(value *DashboardV2WidgetGroupDefinitionWidgetScatterplotDefinition)
@@ -180,6 +189,7 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ResetBarChartDefinition()
 	ResetChangeDefinition()
 	ResetCheckStatusDefinition()
+	ResetCohortDefinition()
 	ResetDistributionDefinition()
 	ResetEventStreamDefinition()
 	ResetEventTimelineDefinition()
@@ -196,8 +206,10 @@ type DashboardV2WidgetGroupDefinitionWidgetOutputReference interface {
 	ResetManageStatusDefinition()
 	ResetNoteDefinition()
 	ResetPointPlotDefinition()
+	ResetProductAnalyticsFunnelDefinition()
 	ResetQueryTableDefinition()
 	ResetQueryValueDefinition()
+	ResetRetentionCurveDefinition()
 	ResetRunWorkflowDefinition()
 	ResetSankeyDefinition()
 	ResetScatterplotDefinition()
@@ -322,6 +334,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) CheckS
 	_jsii_.Get(
 		j,
 		"checkStatusDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) CohortDefinition() DashboardV2WidgetGroupDefinitionWidgetCohortDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetCohortDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"cohortDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) CohortDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition
+	_jsii_.Get(
+		j,
+		"cohortDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -697,6 +729,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PointP
 	return returns
 }
 
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ProductAnalyticsFunnelDefinition() DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"productAnalyticsFunnelDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ProductAnalyticsFunnelDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition
+	_jsii_.Get(
+		j,
+		"productAnalyticsFunnelDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) QueryTableDefinition() DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference {
 	var returns DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference
 	_jsii_.Get(
@@ -732,6 +784,26 @@ func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) QueryV
 	_jsii_.Get(
 		j,
 		"queryValueDefinitionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) RetentionCurveDefinition() DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinitionOutputReference {
+	var returns DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinitionOutputReference
+	_jsii_.Get(
+		j,
+		"retentionCurveDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) RetentionCurveDefinitionInput() *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition {
+	var returns *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition
+	_jsii_.Get(
+		j,
+		"retentionCurveDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -1372,6 +1444,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutChe
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutCohortDefinition(value *DashboardV2WidgetGroupDefinitionWidgetCohortDefinition) {
+	if err := d.validatePutCohortDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCohortDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutDistributionDefinition(value *DashboardV2WidgetGroupDefinitionWidgetDistributionDefinition) {
 	if err := d.validatePutDistributionDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1537,6 +1620,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutPoi
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutProductAnalyticsFunnelDefinition(value *DashboardV2WidgetGroupDefinitionWidgetProductAnalyticsFunnelDefinition) {
+	if err := d.validatePutProductAnalyticsFunnelDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putProductAnalyticsFunnelDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutQueryTableDefinition(value *DashboardV2WidgetGroupDefinitionWidgetQueryTableDefinition) {
 	if err := d.validatePutQueryTableDefinitionParameters(value); err != nil {
 		panic(err)
@@ -1555,6 +1649,17 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutQue
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryValueDefinition",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) PutRetentionCurveDefinition(value *DashboardV2WidgetGroupDefinitionWidgetRetentionCurveDefinition) {
+	if err := d.validatePutRetentionCurveDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionCurveDefinition",
 		[]interface{}{value},
 	)
 }
@@ -1753,6 +1858,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetC
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetCohortDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCohortDefinition",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetDistributionDefinition() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1881,6 +1994,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetP
 	)
 }
 
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetProductAnalyticsFunnelDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProductAnalyticsFunnelDefinition",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetQueryTableDefinition() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1893,6 +2014,14 @@ func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetQ
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryValueDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardV2WidgetGroupDefinitionWidgetOutputReference) ResetRetentionCurveDefinition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionCurveDefinition",
 		nil, // no parameters
 	)
 }
